@@ -16,3 +16,22 @@ The following videos help to explain the rational behind the balances:
  * Common Ground: +5 stability
  * Galactic Doorstep: +5% Physics research
  * Post Apocalyptic: +5% Habitability bonus
+ 
+## Traits:
+
+### Nerfs
+ * Rapid Breeders: +5% population growth from 10%
+ * Natural Engineers: +12% research boost from 15%
+ * Unruly: +15% Empire Sprawl from 10%
+
+### Boosts
+ * Docile: -15% Empire Sprawl from -10%
+ * Resilient: +100% defensive army damage from 50%
+ * Conformist: +5% happiness and 25% Government Ethics attraction from 30%
+ * Venerable: +2% unity, +1% engineering/social/physics research and +70 years from +80 years
+ * Very Strong: +60% Army damage and +6.25% resources from 40% army damage and +5% resources
+ * Nomadic: -35% resettlement costs and +20% pop growth from immigration from -25% resettlement cost and +15% pop growth from immigration
+ * Talented: +2 level cap from +1 level cap
+ * Quarrelsome: -5% Unity from jobs from -10%
+ * Nonadaptive: -5% habitability from -10%
+ * Repugnant: not possible to modify
