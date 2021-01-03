@@ -227,7 +227,7 @@ trait_traditional = {
 	opposites = { "trait_quarrelsome" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		planet_jobs_unity_produces_mult = 0.05
+		planet_jobs_unity_produces_mult = 0.10
 	}
 }
 
@@ -237,7 +237,7 @@ trait_quarrelsome = {
 	opposites = { "trait_traditional" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		planet_jobs_unity_produces_mult = -0.1
+		planet_jobs_unity_produces_mult = -0.05
 	}
 	ai_weight = {
 		weight = 1
