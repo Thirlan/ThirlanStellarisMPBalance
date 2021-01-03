@@ -1,0 +1,18 @@
+# 2021/01/03
+
+The following videos help to explain the rational behind the balances:
+
+* https://www.youtube.com/watch?v=xg1dRRd38UQ&ab_channel=StefanAnon
+* https://www.youtube.com/watch?v=-VrM722vlnU&ab_channel=StefanAnon
+
+## Origin:
+
+### Nerfs
+ * Void dwellers: production multipliers dropped from 15% to 10%
+ * Shattered Ring: -5% Habitability bonus
+ * Scion: -5% Unity and -10% Ethics attraction
+ 
+### Boosts
+ * Common Ground: +5 stability
+ * Galactic Doorstep: +5% Physics research
+ * Post Apocalyptic: +5% Habitability bonus
