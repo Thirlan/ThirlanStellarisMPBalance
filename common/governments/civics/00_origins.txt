@@ -257,6 +257,10 @@ origin_shattered_ring = {
 		civics = { NOT = { value = civic_agrarian_idyll } }
 	}
 
+	modifier = {
+		pop_environment_tolerance = -0.05
+	}
+	
 	description = "origin_tooltip_shattered_ring_effects"
 
 	flags = { custom_start_screen }
@@ -323,7 +327,12 @@ origin_scion = {
 			}
 		}
 	}
-
+	
+	modifier = {
+		pop_government_ethic_attraction = -0.10
+		planet_jobs_unity_produces_mult = -0.05
+	}
+	
 	description = "origin_tooltip_scion_effects"
 	flags = { custom_start_screen }
 
@@ -350,6 +359,10 @@ origin_galactic_doorstep = {
 	possible = {
 	}
 
+	modifier = {
+		planet_jobs_physics_research_produces_mult = 0.05
+	}
+	
 	description = "origin_tooltip_galactic_doorstep_effects"
 	flags = { custom_start_screen }
 
@@ -503,6 +516,10 @@ origin_common_ground = {
 		}
 	}
 
+	modifier = {
+		planet_stability_add = 5
+	}
+	
 	description = "origin_tooltip_common_ground_effects"
 	flags = { custom_start_screen }
 
