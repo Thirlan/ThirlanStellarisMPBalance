@@ -3001,7 +3001,7 @@ tech_engineering_3 = {
 
 #Robotic Workers
 tech_robotic_workers = {
-	cost = @tier1cost3
+	cost = @tier2cost1
 	area = engineering
 	tier = 1
 	category = { industry }
