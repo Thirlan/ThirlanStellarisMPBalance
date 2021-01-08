@@ -7,7 +7,7 @@ The following videos help to explain the rational behind the balances:
 ## Min-Max tweaks
 
 ### Nerfs
- * Negotiate with crime lord: planet crime >= 20 from planet crime >= 10
+ * Negotiate with crime lord: planet crime >= 15 from planet crime >= 10 and 35 influence from 25
  * Robotic Workers Tech: Tech cost 4000 from 3000
  
 ### Boosts:
