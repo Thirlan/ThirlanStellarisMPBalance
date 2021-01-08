@@ -182,7 +182,7 @@ d_decrepit_tunnels_3 = {
 	resources = {
 		category = deposit_blockers
 		cost = {
-			energy = 500
+			energy = 1500
 		}
 	}
 
