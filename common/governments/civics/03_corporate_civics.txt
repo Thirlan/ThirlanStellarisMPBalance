@@ -22,8 +22,8 @@ civic_franchising = {
 	random_weight = { base = 5 }
 	description = "civic_tooltip_franchising_effects"
 	modifier = {
-		country_subject_power_penalty_mult = -0.33
-		empire_size_branch_office_mult = -0.25
+		country_subject_power_penalty_mult = -0.40
+		empire_size_branch_office_mult = -0.30
 	}
 }
 
@@ -31,7 +31,8 @@ civic_trading_posts = {
 	potential = { authority = { value = auth_corporate } }
 	random_weight = { base = 5 }
 	modifier = {
-		country_starbase_capacity_add = 4
+		country_starbase_capacity_add = 3
+		country_energy_produces_mult = 0.01
 	}
 }
 
@@ -41,6 +42,7 @@ civic_media_conglomerate = {
 	modifier = {
 		country_war_exhaustion_mult = -0.05
 		pop_citizen_happiness = 0.05
+		diplo_weight_mult = 0.05
 	}
 }
 
@@ -105,7 +107,7 @@ civic_ruthless_competition = {
 	random_weight = { base = 5 }
 	modifier = {
         leader_skill_levels = 1
-		species_leader_exp_gain = 0.1
+		species_leader_exp_gain = 0.15
     }
 }
 
@@ -114,6 +116,7 @@ civic_criminal_heritage = {
 	potential = { authority = { value = auth_corporate } }
 	random_weight = { base = 5 }
 	modifier = {
+		diplo_weight_mult = 0.05
 	}
 
 	description = "civic_tooltip_criminal_heritage_effects"
@@ -152,7 +155,7 @@ civic_indentured_assets = {
 	}
 	modifier = {
 		planet_jobs_slave_produces_mult = 0.10
-		country_pop_enslaved_mult = 0.40
+		country_pop_enslaved_mult = 0.35
 	}
 }
 
@@ -170,7 +173,7 @@ civic_public_relations_specialists = {
 	random_weight = { base = 5 }
 	modifier = {
 		envoys_add = 2
-		diplo_weight_mult = 0.1
+		diplo_weight_mult = 0.05
 	}
 }
 
