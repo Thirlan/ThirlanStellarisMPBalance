@@ -227,7 +227,7 @@ trait_traditional = {
 	opposites = { "trait_quarrelsome" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		planet_jobs_unity_produces_mult = 0.10
+		planet_jobs_unity_produces_mult = 0.1
 	}
 }
 
