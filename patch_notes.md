@@ -1,4 +1,6 @@
-# Source
+# Version 0.0.2
+
+## Source
 
 Following videos were used to determine those mechanics that needed to be balanced
 

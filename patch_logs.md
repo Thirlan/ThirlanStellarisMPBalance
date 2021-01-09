@@ -1,3 +1,7 @@
+# 2021/01/09
+
+Releasing version 0.0.2
+
 # 2021/01/08
 
 The following videos help to explain the rational behind the balances:
