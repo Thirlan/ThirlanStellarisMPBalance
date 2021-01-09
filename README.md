@@ -1,5 +1,4 @@
-![thumbnail](thumbnail.png)
-# The Simple Multiplayer Balance Mod (SMBM)
+![thumbnail](thumbnail.png | width=256)
 
 ## Introduction
 Welcome! This mod is simple and focuses only on nerfing or boosting existing game mechanics. No huge changes are involved nor ever considered. We want this mod to be easy to turn on and off.
