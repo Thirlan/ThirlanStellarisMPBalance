@@ -1,4 +1,5 @@
-# Thirlan's Stellaris Multiplayer Balance Mod
+![thumbnail](thumbnail.png)
+# The Simple Multiplayer Balance Mod (SMBM)
 
 ## Introduction
 Welcome! This mod is simple and focuses only on nerfing or boosting existing game mechanics. No huge changes are involved nor ever considered. We want this mod to be easy to turn on and off.
