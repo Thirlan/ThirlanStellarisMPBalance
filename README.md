@@ -1,4 +1,4 @@
-![thumbnail](thumbnail.png | width=256)
+![thumbnail](thumbnail.png){:height="50%" width="50%"}
 
 ## Introduction
 Welcome! This mod is simple and focuses only on nerfing or boosting existing game mechanics. No huge changes are involved nor ever considered. We want this mod to be easy to turn on and off.
