@@ -1,13 +1,8 @@
-# Source
+# 2021/01/08
 
-Following videos were used to determine those mechanics that needed to be balanced
+The following videos help to explain the rational behind the balances:
 
 * https://www.youtube.com/watch?v=n8R1LMj1CxI&ab_channel=StefanAnon
-* https://www.youtube.com/watch?v=bNdHs4LB1lw&ab_channel=StefanAnon
-* https://www.youtube.com/watch?v=LQ9d7H2uZF4&ab_channel=StefanAnon
-* https://www.youtube.com/watch?v=roho0r8PGkw&ab_channel=StefanAnon
-* https://www.youtube.com/watch?v=xg1dRRd38UQ&ab_channel=StefanAnon
-* https://www.youtube.com/watch?v=-VrM722vlnU&ab_channel=StefanAnon
 
 ## Min-Max tweaks
 
@@ -17,6 +12,14 @@ Following videos were used to determine those mechanics that needed to be balanc
  
 ### Boosts
  * Gene Clinics: healthcare worker +8% pop growth from +5%
+
+# 2021/01/06
+
+The following videos help to explain the rational behind the balances:
+
+* https://www.youtube.com/watch?v=bNdHs4LB1lw&ab_channel=StefanAnon
+* https://www.youtube.com/watch?v=LQ9d7H2uZF4&ab_channel=StefanAnon
+* https://www.youtube.com/watch?v=roho0r8PGkw&ab_channel=StefanAnon
 
 ## Standard Civics
 
@@ -73,6 +76,14 @@ Following videos were used to determine those mechanics that needed to be balanc
  * Franchising: -30% empire sprawl from branch office from -25%, -40% country subject power penalty from -33%
  * Media Conglomerate: +5% diplomatic weight
  
+ 
+# 2021/01/03
+
+The following videos help to explain the rational behind the balances:
+
+* https://www.youtube.com/watch?v=xg1dRRd38UQ&ab_channel=StefanAnon
+* https://www.youtube.com/watch?v=-VrM722vlnU&ab_channel=StefanAnon
+
 ## Origin:
 
 ### Nerfs

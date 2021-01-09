@@ -9,8 +9,7 @@ The remainder of this document will go over much of the process used for decidin
 2. What is the process used to balance mechanics?
 3. How will the mod be maintained?
 
-You can also refer to the [patch notes](patch_notes.md) to see what has been balanced.
-
+You can refer to the [patch notes](patch_notes.md) to see the full balance list.
 
 
 ## Why was this mode created?
