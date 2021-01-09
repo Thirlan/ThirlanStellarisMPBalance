@@ -10,7 +10,7 @@ The following videos help to explain the rational behind the balances:
  * Negotiate with crime lord: planet crime >= 15 from planet crime >= 10 and 35 influence from 25
  * Robotic Workers Tech: Tech cost 4000 from 3000
  
-### Boosts:
+### Boosts
  * Gene Clinics: healthcare worker +8% pop growth from +5%
 
 # 2021/01/06
@@ -21,7 +21,7 @@ The following videos help to explain the rational behind the balances:
 * https://www.youtube.com/watch?v=LQ9d7H2uZF4&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=roho0r8PGkw&ab_channel=StefanAnon
 
-## Standard Civics:
+## Standard Civics
 
 ### Nerfs
  * Fanatic Purifier: Ship Fire Rate, Army Damage, Naval Capacity 28% from 33% and Ship Build cost 12% from 15%
@@ -39,7 +39,7 @@ The following videos help to explain the rational behind the balances:
  * Shadow Council: Election influence cost -90% from from 75% and 15% ruler pop resource output from 10%
  * Nationalistic Zeal: -20% claim influence cost from 10% and -20% war exhaustions from -10%
 
-## Hive Mind Civics:
+## Hive Mind Civics
 
 ### Nerfs
  * Devouring Swarm: -45% starbase influence cost from -50%, +20% hull poinst from +25%, ship build cost -20% from -25%, naval capacity -28% from -33%
@@ -49,7 +49,7 @@ The following videos help to explain the rational behind the balances:
  * Subsumed will: -25% empire sprawl from -20%
  * Divided attention: +15% administrative capacity from 10%
 
-## Robot Civics:
+## Robot Civics
 
 ### Nerfs
  * Driven Assimilator: -10% energy credits
@@ -63,7 +63,7 @@ The following videos help to explain the rational behind the balances:
  * Static Research Analysis: Research Alternatives +2 from +1
  * Factory Overclocking: +15% leader experience gain from +10%
 
-## Megacorp Civics:
+## Megacorp Civics
 
 ### Nerfs
  * Indentured Assets: 35% enslaved pop ratio from 40%
@@ -87,7 +87,7 @@ The following videos help to explain the rational behind the balances:
 ## Origin:
 
 ### Nerfs
- * Void dwellers: 10% production multipliers from 10%
+ * Void dwellers: 10% production multipliers from 15%
  * Shattered Ring: -5% Habitability bonus, decrepit tunnels 3 blocker removal cost 1500 energy from 500
  * Scion: -5% Unity and -10% Ethics attraction
  
