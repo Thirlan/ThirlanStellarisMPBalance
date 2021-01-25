@@ -1,0 +1,17 @@
+namespace = smbm
+
+event = {
+	id = smbm.1
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_playable_country = {
+			add_modifier = {
+				modifier = be_careful_out_there
+				days = 3650
+			}
+		}
+	}
+}

@@ -1,3 +1,111 @@
+# 2021/01/25
+
+Revisited the +X to leadership skills:
+ * Max unmodified leadership is 4 from 5
+ * Leadership cap of 10 has been removed
+ * Enhanced Memory: +3 leadership cap from +2 instead of +10% Leader experience gain
+
+The combination of reducing max unmodified levels and increasing the leadership stats makes the traits more attractive.
+
+Revisited the +X starbase civics:
+ * Max unmodified starbases is reduced by 2
+ * Trading Posts: +5 starbases from +4 and +1% energy credits removed
+ 
+ The combination of reducing the number of available stations at game start and increasing the starbase civic bonuses makes the civics more attractive.
+
+# 2021/01/22
+
+The lastest addition to the patch is an anti-rush mechanic. At game start, every human played empire gets a temporary 10 year bonus:
+
+ * Starbase damage +25%
+ * Starbase upgrade cost -25%
+ * Defense platform build cost -25%
+ 
+The purpose of this change is to:
+a) Encourage players to eliminate AIs first
+b) Force players to take advantage of the discounts to build defenses
+
+If a player doesn't take advantage of the discounts then when the years are up they are on their own. It is up to them to decide how to invest those resources.
+
+# 2021/01/21
+
+The following videos help to explain the rational behind the balances:
+
+https://www.youtube.com/watch?v=tE3G3pKodWI&ab_channel=StefanAnon
+
+## Robot Traits:
+
+### Nerfs
+ * Mass Produced: +10% assembly speed from +15%
+ * Emotion Emulator: -1% energy from jobs
+ * High Bandwitdh: +15% Empire Sprawl from +10%
+
+### Boosts
+ * Enhanced Memory: 10% leader experience gain
+ * Recycled: -30% assembly cost from -20%
+ * Streamlined Protocols: -15% Empire Sprawl from -10%
+ * Uncanny: +1% energy from jobs
+ * Custom made: -10% assembly speed from -15%
+
+# 2021/01/20
+
+"Imitation is the sincerest form of flattery"
+
+Having found that Stefan had his own Balance Mod our group took some time to investigate it. Ultimately Stefan's balance mod would be considered a complete overhaul of the game and not a simple balance patch. As such there is still a desire to approach the game with a simpler patch. Stefan's mod has plenty of ideas and interesting ways to balance things and as such some of these ideas have been incorporated here.
+
+## Megacorp Civics
+
+### Changes
+ * Public Relations: reverted back to normal (Not OP in multiplayer)
+ * Criminal Syndicate: adding additional boost of -10% branch office costs (Still too weak)
+ * Indentured Assets: 35% enslaved pop ratio from 40%
+
+## Traditions
+
+### Nerfs
+ * New Life (Expansion tree): +5% pop growth from +10%
+ 
+### Boosts
+ * Colonial Viceroys (Domination): +1 Envoy
+ * Privy Council (Domination): +1 Leader Pool size
+
+## Ascension Perks
+
+### Nerfs
+ * Synthetic Ascension: +0% robot output from +10%
+ * Technological Ascendency: +7% Research rate from +10%
+
+### Boosts
+ * Synthetic Age: +5% Robot Production and Modify Species discount -66% from -33%
+ * Defenders of the Galaxy: +10% diplomatic weight from Fleet size, +50% Damage to the Great Khan, +50 increased opinion with the other empires
+ * Consecrated worlds: Colonized worlds can now be consecrated
+ * Enigmatic Engineering: +4% research speed
+ * Galactic Force Projection: +10% diplomatic weight from Fleet size, +10% sublight speed
+ * Transcendence: Similar to Stefan's
+   ** duration of Shroud boons 10 years from 5 years
+   ** Increased rate of success in the Shroud to 90% Green, 60% Yellow, and 30% Red
+   ** Removed all Shroud outcomes where nothing would happen
+
+## Ethics
+
+### Nerfs
+ * Xenophobe: +5%/10% pop growth from 10%/20% pop growth
+
+### Boosts
+ * Spiritualist: +3%/+5% Happiness
+ * Pacifist: -20%/-40% Empire sprawl from pop from -15%/-30%
+
+## Traits
+
+### Changes
+ * Venerable: +3% social research instead of +1% engineering/social/physics
+
+## Standard Civics
+
+### Changes
+ * Fanatic Purifier: Ship Fire Rate, Army Damage, Naval Capacity 25% from 33% and Ship Build cost 10% from 15% (Still too powerful)
+
+
 # 2021/01/09
 
 Releasing version 0.0.2
