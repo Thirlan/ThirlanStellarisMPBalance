@@ -4,10 +4,14 @@
 
 ### Changes
  * Negotiate with crime lord: will behave like Stefan's balance mod. Periodic check to see if crime is above 0. Otherwise it will cancel it.
+ * Byzantine Bureaucracy: reverted back to normal since clerks have been buffed a bit
 
 ### Nerfs
  * Droids Tech: Tech cost 6000 from 8000
  * Habitats: 1750 alloys from 1500 alloys
+ 
+### Boosts
+ * Clerks: clerks will now produce +0.1 administrative capacity and 2.2 trade value from 2.0
 
 # 2021/01/25
 

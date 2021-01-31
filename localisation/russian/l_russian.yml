@@ -59,9 +59,9 @@
  TRAIT_NERVE_STAPLED_EFFECT:2 "$mod_planet_jobs_produces_mult$: §G+5%§!\nНельзя создавать §Yлидеров§!\nНельзя осуществлять такую деятельность, как §Y$pop_cat_ruler$§! или §Y$pop_cat_specialist$§!"
  TRAIT_CHARISMATIC_EFFECT:4 "£amenities£ Блага от £job£ видов деятельности: §G+20%§!"
  TRAIT_DOMESTIC_PROTOCOLS_EFFECT:0 "Можно осуществлять такую деятельность, как £job_servant£ §Y$job_servant$§!, если есть §Y$ai_servitude_name$§!\n£amenities£ Блага от £job£ должностей: §G+20%§!"
- TRAIT_REPUGNANT_EFFECT:4 "£amenities£ Блага от £job£ видов деятельности: §R-20%§!"
- TRAIT_EMOTION_EMULATORS_EFFECT:2 "£amenities_no_happiness£ Блага от £job£ видов деятельности: §G+20%§!"
- TRAIT_UNCANNY_EFFECT:2 "£amenities_no_happiness£ Блага от £job£ видов деятельности: §R-20%§!"
+ TRAIT_REPUGNANT_EFFECT:4 "£amenities£ Блага от £job£ видов деятельности: §R-20%§!\nArmy damage: §G+5%§!"
+ TRAIT_EMOTION_EMULATORS_EFFECT:2 "£amenities_no_happiness£ Блага от £job£ видов деятельности: §G+20%§!\n£energy£Energy from jobs: §R-1%§!"
+ TRAIT_UNCANNY_EFFECT:2 "£amenities_no_happiness£ Блага от £job£ видов деятельности: §R-20%§!\nArmy damage: §G+5%§!"
  TRAIT_THRIFTY_EFFECT:0 "£trade_value£ Объем торговли от £job£ деятельности: §G+25%§!"
  TRAIT_LITHOID_EFFECT:0 "Используют £minerals£ §Yминералы§! в качестве £food£ §Yпищи§!\n\n$MOD_POP_GROWTH_SPEED$: §R-25%§!\n$MOD_POP_ENVIRONMENT_TOLERANCE$: §G+50%§!\n$MOD_ARMY_HEALTH$: §G+50%§!\n$MOD_LEADER_AGE$: §G+50§!"
 

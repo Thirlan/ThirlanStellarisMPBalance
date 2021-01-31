@@ -32,6 +32,7 @@ Also the following mod from Stefan's team (Magikaas, Aow, AirHunter, Stefan, Hoo
  * Leadership max cap: 15 from 10 (Increasing leadership cap makes all skill cap traits and techs more valuable)
  * Starbase capacity base amount: 2 from 3 (Boosts all starbase cap civics, ascensions and techs)
  * Starbase capacity system multiplier: 0.08 from 0.10 (Boosts all starbase cap civics, ascensions and techs)
+ * Clerks: produce +0.1 administrative capacity
 
 ## Standard Civics
 
@@ -46,7 +47,6 @@ Also the following mod from Stefan's team (Magikaas, Aow, AirHunter, Stefan, Hoo
  * Environmentalist: -15% consumer goods from 10%
  * Feudal Realm: +5% Naval Capacity, ship upkeep -5%, -10% army upkeep
  * Efficient Bureaucracy: 15% administrative capacity from 10%
- * Byzantine Bureaucracy: +5 stability
  * Corvee System: 20% pop growth from immigration from 15% and -35% resettlement cost from -25%
  * Idealistic Foundation: +8% happiness from +5%
  * Shadow Council: Election influence cost -90% from from 75% and 15% ruler pop resource output from 10%

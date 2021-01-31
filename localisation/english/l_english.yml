@@ -59,9 +59,9 @@
  TRAIT_NERVE_STAPLED_EFFECT:2 "$mod_planet_jobs_produces_mult$: §G+5%§!\nCannot generate §YLeaders§!\nCannot be employed in §Y$pop_cat_ruler$§! or §Y$pop_cat_specialist$§! Jobs"
  TRAIT_CHARISMATIC_EFFECT:4 "£amenities£ Amenities from £job£ Jobs: §G+20%§!"
  TRAIT_DOMESTIC_PROTOCOLS_EFFECT:0 "Can be employed in £job_servant£ §Y$job_servant$§! Jobs if under §Y$ai_servitude_name$§!\n£amenities£ Amenities from £job£ Jobs: §G+20%§!"
- TRAIT_REPUGNANT_EFFECT:4 "£amenities£ Amenities from £job£ Jobs: §R-20%§!"
- TRAIT_EMOTION_EMULATORS_EFFECT:2 "£amenities_no_happiness£Amenities from £job£ Jobs: §G+20%§!"
- TRAIT_UNCANNY_EFFECT:2 "£amenities_no_happiness£Amenities from £job£ Jobs: §R-20%§!"
+ TRAIT_REPUGNANT_EFFECT:4 "£amenities£ Amenities from £job£ Jobs: §R-20%§!\nArmy damage: §G+5%§!"
+ TRAIT_EMOTION_EMULATORS_EFFECT:2 "£amenities_no_happiness£Amenities from £job£ Jobs: §G+20%§!\n£energy£Energy from jobs: §R-1%§!"
+ TRAIT_UNCANNY_EFFECT:2 "£amenities_no_happiness£Amenities from £job£ Jobs: §R-20%§!\nArmy damage: §G+5%§!"
  TRAIT_THRIFTY_EFFECT:0 "£trade_value£ Trade Value from £job£ Jobs: §G+25%§!"
  TRAIT_LITHOID_EFFECT:0 "Consumes £minerals£ §YMinerals§! instead of £food£ §YFood§!\n\n$MOD_POP_GROWTH_SPEED$: §R-25%§!\n$MOD_POP_ENVIRONMENT_TOLERANCE$: §G+50%§!\n$MOD_ARMY_HEALTH$: §G+50%§!\n$MOD_LEADER_AGE$: §G+50§!"
 

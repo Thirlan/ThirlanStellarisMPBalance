@@ -59,9 +59,9 @@
  TRAIT_NERVE_STAPLED_EFFECT:2 "$mod_planet_jobs_produces_mult$：§G+5%§!\n无法产生§Y领袖§!\n无法就任§Y$pop_cat_ruler$§!或§Y$pop_cat_specialist$§!岗位"
  TRAIT_CHARISMATIC_EFFECT:4 "£job£ 岗位产生的£amenities£ 舒适度：§G+20%§!"
  TRAIT_DOMESTIC_PROTOCOLS_EFFECT:0 "如果§Y$ai_servitude_name$§!生效，可以从事£job_servant£ §Y$job_servant$§!岗位\n£job£岗位产生的£amenities£舒适度：§G+20%§!"
- TRAIT_REPUGNANT_EFFECT:4 "£job£ 岗位产生的£amenities£ 舒适度：§R-20%§!"
- TRAIT_EMOTION_EMULATORS_EFFECT:2 "£job£ 岗位生产的 £amenities_no_happiness£ 舒适度：§G+20%§!"
- TRAIT_UNCANNY_EFFECT:2 "£job£ 岗位生产的 £amenities_no_happiness£ 舒适度：§R-20%§!"
+ TRAIT_REPUGNANT_EFFECT:4 "£job£ 岗位产生的£amenities£ 舒适度：§R-20%§!\nArmy damage: §G+5%§!"
+ TRAIT_EMOTION_EMULATORS_EFFECT:2 "£job£ 岗位生产的 £amenities_no_happiness£ 舒适度：§G+20%§!\n£energy£Energy from jobs: §R-1%§!"
+ TRAIT_UNCANNY_EFFECT:2 "£job£ 岗位生产的 £amenities_no_happiness£ 舒适度：§R-20%§!\nArmy damage: §G+5%§!"
  TRAIT_THRIFTY_EFFECT:0 "£job£ 岗位生产的 £trade_value£ 贸易值：§G+25%§!"
  TRAIT_LITHOID_EFFECT:0 "消耗 £minerals£ §Y矿物§!而非 £food£ §Y食物§!\n\n$MOD_POP_GROWTH_SPEED$：§R-25%§!\n$MOD_POP_ENVIRONMENT_TOLERANCE$：§G+50%§!\n$MOD_ARMY_HEALTH$：§G+50%§!\n$MOD_LEADER_AGE$：§G+50§!"
 

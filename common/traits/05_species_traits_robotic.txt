@@ -278,7 +278,7 @@ trait_robot_custom_made = {
 	allowed_archetypes = { ROBOT MACHINE }
 
 	modifier = {
-		pop_assembly_speed = -0.15
+		pop_assembly_speed = -0.10
 	}
 	ai_weight = {
 		factor = 0
@@ -349,6 +349,6 @@ trait_robot_high_bandwidth = {
 	opposites = { "trait_robot_streamlined_protocols" }
 	allowed_archetypes = { ROBOT MACHINE }
 	modifier = {
-		species_empire_size_mult = 0.10
+		species_empire_size_mult = 0.15
 	}
 }

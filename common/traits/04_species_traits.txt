@@ -373,10 +373,6 @@ trait_charismatic = {
 	opposites = { "trait_repugnant" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	custom_tooltip = TRAIT_CHARISMATIC_EFFECT
-	
-	modifier = {
-		army_damage_mult = 0.05
-	}
 }
 
 trait_repugnant = {
@@ -389,6 +385,10 @@ trait_repugnant = {
 
 	ai_weight = {
 		weight = 0
+	}
+	
+	modifier = {
+		army_damage_mult = 0.05
 	}
 }
 

@@ -59,9 +59,9 @@
  TRAIT_NERVE_STAPLED_EFFECT:2 "$mod_planet_jobs_produces_mult$ : §G+5%§!\nNe peut donner naissance à des §Ypersonnalités§!.\nNe peut être employée comme £pop_cat_ruler£§Ygouvernants§! ou £pop_cat_specialist£§Yspécialistes§!."
  TRAIT_CHARISMATIC_EFFECT:3 "£amenities£Services effectués par les £job£emplois : §G+20%§!"
  TRAIT_DOMESTIC_PROTOCOLS_EFFECT:0 "Peut être employée comme £job_servant£§Yserviteurs§! sous les conditions de vie §Y$ai_servitude_name$§!\n£amenities£Services produits par ces £job£emplois : §G+20%§!"
- TRAIT_REPUGNANT_EFFECT:3 "£amenities£Services effectués par les £job£emplois : §R-20%§!"
- TRAIT_EMOTION_EMULATORS_EFFECT:2 "£amenities_no_happiness£Services effectués par les £job£emplois : §G+20%§!"
- TRAIT_UNCANNY_EFFECT:2 "£amenities_no_happiness£Services effectués par les £job£emplois : §R-20%§!"
+ TRAIT_REPUGNANT_EFFECT:3 "£amenities£Services effectués par les £job£emplois : §R-20%§!\nArmy damage: §G+5%§!"
+ TRAIT_EMOTION_EMULATORS_EFFECT:2 "£amenities_no_happiness£Services effectués par les £job£emplois : §G+20%§!\n£energy£Energy from jobs: §R-1%§!"
+ TRAIT_UNCANNY_EFFECT:2 "£amenities_no_happiness£Services effectués par les £job£emplois : §R-20%§!\nArmy damage: §G+5%§!"
  TRAIT_THRIFTY_EFFECT:0 "£trade_value£Valeur commerciale des £job£emplois : §G+25%§!"
  TRAIT_LITHOID_EFFECT:0 "Consomme des £minerals£§Yminéraux§! au lieu de £food£§Ynourriture§!.\n\n$MOD_POP_GROWTH_SPEED$: §R-25%§!\n$MOD_POP_ENVIRONMENT_TOLERANCE$: §G+50%§!\n$MOD_ARMY_HEALTH$: §G+50%§!\n$MOD_LEADER_AGE$: §G+50§!"
 
