@@ -167,6 +167,9 @@ trait_robot_emotion_emulators = {
 	opposites = { "trait_robot_uncanny" }
 	allowed_archetypes = { MACHINE }
 	custom_tooltip = TRAIT_EMOTION_EMULATORS_EFFECT
+	modifier = {
+		army_damage_mult = 0.05
+	}
 }
 
 trait_robot_uncanny = {
@@ -264,7 +267,7 @@ trait_robot_mass_produced = {
 	allowed_archetypes = { ROBOT MACHINE }
 
 	modifier = {
-		pop_assembly_speed = 0.15
+		pop_assembly_speed = 0.10
 	}
 }
 
@@ -290,7 +293,7 @@ trait_robot_recycled = {
 
 	#assembling_modifier, declining_modifier, growing_modifier are applied to planet when pop is the one assembling/declining/growing
 	assembling_modifier = {
-		planet_pop_assemblers_upkeep_mult = -0.20
+		planet_pop_assemblers_upkeep_mult = -0.30
 	}
 }
 
@@ -337,7 +340,7 @@ trait_robot_streamlined_protocols = {
 	opposites = { "trait_robot_high_bandwidth" }
 	allowed_archetypes = { ROBOT MACHINE }
 	modifier = {
-		species_empire_size_mult = -0.10
+		species_empire_size_mult = -0.15
 	}
 }
 

@@ -2,5 +2,7 @@
 # Static Modifiers for the Simple Multiplayer Balance Patch
 ##########################################################################
 be_careful_out_there = {
-	pop_growth_speed_reduction = 0.5
+	shipclass_starbase_damage_mult = 0.33
+	starbase_upgrade_cost_mult = -0.33
+	ship_military_station_small_cost_mult = -0.33
 }

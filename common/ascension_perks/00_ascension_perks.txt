@@ -26,6 +26,7 @@ ap_enigmatic_engineering = {
 	modifier = {
 		ship_sensor_range_add = 2
 		ship_hyperlane_range_add = 4
+		all_technology_research_speed = 0.06
 	}
 
 	ai_weight = {
@@ -334,7 +335,6 @@ ap_synthetic_evolution = {
 		}
 	}
 	modifier = {
-		planet_jobs_robotic_produces_mult = 0.10
 		ROBOT_species_trait_points_add = 1
 		modify_species_cost_mult = -0.50
 	}
@@ -536,6 +536,9 @@ ap_galactic_force_projection = {
 	modifier = {
 		country_naval_cap_add = 80
 		country_command_limit_add = 20
+		diplo_weight_naval_mult = 0.1
+		ship_speed_mult = 0.05
+		ships_upkeep_mult = -0.05
 	}
 
 	potential = {
@@ -580,6 +583,8 @@ ap_defender_of_the_galaxy = {
 		damage_vs_country_type_extradimensional_3_mult = 0.5
 		damage_vs_country_type_ai_empire_mult = 0.5
 		damage_vs_country_type_gray_goo_mult = 0.5
+		damage_vs_country_type_awakened_marauders_mult = 0.5
+		diplo_weight_naval_mult = 0.1
 	}
 
 	on_enabled = {
@@ -609,7 +614,8 @@ ap_defender_of_the_galaxy = {
 ap_interstellar_dominion = {
 	modifier = {
 		country_starbase_influence_cost_mult = -0.20
-		country_claim_influence_cost_mult = -0.20
+		country_claim_influence_cost_mult = -0.40
+		starbase_outpost_cost_mult = -0.10
 	}
 
 	potential = {
@@ -747,7 +753,7 @@ ap_galactic_contender = {
 
 ap_technological_ascendancy = {
 	modifier = {
-		all_technology_research_speed = 0.1
+		all_technology_research_speed = 0.06
 	}
 
 	potential = {
@@ -986,7 +992,7 @@ ap_voidborn = {
 	}
 
 	modifier = {
-		pc_habitat_habitability = 0.2
+		pc_habitat_habitability = 0.1
 	}
 
 	ai_weight = {
@@ -1199,7 +1205,8 @@ ap_galactic_wonders_utopia_and_megacorp = {
 ap_synthetic_age = {
 	modifier = {
 		MACHINE_species_trait_points_add = 2
-		modify_species_cost_mult = -0.33
+		modify_species_cost_mult = -0.66
+		planet_jobs_produces_mult = 0.05
 	}
 
 	potential = {

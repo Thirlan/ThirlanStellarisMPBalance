@@ -328,7 +328,7 @@ civic_slaver_guilds = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		planet_jobs_slave_produces_mult = 0.10
+		planet_jobs_slave_produces_mult = 0.07
 		country_pop_enslaved_mult = 0.40
 	}
 }

@@ -116,6 +116,7 @@ civic_criminal_heritage = {
 	potential = { authority = { value = auth_corporate } }
 	random_weight = { base = 5 }
 	modifier = {
+		planet_branch_offices_cost_mult = -0.10
 		diplo_weight_mult = 0.05
 	}
 
@@ -154,8 +155,8 @@ civic_indentured_assets = {
 		}
 	}
 	modifier = {
-		planet_jobs_slave_produces_mult = 0.10
-		country_pop_enslaved_mult = 0.35
+		planet_jobs_slave_produces_mult = 0.07
+		country_pop_enslaved_mult = 0.40
 	}
 }
 
@@ -173,7 +174,7 @@ civic_public_relations_specialists = {
 	random_weight = { base = 5 }
 	modifier = {
 		envoys_add = 2
-		diplo_weight_mult = 0.05
+		diplo_weight_mult = 0.10
 	}
 }
 

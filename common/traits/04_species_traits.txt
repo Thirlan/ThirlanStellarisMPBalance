@@ -373,6 +373,10 @@ trait_charismatic = {
 	opposites = { "trait_repugnant" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	custom_tooltip = TRAIT_CHARISMATIC_EFFECT
+	
+	modifier = {
+		army_damage_mult = 0.05
+	}
 }
 
 trait_repugnant = {
@@ -437,9 +441,7 @@ trait_venerable = {
 	modifier = {
 		leader_age = 70
 		planet_jobs_unity_produces_mult = 0.02
-		planet_jobs_engineering_research_produces_mult = 0.01
-		planet_jobs_physics_research_produces_mult = 0.01
-		planet_jobs_society_research_produces_mult = 0.01
+		planet_jobs_society_research_produces_mult = 0.02
 	}
 	opposites = { "trait_enduring" "trait_fleeting" "trait_fleeting_lithoid" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }

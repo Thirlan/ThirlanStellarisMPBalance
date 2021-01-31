@@ -1,25 +1,36 @@
+# 2021/01/31
+
+## Min-Max tweaks
+
+### Changes
+ * Negotiate with crime lord: will behave like Stefan's balance mod. Periodic check to see if crime is above 0. Otherwise it will cancel it.
+
+### Nerfs
+ * Droids Tech: Tech cost 6000 from 8000
+ * Habitats: 1750 alloys from 1500 alloys
+
 # 2021/01/25
 
 Revisited the +X to leadership skills:
  * Max unmodified leadership is 4 from 5
- * Leadership cap of 10 has been removed
- * Enhanced Memory: +3 leadership cap from +2 instead of +10% Leader experience gain
+ * Leadership cap is now 15 from 10
 
-The combination of reducing max unmodified levels and increasing the leadership stats makes the traits more attractive.
+ Reducing the starting leadership cap and increasing the max cap increases the value of the leadership traits and venerable trait.
 
 Revisited the +X starbase civics:
- * Max unmodified starbases is reduced by 2
- * Trading Posts: +5 starbases from +4 and +1% energy credits removed
+ * Base unmodified starbases max cap is reduced to 2 from 3
+ * Starbase capacity system multiplier reduced to 0.08 from 0.10 (So for every 100 systems you will get +8 starbases instead of +10)
+ * Trading Posts: reverted back to normal
  
- The combination of reducing the number of available stations at game start and increasing the starbase civic bonuses makes the civics more attractive.
+ Reducing the number of available stations increases the value of the starbase civics, techs and ascension perks.
 
 # 2021/01/22
 
-The lastest addition to the patch is an anti-rush mechanic. At game start, every human played empire gets a temporary 10 year bonus:
+The lastest addition to the patch is an anti-rush mechanic. At game start, every human played empire gets a temporary 15 year bonus:
 
- * Starbase damage +25%
- * Starbase upgrade cost -25%
- * Defense platform build cost -25%
+ * Starbase damage +33%
+ * Starbase upgrade cost -33%
+ * Defense platform build cost -33%
  
 The purpose of this change is to:
 a) Encourage players to eliminate AIs first
@@ -41,10 +52,9 @@ https://www.youtube.com/watch?v=tE3G3pKodWI&ab_channel=StefanAnon
  * High Bandwitdh: +15% Empire Sprawl from +10%
 
 ### Boosts
- * Enhanced Memory: 10% leader experience gain
  * Recycled: -30% assembly cost from -20%
  * Streamlined Protocols: -15% Empire Sprawl from -10%
- * Uncanny: +1% energy from jobs
+ * Uncanny: +5% army damage
  * Custom made: -10% assembly speed from -15%
 
 # 2021/01/20
@@ -58,7 +68,12 @@ Having found that Stefan had his own Balance Mod our group took some time to inv
 ### Changes
  * Public Relations: reverted back to normal (Not OP in multiplayer)
  * Criminal Syndicate: adding additional boost of -10% branch office costs (Still too weak)
- * Indentured Assets: 35% enslaved pop ratio from 40%
+ * Indentured Assets: Slave jobs produce +7% from +10%
+
+## Standard Civics
+
+### Nerf
+ * Slaver Guilds: Slave jobs produce +7% from +10%
 
 ## Traditions
 
@@ -73,14 +88,16 @@ Having found that Stefan had his own Balance Mod our group took some time to inv
 
 ### Nerfs
  * Synthetic Ascension: +0% robot output from +10%
- * Technological Ascendency: +7% Research rate from +10%
+ * Technological Ascendency: +6% Research rate from +10%
+ * Voidborne: +10% habitat habitability from +20%
 
 ### Boosts
  * Synthetic Age: +5% Robot Production and Modify Species discount -66% from -33%
- * Defenders of the Galaxy: +10% diplomatic weight from Fleet size, +50% Damage to the Great Khan, +50 increased opinion with the other empires
- * Consecrated worlds: Colonized worlds can now be consecrated
- * Enigmatic Engineering: +4% research speed
- * Galactic Force Projection: +10% diplomatic weight from Fleet size, +10% sublight speed
+ * Defenders of the Galaxy: +10% diplomatic weight from Fleet size, +50% Damage to the Great Khan, +50 increased opinion with the other empires from 20
+ * Consecrated worlds: Colonized worlds can now be consecrated, influence cost +100 from +50
+ * Enigmatic Engineering: +6% research speed
+ * Galactic Force Projection: +10% diplomatic weight from Fleet size, +5% sublight speed, -5% Ship maintenance cost
+ * Interstellar dominion: -10% outpost cost and -40% influence claim cost from -20%
  * Transcendence: Similar to Stefan's
    ** duration of Shroud boons 10 years from 5 years
    ** Increased rate of success in the Shroud to 90% Green, 60% Yellow, and 30% Red
@@ -92,13 +109,16 @@ Having found that Stefan had his own Balance Mod our group took some time to inv
  * Xenophobe: +5%/10% pop growth from 10%/20% pop growth
 
 ### Boosts
- * Spiritualist: +3%/+5% Happiness
+ * Spiritualist: +15%/+30% unity from +10%/20% unit
  * Pacifist: -20%/-40% Empire sprawl from pop from -15%/-30%
 
 ## Traits
 
 ### Changes
- * Venerable: +3% social research instead of +1% engineering/social/physics
+ * Venerable: +2% social research instead of +1% engineering/social/physics
+ 
+### Boosts
+ * Repugnant: +5% army damage
 
 ## Standard Civics
 

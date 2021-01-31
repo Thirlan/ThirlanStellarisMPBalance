@@ -662,8 +662,8 @@
 
 		LEADER_POOL_SIZE		= 3				# Each leader pool will consist of this many leaders
 		LEADER_POOL_LEAD_TIME	= 10				# Years leaders will remain in the leader pool until replaced
-		LEADER_BASE_SKILL_CAP	= 5
-		LEADER_MAX_SKILL_CAP	= 10
+		LEADER_BASE_SKILL_CAP	= 4
+		LEADER_MAX_SKILL_CAP	= 15
 		LEADER_SKILL_MIN		= 1
 		LEADER_AGE_HEIR_MIN		= 18				# Min age of generated heirs in dynastic governments
 		LEADER_AGE_HEIR_MAX		= 26				# Max age of generated heirs in dynastic governments
@@ -983,8 +983,8 @@
 		NAVAL_CAPACITY_POP_MULT									= 0		# Mult value of Naval Capacity for each Pop
 
 		STARBASE_CAPACITY_MAX									= 999	# Max value of Starbase Capacity
-		STARBASE_CAPACITY_BASE 									= 3		# Base value of Starbase Capacity
-		STARBASE_CAPACITY_SYSTEM_MULT							= 0.10	# Mult value of Starbase Capacity for each owned system
+		STARBASE_CAPACITY_BASE 									= 2		# Base value of Starbase Capacity
+		STARBASE_CAPACITY_SYSTEM_MULT							= 0.08	# Mult value of Starbase Capacity for each owned system
 		STARBASE_CAPACITY_POP_MULT								= 0.00	# Mult value of Starbase Capacity for each Pop
 
 		STARBASE_BASE_LEVEL				= "starbase_level_outpost"		# The base starbase level

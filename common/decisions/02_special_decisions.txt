@@ -341,7 +341,7 @@ decision_consecrated_worlds = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 50
+			influence = 100
 		}
 	}
 
@@ -352,8 +352,6 @@ decision_consecrated_worlds = {
 			has_ascension_perk = ap_consecrated_worlds
 		}
 		is_star = no
-		habitable_structure = no
-		is_ringworld = no
 		NOR = {
 			has_planet_flag = consecrated@from
 			has_modifier = consecrated_quality_1
@@ -372,10 +370,6 @@ decision_consecrated_worlds = {
 				}
 			}
 			fail_text = consecrated_worlds_too_many
-		}
-		custom_tooltip = {
-			NOT = { exists = owner }
-			fail_text = consecrated_worlds_planet_owned
 		}
 	}
 
@@ -478,60 +472,6 @@ decision_consecrated_worlds = {
 						}
 					}
 					0 = {
-						add_modifier = {
-							modifier = consecrated_quality_3
-							days = -1
-						}
-						from = {
-							change_variable = {
-								which = consecrated_variable
-								value = 3
-							}
-						}
-					}
-					0 = {
-						add_modifier = {
-							modifier = consecrated_quality_4
-							days = -1
-						}
-						from = {
-							change_variable = {
-								which = consecrated_variable
-								value = 4
-							}
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = { uninhabitable_regular_planet = yes }
-				custom_tooltip = consecrated_worlds_unsuitable
-				random_list = {
-					10 = {
-						add_modifier = {
-							modifier = consecrated_quality_1
-							days = -1
-						}
-						from = {
-							change_variable = {
-								which = consecrated_variable
-								value = 1
-							}
-						}
-					}
-					70 = {
-						add_modifier = {
-							modifier = consecrated_quality_2
-							days = -1
-						}
-						from = {
-							change_variable = {
-								which = consecrated_variable
-								value = 2
-							}
-						}
-					}
-					20 = {
 						add_modifier = {
 							modifier = consecrated_quality_3
 							days = -1

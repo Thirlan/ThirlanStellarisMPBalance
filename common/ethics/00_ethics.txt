@@ -564,7 +564,7 @@ ethic_fanatic_xenophobe = {
 
 	country_modifier = {
 		country_starbase_influence_cost_mult = -0.4
-		pop_growth_speed = 0.20
+		pop_growth_speed = 0.10
 	}
 
 	random_weight = {
@@ -590,7 +590,7 @@ ethic_xenophobe = {
 
 	country_modifier = {
 		country_starbase_influence_cost_mult = -0.2
-		pop_growth_speed = 0.10
+		pop_growth_speed = 0.05
 	}
 
 	random_weight = {
@@ -1658,7 +1658,7 @@ ethic_fanatic_pacifist = {
 	}
 
 	country_modifier = {
-		empire_size_pops_mult = -0.30
+		empire_size_pops_mult = -0.40
 		planet_stability_add = 10
 	}
 
@@ -1677,7 +1677,7 @@ ethic_pacifist = {
 	fanatic_variant = ethic_fanatic_pacifist
 
 	country_modifier = {
-		empire_size_pops_mult = -0.15
+		empire_size_pops_mult = -0.20
 		planet_stability_add = 5
 	}
 
@@ -1936,7 +1936,7 @@ ethic_fanatic_spiritualist = {
 	}
 
 	country_modifier = {
-		country_unity_produces_mult = 0.20
+		country_unity_produces_mult = 0.30
 		edicts_cost_mult = -0.10
 	}
 
@@ -1958,7 +1958,7 @@ ethic_spiritualist = {
 	}
 
 	country_modifier = {
-		country_unity_produces_mult = 0.10
+		country_unity_produces_mult = 0.15
 		edicts_cost_mult = -0.05
 	}
 

@@ -3077,7 +3077,7 @@ tech_robotic_workers = {
 
 #Droids
 tech_droid_workers = {
-	cost = @tier2cost3
+	cost = @tier3cost1
 	area = engineering
 	tier = 2
 	category = { industry }

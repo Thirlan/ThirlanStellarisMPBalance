@@ -82,6 +82,7 @@ tr_domination_finish = {
 tr_domination_colonial_viceroys = {
 	modifier = {
 		governor_skill_levels = 2
+		envoys_add = 1
 	}
 
 	tradition_swap = {
@@ -163,6 +164,7 @@ tr_domination_grand_council = {
 
 	modifier = {
 		ruler_skill_levels = 2
+		country_leader_pool_size = 1
 	}
 
 	tradition_swap = {
