@@ -22,7 +22,7 @@ Also the following mod from Stefan's team (Magikaas, Aow, AirHunter, Stefan, Hoo
 ### Nerfs
  * Negotiate with crime lord: periodic check to see if crime is above 0. Otherwise it will be canceled
  * Robotic Workers Tech: Tech cost 4000 from 3000
- * Droids Tech: Tech cost 6000 from 8000
+ * Droids Tech: Tech cost 8000 from 6000
  * Habitats: 1750 alloys from 1500 alloys
  * Early Player military rush: All players (AIs not included) start with a passive 33% boost to starbase damage, -33% starbase upgrade cost, -33 defense platform build cost for the first 15 years of the game.
  
@@ -32,7 +32,7 @@ Also the following mod from Stefan's team (Magikaas, Aow, AirHunter, Stefan, Hoo
  * Leadership max cap: 15 from 10 (Increasing leadership cap makes all skill cap traits and techs more valuable)
  * Starbase capacity base amount: 2 from 3 (Boosts all starbase cap civics, ascensions and techs)
  * Starbase capacity system multiplier: 0.08 from 0.10 (Boosts all starbase cap civics, ascensions and techs)
- * Clerks: produce +0.1 administrative capacity
+ * Clerks: produce 2.2 trade from 2.0 and 2.2 amenities from 2.0
 
 ## Standard Civics
 
@@ -65,8 +65,8 @@ Also the following mod from Stefan's team (Magikaas, Aow, AirHunter, Stefan, Hoo
 ## Robot Civics
 
 ### Nerfs
- * Driven Assimilator: -10% energy credits
- * Rogue Servitor: -10% energy credits
+ * Driven Assimilator: -10% empire energy credits
+ * Rogue Servitor: -10% empire energy credits
  * Determined Exterminator: -25% starbase influence cost from -30%, +20% ship weapons damage from +25%, -12% ship build cost from 15%, +28% naval capacity from +33%
 
 ### Boosts

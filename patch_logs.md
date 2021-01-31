@@ -7,11 +7,11 @@
  * Byzantine Bureaucracy: reverted back to normal since clerks have been buffed a bit
 
 ### Nerfs
- * Droids Tech: Tech cost 6000 from 8000
+ * Droids Tech: Tech cost 8000 from 6000
  * Habitats: 1750 alloys from 1500 alloys
  
 ### Boosts
- * Clerks: clerks will now produce +0.1 administrative capacity and 2.2 trade value from 2.0
+ * Clerks: 2.2 trade value from 2.0 and 2.2 amenities from 2.0
 
 # 2021/01/25
 

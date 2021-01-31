@@ -1,17 +1,22 @@
 namespace = smbm
 
-event = {
+country_event = {
 	id = smbm.1
-	hide_window = yes
+	title = "In space. No one can hear you scream"
+	desc = "Prepare your defences for the hard cold realities of space. You do not know what lurks out there and you best prepare your defenses. Be careful, your defensive bonuses will only last a few years, make use of the time you have it."
+	
+	picture = GFX_evt_atmospheric_entry
+	show_sound = event_mystic_reveal
+	
+	fire_only_once = yes
+	
+	trigger = {is_ai = no}
 
-	is_triggered_only = yes
-
-	immediate = {
-		every_playable_country = {
-			add_modifier = {
-				modifier = be_careful_out_there
-				days = 3650
-			}
+	option = {
+		name = "Prepare yourself"
+		add_modifier = {
+			modifier = be_careful_out_there
+			days = 3650
 		}
 	}
 }
