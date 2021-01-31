@@ -789,10 +789,10 @@ civic_fanatic_purifiers = {
 
 	description = "civic_tooltip_fanatic_purifiers_effects"
 	modifier = {
-		ship_fire_rate_mult = 0.28
-		army_damage_mult = 0.28
-		starbase_shipyard_build_cost_mult = -0.12
-		country_naval_cap_mult = 0.28
+		ship_fire_rate_mult = 0.25
+		army_damage_mult = 0.25
+		starbase_shipyard_build_cost_mult = -0.10
+		country_naval_cap_mult = 0.25
 	}
 }
 
