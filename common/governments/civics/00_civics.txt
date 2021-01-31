@@ -233,12 +233,6 @@ civic_technocracy = {
 		}
 	}
 	random_weight = { base = 5 }
-	
-	modifier = {
-		country_minerals_produces_mult = -0.01
-		country_energy_produces_mult = -0.01
-		country_food_produces_mult = -0.01
-	}
 }
 
 civic_feudal_realm = {
