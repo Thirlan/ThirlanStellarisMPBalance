@@ -1,4 +1,4 @@
-# Version 0.0.2
+# Version 0.0.3
 
 ## Source
 
@@ -10,22 +10,36 @@ Following videos were used to determine those mechanics that needed to be balanc
 * https://www.youtube.com/watch?v=roho0r8PGkw&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=xg1dRRd38UQ&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=-VrM722vlnU&ab_channel=StefanAnon
+* https://www.youtube.com/watch?v=tE3G3pKodWI&ab_channel=StefanAnon
+* https://www.youtube.com/watch?v=KVNfWhXovXA&ab_channel=StefanAnon
+
+Also the following mod from Stefan's team (Magikaas, Aow, AirHunter, Stefan, Hoover Tesla) helped tremendously for inspiration and learning.
+
+* https://steamcommunity.com/sharedfiles/filedetails/?id=2279069500&searchtext=stefan
 
 ## Min-Max tweaks
 
 ### Nerfs
- * Negotiate with crime lord: planet crime >= 15 from planet crime >= 10 and 35 influence from 25
+ * Negotiate with crime lord: periodic check to see if crime is above 0. Otherwise it will be canceled
  * Robotic Workers Tech: Tech cost 4000 from 3000
+ * Droids Tech: Tech cost 6000 from 8000
+ * Habitats: 1750 alloys from 1500 alloys
+ * Early Player military rush: All players (AIs not included) start with a passive 33% boost to starbase damage, -33% starbase upgrade cost, -33 defense platform build cost for the first 15 years of the game.
  
 ### Boosts
  * Gene Clinics: healthcare worker +8% pop growth from +5%
+ * Base Leader skill cap: 4 from 5 (Reduction in base cap makes all skill cap traits and techs more valuable)
+ * Leadership max cap: 15 from 10 (Increasing leadership cap makes all skill cap traits and techs more valuable)
+ * Starbase capacity base amount: 2 from 3 (Boosts all starbase cap civics, ascensions and techs)
+ * Starbase capacity system multiplier: 0.08 from 0.10 (Boosts all starbase cap civics, ascensions and techs)
 
 ## Standard Civics
 
 ### Nerfs
- * Fanatic Purifier: Ship Fire Rate, Army Damage, Naval Capacity 28% from 33% and Ship Build cost 12% from 15%
- * Technocracy: -1% Energy/Food/Mineral production
+ * Fanatic Purifier: Ship Fire Rate, Army Damage, Naval Capacity 25% from 33% and Ship Build cost 10% from 15%
+ * Technocracy: 0.5 unity from 1.0
  * Meritocracy: leader cap level +0 from +1
+ * Slaver Guilds: Slave jobs produce +7% from +10%
 
 ### Boosts
  * Philosopher King: Edict Capacity +1
@@ -65,12 +79,10 @@ Following videos were used to determine those mechanics that needed to be balanc
 ## Megacorp Civics
 
 ### Nerfs
- * Indentured Assets: 35% enslaved pop ratio from 40%
- * Public Relations: +5% diplomatic weight from +10%
+ * Indentured Assets: Slave jobs produce +7% from +10%
 
 ### Boosts
- * Criminal Syndicate: +5% diplomatic weight
- * Trading Posts: +1% energy credits, +3 starbases from +4
+ * Criminal Syndicate: +5% diplomatic weight and -10% branch office costs
  * Ruthless competition: +15% leader experience gain from +10%
  * Franchising: -30% empire sprawl from branch office from -25%, -40% country subject power penalty from -33%
  * Media Conglomerate: +5% diplomatic weight
@@ -79,8 +91,8 @@ Following videos were used to determine those mechanics that needed to be balanc
 
 ### Nerfs
  * Void dwellers: 10% production multipliers from 15%
- * Shattered Ring: -5% Habitability bonus, decrepit tunnels 3 blocker removal cost 1500 energy from 500
- * Scion: -5% Unity and -10% Ethics attraction
+ * Shattered Ring: gestalts can no longer pick this origin and +100% starbase influence/claim cost (This makes the shattered ring the single system origin).
+ * Scion: -5% Unity, -5% happiness and -20% Ethics attraction
  
 ### Boosts
  * Common Ground: +5 stability
@@ -96,7 +108,7 @@ Following videos were used to determine those mechanics that needed to be balanc
 
 ### Boosts
  * Docile: -15% Empire Sprawl from -10%
- * Resilient: +100% defensive army damage from 50%
+ * Resilient: +100% defensive army damage from 50% and 50% defensive army health
  * Conformist: +5% happiness and 25% Government Ethics attraction from 30%
  * Venerable: +2% unity, +1% engineering/social/physics research and +70 years from +80 years
  * Very Strong: +60% Army damage and +6.25% resources from 40% army damage and +5% resources
@@ -104,4 +116,17 @@ Following videos were used to determine those mechanics that needed to be balanc
  * Talented: +2 level cap from +1 level cap
  * Quarrelsome: -5% Unity from jobs from -10%
  * Nonadaptive: -5% habitability from -10%
- * Repugnant: not possible to modify
+ * Repugnant: +5% army damage
+ 
+## Robot Traits:
+
+### Nerfs
+ * Mass Produced: +10% assembly speed from +15%
+ * Emotion Emulator: -1% energy from jobs
+ * High Bandwitdh: +15% Empire Sprawl from +10%
+
+### Boosts
+ * Recycled: -30% assembly cost from -20%
+ * Streamlined Protocols: -15% Empire Sprawl from -10%
+ * Uncanny: +5% army damage
+ * Custom made: -10% assembly speed from -15%

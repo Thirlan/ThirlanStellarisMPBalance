@@ -502,6 +502,7 @@ trait_resilient = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
 		army_defense_damage_mult = 1.0
+		army_defense_health_mult = 0.5
 	}
 }
 

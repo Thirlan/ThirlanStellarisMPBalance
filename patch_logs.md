@@ -63,17 +63,16 @@ https://www.youtube.com/watch?v=tE3G3pKodWI&ab_channel=StefanAnon
 
 Having found that Stefan had his own Balance Mod our group took some time to investigate it. Ultimately Stefan's balance mod would be considered a complete overhaul of the game and not a simple balance patch. As such there is still a desire to approach the game with a simpler patch. Stefan's mod has plenty of ideas and interesting ways to balance things and as such some of these ideas have been incorporated here.
 
+Also, this video helped to rethink the shattered ring:
+
+ * https://www.youtube.com/watch?v=KVNfWhXovXA&ab_channel=StefanAnon
+
 ## Megacorp Civics
 
 ### Changes
  * Public Relations: reverted back to normal (Not OP in multiplayer)
  * Criminal Syndicate: adding additional boost of -10% branch office costs (Still too weak)
  * Indentured Assets: Slave jobs produce +7% from +10%
-
-## Standard Civics
-
-### Nerf
- * Slaver Guilds: Slave jobs produce +7% from +10%
 
 ## Traditions
 
@@ -116,6 +115,7 @@ Having found that Stefan had his own Balance Mod our group took some time to inv
 
 ### Changes
  * Venerable: +2% social research instead of +1% engineering/social/physics
+ * Resilience: +50% defense army health (Was still too weak)
  
 ### Boosts
  * Repugnant: +5% army damage
@@ -124,7 +124,16 @@ Having found that Stefan had his own Balance Mod our group took some time to inv
 
 ### Changes
  * Fanatic Purifier: Ship Fire Rate, Army Damage, Naval Capacity 25% from 33% and Ship Build cost 10% from 15% (Still too powerful)
+ * Technocracy: 0.5 unity from 1.0 (Same as Stefan's)
 
+### Nerf
+ * Slaver Guilds: Slave jobs produce +7% from +10%
+
+## Origin:
+
+### Changes
+ * Shattered Ring: gestalts can no longer pick this origin and +100% starbase influence/claim cost (This makes the shattered ring the single system origin)
+ * Scion: -20% Ethics attraction from -10% and -5% happiness (was still too strong)
 
 # 2021/01/09
 

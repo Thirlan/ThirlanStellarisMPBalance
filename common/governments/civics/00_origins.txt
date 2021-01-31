@@ -254,11 +254,13 @@ origin_shattered_ring = {
 	}
 
 	possible = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
 		civics = { NOT = { value = civic_agrarian_idyll } }
 	}
 
 	modifier = {
-		pop_environment_tolerance = -0.05
+		country_starbase_influence_cost_mult = 1.00
+		country_claim_influence_cost_mult = 1.00
 	}
 	
 	description = "origin_tooltip_shattered_ring_effects"
@@ -329,8 +331,9 @@ origin_scion = {
 	}
 	
 	modifier = {
-		pop_government_ethic_attraction = -0.10
+		pop_government_ethic_attraction = -0.20
 		planet_jobs_unity_produces_mult = -0.05
+		pop_happiness = -0.05
 	}
 	
 	description = "origin_tooltip_scion_effects"
