@@ -20,7 +20,7 @@ Also the following mod from Stefan's team (Magikaas, Aow, AirHunter, Stefan, Hoo
 ## Min-Max tweaks
 
 ### Nerfs
- * Negotiate with crime lord: periodic check to see if crime is above 0. Otherwise it will be canceled
+ * Negotiate with crime lord: Period event with 1% probability every month to cause a spike in crime if crime lord deal exists on a planet
  * Robotic Workers Tech: Tech cost 4000 from 3000
  * Droids Tech: Tech cost 8000 from 6000
  * Habitats: 1750 alloys from 1500 alloys
@@ -28,11 +28,15 @@ Also the following mod from Stefan's team (Magikaas, Aow, AirHunter, Stefan, Hoo
  
 ### Boosts
  * Gene Clinics: healthcare worker +8% pop growth from +5%
- * Base Leader skill cap: 4 from 5 (Reduction in base cap makes all skill cap traits and techs more valuable)
- * Leadership max cap: 15 from 10 (Increasing leadership cap makes all skill cap traits and techs more valuable)
- * Starbase capacity base amount: 2 from 3 (Boosts all starbase cap civics, ascensions and techs)
- * Starbase capacity system multiplier: 0.08 from 0.10 (Boosts all starbase cap civics, ascensions and techs)
+ * Base Leader skill cap: 4 from 5 (Reduction in base cap makes all skill cap traits, techs and ascension perks more valuable)
+ * Leadership max cap: 15 from 10 (Increasing leadership cap makes all skill cap traits, techs and ascension perks more valuable)
+ * Starbase capacity base amount: 2 from 3 (Reducing starting starbases makes all starbase cap civics, ascensions and techs more valuable)
+ * Starbase capacity system multiplier: 0.08 from 0.10 (Reducing starbases makes all starbase cap civics, ascensions and techs more valuable)
  * Clerks: produce 2.2 trade from 2.0 and 2.2 amenities from 2.0
+ * Crime/Deviancy per pop: 2.1 from 2
+   ** Increasing crime slightly makes slavery less valuable
+   ** Increasing crime slightly makes enforcers more required, which reduces tech snowball
+   ** Increasing crime slightly makes Negotiate with Crime lord less valuable as an exploit
 
 ## Standard Civics
 

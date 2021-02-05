@@ -1,0 +1,7 @@
+	NGameplay = {
+		LEADER_BASE_SKILL_CAP			= 4
+		LEADER_MAX_SKILL_CAP			= 15
+		STARBASE_CAPACITY_BASE 			= 2		# Base value of Starbase Capacity
+		STARBASE_CAPACITY_SYSTEM_MULT	= 0.08	# Mult value of Starbase Capacity for each owned system
+		POP_CRIME						= 2.1		# From each pop with happiness (scaled inversely to happiness)
+	}

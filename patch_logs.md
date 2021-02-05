@@ -3,8 +3,12 @@
 ## Min-Max tweaks
 
 ### Changes
- * Negotiate with crime lord: will behave like Stefan's balance mod. Periodic check to see if crime is above 0. Otherwise it will cancel it.
+ * Negotiate with crime lord: A new event will occur with 1% probability every month for every planet that has negotiate with crime lord. The event will cause a crime spike that reduces stability by 5 and increases crime.
  * Byzantine Bureaucracy: reverted back to normal since clerks have been buffed a bit
+ * Crime/Deviancy per pop: 2.1 from 2
+   ** Increasing crime slightly makes slavery less valuable
+   ** Increasing crime slightly makes enforcers more required, which reduces tech snowball
+   ** Increasing crime slightly makes Negotiate with Crime lord less valuable as an exploit
 
 ### Nerfs
  * Droids Tech: Tech cost 8000 from 6000
