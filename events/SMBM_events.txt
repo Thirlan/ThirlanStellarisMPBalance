@@ -2,8 +2,8 @@ namespace = smbm
 
 country_event = {
 	id = smbm.1
-	title = "Prepare yourself"
-	desc = "Prepare your defences for the hard cold realities of space. Not knowing what lurks out there it would be best to prepare your defenses. Be careful, your defensive bonuses will only last a few years."
+	title = smbm.1.name
+	desc = smbm.1.desc
 	
 	picture = GFX_evt_space_station
 	show_sound = event_default
@@ -31,7 +31,7 @@ planet_event = {
 	hide_window = yes
 	
 	mean_time_to_happen = {
-		months = 1
+		months = 12
 	}
 	
 	trigger = {
@@ -40,8 +40,21 @@ planet_event = {
 	
 	immediate {
 		random_list = {
-			1 = { planet_event = { id = smbm.3 } }
-			99 = {
+			2 = {
+				modifier = {
+					factor = 0
+					has_modifier = criminal_underworld
+				}
+				planet_event = { id = smbm.3 }
+			}
+			4 = {
+				modifier = {
+					factor = 0
+					has_modifier = crime_wave
+				}
+				planet_event = { id = smbm.4 }
+			}
+			94 = {
 				# Do nothing
 			}
 		}
@@ -50,8 +63,29 @@ planet_event = {
 
 planet_event = {
 	id = smbm.3
-	title = "Arrogant Crime Lords"
-	desc = "The crime lords have become arrogant in their actions. They have pushed the boundaries of the deals we signed with them and are now frequently operating in its grey zones. This has unfortunately resulted in a crime wave."
+	title = smbm.3.name
+	desc = smbm.3.desc
+	
+	picture = GFX_evt_dark_alley
+	show_sound = event_criminal_activity
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = { planet_event = { id = crime.40 days = 30 } }
+		remove_modifier = crime_lord_deal
+		add_modifier = { modifier = "crime_lord_deal_broken" days = 1800 }
+	}
+	
+	option = {
+		name = smbm.3.option
+	}
+}
+
+planet_event = {
+	id = smbm.4
+	title = smbm.4.name
+	desc = smbm.4.desc
 	
 	picture = GFX_evt_dark_alley
 	show_sound = event_criminal_activity
@@ -67,7 +101,7 @@ planet_event = {
 	}
 	
 	option = {
-		name = "We should have known"
+		name = smbm.4.option
 		tooltip = {
 			add_modifier = { modifier = crime_wave days = 3600 }
 		}

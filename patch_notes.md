@@ -20,11 +20,13 @@ Also the following mod from Stefan's team (Magikaas, Aow, AirHunter, Stefan, Hoo
 ## Min-Max tweaks
 
 ### Nerfs
- * Negotiate with crime lord: Period event with 1% probability every month to cause a spike in crime if crime lord deal exists on a planet
+ * Negotiate with crime lord: New events have a chance of occuring every year for every planet that has negotiated with crime lord. The event will cause the following:
+  ** 4% chance: Crime wave event
+  ** 2% chance: End of crime lord deal and Criminal Underworld event. Criminal Underworld can stack with Crime Wave.
  * Robotic Workers Tech: Tech cost 4000 from 3000
  * Droids Tech: Tech cost 8000 from 6000
  * Habitats: 1750 alloys from 1500 alloys
- * Early Player military rush: All players (AIs not included) start with a passive 33% boost to starbase damage, -33% starbase upgrade cost, -33 defense platform build cost for the first 15 years of the game.
+ * Be careful out there: All players (AIs not included) start with a passive 33% boost to starbase damage, -33% starbase upgrade cost, -33 defense platform build cost for the first 15 years of the game.
  
 ### Boosts
  * Gene Clinics: healthcare worker +8% pop growth from +5%
@@ -37,6 +39,15 @@ Also the following mod from Stefan's team (Magikaas, Aow, AirHunter, Stefan, Hoo
    ** Increasing crime slightly makes slavery less valuable
    ** Increasing crime slightly makes enforcers more required, which reduces tech snowball
    ** Increasing crime slightly makes Negotiate with Crime lord less valuable as an exploit
+
+## Traditions
+
+### Nerfs
+ * New Life (Expansion tree): +5% pop growth from +10%
+ 
+### Boosts
+ * Colonial Viceroys (Domination): +1 Envoy for normal empires / +10% leader experience for gestalt empires
+ * Privy Council (Domination): +1 Leader Pool size
 
 ## Standard Civics
 
@@ -95,7 +106,6 @@ Also the following mod from Stefan's team (Magikaas, Aow, AirHunter, Stefan, Hoo
 
 ### Nerfs
  * Void dwellers: 10% production multipliers from 15%
- * Shattered Ring: gestalts can no longer pick this origin and +100% starbase influence/claim cost (This makes the shattered ring the single system origin).
  * Scion: -5% Unity, -5% happiness and -20% Ethics attraction
  
 ### Boosts
@@ -134,3 +144,11 @@ Also the following mod from Stefan's team (Magikaas, Aow, AirHunter, Stefan, Hoo
  * Streamlined Protocols: -15% Empire Sprawl from -10%
  * Uncanny: +5% army damage
  * Custom made: -10% assembly speed from -15%
+
+## Lithoid Traits
+
+### Boosts:
+
+ * Scintillating Skin: +0.02 Rare crystals from +0.01
+ * Gaseous Byproduct: +0.02 Exotic gases from +0.01
+ * Volatile Excretion skin: +0.02 Volatile motes from +0.01

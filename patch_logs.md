@@ -1,9 +1,27 @@
+# 2021/02/06
+
+## Origins
+
+### Changes
+
+ * shattered ring origin: Removing from mod since Dev diaries indicate they will be nerfing it.
+
+## Lithoid Traits
+
+### Boosts:
+
+ * Scintillating Skin: +0.02 Rare crystals from +0.01
+ * Gaseous Byproduct: +0.02 Exotic gases from +0.01
+ * Volatile Excretion skin: +0.02 Volatile motes from +0.01
+
 # 2021/01/31
 
 ## Min-Max tweaks
 
 ### Changes
- * Negotiate with crime lord: A new event will occur with 1% probability every month for every planet that has negotiate with crime lord. The event will cause a crime spike that reduces stability by 5 and increases crime.
+ * Negotiate with crime lord: New events have a chance of occuring every year for every planet that has negotiated with crime lord. The event will cause the following:
+  ** 4% chance: Crime wave event
+  ** 2% chance: End of crime lord deal and Criminal Underworld event
  * Byzantine Bureaucracy: reverted back to normal since clerks have been buffed a bit
  * Crime/Deviancy per pop: 2.1 from 2
    ** Increasing crime slightly makes slavery less valuable
@@ -88,7 +106,7 @@ Also, this video helped to rethink the shattered ring:
  * New Life (Expansion tree): +5% pop growth from +10%
  
 ### Boosts
- * Colonial Viceroys (Domination): +1 Envoy
+ * Colonial Viceroys (Domination): +1 Envoy for normal empires / +10% leader experience for gestalt empires
  * Privy Council (Domination): +1 Leader Pool size
 
 ## Ascension Perks
@@ -156,7 +174,6 @@ The following videos help to explain the rational behind the balances:
 ## Min-Max tweaks
 
 ### Nerfs
- * Negotiate with crime lord: planet crime >= 15 from planet crime >= 10 and 35 influence from 25
  * Robotic Workers Tech: Tech cost 4000 from 3000
  
 ### Boosts

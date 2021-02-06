@@ -1,0 +1,108 @@
+origin_scion = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_scion_1.dds"
+	picture = GFX_origin_scion
+	max_once_global = yes
+
+	playable = {
+		host_has_dlc = Federations
+	}
+
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_gestalt_consciousness
+				#value = ethic_xenophobe
+				value = ethic_fanatic_xenophobe
+			}
+		}
+	}
+	
+	modifier = {
+		pop_government_ethic_attraction = -0.20
+		planet_jobs_unity_produces_mult = -0.05
+		pop_happiness = -0.05
+	}
+	
+	description = "origin_tooltip_scion_effects"
+	flags = { custom_start_screen }
+
+	random_weight = {
+		base = 0
+		modifier = {
+			factor = 2
+			num_fallen_empires_setting >= 1
+		}
+	}
+}
+
+origin_galactic_doorstep = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_gateway.dds"
+	picture = GFX_origin_galactic_doorstep
+	max_once_global = yes
+
+	playable = {
+		always = yes
+	}
+
+	possible = {
+	}
+
+	modifier = {
+		planet_jobs_physics_research_produces_mult = 0.05
+	}
+	
+	description = "origin_tooltip_galactic_doorstep_effects"
+	flags = { custom_start_screen }
+
+	traits = {
+	}
+
+	random_weight = {
+		base = 1
+	}
+
+}
+
+origin_common_ground = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_common_ground.dds"
+	picture = GFX_origin_common_ground
+	max_once_global = yes
+
+	playable = {
+		host_has_dlc = "Federations"
+	}
+
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_gestalt_consciousness
+				value = ethic_xenophobe
+				value = ethic_fanatic_xenophobe
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_barbaric_despoilers
+				value = civic_fanatic_purifiers
+				value = civic_inwards_perfection
+			}
+		}
+	}
+
+	modifier = {
+		planet_stability_add = 5
+	}
+	
+	description = "origin_tooltip_common_ground_effects"
+	flags = { custom_start_screen }
+
+	traits = {
+	}
+
+	random_weight = {
+		base = 5
+	}
+}
