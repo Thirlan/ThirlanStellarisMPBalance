@@ -24,7 +24,7 @@ country_event = {
 	}
 }
 
-# Planet even that constantly checks if Crime Lord Deal is active and if so
+# Planet event that constantly checks if Crime Lord Deal is active and if so
 # Randomly decides if this should cause a crime wave.
 planet_event = {
 	id = smbm.2

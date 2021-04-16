@@ -12,11 +12,6 @@ tr_domination_colonial_viceroys = {
 		trigger = {
 			is_machine_empire = yes
 		}
-		
-		modifier = {
-			governor_skill_levels = 2
-			species_leader_exp_gain = 0.10
-		}
 
 		weight = {
 			factor = 1
@@ -30,11 +25,6 @@ tr_domination_colonial_viceroys = {
 		inherit_name = no
 		trigger = {
 			is_hive_empire = yes
-		}
-		
-		modifier = {
-			governor_skill_levels = 2
-			species_leader_exp_gain = 0.10
 		}
 
 		weight = {

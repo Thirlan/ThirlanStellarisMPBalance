@@ -50,7 +50,7 @@ origin_galactic_doorstep = {
 	}
 
 	modifier = {
-		planet_jobs_physics_research_produces_mult = 0.05
+		country_physics_research_produces_mult = 0.05
 	}
 	
 	description = "origin_tooltip_galactic_doorstep_effects"

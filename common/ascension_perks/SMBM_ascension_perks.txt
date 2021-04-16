@@ -1,105 +1,4 @@
 
-ap_enigmatic_engineering = {
-	potential = {
-		host_has_dlc = "Apocalypse"
-		NOT = {
-			has_ascension_perk = ap_enigmatic_engineering
-		}
-	}
-
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_1"
-			num_ascension_perks > 0
-		}
-	}
-
-	on_enabled = {
-		custom_tooltip = "no_rev_engineering"
-	}
-
-	modifier = {
-		ship_sensor_range_add = 2
-		ship_hyperlane_range_add = 4
-		all_technology_research_speed = 0.06
-	}
-
-	ai_weight = {
-		factor = 10
-		modifier = {
-			factor = 2
-			has_ethic = ethic_materialist
-		}
-		modifier = {
-			factor = 3
-			has_ethic = ethic_fanatic_materialist
-		}
-	}
-}
-
-ap_synthetic_evolution = {
-	on_enabled = {
-		custom_tooltip = "synthetic_evolution_tooltip"
-		if = {
-			limit = {
-				has_origin = origin_necrophage
-				has_trait = trait_necrophage
-			}
-			custom_tooltip = disables_necrophage_features
-		}
-		hidden_effect = {
-			country_event = { id = utopia.2550 }
-		}
-	}
-	modifier = {
-		ROBOT_species_trait_points_add = 1
-		modify_species_cost_mult = -0.50
-	}
-	possible = {
-		custom_tooltip = {
-			fail_text = "synthetic_empire_synthetic_ascension"
-			NOT = { has_trait = trait_mechanical }
-		}
-		custom_tooltip = {
-			fail_text = "hive_mind_biological_ascension_only2"
-			NOT = { has_authority = auth_hive_mind }
-		}
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_2"
-			num_ascension_perks > 1
-		}
-		custom_tooltip = {
-			fail_text = "requires_technology_synthetic_workers"
-			has_technology = tech_synthetic_workers
-		}
-		custom_tooltip = {
-			fail_text = "requires_technology_synthetic_leaders"
-			has_technology = tech_synthetic_leaders
-		}
-		custom_tooltip = {
-			fail_text = "requires_ap_the_flesh_is_weak"
-			has_ascension_perk = ap_the_flesh_is_weak
-		}
-		custom_tooltip = {
-			fail_text = "requires_finished_cybernetics_project"
-			NOT = { has_special_project = FLESH_IS_WEAK_PROJECT }
-		}
-	}
-
-	potential = {
-		host_has_dlc = "Utopia"
-		NOT = {
-			has_ascension_perk = ap_synthetic_evolution
-			has_authority = "auth_machine_intelligence"
-		}
-		is_mechanical_empire = no
-	}
-
-	ai_weight = {
-		factor = 100
-	}
-}
-
 ap_galactic_force_projection = {
 	possible = {
 		custom_tooltip = {
@@ -139,6 +38,10 @@ ap_galactic_force_projection = {
 			factor = 3
 			has_ethic = ethic_fanatic_militarist
 		}
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_become_the_crisis
+		}
 	}
 }
 
@@ -157,6 +60,7 @@ ap_defender_of_the_galaxy = {
 		damage_vs_country_type_extradimensional_3_mult = 0.5
 		damage_vs_country_type_ai_empire_mult = 0.5
 		damage_vs_country_type_gray_goo_mult = 0.5
+		damage_vs_player_crisis_mult = 0.5
 		damage_vs_country_type_awakened_marauders_mult = 0.5
 		diplo_weight_naval_mult = 0.1
 	}
@@ -183,7 +87,6 @@ ap_defender_of_the_galaxy = {
 		}
 	}
 }
-
 
 ap_interstellar_dominion = {
 	modifier = {
@@ -239,64 +142,6 @@ ap_technological_ascendancy = {
 	}
 }
 
-ap_voidborn = {
-	potential = {
-		host_has_dlc = "Utopia"
-		NOT = {
-			has_ascension_perk = ap_voidborn
-		}
-	}
-
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_technology_habitat_1"
-			has_technology = tech_habitat_1
-		}
-	}
-
-	on_enabled = {
-		if = {
-			limit = {
-				is_gestalt = no
-			}
-			custom_tooltip = "ap_voidborn_habitat_effect"
-		}
-		if = {
-			limit = {
-				NOT = { has_technology = tech_habitat_2 }
-			}
-			add_research_option = tech_habitat_2
-			custom_tooltip = "add_research_options_voidborn"
-		}
-		if = {
-			limit = {
-				has_technology = tech_habitat_2
-				NOT = { has_technology = tech_habitat_3 }
-			}
-			add_research_option = tech_habitat_3
-		}
-	}
-
-	modifier = {
-		pc_habitat_habitability = 0.1
-	}
-
-	ai_weight = {
-		factor = 10
-		modifier = {
-			factor = 2
-			has_ethic = ethic_pacifist
-		}
-		modifier = {
-			factor = 3
-			OR = {
-				has_ethic = ethic_fanatic_pacifist
-				has_origin = origin_void_dwellers
-			}
-		}
-	}
-}
-
 ap_synthetic_age = {
 	modifier = {
 		MACHINE_species_trait_points_add = 2
@@ -318,7 +163,6 @@ ap_synthetic_age = {
 			OR = {
 				has_technology = tech_robomodding_m
 				has_technology = tech_robomodding
-			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_ascension_perks_2"

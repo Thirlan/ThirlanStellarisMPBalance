@@ -10,20 +10,22 @@ civic_hive_divided_attention = {
 	}
 }
 
+civic_hive_strength_of_legions = {
+	potential = { authority = { value = auth_hive_mind } }
+	random_weight = { base = 5 }
+	modifier = {
+		army_starting_experience_add = 100
+		army_damage_mult = 0.20
+		army_health = 0.2
+		armies_upkeep_mult = -0.20
+	}
+}
+
 civic_hive_subsumed_will = {
 	potential = { authority = { value = auth_hive_mind } }
 	random_weight = { base = 5 }
 	modifier = {
 		empire_size_pops_mult = -0.25
-	}
-}
-
-civic_hive_pooled_knowledge = {
-	potential = { authority = { value = auth_hive_mind } }
-	random_weight = { base = 5 }
-	modifier = {
-		leader_skill_levels = 1
-		species_leader_exp_gain = 0.20
 	}
 }
 
@@ -198,5 +200,22 @@ civic_machine_zero_waste_protocols = {
 	random_weight = { base = 5 }
 	modifier = {
 		planet_pops_robotics_upkeep_mult = -0.15
+	}
+}
+
+civic_machine_warbots = {
+	potential = {
+		authority = {
+			OR = {
+				value = auth_ancient_machine_intelligence
+				value = auth_machine_intelligence
+			}
+		}
+	}
+	random_weight = { base = 5 }
+	modifier = {
+		army_damage_mult = 0.2
+		army_health = 0.2
+		armies_upkeep_mult = -0.2
 	}
 }

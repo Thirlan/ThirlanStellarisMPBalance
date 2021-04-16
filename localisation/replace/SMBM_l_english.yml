@@ -23,15 +23,15 @@
  tr_expansion_a_new_life_desc:3 "£pops£ §Y$MOD_POP_GROWTH_SPEED$§! increased by §G+5%§!."
  tr_domination_colonial_viceroys_desc:0 "§Y$MOD_LEADER_GOVERNOR_SKILL_LEVELS$§! increased by §Y2§! and §G+1§! §Y$MOD_COUNTRY_ENVOYS_ADD$§."
  tr_domination_grand_council_desc:0 "§Y$MOD_LEADER_RULER_SKILL_LEVELS$§! increased by §Y2§! and §G+1§! §Y$MOD_COUNTRY_LEADER_POOL_SIZE$§."
- tr_domination_colonial_viceroys_hive_desc:0 "§Y$MOD_LEADER_GOVERNOR_SKILL_LEVELS$§! increased by §Y2§! and §G+10%§! §Y$MOD_LEADER_SPECIES_EXP_GAIN$§."
-  tr_domination_colonial_viceroys_machine_desc:0 "§Y$MOD_LEADER_GOVERNOR_SKILL_LEVELS$§! increased by §Y2§! and §G+10%§! §Y$MOD_LEADER_SPECIES_EXP_GAIN$§."
+ tr_domination_colonial_viceroys_hive_desc:0 "§Y$MOD_LEADER_GOVERNOR_SKILL_LEVELS$§! increased by §Y2§! and §G+1§! §Y$MOD_COUNTRY_ENVOYS_ADD$§."
+  tr_domination_colonial_viceroys_machine_desc:0 "§Y$MOD_LEADER_GOVERNOR_SKILL_LEVELS$§! increased by §Y2§! and §G+1§! §Y$MOD_COUNTRY_ENVOYS_ADD$§."
 
 # CUSTOM SMBM EVENTS
  be_careful_out_there:0 "Be careful out there"
  be_careful_out_there_desc:0 "We should prepare for all possibilities, including war."
 
  smbm.1.name:0 "Prepare yourself"
- smbm.1.desc:0 "Prepare your defences for the hard cold realities of space. Not knowing what lurks out there it would be best to prepare your defenses. Be careful, your defensive bonuses will only last a few years."
+ smbm.1.desc:0 "Prepare for the cold hard realities of space. Not knowing what lurks out there it would be best to increase your defenses. Be careful, your defensive bonuses will only last a few years."
 
  smbm.3.name:0 "We have altered the deal..."
  smbm.3.desc:0 "The crime lords no longer seem to care about our deal and brazenly violate it. They have begun to establish a powerful criminal underground. We should prepare for the worst."
