@@ -128,7 +128,7 @@ country_event = {
 	immediate = {
 		add_modifier = {
 			modifier = unholy_matrimony
-			days = 0
+			days = -1
 		}
 	}
 
