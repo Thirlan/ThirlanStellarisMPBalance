@@ -12,8 +12,8 @@
 
 ### Nerfs
  * Negotiate with crime lord: New events have a chance of occuring every year for every planet that has negotiated with crime lord. The event will cause the following:
-  ** 4% chance: Crime wave event
-  ** 2% chance: End of crime lord deal and Criminal Underworld event. Criminal Underworld can stack with Crime Wave.
+     * 4% chance: Crime wave event
+     * 2% chance: End of crime lord deal and Criminal Underworld event. Criminal Underworld can stack with Crime Wave.
  * Unholy Matrimony: New event at game start that will give a -20% purge speed penalty to players who play with Necrophage and Fanatical Purifier
  
 ### Boosts
