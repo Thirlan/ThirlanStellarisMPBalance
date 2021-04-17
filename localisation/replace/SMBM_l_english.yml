@@ -40,3 +40,7 @@
  smbm.4.name:0 "Arrogant Crime Lords"
  smbm.4.desc:0 "The crime lords have become arrogant in their actions. They have pushed the boundaries of the deals we signed with them and are now frequently operating in its grey zones. This has unfortunately resulted in a crime wave."
  smbm.4.option:0 "We should have known"
+ 
+ smbm.5.name:0 "Unholy Matrimony"
+ smbm.5.desc:0 "Your dark arts of the Necrophages combined with the fervor Fanatical Purification has created a monstrosity that shouldn't have been. For this power you will of course pay a small price. Your ability to purge has been slown by §R-20%§."
+ smbm.5.option:0 "Very well..."

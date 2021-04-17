@@ -14,6 +14,7 @@
  * Negotiate with crime lord: New events have a chance of occuring every year for every planet that has negotiated with crime lord. The event will cause the following:
   ** 4% chance: Crime wave event
   ** 2% chance: End of crime lord deal and Criminal Underworld event. Criminal Underworld can stack with Crime Wave.
+ * Unholy Matrimony: New event at game start that will give a -20% purge speed penalty to players who play with Necrophage and Fanatical Purifier
  
 ### Boosts
  * Base Leader skill cap: 4 from 5
@@ -42,7 +43,6 @@
  * New Life (Expansion tree): +5% pop growth from +10%
  
 ### Boosts
- * Colonial Viceroys (Domination): +1 Envoy
  * Privy Council (Domination): +1 Leader Pool size
 
 ## Standard Civics
@@ -73,12 +73,10 @@
 ## Robot Civics
 
 ### Nerfs
- * Driven Assimilator: -10% empire energy credits
+ * Driven Assimilator: -5% empire energy credits and -10% purge speed
  * Rogue Servitor: -10% empire energy credits
- * Determined Exterminator: -25% starbase influence cost from -30%, +20% ship weapons damage from +25%, -12% ship build cost from 15%, +28% naval capacity from +33%
 
 ### Boosts
- * Delegated Functions: -35% leader upkeep from -25% and +2 leader pool size from +1
  * Zero-waste Protocols: -15% robot upkeep from -10%
  * Warbots: +20% Army heatlh
  * Factory Overclocking: +15% leader experience gain from +10%
@@ -103,6 +101,7 @@
  * Common Ground: +5 stability
  * Galactic Doorstep: +5% Physics research
  * Post Apocalyptic: +5% Habitability bonus
+ * Private Military Companies: +20% Army health
  
 ## Traits:
 
@@ -120,7 +119,7 @@
  * Quarrelsome: -5% Unity from jobs from -10%
  * Nonadaptive: -5% habitability from -10%
  * Repugnant: +5% army damage
- * (CHANGE) Slow Breeders: -6% from -10%
+ * Slow Breeders: -6% from -10%
  
 ## Robot Traits:
 
@@ -138,7 +137,6 @@
 ## Lithoid Traits
 
 ### Boosts:
-
  * Scintillating Skin: +0.02 Rare crystals from +0.01
  * Gaseous Byproduct: +0.02 Exotic gases from +0.01
  * Volatile Excretion skin: +0.02 Volatile motes from +0.01

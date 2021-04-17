@@ -1,5 +1,6 @@
 namespace = smbm
 
+# Anti-rushing event
 country_event = {
 	id = smbm.1
 	title = smbm.1.name
@@ -20,7 +21,7 @@ country_event = {
 	}
 
 	option = {
-		name = "OK"
+		name = smbm.1.option
 	}
 }
 
@@ -105,5 +106,33 @@ planet_event = {
 		tooltip = {
 			add_modifier = { modifier = crime_wave days = 3600 }
 		}
+	}
+}
+
+country_event = {
+	id = smbm.5
+	title = smbm.5.name
+	desc = smbm.5.desc
+	
+	picture = GFX_evt_disease_outbreak
+	show_sound = event_default
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_ai = no
+		has_origin = origin_necrophage
+		has_valid_civic = civic_fanatic_purifiers
+	}
+	
+	immediate = {
+		add_modifier = {
+			modifier = unholy_matrimony
+			days = 0
+		}
+	}
+
+	option = {
+		name = smbm.5.option
 	}
 }
