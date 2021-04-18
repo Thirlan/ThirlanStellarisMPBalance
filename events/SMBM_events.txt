@@ -11,7 +11,9 @@ country_event = {
 	
 	fire_only_once = yes
 	
-	trigger = {is_ai = no}
+	trigger = {
+		is_ai = no
+	}
 	
 	immediate = {
 		add_modifier = {
@@ -35,7 +37,9 @@ planet_event = {
 		months = 12
 	}
 	
+	# Optimize checks to only focus on players
 	trigger = {
+		is_ai = no
 		has_modifier = crime_lord_deal
 	}
 	

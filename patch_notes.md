@@ -87,9 +87,9 @@
  * None
 
 ### Boosts
- * Ruthless competition: +15% leader experience gain from +10%
  * Franchising: -30% empire sprawl from branch office from -25%, -40% country subject power penalty from -33%
  * Media Conglomerate: +5% diplomatic weight
+ * Private Military Companies: +20% Army health
  
 ## Origin:
 
@@ -101,7 +101,6 @@
  * Common Ground: +5 stability
  * Galactic Doorstep: +5% Physics research
  * Post Apocalyptic: +5% Habitability bonus
- * Private Military Companies: +20% Army health
  
 ## Traits:
 
