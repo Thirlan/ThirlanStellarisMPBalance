@@ -36,10 +36,13 @@ planet_event = {
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	# Optimize checks to only focus on players
-	trigger = {
+	pre_triggers = {
 		is_ai = no
+	}
+
+	trigger = {
 		has_modifier = crime_lord_deal
 	}
 	

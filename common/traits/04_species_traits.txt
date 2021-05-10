@@ -313,6 +313,17 @@ trait_weak = {
 	}
 }
 
+trait_nomadic = {
+	cost = 1
+	potential_crossbreeding_chance = 1.0
+	opposites = { "trait_sedentary" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	modifier = {
+		pop_growth_from_immigration = 0.15
+		pop_resettlement_cost_mult = -0.25
+	}
+}
+
 trait_sedentary = {
 	cost = -1
 	potential_crossbreeding_chance = 1.0
@@ -495,7 +506,7 @@ trait_resilient = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
 		army_defense_damage_mult = 1.0
-		army_defense_health_mult = 0.5
+		army_defense_health_mult = 1.0
 	}
 }
 

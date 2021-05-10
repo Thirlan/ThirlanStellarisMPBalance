@@ -44,6 +44,9 @@
  unholy_matrimony_2:0 "Unholy Matrimony"
  unholy_matrimony_2_desc:0 "For this you will pay, a terrible price"
 
+ system_reboot:0 "System Reboot"
+ system_reboot_desc:0 "Power overwhelming. Need time to adjust."
+
  smbm.1.name:0 "Prepare yourself"
  smbm.1.desc:0 "Prepare for the cold hard realities of space. Not knowing what lurks out there it would be best to increase your defenses. Be careful, your defensive bonuses will only last a few years."
  smbm.1.option: "OK"

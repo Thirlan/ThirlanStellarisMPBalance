@@ -6,9 +6,9 @@
  * Negotiate with crime lord: New events have a chance of occuring every year for every planet that has negotiated with crime lord. The event will cause the following:
      * 4% chance: Crime wave event
      * 2% chance: End of crime lord deal and Criminal Underworld event. Criminal Underworld can stack with Crime Wave.
- * Unholy Matrimony: New event at game start or during the game that will give a -400% purge speed penalty to the following player empire Unrestricted Assimilator combinations:
-    ** Necrophage and Fanatical Purifier
-    ** Necrophage and Barbaric Despoiler
+ * Unholy Matrimony (event): New event at game start that will give a purge speed penalty to all players (AIs not included) with the following combinations:
+    ** Necrophage and Fanatical Purifier (-400%)
+    ** Necrophage and Barbaric Despoiler (-300%)
  
 ### Boosts
  * Base Leader skill cap: 4 from 5
@@ -62,7 +62,7 @@
  * Machine World: Additional Engineer technology Construction Templates required
 
 ### Boosts
- * Eternal Vigilance: 50% starbase/defense platform damage/hull from 25%
+ * Eternal Vigilance: 50% starbase & defense platform damage & hull from 25%
  * Consecrated worlds: Colonized worlds can now be consecrated, influence cost +100 from +50
  * Interstellar dominion: -30% outpost cost, -30% outpost influence and -30% influence claim cost from -20%
  * Galactic Contender: Number of ascension perks required dropped to 1 from 3
