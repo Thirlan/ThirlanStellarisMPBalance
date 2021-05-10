@@ -2,4 +2,4 @@
 
 ## 0.0.3
 
-Latest release after Nemesis! Everything previously in the logs has been cleared.
+Latest release after Nemesis! Everything previously in the log has been cleared.

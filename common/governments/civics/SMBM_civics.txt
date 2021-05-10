@@ -57,8 +57,8 @@ civic_feudal_realm = {
 	description = "civic_tooltip_feudal_realm_effects"
 	modifier = {
 		country_subject_power_penalty_mult = -0.5
-		country_naval_cap_mult = 0.05
-		ships_upkeep_mult = -0.05
+		country_naval_cap_mult = 0.10
+		ships_upkeep_mult = -0.10
 		armies_upkeep_mult = -0.10
 	}
 }
@@ -125,51 +125,5 @@ civic_nationalistic_zeal = {
 	modifier = {
 		country_war_exhaustion_mult = -0.20
 		country_claim_influence_cost_mult = -0.20
-	}
-}
-
-civic_fanatic_purifiers = {
-	modification = no
-	playable = { host_has_dlc = "Utopia" }
-	ai_playable = { host_has_dlc = "Utopia" }
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
-	}
-	possible = {
-		ethics = {
-			value = ethic_fanatic_xenophobe
-			OR = {
-				value = ethic_militarist
-				value = ethic_spiritualist
-			}
-		}
-		civics = {
-			NOR = {
-				value = civic_barbaric_despoilers
-			}
-		}
-		origin = {
-			NOR = {
-				value = origin_syncretic_evolution
-				value = origin_common_ground
-				value = origin_hegemon
-			}
-		}
-	}
-	random_weight = {
-		base = 1000
-		modifier = {
-			factor = 0
-			NOT = { host_has_dlc = "Utopia" }
-		}
-	}
-
-	description = "civic_tooltip_fanatic_purifiers_effects"
-	modifier = {
-		ship_fire_rate_mult = 0.25
-		army_damage_mult = 0.25
-		starbase_shipyard_build_cost_mult = -0.10
-		country_naval_cap_mult = 0.25
 	}
 }

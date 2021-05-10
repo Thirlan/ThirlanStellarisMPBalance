@@ -1,9 +1,10 @@
 ﻿l_english:
  
  # TRAITS
- TRAIT_REPUGNANT_EFFECT:4 "£amenities£ Amenities from £job£ Jobs: §R-20%§!\nArmy damage: §G+5%§!"
- TRAIT_EMOTION_EMULATORS_EFFECT:2 "£amenities_no_happiness£Amenities from £job£ Jobs: §G+20%§!\n£energy£Energy from jobs: §R-1%§!"
- TRAIT_UNCANNY_EFFECT:2 "£amenities_no_happiness£Amenities from £job£ Jobs: §R-20%§!\nArmy damage: §G+5%§!"
+ TRAIT_CHARISMATIC_EFFECT:4 "£amenities£ Amenities from £job£ Jobs: §G+20%§!\n£food£Food from jobs: §R-5%§!"
+ TRAIT_REPUGNANT_EFFECT:4 "£amenities£ Amenities from £job£ Jobs: §R-20%§!\nArmy damage: §G+100%§!"
+ TRAIT_EMOTION_EMULATORS_EFFECT:2 "£amenities_no_happiness£Amenities from £job£ Jobs: §G+20%§!\n£energy£Energy from jobs: §R-5%§!"
+ TRAIT_UNCANNY_EFFECT:2 "£amenities_no_happiness£Amenities from £job£ Jobs: §R-20%§!\nArmy damage: §G+100%§!"
  TRAIT_LITHOID_GASEOUS_BYPRODUCTS_EFFECT:0 "Each pop with living standards of slavery or better produces 0.02 £exotic_gases£ §Y$exotic_gases$§! per month."
  TRAIT_LITHOID_SCINTILLATING_EFFECT:0 "Each pop with living standards of slavery or better produces 0.02 £rare_crystals£ §Y$rare_crystals$§! per month."
  TRAIT_LITHOID_VOLATILE_EXCRETIONS_EFFECT:0 "Each pop with living standards of slavery or better produces 0.02 £volatile_motes£ §Y$volatile_motes$§! per month."
@@ -18,19 +19,30 @@
 
  # ASCENSCIONS
  describe_edict_consectrated_worlds:5 "§EConsecrating planets (up to §Y3§!) increases §YSpiritualist Ethics Attraction§! and §YEmpire-Wide Amenities§! as well as £unity£ §YUnity Generation§!, scaling to the spiritual significance of the worlds consecrated.§!"
+ 
+ requires_ap_galactic_contender:0 "$TRIGGER_FAIL$Requires the §Y$ap_galactic_contender$§! Ascension Perk."
+ 
+ requires_ap_imperial_prerogative:0 "$TRIGGER_FAIL$Requires the §Y$ap_imperial_prerogative$§! Ascension Perk."
+ 
+ requires_ap_grasp_the_void:0 "$TRIGGER_FAIL$Requires the §Y$ap_grasp_the_void$§! Ascension Perk."
+ 
+ requires_technology_tech_construction_templates:0 "$TRIGGER_FAIL$Requires the £engineering£ §Y$tech_construction_templates$§! technology."
+
+ requires_technology_tech_gene_expressions:0 "$TRIGGER_FAIL$Requires the £society£ §Y$tech_gene_expressions$§! technology."
 
 # TRADITIONS
  tr_expansion_a_new_life_desc:3 "£pops£ §Y$MOD_POP_GROWTH_SPEED$§! increased by §G+5%§!."
- tr_domination_colonial_viceroys_desc:0 "§Y$MOD_LEADER_GOVERNOR_SKILL_LEVELS$§! increased by §Y2§! and §G+1§! §Y$MOD_COUNTRY_ENVOYS_ADD$§."
  tr_domination_grand_council_desc:0 "§Y$MOD_LEADER_RULER_SKILL_LEVELS$§! increased by §Y2§! and §G+1§! §Y$MOD_COUNTRY_LEADER_POOL_SIZE$§."
- tr_domination_colonial_viceroys_hive_desc:0 "§Y$MOD_LEADER_GOVERNOR_SKILL_LEVELS$§! increased by §Y2§! and §G+1§! §Y$MOD_COUNTRY_ENVOYS_ADD$§."
- tr_domination_colonial_viceroys_machine_desc:0 "§Y$MOD_LEADER_GOVERNOR_SKILL_LEVELS$§! increased by §Y2§! and §G+1§! §Y$MOD_COUNTRY_ENVOYS_ADD$§."
 
 # CUSTOM SMBM EVENTS
  be_careful_out_there:0 "Be careful out there"
  be_careful_out_there_desc:0 "We should prepare for all possibilities, including war."
- unholy_matrimony:0 "Unholy Matrimony"
- unholy_matrimony_desc:0 "We should prepare for all possibilities, including war."
+
+ unholy_matrimony_1:0 "Unholy Matrimony"
+ unholy_matrimony_1_desc:0 "For this you will pay, a terrible price"
+
+ unholy_matrimony_2:0 "Unholy Matrimony"
+ unholy_matrimony_2_desc:0 "For this you will pay, a terrible price"
 
  smbm.1.name:0 "Prepare yourself"
  smbm.1.desc:0 "Prepare for the cold hard realities of space. Not knowing what lurks out there it would be best to increase your defenses. Be careful, your defensive bonuses will only last a few years."
@@ -45,5 +57,13 @@
  smbm.4.option:0 "We should have known"
  
  smbm.5.name:0 "Unholy Matrimony"
- smbm.5.desc:0 "Your dark arts of the Necrophages combined with the fervor of Fanatical Purification has created a monstrosity that should never have been. For this power you will of course pay a small price. Your ability to purge has been slowed by §R-20%§."
+ smbm.5.desc:0 "Your dark arts of the Necrophages combined with the fervor of Fanatical Purification has created a monstrosity that should never have been. For this power you will of course pay a price. Your ability to purge has been slowed by §R-400%§."
  smbm.5.option:0 "Very well..."
+ 
+ smbm.6.name:0 "Unholy Matrimony"
+ smbm.6.desc:0 "Your dark arts of the Necrophages combined with the barbarism of Barbaric Despoilers has created a monstrosity that should never have been. For this power you will of course pay a price. Your ability to purge has been slowed by §R-300%§."
+ smbm.6.option:0 "Very well..."
+ 
+ smbm.7.name:0 "System Reboot"
+ smbm.7.desc:0 "Ring world system beginning boot sequence. Calculating... Calculating... Calculating... System degradation detected. Energy degraded by §R-10%§. Estimated time of full system recovery: 10 years."
+ smbm.7.option:0 "Reboot"

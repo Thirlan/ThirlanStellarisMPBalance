@@ -168,7 +168,7 @@ trait_robot_emotion_emulators = {
 	allowed_archetypes = { MACHINE }
 	custom_tooltip = TRAIT_EMOTION_EMULATORS_EFFECT
 	modifier = {
-		planet_jobs_energy_produces_mult = -0.01
+		planet_jobs_energy_produces_mult = -0.05
 	}
 }
 
@@ -181,7 +181,7 @@ trait_robot_uncanny = {
 		factor = 0
 	}
 	modifier = {
-		army_damage_mult = 0.05
+		army_damage_mult = 1.00
 	}
 }
 

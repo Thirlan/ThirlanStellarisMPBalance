@@ -15,9 +15,10 @@ civic_hive_strength_of_legions = {
 	random_weight = { base = 5 }
 	modifier = {
 		army_starting_experience_add = 100
-		army_damage_mult = 0.20
-		army_health = 0.2
-		armies_upkeep_mult = -0.20
+		army_damage_mult = 0.30
+		army_health = 0.30
+		armies_upkeep_mult = -0.30
+		armies_cost_mult = -0.30
 	}
 }
 
@@ -140,8 +141,7 @@ civic_machine_assimilator = {
 	}
 	
 	modifier = {
-		country_energy_produces_mult = -0.05
-		pop_purge_speed = -0.10
+		pop_purge_speed = -4.0
 	}
 }
 
@@ -174,8 +174,9 @@ civic_machine_warbots = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		army_damage_mult = 0.2
-		army_health = 0.2
-		armies_upkeep_mult = -0.2
+		army_damage_mult = 0.30
+		army_health = 0.30
+		armies_upkeep_mult = -0.30
+		armies_cost_mult = -0.30
 	}
 }

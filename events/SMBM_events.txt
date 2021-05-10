@@ -18,7 +18,7 @@ country_event = {
 	immediate = {
 		add_modifier = {
 			modifier = be_careful_out_there
-			days = 3650
+			days = 5475
 		}
 	}
 
@@ -27,7 +27,7 @@ country_event = {
 	}
 }
 
-# Planet event that constantly checks if Crime Lord Deal is active and if so
+# Planet event that checks if Crime Lord Deal is active and if so
 # Randomly decides if this should cause a crime wave.
 planet_event = {
 	id = smbm.2
@@ -113,6 +113,7 @@ planet_event = {
 	}
 }
 
+# Unholy matrimony: The Fanatic Necrophage nerf
 country_event = {
 	id = smbm.5
 	title = smbm.5.name
@@ -131,12 +132,70 @@ country_event = {
 	
 	immediate = {
 		add_modifier = {
-			modifier = unholy_matrimony
+			modifier = unholy_matrimony_1
 			days = -1
 		}
 	}
 
 	option = {
 		name = smbm.5.option
+	}
+}
+
+# Unholy matrimony: The Barbaric Necrophage nerf
+country_event = {
+	id = smbm.6
+	title = smbm.6.name
+	desc = smbm.6.desc
+	
+	picture = GFX_evt_disease_outbreak
+	show_sound = event_default
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_ai = no
+		has_origin = origin_necrophage
+		has_valid_civic = civic_barbaric_despoilers
+	}
+	
+	immediate = {
+		add_modifier = {
+			modifier = unholy_matrimony_2
+			days = -1
+		}
+	}
+
+	option = {
+		name = smbm.6.option
+	}
+}
+
+# System Reboot: Ring World Robot nerf
+country_event = {
+	id = smbm.7
+	title = smbm.7.name
+	desc = smbm.7.desc
+	
+	picture = GFX_evt_generator_powerup
+	show_sound = event_energy_field
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_ai = no
+		has_origin = origin_shattered_ring
+		has_authority = auth_machine_intelligence
+	}
+	
+	immediate = {
+		add_modifier = {
+			modifier = system_reboot
+			days = 3650
+		}
+	}
+
+	option = {
+		name = smbm.7.option
 	}
 }

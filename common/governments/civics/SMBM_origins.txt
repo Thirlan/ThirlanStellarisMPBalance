@@ -50,7 +50,7 @@ origin_galactic_doorstep = {
 	}
 
 	modifier = {
-		country_physics_research_produces_mult = 0.05
+		country_physics_research_produces_mult = 0.10
 	}
 	
 	description = "origin_tooltip_galactic_doorstep_effects"
@@ -93,7 +93,7 @@ origin_common_ground = {
 	}
 
 	modifier = {
-		planet_stability_add = 5
+		planet_stability_add = 10
 	}
 	
 	description = "origin_tooltip_common_ground_effects"
@@ -101,6 +101,54 @@ origin_common_ground = {
 
 	traits = {
 	}
+
+	random_weight = {
+		base = 5
+	}
+}
+
+origin_necrophage = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_necrophage.dds"
+	picture = GFX_origin_necrophage
+	flags = { custom_start_screen }
+
+	playable = {
+		host_has_dlc = "Necroids Species Pack"
+	}
+
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_gestalt_consciousness
+				value = ethic_xenophile
+				value = ethic_fanatic_xenophile
+				value = ethic_fanatic_egalitarian
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_death_cult
+				value = civic_death_cult_corporate
+			}
+		}
+	}
+
+    modifier = {
+		pop_purge_speed = -1.0
+	}
+
+	description = civic_tooltip_necrophage_effects
+
+	traits = {
+		trait = trait_necrophage
+	}
+
+	has_secondary_species = {
+		title = civic_necrophage_secondary_species
+	}
+
+	advanced_start = yes
 
 	random_weight = {
 		base = 5
