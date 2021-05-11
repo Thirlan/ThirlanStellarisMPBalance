@@ -292,39 +292,6 @@ ap_interstellar_dominion = {
 	}
 }
 
-# This perk is not modified but needs to be present in the file
-# to make it a requirement for Galatic wonder
-ap_grasp_the_void = {
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_1"
-			num_ascension_perks > 0
-		}
-	}
-
-	modifier = {
-		country_starbase_capacity_add = 5
-	}
-
-	potential = {
-		NOT = {
-			has_ascension_perk = ap_grasp_the_void
-		}
-	}
-
-	ai_weight = {
-		factor = 10
-		modifier = {
-			factor = 2
-			has_civic = civic_inwards_perfection
-		}
-		modifier = {
-			factor = 1.5
-			is_xenophobe = yes
-		}
-	}
-}
-
 ap_eternal_vigilance = {
 	possible = {
 		custom_tooltip = {
@@ -535,60 +502,7 @@ ap_shared_destiny = {
 # UTOPIA ASCENSION PERKS
 #################
 
-ap_galactic_wonders_utopia = {
-	on_enabled = {
-		custom_tooltip = "add_research_options_galactic_wonders_utopia"
-		hidden_effect = {
-			if = {
-				limit = {
-					NOT = { has_technology = tech_ring_world }
-				}
-				add_research_option = tech_ring_world
-			}
-			if = {
-				limit = {
-					NOT = { has_technology = tech_dyson_sphere }
-				}
-				add_research_option = tech_dyson_sphere
-			}
-		}
-	}
 
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_mega_engineering"
-			has_technology = tech_mega_engineering
-		}
-		custom_tooltip = {
-			fail_text = "requires_built_or_repaired_megastructure"
-			has_country_flag = has_built_or_repaired_megastructure
-		}
-		custom_tooltip = {
-			fail_text = "requires_ap_grasp_the_void"
-			has_ascension_perk = ap_grasp_the_void
-		}
-	}
-
-	potential = {
-		host_has_dlc = "Utopia"
-		NOR = {
-			host_has_dlc = "Megacorp"
-			has_ascension_perk = ap_galactic_wonders_utopia
-		}
-	}
-
-	ai_weight = {
-		factor = 10
-		modifier = {
-			factor = 2
-			has_ethic = ethic_pacifist
-		}
-		modifier = {
-			factor = 3
-			has_ethic = ethic_fanatic_pacifist
-		}
-	}
-}
 
 #################
 # SYNTHETIC DAWN ASCENSION PERKS

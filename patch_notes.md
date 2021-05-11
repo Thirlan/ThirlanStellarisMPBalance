@@ -7,13 +7,12 @@
      * 4% chance: Crime wave event
      * 2% chance: End of crime lord deal and Criminal Underworld event. Criminal Underworld can stack with Crime Wave.
  * Unholy Matrimony (event): New event at game start that will give a purge speed penalty to all players (AIs not included) with the following combinations:
-    ** Necrophage and Fanatical Purifier (-400%)
-    ** Necrophage and Barbaric Despoiler (-300%)
+   * Necrophage and Fanatical Purifier (-400%)
+   * Necrophage and Barbaric Despoiler (-300%)
  
 ### Boosts
  * Base Leader skill cap: 4 from 5
  * Leadership max cap: 15 from 10
- * Clerks: produce 2.2 trade from 2.0 and 2.2 amenities from 2.0
  * Crime/Deviancy per pop: 2.1 from 2
  * Be careful out there (event): All players (AIs not included) start with a passive 33% boost to starbase damage, -33% starbase upgrade cost, -33 defense platform build cost for the first 15 years of the game.
 
@@ -55,7 +54,6 @@
  * Technological Ascendency: +6% Research rate from +10%|
  * Become the crisis: requires Galactic Contender ascension perk
  * Executive Vigor: requires Imperial Prerogative ascension perk
- * Galactic Wonders: requires Grasp the Void ascension perk
  * The Flesh is Weak: 5% population assembly from +10%
  * Synthetic Evolution: 5% robotic job multiplier from 10%
  * Hive World: Additional Society technology Targeted Gene Expression required
@@ -131,7 +129,7 @@
  * Scion: -5% Unity, -5% happiness and -20% Ethics attraction
  * Necrophage: -100% assimilation penalty
  * Ring World: 
-   ** Robots: Systems online event, giving robots a 10 year -10% energy penalty as they bring the ring world online
+   * Robots: Systems online event, giving robots a 10 year -10% energy penalty as they bring the ring world online
  
 ### Boosts
  * Common Ground: +10 Stability
