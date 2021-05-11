@@ -26,7 +26,7 @@ Nemesis
 
 Also the following mod from Stefan's team (Magikaas, Aow, AirHunter, Stefan, Hoover Tesla) helped tremendously for inspiration and learning.
 
-* https://steamcommunity.com/sharedfiles/filedetails/?id=2279069500&searchtext=stefan
+* https://steamcommunity.com/sharedfiles/filedetails/?id=2279069500
 
 ## Terminology
 
@@ -34,17 +34,17 @@ Throughout the document we will be using some lingo to generalize entire concept
 
 Game choices: choices that the players make/select that affect the game. For the most part this will pertain to racial traits, ascension perks, technology, civics and traditions.
 
-Return on Investment (ROI): The general concept of how much you get back for investing in something. If you buy something for $10 and sell it for $15 your return on investment is $5. Just introducing the acronym to get this out of the way :D
+Return on Investment (ROI): The general concept of how much you get back for investing in something. If you buy something for $10 and sell it for $15 your return on investment is $5. Just introducing the acronym to get this out of the way.
 
 Unrestricted war: The ability to declare war on anyone with the ability to conquer their territory without expending influence.
 
 ## Tech Rushing and population
 
-Tech rushing and population growth is still the meta of the game, even though Nemesis did balance population mechanics very slightly. In this regard, nerfs have been applied to the usual suspects of tech rushing and population growth game choices. Namely two small nerfs to the Expansion tradition, a nerf to the Technological Ascendency ascension perk and a nerf to the Xenophobe ethic.
+Tech rushing and population growth is still THE min-max meta of the game, even though Nemesis did balance population mechanics very slightly. In this regard, nerfs have been applied to the usual suspects of tech rushing and population growth game choices. Namely two small nerfs to the Expansion tradition, a nerf to the Technological Ascendency ascension perk and a nerf to the Xenophobe ethic.
 
 ## Unrestricted Assimilators
 
-Unrestricted Assimilators (Determine Assimilators, Fanatical Necrophage and Barbaric Necrophage) that can declare unrestricted wars have always been very strong in Stellaris. Even now with Nemesis. The reason for their strength is that they are able to quickly gain more populations through their unrestricted conquest, something that normal empires have to spend large amounts of influence to do and as such their speed of conquest is capped. This is not so for the Unrestricted Assimilators, which can conquer an entire empire, giving them a huge boost to power and then allowing them to conquer the next empire in short order.
+Unrestricted Assimilators (Determine Assimilators, Fanatical Necrophage and Barbaric Necrophage) that can declare unrestricted wars have always been strong in Stellaris. The reason for their strength is that they are able to quickly gain more populations through their unrestricted conquest, something that normal empires have to spend large amounts of influence to do and as such their speed of conquest is capped. This is not so for the Unrestricted Assimilators, which can conquer an entire empire, giving them a huge boost to power and then allowing them to conquer the next empire in short order.
 
 The simplest fix for this is to reduce the speed at which assimilation happens and thus the creation of new population through conquest. The normal rate of assimilation is based on the speed of purging, which is roughly 1 population a month. Thus assimilators create 1 population a month after conquest. This is already on top of their current growth from population. It is very easy to see then that 1 population per month is MUCH faster than the rate that someone can make pop through robots or clone vats. The fix then is to impose a -400% penalty to purging for the Unrestricted Assimilators, which will translate into a pop growth of 1 every 4 months. 
 
@@ -58,7 +58,7 @@ Because of this, there is a special event, "Unholy matrimony", at game start tha
 
 ## Leadership cap
 
-Many of the leadership cap game choices are considered weak due to how little of a buff it gives throughout the game. It can be trivial to reach the leadership cap of 10 through various racial traits, technologies, ascension perks, traditions and even civics. Hence once someone reaches 10, all the other leadership cap game choices lose some or all of their value.
+Many of the leadership cap game choices are considered very weak due to how little of a buff it gives throughout the game. It can be trivial to reach the leadership cap of 10 through various racial traits, technologies, ascension perks, traditions and even civics. Hence once someone reaches 10, all the other leadership cap game choices lose some or all of their value.
 
 The leadership cap bonuses also loses some of its value since most leaders will often plateau at 5, with or without a cap bonus, because of experience gains and mortality. In addition, the % gains for going from 5 to 6 are less (20%) than the gains from going from 4 to 5 (25%).
 
@@ -85,14 +85,6 @@ These changes to crime also indirectly give a boost to the Domination tradition,
 One of the more popular exploits is the crime lord deal (See Stefan's video https://www.youtube.com/watch?v=n8R1LMj1CxI&ab_channel=StefanAnon). Rather that completely nerf this option out of existence as, Stefan's mod has done, we have instead decided to keep it and add some risk to it.
 
 You now run the small risk, 6% each year, of the crime lords reneging on the deal and causing trouble. This turns the game choice into a more tactical tool to be deployed here and there rather than applied on all planets.
-
-## Starbase cap
-
-Similar to leadership cap this is another game choice that is considered weak and while Nemesis has made starbases more important, it the starbase cap game choices are still something that will rarely be chosen. This is because even though some of the game choices will give +3 or +4 starbases, there is often not much of a shortage for these as everyone will have plenty of starbases. The issue thus with these game choices is that of supply and demand. Because there is an abundant supply of starbase cap afforded to players by default, there is no desire (demand) from players to get more.
-
-The solution for this then is very simple (which falls under our KISS criteria) and similar to the Leadership cap. The starting number of starbases is dropped from 3 to 2 and the amount that is gained for every system is dropped from 0.1 to 0.08. What this means is that someone with 100 star systems will have 2 + 8 = 10 starbases instead of 3 + 10 = 13 starbases. This is clearly not a radical change, but it does reduce the starbases that are available and as such forces players to make harder decisions. Use them for defensive purposes? For ship building? For economy? The constraint then makes the civics and ascenscion perks more enticing.
-
-The constraint is also noticeable at the start of the game where you will only have 2 to start with. This will make the ascencion perk especially enticing for any empire that wishes to turtle as it will afford them both more stations to defend with and for their economy. It also discourages tech rushing or only focusing on tech rushing game choices, which is already a very strong in the current meta.
 
 ## Be careful out there (event)
 

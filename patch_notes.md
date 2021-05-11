@@ -51,7 +51,7 @@
 ## Ascension Perks
 
 ### Nerfs
- * Technological Ascendency: +6% Research rate from +10%|
+ * Technological Ascendency: +6% Research rate from +10%
  * Become the crisis: requires Galactic Contender ascension perk
  * Executive Vigor: requires Imperial Prerogative ascension perk
  * The Flesh is Weak: 5% population assembly from +10%
