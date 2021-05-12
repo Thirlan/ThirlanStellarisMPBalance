@@ -95,7 +95,7 @@
 ## Hive Mind Civics
 
 ### Nerfs
- * Ascetic
+ * Ascetic: -10% amenities usage from -15%
 
 ### Boosts
  * Subsumed will: -25% empire sprawl from -20%
