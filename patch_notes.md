@@ -30,23 +30,23 @@
  * none
 
 ### Boosts
- * Diplomatic Incident: 450 energy from 625 and 4 energy upkeep from 5
- * Sleeper Cells: 675 energy from 900 and 4 energy upkeep from 6
- * Acquire Assets: 675 energy from 900 and 4 energy upkeep from 6
- * Smear Campaign: 900 energy from 1225 and 4 energy upkeep from 7
- * Steal Technology: 800 energy from 1600 and 4 energy upkeep from 8
- * Sabotage Starbase: 1000 energy from 2025 and 4 energy upkeep from 9
- * Arm privateers: 1800 energy from 3600 and 6 energy upkeep from 12
- * Weaken Galactic Empire: 900 energy from 1225 and 5 energy upkeep from 7
- * Spark Rebellion: 3600 energy from 4900 and 10 energy upkeep from 14
+ * ~~Diplomatic Incident: 450 energy from 625 and 4 energy upkeep from 5~~
+ * ~~Sleeper Cells: 675 energy from 900 and 4 energy upkeep from 6~~
+ * ~~Acquire Assets: 675 energy from 900 and 4 energy upkeep from 6~~
+ * ~~Smear Campaign: 900 energy from 1225 and 4 energy upkeep from 7~~
+ * ~~Steal Technology: 800 energy from 1600 and 4 energy upkeep from 8~~
+ * ~~Sabotage Starbase: 1000 energy from 2025 and 4 energy upkeep from 9~~
+ * ~~Arm privateers: 1800 energy from 3600 and 6 energy upkeep from 12~~
+ * ~~Weaken Galactic Empire: 900 energy from 1225 and 5 energy upkeep from 7~~
+ * ~~Spark Rebellion: 3600 energy from 4900 and 10 energy upkeep from 14~~
 
 ## Ethics
 
 ### Nerfs
- * Xenophobe: +7%/15% pop growth from 10%/20% pop growth
+ * ~~Xenophobe: +7%/15% pop growth from 10%/20% pop growth~~
 
 ### Boosts
- * Pacifist: -20%/-40% Empire sprawl from pop from -15%/-30%
+ * ~~Pacifist: -20%/-40% Empire sprawl from pop from -15%/-30%~~
 
 ## Ascension Perks
 
@@ -60,14 +60,14 @@
  * Machine World: Additional Engineer technology Construction Templates required
 
 ### Boosts
- * Eternal Vigilance: 50% starbase & defense platform damage & hull from 25%
- * Consecrated worlds: Colonized worlds can now be consecrated, influence cost +100 from +50
- * Interstellar dominion: -30% outpost cost, -30% outpost influence and -30% influence claim cost from -20%
+ * ~~Eternal Vigilance: 50% starbase & defense platform damage & hull from 25%~~
+ * ~~Consecrated worlds: Colonized worlds can now be consecrated, influence cost +100 from +50~~
+ * ~~Interstellar dominion: -30% outpost cost, -30% outpost influence and -30% influence claim cost from -20%~~
  * Galactic Contender: Number of ascension perks required dropped to 1 from 3
- * Imperial Prerogative: +30% to administrative capacity from +20%
+ * ~~Imperial Prerogative: +30% to administrative capacity from +20%~~
  * Transcendent Learning: 100% leadership bonus from 50%
  * Enigmatic Engineering: +4 encryption from +2 and +2 decryption
- * Shared Destiny: -90% subject integration cost from -50%
+ * ~~Shared Destiny: -90% subject integration cost from -50%~~
 
 ## Traditions
 
@@ -82,6 +82,7 @@
 ### Nerfs
  * Technocracy: 0.5 unity from 1.0
  * Meritocracy: leader cap level +0 from +1
+ * Fanatical Purifier
 
 ### Boosts
  * Philosopher King: Edict Capacity +1
@@ -94,7 +95,7 @@
 ## Hive Mind Civics
 
 ### Nerfs
- * None
+ * Ascetic
 
 ### Boosts
  * Subsumed will: -25% empire sprawl from -20%
@@ -125,7 +126,7 @@
 ## Origin:
 
 ### Nerfs
- * Void dwellers: 10% production multipliers from 15%
+ * ~~Void dwellers: 10% production multipliers from 15%~~
  * Scion: -5% Unity, -5% happiness and -20% Ethics attraction
  * Necrophage: -100% assimilation penalty
  * Ring World: 
