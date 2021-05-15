@@ -6,7 +6,6 @@
  * Negotiate with crime lord: New events have a chance of occuring every year for every planet that has negotiated with crime lord. The event will cause the following:
      * 4% chance: Crime wave event
      * 2% chance: End of crime lord deal and Criminal Underworld event. Criminal Underworld can stack with Crime Wave.
- * Capacity Subsidy: +40% energy boost from 50%
  * Unholy Matrimony (event): New event at game start that will give a purge speed penalty to all players (AIs not included) with the following combinations:
    * Necrophage and Fanatical Purifier (-400%)
    * Necrophage and Barbaric Despoiler (-300%)
@@ -115,7 +114,6 @@
 ## Origin:
 
 ### Nerfs
- * ~~Void dwellers: 10% production multipliers from 15%~~
  * Scion: -5% Unity, -5% happiness and -20% Ethics attraction
  * Necrophage: -100% assimilation penalty
  * Ring World: 
