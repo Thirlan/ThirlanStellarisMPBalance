@@ -18,7 +18,7 @@ country_event = {
 	immediate = {
 		add_modifier = {
 			modifier = be_careful_out_there
-			days = 5475
+			days = 7300
 		}
 	}
 
@@ -194,7 +194,7 @@ country_event = {
 	immediate = {
 		add_modifier = {
 			modifier = system_reboot
-			days = 3650
+			days = 5475
 		}
 	}
 

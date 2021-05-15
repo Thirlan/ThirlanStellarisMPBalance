@@ -2,7 +2,7 @@
 # Static Modifiers for the Simple Multiplayer Balance Patch
 ##########################################################################
 be_careful_out_there = {
-	shipclass_starbase_damage_mult = 0.33
+	shipclass_starbase_damage_mult = 0.40
 	starbase_upgrade_cost_mult = -0.33
 	ship_military_station_small_cost_mult = -0.33
 }
@@ -16,5 +16,5 @@ unholy_matrimony_2 = {
 }
 
 system_reboot = {
-	country_energy_produces_mult = -0.1
+	country_energy_produces_mult = -0.15
 }

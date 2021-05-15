@@ -6,6 +6,7 @@
  * Negotiate with crime lord: New events have a chance of occuring every year for every planet that has negotiated with crime lord. The event will cause the following:
      * 4% chance: Crime wave event
      * 2% chance: End of crime lord deal and Criminal Underworld event. Criminal Underworld can stack with Crime Wave.
+ * Capacity Subsidy: +40% energy boost from 50%
  * Unholy Matrimony (event): New event at game start that will give a purge speed penalty to all players (AIs not included) with the following combinations:
    * Necrophage and Fanatical Purifier (-400%)
    * Necrophage and Barbaric Despoiler (-300%)
@@ -14,7 +15,7 @@
  * Base Leader skill cap: 4 from 5
  * Leadership max cap: 15 from 10
  * Crime/Deviancy per pop: 2.1 from 2
- * Be careful out there (event): All players (AIs not included) start with a passive 33% boost to starbase damage, -33% starbase upgrade cost, -33 defense platform build cost for the first 15 years of the game.
+ * Be careful out there (event): All players (AIs not included) start with a passive 40% boost to starbase damage, -33% starbase upgrade cost, -33 defense platform build cost for the first 20 years of the game.
 
 ## Government
 
@@ -22,7 +23,7 @@
  * Hive mind: 20% population growth from 25%
 
 ### Boosts
- * None
+ * none
 
 ## Espionage
 
@@ -30,23 +31,15 @@
  * none
 
 ### Boosts
- * ~~Diplomatic Incident: 450 energy from 625 and 4 energy upkeep from 5~~
- * ~~Sleeper Cells: 675 energy from 900 and 4 energy upkeep from 6~~
- * ~~Acquire Assets: 675 energy from 900 and 4 energy upkeep from 6~~
- * ~~Smear Campaign: 900 energy from 1225 and 4 energy upkeep from 7~~
- * ~~Steal Technology: 800 energy from 1600 and 4 energy upkeep from 8~~
- * ~~Sabotage Starbase: 1000 energy from 2025 and 4 energy upkeep from 9~~
- * ~~Arm privateers: 1800 energy from 3600 and 6 energy upkeep from 12~~
- * ~~Weaken Galactic Empire: 900 energy from 1225 and 5 energy upkeep from 7~~
- * ~~Spark Rebellion: 3600 energy from 4900 and 10 energy upkeep from 14~~
+ * none
 
 ## Ethics
 
 ### Nerfs
- * ~~Xenophobe: +7%/15% pop growth from 10%/20% pop growth~~
+ * none
 
 ### Boosts
- * ~~Pacifist: -20%/-40% Empire sprawl from pop from -15%/-30%~~
+ * none
 
 ## Ascension Perks
 
@@ -60,14 +53,9 @@
  * Machine World: Additional Engineer technology Construction Templates required
 
 ### Boosts
- * ~~Eternal Vigilance: 50% starbase & defense platform damage & hull from 25%~~
- * ~~Consecrated worlds: Colonized worlds can now be consecrated, influence cost +100 from +50~~
- * ~~Interstellar dominion: -30% outpost cost, -30% outpost influence and -30% influence claim cost from -20%~~
  * Galactic Contender: Number of ascension perks required dropped to 1 from 3
- * ~~Imperial Prerogative: +30% to administrative capacity from +20%~~
  * Transcendent Learning: 100% leadership bonus from 50%
  * Enigmatic Engineering: +4 encryption from +2 and +2 decryption
- * ~~Shared Destiny: -90% subject integration cost from -50%~~
 
 ## Traditions
 
@@ -82,7 +70,7 @@
 ### Nerfs
  * Technocracy: 0.5 unity from 1.0
  * Meritocracy: leader cap level +0 from +1
- * Fanatical Purifier
+ * Fanatical Purifier: 20% ship fire rate from 33%
 
 ### Boosts
  * Philosopher King: Edict Capacity +1
@@ -96,6 +84,7 @@
 
 ### Nerfs
  * Ascetic: -10% amenities usage from -15%
+ * Devouring Swarm: -20% ship cost reduction from -25%
 
 ### Boosts
  * Subsumed will: -25% empire sprawl from -20%
@@ -130,7 +119,7 @@
  * Scion: -5% Unity, -5% happiness and -20% Ethics attraction
  * Necrophage: -100% assimilation penalty
  * Ring World: 
-   * Robots: Systems online event, giving robots a 10 year -10% energy penalty as they bring the ring world online
+   * Robots: Systems online event, giving robots a 15 year -15% energy penalty as they bring the ring world online
  
 ### Boosts
  * Common Ground: +10 Stability
