@@ -150,7 +150,7 @@ civic_machine_assimilator = {
 	}
 	
 	modifier = {
-		pop_purge_speed = -4.0
+		pop_purge_speed = -0.25
 	}
 }
 
@@ -160,7 +160,7 @@ civic_machine_factory_overclock = {
     random_weight = { base = 5 }
     modifier = {
         leader_skill_levels = 1
-		species_leader_exp_gain = 0.15
+		species_leader_exp_gain = 0.20
     }
 }
 

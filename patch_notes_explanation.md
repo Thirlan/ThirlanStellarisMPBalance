@@ -8,13 +8,11 @@ The purpose of this document is to give a high level overview as to why some thi
 
 Following videos were used to determine those mechanics that needed to be balanced. Some of these videos will be dated, but their fundamentals have not changed too much from version to version. In the event the game has changed radically or a better video has been posted then the video links will be updated.
 
-* https://www.youtube.com/watch?v=n8R1LMj1CxI&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=bNdHs4LB1lw&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=LQ9d7H2uZF4&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=roho0r8PGkw&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=-VrM722vlnU&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=tE3G3pKodWI&ab_channel=StefanAnon
-* https://www.youtube.com/watch?v=KVNfWhXovXA&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=cKe9Ky8gL_4&ab_channel=StefanAnon
 
 Nemesis
@@ -46,15 +44,15 @@ Tech rushing and population growth is still THE min-max meta of the game, even t
 
 Unrestricted Assimilators (Determine Assimilators, Fanatical Necrophage and Barbaric Necrophage) that can declare unrestricted wars have always been strong in Stellaris. The reason for their strength is that they are able to quickly gain more populations through their unrestricted conquest, something that normal empires have to spend large amounts of influence to do and as such their speed of conquest is capped. This is not so for the Unrestricted Assimilators, which can conquer an entire empire, giving them a huge boost to power and then allowing them to conquer the next empire in short order.
 
-The simplest fix for this is to reduce the speed at which assimilation happens and thus the creation of new population through conquest. The normal rate of assimilation is based on the speed of purging, which is roughly 1 population a month. Thus assimilators create 1 population a month after conquest. This is already on top of their current growth from population. It is very easy to see then that 1 population per month is MUCH faster than the rate that someone can make pop through robots or clone vats. The fix then is to impose a -400% penalty to purging for the Unrestricted Assimilators, which will translate into a pop growth of 1 every 4 months. 
+The simplest fix for this is to reduce the speed at which assimilation happens and thus the creation of new population through conquest. The normal rate of assimilation is based on the speed of purging, which is roughly 1 population every 5 months. Thus assimilators create 5 population a month after conquering a planet, which is never penalized by the total population size. It is very easy to see that this is MUCH faster than the rate someone can make pop through robots or clone vats. The fix then is to impose a -25% penalty to purging for the Unrestricted Assimilators, which will translate into a pop growth of 1 every 6.7 months. 
 
-This nerf will also make it slightly harder for such empires to digest larger empires as an empire with 200 pop will take 66 years to assimilate instead of 16 and will also cause large amounts of unhappiness on those worlds.
+This nerf will also make it slightly harder for such empires to digest larger empires as an empire with a planet of 50 pop will take 28 years to assimilate instead of 20.
 
 ### Fanatical Purifier Necrophage
 
 This origin and civics combination creates an unholy matrimony of two game mechanics that should not be together. It provides the unrestricted conquest mechanics and buffs of a devouring swarm or determined exterminator with the ability to assimilate like a determined assimilator. Normally devouring swarm or determined exterminator gain these huge combat boosts at the cost of destroying any pops they conquer, but in this case the combination of Fanatical Purifier and Necrophage gives the best of both worlds, which is a noticeable advantage.
 
-Because of this, there is a special event, "Unholy matrimony", at game start that will apply a -400% purge penalty simply because of how powerful this combination is. Note the mod already applies a -100% to Necrophage because of how good it is, so these two combine for a -500% penalty.
+Because of this, there is a special event, "Unholy matrimony", at game start that will apply a -33% purge penalty simply because of how powerful this combination is.
 
 ## Leadership cap
 
@@ -76,15 +74,9 @@ It is not very hard to see then that all the army buff game choices have similar
 
 Crime is a frequently exploited game mechanic. As seen in some of the more recent videos by Stefan, both for the Crime Lord Deal and during his Hive Mind play in the Nemesis Cold War videos, you can regularly have high crime with little to no risk.
 
-The quickest tweak that can thus be done for this is to increase slightly the crime/deviancy per pop from 2.0 to 2.1. This is only a 5% adjustment and will be left this way until it is determined how much of an impact this really has. Preliminary testing has shown that it does push some starting empires (e.g. slave with decadent) from 0% to ~5% crime rate at the start of the game.
+The quickest tweak that can thus be done for this is to increase slightly the crime/deviancy per pop from 2.0 to 2.2. This is only a 10% adjustment and will be left this way until it is determined how much of an impact this really has. Preliminary testing has shown that it does push some starting empires (e.g. slave with decadent) from 0% to ~5% crime rate at the start of the game, but this seems to have little to no impact.
 
 These changes to crime also indirectly give a boost to the Domination tradition, known to be the weakest tradition tree.
-
-### Crime lord deal
-
-One of the more popular exploits is the crime lord deal (See Stefan's video https://www.youtube.com/watch?v=n8R1LMj1CxI&ab_channel=StefanAnon). Rather that completely nerf this option out of existence as, Stefan's mod has done, we have instead decided to keep it and add some risk to it.
-
-You now run the small risk, 6% each year, of the crime lords reneging on the deal and causing trouble. This turns the game choice into a more tactical tool to be deployed here and there rather than applied on all planets.
 
 ## Be careful out there (event)
 
@@ -105,11 +97,3 @@ The second reason on whether to just increase longevity has to do with longevity
 The bonuses added to Venerable however cannot be large enough to skew how the AI should normally use these races. AI game files are hardcoded to purposefully weigh each racial trait to determine how best to use them. Our KISS principle is not to change many game files and as such it is best to give two minor buffs instead of one large buff and thus explains why it is just a tiny 2% here for two traits.
 
 Another question will be about Repugnant and Emotion Simulator traits, which also have unusual changes instead of the stat being directly modified. Turns out that the amenities modification trait is a very complicated game mechanic that is referenced 50+ times in 6 files. This is very different than the other racial traits that are simple modifiers in just the species trait files. Trying to change all references is thus too much effort and violates the KISS principle. Instead a small flavorful change is added to the trait directly.
-
-## Espionage
-
-The new feature of Nemesis. This feature unfortunately has proven to be too weak for several reasons of ROI. Many of the espionage options are extremely expensive and difficult to achieve, making them simply not worth wile. The simplest approach to resolving this is to reduce the cost from 25% to 50% of most of the espionage actions. One action that will get people's attention in particular will be the Steal Technology operation, which has been reduced by 50%. 
-
-There are four reasons why steal technology has been buffed considerably. The first is that nations that have tech worth stealing will also have high encryption, thus making it difficult in the first place to steal this technology. The second reason is that it helps reduce the impact of a snowballing empires. The third is that this indirectly buffs the Enigmatic Ascension perk and gives greater reason to pick this perk to counter techonology theft. The fourth and last reason is that the effects of steal techonology is not that strong in the first place. It only gives a +30% progress to research for a single random tech. Getting a boost in Zoo technology is not going to change the course of the war.
-
-So all in all, the cost of getting 100% progress, assuming 50% chance of failure and a 75% of getting tech worth while with 800 energy cost is about 7k energy. If we hadn't reduced the energy cost and left it at 1600 it would be 14k energy. Compare this to getting a 10% boost to all tech from the Curators for several years, which is usually 1k to 3k energy and it is clear to see why the previous ROI was not worth it.

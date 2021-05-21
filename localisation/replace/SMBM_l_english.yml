@@ -21,13 +21,10 @@
  requires_ap_galactic_contender: "$TRIGGER_FAIL$Requires the §Y$ap_galactic_contender$§! Ascension Perk."
  
  requires_ap_imperial_prerogative: "$TRIGGER_FAIL$Requires the §Y$ap_imperial_prerogative$§! Ascension Perk."
- 
- requires_technology_tech_construction_templates: "$TRIGGER_FAIL$Requires the £engineering£ §Y$tech_construction_templates$§! technology."
-
- requires_technology_tech_gene_expressions: "$TRIGGER_FAIL$Requires the £society£ §Y$tech_gene_expressions$§! technology."
 
 # TRADITIONS
  tr_expansion_a_new_life_desc: "£pops£ §Y$MOD_POP_GROWTH_SPEED$§! increased by §G+5%§!."
+ tr_expansion_a_new_life_machine_desc:0 "£pops£ §Y$MOD_POP_ASSEMBLY_SPEED$§! increased by §G+5%§!."
  tr_domination_grand_council_desc: "§Y$MOD_LEADER_RULER_SKILL_LEVELS$§! increased by §Y2§! and §G+1§! §Y$MOD_COUNTRY_LEADER_POOL_SIZE$§!."
 
 # CUSTOM SMBM EVENTS
@@ -42,27 +39,22 @@
 
  system_reboot: "System Reboot"
  system_reboot_desc: "Robot Ring World nerf"
+ 
+ broken_ring: "Broken Ring"
+ broken_ring_desc: "Robot Ring World nerf"
 
  smbm.1.name: "Prepare yourself"
  smbm.1.desc: "Prepare for the cold hard realities of space. Not knowing what lurks out there it would be best to increase your defenses. Be careful, your defensive bonuses will only last a few years."
  smbm.1.option: "OK"
-
- smbm.3.name: "We have altered the deal..."
- smbm.3.desc: "The crime lords no longer seem to care about our deal and brazenly violate it. They have begun to establish a powerful criminal underground. We should prepare for the worst."
- smbm.3.option: "We should have known"
-
- smbm.4.name: "Arrogant Crime Lords"
- smbm.4.desc: "The crime lords have become arrogant in their actions. They have pushed the boundaries of the deals we signed with them and are now frequently operating in its grey zones. This has unfortunately resulted in a crime wave."
- smbm.4.option: "We should have known"
  
- smbm.5.name: "Unholy Matrimony"
- smbm.5.desc: "Your dark arts of the Necrophages combined with the fervor of Fanatical Purification has created a monstrosity that should never have been. For this power you will of course pay a price. Your ability to purge has been slowed by §R-400%§!."
- smbm.5.option: "Very well..."
+ smbm.2.name: "Unholy Matrimony"
+ smbm.2.desc: "Your dark arts of the Necrophages combined with the fervor of Fanatical Purification has created a monstrosity that should never have been. For this power you will of course pay a price. Your ability to purge has been slowed by §R-50%§!."
+ smbm.2.option: "Very well..."
  
- smbm.6.name: "Unholy Matrimony"
- smbm.6.desc: "Your dark arts of the Necrophages combined with the barbarism of Barbaric Despoilers has created a monstrosity that should never have been. For this power you will of course pay a price. Your ability to purge has been slowed by §R-300%§!."
- smbm.6.option: "Very well..."
+ smbm.3.name: "Unholy Matrimony"
+ smbm.3.desc: "Your dark arts of the Necrophages combined with the barbarism of Barbaric Despoilers has created a monstrosity that should never have been. For this power you will of course pay a price. Your ability to purge has been slowed by §R-33%§!."
+ smbm.3.option: "Very well..."
  
- smbm.7.name: "System Reboot"
- smbm.7.desc: "Ring world system beginning boot sequence. Calculating... Calculating... Calculating... System degradation detected. Energy degraded by §R-10%§!. Estimated time of full system recovery: 10 years."
- smbm.7.option: "Reboot"
+ smbm.4.name: "System Reboot"
+ smbm.4.desc: "Ring world system beginning boot sequence. Calculating... Calculating... Calculating... AI interface with Ring appears to be broken. Energy systems degraded by §R-5%§!. Re-attempting boot sequence... System degradation detected. Energy degraded by §R-10%§!. Estimated time of full system recovery: 15 years."
+ smbm.4.option: "Reboot"

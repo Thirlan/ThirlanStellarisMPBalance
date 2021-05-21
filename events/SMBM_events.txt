@@ -27,100 +27,11 @@ country_event = {
 	}
 }
 
-# Planet event that checks if Crime Lord Deal is active and if so
-# Randomly decides if this should cause a crime wave.
-planet_event = {
-	id = smbm.2
-	hide_window = yes
-	
-	mean_time_to_happen = {
-		months = 12
-	}
-
-	# Optimize checks to only focus on players
-	pre_triggers = {
-		is_ai = no
-	}
-
-	trigger = {
-		has_modifier = crime_lord_deal
-	}
-	
-	immediate {
-		random_list = {
-			2 = {
-				modifier = {
-					factor = 0
-					has_modifier = criminal_underworld
-				}
-				planet_event = { id = smbm.3 }
-			}
-			4 = {
-				modifier = {
-					factor = 0
-					has_modifier = crime_wave
-				}
-				planet_event = { id = smbm.4 }
-			}
-			94 = {
-				# Do nothing
-			}
-		}
-	}
-}
-
-planet_event = {
-	id = smbm.3
-	title = smbm.3.name
-	desc = smbm.3.desc
-	
-	picture = GFX_evt_dark_alley
-	show_sound = event_criminal_activity
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		FROM = { planet_event = { id = crime.40 days = 30 } }
-		remove_modifier = crime_lord_deal
-		add_modifier = { modifier = "crime_lord_deal_broken" days = 1800 }
-	}
-	
-	option = {
-		name = smbm.3.option
-	}
-}
-
-planet_event = {
-	id = smbm.4
-	title = smbm.4.name
-	desc = smbm.4.desc
-	
-	picture = GFX_evt_dark_alley
-	show_sound = event_criminal_activity
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		add_modifier = { modifier = crime_wave days = 3600 }
-		set_timed_planet_flag = {
-			flag = planet_crime_flag
-			days = 3600
-		}
-	}
-	
-	option = {
-		name = smbm.4.option
-		tooltip = {
-			add_modifier = { modifier = crime_wave days = 3600 }
-		}
-	}
-}
-
 # Unholy matrimony: The Fanatic Necrophage nerf
 country_event = {
-	id = smbm.5
-	title = smbm.5.name
-	desc = smbm.5.desc
+	id = smbm.2
+	title = smbm.2.name
+	desc = smbm.2.desc
 	
 	picture = GFX_evt_disease_outbreak
 	show_sound = event_default
@@ -141,15 +52,15 @@ country_event = {
 	}
 
 	option = {
-		name = smbm.5.option
+		name = smbm.2.option
 	}
 }
 
 # Unholy matrimony: The Barbaric Necrophage nerf
 country_event = {
-	id = smbm.6
-	title = smbm.6.name
-	desc = smbm.6.desc
+	id = smbm.3
+	title = smbm.3.name
+	desc = smbm.3.desc
 	
 	picture = GFX_evt_disease_outbreak
 	show_sound = event_default
@@ -170,15 +81,15 @@ country_event = {
 	}
 
 	option = {
-		name = smbm.6.option
+		name = smbm.3.option
 	}
 }
 
 # System Reboot: Ring World Robot nerf
 country_event = {
-	id = smbm.7
-	title = smbm.7.name
-	desc = smbm.7.desc
+	id = smbm.4
+	title = smbm.4.name
+	desc = smbm.4.desc
 	
 	picture = GFX_evt_generator_powerup
 	show_sound = event_energy_field
@@ -196,9 +107,13 @@ country_event = {
 			modifier = system_reboot
 			days = 5475
 		}
+		add_modifier = {
+			modifier = broken_ring
+			days = -1
+		}
 	}
 
 	option = {
-		name = smbm.7.option
+		name = smbm.4.option
 	}
 }

@@ -3,39 +3,20 @@
 ## General tweaks
 
 ### Nerfs
- * Negotiate with crime lord: New events have a chance of occuring every year for every planet that has negotiated with crime lord. The event will cause the following:
-     * 4% chance: Crime wave event
-     * 2% chance: End of crime lord deal and Criminal Underworld event. Criminal Underworld can stack with Crime Wave.
  * Unholy Matrimony (event): New event at game start that will give a purge speed penalty to all players (AIs not included) with the following combinations:
-   * Necrophage and Fanatical Purifier (-400%)
-   * Necrophage and Barbaric Despoiler (-300%)
+   * Necrophage and Fanatical Purifier -33%
+   * Necrophage and Barbaric Despoiler -25%
+ * Crime/Deviancy per pop: 2.2 from 2
+ * Base Leader skill cap: 4 from 5
  
 ### Boosts
- * Base Leader skill cap: 4 from 5
  * Leadership max cap: 15 from 10
- * Crime/Deviancy per pop: 2.1 from 2
  * Be careful out there (event): All players (AIs not included) start with a passive 40% boost to starbase damage, -33% starbase upgrade cost, -33 defense platform build cost for the first 20 years of the game.
 
 ## Government
 
 ### Nerfs
  * Hive mind: 20% population growth from 25%
-
-### Boosts
- * none
-
-## Espionage
-
-### Nerfs
- * none
-
-### Boosts
- * none
-
-## Ethics
-
-### Nerfs
- * none
 
 ### Boosts
  * none
@@ -48,8 +29,11 @@
  * Executive Vigor: requires Imperial Prerogative ascension perk
  * The Flesh is Weak: 5% population assembly from +10%
  * Synthetic Evolution: 5% robotic job multiplier from 10%
- * Hive World: Additional Society technology Targeted Gene Expression required
- * Machine World: Additional Engineer technology Construction Templates required
+ * Hive World: Energy cost 11000 from 10000
+ * Machine World: Energy cost 11000 from 10000
+ * Galactic Wonders:
+   * Dyson Sphere: 10% increase in costs to all stages
+   * Ring World: 10% increase in costs to all stages
 
 ### Boosts
  * Galactic Contender: Number of ascension perks required dropped to 1 from 3
@@ -93,13 +77,13 @@
 ## Robot Civics
 
 ### Nerfs
- * Driven Assimilator: -400% purge speed
+ * Driven Assimilator: -25% purge speed
  * Rogue Servitor: -10% empire energy credits
 
 ### Boosts
  * Zero-waste Protocols: -15% robot upkeep from -10%
  * Warbots: +30% to army health/damage -30% to army cost/upkeep from 20% army damage and 20% upkeep
- * Factory Overclocking: +15% leader experience gain from +10%
+ * Factory Overclocking: +20% leader experience gain from +10%
 
 ## Megacorp Civics
 
@@ -115,7 +99,6 @@
 
 ### Nerfs
  * Scion: -5% Unity, -5% happiness and -20% Ethics attraction
- * Necrophage: -100% assimilation penalty
  * Ring World: 
    * Robots: Systems online event, giving robots a 15 year -15% energy penalty as they bring the ring world online
  
