@@ -105,7 +105,7 @@ country_event = {
 	immediate = {
 		add_modifier = {
 			modifier = system_reboot
-			days = 5475
+			days = 10950
 		}
 		add_modifier = {
 			modifier = broken_ring
@@ -115,5 +115,97 @@ country_event = {
 
 	option = {
 		name = smbm.4.option
+	}
+}
+
+# Live long and prosper part 1: Common grounds boost
+country_event = {
+	id = smbm.5
+	title = smbm.5.name
+	desc = smbm.5.desc
+	
+	picture = GFX_evt_crisis_defeated
+	show_sound = event_celebration
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_origin = origin_common_ground
+	}
+
+	mean_time_to_happen = { months = 6 }
+
+	immediate = {
+		# science ship
+		create_fleet = {
+			effect = {
+				set_owner = root.owner
+
+				create_ship = {
+					name = "Longevity"
+					random_existing_design = science
+				}
+
+				set_fleet_stance = evasive
+				set_location = root.capital_scope.star
+
+				owner = {
+					create_leader = {
+						class = scientist
+						sub_type = survey
+						name = random
+						species = owner_main_species
+					}
+				}
+				set_leader = last_created_leader
+			}
+		}
+
+		owner = {
+			country_event = {
+				id = smbm.6 days = 182
+			}
+		}
+	}
+
+	option = {
+		name = smbm.5.option
+		add_resource = {
+			influence = 125
+		}
+	}
+}
+
+# Live long and prosper part 2: Common grounds boost
+country_event = {
+	id = smbm.6
+	title = smbm.6.name
+	desc = smbm.6.desc
+	
+	picture = GFX_evt_crisis_defeated
+	show_sound = event_celebration
+	
+	is_triggered_only = yes
+
+	immediate = {
+		# colony ship
+		create_fleet = {
+			effect = {
+				set_owner = root.owner
+				create_ship = {
+					name = "Prosperity"
+					random_existing_design = constructor
+				}
+				set_fleet_stance = evasive
+				set_location = root.capital_scope.star
+			}
+		}
+	}
+
+	option = {
+		name = smbm.6.option
+		add_resource = {
+			influence = 125
+		}
 	}
 }

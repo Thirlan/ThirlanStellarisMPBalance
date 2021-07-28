@@ -1,11 +1,11 @@
-# Version 0.0.4
+# Version 0.1.0
 
 ## General tweaks
 
 ### Nerfs
  * Unholy Matrimony (event): New event at game start that will give a purge speed penalty to all players (AIs not included) with the following combinations:
-   * Necrophage and Fanatical Purifier -33%
-   * Necrophage and Barbaric Despoiler -25%
+   * Necrophage and Fanatical Purifier -30%
+   * Necrophage and Barbaric Despoiler -20%
  * Crime/Deviancy per pop: 2.2 from 2
  * Base Leader skill cap: 4 from 5
  
@@ -100,10 +100,11 @@
 ### Nerfs
  * Scion: -5% Unity, -5% happiness and -20% Ethics attraction
  * Ring World: 
-   * Robots: Systems online event, giving robots a 15 year -15% energy penalty as they bring the ring world online
+   * Robots: Systems online event, giving robots a 30 year -7% energy, mineral and research penalty as they bring the ring world online
+ * Necrophage: -10% to purge speed and -5% growth
  
 ### Boosts
- * Common Ground: +10 Stability
+ * Common Ground: "Live long and prosper" events gifts the player a science ship and scientist with +125 influence roughly 6 months after game start. 6 months later they will be gifted a construction ship with another +125 influence.
  * Galactic Doorstep: +10% Physics research
  * Post Apocalyptic: +5% Habitability bonus
  
@@ -112,13 +113,11 @@
 ### Nerfs
  * Rapid Breeders: +6% population growth from 10%
  * Unruly: +15% Empire Sprawl from 10%
- * Charismatic: -5% food from jobs
  * Solitary: +20% housing usage from +10%
 
 ### Boosts
  * Slow Breeders: -6% from -10%
  * Docile: -15% Empire Sprawl from -10%
- * Repugnant: +100% army damage
  * Communal: -20% housing usage from -10%
  * Resilient: +100% defensive army damage from 50% and 100% defensive army health
  * Conformist: +5% happiness and 25% Government Ethics attraction from 30%
@@ -132,12 +131,10 @@
 
 ### Nerfs
  * Mass Produced: +10% assembly speed from +15%
- * Emotion Emulator: -5% energy from jobs
  * High Bandwitdh: +15% Empire Sprawl from +10%
 
 ### Boosts
  * Custom made: -10% assembly speed from -15%
- * Uncanny: +100% army damage
  * Streamlined Protocols: -15% Empire Sprawl from -10%
  * Recycled: -30% assembly cost from -20%
 
