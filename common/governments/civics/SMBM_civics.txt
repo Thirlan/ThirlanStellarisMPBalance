@@ -16,7 +16,7 @@ civic_philosopher_king = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		country_edict_cap_add = 1
+		country_unity_produces_mult = 0.06
 		ruler_skill_levels = 2
 	}
 }

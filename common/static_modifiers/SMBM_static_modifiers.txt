@@ -8,19 +8,15 @@ be_careful_out_there = {
 }
 
 unholy_matrimony_1 = {
-	pop_purge_speed = -0.30
+	pop_purge_speed = -0.25
 }
 
 unholy_matrimony_2 = {
-	pop_purge_speed = -0.20
+	pop_purge_speed = -0.15
 }
 
 system_reboot = {
 	country_energy_produces_mult = -0.07
 	country_minerals_produces_mult = -0.07
 	all_technology_research_speed = -0.07
-}
-
-broken_ring = {
-	country_energy_produces_mult = -0.05
 }

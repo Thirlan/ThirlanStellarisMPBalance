@@ -4,10 +4,12 @@
 
 ### Nerfs
  * Unholy Matrimony (event): New event at game start that will give a purge speed penalty to all players (AIs not included) with the following combinations:
-   * Necrophage and Fanatical Purifier -30%
-   * Necrophage and Barbaric Despoiler -20%
+   * Necrophage and Fanatical Purifier -25%
+   * Necrophage and Barbaric Despoiler -15%
  * Crime/Deviancy per pop: 2.2 from 2
  * Base Leader skill cap: 4 from 5
+ * STARBASE_CAPACITY_SYSTEM_MULT: 0.08 from 0.1
+ * Capacity Subsidies: +40% energy from jobs from +50%
  
 ### Boosts
  * Leadership max cap: 15 from 10
@@ -56,7 +58,7 @@
  * Fanatical Purifier: 20% ship fire rate from 33%
 
 ### Boosts
- * Philosopher King: Edict Capacity +1
+ * Philosopher King: +6% unity
  * Environmentalist: -15% consumer goods from 10%
  * Feudal Realm: +10% Naval Capacity, -10% ship upkeep, -10% army upkeep
  * Efficient Bureaucracy: 15% administrative capacity from 10%
@@ -67,7 +69,6 @@
 
 ### Nerfs
  * Ascetic: -10% amenities usage from -15%
- * Devouring Swarm: -20% ship cost reduction from -25%
 
 ### Boosts
  * Subsumed will: -25% empire sprawl from -20%
@@ -104,7 +105,8 @@
  * Necrophage: -10% to purge speed and -5% growth
  
 ### Boosts
- * Common Ground: "Live long and prosper" events gifts the player a science ship and scientist with +125 influence roughly 6 months after game start. 6 months later they will be gifted a construction ship with another +125 influence.
+ * Common Ground: "Live long and prosper" events gifts the player a science ship and scientist with +125 influence 30 days after game start. 6 months later they will be gifted a construction ship with another +125 influence.
+ * Hegemon: "Long live the hegemony" event gifts the player with +200 influence and +75 alloy 30 days after game start.
  * Galactic Doorstep: +10% Physics research
  * Post Apocalyptic: +5% Habitability bonus
  

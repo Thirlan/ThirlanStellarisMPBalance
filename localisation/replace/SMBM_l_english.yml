@@ -11,7 +11,6 @@
  civic_tooltip_technocracy_effects: "£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_head_researcher£ §Y$job_head_researcher_plural$§!\n§Y$job_researcher_plural$§! also produce §Y0.5§! £unity£ Unity"
  
  # ORIGINS
- origin_tooltip_void_dwellers_effects: "- Start with three §YOrbital Habitats§! and the technology to build more\n- Members of your species thrive on Habitats and produce §G15%§! more there\n- Severe habitability and growth penalties on all normal planets\n- Hydroponic Farms have §G+1§! £job_farmer£ $job_farmer$ Job"
 
  # ASCENSCIONS
  requires_ap_galactic_contender: "$TRIGGER_FAIL$Requires the §Y$ap_galactic_contender$§! Ascension Perk."
@@ -35,9 +34,6 @@
 
  system_reboot: "System Reboot"
  system_reboot_desc: "Robot Ring World nerf"
- 
- broken_ring: "Broken Ring"
- broken_ring_desc: "Robot Ring World nerf"
 
  smbm.1.name: "Prepare yourself"
  smbm.1.desc: "Prepare for the cold hard realities of space. Not knowing what lurks out there it would be best to increase your defenses. Be careful, your defensive bonuses will only last a few years."
@@ -62,3 +58,7 @@
  smbm.6.name: "... And prosper"
  smbm.6.desc: "The capitals of your new federation are alive again with celebration! The final joint effort of your people, the construction ship Prosperity, is ready and will help you build a new inter-galactic era of propserity and cooperation!"
  smbm.6.option: "...and engage!"
+ 
+ smbm.7.name: "Long live the hegemony"
+ smbm.7.desc: "In honor of the hegemony's foundation, the members have come forth to present your with a tribute and a show of support for its continued existence."
+ smbm.7.option: "Accept the tribute"

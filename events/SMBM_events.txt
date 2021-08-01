@@ -1,5 +1,46 @@
 namespace = smbm
 
+# Trigger start of game events
+# Delay them to a few days after start so that we don't overwhelm players
+event = {
+	id = smbm.0
+    hide_window = yes
+
+	is_triggered_only = yes
+    
+    immediate = {
+        every_playable_country = {
+            limit = {
+                is_ai = no
+            }
+            country_event = {
+                id = smbm.1
+                days = 10
+            }
+            country_event = {
+                id = smbm.2
+                days = 10
+            }
+            country_event = {
+                id = smbm.3
+                days = 10
+            }
+            country_event = {
+                id = smbm.4
+                days = 10
+            }
+            country_event = {
+                id = smbm.5
+                days = 30
+            }
+            country_event = {
+                id = smbm.7
+                days = 30
+            }
+        }
+    }
+}
+
 # Anti-rushing event
 country_event = {
 	id = smbm.1
@@ -9,7 +50,7 @@ country_event = {
 	picture = GFX_evt_space_station
 	show_sound = event_default
 	
-	fire_only_once = yes
+	is_triggered_only = yes
 	
 	trigger = {
 		is_ai = no
@@ -36,7 +77,7 @@ country_event = {
 	picture = GFX_evt_disease_outbreak
 	show_sound = event_default
 	
-	fire_only_once = yes
+	is_triggered_only = yes
 	
 	trigger = {
 		is_ai = no
@@ -65,7 +106,7 @@ country_event = {
 	picture = GFX_evt_disease_outbreak
 	show_sound = event_default
 	
-	fire_only_once = yes
+	is_triggered_only = yes
 	
 	trigger = {
 		is_ai = no
@@ -91,10 +132,10 @@ country_event = {
 	title = smbm.4.name
 	desc = smbm.4.desc
 	
-	picture = GFX_evt_generator_powerup
+	picture = GFX_evt_ancient_databank
 	show_sound = event_energy_field
 	
-	fire_only_once = yes
+	is_triggered_only = yes
 	
 	trigger = {
 		is_ai = no
@@ -106,10 +147,6 @@ country_event = {
 		add_modifier = {
 			modifier = system_reboot
 			days = 10950
-		}
-		add_modifier = {
-			modifier = broken_ring
-			days = -1
 		}
 	}
 
@@ -127,13 +164,11 @@ country_event = {
 	picture = GFX_evt_crisis_defeated
 	show_sound = event_celebration
 	
-	fire_only_once = yes
+	is_triggered_only = yes
 	
 	trigger = {
 		has_origin = origin_common_ground
 	}
-
-	mean_time_to_happen = { months = 6 }
 
 	immediate = {
 		# science ship
@@ -206,6 +241,32 @@ country_event = {
 		name = smbm.6.option
 		add_resource = {
 			influence = 125
+		}
+	}
+}
+
+
+
+# Long live the hegemony: Hegemony boost
+country_event = {
+	id = smbm.7
+	title = smbm.7.name
+	desc = smbm.7.desc
+	
+	picture = GFX_evt_coronation
+	show_sound = event_celebration
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_origin = origin_hegemon
+	}
+
+	option = {
+		name = smbm.7.option
+		add_resource = {
+			influence = 200
+			alloys = 75
 		}
 	}
 }
