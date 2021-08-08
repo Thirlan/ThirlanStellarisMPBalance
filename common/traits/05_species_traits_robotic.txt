@@ -119,7 +119,7 @@ trait_robot_double_jointed = {
 	allowed_archetypes = { ROBOT MACHINE }
 
 	modifier = {
-		pop_housing_usage_mult = -0.1
+		pop_housing_usage_mult = -0.2
 	}
 }
 
@@ -130,7 +130,7 @@ trait_robot_bulky = {
 	allowed_archetypes = { ROBOT MACHINE }
 
 	modifier = {
-		pop_housing_usage_mult = 0.1
+		pop_housing_usage_mult = 0.2
 	}
 	ai_weight = {
 		factor = 0

@@ -26,7 +26,7 @@ capacity_subsidies = {
 	}
 
 	modifier = {
-		planet_technician_produces_mult = 0.35
+		planet_technician_produces_mult = 0.40
 		custom_tooltip = edict_capacity_subsidies_tooltip
 		show_only_custom_tooltip = no
 	}

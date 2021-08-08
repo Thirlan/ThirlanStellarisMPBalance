@@ -1,4 +1,4 @@
-# 2021/08/01
+# 2021/08/08
 
 ## 0.1.0
 
@@ -18,7 +18,7 @@ In the same light as Commong grounds, Hegemon has been given a slightly weaker b
 
 In an effort to improve the value of the Starbase cap bonus game choices, such as Grasp the Void ascension perk, the STARBASE_CAPACITY_SYSTEM_MULT has been reduced from 0.1 to 0.8 and the STARBASE_CAPACITY_BASE reduced from 3 to 2, which implies that if you had 100 systems under your control you would get 8 + 2 = 10 starbases instead of 10 + 3 = 13 starbases.
 
-Reduced Capacity Subsidies edict from 50% to 35% to help reduce the energy only exploit where you only build energy and buy the rest of the resources from the market. Reducing from 50% to 35% will not entirely remove this exploit as 35% is still above the market transaction cost of 30%, but it does blunt the player's ability to completely rely on the market. Price fluctuations will force the players to diversify with other resources to avoid getting hit with market price spikes.
+Reduced Capacity Subsidies edict from 50% to 40% to help reduce the energy only exploit where you only build energy and buy the rest of the resources from the market. Reducing from 50% to 40% will not entirely remove this exploit as 40% is still above the market transaction cost of 30%, but it does blunt the player's ability to completely rely on the market. Price fluctuations will force the players to diversify with other resources to avoid getting hit with market price spikes.
 
 Devouring swarm's minor penalty of -20% ship build cost instead of -25% has been removed. Devouring Swarm, much like Determined Exterminator, is not strong enough to deserve a nerf.
 

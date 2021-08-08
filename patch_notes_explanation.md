@@ -45,15 +45,13 @@ Tech rushing and population growth is still THE min-max meta of the game, even t
 
 Unrestricted Assimilators (Determine Assimilators, Fanatical Necrophage and Barbaric Necrophage) that can declare unrestricted wars have always been strong in Stellaris. The reason for their strength is that they are able to quickly gain more populations through their unrestricted conquest, something that normal empires have to spend large amounts of influence to do and as such their speed of conquest is capped. This is not so for the Unrestricted Assimilators, which can conquer an entire empire, giving them a huge boost to power and then allowing them to conquer the next empire in short order.
 
-The simplest fix for this is to reduce the speed at which assimilation happens and thus the creation of new population through conquest. The normal rate of assimilation is based on the speed of purging, which is roughly 1 population every 5 months. Thus assimilators create 5 population a month after conquering a planet, which is never penalized by the total population size. It is very easy to see that this is MUCH faster than the rate someone can make pop through robots or clone vats. The fix then is to impose a -25% penalty to purging for the Unrestricted Assimilators, which will translate into a pop growth of 1 every 6.7 months. 
-
-This nerf will also make it slightly harder for such empires to digest larger empires as an empire with a planet of 50 pop will take 28 years to assimilate instead of 20.
+The simplest fix for this is to reduce the speed at which assimilation happens and thus the creation of new population through conquest.
 
 ### Fanatical Purifier Necrophage
 
 This origin and civics combination creates an unholy matrimony of two game mechanics that should not be together. It provides the unrestricted conquest mechanics and buffs of a devouring swarm or determined exterminator with the ability to assimilate like a determined assimilator. Normally devouring swarm or determined exterminator gain these huge combat boosts at the cost of destroying any pops they conquer, but in this case the combination of Fanatical Purifier and Necrophage gives the best of both worlds, which is a noticeable advantage.
 
-Because of this, there is a special event, "Unholy matrimony", at game start that will apply a -33% purge penalty simply because of how powerful this combination is.
+Because of this, there is a special event, "Unholy matrimony", at game start that will apply a purge penalty simply because of how powerful this combination is.
 
 ## Leadership cap
 
@@ -73,7 +71,7 @@ It is not very hard to see then that all the army buff game choices have similar
 
 ## Crime
 
-Crime is a frequently exploited game mechanic. As seen in some of the more recent videos by Stefan, both for the Crime Lord Deal and during his Hive Mind play in the Nemesis Cold War videos, you can regularly have high crime with little to no risk.
+Crime is a frequently exploited game mechanic. As seen in some of the more recent videos by Stefan, both for the Crime Lord Deal and his Hive Mind play in the Nemesis videos, you can regularly have high crime with little to no risk.
 
 The quickest tweak that can thus be done for this is to increase slightly the crime/deviancy per pop from 2.0 to 2.2. This is only a 10% adjustment and will be left this way until it is determined how much of an impact this really has. Preliminary testing has shown that it does push some starting empires (e.g. slave with decadent) from 0% to ~5% crime rate at the start of the game, but this seems to have little to no impact.
 
@@ -89,12 +87,10 @@ The boost also only applies to players and not AIs, which encourages players to 
 
 ## Racial traits
 
-Some people may notice that the racial traits have some unusual changes to them. For example Venerable has +2% unity and +2% social. The argument might have been to just reduce the point cost or increasing the longevity. There are two reasons for not having done this.
+Some people may noticed that the racial traits have some unusual changes to them. For example Venerable has +2% unity and +2% social. The argument might have been to just reduce the point cost or increasing the longevity. There are two reasons for not having done this.
 
 The first reason is that changing point costs of traits will affect the existing races that people have created and come with the game. This falls foul of our KISS principle of making the sure the mod is simple to use and easy to turn on and off. Hence no changes to point costs will EVER be made and requires us to instead modify the abilities directly.
 
 The second reason on whether to just increase longevity has to do with longevity in the game in general. +80 is a significant boost already, and any additional years added have diminishing returns. Consider that by the end of the game your citizens can live to 130 without this boost. The game itself only lasts about 300 years so adding another 20 years does not really justify the 4 point cost of Venerable. Instead it is more logical to add some minor bonuses that have the right flavor to the trait.
 
 The bonuses added to Venerable however cannot be large enough to skew how the AI should normally use these races. AI game files are hardcoded to purposefully weigh each racial trait to determine how best to use them. Our KISS principle is not to change many game files and as such it is best to give two minor buffs instead of one large buff and thus explains why it is just a tiny 2% here for two traits.
-
-Another question will be about Repugnant and Emotion Simulator traits, which also have unusual changes instead of the stat being directly modified. Turns out that the amenities modification trait is a very complicated game mechanic that is referenced 50+ times in 6 files. This is very different than the other racial traits that are simple modifiers in just the species trait files. Trying to change all references is thus too much effort and violates the KISS principle. Instead a small flavorful change is added to the trait directly.

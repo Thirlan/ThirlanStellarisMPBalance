@@ -48,7 +48,7 @@
  smbm.4.option: "Very well..."
  
  smbm.5.name: "System Reboot"
- smbm.5.desc: "Ring world system beginning boot sequence. Calculating... Calculating... Calculating... AI interface with Ring appears to be broken. Energy systems degraded by §R-5%§!. Re-attempting boot sequence... System degradation detected. Estimated time of full system recovery: 30 years."
+ smbm.5.desc: "Ring world system beginning boot sequence. Calculating... Calculating... Calculating... AI interface with Ring appears to be broken. Estimated time of full system recovery: 30 years."
  smbm.5.option: "Reboot"
  
  smbm.6.name: "Live long..."

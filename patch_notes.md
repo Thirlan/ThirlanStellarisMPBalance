@@ -1,4 +1,4 @@
-# Version 0.1.0
+# Version 0.1.1
 
 ## General tweaks
 
@@ -10,7 +10,7 @@
  * Base Leader skill cap: 4 from 5
  * STARBASE_CAPACITY_BASE: 2 from 3
  * STARBASE_CAPACITY_SYSTEM_MULT: 0.08 from 0.1
- * Capacity Subsidies: +35% energy from jobs from +50%
+ * Capacity Subsidies: +40% energy from jobs from +50%
  
 ### Boosts
  * Leadership max cap: 15 from 10
@@ -135,11 +135,14 @@
 ### Nerfs
  * Mass Produced: +10% assembly speed from +15%
  * High Bandwitdh: +15% Empire Sprawl from +10%
+ * Bulky: 20% housing usage from 10%
 
 ### Boosts
  * Custom made: -10% assembly speed from -15%
  * Streamlined Protocols: -15% Empire Sprawl from -10%
  * Recycled: -30% assembly cost from -20%
+ * Double-jointed: -20% housing usage from -10%
+
 
 ## Lithoid Traits
 
