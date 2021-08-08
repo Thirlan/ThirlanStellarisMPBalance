@@ -3,7 +3,7 @@ namespace = smbm
 # Trigger start of game events
 # Delay them to a few days after start so that we don't overwhelm players
 event = {
-	id = smbm.0
+	id = smbm.1
     hide_window = yes
 
 	is_triggered_only = yes
@@ -12,10 +12,6 @@ event = {
         every_playable_country = {
             limit = {
                 is_ai = no
-            }
-            country_event = {
-                id = smbm.1
-                days = 10
             }
             country_event = {
                 id = smbm.2
@@ -31,10 +27,14 @@ event = {
             }
             country_event = {
                 id = smbm.5
+                days = 10
+            }
+            country_event = {
+                id = smbm.6
                 days = 30
             }
             country_event = {
-                id = smbm.7
+                id = smbm.8
                 days = 30
             }
         }
@@ -43,9 +43,9 @@ event = {
 
 # Anti-rushing event
 country_event = {
-	id = smbm.1
-	title = smbm.1.name
-	desc = smbm.1.desc
+	id = smbm.2
+	title = smbm.2.name
+	desc = smbm.2.desc
 	
 	picture = GFX_evt_space_station
 	show_sound = event_default
@@ -64,15 +64,15 @@ country_event = {
 	}
 
 	option = {
-		name = smbm.1.option
+		name = smbm.2.option
 	}
 }
 
 # Unholy matrimony: The Fanatic Necrophage nerf
 country_event = {
-	id = smbm.2
-	title = smbm.2.name
-	desc = smbm.2.desc
+	id = smbm.3
+	title = smbm.3.name
+	desc = smbm.3.desc
 	
 	picture = GFX_evt_disease_outbreak
 	show_sound = event_default
@@ -93,15 +93,15 @@ country_event = {
 	}
 
 	option = {
-		name = smbm.2.option
+		name = smbm.3.option
 	}
 }
 
 # Unholy matrimony: The Barbaric Necrophage nerf
 country_event = {
-	id = smbm.3
-	title = smbm.3.name
-	desc = smbm.3.desc
+	id = smbm.4
+	title = smbm.4.name
+	desc = smbm.4.desc
 	
 	picture = GFX_evt_disease_outbreak
 	show_sound = event_default
@@ -122,15 +122,15 @@ country_event = {
 	}
 
 	option = {
-		name = smbm.3.option
+		name = smbm.4.option
 	}
 }
 
 # System Reboot: Ring World Robot nerf
 country_event = {
-	id = smbm.4
-	title = smbm.4.name
-	desc = smbm.4.desc
+	id = smbm.5
+	title = smbm.5.name
+	desc = smbm.5.desc
 	
 	picture = GFX_evt_ancient_databank
 	show_sound = event_energy_field
@@ -151,15 +151,15 @@ country_event = {
 	}
 
 	option = {
-		name = smbm.4.option
+		name = smbm.5.option
 	}
 }
 
 # Live long and prosper part 1: Common grounds boost
 country_event = {
-	id = smbm.5
-	title = smbm.5.name
-	desc = smbm.5.desc
+	id = smbm.6
+	title = smbm.6.name
+	desc = smbm.6.desc
 	
 	picture = GFX_evt_crisis_defeated
 	show_sound = event_celebration
@@ -198,13 +198,13 @@ country_event = {
 
 		owner = {
 			country_event = {
-				id = smbm.6 days = 182
+				id = smbm.7 days = 182
 			}
 		}
 	}
 
 	option = {
-		name = smbm.5.option
+		name = smbm.6.option
 		add_resource = {
 			influence = 125
 		}
@@ -213,9 +213,9 @@ country_event = {
 
 # Live long and prosper part 2: Common grounds boost
 country_event = {
-	id = smbm.6
-	title = smbm.6.name
-	desc = smbm.6.desc
+	id = smbm.7
+	title = smbm.7.name
+	desc = smbm.7.desc
 	
 	picture = GFX_evt_crisis_defeated
 	show_sound = event_celebration
@@ -238,7 +238,7 @@ country_event = {
 	}
 
 	option = {
-		name = smbm.6.option
+		name = smbm.7.option
 		add_resource = {
 			influence = 125
 		}
@@ -249,9 +249,9 @@ country_event = {
 
 # Long live the hegemony: Hegemony boost
 country_event = {
-	id = smbm.7
-	title = smbm.7.name
-	desc = smbm.7.desc
+	id = smbm.8
+	title = smbm.8.name
+	desc = smbm.8.desc
 	
 	picture = GFX_evt_coronation
 	show_sound = event_celebration
@@ -263,7 +263,7 @@ country_event = {
 	}
 
 	option = {
-		name = smbm.7.option
+		name = smbm.8.option
 		add_resource = {
 			influence = 200
 			alloys = 75

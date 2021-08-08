@@ -8,8 +8,9 @@
    * Necrophage and Barbaric Despoiler -15%
  * Crime/Deviancy per pop: 2.2 from 2
  * Base Leader skill cap: 4 from 5
+ * STARBASE_CAPACITY_BASE: 2 from 3
  * STARBASE_CAPACITY_SYSTEM_MULT: 0.08 from 0.1
- * Capacity Subsidies: +40% energy from jobs from +50%
+ * Capacity Subsidies: +35% energy from jobs from +50%
  
 ### Boosts
  * Leadership max cap: 15 from 10
@@ -55,10 +56,10 @@
 ### Nerfs
  * Technocracy: 0.5 unity from 1.0
  * Meritocracy: leader cap level +0 from +1
- * Fanatical Purifier: 20% ship fire rate from 33%
+ * Fanatical Purifier: 23% ship fire rate from 33%
 
 ### Boosts
- * Philosopher King: +6% unity
+ * Philosopher King: +2% to unity, research and administrative capacity
  * Environmentalist: -15% consumer goods from 10%
  * Feudal Realm: +10% Naval Capacity, -10% ship upkeep, -10% army upkeep
  * Efficient Bureaucracy: 15% administrative capacity from 10%

@@ -1,6 +1,6 @@
 # Triggers when the game starts
 on_game_start = {
 	events = {
-		smbm.0
+		smbm.1
 	}
 }
