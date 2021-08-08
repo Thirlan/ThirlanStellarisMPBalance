@@ -1,10 +1,6 @@
 ﻿l_english:
  
  # TRAITS
- TRAIT_CHARISMATIC_EFFECT: "£amenities£ Amenities from £job£ Jobs: §G+20%§!\n£food£Food from jobs: §R-5%§!"
- TRAIT_REPUGNANT_EFFECT: "£amenities£ Amenities from £job£ Jobs: §R-20%§!\nArmy damage: §G+100%§!"
- TRAIT_EMOTION_EMULATORS_EFFECT: "£amenities_no_happiness£Amenities from £job£ Jobs: §G+20%§!\n£energy£Energy from jobs: §R-5%§!"
- TRAIT_UNCANNY_EFFECT: "£amenities_no_happiness£Amenities from £job£ Jobs: §R-20%§!\nArmy damage: §G+100%§!"
  TRAIT_LITHOID_GASEOUS_BYPRODUCTS_EFFECT: "Each pop with living standards of slavery or better produces 0.02 £exotic_gases£ §Y$exotic_gases$§! per month."
  TRAIT_LITHOID_SCINTILLATING_EFFECT: "Each pop with living standards of slavery or better produces 0.02 £rare_crystals£ §Y$rare_crystals$§! per month."
  TRAIT_LITHOID_VOLATILE_EXCRETIONS_EFFECT: "Each pop with living standards of slavery or better produces 0.02 £volatile_motes£ §Y$volatile_motes$§! per month."
@@ -15,7 +11,6 @@
  civic_tooltip_technocracy_effects: "£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_head_researcher£ §Y$job_head_researcher_plural$§!\n§Y$job_researcher_plural$§! also produce §Y0.5§! £unity£ Unity"
  
  # ORIGINS
- origin_tooltip_void_dwellers_effects: "- Start with three §YOrbital Habitats§! and the technology to build more\n- Members of your species thrive on Habitats and produce §G15%§! more there\n- Severe habitability and growth penalties on all normal planets\n- Hydroponic Farms have §G+1§! £job_farmer£ $job_farmer$ Job"
 
  # ASCENSCIONS
  requires_ap_galactic_contender: "$TRIGGER_FAIL$Requires the §Y$ap_galactic_contender$§! Ascension Perk."
@@ -39,22 +34,31 @@
 
  system_reboot: "System Reboot"
  system_reboot_desc: "Robot Ring World nerf"
- 
- broken_ring: "Broken Ring"
- broken_ring_desc: "Robot Ring World nerf"
 
- smbm.1.name: "Prepare yourself"
- smbm.1.desc: "Prepare for the cold hard realities of space. Not knowing what lurks out there it would be best to increase your defenses. Be careful, your defensive bonuses will only last a few years."
- smbm.1.option: "OK"
- 
- smbm.2.name: "Unholy Matrimony"
- smbm.2.desc: "Your dark arts of the Necrophages combined with the fervor of Fanatical Purification has created a monstrosity that should never have been. For this power you will of course pay a price. Your ability to purge has been slowed by §R-50%§!."
- smbm.2.option: "Very well..."
+ smbm.2.name: "Prepare yourself"
+ smbm.2.desc: "Prepare for the cold hard realities of space. Not knowing what lurks out there it would be best to increase your defenses. Be careful, your defensive bonuses will only last a few years."
+ smbm.2.option: "OK"
  
  smbm.3.name: "Unholy Matrimony"
- smbm.3.desc: "Your dark arts of the Necrophages combined with the barbarism of Barbaric Despoilers has created a monstrosity that should never have been. For this power you will of course pay a price. Your ability to purge has been slowed by §R-33%§!."
+ smbm.3.desc: "Your dark arts of the Necrophages combined with the fervor of Fanatical Purification has created a monstrosity. For this power you will of course pay a price. Your ability to purge has been slowed."
  smbm.3.option: "Very well..."
  
- smbm.4.name: "System Reboot"
- smbm.4.desc: "Ring world system beginning boot sequence. Calculating... Calculating... Calculating... AI interface with Ring appears to be broken. Energy systems degraded by §R-5%§!. Re-attempting boot sequence... System degradation detected. Energy degraded by §R-10%§!. Estimated time of full system recovery: 15 years."
- smbm.4.option: "Reboot"
+ smbm.4.name: "Unholy Matrimony"
+ smbm.4.desc: "Your dark arts of the Necrophages combined with the barbarism of Barbaric Despoilers has created a monstrosity. For this power you will of course pay a price. Your ability to purge has been slowed."
+ smbm.4.option: "Very well..."
+ 
+ smbm.5.name: "System Reboot"
+ smbm.5.desc: "Ring world system beginning boot sequence. Calculating... Calculating... Calculating... AI interface with Ring appears to be broken. Estimated time of full system recovery: 30 years."
+ smbm.5.option: "Reboot"
+ 
+ smbm.6.name: "Live long..."
+ smbm.6.desc: "The capitals of your new federation are alive with celebration! The gleaming new science ship Longevity, which was built with the unified will of your nations is ready. Go forth and explore!"
+ smbm.6.option: "...and engage!"
+ 
+ smbm.7.name: "... And prosper"
+ smbm.7.desc: "The capitals of your new federation are alive again with celebration! The final joint effort of your people, the construction ship Prosperity, is ready and will help you build a new inter-galactic era of propserity and cooperation!"
+ smbm.7.option: "...and engage!"
+ 
+ smbm.8.name: "Long live the hegemony"
+ smbm.8.desc: "In honor of the hegemony's foundation, the members have come forth to present your with a tribute and a show of support for its continued existence."
+ smbm.8.option: "Accept the tribute"

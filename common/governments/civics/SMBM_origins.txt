@@ -36,6 +36,55 @@ origin_scion = {
 	}
 }
 
+origin_necrophage = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_necrophage.dds"
+	picture = GFX_origin_necrophage
+	flags = { custom_start_screen }
+
+	playable = {
+		host_has_dlc = "Necroids Species Pack"
+	}
+
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_gestalt_consciousness
+				value = ethic_xenophile
+				value = ethic_fanatic_xenophile
+				value = ethic_fanatic_egalitarian
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_death_cult
+				value = civic_death_cult_corporate
+			}
+		}
+	}
+
+	modifier = {
+		pop_purge_speed = -0.10
+		pop_growth_speed = -0.05
+	}
+
+	description = civic_tooltip_necrophage_effects
+
+	traits = {
+		trait = trait_necrophage
+	}
+
+	has_secondary_species = {
+		title = civic_necrophage_secondary_species
+	}
+
+	advanced_start = yes
+
+	random_weight = {
+		base = 5
+	}
+}
+
 origin_galactic_doorstep = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_gateway.dds"
@@ -63,46 +112,4 @@ origin_galactic_doorstep = {
 		base = 1
 	}
 
-}
-
-origin_common_ground = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_common_ground.dds"
-	picture = GFX_origin_common_ground
-	max_once_global = yes
-
-	playable = {
-		host_has_dlc = "Federations"
-	}
-
-	possible = {
-		ethics = {
-			NOR = {
-				value = ethic_gestalt_consciousness
-				value = ethic_xenophobe
-				value = ethic_fanatic_xenophobe
-			}
-		}
-		civics = {
-			NOR = {
-				value = civic_barbaric_despoilers
-				value = civic_fanatic_purifiers
-				value = civic_inwards_perfection
-			}
-		}
-	}
-
-	modifier = {
-		planet_stability_add = 10
-	}
-	
-	description = "origin_tooltip_common_ground_effects"
-	flags = { custom_start_screen }
-
-	traits = {
-	}
-
-	random_weight = {
-		base = 5
-	}
 }

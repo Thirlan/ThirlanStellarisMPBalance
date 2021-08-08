@@ -119,7 +119,7 @@ trait_robot_double_jointed = {
 	allowed_archetypes = { ROBOT MACHINE }
 
 	modifier = {
-		pop_housing_usage_mult = -0.1
+		pop_housing_usage_mult = -0.2
 	}
 }
 
@@ -130,7 +130,7 @@ trait_robot_bulky = {
 	allowed_archetypes = { ROBOT MACHINE }
 
 	modifier = {
-		pop_housing_usage_mult = 0.1
+		pop_housing_usage_mult = 0.2
 	}
 	ai_weight = {
 		factor = 0
@@ -167,9 +167,6 @@ trait_robot_emotion_emulators = {
 	opposites = { "trait_robot_uncanny" }
 	allowed_archetypes = { MACHINE }
 	custom_tooltip = TRAIT_EMOTION_EMULATORS_EFFECT
-	modifier = {
-		planet_jobs_energy_produces_mult = -0.05
-	}
 }
 
 trait_robot_uncanny = {
@@ -179,9 +176,6 @@ trait_robot_uncanny = {
 	custom_tooltip = TRAIT_UNCANNY_EFFECT
 	ai_weight = {
 		factor = 0
-	}
-	modifier = {
-		army_damage_mult = 1.00
 	}
 }
 

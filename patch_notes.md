@@ -1,13 +1,16 @@
-# Version 0.0.4
+# Version 0.1.1
 
 ## General tweaks
 
 ### Nerfs
  * Unholy Matrimony (event): New event at game start that will give a purge speed penalty to all players (AIs not included) with the following combinations:
-   * Necrophage and Fanatical Purifier -33%
-   * Necrophage and Barbaric Despoiler -25%
+   * Necrophage and Fanatical Purifier -25%
+   * Necrophage and Barbaric Despoiler -15%
  * Crime/Deviancy per pop: 2.2 from 2
  * Base Leader skill cap: 4 from 5
+ * STARBASE_CAPACITY_BASE: 2 from 3
+ * STARBASE_CAPACITY_SYSTEM_MULT: 0.08 from 0.1
+ * Capacity Subsidies: +40% energy from jobs from +50%
  
 ### Boosts
  * Leadership max cap: 15 from 10
@@ -53,10 +56,10 @@
 ### Nerfs
  * Technocracy: 0.5 unity from 1.0
  * Meritocracy: leader cap level +0 from +1
- * Fanatical Purifier: 20% ship fire rate from 33%
+ * Fanatical Purifier: 23% ship fire rate from 33%
 
 ### Boosts
- * Philosopher King: Edict Capacity +1
+ * Philosopher King: +2% to unity, research and administrative capacity
  * Environmentalist: -15% consumer goods from 10%
  * Feudal Realm: +10% Naval Capacity, -10% ship upkeep, -10% army upkeep
  * Efficient Bureaucracy: 15% administrative capacity from 10%
@@ -67,7 +70,6 @@
 
 ### Nerfs
  * Ascetic: -10% amenities usage from -15%
- * Devouring Swarm: -20% ship cost reduction from -25%
 
 ### Boosts
  * Subsumed will: -25% empire sprawl from -20%
@@ -100,10 +102,12 @@
 ### Nerfs
  * Scion: -5% Unity, -5% happiness and -20% Ethics attraction
  * Ring World: 
-   * Robots: Systems online event, giving robots a 15 year -15% energy penalty as they bring the ring world online
+   * Robots: Systems online event, giving robots a 30 year -7% energy, mineral and research penalty as they bring the ring world online
+ * Necrophage: -10% to purge speed and -5% growth
  
 ### Boosts
- * Common Ground: +10 Stability
+ * Common Ground: "Live long and prosper" events gifts the player a science ship and scientist with +125 influence 30 days after game start. 6 months later they will be gifted a construction ship with another +125 influence.
+ * Hegemon: "Long live the hegemony" event gifts the player with +200 influence and +75 alloy 30 days after game start.
  * Galactic Doorstep: +10% Physics research
  * Post Apocalyptic: +5% Habitability bonus
  
@@ -112,13 +116,11 @@
 ### Nerfs
  * Rapid Breeders: +6% population growth from 10%
  * Unruly: +15% Empire Sprawl from 10%
- * Charismatic: -5% food from jobs
  * Solitary: +20% housing usage from +10%
 
 ### Boosts
  * Slow Breeders: -6% from -10%
  * Docile: -15% Empire Sprawl from -10%
- * Repugnant: +100% army damage
  * Communal: -20% housing usage from -10%
  * Resilient: +100% defensive army damage from 50% and 100% defensive army health
  * Conformist: +5% happiness and 25% Government Ethics attraction from 30%
@@ -132,14 +134,15 @@
 
 ### Nerfs
  * Mass Produced: +10% assembly speed from +15%
- * Emotion Emulator: -5% energy from jobs
  * High Bandwitdh: +15% Empire Sprawl from +10%
+ * Bulky: 20% housing usage from 10%
 
 ### Boosts
  * Custom made: -10% assembly speed from -15%
- * Uncanny: +100% army damage
  * Streamlined Protocols: -15% Empire Sprawl from -10%
  * Recycled: -30% assembly cost from -20%
+ * Double-jointed: -20% housing usage from -10%
+
 
 ## Lithoid Traits
 

@@ -16,7 +16,9 @@ civic_philosopher_king = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		country_edict_cap_add = 1
+		country_unity_produces_mult = 0.02
+        country_admin_cap_mult = 0.02
+        all_technology_research_speed = 0.02
 		ruler_skill_levels = 2
 	}
 }
@@ -102,7 +104,7 @@ civic_fanatic_purifiers = {
 
 	description = "civic_tooltip_fanatic_purifiers_effects"
 	modifier = {
-		ship_fire_rate_mult = 0.28
+		ship_fire_rate_mult = 0.23
 		army_damage_mult = 0.33
 		starbase_shipyard_build_cost_mult = -0.15
 		country_naval_cap_mult = 0.33
