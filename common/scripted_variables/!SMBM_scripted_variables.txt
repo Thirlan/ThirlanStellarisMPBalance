@@ -1,1 +1,2 @@
 @lithoid_trait_resource_production = 0.02
+@criminal_job_weight = 9

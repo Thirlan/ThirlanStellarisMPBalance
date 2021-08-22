@@ -40,7 +40,7 @@ civic_meritocracy = {
 	random_weight = { base = 5 }
 	modifier = {
 						 
-		planet_jobs_specialist_produces_mult = 0.10
+		planet_jobs_specialist_produces_mult = 0.09
 	}
 }
 

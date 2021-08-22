@@ -22,6 +22,7 @@ Nemesis
 * https://www.youtube.com/watch?v=gg45JnH7ipc&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=pTLGLvyAT2I&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=Id19TyroN0k&ab_channel=StefanAnon
+* https://www.youtube.com/watch?v=UqA4GFBYdyU&ab_channel=StefanAnon
 
 Also the following mod from Stefan's team (Magikaas, Aow, AirHunter, Stefan, Hoover Tesla) helped tremendously for inspiration and learning.
 

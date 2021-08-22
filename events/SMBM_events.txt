@@ -126,7 +126,7 @@ country_event = {
 	}
 }
 
-# System Reboot: Ring World Robot nerf
+# System Reboot: Ring World nerf
 country_event = {
 	id = smbm.5
 	title = smbm.5.name
@@ -140,14 +140,24 @@ country_event = {
 	trigger = {
 		is_ai = no
 		has_origin = origin_shattered_ring
-		has_authority = auth_machine_intelligence
 	}
-	
+
 	immediate = {
-		add_modifier = {
-			modifier = system_reboot
-			days = 10950
-		}
+        if = {
+            limit = {
+                has_authority = auth_machine_intelligence
+            }
+            add_modifier = {
+                modifier = system_reboot_robot
+                days = 10950
+            }
+        }
+        else = {
+            add_modifier = {
+                modifier = system_reboot
+                days = 10950
+            }
+        }
 	}
 
 	option = {

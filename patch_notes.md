@@ -11,6 +11,7 @@
  * STARBASE_CAPACITY_BASE: 2 from 3
  * STARBASE_CAPACITY_SYSTEM_MULT: 0.08 from 0.1
  * Capacity Subsidies: +40% energy from jobs from +50%
+ * criminal_job_weight: 9 from 5 (one less than specialist)
  
 ### Boosts
  * Leadership max cap: 15 from 10
@@ -19,7 +20,7 @@
 ## Government
 
 ### Nerfs
- * Hive mind: 20% population growth from 25%
+ * none
 
 ### Boosts
  * none
@@ -55,7 +56,7 @@
 
 ### Nerfs
  * Technocracy: 0.5 unity from 1.0
- * Meritocracy: leader cap level +0 from +1
+ * Meritocracy: leader cap level +0 from +1 and 9% specialist bonus from +10%
  * Fanatical Purifier: 23% ship fire rate from 33%
 
 ### Boosts
@@ -101,9 +102,10 @@
 
 ### Nerfs
  * Scion: -5% Unity, -5% happiness and -20% Ethics attraction
- * Ring World: 
-   * Robots: Systems online event, giving robots a 30 year -7% energy, mineral and research penalty as they bring the ring world online
+ * Ring World:
+   * Systems online event: -5% to energy, mineral and research for non-robots and -10% penalty to robots for 30 years
  * Necrophage: -10% to purge speed and -5% growth
+ * Void Dwellers: 10% production bonus instead of 15%
  
 ### Boosts
  * Common Ground: "Live long and prosper" events gifts the player a science ship and scientist with +125 influence 30 days after game start. 6 months later they will be gifted a construction ship with another +125 influence.
@@ -142,7 +144,6 @@
  * Streamlined Protocols: -15% Empire Sprawl from -10%
  * Recycled: -30% assembly cost from -20%
  * Double-jointed: -20% housing usage from -10%
-
 
 ## Lithoid Traits
 

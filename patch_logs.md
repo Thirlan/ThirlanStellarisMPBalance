@@ -1,3 +1,19 @@
+# 2021/08/12
+
+## 0.1.1
+
+https://www.youtube.com/watch?v=UqA4GFBYdyU&ab_channel=StefanAnon
+
+Making additional updates to tackle exploits covered in the most recent Stellaris Tournament.
+
+Criminal job weights are still too weak and as such crime exploits like Crime lord deal can function normally with job priority command. As such criminal job weight will be made one less than the specialist job.
+
+Void Dwellers is deemed too strong as one of the current metas, as such will be nerfing it a bit.
+
+Hivemind has been deemed to be too weak as as such will be removing the previous penalties that were given to it.
+
+Applied the penalty to Ring world to all empires and a stronger debuf against robots.
+
 # 2021/08/08
 
 ## 0.1.0
