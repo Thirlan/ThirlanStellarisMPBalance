@@ -11,6 +11,7 @@
  civic_tooltip_technocracy_effects: "£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_head_researcher£ §Y$job_head_researcher_plural$§!\n§Y$job_researcher_plural$§! also produce §Y0.5§! £unity£ Unity"
  
  # ORIGINS
+ origin_tooltip_void_dwellers_effects:3 "- Start with three §YOrbital Habitats§! and the technology to build more\n- Members of your species thrive on Habitats and produce §G10%§! more there\n- Severe habitability and growth penalties on all normal planets\n- Hydroponic Farms have §G+1§! £job_farmer£ $job_farmer$ Job"
 
  # ASCENSCIONS
  requires_ap_galactic_contender: "$TRIGGER_FAIL$Requires the §Y$ap_galactic_contender$§! Ascension Perk."
@@ -33,7 +34,10 @@
  unholy_matrimony_2_desc: "Barbaric Necrophage nerf"
 
  system_reboot: "System Reboot"
- system_reboot_desc: "Robot Ring World nerf"
+ system_reboot_desc: "Ring World nerf"
+ 
+ system_reboot_robot: "System Reboot"
+ system_reboot_robot_desc: "Robot Ring World nerf"
 
  smbm.2.name: "Prepare yourself"
  smbm.2.desc: "Prepare for the cold hard realities of space. Not knowing what lurks out there it would be best to increase your defenses. Be careful, your defensive bonuses will only last a few years."
@@ -48,7 +52,7 @@
  smbm.4.option: "Very well..."
  
  smbm.5.name: "System Reboot"
- smbm.5.desc: "Ring world system beginning boot sequence. Calculating... Calculating... Calculating... AI interface with Ring appears to be broken. Estimated time of full system recovery: 30 years."
+ smbm.5.desc: "Beginning boot sequence. Calculating... Ring world appears to be broken. Estimated time of full system recovery: 30 years."
  smbm.5.option: "Reboot"
  
  smbm.6.name: "Live long..."
