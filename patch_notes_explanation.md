@@ -28,19 +28,9 @@ Also the following mod from Stefan's team (Magikaas, Aow, AirHunter, Stefan, Hoo
 
 * https://steamcommunity.com/sharedfiles/filedetails/?id=2279069500
 
-## Terminology
-
-Throughout the document we will be using some lingo to generalize entire concepts of the game. This section will help to explain this lingo.
-
-Game choices: choices that the players make/select that affect the game. For the most part this will pertain to racial traits, ascension perks, technology, civics and traditions.
-
-Return on Investment (ROI): The general concept of how much you get back for investing in something. If you buy something for $10 and sell it for $15 your return on investment is $5. Just introducing the acronym to get this out of the way.
-
-Unrestricted war: The ability to declare war on anyone with the ability to conquer their territory without expending influence.
-
 ## Tech Rushing and population
 
-Tech rushing and population growth is still THE min-max meta of the game, even though Nemesis did balance population mechanics very slightly. In this regard, nerfs have been applied to the usual suspects of tech rushing and population growth game choices. Namely two small nerfs to the Expansion tradition, a nerf to the Technological Ascendency ascension perk and a nerf to the Xenophobe ethic.
+Tech rushing and population growth is still THE min-max meta of the game, even though Nemesis did balance population mechanics very slightly. In this regard, nerfs have been applied to the usual suspects of tech rushing and population growth game choices. Namely two small nerfs to the Expansion tradition, a nerf to the Technological Ascendency ascension perk.
 
 ## Unrestricted Assimilators
 
@@ -74,9 +64,7 @@ It is not very hard to see then that all the army buff game choices have similar
 
 Crime is a frequently exploited game mechanic. As seen in some of the more recent videos by Stefan, both for the Crime Lord Deal and his Hive Mind play in the Nemesis videos, you can regularly have high crime with little to no risk.
 
-The quickest tweak that can thus be done for this is to increase slightly the crime/deviancy per pop from 2.0 to 2.2. This is only a 10% adjustment and will be left this way until it is determined how much of an impact this really has. Preliminary testing has shown that it does push some starting empires (e.g. slave with decadent) from 0% to ~5% crime rate at the start of the game, but this seems to have little to no impact.
-
-These changes to crime also indirectly give a boost to the Domination tradition, known to be the weakest tradition tree.
+The quickest tweak that can thus be done for this is to increase slightly the crime/deviancy per pop from 2.0 to 2.2. This is only a 10% adjustment and based on observed game play this is not having much effect, though we will continue to leave this trait in and observe how changes to Crime Jobs in LEM affect this. 3.1 LEM prevents players from avoid crime jobs.
 
 ## Be careful out there (event)
 

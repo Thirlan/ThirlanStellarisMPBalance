@@ -23,17 +23,6 @@ trait_robot_superconductive = {
 
 	allowed_archetypes = { ROBOT MACHINE }
 
-	# Droids and Machine only
-	species_potential_add = {
-		exists = from
-		from = {
-			OR = {
-				has_authority = auth_machine_intelligence
-				has_technology = tech_droid_workers
-			}
-		}
-	}
-
 	modifier = {
 		planet_jobs_energy_produces_mult = 0.15
 	}
@@ -119,7 +108,7 @@ trait_robot_double_jointed = {
 	allowed_archetypes = { ROBOT MACHINE }
 
 	modifier = {
-		pop_housing_usage_mult = -0.2
+		pop_housing_usage_mult = -0.1
 	}
 }
 
@@ -130,7 +119,7 @@ trait_robot_bulky = {
 	allowed_archetypes = { ROBOT MACHINE }
 
 	modifier = {
-		pop_housing_usage_mult = 0.2
+		pop_housing_usage_mult = 0.1
 	}
 	ai_weight = {
 		factor = 0
