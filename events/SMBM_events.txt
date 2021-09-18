@@ -26,10 +26,6 @@ event = {
                 days = 10
             }
             country_event = {
-                id = smbm.5
-                days = 10
-            }
-            country_event = {
                 id = smbm.6
                 days = 30
             }
@@ -126,45 +122,6 @@ country_event = {
 	}
 }
 
-# System Reboot: Ring World nerf
-country_event = {
-	id = smbm.5
-	title = smbm.5.name
-	desc = smbm.5.desc
-	
-	picture = GFX_evt_ancient_databank
-	show_sound = event_energy_field
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		is_ai = no
-		has_origin = origin_shattered_ring
-	}
-
-	immediate = {
-        if = {
-            limit = {
-                has_authority = auth_machine_intelligence
-            }
-            add_modifier = {
-                modifier = system_reboot_robot
-                days = 10950
-            }
-        }
-        else = {
-            add_modifier = {
-                modifier = system_reboot
-                days = 10950
-            }
-        }
-	}
-
-	option = {
-		name = smbm.5.option
-	}
-}
-
 # Live long and prosper part 1: Common grounds boost
 country_event = {
 	id = smbm.6
@@ -177,6 +134,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+        is_ai = no
 		has_origin = origin_common_ground
 	}
 
@@ -255,8 +213,6 @@ country_event = {
 	}
 }
 
-
-
 # Long live the hegemony: Hegemony boost
 country_event = {
 	id = smbm.8
@@ -269,6 +225,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+        is_ai = no
 		has_origin = origin_hegemon
 	}
 
@@ -278,5 +235,89 @@ country_event = {
 			influence = 200
 			alloys = 75
 		}
+	}
+}
+
+# Trigger periodically
+event = {
+	id = smbm.9
+    hide_window = yes
+
+	is_triggered_only = yes
+    
+    immediate = {
+        every_playable_country = {
+            limit = {
+                is_ai = no
+                NOT = {
+                    # Avoid spamming players who already have it
+                    has_modifier = economic_chaos
+                }
+            }
+            country_event = {
+                id = smbm.10
+            }
+        }
+    }
+}
+
+# Negative economy event
+country_event = {
+	id = smbm.10
+	title = smbm.10.name
+	desc = smbm.10.desc
+	
+	picture = GFX_evt_burning_city
+	show_sound = event_burning_city
+	
+	is_triggered_only = yes
+	
+	trigger = {
+        is_ai = no
+        NOT = {
+            has_modifier = economic_chaos
+        }
+        OR = {
+            AND = {
+                resource_stockpile_compare = {
+                    resource = minerals
+                    value <= 0
+                }
+                has_monthly_income = {
+                    resource = minerals
+                    value < 0
+                }
+            }
+            AND = {
+                resource_stockpile_compare = {
+                    resource = energy
+                    value <= 0
+                }
+                has_monthly_income = {
+                    resource = energy
+                    value < 0
+                }
+            }
+            AND = {
+                resource_stockpile_compare = {
+                    resource = food
+                    value <= 0
+                }
+                has_monthly_income = {
+                    resource = food
+                    value < 0
+                }
+            }
+        }
+	}
+    immediate = {
+        add_modifier = {
+            modifier = economic_chaos
+            days = 60
+        }
+    }
+
+	option = {
+		name = smbm.10.option
 	}
 }

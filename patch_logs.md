@@ -1,6 +1,43 @@
-# 2021/08/12
+# 2021/09/18 - 0.1.2
 
-## 0.1.1
+With 3.1 LEM update out the following patches have been removed from the balance mod as they are supposedly fixed:
+
+Removed:
+ * criminal_job_weight: 9 from 5 (one less than specialist)
+ * Privy Council (Domination): +1 Leader Pool size
+ * Technocracy: 0.5 unity from 1.0
+ * Environmentalist: -15% consumer goods from 10%
+ * Efficient Bureaucracy: 15% administrative capacity from 10%
+ * Idealistic Foundation: +8% happiness from +5%
+ * Nationalistic Zeal: -20% claim influence cost from 10% and -20% war exhaustions from -10%
+ * Divided attention: +15% administrative capacity from 10%
+ * Void Dwellers: 10% production bonus instead of 15%
+ * Ring World Systems online event: -5% to energy, mineral and research for non-robots and -10% penalty to robots for 30 years
+ * Necrophage: -10% to purge speed and -5% growth
+ * Solitary: +20% housing usage from +10%
+ * Communal: -20% housing usage from -10%
+ * Bulky: 20% housing usage from 10%
+ * Double-jointed: -20% housing usage from -10%
+
+Yay for progress!
+
+Changes:
+ * Enigmatic Engineering: Ascension perks required dropped to 0 from 1
+ * Quarrelsome: -6% Unity from jobs from -10% (1% adjustment)
+ * Be careful out there (anti-rush) event: removed +40% starbase defense bonus
+ * New Life (Expansion tree): +6% pop growth from +10% (1% adjustment)
+
+The nerf to the anti-rush event is because it is no longer really needed. Rushing during the early phase is harder with the way first contact works and also there is a desire to emphasize the use of the new Unyielding tradition as an anti-rush option. Removing the +40% bonus also helps to coax people to stop the unmitigated tech rushing.
+
+New:
+ * Corvette Focus: -15% from -20% Corvette cost reduction and +10% build speed
+ * Destroyer Focus: -14% from -20% Destroyer cost reduction and +10% build speed
+ * Cruiser Focus: -13% from -20% Cruiser cost reduction and +10% build speed
+ * Battleship Focus: -12% from -20% Battleship cost reduction and +10% build speed
+ * Economic Chaos (anti-negative deficit exploit) event: Any player whose stockpiles in mineral/food/energy are 0 or below with negative income will suffer a empire wide penalty of -20% production to mineral, food, energy, alloys, research and unity.
+
+
+# 2021/08/12 - 0.1.1
 
 https://www.youtube.com/watch?v=UqA4GFBYdyU&ab_channel=StefanAnon
 
@@ -14,9 +51,7 @@ Hivemind has been deemed to be too weak as as such will be removing the previous
 
 Applied the penalty to Ring world to all empires and a stronger debuf against robots.
 
-# 2021/08/08
-
-## 0.1.0
+# 2021/08/08 - 0.1.0
 
 Patching ring world with machines. Stephan has presented a brutal exploit which shows that energy as a penalty is not enough for ring world robots. As such we mixed the penalty to be a combination of energy, research and mineral penalty for the first 30 years.
 
@@ -40,8 +75,6 @@ Devouring swarm's minor penalty of -20% ship build cost instead of -25% has been
 
 Philosopher King's boost of +1 edict has been replaced with +2% unity, research and administrative capacity to make it a touch weaker, more appropriate and easier for the AI to use.
 
-# 2021/05/22
-
-## 0.0.4
+# 2021/05/22 - 0.0.4
 
 Latest release after Nemesis! Everything previously in the log has been cleared.

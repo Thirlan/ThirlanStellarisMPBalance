@@ -98,13 +98,6 @@ ap_enigmatic_engineering = {
 		}
 	}
 
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_1"
-			num_ascension_perks > 0
-		}
-	}
-
 	on_enabled = {
 		custom_tooltip = "no_rev_engineering"
 	}

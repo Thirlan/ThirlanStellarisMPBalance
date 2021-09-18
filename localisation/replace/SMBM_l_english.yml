@@ -8,10 +8,7 @@
  # CIVICS
  civic_tooltip_post_apocalyptic_effects: "Capital starts as a §YTomb World§!\nGain the §Y$trait_survivor$§! trait, granting:\n  Tomb World Habitability: §G+70%§!\n  Leader Lifespan: §G+10§! Years\n  Habitability: §G+5%§!"
  
- civic_tooltip_technocracy_effects: "£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_head_researcher£ §Y$job_head_researcher_plural$§!\n§Y$job_researcher_plural$§! also produce §Y0.5§! £unity£ Unity"
- 
  # ORIGINS
- origin_tooltip_void_dwellers_effects:3 "- Start with three §YOrbital Habitats§! and the technology to build more\n- Members of your species thrive on Habitats and produce §G10%§! more there\n- Severe habitability and growth penalties on all normal planets\n- Hydroponic Farms have §G+1§! £job_farmer£ $job_farmer$ Job"
 
  # ASCENSCIONS
  requires_ap_galactic_contender: "$TRIGGER_FAIL$Requires the §Y$ap_galactic_contender$§! Ascension Perk."
@@ -19,9 +16,8 @@
  requires_ap_imperial_prerogative: "$TRIGGER_FAIL$Requires the §Y$ap_imperial_prerogative$§! Ascension Perk."
 
 # TRADITIONS
- tr_expansion_a_new_life_desc: "£pops£ §Y$MOD_POP_GROWTH_SPEED$§! increased by §G+5%§!."
- tr_expansion_a_new_life_machine_desc:0 "£pops£ §Y$MOD_POP_ASSEMBLY_SPEED$§! increased by §G+5%§!."
- tr_domination_grand_council_desc: "§Y$MOD_LEADER_RULER_SKILL_LEVELS$§! increased by §Y2§! and §G+1§! §Y$MOD_COUNTRY_LEADER_POOL_SIZE$§!."
+ tr_expansion_a_new_life_desc: "£pops£ §Y$MOD_POP_GROWTH_SPEED$§! increased by §G+6%§!."
+ tr_expansion_a_new_life_machine_desc:0 "£pops£ §Y$MOD_POP_ASSEMBLY_SPEED$§! increased by §G+6%§!."
 
 # CUSTOM SMBM EVENTS
  be_careful_out_there: "Be careful out there"
@@ -33,11 +29,8 @@
  unholy_matrimony_2: "Unholy Matrimony"
  unholy_matrimony_2_desc: "Barbaric Necrophage nerf"
 
- system_reboot: "System Reboot"
- system_reboot_desc: "Ring World nerf"
- 
- system_reboot_robot: "System Reboot"
- system_reboot_robot_desc: "Robot Ring World nerf"
+ economic_chaos: "Economic chaos"
+ economic_chaos: "Negative economy exploit nerf"
 
  smbm.2.name: "Prepare yourself"
  smbm.2.desc: "Prepare for the cold hard realities of space. Not knowing what lurks out there it would be best to increase your defenses. Be careful, your defensive bonuses will only last a few years."
@@ -51,10 +44,6 @@
  smbm.4.desc: "Your dark arts of the Necrophages combined with the barbarism of Barbaric Despoilers has created a monstrosity. For this power you will of course pay a price. Your ability to purge has been slowed."
  smbm.4.option: "Very well..."
  
- smbm.5.name: "System Reboot"
- smbm.5.desc: "Beginning boot sequence. Calculating... Ring world appears to be broken. Estimated time of full system recovery: 30 years."
- smbm.5.option: "Reboot"
- 
  smbm.6.name: "Live long..."
  smbm.6.desc: "The capitals of your new federation are alive with celebration! The gleaming new science ship Longevity, which was built with the unified will of your nations is ready. Go forth and explore!"
  smbm.6.option: "...and engage!"
@@ -66,3 +55,7 @@
  smbm.8.name: "Long live the hegemony"
  smbm.8.desc: "In honor of the hegemony's foundation, the members have come forth to present your with a tribute and a show of support for its continued existence."
  smbm.8.option: "Accept the tribute"
+ 
+ smbm.10.name: "Economic chaos!"
+ smbm.10.desc: "One of your core resources (mineral / food / energy) is in serious deficit! Your economy will suffer a sever penalty for the next 60 days as your empire scrambles to deal with the situation."
+ smbm.10.option: "Oh no!"
