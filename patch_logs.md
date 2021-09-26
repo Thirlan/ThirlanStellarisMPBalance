@@ -31,7 +31,9 @@ Changed:
 Removing:
  * Subsumed Will
 
-Many thanks to Stefan and his team for laboriously going over the game mechanics.
+Many thanks to the Community (Stefan, ASpec, Komrad Truck, Montu) for laboriously going over the game mechanics.
+
+
 
 # 2021/09/18 - 0.1.2
 
@@ -69,7 +71,7 @@ New:
  * Destroyer Focus: -14% from -20% Destroyer cost reduction and +10% build speed
  * Cruiser Focus: -13% from -20% Cruiser cost reduction and +10% build speed
  * Battleship Focus: -12% from -20% Battleship cost reduction and +10% build speed
- * Economic Chaos (anti-negative economy exploit) event: Any player whose stockpiles in mineral/food/energy are 0 or below with negative income will suffer a empire wide penalty of -20% production to mineral, food, energy, alloys, research and unity.
+ * Economic Chaos (anti-negative economy exploit) event: Any player whose stockpiles in mineral/food/energy are 0 or below with negative income will suffer a empire wide penalty of -10% production to mineral, food, energy and -20% to alloys, research and unity.
 
 
 # 2021/08/12 - 0.1.1
