@@ -22,10 +22,6 @@ event = {
                 days = 10
             }
             country_event = {
-                id = smbm.4
-                days = 10
-            }
-            country_event = {
                 id = smbm.6
                 days = 30
             }
@@ -83,42 +79,13 @@ country_event = {
 	
 	immediate = {
 		add_modifier = {
-			modifier = unholy_matrimony_1
+			modifier = unholy_matrimony
 			days = -1
 		}
 	}
 
 	option = {
 		name = smbm.3.option
-	}
-}
-
-# Unholy matrimony: The Barbaric Necrophage nerf
-country_event = {
-	id = smbm.4
-	title = smbm.4.name
-	desc = smbm.4.desc
-	
-	picture = GFX_evt_disease_outbreak
-	show_sound = event_default
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		is_ai = no
-		has_origin = origin_necrophage
-		has_valid_civic = civic_barbaric_despoilers
-	}
-	
-	immediate = {
-		add_modifier = {
-			modifier = unholy_matrimony_2
-			days = -1
-		}
-	}
-
-	option = {
-		name = smbm.4.option
 	}
 }
 

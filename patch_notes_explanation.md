@@ -13,16 +13,15 @@ Following videos were used to determine those mechanics that needed to be balanc
 * https://www.youtube.com/watch?v=roho0r8PGkw&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=-VrM722vlnU&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=tE3G3pKodWI&ab_channel=StefanAnon
-* https://www.youtube.com/watch?v=cKe9Ky8gL_4&ab_channel=StefanAnon
 
 Nemesis
 
-* https://www.youtube.com/watch?v=jMTkODLNTdA&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=0qTFpNsKRY4&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=gg45JnH7ipc&ab_channel=StefanAnon
-* https://www.youtube.com/watch?v=pTLGLvyAT2I&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=Id19TyroN0k&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=UqA4GFBYdyU&ab_channel=StefanAnon
+* https://www.youtube.com/channel/UC_2sl-9BfzTA2Lby4hMG0_A
+* https://www.youtube.com/watch?v=18x3G6ffULo&ab_channel=StefanAnon
 
 Also the following mod from Stefan's team (Magikaas, Aow, AirHunter, Stefan, Hoover Tesla) helped tremendously for inspiration and learning.
 
@@ -30,7 +29,7 @@ Also the following mod from Stefan's team (Magikaas, Aow, AirHunter, Stefan, Hoo
 
 ## Tech Rushing and population
 
-Tech rushing and population growth is still THE min-max meta of the game, even though Nemesis did balance population mechanics very slightly. In this regard, nerfs have been applied to the usual suspects of tech rushing and population growth game choices. Namely two small nerfs to the Expansion tradition, a nerf to the Technological Ascendency ascension perk.
+Tech rushing and population growth is still THE meta of the game, even though Nemesis did balance population mechanics very slightly. In this regard, nerfs have been applied to the usual suspects of tech rushing and population growth game choices. Namely two small nerfs to the Expansion tradition, a nerf to the Technological Ascendency ascension perk.
 
 ## Unrestricted Assimilators
 
@@ -56,23 +55,23 @@ Due to this, one of the simpler ways of buffing the leadership cap game choices 
 
 Armies are a very minor element of Stellaris. They are only relevant if you are attacking or defending. When attacking, they are only revelant if you have naval superiority and if you are defending they are only relevant if you have naval inferiority. Overall it wouldn't be far fetched to say they are only 5% of the time spent in Stellaris for the average player. This limitation on game impact means that all game choices that buff armies have less of a chance of making an impact on the outcome of the game as say a bonus to mineral production. This in turn means that overall these are weak simply by nature of the game design.
 
-In this regard, it is unclear why Paradox was so timid with the army buff game choices. Take the resilient trait, which gives +50% army damage to DEFENSIVE army units only. This essentially means that if you have 2 defensive units on the planet (one of the weakest units in the game other than slaves I might add), then the 50% buff implies there are ~2.5 units on the planet (not 3 because all we did was buff damage and not health). Considering that most people invade with stacks of at least 8, the 50% buff is not even noticeable. On top of this, this buff only helps if you are being invaded, which would mean you have lost naval superiority and very likely have lost the game. The Resilient trait is what would be considered a losing power, which is to say it only comes into effect when you are losing.
+In this regard, it is unclear why Paradox was so timid with the army buff game choices. Take the resilient trait, which gives +50% army damage to defending army units. This essentially means that if you have 2 defensive units on the planet, then the 50% buff implies there are ~2.5 units on the planet (not 3 because all we did was buff damage and not health). Considering that most people invade with stacks of at least 8, the 50% buff is not even noticeable. On top of this, this buff only helps if you are being invaded, which would mean you have lost naval superiority and very likely have lost the game. The Resilient trait is what would be considered a losing power, which is to say it only comes into effect when you are losing.
 
 It is not very hard to see then that all the army buff game choices have similar issues and explains the reason why they have all been buffed. Buffing army health is especially important as it also helps the army units to survive orbital bombardment, which helps act as a delaying mechanism if your navy is not close enough. It also helps units to survive combat, which reduces the costs of armies and increase experience gains, which provides for a better return on investment over time.
 
 ## Crime
 
-Crime is a frequently exploited game mechanic. As seen in some of the more recent videos by Stefan, both for the Crime Lord Deal and his Hive Mind play in the Nemesis videos, you can regularly have high crime with little to no risk.
+Crime is a frequently exploited game mechanic. As seen in some videos by Stefan, both for the Crime Lord Deal and his Hive Mind play in the Nemesis videos, you can regularly have high crime with little to no risk.
 
-The quickest tweak that can thus be done for this is to increase slightly the crime/deviancy per pop from 2.0 to 2.2. This is only a 10% adjustment and based on observed game play this is not having much effect, though we will continue to leave this trait in and observe how changes to Crime Jobs in LEM affect this. 3.1 LEM prevents players from avoid crime jobs.
+The quickest tweak that can thus be done for this is to increase slightly the crime/deviancy per pop from 2.0 to 2.2.
 
 ## Be careful out there (event)
 
-One of the events added to this patch is the anti-rush event. Unlike an RTS, Stellaris is a long game and no one wants to be knocked out in the first few minutes of the game. This event is an alternative method to the one done by Stefan's Mod, which introduces a new building in the starbase of the capital system. The building modification permanently alters the landscape by making the capital systems fortresses. It also allows for people to more comfortably tech rush. This is neither KISS nor a desired behavior of the players. Tech rushing is already strong.
+One of the events added to this patch is the anti-rush event. Unlike an RTS, Stellaris is a long game and no one wants to be knocked out in the first few minutes of the game.
 
-The alternative then is to make it a temporary event that boosts the starbases and reduces the cost of upgrading starbases and defensive modules. This helps provide early defenses for the players, while also encouraging them to build defenses for when the boost fades. A player that fails to take advantage of these and chooses to push all resources into tech rushing is then solely responsible for their own death after these bonuses fade.
+This is a temporary event that reduces the cost of upgrading starbases and defensive modules. This helps provide early defenses for the players, while also encouraging them to build defenses before the boost fades. A player that fails to take advantage of these and chooses to push all resources into tech rushing is then solely responsible for their own death after these bonuses fade.
 
-The boost also only applies to players and not AIs, which encourages players to attack AIs first before killing their fellow gamers.
+The boost also only applies to players and not AIs, which also encourages players to attack AIs first before killing their fellow gamers.
 
 ## Racial traits
 

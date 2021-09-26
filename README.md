@@ -13,7 +13,7 @@ You can refer to the [patch notes](patch_notes.md) to see the full balance list.
 
 
 ## Why was this mode created?
-This mod was created because the Stellaris development team have shown to be extremely slow at addressing glaringly obvious balance issues with the game in regards to multiplayer. This mod hopes to address the issues with quick and easy tweaks so that people can enjoy the game more and worry less about about whether they are min-maxing correctly.
+This mod was originally created because the Stellaris development team was extremely slow at addressing glaringly obvious balance issues with the game in regards to multiplayer. As of late with Lem 3.1 the Stellaris Custodian team has done a good job, but we are still a bit far from having issues resolved. This mod hopes to address the issues with quick and easy tweaks so that people can enjoy the game more and worry less about about whether they are min-maxing correctly.
 
 ## What is the process used to balance mechanics?
 

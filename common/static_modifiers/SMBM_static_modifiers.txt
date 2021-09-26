@@ -6,18 +6,14 @@ be_careful_out_there = {
 	ship_military_station_small_cost_mult = -0.33
 }
 
-unholy_matrimony_1 = {
+unholy_matrimony = {
 	pop_purge_speed = -0.25
 }
 
-unholy_matrimony_2 = {
-	pop_purge_speed = -0.15
-}
-
 economic_chaos = {
-	country_energy_produces_mult = -0.20
-	country_minerals_produces_mult = -0.20
-	country_food_produces_mult = -0.20
+	country_energy_produces_mult = -0.10
+	country_minerals_produces_mult = -0.10
+	country_food_produces_mult = -0.10
 	country_alloys_produces_mult = -0.20
 	all_technology_research_speed = -0.20
 	country_unity_produces_mult = -0.20

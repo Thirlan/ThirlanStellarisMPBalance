@@ -1,3 +1,40 @@
+# 2021/09/26 - 0.2.0
+
+New changes to the list as the community gathers more intel on what is strongest and weakest now. 
+
+New:
+ * Functional Architecture: -10% to building costs from -15%
+ * Barbaric Despoilers: +5% to ship speed
+ * Byzantine Bureaucracy: +1.2 unity/stability from +1
+ * Free Haven: +20% pop growth from immigration from 15% and 60% immigration pull from 50%
+ * Cutthroat Politics: +2 decryption bonus from +1
+ * Aristocratic Elite: Nobles give +6 stability from +5, +4 unity from +3, +1 admin cap and trade and +5 to crime
+ * Environmentalist: -25% consumer goods consumption from -20%
+ * Warrior Culture: +4 unity from +3 from duelists
+ * Shadow Council: +15% ruler pop output from +10%
+ * Idyllic Bloom: Building energy upkeep 15 from 20 and energy cost 1125 from 1500
+ * Catalytic Processing: Food upkeep reduced to 8 from 9
+ * Static Research: +2 decryption from +1
+ * Devouring Swarm: -15% ship build cost from -25%
+ * Determined Exterminator: +15% ship weapon damage from +25%
+ * Clone Army: -10% to unity and -1 to current pop assembly
+ * Hive Mind: +28% growth speed from +25%
+ * Intelligent: +9% to research from +10%
+ * Ingenious: +13% Energy production from +15%
+
+Changed:
+ * Executive Vigor: No longer requires Imperial Prerogative and instead requires 2 ascension perks from 0
+ * Become the Crisis: requires 3 ascension perks from 2
+ * Media Conglomerate: +10% diplomatic weight and -10% war exhaustion
+ * Resilient: +75% defensive army damage from 50% and 75% defensive army health
+
+Removing:
+ * Subsumed Will
+
+Many thanks to the Community (Stefan, ASpec, Komrad Truck, Montu) for laboriously going over the game mechanics.
+
+
+
 # 2021/09/18 - 0.1.2
 
 With 3.1 LEM update out the following patches have been removed from the balance mod as they are supposedly fixed:
@@ -34,7 +71,7 @@ New:
  * Destroyer Focus: -14% from -20% Destroyer cost reduction and +10% build speed
  * Cruiser Focus: -13% from -20% Cruiser cost reduction and +10% build speed
  * Battleship Focus: -12% from -20% Battleship cost reduction and +10% build speed
- * Economic Chaos (anti-negative deficit exploit) event: Any player whose stockpiles in mineral/food/energy are 0 or below with negative income will suffer a empire wide penalty of -20% production to mineral, food, energy, alloys, research and unity.
+ * Economic Chaos (anti-negative economy exploit) event: Any player whose stockpiles in mineral/food/energy are 0 or below with negative income will suffer a empire wide penalty of -10% production to mineral, food, energy and -20% to alloys, research and unity.
 
 
 # 2021/08/12 - 0.1.1

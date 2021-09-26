@@ -6,14 +6,13 @@
  TRAIT_LITHOID_VOLATILE_EXCRETIONS_EFFECT: "Each pop with living standards of slavery or better produces 0.02 £volatile_motes£ §Y$volatile_motes$§! per month."
 
  # CIVICS
- civic_tooltip_post_apocalyptic_effects: "Capital starts as a §YTomb World§!\nGain the §Y$trait_survivor$§! trait, granting:\n  Tomb World Habitability: §G+70%§!\n  Leader Lifespan: §G+10§! Years\n  Habitability: §G+5%§!"
+ civic_tooltip_byzantine_bureaucracy_effects:2 "£job_bureaucrat£ §Y$job_bureaucrat_plural$§! also produce §Y1.2§! £unity£ Unity and §Y1.2§! £stability£ $PLANET_STABILITY_TITLE$"
  
  # ORIGINS
+ civic_tooltip_post_apocalyptic_effects: "Capital starts as a §YTomb World§!\nGain the §Y$trait_survivor$§! trait, granting:\n  Tomb World Habitability: §G+70%§!\n  Leader Lifespan: §G+10§! Years\n  Habitability: §G+5%§!"
 
  # ASCENSCIONS
  requires_ap_galactic_contender: "$TRIGGER_FAIL$Requires the §Y$ap_galactic_contender$§! Ascension Perk."
- 
- requires_ap_imperial_prerogative: "$TRIGGER_FAIL$Requires the §Y$ap_imperial_prerogative$§! Ascension Perk."
 
 # TRADITIONS
  tr_expansion_a_new_life_desc: "£pops£ §Y$MOD_POP_GROWTH_SPEED$§! increased by §G+6%§!."
@@ -23,11 +22,8 @@
  be_careful_out_there: "Be careful out there"
  be_careful_out_there_desc: "Multiplayer anti-rush mechanic"
 
- unholy_matrimony_1: "Unholy Matrimony"
- unholy_matrimony_1_desc: "Fanatic Necrophage nerf"
-
- unholy_matrimony_2: "Unholy Matrimony"
- unholy_matrimony_2_desc: "Barbaric Necrophage nerf"
+ unholy_matrimony: "Unholy Matrimony"
+ unholy_matrimony_desc: "Fanatic Necrophage nerf"
 
  economic_chaos: "Economic chaos"
  economic_chaos: "Negative economy exploit nerf"
@@ -39,10 +35,6 @@
  smbm.3.name: "Unholy Matrimony"
  smbm.3.desc: "Your dark arts of the Necrophages combined with the fervor of Fanatical Purification has created a monstrosity. For this power you will of course pay a price. Your ability to purge has been slowed."
  smbm.3.option: "Very well..."
- 
- smbm.4.name: "Unholy Matrimony"
- smbm.4.desc: "Your dark arts of the Necrophages combined with the barbarism of Barbaric Despoilers has created a monstrosity. For this power you will of course pay a price. Your ability to purge has been slowed."
- smbm.4.option: "Very well..."
  
  smbm.6.name: "Live long..."
  smbm.6.desc: "The capitals of your new federation are alive with celebration! The gleaming new science ship Longevity, which was built with the unified will of your nations is ready. Go forth and explore!"
