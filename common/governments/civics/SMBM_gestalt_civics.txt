@@ -1,3 +1,20 @@
+#civic_example = {
+#	playable = {}								# AND trigger, no scope; use this to prevent the civic from being selectable by the player (UI)
+#	potential = {}								# requirements list, see ../readme_requirements.txt
+#	possible = {}								# requirements list, see ../readme_requirements.txt
+#	pickable_at_start = yes / no				# default: yes
+#	modification = yes / no						# default: yes, set to no to prevent adding or removing this after creation of the empire
+#
+#	random_weight = { base = 5 }				# scriptable weight for randomizing a civic; required, else the civic will not get assigned randomly
+#
+#	modifier = {}								# modifier added to the country if the civic is selected and valid
+#	can_build_ruler_ship = yes / no				# default: no
+#	traits = { trait = ... }					# default: empty; trait set to enforce on the primary species. They cannot be removed, but more can be added if points/picks permit
+#	has_secondary_species = {					# default: none; if present, will enable secondary species customization in empire designer and will create secondary species & pops at galaxy generation time (see empire_init_create_capital_secondary_pops)
+#		traits = { trait = ... }					# default: empty; trait set to enforce on the secondary species. They cannot be removed, but more can be added if points/picks permit
+#	}
+#}
+
 #############
 # Hive Mind
 #############
@@ -23,11 +40,41 @@ civic_hive_strength_of_legions = {
 	}
 }
 
-civic_hive_subsumed_will = {
-	potential = { authority = { value = auth_hive_mind } }
+civic_hive_devouring_swarm = {
+	modification = no
+	potential = {
+		authority = { value = auth_hive_mind }
+	}
+	possible = {
+		origin = {
+			NOR = {
+				value = origin_common_ground
+				value = origin_hegemon
+				value = origin_tree_of_life
+			}
+		}
+	}
 	random_weight = { base = 5 }
+
+	description = "civic_tooltip_devouring_swarm_effects"
 	modifier = {
-		empire_size_pops_mult = -0.25
+		country_starbase_influence_cost_mult = -0.5
+		ship_hull_mult = 0.25
+		ship_hull_regen_add_perc = 0.5
+		ship_armor_regen_add_perc = 0.5
+		army_damage_mult = 0.40
+		category_biology_research_speed_mult = 0.20
+		starbase_shipyard_build_cost_mult = -0.15
+		country_naval_cap_mult = 0.33
+	}
+
+	swap_type = {
+		name = civic_hive_devouring_swarm_lithoid
+		description = "civic_tooltip_devouring_swarm_lithoid_effects"
+
+		trigger = {
+			local_human_species_class = LITHOID
+		}
 	}
 }
 
@@ -69,6 +116,47 @@ civic_machine_servitor = {
 	}
 	modifier = {
 		country_energy_produces_mult = -0.10
+	}
+}
+
+civic_machine_terminator = {
+	potential = {
+		authority = {
+			OR = {
+				value = auth_ancient_machine_intelligence
+				value = auth_machine_intelligence
+			}
+		}
+	}
+	starting_colony = pc_nuked # Changes homeworld class regardless of what is picked for empire
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_servitor
+				value = civic_machine_assimilator
+			}
+		}
+		origin = {
+			NOR = {
+				value = origin_common_ground
+				value = origin_hegemon
+			}
+		}
+	}
+	modification = no
+	random_weight = {
+		base = 5
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		}
+	}
+	description = civic_tooltip_machine_terminator_effects
+	modifier = {
+		country_starbase_influence_cost_mult = -0.3
+		ship_weapon_damage = 0.15
+		starbase_shipyard_build_cost_mult = -0.15
+		country_naval_cap_mult = 0.33
 	}
 }
 
@@ -141,5 +229,14 @@ civic_machine_warbots = {
 		army_health = 0.30
 		armies_upkeep_mult = -0.30
 		armies_cost_mult = -0.30
+	}
+}
+
+civic_machine_predictive_analysis = {
+	potential = { authority = { value = auth_machine_intelligence } }
+	random_weight = { base = 5 }
+	modifier = {
+		num_tech_alternatives_add = 1
+		intel_decryption_add = 2
 	}
 }

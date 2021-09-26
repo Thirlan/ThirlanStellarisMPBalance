@@ -1,3 +1,4 @@
+# See traditions/README.txt for format
 
 #################
 # NEMESIS ASCENSION PERKS
@@ -11,8 +12,8 @@ ap_become_the_crisis = {
 
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_ascension_perks_2"
-			num_ascension_perks > 1
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
 		}
 		custom_tooltip = {
 			fail_text = "requires_independence"
@@ -201,6 +202,26 @@ ap_synthetic_evolution = {
 			}
 			custom_tooltip = disables_necrophage_features
 		}
+		if = {
+			limit = {
+				has_origin = origin_clone_army
+				OR = {
+					has_trait = trait_clone_soldier_infertile
+					has_trait = trait_clone_soldier_infertile_full_potential
+					has_trait = trait_clone_soldier_fertile
+				}
+			}
+			custom_tooltip = disables_clone_army_origin_features
+		}
+		if = {
+			limit = {
+				OR = {
+					has_valid_civic = civic_idyllic_bloom
+					has_valid_civic = civic_hive_idyllic_bloom
+				}
+			}
+			custom_tooltip = disables_idyllic_bloom
+        }
 		hidden_effect = {
 			country_event = { id = utopia.2550 }
 		}
@@ -341,16 +362,16 @@ ap_executive_vigor = {
 		country_edict_cap_add = 2
 	}
 
-	potential = {
-		NOT = {
-			has_ascension_perk = ap_executive_vigor
+    possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
 		}
 	}
 
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_ap_imperial_prerogative"
-			has_ascension_perk = ap_imperial_prerogative
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_executive_vigor
 		}
 	}
 

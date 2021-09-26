@@ -15,7 +15,7 @@ trait_ingenious = {
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		planet_jobs_energy_produces_mult = 0.15
+		planet_jobs_energy_produces_mult = 0.13
 	}
 	slave_cost = {
 		energy = 50
@@ -40,9 +40,9 @@ trait_intelligent = {
 	opposites = { "trait_nerve_stapled" "trait_erudite" "trait_enigmatic_intelligence_poor" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		planet_jobs_engineering_research_produces_mult = 0.1
-		planet_jobs_physics_research_produces_mult = 0.1
-		planet_jobs_society_research_produces_mult = 0.1
+		planet_jobs_engineering_research_produces_mult = 0.09
+		planet_jobs_physics_research_produces_mult = 0.09
+		planet_jobs_society_research_produces_mult = 0.09
 	}
 }
 
@@ -497,8 +497,8 @@ trait_resilient = {
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		army_defense_damage_mult = 1.0
-		army_defense_health_mult = 1.0
+		army_defense_damage_mult = 0.75
+		army_defense_health_mult = 0.75
 	}
 }
 
