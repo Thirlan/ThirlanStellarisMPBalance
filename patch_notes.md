@@ -1,4 +1,4 @@
-# Version 0.2.0
+# Version 0.2.1
 
 ## General tweaks
 
@@ -15,6 +15,7 @@
 ### Boosts
  * Leadership max cap: 15 from 10
  * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -33% starbase upgrade cost and -33% defense platform build cost for the first 20 years of the game.
+ * Espionage: All espionage operation's difficulty decreased by 3, resulting in much faster completion times.
 
 ## Government
 
@@ -41,7 +42,7 @@
 ### Boosts
  * Galactic Contender: Number of ascension perks required dropped to 1 from 3
  * Transcendent Learning: 100% leadership bonus from 50%
- * Enigmatic Engineering: +4 encryption from +2 and +2 decryption and ascension perks required dropped to 0 from 1
+ * Enigmatic Engineering: +4 encryption from +2 and ascension perks required dropped to 0 from 1
 
 ## Traditions
 
@@ -123,6 +124,7 @@
  * Unruly: +15% Empire Sprawl from 10%
  * Intelligent: +9% to research from +10%
  * Ingenious: +13% Energy production from +15%
+ * Natural Engineers: +13% engineering research from +15% engineering research
 
 ### Boosts
  * Slow Breeders: -6% from -10%
@@ -139,11 +141,18 @@
 
 ### Nerfs
  * Mass Produced: +10% assembly speed from +15%
+ * Super Conductive: +13% Energy production from +15%
+ * High Bandwidth: +15% Empire Sprawl from +10%
 
 ### Boosts
  * Custom made: -10% assembly speed from -15%
  * Streamlined Protocols: -15% Empire Sprawl from -10%
  * Recycled: -30% assembly cost from -20%
+
+## Plantoids
+
+### Nerfs:
+ * Budding: +4% growth from +6% growth
 
 ## Lithoid Traits
 
