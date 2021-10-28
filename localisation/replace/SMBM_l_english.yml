@@ -5,6 +5,15 @@
  TRAIT_LITHOID_SCINTILLATING_EFFECT: "Each pop with living standards of slavery or better produces 0.02 £rare_crystals£ §Y$rare_crystals$§! per month."
  TRAIT_LITHOID_VOLATILE_EXCRETIONS_EFFECT: "Each pop with living standards of slavery or better produces 0.02 £volatile_motes£ §Y$volatile_motes$§! per month."
 
+ TRAIT_CHARISMATIC_EFFECT:4 "£amenities£ Amenities from £job£ Jobs: §G+15%§!"
+ TRAIT_REPUGNANT_EFFECT:4 "£amenities£ Amenities from £job£ Jobs: §R-15%§!"
+ TRAIT_EMOTION_EMULATORS_EFFECT:2 "£amenities_no_happiness£Amenities from £job£ Jobs: §G+15%§!"
+ TRAIT_UNCANNY_EFFECT:2 "£amenities_no_happiness£Amenities from £job£ Jobs: §R-15%§!"
+ 
+ TRAIT_PLANTOID_BUDDING_EFFECT:0 "Each pop working as a slave or better produces 0.0175 £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!"
+ 
+ TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "Replaces §Y100%§! of Base £food£ §YFood§! Upkeep with §Y48%§! £energy£ §YEnergy§! and §Y48%§! £food£ §YFood§!."
+
  # CIVICS
  civic_tooltip_byzantine_bureaucracy_effects:2 "£job_bureaucrat£ §Y$job_bureaucrat_plural$§! also produce §Y1.2§! £unity£ Unity and §Y1.2§! £stability£ $PLANET_STABILITY_TITLE$"
  

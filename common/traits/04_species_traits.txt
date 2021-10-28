@@ -148,7 +148,7 @@ trait_rapid_breeders = {
 	opposites = { "trait_slow_breeders" "trait_fertile" "trait_rapid_breeders_lithoid" "trait_plantoid_budding" }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		pop_growth_speed = 0.04
+		pop_growth_speed = 0.06
 	}
 	slave_cost = {
 		energy = 100

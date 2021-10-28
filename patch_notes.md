@@ -125,6 +125,7 @@
  * Intelligent: +9% to research from +10%
  * Ingenious: +13% Energy production from +15%
  * Natural Engineers: +13% engineering research from +15% engineering research
+ * Charismatic: +15% to amenities from +20%
 
 ### Boosts
  * Slow Breeders: -6% from -10%
@@ -136,6 +137,7 @@
  * Talented: +2 level cap from +1 level cap
  * Quarrelsome: -6% Unity from jobs from -10%
  * Nonadaptive: -5% habitability from -10%
+ * Repugnant: -15% to amenities from -20%
  
 ## Robot Traits:
 
@@ -143,16 +145,22 @@
  * Mass Produced: +10% assembly speed from +15%
  * Super Conductive: +13% Energy production from +15%
  * High Bandwidth: +15% Empire Sprawl from +10%
+ * Emotion Emulator: +15% to amenities from +20%
 
 ### Boosts
+ * Logic Engines: +9% research from +10%
  * Custom made: -10% assembly speed from -15%
  * Streamlined Protocols: -15% Empire Sprawl from -10%
  * Recycled: -30% assembly cost from -20%
+ * Uncanny: -15% to amenities from -20%
 
 ## Plantoids
 
+### Boosts:
+ * Phototrophic: 48% food and 48% energy from 50% food and 50% energy
+
 ### Nerfs:
- * Budding: +4% growth from +6% growth
+ * Budding: +0.0175 assembly from 0.02
 
 ## Lithoid Traits
 
