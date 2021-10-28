@@ -105,7 +105,6 @@ ap_enigmatic_engineering = {
 
 	modifier = {
 		intel_encryption_add = 4
-		intel_decryption_add = 2
 	}
 
 	ai_weight = {

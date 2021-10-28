@@ -1,3 +1,27 @@
+# 2021/10/27 - 0.2.1
+
+New changes based on the lastest meta and observations. Simple tweaks to the Traits.
+
+New:
+ * Budding: +0.0175 assembly from 0.02
+ * Logic Engines: +9% research to all research from +10%
+ * Super Conductive: +13% energy from +15% energy
+ * Natural Engineers: +13% engineering research from +15% engineering research
+ * Docile: -15% Empire Sprawl from -10%
+ * Charismatic / Repugnant / Emotion Emulator / Uncanny: all changed to 15% from 20%
+ * Phototrophic: 48% food and 48% energy from 50% food and 50% energy
+ * Espionage: All difficulties dropped by 3
+
+The most important tweak is to Espionage. It has been determined that espionage is too ineffective. This is mostly due to the fact that it takes forever to do anything meaningful. In light of this the difficulty of all espionage will be dropped by 3 so that Espionage missions can be done considerably faster and thus have a higher impact. Conversely this will improve the value of all espionage related game choices.
+
+Change:
+ * Enigmatic Engineering: +4 encryption from +2 and ascension perks required dropped to 0 from 1
+
+Many thanks as usual from Stefan:
+
+ * https://cdn.discordapp.com/attachments/598211045332484148/895097788365418516/Traits_Tier_List_31.png
+ * https://www.youtube.com/c/StefanAnnon
+
 # 2021/09/26 - 0.2.0
 
 New changes to the list as the community gathers more intel on what is strongest and weakest now. 
@@ -32,8 +56,6 @@ Removing:
  * Subsumed Will
 
 Many thanks to the Community (Stefan, ASpec, Komrad Truck, Montu) for laboriously going over the game mechanics.
-
-
 
 # 2021/09/18 - 0.1.2
 

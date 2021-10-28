@@ -34,7 +34,7 @@ colonist = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 1
+			planet_amenities_add = 0.75
 		}
 	}
 	triggered_planet_modifier = {
@@ -42,7 +42,7 @@ colonist = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -1
+			planet_amenities_add = -0.75
 		}
 	}
 
@@ -305,7 +305,7 @@ priest = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 1
+			planet_amenities_add = 0.75
 		}
 	}
 	triggered_planet_modifier = {
@@ -313,7 +313,7 @@ priest = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -1
+			planet_amenities_add = -0.75
 		}
 	}
 
@@ -487,13 +487,13 @@ death_priest = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 1
+			planet_amenities_add = 0.75
 		}
 	}
 	triggered_planet_modifier = {
 		potential = { has_trait = trait_repugnant }
 		modifier = {
-			planet_amenities_add = -1
+			planet_amenities_add = -0.75
 		}
 	}
 
@@ -990,7 +990,7 @@ entertainer = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 2
+			planet_amenities_add = 1.5
 		}
 	}
 	triggered_planet_modifier = {
@@ -998,7 +998,7 @@ entertainer = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -2
+			planet_amenities_add = -1.5
 		}
 	}
 	triggered_planet_modifier = {
@@ -1133,7 +1133,7 @@ duelist = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 2
+			planet_amenities_add = 1.8
 		}
 	}
 	triggered_planet_modifier = {
@@ -1141,7 +1141,7 @@ duelist = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -2
+			planet_amenities_add = -1.8
 		}
 	}
 
@@ -1790,7 +1790,7 @@ healthcare = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 1
+			planet_amenities_add = 0.75
 		}
 	}
 	triggered_planet_modifier = {
@@ -1798,7 +1798,7 @@ healthcare = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -1
+			planet_amenities_add = -0.75
 		}
 	}
 
@@ -2505,7 +2505,7 @@ necro_apprentice = {
 			has_trait = trait_charismatic
 		}
 		modifier = {
-			planet_amenities_add = 1
+			planet_amenities_add = 0.75
 		}
 	}
 	triggered_planet_modifier = {
@@ -2513,7 +2513,7 @@ necro_apprentice = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -1
+			planet_amenities_add = -0.75
 		}
 	}
 

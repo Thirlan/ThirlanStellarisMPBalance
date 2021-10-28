@@ -1,4 +1,4 @@
-# Version 0.2.0
+# Version 0.2.1
 
 ## General tweaks
 
@@ -15,6 +15,7 @@
 ### Boosts
  * Leadership max cap: 15 from 10
  * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -33% starbase upgrade cost and -33% defense platform build cost for the first 20 years of the game.
+ * Espionage: All espionage operation's difficulty decreased by 3, resulting in much faster completion times.
 
 ## Government
 
@@ -41,7 +42,7 @@
 ### Boosts
  * Galactic Contender: Number of ascension perks required dropped to 1 from 3
  * Transcendent Learning: 100% leadership bonus from 50%
- * Enigmatic Engineering: +4 encryption from +2 and +2 decryption and ascension perks required dropped to 0 from 1
+ * Enigmatic Engineering: +4 encryption from +2 and ascension perks required dropped to 0 from 1
 
 ## Traditions
 
@@ -123,6 +124,8 @@
  * Unruly: +15% Empire Sprawl from 10%
  * Intelligent: +9% to research from +10%
  * Ingenious: +13% Energy production from +15%
+ * Natural Engineers: +13% engineering research from +15% engineering research
+ * Charismatic: +15% to amenities from +20%
 
 ### Boosts
  * Slow Breeders: -6% from -10%
@@ -134,16 +137,30 @@
  * Talented: +2 level cap from +1 level cap
  * Quarrelsome: -6% Unity from jobs from -10%
  * Nonadaptive: -5% habitability from -10%
+ * Repugnant: -15% to amenities from -20%
  
 ## Robot Traits:
 
 ### Nerfs
  * Mass Produced: +10% assembly speed from +15%
+ * Super Conductive: +13% Energy production from +15%
+ * High Bandwidth: +15% Empire Sprawl from +10%
+ * Emotion Emulator: +15% to amenities from +20%
 
 ### Boosts
+ * Logic Engines: +9% research from +10%
  * Custom made: -10% assembly speed from -15%
  * Streamlined Protocols: -15% Empire Sprawl from -10%
  * Recycled: -30% assembly cost from -20%
+ * Uncanny: -15% to amenities from -20%
+
+## Plantoids
+
+### Boosts:
+ * Phototrophic: 48% food and 48% energy from 50% food and 50% energy
+
+### Nerfs:
+ * Budding: +0.0175 assembly from 0.02
 
 ## Lithoid Traits
 

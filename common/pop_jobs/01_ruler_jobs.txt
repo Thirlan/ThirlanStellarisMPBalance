@@ -41,7 +41,7 @@ head_researcher = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 1
+			planet_amenities_add = 0.75
 		}
 	}
 	triggered_planet_modifier = {
@@ -49,7 +49,7 @@ head_researcher = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -1
+			planet_amenities_add = -0.75
 		}
 	}
 
@@ -209,7 +209,7 @@ high_priest = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 1
+			planet_amenities_add = 0.75
 		}
 	}
 	triggered_planet_modifier = {
@@ -217,7 +217,7 @@ high_priest = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -1
+			planet_amenities_add = -0.75
 		}
 	}
 
@@ -343,7 +343,7 @@ administrator = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 1.6
+			planet_amenities_add = 1.2
 		}
 	}
 	triggered_planet_modifier = {
@@ -351,7 +351,7 @@ administrator = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -1.6
+			planet_amenities_add = -1.2
 		}
 	}
 
@@ -591,7 +591,7 @@ merchant = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 1
+			planet_amenities_add = 0.75
 		}
 	}
 	triggered_planet_modifier = {
@@ -599,7 +599,7 @@ merchant = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -1
+			planet_amenities_add = -0.75
 		}
 	}
 
@@ -733,7 +733,7 @@ executive = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 1
+			planet_amenities_add = 0.75
 		}
 	}
 	triggered_planet_modifier = {
@@ -741,7 +741,7 @@ executive = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -1
+			planet_amenities_add = -0.75
 		}
 	}
 
