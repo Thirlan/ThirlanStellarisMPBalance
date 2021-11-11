@@ -33,7 +33,7 @@ Tech rushing and population growth is still THE meta of the game, even though Ne
 
 ## Unrestricted Assimilators
 
-Unrestricted Assimilators (Determine Assimilators, Fanatical Necrophage and Barbaric Necrophage) that can declare unrestricted wars have always been strong in Stellaris. The reason for their strength is that they are able to quickly gain more populations through their unrestricted conquest, something that normal empires have to spend large amounts of influence to do and as such their speed of conquest is capped. This is not so for the Unrestricted Assimilators, which can conquer an entire empire, giving them a huge boost to power and then allowing them to conquer the next empire in short order.
+Unrestricted Assimilators (Determine Assimilators, Fanatical Necrophage) that can declare unrestricted wars have always been strong in Stellaris. The reason for their strength is that they are able to quickly gain more populations through their unrestricted conquest, something that normal empires have to spend large amounts of influence to do and as such their speed of conquest is capped. This is not so for the Unrestricted Assimilators, which can conquer an entire empire, giving them a huge boost to power and then allowing them to conquer the next empire in short order.
 
 The simplest fix for this is to reduce the speed at which assimilation happens and thus the creation of new population through conquest.
 
@@ -81,4 +81,4 @@ The first reason is that changing point costs of traits will affect the existing
 
 The second reason on whether to just increase longevity has to do with longevity in the game in general. +80 is a significant boost already, and any additional years added have diminishing returns. Consider that by the end of the game your citizens can live to 130 without this boost. The game itself only lasts about 300 years so adding another 20 years does not really justify the 4 point cost of Venerable. Instead it is more logical to add some minor bonuses that have the right flavor to the trait.
 
-The bonuses added to Venerable however cannot be large enough to skew how the AI should normally use these races. AI game files are hardcoded to purposefully weigh each racial trait to determine how best to use them. Our KISS principle is not to change many game files and as such it is best to give two minor buffs instead of one large buff and thus explains why it is just a tiny 2% here for two traits.
+The bonuses added to Venerable however cannot be large enough to skew how the AI should normally use these races. AI game files are hardcoded to weigh each racial trait to determine how to use them. Our KISS principle is not to change many game files and as such it is best to give two minor buffs instead of one large buff and thus explains why it is just a tiny 2% here for two traits.
