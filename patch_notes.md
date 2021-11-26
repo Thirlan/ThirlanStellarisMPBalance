@@ -27,7 +27,7 @@
 ## Ethics
 
 ### Nerfs
- * Gestalts: -4% to research
+ * Gestalts: -3% to research
  * Xenophobe: +9%/18% to population growth from +10%/20%
  * Egalitarian: +4%/8% to specialists from +5%/+10%
 

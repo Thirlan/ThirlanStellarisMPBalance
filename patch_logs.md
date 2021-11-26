@@ -1,6 +1,6 @@
 # 2021/11/26 - 1.0.0
 
-Mod has been out long enough to have it upgraded to 1.0.0 as part of the Aquatics release. The following changes will be changed based on the lastest meta of the 2021 November tournament. Will keep an eye on the meta for 3.2 with the latest tournament:
+Mod has been out long enough to have it upgraded to 1.0.0 as part of the Aquatics release. The following changes will be based on the lastest meta of the 2021 November tournament. Will keep an eye on the meta for 3.2 with the latest tournament:
 
 https://www.youtube.com/watch?v=ug15NhTh-WM&t=1s&ab_channel=StefanAnon
 
