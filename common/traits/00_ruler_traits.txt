@@ -280,7 +280,7 @@ trait_ruler_deep_connections = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
 	}
 	modifier = {
-		country_base_influence_produces_add = 1
+		country_ruler_influence_produces_add = 1
 	}
 	leader_trait = { ruler }
 	leader_class = { ruler }
@@ -465,7 +465,7 @@ leader_trait_ruler_psionic = {
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_psionic_leader.dds"
 	modifier = {
 		pop_government_ethic_attraction = 0.10
-		country_base_influence_produces_add = 0.5
+		country_ruler_influence_produces_add = 0.5
 	}
 	leader_trait = { ruler }
 	leader_class = { ruler }
@@ -480,7 +480,7 @@ leader_trait_ruler_chosen = {
 	immortal_leaders = yes
 	modifier = {
 		pop_government_ethic_attraction = 0.20
-		country_base_influence_produces_add = 1
+		country_ruler_influence_produces_add = 1
 	}
 	leader_trait = { ruler }
 	leader_class = { ruler }

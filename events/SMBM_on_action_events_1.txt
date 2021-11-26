@@ -1,0 +1,127 @@
+# Override of specific on action events
+
+namespace = action
+
+# Assimilate Pops
+# Modified to nerf driven assimilators
+planet_event = {
+	id = action.65
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_species = {
+			has_citizenship_type = {
+				type = citizenship_assimilation
+				country = root.owner
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				root.owner = {
+					has_civic = civic_machine_assimilator
+				}
+			}
+			log = "[root.owner.GetName] is a driven assimilator. Assimilating at a nerfed constant speed of 3."
+			set_variable = {
+				which = assimilation_counter
+				value = 3
+			}
+			while = {
+				count = 3
+				limit = {
+					any_owned_pop = {
+						has_citizenship_type = {
+							type = citizenship_assimilation
+							country = root.owner
+						}
+					}
+					check_variable = {
+						which = assimilation_counter
+						value > 0
+					}
+				}
+				assimilation_effect = yes
+			}
+		}
+		else = {
+			random_list = {
+				1 = { # 3 pops
+					set_variable = {
+						which = assimilation_counter
+						value = 3
+					}
+					while = {
+						count = 3
+						limit = {
+							any_owned_pop = {
+								has_citizenship_type = {
+									type = citizenship_assimilation
+									country = root.owner
+								}
+							}
+							check_variable = {
+								which = assimilation_counter
+								value > 0
+							}
+						}
+						assimilation_effect = yes
+					}
+				}
+
+				1 = { # 6 pops
+					set_variable = {
+						which = assimilation_counter
+						value = 6
+					}
+					while = {
+						count = 6
+						limit = {
+							any_owned_pop = {
+								has_citizenship_type = {
+									type = citizenship_assimilation
+									country = root.owner
+								}
+							}
+							check_variable = {
+								which = assimilation_counter
+								value > 0
+							}
+						}
+						assimilation_effect = yes
+					}
+				}
+
+				1 = { # 12 pops
+					set_variable = {
+						which = assimilation_counter
+						value = 12
+					}
+					while = {
+						count = 12
+						limit = {
+							any_owned_pop = {
+								has_citizenship_type = {
+									type = citizenship_assimilation
+									country = root.owner
+								}
+							}
+							check_variable = {
+								which = assimilation_counter
+								value > 0
+							}
+						}
+						assimilation_effect = yes
+					}
+				}
+			}
+		}
+		set_variable = {
+			which = assimilation_counter
+			value = 0
+		}
+	}
+}

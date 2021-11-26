@@ -17,15 +17,17 @@
  # CIVICS
  civic_tooltip_byzantine_bureaucracy_effects:2 "£job_bureaucrat£ §Y$job_bureaucrat_plural$§! also produce §Y1.2§! £unity£ Unity and §Y1.2§! £stability£ $PLANET_STABILITY_TITLE$"
  
+ civic_tooltip_merchant_guilds_effects:2 "£building£ §YCapital Buildings§! provide £job_merchant£ §Y$job_merchant$§! Jobs\n£job_merchant£ §Y$job_merchant_plural$§! also produce §Y1.5§! £unity£ Unity"
+ 
  # ORIGINS
  civic_tooltip_post_apocalyptic_effects: "Capital starts as a §YTomb World§!\nGain the §Y$trait_survivor$§! trait, granting:\n  Tomb World Habitability: §G+70%§!\n  Leader Lifespan: §G+10§! Years\n  Habitability: §G+5%§!"
+
+ origin_tooltip_void_dwellers_effects:5 "- Start with three §HOrbital Habitats§! and the technology to build more\n- Members of your species thrive on Habitats and produce §G+12%§! more there\n- Severe habitability penalties alongside a §R-15%§! production penalty on all normal planets\n- Hydroponic Farms have §G+1§! £job_farmer£ $job_farmer$ Job"
 
  # ASCENSCIONS
  requires_ap_galactic_contender: "$TRIGGER_FAIL$Requires the §Y$ap_galactic_contender$§! Ascension Perk."
 
 # TRADITIONS
- tr_expansion_a_new_life_desc: "£pops£ §Y$MOD_POP_GROWTH_SPEED$§! increased by §G+6%§!."
- tr_expansion_a_new_life_machine_desc:0 "£pops£ §Y$MOD_POP_ASSEMBLY_SPEED$§! increased by §G+6%§!."
 
 # CUSTOM SMBM EVENTS
  be_careful_out_there: "Be careful out there"
