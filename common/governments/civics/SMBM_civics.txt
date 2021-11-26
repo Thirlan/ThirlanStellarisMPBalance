@@ -27,75 +27,6 @@
 #	ai_playable = {}							# Similar to "playable", for AI
 #}
 
-civic_barbaric_despoilers = {
-	playable = { host_has_dlc = "Apocalypse" }
-	ai_playable = { host_has_dlc = "Apocalypse" }
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
-	}
-	possible = {
-		ethics = {
-			OR = {
-				text = civic_tooltip_militarist
-				value = ethic_fanatic_militarist
-				value = ethic_militarist
-			}
-			OR = {
-				value = ethic_fanatic_authoritarian
-				value = ethic_authoritarian
-				value = ethic_fanatic_xenophobe
-				value = ethic_xenophobe
-			}
-			NOR = {
-				value = ethic_xenophile
-				value = ethic_fanatic_xenophile
-			}
-		}
-		civics = {
-			NOR = {
-				value = civic_fanatic_purifiers
-			}
-		}
-		origin = {
-			NOT = {
-				value = origin_common_ground
-			}
-		}
-	}
-	modification = no
-	random_weight = {
-		base = 2
-		modifier = {
-			factor = 0
-			NOT = { host_has_dlc = "Apocalypse" }
-		}
-		modifier = {
-			# civic has no effect after galaxy generation, disable for random generation
-			factor = 0
-			has_global_flag = game_started
-		}
-	}
-	description = "civic_tooltip_barbaric_despoilers_effects"
-
-	modifier = {
-		ship_speed_mult = 0.05
-	}
-}
-
-civic_functional_architecture = {
-	description = "civic_tooltip_functional_architecture_effects"
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
-	}
-	random_weight = { base = 5 }
-	modifier = {
-		planet_structures_cost_mult = -0.10
-		planet_max_buildings_add = 2
-	}
-}
-
 civic_philosopher_king = {
 	description = "civic_tooltip_philosopher_king_effects"
 	potential = {
@@ -253,6 +184,7 @@ civic_fanatic_purifiers = {
 		civics = {
 			NOR = {
 				value = civic_barbaric_despoilers
+				value = civic_pompous_purists
 			}
 		}
 		origin = {
@@ -277,5 +209,61 @@ civic_fanatic_purifiers = {
 		army_damage_mult = 0.33
 		starbase_shipyard_build_cost_mult = -0.15
 		country_naval_cap_mult = 0.33
+	}
+}
+
+civic_barbaric_despoilers = {
+	playable = { host_has_dlc = "Apocalypse" }
+	ai_playable = { host_has_dlc = "Apocalypse" }
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_militarist
+				value = ethic_fanatic_militarist
+				value = ethic_militarist
+			}
+			OR = {
+				value = ethic_fanatic_authoritarian
+				value = ethic_authoritarian
+				value = ethic_fanatic_xenophobe
+				value = ethic_xenophobe
+			}
+			NOR = {
+				value = ethic_xenophile
+				value = ethic_fanatic_xenophile
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_fanatic_purifiers
+			}
+		}
+		origin = {
+			NOT = {
+				value = origin_common_ground
+			}
+		}
+	}
+	modification = no
+	random_weight = {
+		base = 2
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Apocalypse" }
+		}
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	description = "civic_tooltip_barbaric_despoilers_effects"
+
+	modifier = {
+		ship_speed_mult = 0.05
 	}
 }

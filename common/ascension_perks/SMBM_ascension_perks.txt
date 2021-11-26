@@ -73,16 +73,64 @@ ap_become_the_crisis = {
 		}
 		modifier = {
 			factor = 0
-			num_ascension_perks >= 5
-		}
-		modifier = {
-			factor = 0
-			count_country = {
+			count_playable_country = {
 				count > 1
 				limit = {
 					has_ascension_perk = ap_become_the_crisis
 				}
 			}
+		}
+	}
+}
+
+#################
+# AQUATICS ASCENSION PERKS
+#################
+
+ap_hydrocentric = {
+	potential = {
+		has_aquatics = yes
+		NOT = { has_ascension_perk = ap_hydrocentric }
+		has_trait = trait_pc_ocean_preference
+	}
+	possible = {
+		has_trait = trait_aquatic
+		has_technology = tech_terrestrial_sculpting
+	}
+
+	on_enabled = {
+		custom_tooltip = ap_hydrocentric_tooltip
+		if = {
+			limit = {
+				host_has_dlc = "Apocalypse"
+			}
+			if = {
+				limit = { has_ascension_perk = ap_colossus }
+				custom_tooltip = ap_hydrocentric_deluge_tooltip
+			}
+			else = {
+				custom_tooltip = ap_hydrocentric_deluge_pre_unlock_tooltip
+			}
+		}
+		hidden_effect = {
+			country_event = { id = aquatics.1 }
+		}
+	}
+
+	modifier = {
+		terraforming_ocean_cost_mult = -0.25
+	}
+
+	ai_weight = {
+		factor = 80 #it really is quite good for Aquatic species
+		modifier = {
+			factor = 0.5
+			is_xenophobe = no
+			is_hive_empire = no
+		}
+		modifier = {
+			factor = 5
+			has_origin = origin_ocean_paradise
 		}
 	}
 }
@@ -108,14 +156,15 @@ ap_enigmatic_engineering = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = 2
 		modifier = {
-			factor = 2
-			has_ethic = ethic_materialist
+			factor = 10
+			has_valid_civic = civic_inwards_perfection
 		}
 		modifier = {
-			factor = 3
-			has_ethic = ethic_fanatic_materialist
+			factor = 2
+			is_materialist = yes
+			is_xenophobe = yes
 		}
 	}
 }
@@ -133,7 +182,7 @@ ap_the_flesh_is_weak = {
 	}
 	modifier = {
 		planet_pops_robotics_upkeep_mult = -0.10
-		planet_pop_assembly_mult = 0.05
+		planet_pop_assembly_mult = 0.06
 	}
 	possible = {
 		custom_tooltip = {
@@ -182,7 +231,7 @@ ap_the_flesh_is_weak = {
 		}
 		modifier = {
 			factor = 0
-			num_owned_planets < 10
+			num_owned_planets < 6
 		}
 		modifier = {
 			factor = 0
@@ -220,13 +269,13 @@ ap_synthetic_evolution = {
 				}
 			}
 			custom_tooltip = disables_idyllic_bloom
-        }
+		}
 		hidden_effect = {
 			country_event = { id = utopia.2550 }
 		}
 	}
 	modifier = {
-		planet_jobs_robotic_produces_mult = 0.05
+		planet_jobs_robotic_produces_mult = 0.06
 		ROBOT_species_trait_points_add = 1
 		modify_species_cost_mult = -0.50
 	}
@@ -311,10 +360,10 @@ ap_galactic_contender = {
 		modifier = {
 			factor = 0
 			NOR = {
-				any_neighbor_country = {
+				any_country = {
 					is_country_type = awakened_fallen_empire
 				}
-				any_country = {
+				any_neighbor_country = {
 					is_country_type = fallen_empire
 				}
 			}
@@ -344,7 +393,7 @@ ap_technological_ascendancy = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = 30 #it's better than average
 		modifier = {
 			factor = 2
 			has_ethic = ethic_materialist
@@ -375,7 +424,7 @@ ap_executive_vigor = {
 	}
 
 	ai_weight = {
-		factor = 10
+		factor = 30 #it's better than average
 	}
 }
 
@@ -400,8 +449,10 @@ ap_transcendent_learning = {
 # UTOPIA ASCENSION PERKS
 #################
 
-
-
 #################
 # SYNTHETIC DAWN ASCENSION PERKS
+#################
+
+#################
+# MEGACORP ASCENSION PERKS
 #################

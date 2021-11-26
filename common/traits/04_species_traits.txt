@@ -132,7 +132,7 @@ trait_nonadaptive = {
 	opposites = { "trait_adaptive" "trait_extremely_adaptive" "trait_robust" "trait_adaptive_lithoid" }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		pop_environment_tolerance = -0.05
+		pop_environment_tolerance = -0.06
 	}
 	slave_cost = {
 		energy = -50
@@ -435,7 +435,7 @@ trait_venerable = {
 	cost = 4
 	potential_crossbreeding_chance = 1.0
 	modifier = {
-		leader_age = 70
+		leader_age = 80
 		planet_jobs_unity_produces_mult = 0.02
 		planet_jobs_society_research_produces_mult = 0.02
 	}
@@ -497,8 +497,8 @@ trait_resilient = {
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		army_defense_damage_mult = 0.75
-		army_defense_health_mult = 0.75
+		army_defense_damage_mult = 0.65
+		army_defense_health_mult = 0.65
 	}
 }
 
@@ -879,7 +879,7 @@ trait_void_dweller_1 = {
 	}
 
 	modifier = {
-		habitat_jobs_produces_mult = 0.15
+		habitat_jobs_produces_mult = 0.13
 		non_artificial_planet_jobs_produces_mult = -0.15
 		pop_growth_speed = -0.1
 	}
@@ -954,5 +954,39 @@ trait_plantoid_budding = {
 	# Organic Pop Assembly set by plantoid_budding_rate in \pop_categories\ and 00_scripted_variables
 	slave_cost = {
 		energy = 250
+	}
+}
+
+trait_harvested_radiotrophic = {
+	icon = "gfx/interface/icons/traits/trait_plantoid_radiotrophic.dds"
+	host_has_dlc = "Plantoids Species Pack"
+	initial = no
+	randomized = no
+	cost = 2
+	potential_crossbreeding_chance = 1.0
+	opposites = { "trait_plantoid_phototrophic" "trait_plantoid_radiotrophic" }
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { HUM MAM REP AVI ART MOL NECROID AQUATIC }
+	
+	species_potential_add = {
+		exists = from
+		from = {
+			has_country_flag = harvested_radiotrophic_dna
+		}
+	}
+	
+	custom_tooltip = TRAIT_PLANTOID_RADIOTROPHIC_EFFECT
+	modifier = {
+		pc_nuked_habitability = 0.1
+	}
+	triggered_planet_growth_modifier = {
+		potential = {
+			exists = planet
+			planet = { is_planet_class = pc_nuked }
+		}
+		pop_growth_speed = 0.10
+	}
+	slave_cost = {
+		energy = 150
 	}
 }

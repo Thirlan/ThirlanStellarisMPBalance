@@ -1,3 +1,32 @@
+# 2021/11/26 - 1.0.0
+
+Mod has been out long enough to have it upgraded to 1.0.0 as part of the Aquatics release. The following changes will be changed based on the lastest meta of the 2021 November tournament. Will keep an eye on the meta for 3.2 with the latest tournament:
+
+https://www.youtube.com/watch?v=ug15NhTh-WM&t=1s&ab_channel=StefanAnon
+
+
+Removed:
+ * Leadership max cap: 15 from 10
+ * Functional Architecture: -10% to building costs from -15%
+ * New Life (Expansion tree): +6% pop growth from +10%
+ * Catalytic Processing: Food upkeep reduced to 8 from 9
+
+New:
+ * Gestalts: -3% penalty to research
+ * Void Dwellers: produce +12% from +15% on habitats
+ * Merchant Guilds: +1.5 unity per merchant from +2
+ * Xenophobe: +9%/18% to population growth from +10%/20%
+ * Egalitarian: +4%/8% to specialists from +5%/+10%
+
+Changed:
+ * Base Leader skill cap: 3 from 5
+ * Resilient: +65% defensive army damage from 50% and 65% defensive army health
+ * Nonadaptive: -6% habitability from -10%
+ * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -60% defense platform build cost and +15% starbase damage boost for the first 20 years of the game.
+ * The Flesh is Weak: 6% population assembly from +10%
+ * Synthetic Evolution: 6% robotic job multiplier from 10%
+ * Driven Assimilator: 3 pop per year assimilation speed from average of 7
+
 # 2021/10/27 - 0.2.1
 
 New changes based on the lastest meta and observations. Simple tweaks to the Traits.

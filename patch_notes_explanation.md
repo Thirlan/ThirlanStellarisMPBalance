@@ -29,7 +29,7 @@ Also the following mod from Stefan's team (Magikaas, Aow, AirHunter, Stefan, Hoo
 
 ## Tech Rushing and population
 
-Tech rushing and population growth is still THE meta of the game, even though Nemesis did balance population mechanics very slightly. In this regard, nerfs have been applied to the usual suspects of tech rushing and population growth game choices. Namely two small nerfs to the Expansion tradition, a nerf to the Technological Ascendency ascension perk.
+Tech rushing and population growth is still THE meta of the game, even though Nemesis did balance population mechanics very slightly. In this regard, nerfs have been applied to the usual suspects of tech rushing and population growth game choices.
 
 ## Unrestricted Assimilators
 
@@ -49,7 +49,7 @@ Many of the leadership cap game choices are considered very weak due to how litt
 
 The leadership cap bonuses also loses some of its value since most leaders will often plateau at 5, with or without a cap bonus, because of experience gains and mortality. In addition, the % gains for going from 5 to 6 are less (20%) than the gains from going from 4 to 5 (25%).
 
-Due to this, one of the simpler ways of buffing the leadership cap game choices has been to reduce the standard cap on leader levels from 5 to 4 and increase the maximum cap from 10 to 15.
+Due to this, one of the simpler ways of buffing the leadership cap game choices has been to reduce the standard cap on leader levels from 5 to 3.
 
 ## Army buffs
 

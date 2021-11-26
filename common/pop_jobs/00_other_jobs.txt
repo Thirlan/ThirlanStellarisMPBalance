@@ -204,6 +204,7 @@ slave_toiler = {
 #		is_being_assimilated = no
 #	}
 #
+#	possible_precalc = can_fill_drone_job
 #	possible = {
 #		owner = { is_hive_empire = yes }
 #		drone_job_check_trigger = yes
@@ -280,6 +281,7 @@ livestock = {
 
 	pop_modifier = {
 		pop_housing_usage_add = -0.5
+		pop_political_power = -0.1
 	}
 
 	possible_pre_triggers = {
