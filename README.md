@@ -36,7 +36,7 @@ Thus any decision to balance something will focus on doing it with the simplest 
 ### Nerf Overpowered mechanics
 Very self-explanatory. We will nerf those mechanics that are universally considered S class (overpowered). Anything that is A or lower will not be nerfed. 
 
-How do we decide what is S powered? This will be done after reviewing personal feedback from several players, youtube videos explaining exploits from established members of the community (such as Stefan Anon, Montu, Komrad Truck, etc...), chats on the Stellaris forums and so on forth.
+How do we decide what is S powered? This will be done after reviewing personal feedback from several players, youtube videos explaining exploits from established members of the community (such as Stefan Anon, Montu, Komrad Truck, ASPec etc...), chats on the Stellaris forums and so on forth.
 
 ### Boost Underpowered mechanics
 Some mechanics are overpowered because others are RELATIVELY underpowered. Hence some of the clearly underpowered mechanics will be given boosts.
