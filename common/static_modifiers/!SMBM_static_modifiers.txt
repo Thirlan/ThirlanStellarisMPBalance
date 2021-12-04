@@ -18,3 +18,8 @@ economic_chaos = {
 	all_technology_research_speed = -0.20
 	country_unity_produces_mult = -0.20
 }
+
+# Game overrides
+over_starbase_capacity = {
+	starbases_upkeep_mult = 0.35
+}

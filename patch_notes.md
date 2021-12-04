@@ -1,4 +1,4 @@
-# Version 1.0.0
+# Version 1.1.0
 
 ## General tweaks
 
@@ -11,6 +11,7 @@
  * STARBASE_CAPACITY_SYSTEM_MULT: 0.08 from 0.1
  * Capacity Subsidies: +40% energy from jobs from +50%
  * Economic Chaos (anti-negative economy exploit) event: Any player whose stockpiles in mineral/food/energy are 0 or below with negative income will suffer a empire wide penalty of -10% production to mineral, food, energy and -20% to alloys, research and unity.
+ * Starbase overcapacity upkeep penalty: +35% from +25%
  
 ### Boosts
  * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -60% defense platform build cost and +15% starbase damage boost for the first 20 years of the game.
@@ -22,14 +23,16 @@
  * none
 
 ### Boosts
- * Hive Mind: +28% growth speed from +25%
+ * none
 
 ## Ethics
 
 ### Nerfs
  * Gestalts: -3% to research
  * Xenophobe: +9%/18% to population growth from +10%/20%
- * Egalitarian: +4%/8% to specialists from +5%/+10%
+ * Spiritualist: +12%/+24% Unity from +10%/+24%
+ * Materialist: +4.5%/9% to research from +5%/+10%
+ * Militarist: +9%/+18% to ship fire rate from +10%/+20%
 
 ### Boosts
  * None
@@ -56,7 +59,7 @@
 ## Traditions
 
 ### Nerfs
- * none
+ * Prosperity (Completion bonus): +3 Stability from +5
  
 ### Boosts
  * none
@@ -135,6 +138,8 @@
  * Ingenious: +13% Energy production from +15%
  * Natural Engineers: +13% engineering research from +15% engineering research
  * Charismatic: +15% to amenities from +20%
+ * Aquatics: +9% energy/mineral/food production on Ocean worlds from +10%
+ * Fleeting: -13 leader age from -10
 
 ### Boosts
  * Slow Breeders: -6% from -10%

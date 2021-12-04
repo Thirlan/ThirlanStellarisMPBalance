@@ -14,6 +14,8 @@
  
  TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "Replaces §Y100%§! of Base £food£ §YFood§! Upkeep with §Y48%§! £energy£ §YEnergy§! and §Y48%§! £food£ §YFood§!."
 
+ trait_aquatic_tooltip:1 "Housing Usage on §YOcean§! worlds: §G-10%§!\nFood and Mineral output on §YOcean§! worlds: §G+9%§!\nHousing Usage on non-§YWet§! worlds: §R+30%§!\nHabitability on non-§YWet§! worlds: §R-20%§!\n\nThe §H$ap_hydrocentric$§! Ascension Perk amplifies this trait's effects."
+
  # CIVICS
  civic_tooltip_byzantine_bureaucracy_effects:2 "£job_bureaucrat£ §Y$job_bureaucrat_plural$§! also produce §Y1.2§! £unity£ Unity and §Y1.2§! £stability£ $PLANET_STABILITY_TITLE$"
  

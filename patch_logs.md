@@ -1,3 +1,24 @@
+# 2021/12/04 - 1.1.0
+
+Latest 3.2 Aquatics Tournament has played out and there was a quick patch to the game. Updating the mod for compliance and to address some meta from the latest tournament.
+
+https://forum.paradoxplaza.com/forum/threads/2021-november-aquatics-tournament.1500941/
+
+Removed:
+ * Egalitarian: +4%/8% to specialists from +5%/+10%
+ * Hive Mind: +28% growth speed from +25%
+ 
+Added:
+ * Starbase overcapacity upkeep penalty: +35% from +25%
+ * Spiritualist: +12%/+24% Unity from +10%/+24%
+ * Materialist: +4.5%/9% to research from +5%/+10%
+ * Militarist: +9%/+18% to ship fire rate from +10%/+20%
+ * Aquatics: +9% energy/mineral/food production on Ocean worlds from +10%
+ * Prosperity (Completion bonus): +3 Stability from +5
+ * Fleeting: -13 leader age from -10
+
+Also wanted to add a special thanks to OldEnt (ACE) and Corsairmarks for always being on hand to help out in the Stellaris Modding Den.
+
 # 2021/11/26 - 1.0.0
 
 Mod has been out long enough to have it upgraded to 1.0.0 as part of the Aquatics release. The following changes will be based on the lastest meta of the 2021 November tournament. Will keep an eye on the meta for 3.2 with the latest tournament:
