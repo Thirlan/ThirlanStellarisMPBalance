@@ -1,4 +1,4 @@
-# Version 1.1.0
+# Version 1.1.1
 
 ## General tweaks
 
@@ -12,6 +12,7 @@
  * Capacity Subsidies: +40% energy from jobs from +50%
  * Economic Chaos (anti-negative economy exploit) event: Any player whose stockpiles in mineral/food/energy are 0 or below with negative income will suffer a empire wide penalty of -10% production to mineral, food, energy and -20% to alloys, research and unity.
  * Starbase overcapacity upkeep penalty: +35% from +25%
+ * Jump Drive: Prethoryn and Contingency can now spawn if Jump Drives researched. Jump drives also increase the odds of the crisis spawning sooner from 19% to 37%.
  
 ### Boosts
  * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -60% defense platform build cost and +15% starbase damage boost for the first 20 years of the game.

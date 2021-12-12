@@ -1,3 +1,14 @@
+# 2021/12/12 - 1.1.1
+
+Modified the crisis trigger so that it is not always the Unbidden that show up once jump drives are researched. In a typical multiplayer game, the majority of the players will reach jump drives by end game and as such the crisis rules only allow the Unbidden at this point. Now the rules are the following:
+ - All Crisis can show up once Jump Drives are researched
+ - Jump drives double the chances of the Prethoryn or Contingency showing up sooner
+ - Jump drives quadruple the chances of the Unbidden showing up sooner
+ 
+In short this means that once the end game arrives, on the first dice roll for the crisis, if you have jump drives the odds of the crisis showing up go from 19% to 38%.
+
+In addition to this change the AI's planning economy has been greatly improved. As always, this follows the simple approach of updating this mod which involves touching as little as possible. 3.2's new AI Planning scripts make this possible. The AI, instead of using a single basic planning script for all AIs, now has 11 different AI scripts for each empire in the early phase of the game, which is the most critical phase of the game. Once the early phase of the game is over it switches back to the default script. Overall this has resulted in impressive improvements from the AI with no touching of the other game files.
+
 # 2021/12/04 - 1.1.0
 
 Latest 3.2 Aquatics Tournament has played out and there was a quick patch to the game. Updating the mod for compliance and to address some meta from the latest tournament.
