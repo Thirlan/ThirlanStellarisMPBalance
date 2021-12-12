@@ -1,0 +1,215 @@
+# Base AI economic plans
+
+@subplan_requirement = 30
+@consumer_goods_target = 25
+@research_target = 9999
+@unity_target = 70
+@alloy_target = 500
+@rare_resource_target = 4
+
+basic_economy_plan = {
+    
+	income = {
+		energy = 100
+		minerals = 150
+	}
+
+	focus = {
+		energy = 40
+		minerals = 100
+	}
+
+	subplan = {
+		potential = {
+			country_uses_food = yes
+		}
+
+		income = {
+			food = 20
+		}
+
+		focus = {
+			food = 10
+		}
+	}
+
+	subplan = {
+		potential = {
+			AND = {
+				country_uses_consumer_goods = yes # This includes Rogue Servitors
+				country_uses_food = no
+				has_monthly_income = { resource = minerals value > 30 }			
+			}
+		}
+		income = {
+			consumer_goods = @consumer_goods_target
+		}
+	}
+
+	subplan = {
+		potential = {
+			AND = {
+				country_uses_consumer_goods = yes # This includes Rogue Servitors
+				country_uses_food = yes
+				has_monthly_income = { resource = minerals value > 30 }			
+				has_monthly_income = { resource = food value > 10 }
+			}
+		}
+		income = {
+			consumer_goods = @consumer_goods_target
+		}
+	}	
+
+	subplan = {
+		potential = {
+			AND = {
+				is_gestalt = yes
+				is_catalytic_empire = no
+				country_uses_food = no
+				has_monthly_income = { resource = energy value > @subplan_requirement }			
+				has_monthly_income = { resource = minerals value > @subplan_requirement }			
+			}
+		}
+
+		income = {
+			physics_research = @research_target
+			society_research = @research_target
+			engineering_research = @research_target
+			unity = @unity_target
+			alloys = @alloy_target
+			exotic_gases = @rare_resource_target
+			volatile_motes = @rare_resource_target
+			rare_crystals = @rare_resource_target
+		}
+		pops = 9000
+	}
+
+	subplan = {
+		potential = {
+			AND = {
+				is_gestalt = yes
+				is_catalytic_empire = no
+				country_uses_food = yes
+				has_monthly_income = { resource = energy value > @subplan_requirement }			
+				has_monthly_income = { resource = minerals value > @subplan_requirement }
+				has_monthly_income = { resource = food value > 10 }			
+			}
+		}
+
+		income = {
+			physics_research = @research_target
+			society_research = @research_target
+			engineering_research = @research_target
+			unity = @unity_target
+			alloys = @alloy_target
+			exotic_gases = @rare_resource_target
+			volatile_motes = @rare_resource_target
+			rare_crystals = @rare_resource_target
+		}
+		pops = 9000
+	}	
+
+	subplan = {
+		potential = {
+			AND = {
+				is_gestalt = yes
+				is_catalytic_empire = yes
+				has_monthly_income = { resource = energy value > @subplan_requirement }			
+				has_monthly_income = { resource = food value > @subplan_requirement }			
+			}
+		}
+
+		income = {
+			physics_research = @research_target
+			society_research = @research_target
+			engineering_research = @research_target
+			unity = @unity_target
+			alloys = @alloy_target
+			exotic_gases = @rare_resource_target
+			volatile_motes = @rare_resource_target
+			rare_crystals = @rare_resource_target
+		}
+		pops = 9000
+	}
+
+	subplan = {
+		potential = {
+			AND = {
+				is_gestalt = no
+				is_catalytic_empire = no
+				country_uses_food = no
+				has_monthly_income = { resource = energy value > @subplan_requirement }
+				has_monthly_income = { resource = minerals value > @subplan_requirement }
+				has_monthly_income = { resource = consumer_goods value > 15 }			
+			}
+		}
+		
+		income = {
+			physics_research = @research_target
+			society_research = @research_target
+			engineering_research = @research_target
+			unity = @unity_target
+			alloys = @alloy_target
+			exotic_gases = @rare_resource_target
+			volatile_motes = @rare_resource_target
+			rare_crystals = @rare_resource_target
+		}		
+		pops = 9000
+	}
+
+	subplan = {
+		potential = {
+			AND = {
+				is_gestalt = no	
+				is_catalytic_empire = no
+				country_uses_food = yes
+				has_monthly_income = { resource = energy value > @subplan_requirement}
+				has_monthly_income = { resource = minerals value > @subplan_requirement }
+				has_monthly_income = { resource = consumer_goods value > 15 }
+				has_monthly_income = { resource = food value > 10 }		
+			}
+		}
+		
+		income = {
+			physics_research = @research_target
+			society_research = @research_target
+			engineering_research = @research_target
+			unity = @unity_target
+			alloys = @alloy_target
+			exotic_gases = @rare_resource_target
+			volatile_motes = @rare_resource_target
+			rare_crystals = @rare_resource_target
+		}		
+		pops = 9000
+	}	
+
+	subplan = {
+		potential = {
+			AND = {
+				is_gestalt = no		
+				is_catalytic_empire = yes
+				has_monthly_income = { resource = energy value > @subplan_requirement }
+				has_monthly_income = { resource = food value > @subplan_requirement }
+				has_monthly_income = { resource = consumer_goods value > 15 }
+			}
+		}
+		
+		income = {
+			physics_research = @research_target
+			society_research = @research_target
+			engineering_research = @research_target
+			unity = @unity_target
+			alloys = @alloy_target
+			exotic_gases = @rare_resource_target
+			volatile_motes = @rare_resource_target
+			rare_crystals = @rare_resource_target
+		}		
+		pops = 9000
+	}
+
+	empire_size = 1.1 #admin cap is fine with being 10% over limit
+
+    ai_weight = {
+		weight = 1
+	}
+}
