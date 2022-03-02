@@ -364,7 +364,7 @@ bio_trophy = {
 			trigger = {
 				happiness >= 0.5
 			}
-			unity = 1
+			unity = 3
 		}
 	}
 
@@ -372,10 +372,12 @@ bio_trophy = {
 		potential = {
 			happiness >= 0.5
 		}
+
 		modifier = {
 			planet_jobs_complex_drone_produces_mult = 0.01
 		}
 	}
+
 	triggered_pop_modifier = {
 		pop_housing_usage_add = -1
 	}

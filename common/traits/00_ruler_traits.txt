@@ -18,7 +18,6 @@
 
 trait_ruler_corvette_focus = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_corvette_focus.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -35,7 +34,6 @@ trait_ruler_corvette_focus = {
 
 trait_ruler_destroyer_focus = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_destroyer_focus.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -52,7 +50,6 @@ trait_ruler_destroyer_focus = {
 
 trait_ruler_cruiser_focus = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_cruiser_focus.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -69,7 +66,6 @@ trait_ruler_cruiser_focus = {
 
 trait_ruler_battleship_focus = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_battleship_focus.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -86,7 +82,6 @@ trait_ruler_battleship_focus = {
 
 trait_ruler_recruiter = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_recruiter.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -102,7 +97,6 @@ trait_ruler_recruiter = {
 
 trait_ruler_from_the_ranks = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_from_the_ranks.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -118,7 +112,6 @@ trait_ruler_from_the_ranks = {
 
 trait_ruler_fortifier = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_fortifier.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -134,7 +127,6 @@ trait_ruler_fortifier = {
 
 trait_ruler_logistic_understanding = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_logistic_understanding.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -150,7 +142,6 @@ trait_ruler_logistic_understanding = {
 
 trait_ruler_military_pioneer = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_military_pioneer.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -166,7 +157,6 @@ trait_ruler_military_pioneer = {
 
 trait_ruler_warlike = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_fist.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -181,7 +171,6 @@ trait_ruler_warlike = {
 
 trait_ruler_architectural_sense = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_architectural_sense.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -197,7 +186,6 @@ trait_ruler_architectural_sense = {
 
 trait_ruler_frontier_spirit = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_frontier_spirit.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -213,7 +201,6 @@ trait_ruler_frontier_spirit = {
 
 trait_ruler_world_shaper = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_world_shaper.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -229,7 +216,6 @@ trait_ruler_world_shaper = {
 
 trait_ruler_home_in_the_sky = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_home_in_the_sky.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -244,7 +230,6 @@ trait_ruler_home_in_the_sky = {
 
 trait_ruler_industrialist = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_industrialist.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -258,7 +243,6 @@ trait_ruler_industrialist = {
 
 trait_ruler_eye_for_talent = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_eye_for_talent.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -274,7 +258,6 @@ trait_ruler_eye_for_talent = {
 
 trait_ruler_deep_connections = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_deep_connections.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -289,14 +272,13 @@ trait_ruler_deep_connections = {
 
 trait_ruler_charismatic = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_charismatic.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
 	}
 	modifier = {
-		edicts_cost_mult = -0.10
-		edict_length_mult = 0.20
+		edicts_upkeep_mult = -0.10
+		country_edict_fund_add = 20
 	}
 	leader_trait = { ruler }
 	leader_class = { ruler }
@@ -304,7 +286,6 @@ trait_ruler_charismatic = {
 
 trait_ruler_champion_of_the_people = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_champion_of_the_people.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -318,7 +299,6 @@ trait_ruler_champion_of_the_people = {
 
 trait_ruler_expansionist = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_expansionist.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -333,7 +313,6 @@ trait_ruler_expansionist = {
 
 trait_ruler_fertility_preacher = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_fertility_preacher.dds"
 	leader_potential_add = {
 		NOR = {
@@ -351,7 +330,6 @@ trait_ruler_fertility_preacher = {
 
 trait_ruler_investor = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_investor.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -365,7 +343,6 @@ trait_ruler_investor = {
 
 trait_ruler_space_miner = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_space_miner.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -380,7 +357,6 @@ trait_ruler_space_miner = {
 
 trait_ruler_explorer = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_explorer.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -395,7 +371,6 @@ trait_ruler_explorer = {
 
 leader_trait_fleet_organizer = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_fleet_organizer.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -411,7 +386,6 @@ leader_trait_fleet_organizer = {
 
 leader_trait_reformer = {
 	cost = 1
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_reformer.dds"
 	leader_potential_add = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
@@ -425,7 +399,6 @@ leader_trait_reformer = {
 
 leader_trait_ruler_erudite = {
 	cost = 0
-	modification = no
 	icon = "gfx/interface/icons/traits/trait_erudite.dds"
 	modifier = {
 		all_technology_research_speed = 0.05
@@ -438,7 +411,6 @@ leader_trait_ruler_erudite = {
 
 leader_trait_ruler_cyborg = {
 	cost = 0
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_cyborg.dds"
 	leader_trait = { ruler }
 	leader_class = { ruler }
@@ -448,7 +420,6 @@ leader_trait_ruler_cyborg = {
 
 leader_trait_ruler_synthetic = {
 	cost = 0
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_synthetic.dds"
 	modifier = {
 		planet_jobs_robotic_produces_mult = 0.05
@@ -461,7 +432,6 @@ leader_trait_ruler_synthetic = {
 
 leader_trait_ruler_psionic = {
 	cost = 0
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_psionic_leader.dds"
 	modifier = {
 		pop_government_ethic_attraction = 0.10
@@ -475,7 +445,6 @@ leader_trait_ruler_psionic = {
 
 leader_trait_ruler_chosen = {
 	cost = 0
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_psionic_chosen_one.dds"
 	immortal_leaders = yes
 	modifier = {
@@ -493,7 +462,6 @@ leader_trait_ruler_hive_mind = {
 	leader_class = { ruler }
 
 	cost = 0
-	modification = no
 	initial = no
 	randomized = no
 
@@ -505,7 +473,6 @@ leader_trait_ruler_hive_mind = {
 
 leader_trait_ruler_great_khan = {
 	cost = 0
-	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_great_khan.dds"
 	immortal_leaders = yes
 	modifier = {

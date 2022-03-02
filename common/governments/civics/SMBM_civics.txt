@@ -44,9 +44,8 @@ civic_philosopher_king = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		country_unity_produces_mult = 0.02
-		country_admin_cap_mult = 0.02
-		all_technology_research_speed = 0.02
+		country_unity_produces_mult = 0.03
+		all_technology_research_speed = 0.03
 		ruler_skill_levels = 2
 	}
 }
@@ -67,29 +66,7 @@ civic_meritocracy = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-						 
-		planet_jobs_specialist_produces_mult = 0.09
-	}
-}
-
-civic_feudal_realm = {
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
-	}
-	possible = {
-		authority = {
-			value = auth_imperial
-		}
-	}
-	random_weight = { base = 5 }
-
-	description = "civic_tooltip_feudal_realm_effects"
-	modifier = {
-		country_subject_power_penalty_mult = -0.5
-		country_naval_cap_mult = 0.10
-		ships_upkeep_mult = -0.10
-		armies_upkeep_mult = -0.10
+		planet_jobs_specialist_produces_mult = 0.10
 	}
 }
 
@@ -137,31 +114,8 @@ civic_cutthroat_politics = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		edicts_cost_mult = -0.20
+		edicts_upkeep_mult = -0.20
 		intel_decryption_add = 2
-	}
-}
-
-civic_shadow_council = {
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
-	}
-	possible = {
-		authority = {
-			OR = {
-				text = civic_tooltip_dem_oli_dic
-				value = auth_democratic
-				value = auth_oligarchic
-				value = auth_dictatorial
-			}
-		}
-	}
-	random_weight = { base = 5 }
-	modifier = {
-		country_election_influence_cost_mult = -0.75
-		planet_jobs_ruler_produces_mult = 0.15
-		intel_decryption_add = 1
 	}
 }
 
@@ -227,12 +181,14 @@ civic_barbaric_despoilers = {
 				value = ethic_militarist
 			}
 			OR = {
+				text = civic_tooltip_authoritarian_or_xenophobe
 				value = ethic_fanatic_authoritarian
 				value = ethic_authoritarian
 				value = ethic_fanatic_xenophobe
 				value = ethic_xenophobe
 			}
 			NOR = {
+				text = civic_tooltip_not_xenophile
 				value = ethic_xenophile
 				value = ethic_fanatic_xenophile
 			}

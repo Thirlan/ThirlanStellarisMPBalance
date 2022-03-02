@@ -170,9 +170,12 @@ coordinator = {
 	possible = { NOT = { has_trait = trait_nerve_stapled } }
 
 	resources = {
-		category = planet_bureaucrats
+		category = planet_administrators
+		produces = {
+			unity = 4
+		}
 		upkeep = {
-			energy = 6
+			energy = 4
 		}
 	}
 
@@ -185,19 +188,7 @@ coordinator = {
 			planet_jobs_simple_drone_produces_mult = 0.01
 		}
 	}
-
-	triggered_country_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_active_tradition = tr_synchronicity_integrated_preservation
-			}
-		}
-		modifier = {
-			country_admin_cap_add = 3
-		}
-	}
-
+	
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -207,26 +198,6 @@ coordinator = {
 		}
 		modifier = {
 			planet_crime_no_happiness_add = -2
-		}
-	}
-
-	country_modifier = {
-		country_admin_cap_add = 15
-	}
-
-	triggered_country_modifier = {
-		potential = {
-			exists = planet
-			planet = {
-				exists = sector
-				sector = {
-					exists = leader
-					leader = { has_trait = leader_trait_amplifier }
-				}
-			}
-		}
-		modifier = {
-			country_admin_cap_add = 1
 		}
 	}
 
@@ -270,21 +241,7 @@ evaluator = {
 	}
 
 	weight = {
-		weight = @synapse_drone_job_weight
-		modifier = {
-			factor = 0.9
-			exists = owner
-			years_passed < 1
-			owner = { has_valid_civic = civic_machine_assimilator }
-			has_trait = trait_cybernetic
-		}
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_trait = trait_traditional
-				has_trait = trait_robot_propaganda_machines
-			}
-		}
+		weight = 0
 	}
 }
 
@@ -306,9 +263,9 @@ synapse_drone = {
 	possible = { NOT = { has_trait = trait_nerve_stapled } }
 
 	resources = {
-		category = planet_synapse_drones
+		category = planet_administrators
 		produces = {
-			unity = 3
+			unity = 4
 		}
 		upkeep = {
 			trigger = {
@@ -343,26 +300,6 @@ synapse_drone = {
 		}
 		modifier = {
 			planet_amenities_no_happiness_add = 2
-		}
-	}
-
-	country_modifier = {
-		country_admin_cap_add = 5
-	}
-
-	triggered_country_modifier = {
-		potential = {
-			exists = planet
-			planet = {
-				exists = sector
-				sector = {
-					exists = leader
-					leader = { has_trait = leader_trait_mindfulness }
-				}
-			}
-		}
-		modifier = {
-			country_admin_cap_add = 1
 		}
 	}
 
@@ -1252,7 +1189,7 @@ agri_drone = {
 		}
 		modifier = {
 			factor = 0.9
-			NOT = { has_job = mining_drone }
+			NOT = { has_job = agri_drone }
 			owner = {
 				has_monthly_income = {
 					resource = food
@@ -1339,7 +1276,7 @@ technician_drone = {
 		}
 		modifier = {
 			factor = 0.9
-			NOT = { has_job = mining_drone }
+			NOT = { has_job = technician_drone }
 			owner = {
 				has_monthly_income = {
 					resource = energy
@@ -1420,9 +1357,9 @@ maintenance_drone = {
 	}
 
 	weight = {
-		weight = @clerk_job_weight
+		weight = @maintenance_drone_job
 		modifier = {
-			factor = 2
+			factor = 1.1
 			OR = {
 				has_trait = trait_robot_emotion_emulators
 				has_trait = trait_charismatic
@@ -1443,13 +1380,6 @@ maintenance_drone = {
 			has_trait = trait_cybernetic
 		}
 		modifier = {
-			factor = 0.1
-			NOT = { has_job = maintenance_drone }
-			planet = {
-				free_amenities > 5
-			}
-		}
-		modifier = {
 			factor = 1.1
 			OR = {
 				has_trait = trait_traditional
@@ -1461,26 +1391,24 @@ maintenance_drone = {
 			}
 		}
 		modifier = {
-			factor = 2
-			planet = {
-				free_amenities <= -1
-			}
-		}
-		modifier = {
-			factor = 1.5
-			planet = {
-				free_amenities <= -5
-			}
-		}
-		modifier = {
-			factor = 1.5
-			planet = {
-				free_amenities <= -10
-			}
-		}
-		modifier = {
 			factor = 0.85
 			has_trait = trait_necrophage
+		}
+
+		modifier = {
+			factor = 1000 # <- hive mind amenities jobs are non specialist so they have base weight 1 instead of 1000 but we still want them
+			NOT = { has_job = maintenance_drone }
+			planet = {
+				free_amenities < 3
+			}
+		}
+
+		modifier = {
+			factor = 1000 # <- hive mind amenities jobs are non specialist so they have base weight 1 instead of 1000 but we still want them
+			has_job = maintenance_drone
+			planet = {
+				free_amenities < 8
+			}
 		}
 	}
 }
@@ -1677,9 +1605,9 @@ chronicle_drone = {
 	possible = { NOT = { has_trait = trait_nerve_stapled } }
 
 	resources = {
-		category = planet_researchers
+		category = planet_administrators
 		produces = {
-			unity = 4
+			unity = 2
 			society_research = 2
 		}
 		upkeep = {
@@ -1688,14 +1616,55 @@ chronicle_drone = {
 			energy = 2
 		}
 		upkeep = {
-			trigger = { species = { is_archetype = BIOLOGICAL } }
+			trigger = {
+				is_organic_species = yes
+				is_phototrophic = no
+				is_lithoid = no
+			}
 			energy = 1
 			food = 2
 		}
 		upkeep = {
-			trigger = { species = { is_archetype = LITHOID } }
+			trigger = {
+				is_phototrophic = yes
+			}
+			energy = 1
+			food = 1
+		}
+		upkeep = {
+			trigger = {
+				has_phototrophic_energy_upkeep = yes
+			}
+			energy = 1
+		}
+		upkeep = {
+			trigger = {
+				is_lithoid = yes
+			}
 			energy = 1
 			minerals = 2
+		}
+	}
+
+	planet_modifier = {
+		planet_amenities_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			planet_amenities_add = 0.4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = { has_trait = trait_repugnant }
+		modifier = {
+			planet_amenities_add = -0.4
 		}
 	}
 
@@ -1769,11 +1738,11 @@ scrap_miner_drone = {
 		}
 		modifier = {
 			factor = 1.2
-			has_job = mining_drone
+			has_job = scrap_miner_drone
 		}
 		modifier = {
 			factor = 0.9
-			NOT = { has_job = mining_drone }
+			NOT = { has_job = scrap_miner_drone }
 			owner = {
 				has_monthly_income = {
 					resource = minerals
