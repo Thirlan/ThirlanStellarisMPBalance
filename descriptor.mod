@@ -1,6 +1,6 @@
-version="1.1.1"
+version="1.2.0"
 tags={
 	"Balance"
 }
 name="Simple Multiplayer Balance Mod"
-supported_version="3.2.*"
+supported_version="3.3.*"

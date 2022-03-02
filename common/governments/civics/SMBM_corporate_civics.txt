@@ -27,8 +27,8 @@ civic_franchising = {
 	random_weight = { base = 5 }
 	description = "civic_tooltip_franchising_effects"
 	modifier = {
-		country_subject_power_penalty_mult = -0.40
-		empire_size_branch_office_mult = -0.30
+		country_subject_power_penalty_mult = -0.33
+		empire_size_branch_office_mult = -0.25
 	}
 }
 
@@ -72,6 +72,7 @@ civic_private_military_companies = {
 		army_starting_experience_add = 100
 		army_damage_mult = 0.30
 		army_health = 0.30
+		army_morale = 0.30
 		armies_upkeep_mult = -0.30
 		armies_cost_mult = -0.30
 	}

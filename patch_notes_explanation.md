@@ -43,7 +43,7 @@ Many of the leadership cap game choices are considered very weak due to how litt
 
 The leadership cap bonuses also loses some of its value since most leaders will often plateau at 5, with or without a cap bonus, because of experience gains and mortality. In addition, the % gains for going from 5 to 6 are less (20%) than the gains from going from 4 to 5 (25%).
 
-Due to this, one of the simpler ways of buffing the leadership cap game choices has been to reduce the standard cap on leader levels from 5 to 3.
+Due to this, one of the simpler ways of buffing the leadership cap game choices has been to reduce the standard cap on leader levels from 5 to 4 and also modify a lot of the leadership cap skills that give +2 to leadership cap to give +1 to leadership cap and +1 to starting leader level instead.
 
 ## Army buffs
 
@@ -52,12 +52,6 @@ Armies are a very minor element of Stellaris. They are only relevant if you are 
 In this regard, it is unclear why Paradox was so timid with the army buff game choices. Take the resilient trait, which gives +50% army damage to defending army units. This essentially means that if you have 2 defensive units on the planet, then the 50% buff implies there are ~2.5 units on the planet (not 3 because all we did was buff damage and not health or morale). Considering that most people invade with stacks of at least 10, the 50% buff is not even noticeable. On top of this, this buff only helps if you are being invaded, which would mean you have lost naval superiority and very likely have lost the game. The Resilient trait is what would be considered a losing power, which is to say it only comes into effect when you are losing.
 
 It is not very hard to see then that all the army buff game choices have similar issues and explains the reason why they have all been buffed. Buffing army health is especially important as it also helps the army units to survive orbital bombardment, which helps act as a delaying mechanism if your navy is not close enough. It also helps units to survive combat, which reduces the costs of armies and increase experience gains, which provides for a better return on investment over time.
-
-## Crime
-
-Crime is a frequently exploited game mechanic. As seen in some videos by Stefan, both for the Crime Lord Deal and his Hive Mind play in the Nemesis videos, you can regularly have high crime with little to no risk.
-
-The quickest tweak that can thus be done for this is to increase slightly the crime/deviancy per pop from 2.0 to 2.2.
 
 ## Be careful out there (event)
 
@@ -69,10 +63,10 @@ The boost also only applies to players and not AIs, which also encourages player
 
 ## Racial traits
 
-Some people may noticed that the racial traits have some unusual changes to them. For example Venerable has +2% unity and +2% social. The argument might have been to just reduce the point cost or increasing the longevity. There are two reasons for not having done this.
+Some people may noticed that the racial traits have some unusual changes to them. For example Venerable +1 to starting leader level. The argument might have been to just reduce the point cost or increasing the longevity. There are two reasons for not having done this.
 
 The first reason is that changing point costs of traits will affect the existing races that people have created and come with the game. This falls foul of our KISS principle of making the sure the mod is simple to use and easy to turn on and off. Hence no changes to point costs will EVER be made and requires us to instead modify the abilities directly.
 
 The second reason on whether to just increase longevity has to do with longevity in the game in general. +80 is a significant boost already, and any additional years added have diminishing returns. Consider that by the end of the game your citizens can live to 130 without this boost. The game itself only lasts about 300 years so adding another 20 years does not really justify the 4 point cost of Venerable. Instead it is more logical to add some minor bonuses that have the right flavor to the trait.
 
-The bonuses added to Venerable however cannot be large enough to skew how the AI should normally use these races. AI game files are hardcoded to weigh each racial trait to determine how to use them. Our KISS principle is not to change many game files and as such it is best to give two minor buffs instead of one large buff and thus explains why it is just a tiny 2% here for two traits.
+The bonuses added to Venerable however cannot be large enough to skew how the AI should normally use these races. AI game files are hardcoded to weigh each racial trait to determine how to use them. Our KISS principle is not to change many game files and as such it is best to give a minor buffs.

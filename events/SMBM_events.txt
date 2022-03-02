@@ -288,3 +288,75 @@ country_event = {
 		name = smbm.10.option
 	}
 }
+
+# Venerable boost
+country_event = {
+	id = smbm.11
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_trait = "trait_venerable"
+	}
+
+	immediate = {
+		from = {
+			add_skill = 1
+		}
+	}
+}
+
+# Transcendent Learning Boost
+country_event = {
+	id = smbm.12
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_ascension_perk = ap_transcendent_learning
+	}
+
+	immediate = {
+		from = {
+			add_skill = 1
+		}
+	}
+}
+
+# Talented Boost
+country_event = {
+	id = smbm.13
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_trait = "trait_talented"
+	}
+
+	immediate = {
+		from = {
+			add_skill = 1
+		}
+	}
+}
+
+# Policy Leader Capacity Booster
+country_event = {
+	id = smbm.14
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_policy_flag = leader_enhancement_capacity_boosters
+	}
+
+	immediate = {
+		from = {
+			add_skill = 1
+		}
+	}
+}

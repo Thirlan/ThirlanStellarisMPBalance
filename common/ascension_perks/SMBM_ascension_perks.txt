@@ -345,7 +345,7 @@ ap_technological_ascendancy = {
 	}
 
 	ai_weight = {
-		factor = 30 #it's better than average
+		factor = 40 #it's better than average
 		modifier = {
 			factor = 2
 			has_ethic = ethic_materialist
@@ -357,33 +357,10 @@ ap_technological_ascendancy = {
 	}
 }
 
-ap_executive_vigor = {
-	modifier = {
-		country_edict_cap_add = 2
-	}
-
-    possible = {
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_2"
-			num_ascension_perks > 1
-		}
-	}
-
-	potential = {
-		NOT = {
-			has_ascension_perk = ap_executive_vigor
-		}
-	}
-
-	ai_weight = {
-		factor = 30 #it's better than average
-	}
-}
-
 ap_transcendent_learning = {
 	modifier = {
-		leader_skill_levels = 2
-		species_leader_exp_gain = 1.0
+		leader_skill_levels = 1
+		species_leader_exp_gain = 0.9
 	}
 
 	potential = {

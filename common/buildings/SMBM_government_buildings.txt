@@ -18,7 +18,7 @@ building_gaiaseeders_1 = {
 				has_valid_civic = civic_hive_idyllic_bloom
 			}
 		}
-		building_basic_income_check = yes
+
 		NOR = {
 			is_planet_class = pc_gaia
 			is_planet_class = pc_city

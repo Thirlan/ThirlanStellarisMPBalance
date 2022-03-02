@@ -1,3 +1,51 @@
+# 2022/02/23 - 1.2.0
+
+Clean up after new 3.3.2 Libra update
+
+Removed:
+ * Executive Vigor: requires 2 ascension perks from 0
+ * Feudal Realm: +10% Naval Capacity, -10% ship upkeep, -10% army upkeep
+ * Spiritualist: +12%/+24% Unity from +10%/+24%
+ * Merchant Guilds: +1.5 unity from +2 merchants
+ * Capacity Subsidies: +40% energy from jobs from +50%
+ * Dyson Sphere: 10% increase in costs to all stages
+ * Ring World: 10% increase in costs to all stages
+ * Shadow Council: +15% ruler pop output from +10%
+ * Ingenious: +13% Energy production from +15%
+ * Super Conductive: +13% Energy production from +15%
+ * Quarrelsome: -6% Unity from jobs from -10%
+ * Docile: -15% Empire Sprawl from -10%
+ * Unruly: +15% Empire Sprawl from 10%
+ * Conformist: +5% happiness and 25% Government Ethics attraction from 30%
+ * Fleeting: -13 leader age from -10
+ * Aristocratic Elite: Nobles give +6 stability from +5, +1 admin cap and trade and +5 to crime
+ * Warrior Culture: +4 unity from +3 from duelists
+ * Byzantine Bureaucracy: +1.2 unity/stability from +1
+ * Franchising: -30% empire sprawl from branch office from -25%, -40% country subject power penalty from -33%
+ * Determined Exterminator: +15% ship weapon damage from +25%
+ * Devouring Swarm: -15% ship build cost from -25%
+ * Xenophobe: +9%/18% to population growth from +10%/20%
+ * Materialist: +4.5%/9% to research from +5%/+10%
+ * Militarist: +9%/+18% to ship fire rate from +10%/+20%
+ * Crime/Deviancy per pop: 2.2 from 2
+ * Aristocratic Elite: Nobles give +4 stability from +2, +2 trade and +5 to crime
+ * High Bandwidth: +15% Empire Sprawl from +10%
+ * Streamlined Protocols: -15% Empire Sprawl from -10%
+ 
+Changed:
+ * Venerable: +1 starting level to leaders
+ * Philosopher King: +3% to unity and research
+ * Resilient: +50% army defense health/morale
+ * Talented: +1 leader starting level
+ * Transcendent Learning: 90% leadership bonus from 50% and +1 to starting leader skill
+ * Base Leader skill cap: 4 from 5
+ * Economic Chaos (anti-negative economy exploit) event: Any player whose stockpiles in mineral/food/energy are 0 or below with negative income will suffer a empire wide penalty of -20% to alloys, research and unity.
+ * Private Military Companies: +30% to army health/damage/morale -30% to army cost/upkeep from 20% army damage and 20% upkeep
+ * Strength of Legions: +30% to army health/damage/morale -30% to army cost/upkeep from 20% army damage and 20% upkeep
+
+New:
+ * Leader Capacity Booster: +1 leader level cap from +2 and +1 starting level
+
 # 2021/12/12 - 1.1.1
 
 Modified the crisis trigger so that it is not always the Unbidden that show up once jump drives are researched. In a typical multiplayer game, the majority of the players will reach jump drives by end game and as such the crisis rules only allow the Unbidden at this point. Now the rules are the following:

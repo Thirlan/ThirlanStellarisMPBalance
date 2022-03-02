@@ -21,14 +21,18 @@ head_researcher = {
 	resources = {
 		category = planet_researchers
 		produces = {
-			physics_research = 5
-			engineering_research = 5
-			society_research = 5
+			unity = 2
+			physics_research = 6
+			engineering_research = 6
+			society_research = 6
+		}
+		upkeep = {
+			consumer_goods = 2
 		}
 	}
 
 	planet_modifier = {
-		planet_amenities_add = 5
+		planet_amenities_add = 3
 	}
 
 	triggered_planet_modifier = {
@@ -39,7 +43,7 @@ head_researcher = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 0.75
+			planet_amenities_add = 0.45
 		}
 	}
 	triggered_planet_modifier = {
@@ -47,7 +51,7 @@ head_researcher = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -0.75
+			planet_amenities_add = -0.45
 		}
 	}
 
@@ -183,15 +187,10 @@ high_priest = {
 	resources = {
 		category = planet_priests
 		produces = {
-			unity = 5
-			society_research = 2
+			unity = 6
 		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_valid_civic = civic_exalted_priesthood }
-			}
-			unity = 1
+		upkeep = {
+			consumer_goods = 2
 		}
 	}
 
@@ -304,11 +303,12 @@ high_priest = {
 	}
 }
 
-administrator = {
+politician = {
 	category = ruler
 	condition_string = RULER_JOB_TRIGGER
 	building_icon = building_capital
 	clothes_texture_index = 1
+	icon = administrator
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -321,14 +321,17 @@ administrator = {
 	possible_precalc = can_fill_ruler_job
 
 	resources = {
-		category = planet_administrators
+		category = planet_politicians
 		produces = {
-			unity = 3
+			unity = 6
+		}
+		upkeep = {
+			consumer_goods = 2
 		}
 	}
 
 	planet_modifier = {
-		planet_amenities_add = 8
+		planet_amenities_add = 3
 	}
 
 	triggered_planet_modifier = {
@@ -339,7 +342,7 @@ administrator = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 1.2
+			planet_amenities_add = 0.45
 		}
 	}
 	triggered_planet_modifier = {
@@ -347,7 +350,7 @@ administrator = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -1.2
+			planet_amenities_add = -0.45
 		}
 	}
 
@@ -382,7 +385,7 @@ administrator = {
 		}
 		modifier = {
 			factor = 5
-			has_job = administrator
+			has_job = politician
 		}
 		modifier = {
 			factor = 1.25
@@ -446,18 +449,36 @@ noble = {
 	resources = {
 		category = planet_nobles
 		produces = {
-			unity = 4
+			unity = 6
+		}
+		upkeep = {
+			consumer_goods = 2
 		}
 	}
 
 	planet_modifier = {
-		planet_stability_add = 6
-        trade_value_add = 1
-        planet_crime_add = 5
+		planet_stability_add = 2
+		planet_amenities_add = 3
 	}
-    
-    country_modifier = {
-		country_admin_cap_add = 1
+
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			planet_amenities_add = 0.45
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			planet_amenities_add = -0.45
+		}
 	}
 
 	weight = {
@@ -542,18 +563,14 @@ merchant = {
 	possible_precalc = can_fill_ruler_job
 
 	planet_modifier = {
-		planet_amenities_add = 5
+		planet_amenities_add = 3
 		trade_value_add = 12
 	}
 
 	resources = {
 		category = planet_merchants
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_civic = civic_merchant_guilds	}
-			}
-			unity = 1.5
+		upkeep = {
+			consumer_goods = 2
 		}
 	}
 
@@ -583,7 +600,7 @@ merchant = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 0.75
+			planet_amenities_add = 0.45
 		}
 	}
 	triggered_planet_modifier = {
@@ -591,7 +608,7 @@ merchant = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -0.75
+			planet_amenities_add = -0.45
 		}
 	}
 
@@ -688,13 +705,16 @@ executive = {
 	resources = {
 		category = planet_executives
 		produces = {
-			unity = 2
+			unity = 6
+		}
+		upkeep = {
+			consumer_goods = 2
 		}
 	}
 
 	planet_modifier = {
-		planet_amenities_add = 5
-		trade_value_add = 6
+		planet_amenities_add = 3
+		trade_value_add = 4
 	}
 
 	triggered_planet_modifier = {
@@ -702,7 +722,7 @@ executive = {
 			has_trait = trait_thrifty
 		}
 		modifier = {
-			trade_value_add = 1.5
+			trade_value_add = 1
 		}
 	}
 
@@ -711,7 +731,7 @@ executive = {
 			has_trait = trait_nuumismatic_administration
 		}
 		modifier = {
-			trade_value_add = 1.5
+			trade_value_add = 1
 		}
 	}
 
@@ -723,7 +743,7 @@ executive = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 0.75
+			planet_amenities_add = 0.45
 		}
 	}
 	triggered_planet_modifier = {
@@ -731,7 +751,7 @@ executive = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -0.75
+			planet_amenities_add = -0.45
 		}
 	}
 

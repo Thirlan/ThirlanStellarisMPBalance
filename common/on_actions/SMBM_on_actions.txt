@@ -10,3 +10,12 @@ on_monthly_pulse = {
 		smbm.9
 	}
 }
+
+on_leader_spawned = {
+	events = {
+		smbm.11 # Venerable
+        smbm.12 # Transcendent Learning Boost
+        smbm.13 # Talented Boost
+        smbm.14 # Policy Leader Capacity Booster
+	}
+}
