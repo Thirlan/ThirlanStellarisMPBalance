@@ -193,7 +193,6 @@ trait_talented = {
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	opposites = { "trait_nerve_stapled" }
-	custom_tooltip = TRAIT_TALENTED_EFFECT
 	modifier = {
 		leader_skill_levels = 2
 	}
