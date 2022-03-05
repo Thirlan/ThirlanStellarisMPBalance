@@ -325,27 +325,9 @@ country_event = {
 	}
 }
 
-# Talented Boost
-country_event = {
-	id = smbm.13
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_trait = "trait_talented"
-	}
-
-	immediate = {
-		from = {
-			add_skill = 1
-		}
-	}
-}
-
 # Policy Leader Capacity Booster
 country_event = {
-	id = smbm.14
+	id = smbm.13
 	hide_window = yes
 
 	is_triggered_only = yes

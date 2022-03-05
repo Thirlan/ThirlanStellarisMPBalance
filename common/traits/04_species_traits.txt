@@ -193,8 +193,9 @@ trait_talented = {
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	opposites = { "trait_nerve_stapled" }
+	custom_tooltip = TRAIT_TALENTED_EFFECT
 	modifier = {
-		leader_skill_levels = 1
+		leader_skill_levels = 2
 	}
 }
 
@@ -439,6 +440,7 @@ trait_deviants = {
 trait_venerable = {
 	cost = 4
 	potential_crossbreeding_chance = 1.0
+	custom_tooltip = TRAIT_VENERABLE_EFFECT
 	modifier = { leader_age = 80 }
 	opposites = { "trait_enduring" "trait_fleeting" "trait_fleeting_lithoid" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }

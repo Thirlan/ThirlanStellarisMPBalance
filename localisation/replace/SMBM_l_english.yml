@@ -13,6 +13,8 @@
  TRAIT_PLANTOID_BUDDING_EFFECT:0 "Each pop working as a slave or better produces 0.0175 £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!"
  
  TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "Replaces §Y100%§! of Base £food£ §YFood§! Upkeep with §Y48%§! £energy£ §YEnergy§! and §Y48%§! £food£ §YFood§!."
+ 
+ TRAIT_VENERABLE_EFFECT:0 "Leader lifespan: §G+80§! Years\nLeader starting level: §G+1§!"
 
  trait_aquatic_tooltip:1 "Housing Usage on §YOcean§! worlds: §G-10%§!\nFood and Mineral output on §YOcean§! worlds: §G+9%§!\nHousing Usage on non-§YWet§! worlds: §R+30%§!\nHabitability on non-§YWet§! worlds: §R-20%§!\n\nThe §H$ap_hydrocentric$§! Ascension Perk amplifies this trait's effects."
 
@@ -28,8 +30,12 @@
 
  # ASCENSCIONS
  requires_ap_galactic_contender: "$TRIGGER_FAIL$Requires the §Y$ap_galactic_contender$§! Ascension Perk."
+ ap_transcendent_learning_modifier_desc: "Leader Level Cap: §G+1§!\nLeader Starting Level: §G+1§!\nLeader Experience Gain: §G+50%§!"
 
 # TRADITIONS
+
+# POLICY
+leader_enhancement_capacity_boosters_desc:0 "We leave nothing to chance, no matter the cost. Through exacting curation of DNA banks do we build the leaders of tomorrow.\n\n§HIf active our Empire gains:§!\nLeader starting level: §G+1§!"
 
 # CUSTOM SMBM EVENTS
  be_careful_out_there: "Be careful out there"

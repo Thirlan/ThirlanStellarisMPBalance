@@ -1,4 +1,6 @@
-# Early AI economic plans
+# Early AI Clones economic plans
+# Standard Clone AI is especially retarted because it spawns more pop than it can handle 
+# and it builds absurd choices early on because of this
 
 @desire = 999
 
@@ -6,31 +8,27 @@
 @early_minerals = 30
 @early_food = 3
 @early_consumer_goods_target = 6
+@early_clone_research_target = 30
+
+@early_minerals_danger_monthly = 15
+@early_minerals_danger_stockpile = 500
 
 @early_energy_minimum = 1
 @early_minerals_minimum = 20
 @early_food_minimum = 1
 
-@early_minerals_danger_monthly = 10
-@early_minerals_danger_stockpile = 500
-
 # Stage 2
-@early_research_target = 54
+@early_research_target = 59
 
 # Stage 3
 @early_alloys_target = 20
 
 # Crank that science up!
-early_economy_plan = {
+early_economy_plan_c = {
 	income = {
 		energy = @early_energy
 		minerals = @early_minerals
 		unity = 10
-	}
-
-	focus = {
-		energy = @early_energy_minimum
-		minerals = @early_minerals_minimum
 	}
 
 	subplan = {
@@ -50,6 +48,11 @@ early_economy_plan = {
 		}
 	}
 
+	focus = {
+		energy = @early_energy_minimum
+		minerals = @early_minerals_minimum
+	}
+	
 	subplan = {
 		set_name = "base food"
 		potential = {
@@ -83,6 +86,31 @@ early_economy_plan = {
 			consumer_goods = @early_consumer_goods_target
 		}
 	}
+
+	# This forces the first building to be science to prevent the clones from doing something silly
+	subplan = {
+		set_name = "force science"
+		potential = {
+			OR = {
+				has_monthly_income = { resource = physics_research value <= @early_clone_research_target }
+				has_monthly_income = { resource = society_research value <= @early_clone_research_target }
+				has_monthly_income = { resource = engineering_research value <= @early_clone_research_target }
+			}
+		}
+		# Force it to build a science building! Only a science building can build physics :P
+		# This seems to make it build a science building even if a dreadcamp, which has high 
+		# physics is available. Adding the other types such as society and engineering can cause
+		# the AI to not focus on science buildings because it will try to build temples or monuments
+		# or if it has master craft civic it will build Civilian industries. Once it has built these
+		# non-science buildings the weights decrease and on top of that the precious starting building
+		# slots are gone, thus putting us further from the ultimate goal of building a science building.
+		income = {
+			physics_research = @desire
+		}
+		focus = {
+			physics_research = @desire
+		}
+	}
 	
 	subplan = {
 		set_name = "science"
@@ -97,6 +125,9 @@ early_economy_plan = {
 				country_uses_consumer_goods = no
 				has_monthly_income = { resource = consumer_goods value >= @early_consumer_goods_target }
 			}
+			has_monthly_income = { resource = physics_research value > @early_clone_research_target }
+			has_monthly_income = { resource = society_research value > @early_clone_research_target }
+			has_monthly_income = { resource = engineering_research value > @early_clone_research_target }
 			OR = {
 				has_monthly_income = { resource = physics_research value <= @early_research_target }
 				has_monthly_income = { resource = society_research value <= @early_research_target }
@@ -106,10 +137,10 @@ early_economy_plan = {
 		# Force it to build a science building! Only a science building can build physics :P
 		# This seems to make it build a science building even if a dreadcamp, which has high 
 		# physics is available. Adding the other types such as society and engineering can cause
-		# the AI to not focus on science buildings because if it has master craft civic it will build
-		# Civilian industries. Once it has built these non-science buildings the weights decrease and
-		# on top of that the precious starting building slots are gone, thus putting us further from
-		# the ultimate goal of building a science building.
+		# the AI to not focus on science buildings because it will try to build temples or monuments
+		# or if it has master craft civic it will build Civilian industries. Once it has built these
+		# non-science buildings the weights decrease and on top of that the precious starting building
+		# slots are gone, thus putting us further from the ultimate goal of building a science building.
 		income = {
 			physics_research = @desire
 		}
@@ -123,7 +154,6 @@ early_economy_plan = {
 		potential = {
 			has_monthly_income = { resource = energy value > @early_energy_minimum }
 			has_monthly_income = { resource = minerals value > @early_minerals_minimum }
-			
 			OR = {
 				country_uses_food = no
 				has_monthly_income = { resource = food value > @early_food_minimum }
@@ -144,17 +174,14 @@ early_economy_plan = {
 		}
 	}
 	
-	optional_subplan = {
+	scaling_subplan = {
 		set_name = "slavery scaling"
 		potential = {
+			
 			OR = {
 				has_civic = civic_slaver_guilds
 				any_owned_species = {
 					has_citizenship_type = { country = from type = citizenship_slavery }
-				}
-				AND = {
-					has_origin = origin_necrophage
-					is_authoritarian = yes
 				}
 			}
 			has_monthly_income = { resource = energy value > @early_energy_minimum }
@@ -174,11 +201,17 @@ early_economy_plan = {
 		}
 	}
 	
-	empire_size = 1.5 #admin cap is fine with being 50% over limit
+	empire_size = 1.2 #admin cap is fine with being 20% over limit
 	
 	
 	ai_weight = {
-		weight = 2
+		weight = 3
+		modifier = {
+			factor = 0
+			NOT = {
+				has_origin = origin_clone_army
+			}
+		}
 		modifier = {
 			factor = 0
 			has_monthly_income = { resource = physics_research value > @early_research_target }

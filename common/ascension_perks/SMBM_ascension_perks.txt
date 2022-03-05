@@ -359,8 +359,9 @@ ap_technological_ascendancy = {
 
 ap_transcendent_learning = {
 	modifier = {
+		description = ap_transcendent_learning_modifier_desc
 		leader_skill_levels = 1
-		species_leader_exp_gain = 0.9
+		species_leader_exp_gain = 0.50
 	}
 
 	potential = {

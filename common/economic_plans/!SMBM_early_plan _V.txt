@@ -1,22 +1,24 @@
-# Base Early AI Void Dwellers economic plans
+# Early AI Void Dwellers economic plans
 
 @desire = 999
 
-@early_energy = 30
-@early_minerals = 50
-@early_food = 5
+@early_energy = 10
+@early_minerals = 30
+@early_food = 3
 @early_consumer_goods_target = 6
 @early_void_alloy_target = 15
 
-@early_energy_minimum = 6
-@early_minerals_minimum = 30
-@early_food_minimum = 3
+@early_minerals_danger_monthly = 15
+@early_minerals_danger_stockpile = 500
+
+@early_energy_minimum = 1
+@early_minerals_minimum = 20
+@early_food_minimum = 1
 
 # Stage 2
-@early_research_target = 60
+@early_research_target = 59
 
 # Stage 3
-@early_unity_target = 40
 @early_alloys_target = 20
 
 # Crank that science up!
@@ -24,23 +26,78 @@ early_economy_plan_v = {
 	income = {
 		energy = @early_energy
 		minerals = @early_minerals
-		food = @early_food
-		consumer_goods = @early_consumer_goods_target
+		unity = 10
 	}
-	
+
 	focus = {
-		consumer_goods = @early_consumer_goods_target
 		energy = @early_energy_minimum
 		minerals = @early_minerals_minimum
-		food = @early_food_minimum
+	}
+
+	subplan = {
+		# When the AI gets so low on minerals that it simply cannot function
+		set_name = "emergency minerals"
+		potential = {
+			has_monthly_income = { resource = minerals value < @early_minerals_danger_monthly }
+			resource_stockpile_compare = { resource = minerals value < @early_minerals_danger_stockpile }
+		}
+
+		income = {
+			minerals = @desire
+		}
+		
+		focus = {
+			minerals = @desire
+		}
 	}
 	
 	subplan = {
+		set_name = "base food"
+		potential = {
+			OR = {
+				country_uses_food = yes
+			}
+		}
+
+		income = {
+			food = @early_food
+		}
+		
+		focus = {
+			food = @early_food_minimum
+		}
+	}
+
+	subplan = {
+		set_name = "base consumer goods"
+		potential = {
+			country_uses_consumer_goods = yes
+			has_monthly_income = { resource = minerals value > @early_minerals_danger_monthly }
+			resource_stockpile_compare = { resource = minerals value > @early_minerals_danger_stockpile }
+		}
+
+		income = {
+			consumer_goods = @early_consumer_goods_target
+		}
+		
+		focus = {
+			consumer_goods = @early_consumer_goods_target
+		}
+	}
+	
+	subplan = {
+		set_name = "science"
 		potential = {
 			has_monthly_income = { resource = energy value > @early_energy_minimum }
 			has_monthly_income = { resource = minerals value > @early_minerals_minimum }
-			has_monthly_income = { resource = food value > @early_food_minimum }
-			has_monthly_income = { resource = consumer_goods value >= @early_consumer_goods_target }
+			OR = {
+				country_uses_food = no
+				has_monthly_income = { resource = food value > @early_food_minimum }
+			}
+			OR = {
+				country_uses_consumer_goods = no
+				has_monthly_income = { resource = consumer_goods value >= @early_consumer_goods_target }
+			}
 			OR = {
 				has_monthly_income = { resource = physics_research value <= @early_research_target }
 				has_monthly_income = { resource = society_research value <= @early_research_target }
@@ -48,12 +105,12 @@ early_economy_plan_v = {
 			}
 		}
 		# Force it to build a science building! Only a science building can build physics :P
-        # This seems to make it build a science building even if a dreadcamp, which has high 
-        # physics is available. Adding the other types such as society and engineering can cause
-        # the AI to not focus on science buildings because it will try to build temples or monuments
-        # or if it has master craft civic it will build Civilian industries. Once it has built these
-        # non-science buildings the weights decrease and on top of that the precious starting building
-        # slots are gone, thus putting us further from the ultimate goal of building a science building.
+		# This seems to make it build a science building even if a dreadcamp, which has high 
+		# physics is available. Adding the other types such as society and engineering can cause
+		# the AI to not focus on science buildings because it will try to build temples or monuments
+		# or if it has master craft civic it will build Civilian industries. Once it has built these
+		# non-science buildings the weights decrease and on top of that the precious starting building
+		# slots are gone, thus putting us further from the ultimate goal of building a science building.
 		income = {
 			physics_research = @desire
 		}
@@ -63,10 +120,14 @@ early_economy_plan_v = {
 	}
 	
 	subplan = {
+		set_name = "alloys weak desire"
 		potential = {
 			has_monthly_income = { resource = energy value > @early_energy_minimum }
 			has_monthly_income = { resource = minerals value > @early_minerals_minimum }
-			has_monthly_income = { resource = consumer_goods value >= @early_consumer_goods_target }
+			OR = {
+				country_uses_consumer_goods = no
+				has_monthly_income = { resource = consumer_goods value >= @early_consumer_goods_target }
+			}
 			has_monthly_income = { resource = physics_research value <= @early_research_target }
 			has_monthly_income = { resource = society_research value <= @early_research_target }
 			has_monthly_income = { resource = engineering_research value <= @early_research_target }
@@ -81,11 +142,18 @@ early_economy_plan_v = {
 	}
 	
 	subplan = {
+		set_name = "alloys strong desire"
 		potential = {
 			has_monthly_income = { resource = energy value > @early_energy_minimum }
 			has_monthly_income = { resource = minerals value > @early_minerals_minimum }
-			has_monthly_income = { resource = food value > @early_food_minimum }
-			has_monthly_income = { resource = consumer_goods value >= @early_consumer_goods_target }
+			OR = {
+				country_uses_food = no
+				has_monthly_income = { resource = food value > @early_food_minimum }
+			}
+			OR = {
+				country_uses_consumer_goods = no
+				has_monthly_income = { resource = consumer_goods value >= @early_consumer_goods_target }
+			}
 			has_monthly_income = { resource = physics_research value > @early_research_target }
 			has_monthly_income = { resource = society_research value > @early_research_target }
 			has_monthly_income = { resource = engineering_research value > @early_research_target }
@@ -99,39 +167,42 @@ early_economy_plan_v = {
 		}
 	}
 	
-	subplan = {
+	scaling_subplan = {
+		set_name = "slavery scaling"
 		potential = {
+			OR = {
+				has_civic = civic_slaver_guilds
+				any_owned_species = {
+					has_citizenship_type = { country = from type = citizenship_slavery }
+				}
+			}
 			has_monthly_income = { resource = energy value > @early_energy_minimum }
 			has_monthly_income = { resource = minerals value > @early_minerals_minimum }
-			has_monthly_income = { resource = food value > @early_food_minimum }
-			has_monthly_income = { resource = consumer_goods value >= @early_consumer_goods_target }
-			has_monthly_income = { resource = physics_research value > @early_research_target }
-			has_monthly_income = { resource = society_research value > @early_research_target }
-			has_monthly_income = { resource = engineering_research value > @early_research_target }
-			has_monthly_income = { resource = unity value <= @early_unity_target }
+			OR = {
+				country_uses_food = no
+				has_monthly_income = { resource = food value > @early_food_minimum }
+			}
+			OR = {
+				country_uses_consumer_goods = no
+				has_monthly_income = { resource = consumer_goods value >= @early_consumer_goods_target }
+			}
 		}
+
 		income = {
-			unity = @early_unity_target
-		}
-		focus = {
-			unity = @early_unity_target
+			energy = 10
 		}
 	}
 	
-    pops = 50 # Start low to discourage silly things like gene clinics. Void Dwellers don't have the space to spare for this.
-	empire_size = 1.4 #admin cap is fine with being 50% over limit
+	pops = 60 # Start low to discourage silly things like gene clinics. Void Dwellers don't have the space to spare for this.
+	empire_size = 1.2 #admin cap is fine with being 20% over limit
 	
 	
 	ai_weight = {
-		weight = 100
+		weight = 3
 		modifier = {
 			factor = 0
-			OR = {
-				country_uses_food = no
-				country_uses_consumer_goods = no
-				NOT = {
-					has_origin = origin_void_dwellers
-				}
+			NOT = {
+				has_origin = origin_void_dwellers
 			}
 		}
 		modifier = {
@@ -139,7 +210,6 @@ early_economy_plan_v = {
 			has_monthly_income = { resource = physics_research value > @early_research_target }
 			has_monthly_income = { resource = society_research value > @early_research_target }
 			has_monthly_income = { resource = engineering_research value > @early_research_target }
-			has_monthly_income = { resource = unity value > @early_unity_target }
 			has_monthly_income = { resource = alloys value > @early_alloys_target }
 		}
 	}
