@@ -3,3 +3,14 @@
 		STARBASE_CAPACITY_BASE 			= 2
 		STARBASE_CAPACITY_SYSTEM_MULT	= 0.08	# Mult value of Starbase Capacity for each owned system
 	}
+
+	NAI = {
+		AI_FOCUS_SCORE_MULT = 3									# AI will score buildings producing focus resources this much more
+		AI_AMENITIES_SCORE_MULT = 1.6							# AI will score amenity buildings this much more than other misc resources
+		AI_HOUSING_SCORE_MULT = 3.5								# AI will score housing buildings this much more than other misc resources
+		AI_CRIME_REDUCTION_SCORE_MULT = 1.10					# AI will score crime fighting buildings this much more than other misc resource
+		AI_UPPER_AMENITIES_LIMIT = 2 							# AI will try to reduce the amount of amenities on a planet if it's above this number by downprioritizing amenity jobs
+		AI_LOWER_AMENITIES_LIMIT = 0 							# AI will try to increase amenities on a planet if it's below this number by increasing priority of amenity jobs and building new amenities buildings
+		AI_IS_AMENITIES_JOB_FACTOR = 1.0						# Factor of when a job is considered an amenities job, e.g. for 2 a job needs to produce twice as much amenities as resources
+		AI_TRADE_INTERVAL = 730						# the higher this is the less often the AI will offer trades
+	}

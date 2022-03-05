@@ -1,0 +1,239 @@
+# Megacorporation on a Single System economic plans
+# Ring World
+# Gaia World
+
+@energy_minimum = 10
+@minerals_minimum = 20
+@food_minimum = 10
+@consumer_goods_minimum = 6
+@research_minimum = 70
+@alloys_minimum = 15
+@rare_resource_target = 1
+
+@research_target = 200
+@early_pops_target = 70
+
+economy_plan_corp_ss = {
+	pops = 50 # Start low to discourage silly things like gene clinics. Single system origin megacorporations cannot afford to waste space like that.
+	empire_size = 1.2 #admin cap is fine with being 20% over limit
+	
+	income = {
+		energy = @energy_minimum
+		minerals = @minerals_minimum
+		physics_research = @research_target
+		society_research = @research_target
+		engineering_research = @research_target
+		alloys = @alloys_minimum
+	}
+
+	focus = {
+		energy = @energy_minimum
+		minerals = @minerals_minimum
+		physics_research = @research_minimum
+		society_research = @research_minimum
+		engineering_research = @research_minimum
+	}
+	
+	subplan = {
+		set_name = "base food"
+		potential = {
+			OR = {
+				country_uses_food = yes
+			}
+		}
+
+		income = {
+			food = @food_minimum
+		}
+		
+		focus = {
+			food = @food_minimum
+		}
+	}
+
+	subplan = {
+		set_name = "base consumer goods"
+		potential = {
+			country_uses_consumer_goods = yes
+			OR = {
+				is_lithoid_empire = no
+				AND = {
+					# Make sure the Lithoids don't starve themselves
+					is_lithoid_empire = yes
+					has_monthly_income = { resource = minerals value > @minerals_minimum }
+				}
+			}
+		}
+
+		income = {
+			consumer_goods = @consumer_goods_minimum
+		}
+		
+		focus = {
+			consumer_goods = @consumer_goods_minimum
+		}
+	}
+	
+	scaling_subplan = {
+		set_name = "General scaling"
+		potential = {
+			has_monthly_income = { resource = energy value >= @energy_minimum }
+			has_monthly_income = { resource = minerals value >= @minerals_minimum }
+			OR = {
+				country_uses_food = no
+				has_monthly_income = { resource = food value >= @food_minimum }
+			}
+			OR = {
+				country_uses_consumer_goods = no
+				has_monthly_income = { resource = consumer_goods value >= @consumer_goods_minimum }
+			}
+			has_monthly_income = { resource = physics_research value >= @research_minimum }
+			has_monthly_income = { resource = society_research value >= @research_minimum }
+			has_monthly_income = { resource = engineering_research value >= @research_minimum }
+			has_monthly_income = { resource = alloys value >= @alloys_minimum }
+		}
+
+		income = {
+			alloys = 5
+			energy = 15
+			physics_research = 10
+			unity = 5
+		}
+	}
+	
+	#### MILITARIST EXTRA ALLOYS ####
+	scaling_subplan = {
+		set_name = "Militarist alloys"
+		potential = {
+			OR = {
+				is_militarist = yes
+				is_homicidal = yes
+			}
+			has_monthly_income = { resource = energy value >= @energy_minimum }
+			has_monthly_income = { resource = minerals value >= @minerals_minimum }
+			OR = {
+				country_uses_food = no
+				has_monthly_income = { resource = food value >= @food_minimum }
+			}
+			OR = {
+				country_uses_consumer_goods = no
+				has_monthly_income = { resource = consumer_goods value >= @consumer_goods_minimum }
+			}
+			has_monthly_income = { resource = physics_research value >= @research_minimum }
+			has_monthly_income = { resource = society_research value >= @research_minimum }
+			has_monthly_income = { resource = engineering_research value >= @research_minimum }
+			has_monthly_income = { resource = alloys value >= @alloys_minimum }
+		}
+
+		income = {
+			alloys = 10
+		}
+	}
+
+	#### MATERIALIST SCIENCE ####
+	scaling_subplan = {
+		set_name = "Materialist science"
+		potential = {
+			is_materialist = yes	
+			has_monthly_income = { resource = energy value >= @energy_minimum }
+			has_monthly_income = { resource = minerals value >= @minerals_minimum }
+			OR = {
+				country_uses_food = no
+				has_monthly_income = { resource = food value >= @food_minimum }
+			}
+			OR = {
+				country_uses_consumer_goods = no
+				has_monthly_income = { resource = consumer_goods value >= @consumer_goods_minimum }
+			}
+			has_monthly_income = { resource = physics_research value >= @research_minimum }
+			has_monthly_income = { resource = society_research value >= @research_minimum }
+			has_monthly_income = { resource = engineering_research value >= @research_minimum }
+			has_monthly_income = { resource = alloys value >= @alloys_minimum }
+		}
+
+		income = {
+			physics_research = 10
+		}
+	}	
+
+	#### SPIRITUALIST UNITY ####
+	scaling_subplan = {
+		set_name = "Spiritualist unity"
+		potential = {
+			is_spiritualist = yes	
+			has_monthly_income = { resource = energy value >= @energy_minimum }
+			has_monthly_income = { resource = minerals value >= @minerals_minimum }
+			OR = {
+				country_uses_food = no
+				has_monthly_income = { resource = food value >= @food_minimum }
+			}
+			OR = {
+				country_uses_consumer_goods = no
+				has_monthly_income = { resource = consumer_goods value >= @consumer_goods_minimum }
+			}
+			has_monthly_income = { resource = physics_research value >= @research_minimum }
+			has_monthly_income = { resource = society_research value >= @research_minimum }
+			has_monthly_income = { resource = engineering_research value >= @research_minimum }
+			has_monthly_income = { resource = alloys value >= @alloys_minimum }
+		}
+
+		income = {
+			unity = 10
+		}
+	}	
+
+	# Optional subplans don't need to be fulfilled for the other scaling subplans to become active
+	optional_subplan = {
+		set_name = "Rare resources"
+		potential = {
+			always = yes
+		}
+
+		income = {
+			exotic_gases = @rare_resource_target
+			volatile_motes = @rare_resource_target
+			rare_crystals = @rare_resource_target
+		}
+	}
+	
+	subplan = {
+		set_name = "base pops"
+		potential = {
+			has_monthly_income = { resource = energy value > @energy_minimum }
+			has_monthly_income = { resource = minerals value > @minerals_minimum }
+			OR = {
+				country_uses_food = no
+				has_monthly_income = { resource = food value > @food_minimum }
+			}
+			OR = {
+				country_uses_consumer_goods = no
+				has_monthly_income = { resource = consumer_goods value >= @consumer_goods_minimum }
+			}
+			has_monthly_income = { resource = physics_research value > @research_target }
+			has_monthly_income = { resource = society_research value > @research_target }
+			has_monthly_income = { resource = engineering_research value > @research_target }
+		}
+		pops = @early_pops_target
+	}
+	
+	
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = {
+					has_authority = auth_corporate
+				}
+				AND = {
+					NOT = {
+						has_origin = origin_life_seeded
+					}
+					NOT = {
+						has_origin = origin_shattered_ring
+					}
+				}
+			}
+		}
+	}
+}

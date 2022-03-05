@@ -52,7 +52,7 @@
 
 ### Boosts
  * Galactic Contender: Number of ascension perks required dropped to 1 from 3
- * Transcendent Learning: 90% leadership bonus from 50% and +1 to starting leader skill
+ * Transcendent Learning: +1 leader level cap from +2 and +1 to starting leader skill
  * Enigmatic Engineering: +4 encryption from +2 and ascension perks required dropped to 0 from 1
 
 ## Traditions
@@ -133,7 +133,7 @@
  * Resilient: +50% to defensive army damage/health/morale
  * Venerable: +1 starting level to leaders
  * Very Strong: +60% Army damage and +6.25% resources from 40% army damage and +5% resources
- * Talented: +1 leader starting level
+ * Talented: +2 leader level cap
  * Nonadaptive: -6% habitability from -10%
  * Repugnant: -15% to amenities from -20%
  

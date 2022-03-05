@@ -1,3 +1,14 @@
+# 2022/03/05 - 1.2.1
+
+Quick clean up to add in game tool tip modifier texts to the following:
+ * Venerable: +1 starting level to leaders
+ * Transcendent Learning: +1 leader level cap from +2 and +1 starting level
+ * Leader Capacity Booster: +1 leader level cap from +2 and +1 starting level
+
+Changed:
+ * Talented: +2 to leader level cap
+ * Tweaked AI starting economy plans (better support for Megacorps, Hivemind, Fanatical Purifiers, etc...)
+
 # 2022/02/23 - 1.2.0
 
 Clean up after new 3.3.2 Libra update
