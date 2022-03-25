@@ -21,7 +21,7 @@ colonist = {
 	}
 
 	planet_modifier = {
-		planet_amenities_add = 5
+		planet_amenities_add = 3
 	}
 
 	triggered_planet_modifier = {
@@ -32,7 +32,7 @@ colonist = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 0.75
+			planet_amenities_add = 0.45
 		}
 	}
 	triggered_planet_modifier = {
@@ -40,7 +40,7 @@ colonist = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -0.75
+			planet_amenities_add = -0.45
 		}
 	}
 

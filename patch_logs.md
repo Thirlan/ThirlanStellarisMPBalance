@@ -1,3 +1,7 @@
+# 2022/03/25 - 1.2.2
+
+Updated the files to reflect the changes of the hotfix
+
 # 2022/03/05 - 1.2.1
 
 Quick clean up to add in game tool tip modifier texts to the following:
