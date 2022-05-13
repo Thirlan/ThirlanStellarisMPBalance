@@ -1,4 +1,4 @@
-# Version 1.2.2
+# Version 1.3.0
 
 ## General tweaks
 
@@ -8,13 +8,11 @@
  * Base Leader skill cap: 4 from 5
  * STARBASE_CAPACITY_BASE: 2 from 3
  * STARBASE_CAPACITY_SYSTEM_MULT: 0.08 from 0.1
- * Economic Chaos (anti-negative economy exploit) event: Any player whose stockpiles in mineral/food/energy are 0 or below with negative income will suffer a empire wide penalty of -20% to alloys, research and unity.
  * Starbase overcapacity upkeep penalty: +35% from +25%
  * Jump Drive: Prethoryn and Contingency can now spawn if Jump Drives researched. Jump drives also increase the odds of the crisis spawning sooner from 19% to 37%.
  
 ### Boosts
  * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -60% defense platform build cost and +15% starbase damage boost for the first 20 years of the game.
- * Espionage: All espionage operation's difficulty decreased by 3, resulting in much faster completion times.
 
 ## Government
 
@@ -30,7 +28,8 @@
  * none
 
 ### Boosts
- * Leader Capacity Booster: +1 leader level cap from +2 and +1 starting level
+ * Capacity Booster: +1 leader level cap from +2 and +1 starting level and 50% increase in cost from 100%
+ * Selected Lineage: 25% increase in cost from 50%
 
 ## Ethics
 
@@ -59,6 +58,7 @@
 
 ### Nerfs
  * Prosperity (Completion bonus): +3 Stability from +5
+ * Expansion (a new life): +7% to population growth from +10%
  
 ### Boosts
  * none
@@ -68,14 +68,13 @@
 ### Nerfs
  * Meritocracy: leader cap level +0 from +1
  * Fanatical Purifier: 23% ship fire rate from 33%
+ * Masterful Crafters: +1.0 Mechanical Engineering from +1.1 and now cost 7 minerals in maintenance from 6
 
 ### Boosts
  * Philosopher King: +3% to unity and research
  * Barbaric Despoilers: +5% to ship speed
  * Free Haven: +20% pop growth from immigration from 15% and 60% immigration pull from 50%
- * Environmentalist: -25% consumer goods consumption from -20%
  * Cutthroat Politics: +2 decryption bonus from +1
- * Idyllic Bloom: Building energy upkeep 15 from 20 and energy cost 1125 from 1500
 
 ## Hive Mind Civics
 
@@ -83,7 +82,7 @@
  * Ascetic: -10% amenities usage from -15%
 
 ### Boosts
- * Strength of Legions: +30% to army health/damage/morale -30% to army cost/upkeep from 20% army damage and 20% upkeep
+ * None
 
 ## Robot Civics
 
@@ -93,31 +92,29 @@
 
 ### Boosts
  * Zero-waste Protocols: -15% robot upkeep from -10%
- * Warbots: +30% to army health/damage -30% to army cost/upkeep from 20% army damage and 20% upkeep
  * Factory Overclocking: +20% leader experience gain from +10%
  * Static Research: +2 decryption from +1
 
 ## Megacorp Civics
 
 ### Nerfs
- * None
+ * Masterful Crafters: +1.0 Mechanical Engineering from +1.1 and now cost 7 minerals in maintenance from 6
 
 ### Boosts
- * Media Conglomerate: +10% diplomatic weight and -10% war exhaustion
- * Private Military Companies: +30% to army health/damage/morale -30% to army cost/upkeep from 20% army damage and 20% upkeep
+ * Media Conglomerate: +10% diplomatic weight and -10% war exhaustion from -5% war exhaustion
  
 ## Origin:
 
 ### Nerfs
- * Scion: -5% Unity, -5% happiness and -20% Ethics attraction
+ * Scion: -5% happiness and -20% Ethics attraction
  * Clone Army: -10% to unity and -1 to current pop assembly
  * Void Dwellers: produce +12% on habitats from +15% 
 
 ### Boosts
  * Common Ground: "Live long and prosper" events gifts the player a science ship and scientist with +125 influence 30 days after game start. 6 months later they will be gifted a construction ship with another +125 influence.
  * Hegemon: "Long live the hegemony" event gifts the player with +200 influence and +75 alloy 30 days after game start.
- * Galactic Doorstep: +10% Physics research
- * Post Apocalyptic: +5% Habitability bonus
+ * Galactic Doorstep: +15% Physics research
+ * Post Apocalyptic: +7% Habitability bonus
  
 ## Species Traits:
 
@@ -126,7 +123,7 @@
  * Intelligent: +9% to research from +10%
  * Natural Engineers: +13% engineering research from +15% engineering research
  * Charismatic: +15% to amenities from +20%
- * Aquatics: +9% energy/mineral/food production on Ocean worlds from +10%
+ * Aquatics: +8% energy/mineral/food production on Ocean worlds from +10%
 
 ### Boosts
  * Slow Breeders: -6% from -10%
@@ -167,10 +164,10 @@
 ## Leader Traits:
 
 ### Nerfs
- * Corvette Focus: -15% from -20% Corvette cost reduction and +10% build speed
- * Destroyer Focus: -14% from -20% Destroyer cost reduction and +10% build speed
+ * Corvette Focus: -13% from -20% Corvette cost reduction and +10% build speed
+ * Destroyer Focus: -13% from -20% Destroyer cost reduction and +10% build speed
  * Cruiser Focus: -13% from -20% Cruiser cost reduction and +10% build speed
- * Battleship Focus: -12% from -20% Battleship cost reduction and +10% build speed
+ * Battleship Focus: -13% from -20% Battleship cost reduction and +10% build speed
 
 ### Boosts
  * none

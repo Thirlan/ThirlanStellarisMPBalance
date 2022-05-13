@@ -161,6 +161,10 @@ ap_the_flesh_is_weak = {
 			fail_text = "requires_not_ap_mind_over_matter"
 			NOT = { has_ascension_perk = ap_mind_over_matter }
 		}
+		custom_tooltip = {
+			fail_text = "requires_not_shroudwalker_apprentice"
+			NOT = { has_origin = origin_shroudwalker_apprentice }
+		}
 	}
 
 	potential = {

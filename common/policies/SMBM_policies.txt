@@ -837,8 +837,13 @@ war_philosophy = {
 
 war_doctrine = {
 	potential = {
-		is_country_type = default
-		has_tradition = tr_supremacy_finish
+		OR = {
+			AND = {
+				is_country_type = default
+				has_tradition = tr_supremacy_finish
+			}
+			is_country_type = enclave_mercenary
+		}
 	}
 
 	option = {
@@ -887,8 +892,8 @@ war_doctrine = {
 		AI_weight = {
 			factor = 10
 			modifier = {
-				factor = 0
-				NOT = { is_preferred_weapons = weapon_type_explosive }
+				factor = 100
+				is_country_type = enclave_mercenary
 			}
 		}
 	}
@@ -920,6 +925,188 @@ war_doctrine = {
 					has_ai_personality = honorbound_warriors
 					has_ai_personality = devouring_swarm
 				}
+			}
+		}
+	}
+}
+
+subjugation_war_terms = {
+	potential = {
+		is_subject = no
+		OR = {
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+		}
+	}
+
+	option = {
+		name = "oppressive_terms"
+
+		policy_flags = {
+			oppressive_terms
+		}
+
+		on_enabled = {
+			hidden_effect = { #this is to remember the player's pick if they are subjugated
+				if = {
+					limit = { is_ai = no }
+					set_country_flag = oppressive_terms_preference
+					remove_country_flag = benevolent_terms_preference
+					remove_country_flag = balanced_terms_preference
+				}
+			}
+		}
+
+		ai_weight = {
+			weight = 10
+
+			# Nice people who would never pick this.
+			modifier = {
+				factor = 0.1
+				has_ethic = ethic_fanatic_xenophile
+			}
+			modifier = {
+				factor = 0.5
+				has_ethic = ethic_xenophile
+			}
+			modifier = {
+				factor = 0.1
+				has_ethic = ethic_fanatic_pacifist
+			}
+			modifier = {
+				factor = 0.5
+				has_ethic = ethic_pacifist
+			}
+
+			# Bad people who likely would.
+			modifier = {
+				factor = 1.3
+				has_ethic = ethic_fanatic_xenophobe
+			}
+			modifier = {
+				factor = 1.15
+				has_ethic = ethic_xenophobe
+			}
+			modifier = {
+				factor = 1.3
+				has_ethic = ethic_fanatic_authoritarian
+			}
+			modifier = {
+				factor = 1.15
+				has_ethic = ethic_authoritarian
+			}
+			modifier = {
+				factor = 10
+				has_country_flag = oppressive_terms_preference
+			}
+		}
+	}
+
+	option = {
+		name = "balanced_terms"
+
+		policy_flags = {
+			balanced_terms
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				if = {
+					limit = { is_ai = no }
+					set_country_flag = balanced_terms_preference
+					remove_country_flag = benevolent_terms_preference
+					remove_country_flag = oppressive_terms_preference
+				}
+			}
+		}
+
+		ai_weight = {
+			weight = 10
+
+			# Rational people who would like this.
+			modifier = {
+				factor = 1.3
+				has_ethic = ethic_fanatic_egalitarian
+			}
+			modifier = {
+				factor = 1.15
+				has_ethic = ethic_egalitarian
+			}
+			modifier = {
+				factor = 1.3
+				has_ethic = ethic_fanatic_materialist
+			}
+			modifier = {
+				factor = 1.15
+				has_ethic = ethic_materialist
+			}
+			modifier = {
+				factor = 10
+				has_country_flag = balanced_terms_preference
+			}
+		}
+	}
+
+	option = {
+		name = "benevolent_terms"
+
+		policy_flags = {
+			benevolent_terms
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				if = {
+					limit = { is_ai = no }
+					set_country_flag = benevolent_terms_preference
+					remove_country_flag = balanced_terms_preference
+					remove_country_flag = oppressive_terms_preference
+				}
+			}
+		}
+
+		ai_weight = {
+			weight = 10
+
+			# Bad people who probably not pick this.
+			modifier = {
+				factor = 0.1
+				has_ethic = ethic_fanatic_xenophobe
+			}
+			modifier = {
+				factor = 0.5
+				has_ethic = ethic_xenophobe
+			}
+			modifier = {
+				factor = 0.1
+				has_ethic = ethic_fanatic_authoritarian
+			}
+			modifier = {
+				factor = 0.5
+				has_ethic = ethic_authoritarian
+			}
+
+			# Nice people who probably would.
+			modifier = {
+				factor = 1.3
+				has_ethic = ethic_fanatic_xenophile
+			}
+			modifier = {
+				factor = 1.15
+				has_ethic = ethic_xenophile
+			}
+			modifier = {
+				factor = 1.3
+				has_ethic = ethic_fanatic_pacifist
+			}
+			modifier = {
+				factor = 1.15
+				has_ethic = ethic_pacifist
+			}
+			modifier = {
+				factor = 10
+				has_country_flag = benevolent_terms_preference
 			}
 		}
 	}
@@ -1051,7 +1238,10 @@ interference = {
 
 		valid = {
 			OR = {
-				is_subject_type = signatory
+				custom_tooltip = {
+					text = is_a_signatory_vassal
+					any_agreement = { agreement_preset = preset_signatory }
+				}
 				NOR = {
 					has_ethic = "ethic_fanatic_xenophobe"
 					has_valid_civic = "civic_fanatic_purifiers"
@@ -1088,7 +1278,10 @@ interference = {
 
 		valid = {
 			NOR = {
-				is_subject_type = signatory
+				custom_tooltip = {
+					text = is_a_signatory_vassal
+					any_agreement = { agreement_preset = preset_signatory }
+				}
 				has_valid_civic = "civic_fanatic_purifiers"
 				has_valid_civic = "civic_hive_devouring_swarm"
 			}
@@ -1127,7 +1320,11 @@ interference = {
 		potential = {
 		}
 		valid = {
-			NOT = { is_subject_type = signatory }
+			custom_tooltip = {
+				success_text = is_not_a_signatory_vassal_success
+				fail_text = is_not_a_signatory_vassal_fail
+				NOT = { any_agreement = { agreement_preset = preset_signatory } }
+			}
 			NOR = {
 				has_ethic = "ethic_pacifist"
 				has_ethic = "ethic_fanatic_pacifist"
@@ -1264,8 +1461,8 @@ resettlement = {
 
 appropriation = {
 	potential = {
-		has_comms_with_alien_empire = yes
 		NOT = { has_ethic = ethic_gestalt_consciousness }
+		has_comms_with_alien_empire = yes
 	}
 
 	option = {
@@ -1342,7 +1539,7 @@ leader_enhancement = {
 		modifier = {
 			leader_skill_levels = 1
 			leader_age = 10
-			leaders_cost_mult = 0.5
+			leaders_cost_mult = 0.25
 		}
 
 		in_breach_of = {
@@ -1390,7 +1587,7 @@ leader_enhancement = {
 		modifier = {
 			leader_skill_levels = 1
 			leader_age = 20
-			leaders_cost_mult = 1
+			leaders_cost_mult = 0.5
 		}
 
 		valid = {
@@ -2381,7 +2578,11 @@ slavery = {
 		name = "slavery_allowed"
 
 		valid = {
-			NOT = { is_subject_type = signatory }
+			custom_tooltip = {
+				success_text = is_not_a_signatory_vassal_success
+				fail_text = is_not_a_signatory_vassal_fail
+				NOT = { any_agreement = { agreement_preset = preset_signatory } }
+			}
 			OR = {
 				has_ethic = ethic_authoritarian
 				has_ethic = ethic_fanatic_authoritarian
@@ -2498,7 +2699,11 @@ purge = {
 		modifier = {}
 
 		valid = {
-			NOT = { is_subject_type = signatory }
+			custom_tooltip = {
+				success_text = is_not_a_signatory_vassal_success
+				fail_text = is_not_a_signatory_vassal_fail
+				NOT = { any_agreement = { agreement_preset = preset_signatory } }
+			}
 			OR = {
 				has_ethic = ethic_gestalt_consciousness
 				has_ethic = ethic_xenophobe

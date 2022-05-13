@@ -2026,6 +2026,7 @@ ethic_spiritualist = {
 			OR = {
 				has_technology = "tech_psionic_theory"
 				has_ascension_perk = ap_mind_over_matter
+				has_origin = origin_shroudwalker_apprentice
 				has_ascension_perk = ap_transcendence
 			}
 		}

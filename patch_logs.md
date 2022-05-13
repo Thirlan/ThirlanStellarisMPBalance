@@ -1,3 +1,33 @@
+# 2022/05/12 - 1.3.0
+
+Clean up after Overlord update. Once again, yay for progress!
+
+Removed:
+ * Economic Chaos (anti-negative economy exploit) event: Any player whose stockpiles in mineral/food/energy are 0 or below with negative income will suffer a empire wide penalty of -20% to alloys, research and unity.
+ * Idyllic Bloom: Building energy upkeep 15 from 20 and energy cost 1125 from 1500
+ * Strength of Legions: +30% to army health/damage/morale -30% to army cost/upkeep from 20% army damage and 20% upkeep
+ * Warbots: +30% to army health/damage -30% to army cost/upkeep from 20% army damage and 20% upkeep
+ * Private Military Companies: +30% to army health/damage/morale -30% to army cost/upkeep from 20% army damage and 20% upkeep
+ * Espionage: All espionage operation's difficulty decreased by 3, resulting in much faster completion times.
+ * Environmentalist: -25% consumer goods consumption from -20%
+ * AI early game economic plans
+
+Added:
+ * Expansion (a new life): +6% to population growth from +10%
+ * Masterful Crafters: +1.0 Mechanical Engineering from +1.1 and now cost 7 minerals in maintenance from 6
+ 
+Changed:
+ * Scion: -5% happiness and -20% Ethics attraction
+ * Post Apocalyptic: +7% Habitability bonus
+ * Galactic Doorstep: +15% Physics research
+ * Aquatics: +8% energy/mineral/food production on Ocean worlds from +10%
+ * Capacity Booster: +1 leader level cap from +2 and +1 starting level and 50% increase in cost from 100%
+ * Selected Lineage: 25% increase in cost from 50%
+ * Corvette Focus: -13% from -20% Corvette cost reduction and +10% build speed
+ * Destroyer Focus: -13% from -20% Destroyer cost reduction and +10% build speed
+ * Cruiser Focus: -13% from -20% Cruiser cost reduction and +10% build speed
+ * Battleship Focus: -13% from -20% Battleship cost reduction and +10% build speed
+
 # 2022/03/25 - 1.2.2
 
 Updated the files to reflect the changes of the hotfix

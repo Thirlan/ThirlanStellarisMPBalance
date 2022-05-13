@@ -4,11 +4,6 @@
  TRAIT_LITHOID_GASEOUS_BYPRODUCTS_EFFECT: "Each pop with living standards of slavery or better produces 0.02 £exotic_gases£ §Y$exotic_gases$§! per month."
  TRAIT_LITHOID_SCINTILLATING_EFFECT: "Each pop with living standards of slavery or better produces 0.02 £rare_crystals£ §Y$rare_crystals$§! per month."
  TRAIT_LITHOID_VOLATILE_EXCRETIONS_EFFECT: "Each pop with living standards of slavery or better produces 0.02 £volatile_motes£ §Y$volatile_motes$§! per month."
-
- TRAIT_CHARISMATIC_EFFECT:4 "£amenities£ Amenities from £job£ Jobs: §G+15%§!"
- TRAIT_REPUGNANT_EFFECT:4 "£amenities£ Amenities from £job£ Jobs: §R-15%§!"
- TRAIT_EMOTION_EMULATORS_EFFECT:2 "£amenities_no_happiness£Amenities from £job£ Jobs: §G+15%§!"
- TRAIT_UNCANNY_EFFECT:2 "£amenities_no_happiness£Amenities from £job£ Jobs: §R-15%§!"
  
  TRAIT_PLANTOID_BUDDING_EFFECT:0 "Each pop working as a slave or better produces 0.0175 £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!"
  
@@ -16,15 +11,13 @@
  
  TRAIT_VENERABLE_EFFECT:0 "Leader lifespan: §G+80§! Years\nLeader starting level: §G+1§!"
 
- trait_aquatic_tooltip:1 "Housing Usage on §YOcean§! worlds: §G-10%§!\nFood and Mineral output on §YOcean§! worlds: §G+9%§!\nHousing Usage on non-§YWet§! worlds: §R+30%§!\nHabitability on non-§YWet§! worlds: §R-20%§!\n\nThe §H$ap_hydrocentric$§! Ascension Perk amplifies this trait's effects."
+ trait_aquatic_tooltip:1 "Housing Usage on §YOcean§! worlds: §G-10%§!\nFood and Mineral output on §YOcean§! worlds: §G+8%§!\nHousing Usage on non-§YWet§! worlds: §R+30%§!\nHabitability on non-§YWet§! worlds: §R-20%§!\n\nThe §H$ap_hydrocentric$§! Ascension Perk amplifies this trait's effects."
 
  # CIVICS
- civic_tooltip_byzantine_bureaucracy_effects:2 "£job_bureaucrat£ §Y$job_bureaucrat_plural$§! also produce §Y1.2§! £unity£ Unity and §Y1.2§! £stability£ $PLANET_STABILITY_TITLE$"
- 
- civic_tooltip_merchant_guilds_effects:2 "£building£ §YCapital Buildings§! provide £job_merchant£ §Y$job_merchant$§! Jobs\n£job_merchant£ §Y$job_merchant_plural$§! also produce §Y1.5§! £unity£ Unity"
+ civic_tooltip_crafters_effects:1 "£job_artisan£ §Y$job_artisan_plural$§! are replaced with £job_artificer£ §Y$job_artificer_plural$§!.\n§Y$job_artificer_plural$§! produce §G+1§! £consumer_goods£ §Y$consumer_goods$§! as well as §Y2§! £trade_value£ §YTrade Value§! and §Y1.0§! £engineering£ §YEngineering Research§!, but cost §R7§! £minerals£ instead of §Y6§! £minerals£.\nEvery §Y3§! §HIndustrial Districts§! grant §G1§! £building£ §YBuilding Slot§!, except on Habitats."
  
  # ORIGINS
- civic_tooltip_post_apocalyptic_effects: "Capital starts as a §YTomb World§!\nGain the §Y$trait_survivor$§! trait, granting:\n  Tomb World Habitability: §G+70%§!\n  Leader Lifespan: §G+10§! Years\n  Habitability: §G+5%§!"
+ civic_tooltip_post_apocalyptic_effects: "Capital starts as a §YTomb World§!\nGain the §Y$trait_survivor$§! trait, granting:\n  Tomb World Habitability: §G+70%§!\n  Leader Lifespan: §G+10§! Years\n  Habitability: §G+7%§!"
 
  origin_tooltip_void_dwellers_effects:5 "- Start with three §HOrbital Habitats§! and the technology to build more\n- Members of your species thrive on Habitats and produce §G+12%§! more there\n- Severe habitability penalties alongside a §R-15%§! production penalty on all normal planets\n- Hydroponic Farms have §G+1§! £job_farmer£ $job_farmer$ Job"
 
@@ -33,6 +26,8 @@
  ap_transcendent_learning_modifier_desc: "Leader Level Cap: §G+1§!\nLeader Starting Level: §G+1§!\nLeader Experience Gain: §G+50%§!"
 
 # TRADITIONS
+ tr_expansion_a_new_life_desc:3 "£pops£ §Y$MOD_POP_GROWTH_SPEED$§! increased by §G+6%§!."
+ tr_expansion_a_new_life_machine_desc:0 "£pops£ §Y$MOD_POP_ASSEMBLY_SPEED$§! increased by §G+6%§!."
 
 # POLICY
 leader_enhancement_capacity_boosters_desc:0 "We leave nothing to chance, no matter the cost. Through exacting curation of DNA banks do we build the leaders of tomorrow.\n\n§HIf active our Empire gains:§!\nLeader starting level: §G+1§!"
@@ -66,7 +61,3 @@ leader_enhancement_capacity_boosters_desc:0 "We leave nothing to chance, no matt
  smbm.8.name: "Long live the hegemony"
  smbm.8.desc: "In honor of the hegemony's foundation, the members have come forth to present your with a tribute and a show of support for its continued existence."
  smbm.8.option: "Accept the tribute"
- 
- smbm.10.name: "Economic chaos!"
- smbm.10.desc: "One of your core resources (mineral / food / energy) is in serious deficit! Your economy will suffer a sever penalty for the next 60 days as your empire scrambles to deal with the situation."
- smbm.10.option: "Oh no!"
