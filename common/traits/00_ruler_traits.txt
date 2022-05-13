@@ -23,7 +23,7 @@ trait_ruler_corvette_focus = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
 	}
 	modifier = {
-		ship_corvette_cost_mult = -0.15
+		ship_corvette_cost_mult = -0.13
 		shipsize_corvette_build_speed_mult = 0.1
 	}
 	leader_trait = { ruler }
@@ -39,7 +39,7 @@ trait_ruler_destroyer_focus = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
 	}
 	modifier = {
-		ship_destroyer_cost_mult = -0.14
+		ship_destroyer_cost_mult = -0.13
 		shipsize_destroyer_build_speed_mult = 0.1
 	}
 	leader_trait = { ruler }
@@ -71,7 +71,7 @@ trait_ruler_battleship_focus = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
 	}
 	modifier = {
-		ship_battleship_cost_mult = -0.12
+		ship_battleship_cost_mult = -0.13
 		shipsize_battleship_build_speed_mult = 0.1
 	}
 	leader_trait = { ruler }

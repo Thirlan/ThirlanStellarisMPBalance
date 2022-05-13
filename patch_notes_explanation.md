@@ -51,8 +51,6 @@ Armies are a very minor element of Stellaris. They are only relevant if you are 
 
 In this regard, it is unclear why Paradox was so timid with the army buff game choices. Take the resilient trait, which gives +50% army damage to defending army units. This essentially means that if you have 2 defensive units on the planet, then the 50% buff implies there are ~2.5 units on the planet (not 3 because all we did was buff damage and not health or morale). Considering that most people invade with stacks of at least 10, the 50% buff is not even noticeable. On top of this, this buff only helps if you are being invaded, which would mean you have lost naval superiority and very likely have lost the game. The Resilient trait is what would be considered a losing power, which is to say it only comes into effect when you are losing.
 
-It is not very hard to see then that all the army buff game choices have similar issues and explains the reason why they have all been buffed. Buffing army health is especially important as it also helps the army units to survive orbital bombardment, which helps act as a delaying mechanism if your navy is not close enough. It also helps units to survive combat, which reduces the costs of armies and increase experience gains, which provides for a better return on investment over time.
-
 ## Be careful out there (event)
 
 One of the events added to this patch is the anti-rush event. Unlike an RTS, Stellaris is a long game and no one wants to be knocked out in the first few minutes of the game.
