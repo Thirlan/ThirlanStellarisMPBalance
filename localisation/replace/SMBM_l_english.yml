@@ -19,7 +19,6 @@
  # ORIGINS
  civic_tooltip_post_apocalyptic_effects: "Capital starts as a §YTomb World§!\nGain the §Y$trait_survivor$§! trait, granting:\n  Tomb World Habitability: §G+70%§!\n  Leader Lifespan: §G+10§! Years\n  Habitability: §G+7%§!"
 
- origin_tooltip_void_dwellers_effects:5 "- Start with three §HOrbital Habitats§! and the technology to build more\n- Members of your species thrive on Habitats and produce §G+12%§! more there\n- Severe habitability penalties alongside a §R-15%§! production penalty on all normal planets\n- Hydroponic Farms have §G+1§! £job_farmer£ $job_farmer$ Job"
 
  # ASCENSCIONS
  requires_ap_galactic_contender: "$TRIGGER_FAIL$Requires the §Y$ap_galactic_contender$§! Ascension Perk."

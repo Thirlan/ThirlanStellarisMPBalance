@@ -10,6 +10,7 @@ Removed:
  * Private Military Companies: +30% to army health/damage/morale -30% to army cost/upkeep from 20% army damage and 20% upkeep
  * Espionage: All espionage operation's difficulty decreased by 3, resulting in much faster completion times.
  * Environmentalist: -25% consumer goods consumption from -20%
+ * Void Dwellers: produce +12% on habitats from +15% 
  * AI early game economic plans
 
 Added:

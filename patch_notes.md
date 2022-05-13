@@ -108,7 +108,6 @@
 ### Nerfs
  * Scion: -5% happiness and -20% Ethics attraction
  * Clone Army: -10% to unity and -1 to current pop assembly
- * Void Dwellers: produce +12% on habitats from +15% 
 
 ### Boosts
  * Common Ground: "Live long and prosper" events gifts the player a science ship and scientist with +125 influence 30 days after game start. 6 months later they will be gifted a construction ship with another +125 influence.
