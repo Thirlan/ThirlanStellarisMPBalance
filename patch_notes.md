@@ -35,6 +35,8 @@
 
 ### Nerfs
  * Gestalts: -3% to research
+ * Materialist: 4%/8% research bonus from 5%/10%
+ * Xenophobe: 8%/16% pop growth from 10%/20%
 
 ### Boosts
  * None
@@ -43,22 +45,27 @@
 
 ### Nerfs
  * Technological Ascendency: +6% Research rate from +10%
- * Become the crisis: requires 3 ascension perks from 2 and requires Galactic Contender ascension perk
+ * Become the crisis: requires 3 ascension perks from 2 and requires Enigmatic Engineering perk
  * The Flesh is Weak: 6% population assembly from +10%
  * Synthetic Evolution: 6% robotic job multiplier from 10%
  * Hive World: Energy cost 11000 from 10000
  * Machine World: Energy cost 11000 from 10000
+ * Arcology Project: requires 3 Ascension perks from 2
 
 ### Boosts
- * Galactic Contender: Number of ascension perks required dropped to 1 from 3
- * Transcendent Learning: +1 leader level cap from +2 and +1 to starting leader skill
+ * Transcendent Learning: +1 leader level cap from +2, +1 to starting leader skill and 75% to leader leveling speed from +50%
  * Enigmatic Engineering: +4 encryption from +2 and ascension perks required dropped to 0 from 1
+ * Galactic Force Projection: +5% sublight speed
+ * Consecrate Worlds:
+  * Can now consecrate an occupied world
+  * Capitals or worlds with either Titanic Life, Atmospheric Aphrodisiac, Natural Beauty, Second Home have a 15% chance of being a Respected World, 35% chance of being a Venerated World and 50% of being a Holy world
+  * Planets with Dead God, Paradise Made, Sentinels or the Loop Temple Pilgrims' Way event have a 100% chance of being a Holy World
 
 ## Traditions
 
 ### Nerfs
  * Prosperity (Completion bonus): +3 Stability from +5
- * Expansion (a new life): +7% to population growth from +10%
+ * Expansion (a new life): +6% to population growth from +10%
  
 ### Boosts
  * none
@@ -74,7 +81,10 @@
  * Philosopher King: +3% to unity and research
  * Barbaric Despoilers: +5% to ship speed
  * Free Haven: +20% pop growth from immigration from 15% and 60% immigration pull from 50%
- * Cutthroat Politics: +2 decryption bonus from +1
+ * Efficient Bureaucracy: -40% administrator upkeep from -20%
+ * Anglers: Pearl Divers give +4 trade goods from +3
+ * Warrior Culture: Duelists give +3 unit from +2
+ * Catalytic Converter: Catalytic Technicians require 8 food from 9
 
 ## Hive Mind Civics
 
@@ -82,7 +92,8 @@
  * Ascetic: -10% amenities usage from -15%
 
 ### Boosts
- * None
+ * Pooled Knowledge: +1 starting level to leaders
+ * Catalytic Converter: Catalytic Drones require 8 food from 9
 
 ## Robot Civics
 
@@ -91,17 +102,22 @@
  * Rogue Servitor: -10% empire energy credits
 
 ### Boosts
- * Zero-waste Protocols: -15% robot upkeep from -10%
+ * Zero-waste Protocols: -20% robot upkeep from -10%
  * Factory Overclocking: +20% leader experience gain from +10%
  * Static Research: +2 decryption from +1
+ * Catalytic Converter: Catalytic Drones require 8 food from 9
 
 ## Megacorp Civics
 
 ### Nerfs
  * Masterful Crafters: +1.0 Mechanical Engineering from +1.1 and now cost 7 minerals in maintenance from 6
+ * Free Traders: +8% trade value from +10%
+ * Indentured Servitude: +8% slave output from +10%
 
 ### Boosts
  * Media Conglomerate: +10% diplomatic weight and -10% war exhaustion from -5% war exhaustion
+ * Rutheless Competition: +1 starting level to leaders
+ * Anglers: Pearl Divers give +4 trade goods from +3
  
 ## Origin:
 
@@ -120,9 +136,10 @@
 ### Nerfs
  * Rapid Breeders: +6% population growth from 10%
  * Intelligent: +9% to research from +10%
- * Natural Engineers: +13% engineering research from +15% engineering research
+ * Natural Engineers: +12% engineering research from +15% engineering research
  * Charismatic: +15% to amenities from +20%
  * Aquatics: +8% energy/mineral/food production on Ocean worlds from +10%
+ * Thrifty: +20% trade value from +25%
 
 ### Boosts
  * Slow Breeders: -6% from -10%
@@ -132,6 +149,7 @@
  * Talented: +2 leader level cap
  * Nonadaptive: -6% habitability from -10%
  * Repugnant: -15% to amenities from -20%
+ * Quick Learners: +35% to leader leveling speed from +25%
  
 ## Robot Traits:
 
@@ -142,8 +160,10 @@
 ### Boosts
  * Logic Engines: +9% research from +10%
  * Custom made: -10% assembly speed from -15%
- * Recycled: -30% assembly cost from -20%
+ * Recycled: -40% assembly cost from -20%
  * Uncanny: -15% to amenities from -20%
+ * Learning Algorithms: +35% to leader leveling speed from +25%
+ * Enhanced Memory: +1 starting level to leaders
 
 ## Plantoids
 

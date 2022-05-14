@@ -10,19 +10,24 @@
  TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "Replaces §Y100%§! of Base £food£ §YFood§! Upkeep with §Y48%§! £energy£ §YEnergy§! and §Y48%§! £food£ §YFood§!."
  
  TRAIT_VENERABLE_EFFECT:0 "Leader lifespan: §G+80§! Years\nLeader starting level: §G+1§!"
+ TRAIT_ROBOT_ENHANCED_MEMORY_EFFECT:0 "Leader Level Cap: §G+2§!\nLeader starting level: §G+1§!\n"
 
  trait_aquatic_tooltip:1 "Housing Usage on §YOcean§! worlds: §G-10%§!\nFood and Mineral output on §YOcean§! worlds: §G+8%§!\nHousing Usage on non-§YWet§! worlds: §R+30%§!\nHabitability on non-§YWet§! worlds: §R-20%§!\n\nThe §H$ap_hydrocentric$§! Ascension Perk amplifies this trait's effects."
 
  # CIVICS
  civic_tooltip_crafters_effects:1 "£job_artisan£ §Y$job_artisan_plural$§! are replaced with £job_artificer£ §Y$job_artificer_plural$§!.\n§Y$job_artificer_plural$§! produce §G+1§! £consumer_goods£ §Y$consumer_goods$§! as well as §Y2§! £trade_value£ §YTrade Value§! and §Y1.0§! £engineering£ §YEngineering Research§!, but cost §R7§! £minerals£ instead of §Y6§! £minerals£.\nEvery §Y3§! §HIndustrial Districts§! grant §G1§! £building£ §YBuilding Slot§!, except on Habitats."
+ civic_tooltip_ruthless_competition_effects:1 "Leader Starting Level: §G+1§!\n"
+ civic_tooltip_hive_pooled_knowledge_effects:1 "Leader Starting Level: §G+1§!\n"
+ civic_tooltip_anglers_effects:2 "On §HOcean Worlds§!, §HAgriculture Districts§! are uncapped.\nOn §YWet§! worlds, £job_farmer£ §Y$job_farmer_plural$§! are replaced by £job_angler£ §Y$job_angler_plural$§! and £job_pearl_diver£ §Y$job_pearl_diver_plural$§!.\n§Y$job_angler_plural$§! produce §Y8§! £food£ §Y$food$§! and §Y2§! £trade_value£ §Y$TRADE_VALUE$§!, and §Y$job_pearl_diver_plural$§! produce §Y4§! £consumer_goods£ §Y$consumer_goods$§! and §Y3§! £trade_value£ §Y$TRADE_VALUE$§!.\nAdds the §H$trait_aquatic$§! trait."
  
  # ORIGINS
  civic_tooltip_post_apocalyptic_effects: "Capital starts as a §YTomb World§!\nGain the §Y$trait_survivor$§! trait, granting:\n  Tomb World Habitability: §G+70%§!\n  Leader Lifespan: §G+10§! Years\n  Habitability: §G+7%§!"
 
 
  # ASCENSCIONS
- requires_ap_galactic_contender: "$TRIGGER_FAIL$Requires the §Y$ap_galactic_contender$§! Ascension Perk."
- ap_transcendent_learning_modifier_desc: "Leader Level Cap: §G+1§!\nLeader Starting Level: §G+1§!\nLeader Experience Gain: §G+50%§!"
+ requires_ap_enigmatic_engineering: "$TRIGGER_FAIL$Requires the §Y$ap_enigmatic_engineering$§! Ascension Perk."
+ ap_transcendent_learning_modifier_desc: "Leader Level Cap: §G+1§!\nLeader Starting Level: §G+1§!\nLeader Experience Gain: §G+75%§!"
+ describe_edict_consectrated_worlds:5 "§EConsecrating planets (up to §Y3§!) increases §YSpiritualist Ethics Attraction§! and §YEmpire-Wide Amenities§! as well as £unity£ §YUnity Generation§!, scaling to the spiritual significance of the worlds consecrated.§!"
 
 # TRADITIONS
  tr_expansion_a_new_life_desc:3 "£pops£ §Y$MOD_POP_GROWTH_SPEED$§! increased by §G+6%§!."
@@ -37,9 +42,6 @@ leader_enhancement_capacity_boosters_desc:0 "We leave nothing to chance, no matt
 
  unholy_matrimony: "Unholy Matrimony"
  unholy_matrimony_desc: "Fanatic Necrophage nerf"
-
- economic_chaos: "Economic chaos"
- economic_chaos: "Negative economy exploit nerf"
 
  smbm.2.name: "Prepare yourself"
  smbm.2.desc: "Prepare for the cold hard realities of space. Not knowing what lurks out there it would be best to increase your defenses. Be careful, your defensive bonuses will only last a few years."
@@ -57,6 +59,6 @@ leader_enhancement_capacity_boosters_desc:0 "We leave nothing to chance, no matt
  smbm.7.desc: "The capitals of your new federation are alive again with celebration! The final joint effort of your people, the construction ship Prosperity, is ready and will help you build a new inter-galactic era of propserity and cooperation!"
  smbm.7.option: "...and engage!"
  
- smbm.8.name: "Long live the hegemony"
- smbm.8.desc: "In honor of the hegemony's foundation, the members have come forth to present your with a tribute and a show of support for its continued existence."
+ smbm.8.name: "Long live the Hegemony"
+ smbm.8.desc: "In honor of the Hegemony's foundation, the members have come forth to present your with a tribute and a show of support for its continued existence."
  smbm.8.option: "Accept the tribute"

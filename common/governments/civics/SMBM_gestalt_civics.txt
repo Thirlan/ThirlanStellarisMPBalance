@@ -28,6 +28,17 @@ civic_hive_ascetic = {
 	}
 }
 
+civic_hive_pooled_knowledge = {
+	potential = { authority = { value = auth_hive_mind } }
+	random_weight = { base = 5 }
+	description = "civic_tooltip_hive_pooled_knowledge_effects"
+	modifier = {
+		leader_skill_levels = 1
+		species_leader_exp_gain = 0.1
+		intel_encryption_add = 1
+	}
+}
+
 
 ##################
 # Machine Empire
@@ -84,7 +95,7 @@ civic_machine_zero_waste_protocols = {
 	potential = { authority = { value = auth_machine_intelligence } }
 	random_weight = { base = 5 }
 	modifier = {
-		planet_pops_robotics_upkeep_mult = -0.15
+		planet_pops_robotics_upkeep_mult = -0.20
 	}
 }
 

@@ -17,8 +17,16 @@ Following videos were used to determine those mechanics that needed to be balanc
 * https://www.youtube.com/watch?v=Id19TyroN0k&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=UqA4GFBYdyU&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=gCYyA2rvJdQ&ab_channel=StefanAnon
+* https://www.youtube.com/watch?v=Q76JXW22ncc&ab_channel=MontuPlays
+* https://www.youtube.com/watch?v=C1lfQ2alOMM&ab_channel=MontuPlays
+* https://www.youtube.com/watch?v=Q0aj5IcxNJg&ab_channel=MontuPlays
+* https://www.youtube.com/watch?v=oq2Svb6D-6g&ab_channel=MontuPlays
+* https://www.youtube.com/watch?v=VG5YSByzxgQ&ab_channel=MontuPlays
+* https://www.youtube.com/watch?v=LzhgFRXJ3D4&ab_channel=MontuPlays
+* https://www.youtube.com/watch?v=C88jv2OifnM&ab_channel=MontuPlays
 
 Also a lot of appreciation for Stefan's team: Magikaas, Aow, AirHunter, Hoover Tesla
+As well as to some other dedicate Youtubes such as Montu and ASPec
 And from the Stellaris Modder's Den: OldEnt (ACE) and Corsairmarks helped tremendously
 
 ## Tech Rushing and population
@@ -51,6 +59,8 @@ Armies are a very minor element of Stellaris. They are only relevant if you are 
 
 In this regard, it is unclear why Paradox was so timid with the army buff game choices. Take the resilient trait, which gives +50% army damage to defending army units. This essentially means that if you have 2 defensive units on the planet, then the 50% buff implies there are ~2.5 units on the planet (not 3 because all we did was buff damage and not health or morale). Considering that most people invade with stacks of at least 10, the 50% buff is not even noticeable. On top of this, this buff only helps if you are being invaded, which would mean you have lost naval superiority and very likely have lost the game. The Resilient trait is what would be considered a losing power, which is to say it only comes into effect when you are losing.
 
+As of late Stellaris has made some changes to some of the Army game choices like Strenght of Legions or Warbots. There are still some though such as Resilient that are not given much love.
+
 ## Be careful out there (event)
 
 One of the events added to this patch is the anti-rush event. Unlike an RTS, Stellaris is a long game and no one wants to be knocked out in the first few minutes of the game.
@@ -67,4 +77,4 @@ The first reason is that changing point costs of traits will affect the existing
 
 The second reason on whether to just increase longevity has to do with longevity in the game in general. +80 is a significant boost already, and any additional years added have diminishing returns. Consider that by the end of the game your citizens can live to 130 without this boost. The game itself only lasts about 300 years so adding another 20 years does not really justify the 4 point cost of Venerable. Instead it is more logical to add some minor bonuses that have the right flavor to the trait.
 
-The bonuses added to Venerable however cannot be large enough to skew how the AI should normally use these races. AI game files are hardcoded to weigh each racial trait to determine how to use them. Our KISS principle is not to change many game files and as such it is best to give a minor buffs.
+The bonuses added to Venerable however cannot be large enough to skew how the AI should normally use these races. AI game files are hardcoded to weigh each racial trait to determine how to use them. Our KISS principle is not to change many game files and as such it is best to give a minor buff.

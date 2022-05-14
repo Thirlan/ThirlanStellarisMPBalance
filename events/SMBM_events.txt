@@ -258,3 +258,57 @@ country_event = {
 		}
 	}
 }
+
+# Ruthless Competition Boost
+country_event = {
+	id = smbm.14
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_civic = civic_ruthless_competition
+	}
+
+	immediate = {
+		from = {
+			add_skill = 1
+		}
+	}
+}
+
+# Pooled Knowledge Boost
+country_event = {
+	id = smbm.15
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_civic = civic_hive_pooled_knowledge
+	}
+
+	immediate = {
+		from = {
+			add_skill = 1
+		}
+	}
+}
+
+# Enhanced Memory Boost
+country_event = {
+	id = smbm.16
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_trait = "trait_robot_enhanced_memory"
+	}
+
+	immediate = {
+		from = {
+			add_skill = 1
+		}
+	}
+}

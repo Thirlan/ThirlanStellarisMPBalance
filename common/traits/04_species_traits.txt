@@ -54,7 +54,7 @@ trait_thrifty = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	opposites = { "trait_hive_mind" }
 	modifier = {
-		pop_job_trade_mult = 0.25
+		pop_job_trade_mult = 0.20
 	}
 	slave_cost = {
 		energy = 500
@@ -67,7 +67,7 @@ trait_natural_engineers = {
 	opposites = { "trait_natural_physicists" "trait_natural_sociologists" "trait_nerve_stapled" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		planet_jobs_engineering_research_produces_mult = 0.13
+		planet_jobs_engineering_research_produces_mult = 0.12
 	}
 	slave_cost = {
 		energy = 500
@@ -224,7 +224,7 @@ trait_quick_learners = {
 	opposites = { "trait_slow_learners" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		species_leader_exp_gain = 0.25
+		species_leader_exp_gain = 0.35
 	}
 	slave_cost = {
 		energy = 500
