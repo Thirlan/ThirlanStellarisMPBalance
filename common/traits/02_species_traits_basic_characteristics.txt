@@ -221,7 +221,7 @@ trait_aquatic = {
 				}
 			}
 		}
-		pop_housing_usage_mult = -0.1
+		pop_housing_usage_mult = -0.08
 		planet_jobs_food_produces_mult = 0.08
 		planet_jobs_minerals_produces_mult = 0.08
 		planet_jobs_energy_produces_mult = 0.08

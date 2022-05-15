@@ -76,6 +76,7 @@
  * Meritocracy: leader cap level +0 from +1
  * Fanatical Purifier: 23% ship fire rate from 33%
  * Masterful Crafters: +1.0 Mechanical Engineering from +1.1 and now cost 7 minerals in maintenance from 6
+ * Technocracy: -5% to Naval Capacity, -5 Naval Capacity, +5% to ship cost and -5% to ship build speed
 
 ### Boosts
  * Philosopher King: +3% to unity and research
@@ -83,7 +84,7 @@
  * Free Haven: +20% pop growth from immigration from 15% and 60% immigration pull from 50%
  * Efficient Bureaucracy: -40% administrator upkeep from -20%
  * Anglers: Pearl Divers give +4 trade goods from +3
- * Warrior Culture: Duelists give +3 unit from +2
+ * Warrior Culture: Duelists give +3 unity from +2
  * Catalytic Converter: Catalytic Technicians require 8 food from 9
 
 ## Hive Mind Civics
@@ -103,7 +104,7 @@
 
 ### Boosts
  * Zero-waste Protocols: -20% robot upkeep from -10%
- * Factory Overclocking: +20% leader experience gain from +10%
+ * Factory Overclocking: +1 starting level to leaders
  * Static Research: +2 decryption from +1
  * Catalytic Converter: Catalytic Drones require 8 food from 9
 
@@ -138,7 +139,7 @@
  * Intelligent: +9% to research from +10%
  * Natural Engineers: +12% engineering research from +15% engineering research
  * Charismatic: +15% to amenities from +20%
- * Aquatics: +8% energy/mineral/food production on Ocean worlds from +10%
+ * Aquatics: +8% energy/mineral/food production on Ocean worlds from +10% and -8% housing usage from -10%
  * Thrifty: +20% trade value from +25%
 
 ### Boosts

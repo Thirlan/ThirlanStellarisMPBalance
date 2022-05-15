@@ -290,7 +290,7 @@ trait_robot_repurposed_hardware = {
 	}
 
 	modifier = {
-		species_leader_exp_gain = -0.25
+		species_leader_exp_gain = -0.35
 	}
 	ai_weight = {
 		weight = 1
@@ -343,7 +343,7 @@ trait_robot_recycled = {
 
 	#assembling_modifier, declining_modifier, growing_modifier are applied to planet when pop is the one assembling/declining/growing
 	assembling_modifier = {
-		planet_pop_assemblers_upkeep_mult = -0.40
+		planet_pop_assemblers_upkeep_mult = -0.30
 	}
 	slave_cost = {
 		energy = 1500

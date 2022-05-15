@@ -205,6 +205,24 @@ country_event = {
 	}
 }
 
+# Factory Overclocking Boost
+country_event = {
+	id = smbm.10
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_civic = civic_machine_factory_overclock
+	}
+
+	immediate = {
+		from = {
+			add_skill = 1
+		}
+	}
+}
+
 # Venerable boost
 country_event = {
 	id = smbm.11

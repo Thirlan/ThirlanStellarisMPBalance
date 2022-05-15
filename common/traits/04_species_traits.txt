@@ -237,7 +237,7 @@ trait_slow_learners = {
 	opposites = { "trait_quick_learners" "trait_enigmatic_intelligence" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		species_leader_exp_gain = -0.25
+		species_leader_exp_gain = -0.35
 	}
 	ai_weight = {
 		weight = 0
@@ -836,7 +836,7 @@ trait_survivor = {
 	}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		pop_environment_tolerance = 0.07
+		pop_environment_tolerance = 0.1
 		pc_nuked_habitability = 0.7
 		leader_age = 10
 	}

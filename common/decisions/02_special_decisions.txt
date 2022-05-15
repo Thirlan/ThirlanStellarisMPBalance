@@ -763,14 +763,14 @@ decision_consecrated_worlds = {
 			}
 			else_if = {
 				limit = {
-                    
+					
 					OR = {
-                        is_capital = yes
-                        has_planet_modifier = "pm_titanic_life"
-                        has_planet_modifier = "pm_atmospheric_aphrodisiac"
-                        has_planet_modifier = "pm_natural_beauty"
-                        has_modifier = "second_home"
-                    }
+						is_capital = yes
+						has_planet_modifier = "pm_titanic_life"
+						has_planet_modifier = "pm_atmospheric_aphrodisiac"
+						has_planet_modifier = "pm_natural_beauty"
+						has_modifier = "second_home"
+					}
 					NOT = { is_planet_class = pc_gaia }
 					NOT = { has_modifier = "dead_god" }
 					NOT = { has_modifier = "paradise_made" }
@@ -832,13 +832,13 @@ decision_consecrated_worlds = {
 			else_if = {
 				limit = {
 					OR = {
-                        is_planet_class = pc_gaia
-                        has_modifier = "dead_god"
-                        has_modifier = "paradise_made"
-                        has_modifier = "sentinels_planet_modifier"
-                        has_modifier = "spiritual_happy_with_open_loop_temple"
-                    }
-                }
+						is_planet_class = pc_gaia
+						has_modifier = "dead_god"
+						has_modifier = "paradise_made"
+						has_modifier = "sentinels_planet_modifier"
+						has_modifier = "spiritual_happy_with_open_loop_temple"
+					}
+				}
 				custom_tooltip = consecrated_worlds_perfect
 				random_list = {
 					0 = {
