@@ -174,6 +174,8 @@ trait_robot_enhanced_memory = {
 		}
 	}
 
+	custom_tooltip = TRAIT_ROBOT_ENHANCED_MEMORY_EFFECT
+
 	modifier = {
 		leader_skill_levels = 2
 	}
@@ -262,7 +264,7 @@ trait_robot_learning_algorithms = {
 	}
 
 	modifier = {
-		species_leader_exp_gain = 0.25
+		species_leader_exp_gain = 0.35
 	}
 	slave_cost = {
 		energy = 750
@@ -288,7 +290,7 @@ trait_robot_repurposed_hardware = {
 	}
 
 	modifier = {
-		species_leader_exp_gain = -0.25
+		species_leader_exp_gain = -0.35
 	}
 	ai_weight = {
 		weight = 1

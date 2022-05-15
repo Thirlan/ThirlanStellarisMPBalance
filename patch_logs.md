@@ -1,3 +1,51 @@
+# 2022/05/14 - 1.3.1
+
+Updating to handle some of the new meta. As usual many thanks to the community such as Montu, Stefan, Komrad Truck, ASPec for posting such great videos.
+
+Removed:
+ * Cutthroat Politics: +2 decryption bonus from +1
+ * Galactic Contender: Number of ascension perks required dropped to 1 from 3
+
+Added:
+ * Materialist: 4%/8% research bonus from 5%/10%
+ * Xenophobe: 8%/16% pop growth from 10%/20%
+ * Pooled Knowledge: +1 starting level to leaders
+ * Rutheless Competition: +1 starting level to leaders
+ * Factory Overclocking: +1 starting level to leaders
+ * Enhanced Memory: +1 starting level to leaders
+ * Efficient Bureaucracy: -40% administrator upkeep from -20%
+ * Free Traders: +8% trade value from +10%
+ * Indentured Servitude: +8% slave output from +10%
+ * Thrifty: +20% trade value from +25%
+ * Quick Learners: +35% to leader leveling speed from +25%
+ * Slow Learners: -35% to leader leveling speed from -25%
+ * Learning Algorithms: +35% to leader leveling speed from +25%
+ * Repurposed Hardware: -35% to leader leveling speed from -25%
+ * Executive Vigor: +90 edict capacity from +100
+ * Galactic Force Projection: +5% sublight speed
+ * Arcology Project: requires 3 ascension perks from 2
+ * Anglers: Pearl Divers give +4 trade goods from +3
+ * Warrior Culture: Duelists give +3 unity from +2
+ * Merchant Guilds: +5% diplomatic weight and +3% trade value
+ * Corporate Hedonism: Decadant Lifestyle upkeep increased by 10%
+ * Pleasure Seekers: Decadant Lifestyle upkeep increased by 10%
+ * Catalytic Converter: Catalytic Technicians/Drones require 8 food from 9
+ * Technocracy: -5% to Naval Capacity, +5% to ship cost, -5% to ship build speed
+ * Consecrate Worlds:
+  * Can now consecrate an occupied world
+  * Capitals or worlds with either Titanic Life, Atmospheric Aphrodisiac, Natural Beauty, Second Home have a 15% chance of being a Respected World, 35% chance of being a Venerated World and 50% of being a Holy world
+  * Planets with Dead God, Paradise Made, Sentinels or the Loop Temple Pilgrims' Way event have a 100% chance of being a Holy World
+ 
+Changed:
+ * Natural Engineers: +12% engineering research from +15% engineering research
+ * Become the crisis: requires 3 ascension perks from 2 and requires Enigmatic Engineering perk
+ * Zero-waste Protocols: -20% robot upkeep from -10%
+ * Transcendent Learning: +1 leader level cap from +2, +1 to starting leader skill and 75% to leader leveling speed from +50%
+ * Aquatics: +8% energy/mineral/food production on Ocean worlds from +10% and -8% housing usage from -10%
+ * Post Apocalyptic: +10% Habitability bonus
+
+No patches yet to the more recent exploits found such as Imperial Fiefdom because those are going to be patched for sure in a week.
+
 # 2022/05/12 - 1.3.0
 
 Clean up after Overlord update. Once again, yay for progress!

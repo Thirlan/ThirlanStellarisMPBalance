@@ -1,0 +1,5 @@
+@living_standard_luxuries_very_high_decadent = 1.65
+@living_standard_luxuries_high_decadent = 0.825
+@living_standard_luxuries_normal_decadent = 0.55
+@living_standard_luxuries_low_decadent = 0.138
+@living_standard_luxuries_very_low_decadent = 0.07

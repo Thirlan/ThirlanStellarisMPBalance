@@ -627,7 +627,7 @@ duelist = {
 	resources = {
 		category = planet_entertainers
 		produces = {
-			unity = 2
+			unity = 3
 		}
 		upkeep = {
 			alloys = 1
@@ -1610,7 +1610,7 @@ catalytic_technician = {
 		}
 
 		upkeep = {
-			food = 9
+			food = 8
 		}
 
 		produces = {
@@ -1871,7 +1871,7 @@ pearl_diver = {
 	resources = {
 		category = planet_artisans
 		produces = {
-			consumer_goods = 3
+			consumer_goods = 4
 		}
 		upkeep = {
 			food = 2

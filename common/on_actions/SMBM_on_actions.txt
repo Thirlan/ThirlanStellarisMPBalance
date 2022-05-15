@@ -7,8 +7,12 @@ on_game_start = {
 
 on_leader_spawned = {
 	events = {
+        smbm.10 # Factory Overclocking Boost
 		smbm.11 # Venerable
         smbm.12 # Transcendent Learning Boost
         smbm.13 # Policy Leader Capacity Booster
+        smbm.14 # Ruthless Competition Boost
+        smbm.15 # Pooled Knowledge Boost
+        smbm.16 # Enhanced Memory Boost
 	}
 }
