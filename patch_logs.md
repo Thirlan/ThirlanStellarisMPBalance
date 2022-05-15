@@ -1,3 +1,7 @@
+# 2022/05/15 - 1.3.2
+
+Removing the incorrect description for Technocracy
+
 # 2022/05/14 - 1.3.1
 
 Updating to handle some of the new meta. As usual many thanks to the community such as Montu, Stefan, Komrad Truck, ASPec for posting such great videos.
