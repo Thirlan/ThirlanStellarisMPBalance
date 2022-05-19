@@ -1,3 +1,7 @@
+# 2022/05/19 - 1.3.3
+
+Minor changes to be compliant with 3.4.3
+
 # 2022/05/15 - 1.3.2
 
 Removing the incorrect description for Technocracy
