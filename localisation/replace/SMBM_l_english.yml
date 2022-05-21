@@ -23,7 +23,7 @@
  
  # ORIGINS
  civic_tooltip_post_apocalyptic_effects: "Capital starts as a §YTomb World§!\nGain the §Y$trait_survivor$§! trait, granting:\n  Tomb World Habitability: §G+70%§!\n  Leader Lifespan: §G+10§! Years\n  Habitability: §G+7%§!"
-
+origin_tooltip_clone_army_effects:0 "- Start with §Y2§! £building£ §H$building_clone_army_clone_vat$§! Buildings on your homeworld, producing £pops£ §Y$clone_soldier$§! Pops.\n- §R§HAncient Clone Vats§! have an §HEmpire Limit§! of 5.§!\n- Clone Army §HAdmirals§! will grant an additional §G20%§! §H$MOD_SHIP_FIRE_RATE_MULT$§! and §G10%§! reduced §HShip Upkeep§!."
 
  # ASCENSCIONS
  requires_ap_enigmatic_engineering: "$TRIGGER_FAIL$Requires the §Y$ap_enigmatic_engineering$§! Ascension Perk."
