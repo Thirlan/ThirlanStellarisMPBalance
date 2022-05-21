@@ -25,17 +25,18 @@ Following videos were used to determine those mechanics that needed to be balanc
 * https://www.youtube.com/watch?v=LzhgFRXJ3D4&ab_channel=MontuPlays
 * https://www.youtube.com/watch?v=C88jv2OifnM&ab_channel=MontuPlays
 
-Also a lot of appreciation for Stefan's team: Magikaas, Aow, AirHunter, Hoover Tesla
-As well as to some other dedicate Youtubes such as Montu and ASPec
+A lot of appreciation for Stefan's team: Magikaas, Aow, AirHunter, Hoover Tesla
+Appreciation from the players in ISS: Komrad Truck, Jojo
+As well as to some other dedicated Youtubers such as Montu and ASPec
 And from the Stellaris Modder's Den: OldEnt (ACE) and Corsairmarks helped tremendously
 
 ## Tech Rushing and population
 
 Tech rushing and population growth is still THE meta of the game, though population growth has started to take more of a back seat depending on the build chosen. Megacorporations and Void Dwellers can often eschew growth related traits.
 
-## Total war Assimilators
+## Total War Assimilators
 
-Total war Assimilators (Determine Assimilators, Fanatical Necrophage) that can declare unrestricted wars have always been strong in Stellaris. The reason for their strength is that they are able to quickly gain more populations through their unrestricted conquest, something that normal empires have to spend large amounts of influence to do and as such their speed of conquest is capped. This is not so for the Total war Assimilators, which can conquer an entire empire, giving them a huge boost to power and then allowing them to conquer the next empire in short order.
+Total War Assimilators (Determine Assimilators, Fanatical Necrophage) that can declare unrestricted wars have always been strong in Stellaris. The reason for their strength is that they are able to quickly gain more populations through their unrestricted conquest, something that normal empires have to spend large amounts of influence to do and as such their speed of conquest is capped. This is not so for the Total war Assimilators, which can conquer an entire empire, giving them a huge boost to power and then allowing them to conquer the next empire in short order.
 
 The simplest fix for this is to reduce the speed at which assimilation happens and thus the creation of new population through conquest.
 

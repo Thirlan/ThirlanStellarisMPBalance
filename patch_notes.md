@@ -1,4 +1,4 @@
-# Version 1.3.3
+# Version 1.3.4
 
 ## General tweaks
 
@@ -57,9 +57,9 @@
  * Enigmatic Engineering: +4 encryption from +2 and ascension perks required dropped to 0 from 1
  * Galactic Force Projection: +5% sublight speed
  * Consecrate Worlds:
-  * Can now consecrate an occupied world
-  * Capitals or worlds with either Titanic Life, Atmospheric Aphrodisiac, Natural Beauty, Second Home have a 15% chance of being a Respected World, 35% chance of being a Venerated World and 50% of being a Holy world
-  * Planets with Dead God, Paradise Made, Sentinels or the Loop Temple Pilgrims' Way event have a 100% chance of being a Holy World
+   * Can now consecrate an occupied world
+   * Capitals or worlds with either Titanic Life, Atmospheric Aphrodisiac, Natural Beauty, Second Home have a 15% chance of being a Respected World, 35% chance of being a Venerated World and 50% of being a Holy world
+   * Planets with Dead God, Paradise Made, Sentinels or the Loop Temple Pilgrims' Way event have a 100% chance of being a Holy World
 
 ## Traditions
 
@@ -80,7 +80,6 @@
 
 ### Boosts
  * Philosopher King: +3% to unity and research
- * Barbaric Despoilers: +5% to ship speed
  * Free Haven: +20% pop growth from immigration from 15% and 60% immigration pull from 50%
  * Efficient Bureaucracy: -40% administrator upkeep from -20%
  * Anglers: Pearl Divers give +4 trade goods from +3
@@ -91,6 +90,7 @@
 
 ### Nerfs
  * Ascetic: -10% amenities usage from -15%
+ * Devouring Swarm: +50% market fee penalty
 
 ### Boosts
  * Pooled Knowledge: +1 starting level to leaders
@@ -100,7 +100,8 @@
 
 ### Nerfs
  * Driven Assimilator: 3 pop per year assimilation speed from average of 7
- * Rogue Servitor: -10% empire energy credits
+ * Rogue Servitor: Bio Trophies produce +2 unity from +3 and 0.8% complex drone output boost from 1%
+ * Determined Exterminator: +50% market fee penalty
 
 ### Boosts
  * Zero-waste Protocols: -20% robot upkeep from -10%
@@ -117,20 +118,21 @@
 
 ### Boosts
  * Media Conglomerate: +10% diplomatic weight and -10% war exhaustion from -5% war exhaustion
- * Rutheless Competition: +1 starting level to leaders
+ * Ruthless Competition: +1 starting level to leaders
  * Anglers: Pearl Divers give +4 trade goods from +3
  
 ## Origin:
 
 ### Nerfs
+ * Prosperous Unification: +10% happiness from +15%
  * Scion: -5% happiness and -20% Ethics attraction
- * Clone Army: -10% to unity and -1 to current pop assembly
+ * Clone Army: 1/4/5/8/12 to current pop assembly from 2/5/7/10/15 and +20% fire rate for clone admirals from +25%
 
 ### Boosts
  * Common Ground: "Live long and prosper" events gifts the player a science ship and scientist with +125 influence 30 days after game start. 6 months later they will be gifted a construction ship with another +125 influence.
  * Hegemon: "Long live the hegemony" event gifts the player with +200 influence and +75 alloy 30 days after game start.
  * Galactic Doorstep: +15% Physics research
- * Post Apocalyptic: +7% Habitability bonus
+ * Post Apocalyptic: +10% Habitability bonus
  
 ## Species Traits:
 
@@ -139,12 +141,12 @@
  * Intelligent: +9% to research from +10%
  * Natural Engineers: +12% engineering research from +15% engineering research
  * Charismatic: +15% to amenities from +20%
- * Aquatics: +8% energy/mineral/food production on Ocean worlds from +10% and -8% housing usage from -10%
+ * Aquatics: +7% energy/mineral/food/housing production on Ocean worlds from +10%
  * Thrifty: +20% trade value from +25%
 
 ### Boosts
  * Slow Breeders: -6% from -10%
- * Resilient: +50% to defensive army damage/health/morale
+ * Resilient: +25% to defensive army health/morale
  * Venerable: +1 starting level to leaders
  * Very Strong: +60% Army damage and +6.25% resources from 40% army damage and +5% resources
  * Talented: +2 leader level cap
@@ -161,7 +163,7 @@
 ### Boosts
  * Logic Engines: +9% research from +10%
  * Custom made: -10% assembly speed from -15%
- * Recycled: -40% assembly cost from -20%
+ * Recycled: -30% assembly cost from -20%
  * Uncanny: -15% to amenities from -20%
  * Learning Algorithms: +35% to leader leveling speed from +25%
  * Enhanced Memory: +1 starting level to leaders
