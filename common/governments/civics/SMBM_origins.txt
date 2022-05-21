@@ -85,7 +85,7 @@ origin_clone_army = {
 	}
 
 	modifier = {
-		country_unity_produces_mult = -0.10
+		planet_jobs_unity_produces_mult = -0.10
 	}
 
 	description = origin_tooltip_clone_army_effects

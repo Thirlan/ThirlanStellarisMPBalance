@@ -1,3 +1,31 @@
+# 2022/05/21 - 1.3.4
+
+Some updates based on metas both old and new.
+
+Removed:
+ * Barbaric Despoilers: +5% to ship speed
+ 
+Changed:
+ * Resilient: +25% to defensive army health/morale
+ * Rogue Servitor: Bio Trophies produce +2 unity from +3 and 0.8% complex drone output boost from 1%
+ * Clone Army: 1/4/5/8/12 to current pop assembly from 2/5/7/10/15 and +20% fire rate for clone admirals from +25%
+ * Aquatics: +7% energy/mineral/food/housing production on Ocean worlds from +10%
+
+Added:
+ * Devouring Swarm: +50% market fee penalty
+ * Determined Exterminator: +50% market fee penalty
+ * Prosperous Unification: +10% happiness from +15%
+ 
+The big change here is the market fee to the two Total War civics. These two in general are a hotly debated civic. They are generally banned in multiplayer but there are arguments they are between S and A rank and might not deserve the ban as much as Determined Assimilators or Fanatical Purifiers.
+
+Their combat bonuses are impressive but the fact that both of them destroy pops they conquer tends to mean that all wars have very poor return on investment. Combine with the fact that your pops are destroyed upon being conquered and people can declare war on you as easily as you can on them, which results in multiple players attacking at once, there is a double edged sword to the entire mechanic.
+
+As such it has been a back and forth mentally about whether they should or should not be nerfed. In the end the decision is to give them a nerf but ultimately an interesting one. The penalty to market fees radically changes these civics and make them a bit more challenging in an interesting way. Most professional players in Stellaris will carefully regulate their resources per month to be optimal. Much of this is done by buying and selling resources on the market, but with this taken away from the two exterminators it now means they have to focus a lot more on job and stockpile logistics.
+
+This change, beyond making it harder at the start of the game to optimize, also feels more flavorful for these two civics. There is no internal market in a gestalt society bent on killing everyone, only the humming of your drones as they collect resources that have to be stockpiled.
+
+Note the penalty is not 70%, which would result in a 100% fee and cause all selling to be worth 0 and all buying to cost double. The reason behind this is for (1) at least give the option to get out of death spirals and (2) the AI does use the market a little bit so we didn't want it to cause really bad AI issues (3) we did not want to create some kind of exploit or bug. The penalty as it is though is bad enough that it will only be used in emergencies and not for daily purchases.
+
 # 2022/05/19 - 1.3.3
 
 Minor changes to be compliant with 3.4.3
