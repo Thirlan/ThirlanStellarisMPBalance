@@ -29,6 +29,7 @@ origin_tooltip_clone_army_effects:0 "- Start with §Y2§! £building£ §H$build
  requires_ap_enigmatic_engineering: "$TRIGGER_FAIL$Requires the §Y$ap_enigmatic_engineering$§! Ascension Perk."
  ap_transcendent_learning_modifier_desc: "Leader Level Cap: §G+1§!\nLeader Starting Level: §G+1§!\nLeader Experience Gain: §G+75%§!"
  describe_edict_consectrated_worlds:5 "§EConsecrating planets (up to §Y3§!) increases §YSpiritualist Ethics Attraction§! and §YEmpire-Wide Amenities§! as well as £unity£ §YUnity Generation§!, scaling to the spiritual significance of the worlds consecrated.§!"
+ consecrated_worlds_good:0 "\n§YThis object is suitable for consecration§!"
 
 # TRADITIONS
  tr_expansion_a_new_life_desc:3 "£pops£ §Y$MOD_POP_GROWTH_SPEED$§! increased by §G+6%§!."
@@ -36,6 +37,9 @@ origin_tooltip_clone_army_effects:0 "- Start with §Y2§! £building£ §H$build
 
 # POLICY
 leader_enhancement_capacity_boosters_desc:0 "We leave nothing to chance, no matter the cost. Through exacting curation of DNA banks do we build the leaders of tomorrow.\n\n§HIf active our Empire gains:§!\nLeader starting level: §G+1§!"
+
+# SHIP COMPONENTS
+JUMP_DRIVE_PENALTY:0 "While Jump Drive is recharging, this fleet suffers the following penalties:\n§Y$MOD_SHIP_WEAPON_DAMAGE$:§! §R-60%§!\n§Y$MOD_SHIP_SPEED_MULT$:§! §R-60%§!"
 
 # CUSTOM SMBM EVENTS
  be_careful_out_there: "Be careful out there"

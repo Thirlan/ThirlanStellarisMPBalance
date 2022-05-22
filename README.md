@@ -45,4 +45,4 @@ Some mechanics are overpowered because others are RELATIVELY underpowered. Hence
 What is decided to be underpowered will be done in much of the same way as what is decided to be overpowered.
 
 ### Do not change the meta
-This rule mostly falls in line with the other rules about tackling S, D and F powers, but it is worth reiterating. The mod should only weaken the meta, not change it. As such is better to make small incremental changes rather than large sweeping boosts and penalties.
+This rule mostly falls in line with the other rules about tackling S, D and F powers, but it is worth reiterating. The mod should only weaken the meta, not change it. As such it is better to make small incremental changes rather than large sweeping boosts and penalties.

@@ -62,9 +62,10 @@
  * Enigmatic Engineering: +4 encryption from +2 and ascension perks required dropped to 0 from 1
  * Galactic Force Projection: +5% sublight speed
  * Consecrate Worlds:
-   * Can now consecrate an occupied world
-   * Capitals or worlds with either Titanic Life, Atmospheric Aphrodisiac, Natural Beauty, Second Home have a 15% chance of being a Respected World, 35% chance of being a Venerated World and 50% of being a Holy world
-   * Planets with Dead God, Paradise Made, Sentinels or the Loop Temple Pilgrims' Way event have a 100% chance of being a Holy World
+  * Can now consecrate an occupied world
+  * Capitals or Second Home have a 30% chance of being a Respected World, 60% chance of being a Venerated World and 10% of being a Holy world
+  * Worlds with either Titanic Life, Atmospheric Aphrodisiac or Natural Beauty have a 15% chance of being a Respected World, 65% chance of being a Venerated World and 20% of being a Holy world
+  * Planets with Dead God, Paradise Made, Sentinels or the Loop Temple Pilgrims' Way event have a 100% chance of being a Holy World
 
 ## Traditions
 

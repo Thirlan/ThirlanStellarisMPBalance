@@ -766,10 +766,76 @@ decision_consecrated_worlds = {
 					
 					OR = {
 						is_capital = yes
+						has_modifier = "second_home"
+					}
+					NOT = { has_planet_modifier = "pm_titanic_life" }
+					NOT = { has_planet_modifier = "pm_atmospheric_aphrodisiac" }
+					NOT = { has_planet_modifier = "pm_natural_beauty" }
+					NOT = { is_planet_class = pc_gaia }
+					NOT = { has_modifier = "dead_god" }
+					NOT = { has_modifier = "paradise_made" }
+					NOT = { has_modifier = "sentinels_planet_modifier" }
+					NOT = { has_modifier = "spiritual_happy_with_open_loop_temple" }
+				}
+				custom_tooltip = consecrated_worlds_good
+				random_list = {
+					0 = {
+						add_modifier = {
+							modifier = consecrated_quality_1
+							days = -1
+						}
+						from = {
+							change_variable = {
+								which = consecrated_variable
+								value = 1
+							}
+						}
+					}
+					30 = {
+						add_modifier = {
+							modifier = consecrated_quality_2
+							days = -1
+						}
+						from = {
+							change_variable = {
+								which = consecrated_variable
+								value = 2
+							}
+						}
+					}
+					60 = {
+						add_modifier = {
+							modifier = consecrated_quality_3
+							days = -1
+						}
+						from = {
+							change_variable = {
+								which = consecrated_variable
+								value = 3
+							}
+						}
+					}
+					10 = {
+						add_modifier = {
+							modifier = consecrated_quality_4
+							days = -1
+						}
+						from = {
+							change_variable = {
+								which = consecrated_variable
+								value = 4
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					
+					OR = {
 						has_planet_modifier = "pm_titanic_life"
 						has_planet_modifier = "pm_atmospheric_aphrodisiac"
 						has_planet_modifier = "pm_natural_beauty"
-						has_modifier = "second_home"
 					}
 					NOT = { is_planet_class = pc_gaia }
 					NOT = { has_modifier = "dead_god" }
@@ -777,7 +843,7 @@ decision_consecrated_worlds = {
 					NOT = { has_modifier = "sentinels_planet_modifier" }
 					NOT = { has_modifier = "spiritual_happy_with_open_loop_temple" }
 				}
-				custom_tooltip = consecrated_worlds_suitable
+				custom_tooltip = consecrated_worlds_good
 				random_list = {
 					0 = {
 						add_modifier = {
@@ -803,7 +869,7 @@ decision_consecrated_worlds = {
 							}
 						}
 					}
-					35 = {
+					65 = {
 						add_modifier = {
 							modifier = consecrated_quality_3
 							days = -1
@@ -815,7 +881,7 @@ decision_consecrated_worlds = {
 							}
 						}
 					}
-					50 = {
+					20 = {
 						add_modifier = {
 							modifier = consecrated_quality_4
 							days = -1
