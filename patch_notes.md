@@ -1,4 +1,4 @@
-# Version 1.3.5
+# Version 1.3.6
 
 ## General tweaks
 
@@ -9,7 +9,12 @@
  * STARBASE_CAPACITY_BASE: 2 from 3
  * STARBASE_CAPACITY_SYSTEM_MULT: 0.08 from 0.1
  * Starbase overcapacity upkeep penalty: +35% from +25%
- * Jump Drive: Prethoryn and Contingency can now spawn if Jump Drives researched. Jump drives also increase the odds of the crisis spawning sooner from 19% to 37%.
+ * Jump Drive:
+   * Prethoryn and Contingency can now spawn if Jump Drives researched. Jump drives also increase the odds of the crisis spawning sooner from 19% to 37%.
+   * Range decreased by 10%
+   * Jump drive penalty increased to -60% to weapons/movement from -50%
+ * Proton Launchers: -10% to min and max damage
+ * Crystalline Hulls: 10% increased material cost
  
 ### Boosts
  * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -60% defense platform build cost and +15% starbase damage boost for the first 20 years of the game.
@@ -57,9 +62,10 @@
  * Enigmatic Engineering: +4 encryption from +2 and ascension perks required dropped to 0 from 1
  * Galactic Force Projection: +5% sublight speed
  * Consecrate Worlds:
-   * Can now consecrate an occupied world
-   * Capitals or worlds with either Titanic Life, Atmospheric Aphrodisiac, Natural Beauty, Second Home have a 15% chance of being a Respected World, 35% chance of being a Venerated World and 50% of being a Holy world
-   * Planets with Dead God, Paradise Made, Sentinels or the Loop Temple Pilgrims' Way event have a 100% chance of being a Holy World
+  * Can now consecrate an occupied world
+  * Capitals or Second Home have a 30% chance of being a Respected World, 60% chance of being a Venerated World and 10% of being a Holy world
+  * Worlds with either Titanic Life, Atmospheric Aphrodisiac or Natural Beauty have a 15% chance of being a Respected World, 65% chance of being a Venerated World and 20% of being a Holy world
+  * Planets with Dead God, Paradise Made, Sentinels or the Loop Temple Pilgrims' Way event have a 100% chance of being a Holy World
 
 ## Traditions
 

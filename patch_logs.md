@@ -1,3 +1,21 @@
+# 2022/05/22 - 1.3.6
+
+Added:
+* Proton Launchers: -10% to min and max damage
+* Crystalline Hulls: 10% increased material cost
+* Jump Drives: -10% to jump drive range and -60% to ship damage/speed from -50%
+
+Changed:
+* Consecrate Worlds:
+  * Can now consecrate an occupied world
+  * Capitals or Second Home have a 30% chance of being a Respected World, 60% chance of being a Venerated World and 10% of being a Holy world
+  * Worlds with either Titanic Life, Atmospheric Aphrodisiac or Natural Beauty have a 15% chance of being a Respected World, 65% chance of being a Venerated World and 20% of being a Holy world
+  * Planets with Dead God, Paradise Made, Sentinels or the Loop Temple Pilgrims' Way event have a 100% chance of being a Holy World
+
+Some additional fixes based on some of the more RNG parts of the game. These weapons are often considered to be so good they radically alter the game for those who get them. This slightly reduces their effectiveness but make no mistake they are still very good.
+
+Small tweak to Consecrate Worlds, mostly with Capitals. Original boost was too easy for Capitals. With this change there is still a desire to go out and hunt for Holy Worlds to get a better chance at an upgrade.
+
 # 2022/05/21 - 1.3.5
 
 Small text clean ups
