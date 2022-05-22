@@ -23,6 +23,7 @@ What is balanced, what is not balanced and how changes are made will be done wit
 1. Keep it Simple
 2. Nerf overpowered mechanics
 3. Boost underpowered mechanics
+4. Do not change the meta
 
 ### Keep it Simple
 The first objective of this mod is to KEEP IT SIMPLE and impact as little as possible to avoid breaking other aspects of the game. The reasons for doing this are the following:
@@ -42,3 +43,6 @@ How do we decide what is S powered? This will be done after reviewing personal f
 Some mechanics are overpowered because others are RELATIVELY underpowered. Hence some of the clearly underpowered mechanics will be given boosts.
 
 What is decided to be underpowered will be done in much of the same way as what is decided to be overpowered.
+
+### Do not change the meta
+This rule mostly falls in line with the other rules about tackling S, D and F powers, but it is worth reiterating. The mod should only weaken the meta, not change it. As such is better to make small incremental changes rather than large sweeping boosts and penalties.

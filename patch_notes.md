@@ -1,4 +1,4 @@
-# Version 1.3.5
+# Version 1.3.6
 
 ## General tweaks
 
@@ -9,7 +9,12 @@
  * STARBASE_CAPACITY_BASE: 2 from 3
  * STARBASE_CAPACITY_SYSTEM_MULT: 0.08 from 0.1
  * Starbase overcapacity upkeep penalty: +35% from +25%
- * Jump Drive: Prethoryn and Contingency can now spawn if Jump Drives researched. Jump drives also increase the odds of the crisis spawning sooner from 19% to 37%.
+ * Jump Drive:
+   * Prethoryn and Contingency can now spawn if Jump Drives researched. Jump drives also increase the odds of the crisis spawning sooner from 19% to 37%.
+   * Range decreased by 10%
+   * Jump drive penalty increased to -60% to weapons/movement from -50%
+ * Proton Launchers: -10% to min and max damage
+ * Crystalline Hulls: 10% increased material cost
  
 ### Boosts
  * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -60% defense platform build cost and +15% starbase damage boost for the first 20 years of the game.

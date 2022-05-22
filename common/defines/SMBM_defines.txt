@@ -3,3 +3,7 @@
 		STARBASE_CAPACITY_BASE 			= 2
 		STARBASE_CAPACITY_SYSTEM_MULT	= 0.08	# Mult value of Starbase Capacity for each owned system
 	}
+
+	NShip = {
+		JUMP_DRIVE_RANGE				= 90
+	}

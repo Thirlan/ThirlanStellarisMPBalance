@@ -1,3 +1,12 @@
+# 2022/05/22 - 1.3.6
+
+Added:
+* Proton Launchers: -10% to min and max damage
+* Crystalline Hulls: 10% increased material cost
+* Jump Drives: -10% to jump drive range and -60% to ship damage/speed from -50%
+
+Some additional fixes based on some of the more RNG parts of the game. These weapons are often considered to be so good they radically alter the game for those who get them. This slightly reduces their effectiveness but make no mistake they are still very good.
+
 # 2022/05/21 - 1.3.5
 
 Small text clean ups
