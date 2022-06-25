@@ -1,4 +1,4 @@
-# Version 1.3.6
+# Version 1.3.7
 
 ## General tweaks
 
@@ -139,6 +139,8 @@
  * Hegemon: "Long live the hegemony" event gifts the player with +200 influence and +75 alloy 30 days after game start.
  * Galactic Doorstep: +15% Physics research
  * Post Apocalyptic: +10% Habitability bonus
+ * Shattered Ring Origin: Starbase influence and material cost -10%
+ * Life Seeded: Starbase influence and material cost -10%
  
 ## Species Traits:
 

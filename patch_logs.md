@@ -1,3 +1,16 @@
+# 2022/06/25 - 1.3.7
+
+Updated to include 3.4.4 fixes
+
+Added:
+ * Shattered Ring Origin: Starbase influence and material cost -10%
+ * Life Seeded: Starbase influence and material cost -10%
+
+Removed:
+ * Expansion (a new life): +6% to population growth from +10%
+
+Added a slight buff to the single planet origins that allows them to expand faster with starbases to compensate for the one planet they have early game.
+
 # 2022/05/22 - 1.3.6
 
 Added:

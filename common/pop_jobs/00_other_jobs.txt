@@ -693,7 +693,7 @@ criminal = {
 
 	planet_modifier = {
 		trade_value_add = -5
-		branch_office_criminal_syndicate_value_add = 5
+		branch_office_criminal_syndicate_value_add = 7.5
 	}
 
 	weight = {
