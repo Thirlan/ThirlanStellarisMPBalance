@@ -48,8 +48,7 @@ civic_philosopher_king = {
 	random_weight = { base = 5 }
 	modifier = {
 		country_unity_produces_mult = 0.03
-		all_technology_research_speed = 0.03
-		ruler_skill_levels = 2
+		ruler_skill_levels = 1
 	}
 }
 

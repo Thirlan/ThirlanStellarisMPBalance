@@ -14,5 +14,9 @@ on_leader_spawned = {
         smbm.14 # Ruthless Competition Boost
         smbm.15 # Pooled Knowledge Boost
         smbm.16 # Enhanced Memory Boost
+        smbm.17 # Grand Council Boost
+        smbm.18 # Viceroy Boost
+        smbm.19 # Philosopher King Boost
+        smbm.20 # Talented Boost
 	}
 }

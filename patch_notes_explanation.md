@@ -48,11 +48,11 @@ Because of this, there is a special event, "Unholy matrimony", at game start tha
 
 ## Leadership cap
 
-Many of the leadership cap game choices are considered very weak due to how little of a buff it gives throughout the game. It can be trivial to reach the leadership cap of 10 through various racial traits, technologies, ascension perks, traditions and even civics. Hence once someone reaches 10, all the other leadership cap game choices lose some or all of their value.
+Many of the leadership cap game choices are considered very weak due to how little of a buff it gives throughout the game. It can be trivial to reach the leadership cap of 10 through various racial traits, technologies, ascension perks, traditions and civics. Hence once someone reaches 10, all the other leadership cap game choices lose all of their value. As of this writing it is possible for a bio empire to accumulate +18 in bonuses to leader level cap for scientists for example.
 
 The leadership cap bonuses also loses some of its value since most leaders will often plateau at 5, with or without a cap bonus, because of experience gains and mortality. In addition, the % gains for going from 5 to 6 are less (20%) than the gains from going from 4 to 5 (25%).
 
-Due to this, one of the simpler ways of buffing the leadership cap game choices has been to reduce the standard cap on leader levels from 5 to 4 and also modify a lot of the leadership cap skills that give +2 to leadership cap to give +1 to leadership cap and +1 to starting leader level instead.
+Due to this, one of the simpler ways of buffing the leadership cap game choices has been to reduce the base cap on leaders and also reduce leadership cap skills bonuses from certain powers and for those that give +2 to leadership cap to give +1 to leadership cap instead with +1 to starting leader levels instead.
 
 ## Army buffs
 
@@ -60,7 +60,7 @@ Armies are a very minor element of Stellaris. They are only relevant if you are 
 
 In this regard, it is unclear why Paradox was so timid with the army buff game choices. Take the resilient trait, which gives +50% army damage to defending army units. This essentially means that if you have 2 defensive units on the planet, then the 50% buff implies there are ~2.5 units on the planet (not 3 because all we did was buff damage and not health or morale). Considering that most people invade with stacks of at least 10, the 50% buff is not even noticeable. On top of this, this buff only helps if you are being invaded, which would mean you have lost naval superiority and very likely have lost the game. The Resilient trait is what would be considered a losing power, which is to say it only comes into effect when you are losing.
 
-As of late Stellaris has made some changes to some of the Army game choices like Strenght of Legions or Warbots. There are still some though such as Resilient that are not given much love.
+As of late Stellaris has made some changes to some of the Army game choices like Strength of Legions or Warbots. There are still some though such as Resilient that are not given much attention.
 
 ## Be careful out there (event)
 
@@ -86,7 +86,7 @@ Changes to the Weapons are mostly focused on the core weapons that radically alt
 
 Jump drives are a fairly obvious one. If someone randomly rolls jump drives in their tech sooner than others then it is vey easy for them to skip defenses and attack any planet. The only valid defense against this is for the defender to put large armies on all planets and turn all stations around their planets into defense stations. Even then that can some times not be enough because stations do not scale in strength the same way as fleets. As such a small nerf to range and increase in jump penalty means it is a little bit harder to jump straight into core systems. Ships now need to move just a bit closer so it can telegraph what the intended target is a bit more and also the increased penalty means that if the defender fortifies their station enough the fleet cannot jump straight into the system.
 
-Proton launchers have been the core weapon for the longest part of the game's history. They are well understood to be game changers and getting to them first can allow a player to dominate for the longest time.
+Proton launchers have been the core weapon for the longest part of the game's history. They are well understood to be game changers and getting to them first can allow a player to easily dominate.
 
 Crystalline hulls is another random tech that is so good that it counts as having level 4 armor and make ships cheaper. Because it can be reached so early in the game and can make the ships so much cheaper it gives a massive advantage to whichever player gets to it first.
 

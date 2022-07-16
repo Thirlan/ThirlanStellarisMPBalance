@@ -1,23 +1,42 @@
-# Version 1.3.7
+# Version 1.3.8
 
 ## General tweaks
 
 ### Nerfs
- * Unholy Matrimony (event): New event at game start that will give a purge speed penalty to all players (AIs not included) with the following combinations:
-   * Necrophage and Fanatical Purifier -25%
- * Base Leader skill cap: 4 from 5
+ * Unholy Matrimony Event (Necrophage and Fanatical Purifier): -25% purge speed penalty to all players (AIs not included)
+ * Base Leader skill cap: 3 from 5
  * STARBASE_CAPACITY_BASE: 2 from 3
  * STARBASE_CAPACITY_SYSTEM_MULT: 0.08 from 0.1
  * Starbase overcapacity upkeep penalty: +35% from +25%
+ * Anti-AI Trade exploits:
+   * FAVOR_CAP: 5 from 10
+   * RESEARCH_AGREEMENT_ACCEPTANCE_OPINION_FACTOR: 0.3 from 0.4
+   * RESEARCH_AGREEMENT_ACCEPTANCE_NUM_PACTS: -40 from -30
+   * RESEARCH_AGREEMENT_ACCEPTANCE_GIVEN_TECHS: -0.6 from -0.5
+   * TRADE_MIN_RESOURCE_STOCKPILE: 1000 from 500
+   * TRADE_VALUE_RESOURCE: 1.5 from 2.0
+   * TRADE_VALUE_SENSOR_CHARTS: 1 from 2
+   * TRADE_VALUE_SENSOR_LINK_MAX: 0.75 from 1.0
+   * EMBASSY_IMPROVE_RELATION_MULTIPLIER: 2.0 from 3.0
+ * Anti-AI vassal exploits:
+   * NEGOTIATE_AGREEMENT_ACCEPTANCE_OPINION_FACTOR: 0.20 from 0.333
+   * NEGOTIATE_AGREEMENT_RESOURCE_ACCEPTANCE_COEFICIENT_FOR_OVERLORD: 1.5 from 1.0
+
+### Boosts
+ * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -60% defense platform build cost and +15% starbase damage boost for the first 20 years of the game.
+
+## Ships
+
+### Nerfs
  * Jump Drive:
    * Prethoryn and Contingency can now spawn if Jump Drives researched. Jump drives also increase the odds of the crisis spawning sooner from 19% to 37%.
-   * Range decreased by 10%
+   * Range decreased by 25%
    * Jump drive penalty increased to -60% to weapons/movement from -50%
  * Proton Launchers: -10% to min and max damage
  * Crystalline Hulls: 10% increased material cost
- 
+
 ### Boosts
- * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -60% defense platform build cost and +15% starbase damage boost for the first 20 years of the game.
+ * none
 
 ## Government
 
@@ -72,9 +91,12 @@
 ### Nerfs
  * Prosperity (Completion bonus): +3 Stability from +5
  * Expansion (a new life): +6% to population growth from +10%
+ * Supremacy (War Games): Admiral leader cap level +1 from +2
+ * Discovery (Science Division): Scientist leader cap level +1 from +2
  
 ### Boosts
- * none
+ * Domination (Grand Council): Ruler leader cap level +1 from +2 and +1 to starting level
+ * Domination (Viceroys): Governor leader cap level +1 from +2 and +1 to starting level
 
 ## Standard Civics
 
@@ -85,7 +107,7 @@
  * Technocracy: -5% to Naval Capacity, -5 Naval Capacity, +5% to ship cost and -5% to ship build speed
 
 ### Boosts
- * Philosopher King: +3% to unity and research
+ * Philosopher King: Ruler leader cap level +1 from +2 and +1 to starting level and +3% to unity
  * Free Haven: +20% pop growth from immigration from 15% and 60% immigration pull from 50%
  * Efficient Bureaucracy: -40% administrator upkeep from -20%
  * Anglers: Pearl Divers give +4 trade goods from +3
@@ -132,14 +154,16 @@
 ### Nerfs
  * Prosperous Unification: +10% happiness from +15%
  * Scion: -5% happiness and -20% Ethics attraction
+ * Imperial Fiefdom origin: -5% happiness, -20% Ethics attraction and Overlord starting opinion bonus 90 from 120
  * Clone Army: 1/4/5/8/12 to current pop assembly from 2/5/7/10/15 and +20% fire rate for clone admirals from +25%
 
 ### Boosts
  * Common Ground: "Live long and prosper" events gifts the player a science ship and scientist with +125 influence 30 days after game start. 6 months later they will be gifted a construction ship with another +125 influence.
  * Hegemon: "Long live the hegemony" event gifts the player with +200 influence and +75 alloy 30 days after game start.
  * Galactic Doorstep: +15% Physics research
+ * Slingshot to the Stars: +15% Physics research
  * Post Apocalyptic: +10% Habitability bonus
- * Shattered Ring Origin: Starbase influence and material cost -10%
+ * Shattered Ring: Starbase influence and material cost -10%
  * Life Seeded: Starbase influence and material cost -10%
  
 ## Species Traits:
@@ -157,7 +181,7 @@
  * Resilient: +25% to defensive army health/morale
  * Venerable: +1 starting level to leaders
  * Very Strong: +60% Army damage and +6.25% resources from 40% army damage and +5% resources
- * Talented: +2 leader level cap
+ * Talented: +1 to starting level
  * Nonadaptive: -6% habitability from -10%
  * Repugnant: -15% to amenities from -20%
  * Quick Learners: +35% to leader leveling speed from +25%
