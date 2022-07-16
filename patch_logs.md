@@ -1,3 +1,45 @@
+# 2022/07/16 - 1.3.9
+
+AI in general has been exploitable in trades, especially with the Imperial Fiefdom Origin. Some additional changes have been made to prevent this.
+
+Added:
+ * Imperial Fiefdom origin: -5% happiness, -20% Ethics attraction and Overlord starting opinion bonus 90 from 120
+ * Anti-AI Trade exploits:
+   * FAVOR_CAP: 5 from 10
+   * RESEARCH_AGREEMENT_ACCEPTANCE_OPINION_FACTOR: 0.3 from 0.4
+   * RESEARCH_AGREEMENT_ACCEPTANCE_NUM_PACTS: -40 from -30
+   * RESEARCH_AGREEMENT_ACCEPTANCE_GIVEN_TECHS: -0.6 from -0.5
+   * TRADE_MIN_RESOURCE_STOCKPILE: 1000 from 500
+   * TRADE_VALUE_RESOURCE: 1.5 from 2.0
+   * TRADE_VALUE_SENSOR_CHARTS: 1 from 2
+   * TRADE_VALUE_SENSOR_LINK_MAX: 0.75 from 1.0
+   * EMBASSY_IMPROVE_RELATION_MULTIPLIER: 2.0 from 3.0
+ * Anti-AI vassal exploits:
+   * NEGOTIATE_AGREEMENT_ACCEPTANCE_OPINION_FACTOR: 0.20 from 0.333
+   * NEGOTIATE_AGREEMENT_RESOURCE_ACCEPTANCE_COEFICIENT_FOR_OVERLORD: 1.5 from 1.0
+
+Favors cannot be used so readily to drain the AI of resources. The AI will also be less willing to do Research agreements that are not in their favor as well as give away resources.
+
+For AI overlords, opinion will matter less in a deal and they will be more sensitive to how good the deal is for them.
+
+# 2022/07/01 - 1.3.8
+
+Updated for emergency patch. Also did more analysis on the Leader cap bonuses and tweaked them.
+
+Added:
+ * Supremacy (War Games): Admiral leader cap level +1 from +2
+ * Discovery (Science Division): Scientist leader cap level +1 from +2
+ * Domination (Grand Council): Ruler leader cap level +1 from +2 and +1 to starting level
+ * Domination (Viceroys): Governor leader cap level +1 from +2 and +1 to starting level
+ * Star Slingshot: +15% Physics research
+
+Changed: 
+ * Base Leader skill cap: 3 from 5
+ * Talented: +1 to starting level
+ * Philosopher King: Ruler leader cap level +1 from +2 and +1 to starting level and +3% to unity
+ * Jump Drive:
+   * Range decreased by 25%
+
 # 2022/06/25 - 1.3.7
 
 Updated to include 3.4.4 fixes

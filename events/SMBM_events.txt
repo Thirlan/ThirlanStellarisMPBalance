@@ -330,3 +330,90 @@ country_event = {
 		}
 	}
 }
+
+# Grand Council Boost
+country_event = {
+	id = smbm.17
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_tradition = "tr_domination_grand_council"
+        from = {
+			OR = {
+				leader_class = ruler
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			add_skill = 1
+		}
+	}
+}
+
+# Viceroy Boost
+country_event = {
+	id = smbm.18
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_tradition = "tr_domination_colonial_viceroys"
+        from = {
+			OR = {
+				leader_class = governor
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			add_skill = 1
+		}
+	}
+}
+
+# Philosopher King Boost
+country_event = {
+	id = smbm.19
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_civic = civic_philosopher_king
+        from = {
+			OR = {
+				leader_class = ruler
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			add_skill = 1
+		}
+	}
+}
+
+# Talented boost
+country_event = {
+	id = smbm.20
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_trait = "trait_talented"
+	}
+
+	immediate = {
+		from = {
+			add_skill = 1
+		}
+	}
+}

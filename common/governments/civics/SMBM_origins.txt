@@ -27,6 +27,60 @@ origin_life_seeded = {
 	}
 }
 
+origin_shattered_ring = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_shattered_ring.dds"
+	picture = GFX_origin_shattered_ring
+
+	starting_colony = pc_shattered_ring_habitable
+	habitability_preference = pc_shattered_ring_habitable
+	initializers = { shattered_ring_start }
+	max_once_global = yes
+	non_colonizable_planet_class_neighbor = yes
+
+	playable = {
+		host_has_dlc = Federations
+	}
+
+	possible = {
+		civics = {
+			NOT = { value = civic_agrarian_idyll }
+			NOR = {
+				text = civic_tooltip_not_anglers
+				value = civic_anglers
+				value = civic_corporate_anglers
+			}
+		}
+	}
+
+	description = "origin_tooltip_shattered_ring_effects"
+
+	flags = { custom_start_screen }
+
+	traits = {
+
+	}
+
+	advanced_start = yes
+
+	random_weight = {
+		base = 2
+	}
+
+	modifier = {
+		country_starbase_influence_cost_mult = -0.1
+		starbase_buildings_cost_mult = -0.1
+	}
+
+	#swap_type = {
+	#	description = "origin_tooltip_shattered_ring_effects_lithoid"
+	#
+	#	trigger = {
+	#		local_human_species_class = LITHOID
+	#	}
+	#}
+}
+
 origin_scion = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_scion_1.dds"
@@ -96,56 +150,65 @@ origin_galactic_doorstep = {
 	}
 }
 
-origin_shattered_ring = {
+origin_star_slingshot = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_shattered_ring.dds"
-	picture = GFX_origin_shattered_ring
-
-	starting_colony = pc_shattered_ring_habitable
-	habitability_preference = pc_shattered_ring_habitable
-	initializers = { shattered_ring_start }
-	max_once_global = yes
-	non_colonizable_planet_class_neighbor = yes
+	icon = "gfx/interface/icons/origins/origins_star_slingshot.dds"
+	picture = GFX_origin_star_slingshot
 
 	playable = {
-		host_has_dlc = Federations
+		has_overlord_dlc = yes
+	}
+
+	possible = {
+
+	}
+
+	description = "origin_tooltip_star_slingshot_effects"
+	flags = { custom_start_screen }
+
+	traits = {}
+
+	random_weight = {
+		base = 0
+	}
+
+    modifier = {
+		country_physics_research_produces_mult = 0.15
+	}
+}
+
+origin_imperial_vassal = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_imperial_vassal.dds"
+	picture = GFX_origin_imperial_vassal
+
+	playable = {
+		has_overlord_dlc = yes
 	}
 
 	possible = {
 		civics = {
-			NOT = { value = civic_agrarian_idyll }
 			NOR = {
-				text = civic_tooltip_not_anglers
-				value = civic_anglers
-				value = civic_corporate_anglers
+				value = civic_inwards_perfection
+				value = civic_fanatic_purifiers
+				value = civic_hive_devouring_swarm
+				value = civic_machine_assimilator
+				value = civic_machine_terminator
 			}
 		}
 	}
 
-	description = "origin_tooltip_shattered_ring_effects"
-
+	description = "origin_tooltip_imperial_vassal_effects"
 	flags = { custom_start_screen }
 
-	traits = {
-
-	}
-
-	advanced_start = yes
+	traits = {}
 
 	random_weight = {
-		base = 2
+		base = 0
 	}
 
 	modifier = {
-		country_starbase_influence_cost_mult = -0.1
-		starbase_buildings_cost_mult = -0.1
+		pop_government_ethic_attraction = -0.20
+		pop_happiness = -0.05
 	}
-
-	#swap_type = {
-	#	description = "origin_tooltip_shattered_ring_effects_lithoid"
-	#
-	#	trigger = {
-	#		local_human_species_class = LITHOID
-	#	}
-	#}
 }
