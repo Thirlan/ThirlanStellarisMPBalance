@@ -728,17 +728,23 @@ culture_worker = {
 	resources = {
 		category = planet_culture_workers
 		produces = {
-			unity = 3
-			society_research = 3
+			unity = 4
 		}
 		upkeep = {
-			consumer_goods = 2
+			consumer_goods = 3
 		}
+	}
+
+	inline_script = "jobs/culture_worker_outputs"
+
+	planet_modifier = {
+		pop_government_ethic_attraction = 0.10
 	}
 
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_multiple_resources_modifier|JOB|culture_worker|RESOURCE1|unity|WEIGHT1|0.5|RESOURCE2|society_research|WEIGHT2|0.5|
+		mult = value:job_weights_modifier|JOB|culture_worker|RESOURCE|unity|
+		# We deliberately don't weight the ethics-based modifiers
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
@@ -1261,15 +1267,27 @@ bluelotus_technician = {
 		}
 		upkeep = {
 			trigger = {
+				is_organic_species = yes
 				is_phototrophic = yes
+				is_lithoid = no
 			}
 			food = @living_standard_phototrophic_normal
 		}
 		upkeep = {
 			trigger = {
+				is_organic_species = yes
+				is_phototrophic = no
 				is_lithoid = yes
 			}
 			minerals = @living_standard_food_normal
+		}
+		upkeep = {
+			trigger = {
+				is_organic_species = yes
+				is_phototrophic = yes
+				is_lithoid = yes
+			}
+			minerals = @living_standard_phototrophic_normal
 		}
 		upkeep = {
 			trigger = {
@@ -1320,59 +1338,26 @@ death_chronicler = {
 	possible = { complex_specialist_job_check_trigger = yes }
 
 	resources = {
-		category = planet_administrators
+		category = planet_culture_workers
 		produces = {
-			unity = 2
-			society_research = 2
+			unity = 4
 		}
 		upkeep = {
-			consumer_goods = 2
-		}
-		upkeep = {
-			trigger = {
-				is_organic_species = yes
-				is_phototrophic = no
-				is_lithoid = no
-			}
-			food = @living_standard_food_normal
-		}
-		upkeep = {
-			trigger = {
-				has_phototrophic_energy_upkeep = yes
-			}
-			energy = @living_standard_phototrophic_normal
-		}
-		upkeep = {
-			trigger = {
-				is_phototrophic = yes
-			}
-			food = @living_standard_phototrophic_normal
-		}
-		upkeep = {
-			trigger = {
-				is_lithoid = yes
-			}
-			minerals = @living_standard_food_normal
+			consumer_goods = 3
 		}
 	}
+
+	inline_script = "jobs/culture_worker_outputs"
 
 	planet_modifier = {
-		planet_stability_add = 2
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			always = yes
-		}
-		planet_amenities_add = 2
-		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+		planet_stability_add = 2.5
 	}
 
 	weight = {
 		weight = @specialist_job_weight
 		mult = 2
-		mult = value:job_weights_multiple_resources_modifier|JOB|death_chronicler|RESOURCE1|physics_research|WEIGHT1|0.5|RESOURCE2|society_research|WEIGHT2|0.5|
-		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		mult = value:job_weights_modifier|JOB|death_chronicler|RESOURCE|unity|
+		# We deliberately don't weight the ethics-based modifiers
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
@@ -1380,6 +1365,10 @@ death_chronicler = {
 		modifier = {
 			factor = 0.1
 			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 1.5
+			has_job = death_chronicler
 		}
 	}
 }
@@ -1463,7 +1452,9 @@ necro_apprentice = {
 		}
 		upkeep = {
 			trigger = {
+				is_organic_species = yes
 				is_phototrophic = yes
+				is_lithoid = no
 			}
 			food = @living_standard_phototrophic_normal
 		}
@@ -1479,20 +1470,34 @@ necro_apprentice = {
 			trigger = {
 				exists = owner
 				owner = { is_hive_empire = yes }
+				is_organic_species = yes
 				is_phototrophic = yes
+				is_lithoid = no
 			}
 			food = @living_standard_phototrophic_normal
 		}
 		upkeep = {
 			trigger = {
+				is_organic_species = yes
+				is_phototrophic = no
 				is_lithoid = yes
 			}
 			minerals = @living_standard_food_normal
 		}
 		upkeep = {
 			trigger = {
+				is_organic_species = yes
+				is_phototrophic = yes
+				is_lithoid = yes
+			}
+			minerals = @living_standard_phototrophic_normal
+		}
+		upkeep = {
+			trigger = {
 				exists = owner
 				owner = { is_hive_empire = yes }
+				is_organic_species = yes
+				is_phototrophic = no
 				is_lithoid = yes
 			}
 			minerals = @living_standard_food_normal

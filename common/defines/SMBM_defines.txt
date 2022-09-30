@@ -1,4 +1,7 @@
 	NGameplay = {
+		LEADER_AGE_DEATH_CHANCE_AGE	= 75			# Before this age the chance wont increase
+		LEADER_AGE_HIGH_DEATH_CHANCE_AGE = 95		# Above this age, death chance increases drastically
+
 		LEADER_BASE_SKILL_CAP			= 3
 		STARBASE_CAPACITY_BASE 			= 2
 		STARBASE_CAPACITY_SYSTEM_MULT	= 0.08	# Mult value of Starbase Capacity for each owned system

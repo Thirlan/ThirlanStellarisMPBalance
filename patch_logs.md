@@ -1,3 +1,24 @@
+# 2022/10/01 - 1.4.0
+
+Updated to be compatible with version 1.5.2 as well as to include some but not all new multiplayer meta
+
+Added:
+ * Espionage Operations: difficulties reduced by 4
+ * Pre-planned growth: +25% growth from +30%
+ * Elevated Synapses: +18% research from +20% and +1 leader level from +2
+ * Augmented Intelligence: +9% research from +10%
+ * Expressed Tradition: +15% unity from +10%
+ * Gene Mentorship: +35% leader experience from +25%
+ * LEADER_AGE_DEATH_CHANCE_AGE: 75 from 80
+ * LEADER_AGE_HIGH_DEATH_CHANCE_AGE: 95 from 100
+
+Changed:
+ * Consecrate Worlds: Can now consecrate an occupied world
+ * Very Strong: +60% Army damage and +7.5% resources from 40% army damage and +5% resources
+
+Removed:
+ * Phototrophic: 48% food and 48% energy from 50% food and 50% energy
+
 # 2022/07/16 - 1.3.9
 
 AI in general has been exploitable in trades, especially with the Imperial Fiefdom Origin. Some additional changes have been made to prevent this.

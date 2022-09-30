@@ -558,15 +558,6 @@ decision_consecrated_worlds = {
 						is_planet_class = pc_city
 						is_planet_class = pc_relic
 					}
-					is_capital = no
-					NOT = { has_planet_modifier = "pm_titanic_life" }
-					NOT = { has_planet_modifier = "pm_atmospheric_aphrodisiac" }
-					NOT = { has_planet_modifier = "pm_natural_beauty" }
-					NOT = { has_modifier = "second_home" }
-					NOT = { has_modifier = "dead_god" }
-					NOT = { has_modifier = "paradise_made" }
-					NOT = { has_modifier = "sentinels_planet_modifier" }
-					NOT = { has_modifier = "spiritual_happy_with_open_loop_temple" }
 				}
 				custom_tooltip = consecrated_worlds_unsuitable
 				random_list = {
@@ -585,6 +576,7 @@ decision_consecrated_worlds = {
 							modifier = consecrated_quality_1
 							days = -1
 						}
+
 						from = {
 							change_variable = {
 								which = consecrated_variable
@@ -597,6 +589,14 @@ decision_consecrated_worlds = {
 							modifier = consecrated_quality_2
 							days = -1
 						}
+						create_ambient_object = {
+							type = consecrated_planet_stage_1_object
+							location = this
+
+							use_3d_location = yes
+							entity_scale_to_size = yes
+						}
+
 						from = {
 							change_variable = {
 								which = consecrated_variable
@@ -609,6 +609,14 @@ decision_consecrated_worlds = {
 							modifier = consecrated_quality_3
 							days = -1
 						}
+						create_ambient_object = {
+							type = consecrated_planet_stage_2_object
+							location = this
+
+							use_3d_location = yes
+							entity_scale_to_size = yes
+						}
+
 						from = {
 							change_variable = {
 								which = consecrated_variable
@@ -621,6 +629,14 @@ decision_consecrated_worlds = {
 							modifier = consecrated_quality_4
 							days = -1
 						}
+						create_ambient_object = {
+							type = consecrated_planet_stage_3_object
+							location = this
+
+							use_3d_location = yes
+							entity_scale_to_size = yes
+						}
+
 						from = {
 							change_variable = {
 								which = consecrated_variable
@@ -631,18 +647,7 @@ decision_consecrated_worlds = {
 				}
 			}
 			else_if = {
-				limit = {
-					uninhabitable_regular_planet = yes
-					is_capital = no
-					NOT = { has_planet_modifier = "pm_titanic_life" }
-					NOT = { has_planet_modifier = "pm_atmospheric_aphrodisiac" }
-					NOT = { has_planet_modifier = "pm_natural_beauty" }
-					NOT = { has_modifier = "second_home" }
-					NOT = { has_modifier = "dead_god" }
-					NOT = { has_modifier = "paradise_made" }
-					NOT = { has_modifier = "sentinels_planet_modifier" }
-					NOT = { has_modifier = "spiritual_happy_with_open_loop_temple" }
-				}
+				limit = { uninhabitable_regular_planet = yes }
 				custom_tooltip = consecrated_worlds_unsuitable
 				random_list = {
 					10 = {
@@ -650,6 +655,7 @@ decision_consecrated_worlds = {
 							modifier = consecrated_quality_1
 							days = -1
 						}
+
 						from = {
 							change_variable = {
 								which = consecrated_variable
@@ -662,6 +668,14 @@ decision_consecrated_worlds = {
 							modifier = consecrated_quality_2
 							days = -1
 						}
+						create_ambient_object = {
+							type = consecrated_planet_stage_1_object
+							location = this
+
+							use_3d_location = yes
+							entity_scale_to_size = yes
+						}
+
 						from = {
 							change_variable = {
 								which = consecrated_variable
@@ -670,10 +684,28 @@ decision_consecrated_worlds = {
 						}
 					}
 					20 = {
+						modifier = {
+						add = 20
+							AND = {
+								root.space_owner = {
+									has_origin = origin_toxic_knights
+								}
+								is_planet_class = pc_toxic
+							}
+							is_planet_class = pc_toxic
+						}
 						add_modifier = {
 							modifier = consecrated_quality_3
 							days = -1
 						}
+						create_ambient_object = {
+							type = consecrated_planet_stage_2_object
+							location = this
+
+							use_3d_location = yes
+							entity_scale_to_size = yes
+						}
+
 						from = {
 							change_variable = {
 								which = consecrated_variable
@@ -682,10 +714,27 @@ decision_consecrated_worlds = {
 						}
 					}
 					0 = {
+						modifier = {
+							add = 20
+							AND = {
+								root.space_owner = {
+									has_origin = origin_toxic_knights
+								}
+								is_planet_class = pc_toxic
+							}
+						}
 						add_modifier = {
 							modifier = consecrated_quality_4
 							days = -1
 						}
+						create_ambient_object = {
+							type = consecrated_planet_stage_3_object
+							location = this
+
+							use_3d_location = yes
+							entity_scale_to_size = yes
+						}
+
 						from = {
 							change_variable = {
 								which = consecrated_variable
@@ -699,15 +748,6 @@ decision_consecrated_worlds = {
 				limit = {
 					habitable_planet = yes
 					NOT = { is_planet_class = pc_gaia }
-					is_capital = no
-					NOT = { has_planet_modifier = "pm_titanic_life" }
-					NOT = { has_planet_modifier = "pm_atmospheric_aphrodisiac" }
-					NOT = { has_planet_modifier = "pm_natural_beauty" }
-					NOT = { has_modifier = "second_home" }
-					NOT = { has_modifier = "dead_god" }
-					NOT = { has_modifier = "paradise_made" }
-					NOT = { has_modifier = "sentinels_planet_modifier" }
-					NOT = { has_modifier = "spiritual_happy_with_open_loop_temple" }
 				}
 				custom_tooltip = consecrated_worlds_suitable
 				random_list = {
@@ -716,6 +756,7 @@ decision_consecrated_worlds = {
 							modifier = consecrated_quality_1
 							days = -1
 						}
+
 						from = {
 							change_variable = {
 								which = consecrated_variable
@@ -728,6 +769,14 @@ decision_consecrated_worlds = {
 							modifier = consecrated_quality_2
 							days = -1
 						}
+						create_ambient_object = {
+							type = consecrated_planet_stage_1_object
+							location = this
+
+							use_3d_location = yes
+							entity_scale_to_size = yes
+						}
+
 						from = {
 							change_variable = {
 								which = consecrated_variable
@@ -740,6 +789,14 @@ decision_consecrated_worlds = {
 							modifier = consecrated_quality_3
 							days = -1
 						}
+						create_ambient_object = {
+							type = consecrated_planet_stage_2_object
+							location = this
+
+							use_3d_location = yes
+							entity_scale_to_size = yes
+						}
+
 						from = {
 							change_variable = {
 								which = consecrated_variable
@@ -752,6 +809,14 @@ decision_consecrated_worlds = {
 							modifier = consecrated_quality_4
 							days = -1
 						}
+						create_ambient_object = {
+							type = consecrated_planet_stage_3_object
+							location = this
+
+							use_3d_location = yes
+							entity_scale_to_size = yes
+						}
+
 						from = {
 							change_variable = {
 								which = consecrated_variable
@@ -762,149 +827,7 @@ decision_consecrated_worlds = {
 				}
 			}
 			else_if = {
-				limit = {
-					
-					OR = {
-						is_capital = yes
-						has_modifier = "second_home"
-					}
-					NOT = { has_planet_modifier = "pm_titanic_life" }
-					NOT = { has_planet_modifier = "pm_atmospheric_aphrodisiac" }
-					NOT = { has_planet_modifier = "pm_natural_beauty" }
-					NOT = { is_planet_class = pc_gaia }
-					NOT = { has_modifier = "dead_god" }
-					NOT = { has_modifier = "paradise_made" }
-					NOT = { has_modifier = "sentinels_planet_modifier" }
-					NOT = { has_modifier = "spiritual_happy_with_open_loop_temple" }
-				}
-				custom_tooltip = consecrated_worlds_good
-				random_list = {
-					0 = {
-						add_modifier = {
-							modifier = consecrated_quality_1
-							days = -1
-						}
-						from = {
-							change_variable = {
-								which = consecrated_variable
-								value = 1
-							}
-						}
-					}
-					30 = {
-						add_modifier = {
-							modifier = consecrated_quality_2
-							days = -1
-						}
-						from = {
-							change_variable = {
-								which = consecrated_variable
-								value = 2
-							}
-						}
-					}
-					60 = {
-						add_modifier = {
-							modifier = consecrated_quality_3
-							days = -1
-						}
-						from = {
-							change_variable = {
-								which = consecrated_variable
-								value = 3
-							}
-						}
-					}
-					10 = {
-						add_modifier = {
-							modifier = consecrated_quality_4
-							days = -1
-						}
-						from = {
-							change_variable = {
-								which = consecrated_variable
-								value = 4
-							}
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					
-					OR = {
-						has_planet_modifier = "pm_titanic_life"
-						has_planet_modifier = "pm_atmospheric_aphrodisiac"
-						has_planet_modifier = "pm_natural_beauty"
-					}
-					NOT = { is_planet_class = pc_gaia }
-					NOT = { has_modifier = "dead_god" }
-					NOT = { has_modifier = "paradise_made" }
-					NOT = { has_modifier = "sentinels_planet_modifier" }
-					NOT = { has_modifier = "spiritual_happy_with_open_loop_temple" }
-				}
-				custom_tooltip = consecrated_worlds_good
-				random_list = {
-					0 = {
-						add_modifier = {
-							modifier = consecrated_quality_1
-							days = -1
-						}
-						from = {
-							change_variable = {
-								which = consecrated_variable
-								value = 1
-							}
-						}
-					}
-					15 = {
-						add_modifier = {
-							modifier = consecrated_quality_2
-							days = -1
-						}
-						from = {
-							change_variable = {
-								which = consecrated_variable
-								value = 2
-							}
-						}
-					}
-					65 = {
-						add_modifier = {
-							modifier = consecrated_quality_3
-							days = -1
-						}
-						from = {
-							change_variable = {
-								which = consecrated_variable
-								value = 3
-							}
-						}
-					}
-					20 = {
-						add_modifier = {
-							modifier = consecrated_quality_4
-							days = -1
-						}
-						from = {
-							change_variable = {
-								which = consecrated_variable
-								value = 4
-							}
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					OR = {
-						is_planet_class = pc_gaia
-						has_modifier = "dead_god"
-						has_modifier = "paradise_made"
-						has_modifier = "sentinels_planet_modifier"
-						has_modifier = "spiritual_happy_with_open_loop_temple"
-					}
-				}
+				limit = { is_planet_class = pc_gaia }
 				custom_tooltip = consecrated_worlds_perfect
 				random_list = {
 					0 = {
@@ -924,6 +847,13 @@ decision_consecrated_worlds = {
 							modifier = consecrated_quality_2
 							days = -1
 						}
+						create_ambient_object = {
+							type = consecrated_planet_stage_1_object
+							location = this
+
+							use_3d_location = yes
+							entity_scale_to_size = yes
+						}
 						from = {
 							change_variable = {
 								which = consecrated_variable
@@ -936,6 +866,13 @@ decision_consecrated_worlds = {
 							modifier = consecrated_quality_3
 							days = -1
 						}
+						create_ambient_object = {
+							type = consecrated_planet_stage_2_object
+							location = this
+
+							use_3d_location = yes
+							entity_scale_to_size = yes
+						}
 						from = {
 							change_variable = {
 								which = consecrated_variable
@@ -947,6 +884,13 @@ decision_consecrated_worlds = {
 						add_modifier = {
 							modifier = consecrated_quality_4
 							days = -1
+						}
+						create_ambient_object = {
+							type = consecrated_planet_stage_3_object
+							location = this
+
+							use_3d_location = yes
+							entity_scale_to_size = yes
 						}
 						from = {
 							change_variable = {
@@ -1033,6 +977,14 @@ decision_unconsecrated_worlds = {
 				trigger = has_modifier
 				consecrated_quality_4 = {
 					remove_modifier = consecrated_quality_4
+					solar_system = {
+						random_system_ambient_object = {
+							limit = {
+								is_ambient_object_type = consecrated_planet_stage_3_object
+							}
+							destroy_ambient_object = this
+						}
+					}
 					from = {
 						change_variable = {
 							which = consecrated_variable
@@ -1042,6 +994,14 @@ decision_unconsecrated_worlds = {
 				}
 				consecrated_quality_3 = {
 					remove_modifier = consecrated_quality_3
+					solar_system = {
+						random_system_ambient_object = {
+							limit = {
+								is_ambient_object_type = consecrated_planet_stage_2_object
+							}
+							destroy_ambient_object = this
+						}
+					}
 					from = {
 						change_variable = {
 							which = consecrated_variable
@@ -1051,6 +1011,14 @@ decision_unconsecrated_worlds = {
 				}
 				consecrated_quality_2 = {
 					remove_modifier = consecrated_quality_2
+					solar_system = {
+						random_system_ambient_object = {
+							limit = {
+								is_ambient_object_type = consecrated_planet_stage_1_object
+							}
+							destroy_ambient_object = this
+						}
+					}
 					from = {
 						change_variable = {
 							which = consecrated_variable
@@ -2510,9 +2478,6 @@ decision_expand_planetary_sea = {
 		}
 	}
 
-	ai_weight = {
-		weight = 100
-	}
 	abort_effect = {
 		owner = {
 			random_owned_starbase = {
@@ -2592,6 +2557,10 @@ decision_expand_planetary_sea = {
 		modifier = {
 			factor = 3
 			num_pops > 50
+		}
+		modifier = {
+			factor = 5
+			is_capital = yes
 		}
 	}
 }
@@ -2874,5 +2843,90 @@ incinerate_the_flagella = {
 				}
 			}
 		}
+	}
+}
+
+decision_activate_dimensional_manipulation_device = {
+	owned_planets_only = yes
+	icon = decision_engineering_research
+
+	resources = {
+		category = decisions
+		cost = {
+			sr_dark_matter = 1000
+		}
+	}
+
+	potential = {
+		has_planet_flag = dimensional_manipulation_device_deactivated
+	}
+
+	effect = {
+		hidden_effect = { remove_planet_flag = dimensional_manipulation_device_deactivated }
+		add_deposit = d_dimensional_manipulation_device
+	}
+
+	#AI will never be able to take this decision
+	#(Other options are fine and don't have Dark Matter shenanagins)
+}
+
+decision_consecrate_habitat_knights = {
+	owned_planets_only = yes
+
+	enactment_time = 360
+
+	potential = {
+		owner = {
+			has_origin = origin_toxic_knights
+			has_relic = r_toxic_god
+		}
+		uses_district_set = habitat
+		NOR = {
+			has_building = building_order_castle
+			has_building = building_order_keep
+		}
+	}
+
+	allow = {
+		free_building_slots > 0
+		custom_tooltip = {
+			fail_text = requires_another_consecration
+			owner = {
+				check_variable = {
+					which = toxic_castles_available
+					value > 0
+				}
+			}
+		}
+	}
+
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = toxic_castles_available
+				value = 1
+			}
+		}
+	}
+
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = toxic_castles_available
+				value = -1
+			}
+		}
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+		}
+	}
+
+	effect = {
+		add_building = building_order_castle
+		custom_tooltip = decision_consecrate_habitat_knights_effect
 	}
 }

@@ -166,7 +166,7 @@ trait_aquatic = {
 		HUM = 2
 		MAM = 2
 		LITHOID = 0.5
-	 }
+	}
 
 	allowed_planet_classes = {
 		pc_ocean
@@ -305,12 +305,35 @@ trait_aquatic = {
 	}
 
 	icon = "gfx/interface/icons/traits/trait_aquatic.dds"
+
+	assembly_score = {
+		modifier = {
+			add = 1
+			from = {
+				OR = {
+					is_planet_class = pc_ocean
+					has_modifier = flooded_habitat
+				}
+			}
+		}
+
+		modifier = {
+			subtract = 1
+			from = {
+				NOR = {
+					has_climate = wet
+					has_modifier = flooded_habitat
+				}
+				is_ideal = no
+			}
+		}
+	}
 }
 
 trait_necrophage = {
 	cost = 0
 	potential_crossbreeding_chance = 0
-	opposites = { "trait_plantoid_budding" }
+	opposites = { "trait_plantoid_budding" "trait_lithoid_budding" }
 	sorting_priority = 20
 
 	initial = no
@@ -395,7 +418,7 @@ trait_clone_soldier_infertile = {
 trait_clone_soldier_infertile_full_potential = {
 	cost = 0
 	potential_crossbreeding_chance = 0
-	opposites = { "trait_slow_breeders" "trait_rapid_breeders" "trait_plantoid_budding" }
+	opposites = { "trait_slow_breeders" "trait_rapid_breeders" "trait_plantoid_budding" "trait_lithoid_budding" }
 	sorting_priority = 20
 
 	initial = no
@@ -500,7 +523,7 @@ trait_cave_dweller = {
 	species_possible_merge_add = {
 		always = no
 	}
-	
+
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	ai_weight = {
 		weight = 0
@@ -509,7 +532,7 @@ trait_cave_dweller = {
 	icon = "gfx/interface/icons/traits/trait_cave_dweller.dds"
 	custom_tooltip_with_modifiers = trait_cave_dweller_tooltip
 	modifier = {
-		mod_habitability_floor_add = 0.5
+		habitability_floor_add = 0.5
 		planet_jobs_minerals_produces_mult = 0.15
 		species_empire_size_mult = 0.10
 	}
@@ -525,5 +548,15 @@ trait_cave_dweller = {
 	}
 	slave_cost = {
 		energy = 500
+	}
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = { has_mining_designation = yes }
+		}
+		modifier = {
+			add = 0.5
+			from = { has_rural_designation = yes }
+		}
 	}
 }

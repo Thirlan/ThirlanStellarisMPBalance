@@ -102,9 +102,9 @@ building_clone_army_clone_vat = {
 		potential = {
 			can_assemble_clone_soldier_pop = yes
 			years_passed > 10
-			check_variable = { which = clone_pops_missing_per_vat value > 11 }
+			check_variable = { which = clone_pops_missing_per_vat value > 12 }
 		}
-		modifier = { planet_pop_assembly_organic_add = 5 }
+		modifier = { planet_pop_assembly_organic_add = 4 }
 	}
 
 	resources = {
