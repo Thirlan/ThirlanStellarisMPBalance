@@ -169,6 +169,7 @@ civic_fanatic_purifiers = {
 				value = origin_syncretic_evolution
 				value = origin_common_ground
 				value = origin_hegemon
+				value = origin_toxic_knights
 			}
 		}
 	}

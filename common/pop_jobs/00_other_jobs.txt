@@ -636,15 +636,27 @@ assimilation = {
 		}
 		upkeep = {
 			trigger = {
+				is_organic_species = yes
 				is_phototrophic = yes
+				is_lithoid = no
 			}
 			food = @living_standard_phototrophic_normal
 		}
 		upkeep = {
 			trigger = {
+				is_organic_species = yes
+				is_phototrophic = no
 				is_lithoid = yes
 			}
 			minerals = @living_standard_food_normal
+		}
+		upkeep = {
+			trigger = {
+				is_organic_species = yes
+				is_phototrophic = yes
+				is_lithoid = yes
+			}
+			minerals = @living_standard_phototrophic_normal
 		}
 		upkeep = {
 			trigger = {

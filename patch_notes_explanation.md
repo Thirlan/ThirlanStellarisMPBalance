@@ -24,6 +24,7 @@ Following videos were used to determine those mechanics that needed to be balanc
 * https://www.youtube.com/watch?v=VG5YSByzxgQ&ab_channel=MontuPlays
 * https://www.youtube.com/watch?v=LzhgFRXJ3D4&ab_channel=MontuPlays
 * https://www.youtube.com/watch?v=C88jv2OifnM&ab_channel=MontuPlays
+* https://www.youtube.com/watch?v=zbq-3q9I-kM
 
 A lot of appreciation for Stefan's team: Magikaas, Aow, AirHunter, Hoover Tesla
 Appreciation from the players in ISS: Komrad Truck, Jojo

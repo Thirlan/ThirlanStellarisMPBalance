@@ -7,13 +7,17 @@
  
  TRAIT_PLANTOID_BUDDING_EFFECT:0 "Each pop working as a slave or better produces 0.0175 £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!"
  
- TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "Replaces §Y100%§! of Base £food£ §YFood§! Upkeep with §Y48%§! £energy£ §YEnergy§! and §Y48%§! £food£ §YFood§!."
- 
  TRAIT_VENERABLE_EFFECT:0 "Leader lifespan: §G+80§! Years\nLeader starting level: §G+1§!"
  TRAIT_TALENTED_EFFECT:0 "Leader Level Cap: §G+1§!\nLeader starting level: §G+1§!\n"
  TRAIT_ROBOT_ENHANCED_MEMORY_EFFECT:0 "Leader Level Cap: §G+2§!\nLeader starting level: §G+1§!\n"
 
  trait_aquatic_tooltip:1 "Housing Usage on §YOcean§! worlds: §G-7%§!\nFood and Mineral output on §YOcean§! worlds: §G+7%§!\nHousing Usage on non-§YWet§! worlds: §R+30%§!\nHabitability on non-§YWet§! worlds: §R-20%§!\n\nThe §H$ap_hydrocentric$§! Ascension Perk amplifies this trait's effects."
+
+ preplanned_growth_tooltip:0 "Pop Growth Speed: §G+25%§!\nPop Housing Usage: §G-10%§!"
+ artificial_intelligence_tooltip:0 "£physics£ Physics Research: §G+9%§!\n£society£ Society Research: §G+9%§!\n£engineering£ Engineering Research: §G+9%§!"
+ elevated_synapses_tooltip:1 "£physics£ Physics Research: §G+18%§!\n£society£ Society Research: §G+18%§!\n£engineering£ Engineering Research: §G+18%§!"
+ expressed_tradition_tooltip:0 "£unity£ Unity from £pops£ Jobs: §G+15%§!"
+ gene_mentorship_tooltip:0 "Leader Experience Gain: §G+35%§!"
 
  # CIVICS
  civic_tooltip_crafters_effects:1 "£job_artisan£ §Y$job_artisan_plural$§! are replaced with £job_artificer£ §Y$job_artificer_plural$§!.\n§Y$job_artificer_plural$§! produce §G+1§! £consumer_goods£ §Y$consumer_goods$§! as well as §Y2§! £trade_value£ §YTrade Value§! and §Y1.0§! £engineering£ §YEngineering Research§!, but cost §R7§! £minerals£ instead of §Y6§! £minerals£.\nEvery §Y3§! §HIndustrial Districts§! grant §G1§! £building£ §YBuilding Slot§!, except on Habitats."
@@ -25,7 +29,7 @@
  
  # ORIGINS
  civic_tooltip_post_apocalyptic_effects: "Capital starts as a §YTomb World§!\nGain the §Y$trait_survivor$§! trait, granting:\n  Tomb World Habitability: §G+70%§!\n  Leader Lifespan: §G+10§! Years\n  Habitability: §G+7%§!"
-origin_tooltip_clone_army_effects:0 "- Start with §Y2§! £building£ §H$building_clone_army_clone_vat$§! Buildings on your homeworld, producing £pops£ §Y$clone_soldier$§! Pops.\n- §R§HAncient Clone Vats§! have an §HEmpire Limit§! of 5.§!\n- Clone Army §HAdmirals§! will grant an additional §G20%§! §H$MOD_SHIP_FIRE_RATE_MULT$§! and §G10%§! reduced §HShip Upkeep§!."
+ origin_tooltip_clone_army_effects:0 "- Start with §Y2§! £building£ §H$building_clone_army_clone_vat$§! Buildings on your homeworld, producing £pops£ §Y$clone_soldier$§! Pops.\n- §R§HAncient Clone Vats§! have an §HEmpire Limit§! of 5.§!\n- Clone Army §HAdmirals§! will grant an additional §G20%§! §H$MOD_SHIP_FIRE_RATE_MULT$§! and §G10%§! reduced §HShip Upkeep§!."
 
  # ASCENSCIONS
  requires_ap_enigmatic_engineering: "$TRIGGER_FAIL$Requires the §Y$ap_enigmatic_engineering$§! Ascension Perk."
@@ -54,9 +58,6 @@ JUMP_DRIVE_PENALTY:0 "While Jump Drive is recharging, this fleet suffers the fol
 
  unholy_matrimony: "Unholy Matrimony"
  unholy_matrimony_desc: "Fanatic Necrophage nerf"
-
- imperial_megacorp_tax: "Imperial Tax"
- imperial_megacorp_tax_desc: "Megacorporation Imperial Fiefdom nerf"
 
  smbm.2.name: "Prepare yourself"
  smbm.2.desc: "Prepare for the cold hard realities of space. Not knowing what lurks out there it would be best to increase your defenses. Be careful, your defensive bonuses will only last a few years."

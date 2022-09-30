@@ -1,4 +1,4 @@
-# Version 1.3.9
+# Version 1.4.0
 
 ## General tweaks
 
@@ -8,6 +8,9 @@
  * STARBASE_CAPACITY_BASE: 2 from 3
  * STARBASE_CAPACITY_SYSTEM_MULT: 0.08 from 0.1
  * Starbase overcapacity upkeep penalty: +35% from +25%
+ * Espionage Operations: difficulties reduced by 4
+ * LEADER_AGE_DEATH_CHANCE_AGE: 75 from 80
+ * LEADER_AGE_HIGH_DEATH_CHANCE_AGE: 95 from 100
  * Anti-AI Trade exploits:
    * FAVOR_CAP: 5 from 10
    * RESEARCH_AGREEMENT_ACCEPTANCE_OPINION_FACTOR: 0.3 from 0.4
@@ -80,11 +83,7 @@
  * Transcendent Learning: +1 leader level cap from +2, +1 to starting leader skill and 75% to leader leveling speed from +50%
  * Enigmatic Engineering: +4 encryption from +2 and ascension perks required dropped to 0 from 1
  * Galactic Force Projection: +5% sublight speed
- * Consecrate Worlds:
-  * Can now consecrate an occupied world
-  * Capitals or Second Home have a 30% chance of being a Respected World, 60% chance of being a Venerated World and 10% of being a Holy world
-  * Worlds with either Titanic Life, Atmospheric Aphrodisiac or Natural Beauty have a 15% chance of being a Respected World, 65% chance of being a Venerated World and 20% of being a Holy world
-  * Planets with Dead God, Paradise Made, Sentinels or the Loop Temple Pilgrims' Way event have a 100% chance of being a Holy World
+ * Consecrate Worlds: Can now consecrate an occupied world
 
 ## Traditions
 
@@ -180,7 +179,7 @@
  * Slow Breeders: -6% from -10%
  * Resilient: +25% to defensive army health/morale
  * Venerable: +1 starting level to leaders
- * Very Strong: +60% Army damage and +6.25% resources from 40% army damage and +5% resources
+ * Very Strong: +60% Army damage and +7.5% resources from 40% army damage and +5% resources
  * Talented: +1 to starting level
  * Nonadaptive: -6% habitability from -10%
  * Repugnant: -15% to amenities from -20%
@@ -203,7 +202,7 @@
 ## Plantoids
 
 ### Boosts:
- * Phototrophic: 48% food and 48% energy from 50% food and 50% energy
+ * none
 
 ### Nerfs:
  * Budding: +0.0175 assembly from 0.02
@@ -225,3 +224,15 @@
 
 ### Boosts
  * none
+ 
+## Toxoid Traits:
+
+### Nerfs
+ * Pre-planned growth: +25% growth from +30% and -35 leader age from -30
+ * Elevated Synapses: +18% research from +20%, -35 leader age from -30 and +1 leader level from +2
+ * Augmented Intelligence: +9% research from +10% and -15 leader age from -10
+
+### Boosts
+ * Inorganic Breath: 35% increase maintenance from 50%
+ * Expressed Tradition: +15% unity from +10%
+ * Gene Mentorship: +35% leader experience from +25%

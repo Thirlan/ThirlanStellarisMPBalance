@@ -1,4 +1,2 @@
 @lithoid_trait_resource_production = 0.02
 @plantoid_budding_rate = 0.0175
-@living_standard_phototrophic_high = 0.96
-@living_standard_phototrophic_normal = 0.48
