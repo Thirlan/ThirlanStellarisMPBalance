@@ -13,17 +13,24 @@ origin_life_seeded = {
 
 	possible = {
 		authority = { NOT = { value = auth_machine_intelligence } }
-	}
-
-	modifier = {
-		country_starbase_influence_cost_mult = -0.1
-		starbase_buildings_cost_mult = -0.1
+		civics = {
+			NOR = {
+				value = civic_toxic_baths
+				value = civic_relentless_industrialists
+				value = civic_corporate_relentless_industrialists
+			}
+		}
 	}
 
 	description = "civic_tooltip_life_seeded_effects"
 
 	random_weight = {
 		base = 5
+	}
+
+	modifier = {
+		country_starbase_influence_cost_mult = -0.1
+		starbase_buildings_cost_mult = -0.1
 	}
 }
 

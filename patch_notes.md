@@ -1,10 +1,9 @@
-# Version 1.4.0
+# Version 1.4.1
 
 ## General tweaks
 
 ### Nerfs
  * Unholy Matrimony Event (Necrophage and Fanatical Purifier): -25% purge speed penalty to all players (AIs not included)
- * Base Leader skill cap: 3 from 5
  * STARBASE_CAPACITY_BASE: 2 from 3
  * STARBASE_CAPACITY_SYSTEM_MULT: 0.08 from 0.1
  * Starbase overcapacity upkeep penalty: +35% from +25%
@@ -28,6 +27,30 @@
 ### Boosts
  * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -60% defense platform build cost and +15% starbase damage boost for the first 20 years of the game.
 
+## Leader level cap
+
+### Nerfs
+ * Base Leader skill cap: 3 from 5
+ * Supremacy (War Games): Admiral leader cap level +1 from +2
+ * Discovery (Science Division): Scientist leader cap level +1 from +2
+ * Meritocracy: leader cap level +0 from +1
+
+## Boosts
+ * Capacity Booster: +1 leader level cap from +2, +1 starting level and 50% increase in cost from 100%
+ * Selected Lineage: 25% increase in cost from 50%
+ * Transcendent Learning: +1 leader level cap from +2, +1 to starting leader skill and 75% to leader leveling speed from +50%
+ * Domination (Grand Council): Ruler leader cap level +1 from +2 and +1 to starting level
+ * Domination (Viceroys): Governor leader cap level +1 from +2 and +1 to starting level
+ * Philosopher King: Ruler leader cap level +1 from +2 and +1 to starting level and +3% to unity
+ * Pooled Knowledge: +1 starting level to leaders
+ * Factory Overclocking: +1 starting level to leaders
+ * Ruthless Competition: +1 starting level to leaders
+ * Enhanced Memory: +1 starting level to leaders
+ * Venerable: +1 starting level to leaders
+ * Talented: +1 to starting level
+ * Quick Learners: +35% to leader leveling speed from +25%
+ * Learning Algorithms: +35% to leader leveling speed from +25%
+
 ## Ships
 
 ### Nerfs
@@ -40,23 +63,6 @@
 
 ### Boosts
  * none
-
-## Government
-
-### Nerfs
- * none
-
-### Boosts
- * none
-
-## Policies
-
-### Nerfs
- * none
-
-### Boosts
- * Capacity Booster: +1 leader level cap from +2 and +1 starting level and 50% increase in cost from 100%
- * Selected Lineage: 25% increase in cost from 50%
 
 ## Ethics
 
@@ -80,7 +86,6 @@
  * Arcology Project: requires 3 Ascension perks from 2
 
 ### Boosts
- * Transcendent Learning: +1 leader level cap from +2, +1 to starting leader skill and 75% to leader leveling speed from +50%
  * Enigmatic Engineering: +4 encryption from +2 and ascension perks required dropped to 0 from 1
  * Galactic Force Projection: +5% sublight speed
  * Consecrate Worlds: Can now consecrate an occupied world
@@ -90,23 +95,18 @@
 ### Nerfs
  * Prosperity (Completion bonus): +3 Stability from +5
  * Expansion (a new life): +6% to population growth from +10%
- * Supremacy (War Games): Admiral leader cap level +1 from +2
- * Discovery (Science Division): Scientist leader cap level +1 from +2
  
 ### Boosts
- * Domination (Grand Council): Ruler leader cap level +1 from +2 and +1 to starting level
- * Domination (Viceroys): Governor leader cap level +1 from +2 and +1 to starting level
+ * None
 
 ## Standard Civics
 
 ### Nerfs
- * Meritocracy: leader cap level +0 from +1
  * Fanatical Purifier: 23% ship fire rate from 33%
  * Masterful Crafters: +1.0 Mechanical Engineering from +1.1 and now cost 7 minerals in maintenance from 6
  * Technocracy: -5% to Naval Capacity, -5 Naval Capacity, +5% to ship cost and -5% to ship build speed
 
 ### Boosts
- * Philosopher King: Ruler leader cap level +1 from +2 and +1 to starting level and +3% to unity
  * Free Haven: +20% pop growth from immigration from 15% and 60% immigration pull from 50%
  * Efficient Bureaucracy: -40% administrator upkeep from -20%
  * Anglers: Pearl Divers give +4 trade goods from +3
@@ -120,7 +120,7 @@
  * Devouring Swarm: +50% market fee penalty
 
 ### Boosts
- * Pooled Knowledge: +1 starting level to leaders
+
  * Catalytic Converter: Catalytic Drones require 8 food from 9
 
 ## Robot Civics
@@ -132,7 +132,7 @@
 
 ### Boosts
  * Zero-waste Protocols: -20% robot upkeep from -10%
- * Factory Overclocking: +1 starting level to leaders
+
  * Static Research: +2 decryption from +1
  * Catalytic Converter: Catalytic Drones require 8 food from 9
 
@@ -145,7 +145,6 @@
 
 ### Boosts
  * Media Conglomerate: +10% diplomatic weight and -10% war exhaustion from -5% war exhaustion
- * Ruthless Competition: +1 starting level to leaders
  * Anglers: Pearl Divers give +4 trade goods from +3
  
 ## Origin:
@@ -178,12 +177,9 @@
 ### Boosts
  * Slow Breeders: -6% from -10%
  * Resilient: +25% to defensive army health/morale
- * Venerable: +1 starting level to leaders
  * Very Strong: +60% Army damage and +7.5% resources from 40% army damage and +5% resources
- * Talented: +1 to starting level
  * Nonadaptive: -6% habitability from -10%
  * Repugnant: -15% to amenities from -20%
- * Quick Learners: +35% to leader leveling speed from +25%
  
 ## Robot Traits:
 
@@ -196,8 +192,6 @@
  * Custom made: -10% assembly speed from -15%
  * Recycled: -30% assembly cost from -20%
  * Uncanny: -15% to amenities from -20%
- * Learning Algorithms: +35% to leader leveling speed from +25%
- * Enhanced Memory: +1 starting level to leaders
 
 ## Plantoids
 
@@ -229,7 +223,7 @@
 
 ### Nerfs
  * Pre-planned growth: +25% growth from +30% and -35 leader age from -30
- * Elevated Synapses: +18% research from +20%, -35 leader age from -30 and +1 leader level from +2
+ * Elevated Synapses: +18% research from +20%, -35 leader age from -30 and +0 leader level from +2
  * Augmented Intelligence: +9% research from +10% and -15 leader age from -10
 
 ### Boosts
