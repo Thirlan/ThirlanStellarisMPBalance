@@ -1,3 +1,28 @@
+# 2022/11/12 - 1.5.0
+
+Upgrade to Stellaris version 3.6.0 beta
+
+Removed:
+ * Proton Launchers: -10% to min and max damage
+ * Crystalline Hulls: 10% increased material cost
+ * The Flesh is Weak: 6% population assembly from +10%
+ * Synthetic Evolution: 6% robotic job multiplier from 10%
+ * Shattered Ring: Starbase influence and material cost -10%
+ * Aquatics: +7% energy/mineral/food/housing production on Ocean worlds from +10%
+ * Masterful Crafters: +1.0 Mechanical Engineering from +1.1 and now cost 7 minerals in maintenance from 6
+ * Gestalts: -3% to research
+ * Anglers: Pearl Divers give +4 trade goods from +3
+ * Prosperity (Completion bonus): +3 Stability from +5
+ * Natural Engineers: +12% engineering research from +15% engineering research
+
+Changed:
+ * Common Ground: "Live long and prosper" event gifts the player +125 influence 30 days after game start along with a crewed science ship.
+ * Merchant Guilds: +1 Envoy and +3% Trade value
+ * Augmented Intelligence: +8% research from +10% and -15 leader age from -10
+ * Elevated Synapses: +16% research from +20%, -35 leader age from -30 and +0 leader level from +2
+ * Logic Engines: +8% research from +10%
+ * Intelligent: +8% to research from +10%
+
 # 2022/10/22 - 1.4.1
 
 Compatibility changes with 3.5.3. Also cleared the logs below to make sure there is only a years worth of logs.

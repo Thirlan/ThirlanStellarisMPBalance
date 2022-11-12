@@ -1,4 +1,4 @@
-# Version 1.4.1
+# Version 1.5.0
 
 ## General tweaks
 
@@ -58,8 +58,6 @@
    * Prethoryn and Contingency can now spawn if Jump Drives researched. Jump drives also increase the odds of the crisis spawning sooner from 19% to 37%.
    * Range decreased by 25%
    * Jump drive penalty increased to -60% to weapons/movement from -50%
- * Proton Launchers: -10% to min and max damage
- * Crystalline Hulls: 10% increased material cost
 
 ### Boosts
  * none
@@ -67,7 +65,6 @@
 ## Ethics
 
 ### Nerfs
- * Gestalts: -3% to research
  * Materialist: 4%/8% research bonus from 5%/10%
  * Xenophobe: 8%/16% pop growth from 10%/20%
 
@@ -79,8 +76,6 @@
 ### Nerfs
  * Technological Ascendency: +6% Research rate from +10%
  * Become the crisis: requires 3 ascension perks from 2 and requires Enigmatic Engineering perk
- * The Flesh is Weak: 6% population assembly from +10%
- * Synthetic Evolution: 6% robotic job multiplier from 10%
  * Hive World: Energy cost 11000 from 10000
  * Machine World: Energy cost 11000 from 10000
  * Arcology Project: requires 3 Ascension perks from 2
@@ -93,7 +88,6 @@
 ## Traditions
 
 ### Nerfs
- * Prosperity (Completion bonus): +3 Stability from +5
  * Expansion (a new life): +6% to population growth from +10%
  
 ### Boosts
@@ -103,15 +97,14 @@
 
 ### Nerfs
  * Fanatical Purifier: 23% ship fire rate from 33%
- * Masterful Crafters: +1.0 Mechanical Engineering from +1.1 and now cost 7 minerals in maintenance from 6
  * Technocracy: -5% to Naval Capacity, -5 Naval Capacity, +5% to ship cost and -5% to ship build speed
 
 ### Boosts
  * Free Haven: +20% pop growth from immigration from 15% and 60% immigration pull from 50%
  * Efficient Bureaucracy: -40% administrator upkeep from -20%
- * Anglers: Pearl Divers give +4 trade goods from +3
  * Warrior Culture: Duelists give +3 unity from +2
  * Catalytic Converter: Catalytic Technicians require 8 food from 9
+ * Merchant Guilds: +1 Envoy and +3% Trade value
 
 ## Hive Mind Civics
 
@@ -120,7 +113,6 @@
  * Devouring Swarm: +50% market fee penalty
 
 ### Boosts
-
  * Catalytic Converter: Catalytic Drones require 8 food from 9
 
 ## Robot Civics
@@ -132,20 +124,17 @@
 
 ### Boosts
  * Zero-waste Protocols: -20% robot upkeep from -10%
-
  * Static Research: +2 decryption from +1
  * Catalytic Converter: Catalytic Drones require 8 food from 9
 
 ## Megacorp Civics
 
 ### Nerfs
- * Masterful Crafters: +1.0 Mechanical Engineering from +1.1 and now cost 7 minerals in maintenance from 6
  * Free Traders: +8% trade value from +10%
  * Indentured Servitude: +8% slave output from +10%
 
 ### Boosts
  * Media Conglomerate: +10% diplomatic weight and -10% war exhaustion from -5% war exhaustion
- * Anglers: Pearl Divers give +4 trade goods from +3
  
 ## Origin:
 
@@ -156,22 +145,18 @@
  * Clone Army: 1/4/5/8/12 to current pop assembly from 2/5/7/10/15 and +20% fire rate for clone admirals from +25%
 
 ### Boosts
- * Common Ground: "Live long and prosper" events gifts the player a science ship and scientist with +125 influence 30 days after game start. 6 months later they will be gifted a construction ship with another +125 influence.
  * Hegemon: "Long live the hegemony" event gifts the player with +200 influence and +75 alloy 30 days after game start.
  * Galactic Doorstep: +15% Physics research
  * Slingshot to the Stars: +15% Physics research
  * Post Apocalyptic: +10% Habitability bonus
- * Shattered Ring: Starbase influence and material cost -10%
  * Life Seeded: Starbase influence and material cost -10%
  
 ## Species Traits:
 
 ### Nerfs
  * Rapid Breeders: +6% population growth from 10%
- * Intelligent: +9% to research from +10%
- * Natural Engineers: +12% engineering research from +15% engineering research
+ * Intelligent: +8% to research from +10%
  * Charismatic: +15% to amenities from +20%
- * Aquatics: +7% energy/mineral/food/housing production on Ocean worlds from +10%
  * Thrifty: +20% trade value from +25%
 
 ### Boosts
@@ -188,7 +173,7 @@
  * Emotion Emulator: +15% to amenities from +20%
 
 ### Boosts
- * Logic Engines: +9% research from +10%
+ * Logic Engines: +8% research from +10%
  * Custom made: -10% assembly speed from -15%
  * Recycled: -30% assembly cost from -20%
  * Uncanny: -15% to amenities from -20%
@@ -223,8 +208,8 @@
 
 ### Nerfs
  * Pre-planned growth: +25% growth from +30% and -35 leader age from -30
- * Elevated Synapses: +18% research from +20%, -35 leader age from -30 and +0 leader level from +2
- * Augmented Intelligence: +9% research from +10% and -15 leader age from -10
+ * Elevated Synapses: +16% research from +20%, -35 leader age from -30 and +0 leader level from +2
+ * Augmented Intelligence: +8% research from +10% and -15 leader age from -10
 
 ### Boosts
  * Inorganic Breath: 35% increase maintenance from 50%

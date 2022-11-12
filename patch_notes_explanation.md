@@ -49,7 +49,7 @@ Because of this, there is a special event, "Unholy matrimony", at game start tha
 
 ## Leadership cap
 
-Many of the leadership cap game choices are considered very weak due to how little of a buff it gives throughout the game. It can be trivial to reach the leadership cap of 10 through various racial traits, technologies, ascension perks, traditions and civics. Hence once someone reaches 10, all the other leadership cap game choices lose all of their value. As of this writing it is possible for a bio empire to accumulate +18 in bonuses to leader level cap for scientists for example.
+Many of the leadership cap game choices are considered very weak due to how little of a buff it gives throughout the game. It can be trivial to reach the leadership cap of 10 through various racial traits, technologies, ascension perks, traditions, civics and events. Hence once someone reaches 10, all the other leadership cap game choices lose all of their value. As of this writing it is possible for a bio empire to accumulate +18 in bonuses to leader level cap for scientists for example.
 
 The leadership cap bonuses also loses some of its value since most leaders will often plateau at 5, with or without a cap bonus, because of experience gains and mortality. In addition, the % gains for going from 5 to 6 are less (20%) than the gains from going from 4 to 5 (25%).
 
@@ -80,15 +80,3 @@ The first reason is that changing point costs of traits will affect the existing
 The second reason on whether to just increase longevity has to do with longevity in the game in general. +80 is a significant boost already, and any additional years added have diminishing returns. Consider that by the end of the game your citizens can live to 130 without this boost. The game itself only lasts about 300 years so adding another 20 years does not really justify the 4 point cost of Venerable. Instead it is more logical to add some minor bonuses that have the right flavor to the trait.
 
 The bonuses added to Venerable however cannot be large enough to skew how the AI should normally use these races. AI game files are hardcoded to weigh each racial trait to determine how to use them. Our KISS principle is not to change many game files and as such it is best to give a minor buff.
-
-## Weapons
-
-Changes to the Weapons are mostly focused on the core weapons that radically alter the game and give a player such a huge advantage if they get them that their opponent has an extremely slim chance of victory. These weapons are Jump Drives, Proton Launchers and Crystalline Hulls.
-
-Jump drives are a fairly obvious one. If someone randomly rolls jump drives in their tech sooner than others then it is vey easy for them to skip defenses and attack any planet. The only valid defense against this is for the defender to put large armies on all planets and turn all stations around their planets into defense stations. Even then that can some times not be enough because stations do not scale in strength the same way as fleets. As such a small nerf to range and increase in jump penalty means it is a little bit harder to jump straight into core systems. Ships now need to move just a bit closer so it can telegraph what the intended target is a bit more and also the increased penalty means that if the defender fortifies their station enough the fleet cannot jump straight into the system.
-
-Proton launchers have been the core weapon for the longest part of the game's history. They are well understood to be game changers and getting to them first can allow a player to easily dominate.
-
-Crystalline hulls is another random tech that is so good that it counts as having level 4 armor and make ships cheaper. Because it can be reached so early in the game and can make the ships so much cheaper it gives a massive advantage to whichever player gets to it first.
-
-The small -10% nerfs given to these is done to not change the meta, but just make it less overpowering.

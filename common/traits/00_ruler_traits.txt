@@ -401,7 +401,7 @@ leader_trait_ruler_erudite = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/trait_erudite.dds"
 	modifier = {
-		all_technology_research_speed = 0.05
+		num_tech_alternatives_add = 1
 	}
 	leader_trait = { ruler }
 	leader_class = { ruler }
@@ -411,6 +411,10 @@ leader_trait_ruler_erudite = {
 
 leader_trait_ruler_cyborg = {
 	cost = 0
+	modifier = {
+		planet_structures_upkeep_mult = -0.25
+		empire_size_districts_mult = -0.05
+	}
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_cyborg.dds"
 	leader_trait = { ruler }
 	leader_class = { ruler }
@@ -422,7 +426,7 @@ leader_trait_ruler_synthetic = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_synthetic.dds"
 	modifier = {
-		planet_jobs_robotic_produces_mult = 0.05
+		planet_pop_assembly_add = 1
 	}
 	leader_trait = { ruler }
 	leader_class = { ruler }
@@ -450,6 +454,64 @@ leader_trait_ruler_chosen = {
 	modifier = {
 		pop_government_ethic_attraction = 0.20
 		country_ruler_influence_produces_add = 1
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	initial = no
+	randomized = no
+}
+
+leader_trait_ruler_instrument_chosen = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_instrument_chosen.dds"
+	immortal_leaders = yes
+	modifier = {
+		pop_happiness = 0.10
+		trade_value_mult = 0.15
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	initial = no
+	randomized = no
+}
+
+leader_trait_ruler_composer_chosen = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_composer_chosen.dds"
+	immortal_leaders = yes
+	modifier = {
+		leader_age = 50
+		species_leader_exp_gain = 0.3
+		leader_skill_levels = 1
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	initial = no
+	randomized = no
+}
+
+leader_trait_ruler_eater_chosen = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_eater_chosen.dds"
+	immortal_leaders = yes
+	modifier = {
+		ships_upkeep_mult = -0.1
+		starbase_shipyard_build_speed_mult = 0.15
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	initial = no
+	randomized = no
+}
+
+leader_trait_ruler_whisperers_chosen = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_whisperers_chosen.dds"
+	immortal_leaders = yes
+	modifier = {
+		espionage_operation_cost_mult = -0.15
+		country_ruler_influence_produces_add = 1
+		intel_encryption_add = 1
 	}
 	leader_trait = { ruler }
 	leader_class = { ruler }
