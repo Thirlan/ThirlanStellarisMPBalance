@@ -1,7 +1,0 @@
-tr_prosperity_finish = {
-	modifier = {
-		planet_jobs_produces_mult = 0.05
-		planet_stability_add = 3
-		ascension_perks_add = 1
-	}
-}

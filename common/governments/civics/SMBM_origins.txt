@@ -14,8 +14,11 @@ origin_life_seeded = {
 	possible = {
 		authority = { NOT = { value = auth_machine_intelligence } }
 		civics = {
-			NOR = {
+			NOT = {
 				value = civic_toxic_baths
+			}
+			NOR = {
+				text = civic_tooltip_not_relentless_industrialists
 				value = civic_relentless_industrialists
 				value = civic_corporate_relentless_industrialists
 			}
@@ -32,60 +35,6 @@ origin_life_seeded = {
 		country_starbase_influence_cost_mult = -0.1
 		starbase_buildings_cost_mult = -0.1
 	}
-}
-
-origin_shattered_ring = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_shattered_ring.dds"
-	picture = GFX_origin_shattered_ring
-
-	starting_colony = pc_shattered_ring_habitable
-	habitability_preference = pc_shattered_ring_habitable
-	initializers = { shattered_ring_start }
-	max_once_global = yes
-	non_colonizable_planet_class_neighbor = yes
-
-	playable = {
-		host_has_dlc = Federations
-	}
-
-	possible = {
-		civics = {
-			NOT = { value = civic_agrarian_idyll }
-			NOR = {
-				text = civic_tooltip_not_anglers
-				value = civic_anglers
-				value = civic_corporate_anglers
-			}
-		}
-	}
-
-	description = "origin_tooltip_shattered_ring_effects"
-
-	flags = { custom_start_screen }
-
-	traits = {
-
-	}
-
-	advanced_start = yes
-
-	random_weight = {
-		base = 2
-	}
-
-	modifier = {
-		country_starbase_influence_cost_mult = -0.1
-		starbase_buildings_cost_mult = -0.1
-	}
-
-	#swap_type = {
-	#	description = "origin_tooltip_shattered_ring_effects_lithoid"
-	#
-	#	trigger = {
-	#		local_human_species_class = LITHOID
-	#	}
-	#}
 }
 
 origin_scion = {

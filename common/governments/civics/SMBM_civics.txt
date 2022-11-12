@@ -211,7 +211,7 @@ civic_merchant_guilds = {
 		base = 2
 	}
 	modifier = {
-		diplo_weight_mult = 0.05
+		envoys_add = 1
 		trade_value_mult = 0.03
 	}
 }

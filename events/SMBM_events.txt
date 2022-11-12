@@ -89,7 +89,7 @@ country_event = {
 	}
 }
 
-# Live long and prosper part 1: Common grounds boost
+# Live long and prosper: Common grounds boost
 country_event = {
 	id = smbm.6
 	title = smbm.6.name
@@ -130,50 +130,10 @@ country_event = {
 				set_leader = last_created_leader
 			}
 		}
-
-		owner = {
-			country_event = {
-				id = smbm.7 days = 182
-			}
-		}
 	}
 
 	option = {
 		name = smbm.6.option
-		add_resource = {
-			influence = 125
-		}
-	}
-}
-
-# Live long and prosper part 2: Common grounds boost
-country_event = {
-	id = smbm.7
-	title = smbm.7.name
-	desc = smbm.7.desc
-	
-	picture = GFX_evt_crisis_defeated
-	show_sound = event_celebration
-	
-	is_triggered_only = yes
-
-	immediate = {
-		# colony ship
-		create_fleet = {
-			effect = {
-				set_owner = root.owner
-				create_ship = {
-					name = "Prosperity"
-					random_existing_design = constructor
-				}
-				set_fleet_stance = evasive
-				set_location = root.capital_scope.star
-			}
-		}
-	}
-
-	option = {
-		name = smbm.7.option
 		add_resource = {
 			influence = 125
 		}

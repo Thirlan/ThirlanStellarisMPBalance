@@ -356,9 +356,9 @@ trait_artificial_intelligence = {
 			owner = { NOT = { has_edict = damn_the_consequences } }
 		}
 		modifier = {
-			planet_jobs_engineering_research_produces_mult = 0.09
-			planet_jobs_physics_research_produces_mult = 0.09
-			planet_jobs_society_research_produces_mult = 0.09
+			planet_jobs_physics_research_produces_mult = 0.08
+			planet_jobs_society_research_produces_mult = 0.08
+			planet_jobs_engineering_research_produces_mult = 0.08
 		}
 	}
 	triggered_pop_modifier = {
@@ -367,9 +367,9 @@ trait_artificial_intelligence = {
 			owner = { has_edict = damn_the_consequences }
 		}
 		modifier = {
-			planet_jobs_engineering_research_produces_mult = 0.18
-			planet_jobs_physics_research_produces_mult = 0.18
-			planet_jobs_society_research_produces_mult = 0.18
+			planet_jobs_physics_research_produces_mult = 0.16
+			planet_jobs_society_research_produces_mult = 0.16
+			planet_jobs_engineering_research_produces_mult = 0.16
 		}
 	}
 	modifier = {
@@ -515,9 +515,9 @@ trait_elevated_synapses = {
 			owner = { NOT = { has_edict = damn_the_consequences } }
 		}
 		modifier = {
-			planet_jobs_engineering_research_produces_mult = 0.018
-			planet_jobs_physics_research_produces_mult = 0.018
-			planet_jobs_society_research_produces_mult = 0.018
+			planet_jobs_physics_research_produces_mult = 0.16
+			planet_jobs_society_research_produces_mult = 0.16
+			planet_jobs_engineering_research_produces_mult = 0.16
 		}
 	}
 	triggered_pop_modifier = {
@@ -526,9 +526,9 @@ trait_elevated_synapses = {
 			owner = { has_edict = damn_the_consequences }
 		}
 		modifier = {
-			planet_jobs_engineering_research_produces_mult = 0.36
-			planet_jobs_physics_research_produces_mult = 0.36
-			planet_jobs_society_research_produces_mult = 0.36
+			planet_jobs_physics_research_produces_mult = 0.32
+			planet_jobs_society_research_produces_mult = 0.32
+			planet_jobs_engineering_research_produces_mult = 0.32
 		}
 	}
 	modifier = {
@@ -682,7 +682,7 @@ trait_incubator = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 2
 	species_possible_remove = {
-		can_remove_beneficial_traits = yes
+		can_remove_beneficial_genetic_traits = yes
 	}
 	species_possible_merge_remove = {
 		always = yes
@@ -690,14 +690,13 @@ trait_incubator = {
 	potential_crossbreeding_chance = 1.0 #1.0 100% of being considered for new traits when forming half-species. doe snot guarantee the trait will be added if it costs points.
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	randomized = no
-	opposites = { "trait_slow_breeders" "trait_rapid_breeders" "trait_fertile" "trait_plantoid_budding" "trait_lithoid_budding" "trait_rapid_breeders_lithoid" }
+	opposites = { "trait_slow_breeders" "trait_rapid_breeders" "trait_fertile" "trait_plantoid_budding" "trait_lithoid_budding" "trait_advanced_budding"  "trait_rapid_breeders_lithoid" }
 	custom_tooltip_with_modifiers = incubator_tooltip
 
 	triggered_planet_growth_habitability_modifier = {
 		pop_growth_speed = 0.01
 		mult = planet.value:incubator_growth
 	}
-
 	slave_cost = {
 		energy = 2000
 	}
@@ -707,7 +706,7 @@ trait_inorganic_breath = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 3
 	species_possible_remove = {
-		can_remove_beneficial_traits = yes
+		can_remove_beneficial_genetic_traits = yes
 	}
 	species_possible_merge_remove = {
 		always = yes
@@ -730,7 +729,7 @@ trait_noxious = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 1
 	species_possible_remove = {
-		can_remove_beneficial_traits = yes
+		can_remove_beneficial_genetic_traits = yes
 	}
 	species_possible_merge_remove = {
 		always = yes
@@ -739,7 +738,6 @@ trait_noxious = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	randomized = no
 	custom_tooltip_with_modifiers = noxious_tooltip
-
 	triggered_pop_modifier = {
 		pop_happiness = @noxious_happiness_bonus
 		mult = planet.value:counter_noxious
@@ -761,7 +759,7 @@ trait_exotic_metabolism = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 1
 	species_possible_remove = {
-		can_remove_beneficial_traits = yes
+		can_remove_beneficial_genetic_traits = yes
 	}
 	species_possible_merge_remove = {
 		always = yes
@@ -772,10 +770,12 @@ trait_exotic_metabolism = {
 	randomized = no
 	advanced_trait = yes
 	custom_tooltip_with_modifiers = exotic_metabolism_tooltip
-
-	modifier = {
+	triggered_planet_growth_habitability_modifier = {
 		pop_growth_speed = 0.25
 		pop_environment_tolerance = 0.25
+	}
+
+	modifier = {
 		leader_age = 50
 	}
 
