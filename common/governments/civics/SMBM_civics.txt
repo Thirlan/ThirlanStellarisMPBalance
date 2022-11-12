@@ -136,9 +136,11 @@ civic_efficient_bureaucracy = {
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
 		authority = { NOT = { value = auth_corporate } }
 	}
+	# The edict fund production is deliberately only limited to  Bureaucrats, Priests, Managers and Death Priests.
+	description = "civic_tooltip_efficient_bureaucracy_effects"
 	random_weight = { base = 5 }
 	modifier = {
-		planet_administrators_upkeep_mult = -0.40
+		planet_administrators_upkeep_mult = -0.20
 	}
 }
 
