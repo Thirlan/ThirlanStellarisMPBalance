@@ -30,28 +30,6 @@
 #	ai_playable = {}							# Similar to "playable", for AI
 #}
 
-civic_philosopher_king = {
-	description = "civic_tooltip_philosopher_king_effects"
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
-	}
-	possible = {
-		authority = {
-			OR = {
-				text = civic_tooltip_dic_imp
-				value = auth_dictatorial
-				value = auth_imperial
-			}
-		}
-	}
-	random_weight = { base = 5 }
-	modifier = {
-		country_unity_produces_mult = 0.03
-		ruler_skill_levels = 1
-	}
-}
-
 civic_meritocracy = {
 	potential = {
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
@@ -128,19 +106,6 @@ civic_free_haven = {
 	modifier = {
 		pop_growth_from_immigration = 0.20
 		planet_immigration_pull_mult = 0.60
-	}
-}
-
-civic_efficient_bureaucracy = {
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
-	}
-	# The edict fund production is deliberately only limited to  Bureaucrats, Priests, Managers and Death Priests.
-	description = "civic_tooltip_efficient_bureaucracy_effects"
-	random_weight = { base = 5 }
-	modifier = {
-		planet_administrators_upkeep_mult = -0.20
 	}
 }
 

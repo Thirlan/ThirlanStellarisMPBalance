@@ -2310,7 +2310,7 @@ opinion_zarqlans_chosen = {
 
 opinion_imperial_overlord_ai_opinion = {
 	opinion = {
-		base = 150
+		base = 1
 	}
 
 	decay = {
@@ -2320,17 +2320,17 @@ opinion_imperial_overlord_ai_opinion = {
 
 opinion_imperial_vassal_ai_opinion = {
 	opinion = {
-		base = 90
+		base = 1
 	}
 
 	decay = {
-		base = 2
+		base = 1
 	}
 }
 
 opinion_imperial_vassal_new_overlord = {
 	opinion = {
-		base = 150
+		base = 1
 	}
 	decay = {
 		base = 1

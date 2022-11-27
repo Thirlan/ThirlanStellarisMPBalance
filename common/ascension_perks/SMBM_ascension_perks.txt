@@ -205,7 +205,7 @@ ap_technological_ascendancy = {
 
 ap_executive_vigor = {
 	modifier = {
-		country_edict_fund_add = 90
+		country_edict_fund_add = 80
 	}
 
 	potential = {
@@ -216,24 +216,6 @@ ap_executive_vigor = {
 
 	ai_weight = {
 		factor = 30 #it's better than average
-	}
-}
-
-ap_transcendent_learning = {
-	modifier = {
-		description = ap_transcendent_learning_modifier_desc
-		leader_skill_levels = 1
-		species_leader_exp_gain = 0.65
-	}
-
-	potential = {
-		NOT = {
-			has_ascension_perk = ap_transcendent_learning
-		}
-	}
-
-	ai_weight = {
-		factor = 10
 	}
 }
 

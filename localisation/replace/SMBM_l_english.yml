@@ -8,8 +8,6 @@
  TRAIT_PLANTOID_BUDDING_EFFECT:0 "Each pop working as a slave or better produces 0.0175 £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!"
  
  TRAIT_VENERABLE_EFFECT:0 "Leader lifespan: §G+80§! Years\nLeader starting level: §G+1§!"
- TRAIT_TALENTED_EFFECT:0 "Leader Level Cap: §G+1§!\nLeader starting level: §G+1§!\n"
- TRAIT_ROBOT_ENHANCED_MEMORY_EFFECT:0 "Leader Level Cap: §G+2§!\nLeader starting level: §G+1§!\n"
 
  preplanned_growth_tooltip:0 "Pop Growth Speed: §G+25%§!\nPop Housing Usage: §G-10%§!"
  artificial_intelligence_tooltip:0 "£physics£ Physics Research: §G+8%§!\n£society£ Society Research: §G+8%§!\n£engineering£ Engineering Research: §G+8%§!"
@@ -18,10 +16,6 @@
  gene_mentorship_tooltip:0 "Leader Experience Gain: §G+35%§!"
 
  # CIVICS
- civic_tooltip_ruthless_competition_effects:1 "Leader Starting Level: §G+1§!\n"
- civic_tooltip_hive_pooled_knowledge_effects:1 "Leader Starting Level: §G+1§!\n"
- civic_tooltip_machine_factory_overclock_effects:1 "Leader Starting Level: §G+1§!\n"
- civic_tooltip_philosopher_king_effects:0 "Your §YRulers§! and §YGovernors§! are less likely to gain negative traits.\nRuler Starting Level: §G+1§!\n"
  
  # ORIGINS
  civic_tooltip_post_apocalyptic_effects: "Capital starts as a §YTomb World§!\nGain the §Y$trait_survivor$§! trait, granting:\n  Tomb World Habitability: §G+70%§!\n  Leader Lifespan: §G+10§! Years\n  Habitability: §G+10%§!"
@@ -29,20 +23,11 @@
 
  # ASCENSCIONS
  requires_ap_enigmatic_engineering: "$TRIGGER_FAIL$Requires the §Y$ap_enigmatic_engineering$§! Ascension Perk."
- ap_transcendent_learning_modifier_desc: "Leader Level Cap: §G+1§!\nLeader Starting Level: §G+1§!\nLeader Experience Gain: §G+75%§!"
  describe_edict_consectrated_worlds:5 "§EConsecrating planets (up to §Y3§!) increases §YSpiritualist Ethics Attraction§! and §YEmpire-Wide Amenities§! as well as £unity£ §YUnity Generation§!, scaling to the spiritual significance of the worlds consecrated.§!"
 
 # TRADITIONS
- tr_domination_colonial_viceroys_desc:0 "§Y$MOD_LEADER_GOVERNOR_SKILL_LEVELS$§! and starting level increased by §G1§!\nMonthly Influence: §G+0.50§!"
-
- tr_domination_grand_council_desc:0 "§Y$MOD_LEADER_RULER_SKILL_LEVELS$§! and starting level increased by §G1§!\nEdicts Fund: §G+50§!"
-
- tr_supremacy_war_games_desc:3 "§Y$MOD_COUNTRY_COMMAND_LIMIT_ADD$§! increased by §G+20§! and §Y$MOD_LEADER_ADMIRAL_SKILL_LEVELS$§! is increased by §Y1§!."
-
- tr_discovery_science_division_desc:3 "§Y$MOD_COUNTRY_NUM_TECH_ALTERNATIVES_ADD$§! increased by §Y1§! and §Y$MOD_LEADER_SCIENTIST_SKILL_LEVELS$§! increased by §Y1§!."
 
 # POLICY
-leader_enhancement_capacity_boosters_desc:0 "We leave nothing to chance, no matter the cost. Through exacting curation of DNA banks do we build the leaders of tomorrow.\n\n§HIf active our Empire gains:§!\nLeader starting level: §G+1§!"
 
 # SHIP COMPONENTS
 JUMP_DRIVE_PENALTY:0 "While Jump Drive is recharging, this fleet suffers the following penalties:\n§Y$MOD_SHIP_WEAPON_DAMAGE$:§! §R-60%§!\n§Y$MOD_SHIP_SPEED_MULT$:§! §R-60%§!"
@@ -50,6 +35,9 @@ JUMP_DRIVE_PENALTY:0 "While Jump Drive is recharging, this fleet suffers the fol
 # CUSTOM SMBM EVENTS
  be_careful_out_there: "Be careful out there"
  be_careful_out_there_desc: "Multiplayer anti-rush mechanic"
+ 
+ careful_envoys: "Careful envoys"
+ careful_envoys_desc: "Anti-ai exploitation mechanic"
 
  unholy_matrimony: "Unholy Matrimony"
  unholy_matrimony_desc: "Fanatic Necrophage nerf"

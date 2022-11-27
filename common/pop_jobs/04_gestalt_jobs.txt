@@ -178,6 +178,64 @@ offspring_drone = {
 	}
 }
 
+cyber_drone = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_spawning_pool
+	icon = machine_nurse
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+
+	possible = { can_think = yes }
+
+	triggered_planet_modifier = {
+		potential = {
+			can_assemble_cyborg_pop = yes
+			can_assemble_hive_pop = yes
+		}
+		modifier = {
+			planet_pop_assembly_organic_add = 1.5
+		}
+	}
+
+	resources = {
+		category = planet_pop_assemblers
+		upkeep = {
+			alloys = 1
+		}
+	}
+
+	weight = {
+		weight = @spawner_drone_job_weight
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		modifier = {
+			factor = 0.5 # job is less useful if pop control is active, but still gives amenities
+			planet = {
+				has_modifier = planet_population_control_gestalt
+			}
+		}
+		modifier = {
+			factor = 0.01 # crisis purge
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
+	}
+}
+
 replicator = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
@@ -338,18 +396,6 @@ coordinator = {
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_active_tradition = tr_synchronicity_integrated_preservation
-			}
-		}
-		modifier = {
-			planet_crime_no_happiness_add = -2
-		}
-	}
-
 	weight = {
 		weight = @synapse_drone_job_weight
 		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
@@ -387,6 +433,18 @@ evaluator = {
 		}
 		upkeep = {
 			energy = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_active_tradition = tr_synchronicity_integrated_preservation
+			}
+		}
+		modifier = {
+			planet_crime_no_happiness_add = -3
 		}
 	}
 
@@ -1780,6 +1838,18 @@ chronicle_drone = {
 
 	planet_modifier = {
 		planet_stability_add = 2.5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_active_tradition = tr_synchronicity_integrated_preservation
+			}
+		}
+		modifier = {
+			planet_crime_no_happiness_add = -3
+		}
 	}
 
 	triggered_planet_modifier = {

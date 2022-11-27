@@ -28,17 +28,6 @@ civic_hive_ascetic = {
 	}
 }
 
-civic_hive_pooled_knowledge = {
-	potential = { authority = { value = auth_hive_mind } }
-	random_weight = { base = 5 }
-	description = "civic_tooltip_hive_pooled_knowledge_effects"
-	modifier = {
-		leader_skill_levels = 1
-		species_leader_exp_gain = 0.1
-		intel_encryption_add = 1
-	}
-}
-
 civic_hive_devouring_swarm = {
 	modification = no
 	potential = {
@@ -131,17 +120,6 @@ civic_machine_terminator = {
 		starbase_shipyard_build_cost_mult = -0.15
 		country_naval_cap_mult = 0.33
 		country_trade_fee = 0.50
-	}
-}
-
-civic_machine_factory_overclock = {
-	icon = "gfx/interface/icons/governments/civics/civic_machine_factory_overclock.dds"
-	potential = { authority = { value = auth_machine_intelligence } }
-	random_weight = { base = 5 }
-	description = "civic_tooltip_machine_factory_overclock_effects"
-	modifier = {
-		leader_skill_levels = 1
-		species_leader_exp_gain = 0.1
 	}
 }
 

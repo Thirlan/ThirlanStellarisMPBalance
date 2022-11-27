@@ -1,4 +1,4 @@
-# Version 1.5.0
+# Version 1.5.1
 
 ## General tweaks
 
@@ -10,46 +10,72 @@
  * Espionage Operations: difficulties reduced by 4
  * LEADER_AGE_DEATH_CHANCE_AGE: 75 from 80
  * LEADER_AGE_HIGH_DEATH_CHANCE_AGE: 95 from 100
+
+### Boosts
+ * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -60% defense platform build cost and +15% starbase damage boost for the first 20 years of the game.
+
+## AI exploitation
+
+## Nerfs
  * Anti-AI Trade exploits:
    * FAVOR_CAP: 5 from 10
+   * TRADE_VALUE_FAVORS_MULT: 5 from 10
    * RESEARCH_AGREEMENT_ACCEPTANCE_OPINION_FACTOR: 0.3 from 0.4
    * RESEARCH_AGREEMENT_ACCEPTANCE_NUM_PACTS: -40 from -30
    * RESEARCH_AGREEMENT_ACCEPTANCE_GIVEN_TECHS: -0.6 from -0.5
+   * RESEARCH_AGREEMENT_SPEED_MULT: 0.15 from 0.25
    * TRADE_MIN_RESOURCE_STOCKPILE: 1000 from 500
    * TRADE_VALUE_RESOURCE: 1.5 from 2.0
    * TRADE_VALUE_SENSOR_CHARTS: 1 from 2
    * TRADE_VALUE_SENSOR_LINK_MAX: 0.75 from 1.0
    * EMBASSY_IMPROVE_RELATION_MULTIPLIER: 2.0 from 3.0
+   * MIN_WILLINGNESS_TO_OFFER_TRADE: 0.85 from 0.75
+   * Be careful out there (anti-ai exploit event): All players (AIs not included) start with a -50% penalty to envoy relationship improvements for 20 years, UNLESS they are
+     * Government: Megacorporations
+     * Ethic: Xenophile
+     * Civics: Diplomatic Corps or Empath
  * Anti-AI vassal exploits:
    * NEGOTIATE_AGREEMENT_ACCEPTANCE_OPINION_FACTOR: 0.20 from 0.333
-   * NEGOTIATE_AGREEMENT_RESOURCE_ACCEPTANCE_COEFICIENT_FOR_OVERLORD: 1.5 from 1.0
+   * NEGOTIATE_AGREEMENT_RESOURCE_ACCEPTANCE_COEFICIENT_FOR_OVERLORD: 2.0 from 1.0
 
-### Boosts
- * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -60% defense platform build cost and +15% starbase damage boost for the first 20 years of the game.
+## Boosts
+ * None
 
 ## Leader level cap
 
 ### Nerfs
- * Base Leader skill cap: 3 from 5
- * Supremacy (War Games): Admiral leader cap level +1 from +2
- * Discovery (Science Division): Scientist leader cap level +1 from +2
+ * Base Leader skill cap: 2 from 5
  * Meritocracy: leader cap level +0 from +1
 
 ## Boosts
- * Capacity Booster: +1 leader level cap from +2, +1 starting level and 50% increase in cost from 100%
- * Selected Lineage: 25% increase in cost from 50%
- * Transcendent Learning: +1 leader level cap from +2, +1 to starting leader skill and 75% to leader leveling speed from +50%
- * Domination (Grand Council): Ruler leader cap level +1 from +2 and +1 to starting level
- * Domination (Viceroys): Governor leader cap level +1 from +2 and +1 to starting level
- * Philosopher King: Ruler leader cap level +1 from +2 and +1 to starting level and +3% to unity
- * Pooled Knowledge: +1 starting level to leaders
- * Factory Overclocking: +1 starting level to leaders
- * Ruthless Competition: +1 starting level to leaders
- * Enhanced Memory: +1 starting level to leaders
+ * Supremacy (War Games): General leader cap level +2
+ * Unyielding (Adoption): General leader cap level +2
  * Venerable: +1 starting level to leaders
- * Talented: +1 to starting level
  * Quick Learners: +35% to leader leveling speed from +25%
  * Learning Algorithms: +35% to leader leveling speed from +25%
+ * Generals:
+   * Gain 25 experience every year
+   * Gain 2 times more experience from a battle
+   * GENERAL_DEATH_CHANCE: 0.01 from 0.05, Chance of dying from a battle more in line with that of Admirals. Note there is a bug where Generals die instantly if a unit dies from bombardment.
+   * 5% army morale per level
+   * 2.5% disengage chance per level
+   * 5% army health per level
+ * Admirals:
+   * 1% ship speed per level
+   * 2% ship hull per level
+   * 1% ship evasion per level
+   * 2% ship weapon damage per level
+ * Scientists:
+   * 3% research speed from 2% per level
+   * 15% survey speed from 10% per level
+   * 2 archaeological clues from 1 per level
+ * Governors:
+   * 3% job production from 2% per level
+   * -3% population empire size from -2% per level
+   * -4 crime from -3 per level
+ * Ruler:
+   * 0.5 planet stability per level
+   * 5% diplomacy weight per level
 
 ## Ships
 
@@ -79,19 +105,12 @@
  * Hive World: Energy cost 11000 from 10000
  * Machine World: Energy cost 11000 from 10000
  * Arcology Project: requires 3 Ascension perks from 2
+ * Executive Vigor: +80 edict funds from +100
 
 ### Boosts
  * Enigmatic Engineering: +4 encryption from +2 and ascension perks required dropped to 0 from 1
  * Galactic Force Projection: +5% sublight speed
  * Consecrate Worlds: Can now consecrate an occupied world
-
-## Traditions
-
-### Nerfs
- * Expansion (a new life): +6% to population growth from +10%
- 
-### Boosts
- * None
 
 ## Standard Civics
 
@@ -101,7 +120,6 @@
 
 ### Boosts
  * Free Haven: +20% pop growth from immigration from 15% and 60% immigration pull from 50%
- * Efficient Bureaucracy: -40% administrator upkeep from -20%
  * Warrior Culture: Duelists give +3 unity from +2
  * Catalytic Converter: Catalytic Technicians require 8 food from 9
  * Merchant Guilds: +1 Envoy and +3% Trade value
@@ -141,11 +159,12 @@
 ### Nerfs
  * Prosperous Unification: +10% happiness from +15%
  * Scion: -5% happiness and -20% Ethics attraction
- * Imperial Fiefdom origin: -5% happiness, -20% Ethics attraction and Overlord starting opinion bonus 90 from 120
+ * Imperial Fiefdom origin: -5% happiness, -20% Ethics attraction and Overlord starting opinion bonus 2 from 120
  * Clone Army: 1/4/5/8/12 to current pop assembly from 2/5/7/10/15 and +20% fire rate for clone admirals from +25%
 
 ### Boosts
  * Hegemon: "Long live the hegemony" event gifts the player with +200 influence and +75 alloy 30 days after game start.
+ * Common Ground: "Live long and prosper" event gifts the player +125 influence 30 days after game start along with a crewed science ship.
  * Galactic Doorstep: +15% Physics research
  * Slingshot to the Stars: +15% Physics research
  * Post Apocalyptic: +10% Habitability bonus
@@ -193,17 +212,6 @@
  * Gaseous Byproduct: +0.02 Exotic gases from +0.01
  * Volatile Excretion skin: +0.02 Volatile motes from +0.01
 
-## Leader Traits:
-
-### Nerfs
- * Corvette Focus: -13% from -20% Corvette cost reduction and +10% build speed
- * Destroyer Focus: -13% from -20% Destroyer cost reduction and +10% build speed
- * Cruiser Focus: -13% from -20% Cruiser cost reduction and +10% build speed
- * Battleship Focus: -13% from -20% Battleship cost reduction and +10% build speed
-
-### Boosts
- * none
- 
 ## Toxoid Traits:
 
 ### Nerfs

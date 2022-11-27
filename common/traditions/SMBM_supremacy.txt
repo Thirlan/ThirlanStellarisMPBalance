@@ -5,7 +5,8 @@ tr_supremacy_war_games = {
 	}
 	modifier = {
 		country_command_limit_add = 20
-		admiral_skill_levels = 1
+		admiral_skill_levels = 2
+		general_skill_levels = 2
 	}
 
 	tradition_swap = {

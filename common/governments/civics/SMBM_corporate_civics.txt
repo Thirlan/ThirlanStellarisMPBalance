@@ -48,23 +48,3 @@ civic_free_traders = {
 		branch_office_value_mult = 0.10
 	}
 }
-
-civic_ruthless_competition = {
-	potential = {
-		OR = {
-			authority = { value = auth_corporate }
-			civics = { value = civic_galactic_sovereign_megacorp }
-		}
-	}
-	possible = {
-		civics = { NOT = { value = civic_meritocracy } }
-	}
-	random_weight = { base = 5 }
-
-	description = "civic_tooltip_ruthless_competition_effects"
-	modifier = {
-		leader_skill_levels = 1
-		species_leader_exp_gain = 0.1
-		intel_decryption_add = 1
-	}
-}

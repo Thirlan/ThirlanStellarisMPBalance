@@ -8,15 +8,6 @@ The purpose of this document is to give a high level overview as to why some thi
 
 Following videos were used to determine those mechanics that needed to be balanced. Some of these videos will be dated, but their fundamentals have not changed too much from version to version. In the event the game has changed radically or a better video has been posted then the video links will be updated.
 
-* https://www.youtube.com/watch?v=ENEF5-LucnY&ab_channel=StefanAnon
-* https://www.youtube.com/watch?v=JBVMfT64OgQ&ab_channel=StefanAnon
-* https://www.youtube.com/watch?v=4tSgP8xSoFo&ab_channel=StefanAnon
-* https://www.youtube.com/watch?v=18x3G6ffULo&ab_channel=StefanAnon
-* https://www.youtube.com/watch?v=0qTFpNsKRY4&ab_channel=StefanAnon
-* https://www.youtube.com/watch?v=gg45JnH7ipc&ab_channel=StefanAnon
-* https://www.youtube.com/watch?v=Id19TyroN0k&ab_channel=StefanAnon
-* https://www.youtube.com/watch?v=UqA4GFBYdyU&ab_channel=StefanAnon
-* https://www.youtube.com/watch?v=gCYyA2rvJdQ&ab_channel=StefanAnon
 * https://www.youtube.com/watch?v=Q76JXW22ncc&ab_channel=MontuPlays
 * https://www.youtube.com/watch?v=C1lfQ2alOMM&ab_channel=MontuPlays
 * https://www.youtube.com/watch?v=Q0aj5IcxNJg&ab_channel=MontuPlays
@@ -26,10 +17,10 @@ Following videos were used to determine those mechanics that needed to be balanc
 * https://www.youtube.com/watch?v=C88jv2OifnM&ab_channel=MontuPlays
 * https://www.youtube.com/watch?v=zbq-3q9I-kM
 
-A lot of appreciation for Stefan's team: Magikaas, Aow, AirHunter, Hoover Tesla
+A lot of appreciationdedicated Youtubers such as Montu, ASPec and Stefan
 Appreciation from the players in ISS: Komrad Truck, Jojo
-As well as to some other dedicated Youtubers such as Montu and ASPec
 And from the Stellaris Modder's Den: OldEnt (ACE) and Corsairmarks helped tremendously
+Appreciation for Stefan's team: Magikaas, Aow, AirHunter, Hoover Tesla
 
 ## Tech Rushing and population
 
@@ -53,7 +44,7 @@ Many of the leadership cap game choices are considered very weak due to how litt
 
 The leadership cap bonuses also loses some of its value since most leaders will often plateau at 5, with or without a cap bonus, because of experience gains and mortality. In addition, the % gains for going from 5 to 6 are less (20%) than the gains from going from 4 to 5 (25%).
 
-Due to this, one of the simpler ways of buffing the leadership cap game choices has been to reduce the base cap on leaders and also reduce leadership cap skills bonuses from certain powers and for those that give +2 to leadership cap to give +1 to leadership cap instead with +1 to starting leader levels instead.
+Due to this, one of the simpler ways of buffing the leadership cap game choices has been to reduce the base cap on leaders while also giving more bonuses for leaders as they level.
 
 ## Army buffs
 
@@ -71,9 +62,13 @@ This is a temporary event that reduces the cost of defensive modules and gives a
 
 The boost also only applies to players and not AIs, which also encourages players to attack AIs first before killing their fellow gamers.
 
+## AI Trade exploitation
+
+As the game has become more complicated and the choices multiply, the number of ways to exploit the AI's weaknesses has increased. The most noticeable one in the game so far is through trade deals and none more abusive than the Imperial Fiefdom origin. Due to these exploits various game attributes have been tweaked to prevent the AI from accepting weak trade deals and being sucked dry of all resources. For example, it is harder to improve relationships in general with the AI using Embassies. The AI is also less willing to engage in one sided tech trade deals.
+
 ## Racial traits
 
-Some people may noticed that the racial traits have some unusual changes to them. For example Venerable +1 to starting leader level. The argument might have been to just reduce the point cost or increasing the longevity. There are two reasons for not having done this.
+Some people may noticed that the racial traits have some unusual changes to them. For example Venerable's +1 to starting leader level. The argument might have been to just reduce the point cost or increasing the longevity. There are two reasons for not having done this.
 
 The first reason is that changing point costs of traits will affect the existing races that people have created and come with the game. This falls foul of our KISS principle of making the sure the mod is simple to use and easy to turn on and off. Hence no changes to point costs will EVER be made and requires us to instead modify the abilities directly.
 

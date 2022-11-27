@@ -14,9 +14,17 @@ event = {
 
 	trigger = {
 		is_crises_allowed = yes
-		end_game_years_passed >= 0
 		OR = {
-			end_game_years_passed >= 50
+			has_global_flag = endgame_crisis_early_start
+			end_game_years_passed >= 0
+			AND = {
+				is_active_resolution = resolution_galacticstudies_extradimensional_experimentation
+				is_active_resolution = resolution_galactic_threats_committee
+			}
+		}
+		OR = {
+			has_global_flag = endgame_crisis_early_start
+			end_game_years_passed >= 25
 			default_endgame_early_start_triggers = yes
 			any_country = {
 				is_country_type = default
@@ -26,8 +34,20 @@ event = {
 				}
 			}
 			is_active_resolution = resolution_galacticstudies_extradimensional_experimentation
+			is_active_resolution = resolution_galactic_threats_committee
 		}
-		NOT = { has_global_flag = galactic_crisis_happened }
+		OR = {
+			NOT = { has_global_flag = galactic_crisis_happened }
+			AND = {
+				allowed_crisis_type = all
+				NOR = {
+					has_global_flag = galactic_crisis_recently_fired #because some might take a while to arrive, we don't want two at once
+					any_country = {
+						is_crisis_faction = yes
+					}
+				}
+			}
+		}
 	}
 
 	immediate = {
@@ -97,8 +117,16 @@ event = {
 						factor = 4
 						end_game_years_passed >= 100
 					}
+					modifier = {
+						factor = 0
+						has_global_flag = prethoryn_invasion_happened
+					}
 					country_event = { id = crisis.10 days = 200 random = 800 }
 					set_global_flag = galactic_crisis_happened
+					set_timed_global_flag = {
+						flag = galactic_crisis_recently_fired
+						years = 12
+					}
 				}
 
 				### Unbidden (Extradimensionals)
@@ -133,6 +161,10 @@ event = {
 						}
 					}
 					modifier = {
+						factor = 0.5
+						end_game_years_passed < 20
+					}
+					modifier = {
 						factor = 2
 						end_game_years_passed >= 35
 					}
@@ -152,8 +184,16 @@ event = {
 						factor = 4
 						end_game_years_passed >= 100
 					}
+					modifier = {
+						factor = 0
+						has_global_flag = extradimensional_invasion_happened
+					}
 					country_event = { id = crisis.1000 days = 200 random = 800 }
 					set_global_flag = galactic_crisis_happened
+					set_timed_global_flag = {
+						flag = galactic_crisis_recently_fired
+						years = 12
+					}
 				}
 
 				### Contingency (AI)
@@ -207,12 +247,25 @@ event = {
 						factor = 4
 						end_game_years_passed >= 100
 					}
+					modifier = {
+						factor = 0
+						has_global_flag = ai_invasion_happened
+					}
 					country_event = { id = crisis.2005 days = 200 random = 800 }
 					set_global_flag = galactic_crisis_happened
+					set_timed_global_flag = {
+						flag = galactic_crisis_recently_fired
+						years = 12
+					}
 				}
 
 				### Nothing
-				120 = {}
+				120 = {
+					modifier = {
+						subtract = 119
+						has_global_flag = endgame_crisis_early_start
+					}
+				}
 			}
 		}
 	}

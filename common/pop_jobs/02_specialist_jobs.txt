@@ -2271,7 +2271,7 @@ knight = {
 		potential = {
 			owner = { has_country_flag = toxoids_7090_a }
 		}
-		planet_stability_add = 3
+		planet_amenities_add = 5
 		mult = value:scripted_modifier_mult|MODIFIER|knights_independent_category_produces_mult|
 	}
 
