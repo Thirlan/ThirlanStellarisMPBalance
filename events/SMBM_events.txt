@@ -53,6 +53,24 @@ country_event = {
 			modifier = be_careful_out_there
 			days = 7300
 		}
+        
+        if = {
+            limit = {
+                NOT = {
+                    OR = {
+                        has_ethic = ethic_xenophile
+                        has_ethic = ethic_fanatic_xenophile
+                        has_authority = auth_corporate
+                        has_civic = civic_diplomatic_corps
+                        has_civic = civic_hive_empath
+                    }
+                }
+            }
+            add_modifier = {
+                modifier = careful_envoys
+                days = 7300
+            }
+        }
 	}
 
 	option = {
@@ -86,6 +104,25 @@ country_event = {
 
 	option = {
 		name = smbm.3.option
+	}
+}
+
+# Leaders - Generals, passive experience boost
+event = {
+	id = smbm.4
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+        every_country = {
+            every_owned_leader = {
+                limit = {
+                    leader_class = general
+                }
+                add_experience = 25
+            }
+        }
 	}
 }
 
@@ -165,24 +202,6 @@ country_event = {
 	}
 }
 
-# Factory Overclocking Boost
-country_event = {
-	id = smbm.10
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_civic = civic_machine_factory_overclock
-	}
-
-	immediate = {
-		from = {
-			add_skill = 1
-		}
-	}
-}
-
 # Venerable boost
 country_event = {
 	id = smbm.11
@@ -192,183 +211,6 @@ country_event = {
 
 	trigger = {
 		has_trait = "trait_venerable"
-	}
-
-	immediate = {
-		from = {
-			add_skill = 1
-		}
-	}
-}
-
-# Transcendent Learning Boost
-country_event = {
-	id = smbm.12
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_ascension_perk = ap_transcendent_learning
-	}
-
-	immediate = {
-		from = {
-			add_skill = 1
-		}
-	}
-}
-
-# Policy Leader Capacity Booster
-country_event = {
-	id = smbm.13
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_policy_flag = leader_enhancement_capacity_boosters
-	}
-
-	immediate = {
-		from = {
-			add_skill = 1
-		}
-	}
-}
-
-# Ruthless Competition Boost
-country_event = {
-	id = smbm.14
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_civic = civic_ruthless_competition
-	}
-
-	immediate = {
-		from = {
-			add_skill = 1
-		}
-	}
-}
-
-# Pooled Knowledge Boost
-country_event = {
-	id = smbm.15
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_civic = civic_hive_pooled_knowledge
-	}
-
-	immediate = {
-		from = {
-			add_skill = 1
-		}
-	}
-}
-
-# Enhanced Memory Boost
-country_event = {
-	id = smbm.16
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_trait = "trait_robot_enhanced_memory"
-	}
-
-	immediate = {
-		from = {
-			add_skill = 1
-		}
-	}
-}
-
-# Grand Council Boost
-country_event = {
-	id = smbm.17
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_tradition = "tr_domination_grand_council"
-        from = {
-			OR = {
-				leader_class = ruler
-			}
-		}
-	}
-
-	immediate = {
-		from = {
-			add_skill = 1
-		}
-	}
-}
-
-# Viceroy Boost
-country_event = {
-	id = smbm.18
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_tradition = "tr_domination_colonial_viceroys"
-        from = {
-			OR = {
-				leader_class = governor
-			}
-		}
-	}
-
-	immediate = {
-		from = {
-			add_skill = 1
-		}
-	}
-}
-
-# Philosopher King Boost
-country_event = {
-	id = smbm.19
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_civic = civic_philosopher_king
-        from = {
-			OR = {
-				leader_class = ruler
-			}
-		}
-	}
-
-	immediate = {
-		from = {
-			add_skill = 1
-		}
-	}
-}
-
-# Talented boost
-country_event = {
-	id = smbm.20
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_trait = "trait_talented"
 	}
 
 	immediate = {

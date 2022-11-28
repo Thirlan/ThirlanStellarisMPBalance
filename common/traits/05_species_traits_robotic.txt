@@ -212,9 +212,6 @@ trait_robot_enhanced_memory = {
 			NOT = { has_policy_flag = ai_outlawed }
 		}
 	}
-
-	custom_tooltip = TRAIT_ROBOT_ENHANCED_MEMORY_EFFECT
-
 	modifier = {
 		leader_skill_levels = 2
 	}

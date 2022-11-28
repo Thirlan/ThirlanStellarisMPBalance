@@ -6,6 +6,10 @@ be_careful_out_there = {
 	shipclass_starbase_damage_mult = 0.15
 }
 
+careful_envoys = {
+	envoy_improve_relations_mult = -0.5
+}
+
 unholy_matrimony = {
 	pop_purge_speed = -0.25
 }
@@ -25,4 +29,42 @@ prosp_uni_mod = {
 jump_drive_cooldown = {
 	ship_weapon_damage = -0.6
 	ship_speed_mult = -0.6
+}
+
+##########################################################################
+# Leader Skill Modifiers
+##########################################################################
+
+skill_admiral = {
+	ship_fire_rate_mult = 0.06
+	ship_disengage_opportunities_add = 0.4
+	ship_speed_mult = 0.01
+	ship_hull_mult = 0.02
+	ship_evasion_mult = 0.01
+	ship_weapon_damage = 0.02
+}
+
+skill_general = {
+	army_damage_mult = 0.05
+	army_disengage_chance_mult= 0.025
+	army_morale = 0.05
+	army_health = 0.05
+}
+
+skill_scientist = {
+	all_technology_research_speed = 0.03
+	science_ship_survey_speed = 0.15
+	ship_archaeological_site_clues_add = 2
+}
+
+skill_governor = {
+	planet_jobs_produces_mult = 0.03
+	species_empire_size_mult = -0.03
+	planet_crime_add = -4
+}
+
+skill_ruler = {
+	country_edict_fund_add = 5
+	planet_stability_add = 0.5
+	diplo_weight_mult = 0.05
 }

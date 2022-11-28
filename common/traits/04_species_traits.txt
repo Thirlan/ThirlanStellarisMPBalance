@@ -326,7 +326,6 @@ trait_talented = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	custom_tooltip = TRAIT_TALENTED_EFFECT
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	opposites = { "trait_nerve_stapled" }
@@ -1096,12 +1095,22 @@ trait_enigmatic_intelligence = {
 	species_potential_add = {
 		always = no
 	}
+	species_possible_remove = {
+		can_remove_presapient_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = no
+	}
 	improves_leaders = yes
-	advanced_trait = yes
 	opposites = { "trait_nerve_stapled" "trait_erudite" "trait_slow_learners" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		planet_researchers_produces_mult = 0.1
+		planet_jobs_physics_research_produces_mult = 0.10
+		planet_jobs_society_research_produces_mult = 0.10
+		planet_jobs_engineering_research_produces_mult = 0.10
 		species_leader_exp_gain = 0.25
 	}
 	slave_cost = {
@@ -1126,8 +1135,16 @@ trait_enigmatic_intelligence_poor = {
 	species_potential_add = {
 		always = no
 	}
+	species_possible_remove = {
+		can_remove_presapient_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = no
+	}
 	improves_leaders = yes
-	advanced_trait = yes
 	opposites = { "trait_intelligent"}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
@@ -1157,8 +1174,16 @@ trait_enigmatic_intelligence_failed = {
 	species_potential_add = {
 		always = no
 	}
+	species_possible_remove = {
+		can_remove_presapient_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = no
+	}
 	improves_leaders = yes
-	advanced_trait = yes
 	opposites = { "trait_intelligent"}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
@@ -1407,7 +1432,7 @@ trait_plantoid_radiotrophic = {
 	allowed_archetypes = { BIOLOGICAL }
 	species_class = { PLANT FUN }
 	custom_tooltip = TRAIT_PLANTOID_RADIOTROPHIC_EFFECT
-	inline_script = "traits/radiotrophic_effects"
+	inline_script = "traits/radiotrophic_effects" 
 }
 
 trait_plantoid_budding = {

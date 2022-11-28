@@ -7,16 +7,12 @@ on_game_start = {
 
 on_leader_spawned = {
 	events = {
-        smbm.10 # Factory Overclocking Boost
 		smbm.11 # Venerable
-        smbm.12 # Transcendent Learning Boost
-        smbm.13 # Policy Leader Capacity Booster
-        smbm.14 # Ruthless Competition Boost
-        smbm.15 # Pooled Knowledge Boost
-        smbm.16 # Enhanced Memory Boost
-        smbm.17 # Grand Council Boost
-        smbm.18 # Viceroy Boost
-        smbm.19 # Philosopher King Boost
-        smbm.20 # Talented Boost
+	}
+}
+
+on_yearly_pulse = {
+	events = {
+		smbm.4 # Generals gain 25 experience every year
 	}
 }

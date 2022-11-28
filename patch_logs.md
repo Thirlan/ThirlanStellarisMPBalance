@@ -1,3 +1,65 @@
+# 2022/11/27 - 1.5.1
+
+Preparing for 3.6.0 release and some other tweaks. Two major changes are focused on this modification. The first is an additional nerf to AI trade exploitation, specifically the Imperial Fiefdom. The second change is a simplification and buff to leader levels, which was becoming difficult to maintain the way it was in the mod. The largest buff by far is to Generals, who are essentially non-existent in the game because they have so little impact.
+
+Added:
+ * RESEARCH_AGREEMENT_SPEED_MULT: 0.15 from 0.25
+ * TRADE_VALUE_FAVORS_MULT: 5 from 10
+ * MIN_WILLINGNESS_TO_OFFER_TRADE: 0.85 from .75
+ * Unyielding (Adoption): General leader cap level +2
+ * Generals:
+   * Gain 25 experience every year
+   * Gain 2 times more experience from a battle
+   * GENERAL_DEATH_CHANCE: 0.01 from 0.05, Chance of dying from a battle more in line with that of Admirals
+   * 5% army morale per level
+   * 2.5% disengage chance per level
+   * 5% army health per level
+ * Admirals:
+   * 1% ship speed per level
+   * 2% ship hull per level
+   * 1% ship evasion per level
+   * 2% ship weapon damage per level
+ * Scientists:
+   * 3% research speed from 2% per level
+   * 15% survey speed from 10% per level
+   * 2 archaeological clues from 1 per level
+ * Governors:
+   * 3% job production from 2% per level
+   * -3% population empire size from -2% per level
+   * -4 crime from -3 per level
+ * Ruler:
+   * 0.5 planet stability per level
+   * 5% diplomacy weight per level
+
+Removed:
+ * Discovery (Science Division): Scientist leader cap level +1 from +2
+ * Capacity Booster: +1 leader level cap from +2, +1 starting level and 50% increase in cost from 100%
+ * Selected Lineage: 25% increase in cost from 50%
+ * Domination (Grand Council): Ruler leader cap level +1 from +2 and +1 to starting level
+ * Domination (Viceroys): Governor leader cap level +1 from +2 and +1 to starting level
+ * Philosopher King: Ruler leader cap level +1 from +2, +1 to starting level and +3% to unity
+ * Pooled Knowledge: +1 starting level to leaders
+ * Factory Overclocking: +1 starting level to leaders
+ * Ruthless Competition: +1 starting level to leaders
+ * Enhanced Memory: +1 starting level to leaders
+ * Talented: +1 to starting level
+ * Corvette Focus: -13% from -20% Corvette cost reduction and +10% build speed
+ * Destroyer Focus: -13% from -20% Destroyer cost reduction and +10% build speed
+ * Cruiser Focus: -13% from -20% Cruiser cost reduction and +10% build speed
+ * Battleship Focus: -13% from -20% Battleship cost reduction and +10% build speed
+
+Changed:
+ * Imperial Fiefdom origin: -5% happiness, -20% Ethics attraction and Overlord starting opinion bonus 1 from 120
+ * Be careful out there (anti-ai exploit event): All players (AIs not included) start with a -50% penalty to envoy relationship improvements for 20 years, UNLESS they are
+   * Government: Megacorporations
+   * Ethic: Xenophile
+   * Civics: Diplomatic Corps or Empath
+ * NEGOTIATE_AGREEMENT_RESOURCE_ACCEPTANCE_COEFICIENT_FOR_OVERLORD: 2.0 from 1.0
+ * Base Leader skill cap: 2 from 5
+ * Supremacy (War Games): General leader cap level +2
+ * Executive Vigor: +80 edict funds from +100
+
+
 # 2022/11/12 - 1.5.0
 
 Upgrade to Stellaris version 3.6.0 beta
