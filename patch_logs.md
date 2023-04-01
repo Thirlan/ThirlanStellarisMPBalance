@@ -1,3 +1,10 @@
+# 2022/04/01 - 1.6.0
+
+Updating to latest DLCs with minor tweaks:
+ 
+Changed
+ * Technological Ascendency: +7% Research rate from +10%
+
 # 2022/11/27 - 1.5.1
 
 Preparing for 3.6.0 release and some other tweaks. Two major changes are focused on this modification. The first is an additional nerf to AI trade exploitation, specifically the Imperial Fiefdom. The second change is a simplification and buff to leader levels, which was becoming difficult to maintain the way it was in the mod. The largest buff by far is to Generals, who are essentially non-existent in the game because they have so little impact.
