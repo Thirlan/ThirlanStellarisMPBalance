@@ -388,6 +388,16 @@ coordinator = {
 
 	triggered_planet_modifier = {
 		potential = {
+			planet = {
+				has_active_building = building_league_offices
+			}
+		}
+		planet_amenities_no_happiness_add = 1
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	triggered_planet_modifier = {
+		potential = {
 			planet = { has_modifier = planet_artifact_relays_machine }
 		}
 		modifier = {
@@ -506,6 +516,16 @@ synapse_drone = {
 			planet_stability_add = 2
 			planet_jobs_simple_drone_produces_mult = 0.01
 		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			planet = {
+				has_active_building = building_league_offices
+			}
+		}
+		planet_amenities_no_happiness_add = 1
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 
 	triggered_planet_modifier = {
@@ -2027,6 +2047,135 @@ bath_attendant_machine = {
 					is_country_type = ai_empire
 				}
 			}
+		}
+	}
+}
+
+archaeo_drone = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_research_lab_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+
+	possible = { can_think = yes }
+
+	resources = {
+		category = planet_researchers
+		produces = {
+			physics_research = 2
+			engineering_research = 2
+			society_research = 5
+		}
+		produces = {
+			trigger = { planet = { is_planet_class = pc_relic } }
+			minor_artifacts = 0.3
+		}
+		upkeep = {
+			minerals = 6
+		}
+		upkeep = {
+			trigger = {
+				planet = {
+					has_planet_flag = has_science_ministry
+				}
+			}
+			minerals = 3
+		}
+	}
+
+	overlord_resources = {
+		category = planet_requisitioned_research
+		produces = {
+			trigger = {
+				planet = {
+					has_planet_flag = has_science_ministry
+				}
+			}
+			physics_research = 1
+			engineering_research = 1
+			society_research = 1
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		mult = value:job_weights_research_modifier|JOB|archaeo_drone|
+	}
+}
+
+archaeo_unit = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_research_lab_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+
+	possible = { can_think = yes }
+
+	resources = {
+		category = planet_researchers
+		produces = {
+			physics_research = 2
+			engineering_research = 2
+			society_research = 5
+		}
+		produces = {
+			trigger = { planet = { is_planet_class = pc_relic } }
+			minor_artifacts = 0.3
+		}
+		upkeep = {
+			energy = 4
+		}
+		upkeep = {
+			trigger = {
+				planet = {
+					has_planet_flag = has_science_ministry
+				}
+			}
+			energy = 2
+		}
+	}
+
+	overlord_resources = {
+		category = planet_requisitioned_research
+		produces = {
+			trigger = {
+				planet = {
+					has_planet_flag = has_science_ministry
+				}
+			}
+			physics_research = 1
+			engineering_research = 1
+			society_research = 1
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		mult = value:job_weights_research_modifier|JOB|archaeo_unit|
+		modifier = {
+			factor = 0.9
+			exists = owner
+			years_passed < 1
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
 		}
 	}
 }

@@ -7,7 +7,10 @@
 ap_become_the_crisis = {
 	potential = {
 		has_nemesis = yes
-		NOT = { has_ascension_perk = ap_become_the_crisis }
+		NOR = {
+			has_ascension_perk = ap_become_the_crisis
+			has_origin = origin_slavers
+		}
 	}
 
 	possible = {
@@ -177,7 +180,7 @@ ap_galactic_force_projection = {
 
 ap_technological_ascendancy = {
 	modifier = {
-		all_technology_research_speed = 0.06
+		all_technology_research_speed = 0.07
 	}
 
 	potential = {

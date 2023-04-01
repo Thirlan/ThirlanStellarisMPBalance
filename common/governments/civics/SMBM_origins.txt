@@ -127,8 +127,7 @@ origin_star_slingshot = {
 	random_weight = {
 		base = 0
 	}
-
-    modifier = {
+	modifier = {
 		country_physics_research_produces_mult = 0.15
 	}
 }
