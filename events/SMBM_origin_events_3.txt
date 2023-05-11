@@ -1,3 +1,5 @@
+namespace = origin
+
 #Lithoid origin
 planet_event = {
 	id = origin.3010

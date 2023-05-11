@@ -456,7 +456,7 @@ trait_unruly = {
 	opposites = { "trait_docile" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		species_empire_size_mult = 0.12
+		species_empire_size_mult = 0.13
 	}
 	slave_cost = {
 		energy = -200
@@ -873,7 +873,7 @@ trait_conservational = {
 	opposites = { "trait_wasteful" "trait_hive_mind" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		planet_pops_consumer_goods_upkeep_mult = -0.12
+		planet_pops_consumer_goods_upkeep_mult = -0.13
 	}
 	slave_cost = {
 		energy = 500

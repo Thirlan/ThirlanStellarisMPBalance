@@ -117,7 +117,7 @@
 
 ### Nerfs
  * Scion: -5% happiness and -20% Ethics attraction
- * Imperial Fiefdom origin: -5% happiness, -20% Ethics attraction and Overlord starting opinion bonus 2 from 120
+ * Imperial Fiefdom origin: -5% happiness, -20% Ethics attraction and Overlord starting opinion bonus 1 from 120
  * Clone Army: 1/4/5/8/12 to current pop assembly from 2/5/7/10/15
  * Necrophage: Population growth -5%
  * Progenitor hive: Fleet without an off spring ship suffer -75% penalties from -50%
@@ -129,8 +129,8 @@
  * Slingshot to the Stars: +15% Physics research
  * Post Apocalyptic: +10% habitability bonus
  * Life Seeded: Starbase influence and material cost -10%
- * Doomsday: Doomsday delayed by 10 more years
- * Calamitous Birth: +10% habitability bonus and +1 mineral districts when colonizing a planet
+ * Doomsday: stage 1 now takes ~2 years to trigger from 5 days, with stage 2 taking ~17 years from ~11 years
+ * Calamitous Birth: +1 mineral districts when colonizing a planet
  
 ## Species Traits:
 
@@ -139,7 +139,7 @@
  * Intelligent: +8% to research from +10%
  * Charismatic: +15% to amenities from +20%
  * Thrifty: +20% trade value from +25%
- * Unruly: +12% empire size from pop
+ * Unruly: +13% empire size from pop
 
 ### Boosts
  * Slow Breeders: -6% from -10%
@@ -151,7 +151,7 @@
  * Repugnant: -15% to amenities from -20%
  * Inorganic Breath: 35% increase maintenance from 50%
  * Conformist: +40% government ethics attraction from +30%
- * Conservationist: -12% pop consumer goods upkeep from -10%
+ * Conservationist: -13% pop consumer goods upkeep from -10%
  
 ## Robot Traits:
 

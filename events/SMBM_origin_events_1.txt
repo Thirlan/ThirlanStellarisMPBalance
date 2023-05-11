@@ -5,7 +5,28 @@
 #
 ###############################
 
+namespace = origin
+
 ### Doomsday
+
+# Set Up
+country_event = {
+	id = origin.60
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		save_event_target_as = doomsday_owner
+		capital_scope = {
+			set_planet_flag = doomed_planet_origin
+			add_modifier = {
+				modifier = doomsday_1
+			}
+			planet_event = { id = origin.61 days = 730 random = 365 }
+		}
+	}
+}
 
 # Doomsday 2
 planet_event = {
@@ -24,7 +45,7 @@ planet_event = {
 			modifier = doomsday_2
 		}
 		add_planet_devastation = 10
-		planet_event = { id = origin.65 days = 73000 random = 365 }
+		planet_event = { id = origin.65 days = 6605 random = 365 }
 	}
 
 	option = {

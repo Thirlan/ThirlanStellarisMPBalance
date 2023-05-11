@@ -9,13 +9,15 @@ Added:
  * Necrophage: Population growth -5%
  * Progenitor hive: Fleet without an off spring ship suffers -75% penalties from -50%
  * Nomadic: +20% pop growth from immigration from 15% and -30% resettlement cost from -25%
+ * Conservationist: -13% pop consumer goods upkeep from -10%
  * Extremely Adaptive: +25% Habitability from +20%
- * Unruly: +12% empire size from pop
  * Conformist: +40% government ethics attraction from +30%
+ * Unruly: +13% empire size from pop from +10%
  * High Bandwidth: +13% empire size from pops from +10%
  * Streamlined Protocols: -13% empire size from pops from -10%
- * Doomsday: Doomsday delayed by 10 more years
- * Calamitous Birth: +5% habitability bonus and +1 mineral districts when colonizing a planet
+ * Low Maintenance: -13% empire size from pops from -10%
+ * Doomsday: stage 1 now takes ~2 years to trigger from 5 days, with stage 2 taking ~17 years from ~11 years
+ * Calamitous Birth: +1 mineral districts when colonizing a planet
 
 Removed:
  * Base Leader skill cap: 2 from 5
