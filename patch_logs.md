@@ -1,3 +1,82 @@
+# 2023/05/11 - 1.7.0
+
+Updating to latest DLC and with some meta revisions
+
+Added:
+ * Franchising: Empire size from Branch Offices -20% from -25%
+ * Naval Contractors: Naval Cap +10% from +15%
+ * Divided Attention: -5% Empire size from pops
+ * Necrophage: Population growth -5%
+ * Progenitor hive: Fleet without an off spring ship suffers -75% penalties from -50%
+ * Nomadic: +20% pop growth from immigration from 15% and -30% resettlement cost from -25%
+ * Conservationist: -13% pop consumer goods upkeep from -10%
+ * Extremely Adaptive: +25% Habitability from +20%
+ * Conformist: +40% government ethics attraction from +30%
+ * Unruly: +13% empire size from pop from +10%
+ * High Bandwidth: +13% empire size from pops from +10%
+ * Streamlined Protocols: -13% empire size from pops from -10%
+ * Low Maintenance: -13% empire size from pops from -10%
+ * Doomsday: stage 1 now takes ~2 years to trigger from 5 days, with stage 2 taking ~17 years from ~11 years
+ * Calamitous Birth: +1 mineral districts when colonizing a planet
+
+Removed:
+ * Base Leader skill cap: 2 from 5
+ * LEADER_AGE_DEATH_CHANCE_AGE: 75 from 80
+ * LEADER_AGE_HIGH_DEATH_CHANCE_AGE: 95 from 100
+ * Supremacy (War Games): General leader cap level +2
+ * Unyielding (Adoption): General leader cap level +2
+ * Venerable: +1 starting level to leaders
+ * Quick Learners: +35% to leader leveling speed from +25%
+ * Slow Learners: -35% to leader leveling speed from -25%
+ * Learning Algorithms: +35% to leader leveling speed from +25%
+ * Repurposed Hardware: -35% to leader leveling speed from -25%
+ * Generals:
+   * Gain 25 experience every year
+   * Gain 2 times more experience from a battle
+   * GENERAL_DEATH_CHANCE: 0.01 from 0.05, Chance of dying from a battle more in line with that of Admirals
+   * 5% army morale per level
+   * 2.5% disengage chance per level
+   * 5% army health per level
+ * Admirals:
+   * 1% ship speed per level
+   * 2% ship hull per level
+   * 1% ship evasion per level
+   * 2% ship weapon damage per level
+ * Scientists:
+   * 3% research speed from 2% per level
+   * 15% survey speed from 10% per level
+   * 2 archaeological clues from 1 per level
+ * Governors:
+   * 3% job production from 2% per level
+   * -3% population empire size from -2% per level
+   * -4 crime from -3 per level
+ * Ruler:
+   * 0.5 planet stability per level
+   * 5% diplomacy weight per level
+ * Materialist: 4%/8% research bonus from 5%/10%
+ * Xenophobe: 8%/16% pop growth from 10%/20%
+ * Technocracy: -5% to Naval Capacity, -5 Naval Capacity, +5% to ship cost and -5% to ship build speed
+ * Free Haven: +20% pop growth from immigration from 15% and 60% immigration pull from 50%
+ * Merchant Guilds: +1 Envoy and +3% Trade value
+ * Media Conglomerate: +10% diplomatic weight and -10% war exhaustion from -5% war exhaustion
+ * Warrior Culture: Duelists give +3 unity from +2
+ * Catalytic Converter: Catalytic Technicians require 8 food from 9
+ * Catalytic Converter: Catalytic Drones require 8 food from 9
+ * Determined Exterminator: +50% market fee penalty
+ * Prosperous Unification: +10% happiness from +15%
+ * Scintillating Skin: +0.02 Rare crystals from +0.01
+ * Gaseous Byproduct: +0.02 Exotic gases from +0.01
+ * Volatile Excretion skin: +0.02 Volatile motes from +0.01
+ * Gene Mentorship: +35% leader experience from +25%
+
+Changed:
+ * Clone Army: 1/4/5/8/12 to current pop assembly from 2/5/7/10/15
+ * Meritocracy: Specialist pop resource output +8% from +10%
+ * Fanatical Purifier: 15% ship fire rate from 33%
+ * Static Research Analysis: +0 intel decryption from +1
+ * Rapid Breeders: +7% population growth from 10%
+ * Elevated Synapses: +16% research from +20%
+
 # 2023/04/01 - 1.6.0
 
 Updating to latest DLCs with minor tweaks:

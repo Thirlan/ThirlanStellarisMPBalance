@@ -22,15 +22,12 @@
 
 # Corporate
 
-civic_media_conglomerate = {
+civic_franchising = {
 	potential = {
 		OR = {
 			authority = { value = auth_corporate }
 			civics = { value = civic_galactic_sovereign_megacorp }
 		}
-	}
-	possible = {
-		civics = { NOT = { value = civic_idealistic_foundation } }
 	}
 	random_weight = { base = @civic_default_random_weight }
 	ai_weight = { 
@@ -38,18 +35,85 @@ civic_media_conglomerate = {
 		modifier = {
 			factor = @ai_civic_personality_match_factor
 			OR = {
+				has_ai_personality = ruthless_capitalists
+				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = slaving_despots
+				has_ai_personality = federation_builders
+				has_ai_personality = fanatic_befrienders
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
+				has_ai_personality = xenophobic_isolationists
+			}
+		}
+	}
+	description = "civic_tooltip_franchising_effects"
+	modifier = {
+		empire_size_branch_office_mult = -0.20
+	}
+}
+
+civic_naval_contractors = {
+	potential = {
+		OR = {
+			authority = { value = auth_corporate }
+			civics = { value = civic_galactic_sovereign_megacorp }
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	ai_weight = { 
+		base = @ai_civic_default_base_weight 
+		modifier = {
+			factor = @ai_civic_personality_match_factor
+			OR = {
+				has_ai_personality = ruthless_capitalists
+				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = decadent_hierarchy
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
 				has_ai_personality = honorbound_warriors
 				has_ai_personality = evangelising_zealots
-				has_ai_personality = hegemonic_imperialists
-				has_ai_personality = democratic_crusaders
+				has_ai_personality = harmonious_hierarchy
+				has_ai_personality = xenophobic_isolationists
+				has_ai_personality = fanatic_befrienders
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_forbid_factor
+			OR = {
+				has_ai_personality = peaceful_traders
+				has_ai_personality = erudite_explorers
+				has_ai_personality = spiritual_seekers
 				has_ai_personality = fanatic_purifiers
 			}
 		}
 	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_militarist
+				value = ethic_militarist
+				value = ethic_fanatic_militarist
+			}
+		}
+		civics = { NOT = { value = civic_citizen_service } }
+	}
 	modifier = {
-		country_war_exhaustion_mult = -0.10
-		pop_citizen_happiness = 0.05
-		diplo_weight_mult = 0.10
+		country_naval_cap_mult = 0.10
+	}
+	swap_type = {
+		trigger = {
+			host_has_dlc = "Overlord"
+		}
+
+		modifier = {
+			country_enclave_capacity_add = 2
+		}
 	}
 }
 
@@ -94,5 +158,62 @@ civic_free_traders = {
 	modifier = {
 		trade_value_mult = 0.08
 		branch_office_value_mult = 0.10
+	}
+}
+
+civic_indentured_assets = {
+	potential = {
+		OR = {
+			authority = { value = auth_corporate }
+			civics = { value = civic_galactic_sovereign_megacorp }
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	ai_weight = { 
+		base = @ai_civic_default_base_weight 
+		modifier = {
+			factor = @ai_civic_personality_match_factor
+			OR = {
+				has_ai_personality = ruthless_capitalists
+				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
+				has_ai_personality = erudite_explorers
+				has_ai_personality = peaceful_traders
+				has_ai_personality = spiritual_seekers
+				has_ai_personality = harmonious_hierarchy
+				has_ai_personality = fanatic_befrienders
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_forbid_factor
+			OR = {
+				has_ai_personality = democratic_crusaders
+			}
+		}
+	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_authoritarian
+				value = ethic_authoritarian
+				value = ethic_fanatic_authoritarian
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_corporate_hedonism
+				value = civic_slaver_guilds
+				value = civic_pleasure_seekers
+			}
+		}
+	}
+	modifier = {
+		planet_jobs_slave_produces_mult = 0.08
+		country_pop_enslaved_mult = 0.35
 	}
 }

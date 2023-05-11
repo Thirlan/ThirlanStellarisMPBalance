@@ -107,25 +107,6 @@ country_event = {
 	}
 }
 
-# Leaders - Generals, passive experience boost
-event = {
-	id = smbm.4
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-        every_country = {
-            every_owned_leader = {
-                limit = {
-                    leader_class = general
-                }
-                add_experience = 25
-            }
-        }
-	}
-}
-
 # Live long and prosper: Common grounds boost
 country_event = {
 	id = smbm.6
@@ -146,7 +127,7 @@ country_event = {
 		# science ship
 		create_fleet = {
 			effect = {
-				set_owner = root.owner
+				set_owner = prev
 
 				create_ship = {
 					name = "Longevity"
@@ -154,7 +135,7 @@ country_event = {
 				}
 
 				set_fleet_stance = evasive
-				set_location = root.capital_scope.star
+				set_location = prev.capital_scope.star
 
 				owner = {
 					create_leader = {
@@ -198,24 +179,6 @@ country_event = {
 		add_resource = {
 			influence = 200
 			alloys = 75
-		}
-	}
-}
-
-# Venerable boost
-country_event = {
-	id = smbm.11
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_trait = "trait_venerable"
-	}
-
-	immediate = {
-		from = {
-			add_skill = 1
 		}
 	}
 }

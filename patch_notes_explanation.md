@@ -17,7 +17,7 @@ Following videos were used to determine those mechanics that needed to be balanc
 * https://www.youtube.com/watch?v=C88jv2OifnM&ab_channel=MontuPlays
 * https://www.youtube.com/watch?v=zbq-3q9I-kM
 
-A lot of appreciationdedicated Youtubers such as Montu, ASPec and Stefan
+A lot of appreciation for dedicated Youtubers such as Montu, ASPec and Stefan
 Appreciation from the players in ISS: Komrad Truck, Jojo
 And from the Stellaris Modder's Den: OldEnt (ACE) and Corsairmarks helped tremendously
 Appreciation for Stefan's team: Magikaas, Aow, AirHunter, Hoover Tesla
@@ -37,14 +37,6 @@ The simplest fix for this is to reduce the speed at which assimilation happens a
 This origin and civics combination creates an unholy matrimony of two game mechanics that should not be together. It provides the unrestricted conquest mechanics and buffs of a devouring swarm or determined exterminator with the ability to assimilate like a determined assimilator. Normally devouring swarm or determined exterminator gain these huge combat boosts at the cost of destroying any pops they conquer, but in this case the combination of Fanatical Purifier and Necrophage gives the best of both worlds, which is a noticeable advantage.
 
 Because of this, there is a special event, "Unholy matrimony", at game start that will apply a purge penalty simply because of how powerful this combination is.
-
-## Leadership cap
-
-Many of the leadership cap game choices are considered very weak due to how little of a buff it gives throughout the game. It can be trivial to reach the leadership cap of 10 through various racial traits, technologies, ascension perks, traditions, civics and events. Hence once someone reaches 10, all the other leadership cap game choices lose all of their value. As of this writing it is possible for a bio empire to accumulate +18 in bonuses to leader level cap for scientists for example.
-
-The leadership cap bonuses also loses some of its value since most leaders will often plateau at 5, with or without a cap bonus, because of experience gains and mortality. In addition, the % gains for going from 5 to 6 are less (20%) than the gains from going from 4 to 5 (25%).
-
-Due to this, one of the simpler ways of buffing the leadership cap game choices has been to reduce the base cap on leaders while also giving more bonuses for leaders as they level.
 
 ## Army buffs
 
@@ -68,10 +60,8 @@ As the game has become more complicated and the choices multiply, the number of 
 
 ## Racial traits
 
-Some people may noticed that the racial traits have some unusual changes to them. For example Venerable's +1 to starting leader level. The argument might have been to just reduce the point cost or increasing the longevity. There are two reasons for not having done this.
+Some people may noticed that the racial traits have some unusual changes to them. The argument might have been to just reduce the point cost. There are some reasons for not having done this.
 
 The first reason is that changing point costs of traits will affect the existing races that people have created and come with the game. This falls foul of our KISS principle of making the sure the mod is simple to use and easy to turn on and off. Hence no changes to point costs will EVER be made and requires us to instead modify the abilities directly.
 
-The second reason on whether to just increase longevity has to do with longevity in the game in general. +80 is a significant boost already, and any additional years added have diminishing returns. Consider that by the end of the game your citizens can live to 130 without this boost. The game itself only lasts about 300 years so adding another 20 years does not really justify the 4 point cost of Venerable. Instead it is more logical to add some minor bonuses that have the right flavor to the trait.
-
-The bonuses added to Venerable however cannot be large enough to skew how the AI should normally use these races. AI game files are hardcoded to weigh each racial trait to determine how to use them. Our KISS principle is not to change many game files and as such it is best to give a minor buff.
+The bonuses cannot be large enough to skew how the AI should normally use these races. AI game files are hardcoded to weigh each racial trait to determine how to use them. Our KISS principle is not to change many game files and as such it is best to give a minor buff or nerf.

@@ -8,9 +8,9 @@
 #	random_weight = { base = 5 }				# scriptable weight for randomizing a civic
 #												# Note: If omitted, a default weight of 1 is used
 #												# Also note: after game start, AI selection of new civics uses the below weight instead
-#	
+#
 #	ai_weight = { base = 5 }					# scriptable weight for AI picking civics in-game (when unlocking a new slot).
-#												# Note: If omitted, a default weight of 1 is used. Not needed when "modification = no" 
+#												# Note: If omitted, a default weight of 1 is used. Not needed when "modification = no"
 #
 #	modifier = {}								# modifier added to the country if the civic is selected and valid
 #	can_build_ruler_ship = yes / no				# default: no
@@ -48,99 +48,44 @@ civic_meritocracy = {
 		}
 	}
 	random_weight = { base = @civic_default_random_weight }
-	modifier = {
-		planet_jobs_specialist_produces_mult = 0.10
-	}
-}
-
-civic_technocracy = {
-	description = civic_tooltip_technocracy_effects
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
-	}
-	possible = {
-		ethics = {
-			OR = {
-				text = civic_tooltip_materialist
-				value = ethic_materialist
-				value = ethic_fanatic_materialist
-			}
-		}
-		civics = {
-			NOR = {
-				value = civic_merchant_guilds
-				value = civic_exalted_priesthood
-				value = civic_aristocratic_elite
-				value = civic_shared_burden
-			}
-		}
-	}
-	modifier = {
-		num_tech_alternatives_add = 1
-		country_naval_cap_add = -5
-		country_naval_cap_mult = -0.05
-		starbase_shipyard_build_speed_mult = -0.05
-		starbase_shipyard_build_cost_mult = 0.05
-	}
-	random_weight = { base = @civic_default_random_weight}
-}
-
-civic_free_haven = {
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
-	}
-	possible = {
-		ethics = {
-			OR = {
-				text = civic_tooltip_xenophile
-				value = ethic_xenophile
-				value = ethic_fanatic_xenophile
-			}
-		}
-		civics = {
-			NOT = {
-				value = civic_corvee_system
-			}
-		}
-	}
-	random_weight = { base = @civic_default_random_weight }
-	ai_weight = { 
-		base = @ai_civic_default_base_weight 
+	ai_weight = {
+		base = @ai_civic_default_base_weight
 		modifier = {
 			factor = @ai_civic_personality_match_factor
 			OR = {
+				has_ai_personality = honorbound_warriors
 				has_ai_personality = erudite_explorers
-				has_ai_personality = peaceful_traders
-				has_ai_personality = democratic_crusaders
 				has_ai_personality = harmonious_hierarchy
-				has_ai_personality = federation_builders
-				has_ai_personality = fanatic_befrienders
 			}
 		}
 		modifier = {
 			factor = @ai_civic_personality_mismatch_factor
 			OR = {
 				has_ai_personality = decadent_hierarchy
-				has_ai_personality = honorbound_warriors
 				has_ai_personality = evangelising_zealots
-				has_ai_personality = hegemonic_imperialists
-				has_ai_personality = ruthless_capitalists
+				has_ai_personality = fanatic_purifiers
 			}
 		}
 		modifier = {
 			factor = @ai_civic_personality_forbid_factor
 			OR = {
-				has_ai_personality = xenophobic_isolationists
 				has_ai_personality = slaving_despots
-				has_ai_personality = fanatic_purifiers
+				has_ai_personality = ruthless_capitalists
 			}
 		}
 	}
 	modifier = {
-		pop_growth_from_immigration = 0.20
-		planet_immigration_pull_mult = 0.60
+		planet_jobs_specialist_produces_mult = 0.08
+	}
+
+	swap_type = {
+		trigger = {
+			has_paragon_dlc = yes
+		}
+
+		modifier = {
+			leader_trait_selection_options_add = 1
+		}
 	}
 }
 
@@ -186,7 +131,7 @@ civic_fanatic_purifiers = {
 
 	description = "civic_tooltip_fanatic_purifiers_effects"
 	modifier = {
-		ship_fire_rate_mult = 0.23
+		ship_fire_rate_mult = 0.15
 		army_damage_mult = 0.33
 		starbase_shipyard_build_cost_mult = -0.15
 		country_naval_cap_mult = 0.33
@@ -201,31 +146,5 @@ civic_fanatic_purifiers = {
 		modifier = {
 			country_government_civic_points_add = 1
 		}
-	}
-}
-
-civic_merchant_guilds = {
-	description = "civic_tooltip_merchant_guilds_effects"
-	playable = { host_has_dlc = "Megacorp" }
-	ai_playable = { host_has_dlc = "Megacorp" }
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
-	}
-	possible = {
-		civics = {
-			NOR = {
-				value = civic_exalted_priesthood
-				value = civic_aristocratic_elite
-				value = civic_technocracy
-			}
-		}
-	}
-	random_weight = {
-		base = @civic_uncommon_random_weight
-	}
-	modifier = {
-		envoys_add = 1
-		trade_value_mult = 0.03
 	}
 }

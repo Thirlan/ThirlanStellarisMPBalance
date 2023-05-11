@@ -1,2 +1,1 @@
-@lithoid_trait_resource_production = 0.02
 @plantoid_budding_rate = 0.0175

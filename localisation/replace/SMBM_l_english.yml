@@ -1,25 +1,22 @@
 ﻿l_english:
  
  # TRAITS
- TRAIT_LITHOID_GASEOUS_BYPRODUCTS_EFFECT: "Each pop with living standards of slavery or better produces 0.02 £exotic_gases£ §Y$exotic_gases$§! per month."
- TRAIT_LITHOID_SCINTILLATING_EFFECT: "Each pop with living standards of slavery or better produces 0.02 £rare_crystals£ §Y$rare_crystals$§! per month."
- TRAIT_LITHOID_VOLATILE_EXCRETIONS_EFFECT: "Each pop with living standards of slavery or better produces 0.02 £volatile_motes£ §Y$volatile_motes$§! per month."
- 
  TRAIT_PLANTOID_BUDDING_EFFECT:0 "Each pop working as a slave or better produces 0.0175 £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!"
- 
- TRAIT_VENERABLE_EFFECT:0 "Leader lifespan: §G+80§! Years\nLeader starting level: §G+1§!"
 
+ low_maintenance_tooltip:0 "Pop Consumer Goods Upkeep: §G-13%§!"
  preplanned_growth_tooltip:0 "Pop Growth Speed: §G+25%§!\nPop Housing Usage: §G-10%§!"
  artificial_intelligence_tooltip:0 "£physics£ Physics Research: §G+8%§!\n£society£ Society Research: §G+8%§!\n£engineering£ Engineering Research: §G+8%§!"
  elevated_synapses_tooltip:1 "£physics£ Physics Research: §G+16%§!\n£society£ Society Research: §G+16%§!\n£engineering£ Engineering Research: §G+16%§!"
  expressed_tradition_tooltip:0 "£unity£ Unity from £pops£ Jobs: §G+15%§!"
- gene_mentorship_tooltip:0 "Leader Experience Gain: §G+35%§!"
 
  # CIVICS
  
  # ORIGINS
  civic_tooltip_post_apocalyptic_effects: "Capital starts as a §YTomb World§!\nGain the §Y$trait_survivor$§! trait, granting:\n  Tomb World Habitability: §G+70%§!\n  Leader Lifespan: §G+10§! Years\n  Habitability: §G+10%§!"
  origin_tooltip_clone_army_effects:0 "- Start with §Y2§! £building£ §H$building_clone_army_clone_vat$§! Buildings on your homeworld, producing £pops£ §Y$clone_soldier$§! Pops.\n- §R§HAncient Clone Vats§! have an §HEmpire Limit§! of 5.§!\n- Clone Army §HAdmirals§! will grant an additional §G20%§! §H$MOD_SHIP_FIRE_RATE_MULT$§! and §G10%§! reduced §HShip Upkeep§!."
+
+origin_tooltip_doomsday_effects:2 "§R- WARNING: Challenging Origin§!\n- Your homeworld will explode within §H45 to 55 years§! after the game starts.\n- Valuable resources from the doomed planet's mantle boost production on the surface.\n- No Guaranteed Habitable Worlds will spawn near your home system."
+origin.61.desc:1 "As earthquakes and volcanic activity on [Root.GetName] continue to increase in frequency and intensity, our [Root.Owner.GetScientistPlural] are now able to more accurately predict when the end will come:\n\nThey estimate that we have between §H45 to 55 years§! until the planet detonates.\n\nConditions on the surface will steadily deteriorate until then. The only good news is that the violent tectonic movements have made it easier to access the rich resources of the planet's mantle, increasing our production capacity."
 
  # ASCENSCIONS
  requires_ap_enigmatic_engineering: "$TRIGGER_FAIL$Requires the §Y$ap_enigmatic_engineering$§! Ascension Perk."

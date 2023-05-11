@@ -77,6 +77,58 @@ origin_scion = {
 	}
 }
 
+origin_necrophage = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_necrophage.dds"
+	picture = GFX_origin_necrophage
+	flags = { custom_start_screen }
+
+	playable = {
+		host_has_dlc = "Necroids Species Pack"
+	}
+
+	possible = {
+		authority = {
+			NOT = { value = auth_machine_intelligence }
+		}
+		ethics = {
+			NOR = {
+				value = ethic_xenophile
+				value = ethic_fanatic_xenophile
+				value = ethic_fanatic_egalitarian
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_death_cult
+				value = civic_death_cult_corporate
+				value = civic_hive_empath
+				value = civic_permanent_employment
+			}
+		}
+	}
+	
+	modifier = {
+		pop_growth_speed = -0.05
+	}
+
+	description = civic_tooltip_necrophage_effects
+
+	traits = {
+		trait = trait_necrophage
+	}
+
+	has_secondary_species = {
+		title = civic_necrophage_secondary_species
+	}
+
+	advanced_start = yes
+
+	random_weight = {
+		base = 5
+	}
+}
+
 
 origin_galactic_doorstep = {
 	is_origin = yes
@@ -103,6 +155,34 @@ origin_galactic_doorstep = {
 
 	modifier = {
 		country_physics_research_produces_mult = 0.15
+	}
+}
+
+origin_progenitor_hive = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_progenitor_hive.dds"
+	picture = GFX_origin_progenitor_hive
+	max_once_global = yes
+
+	playable = {
+		has_overlord_dlc = yes
+	}
+
+	possible = {
+		authority = { value = auth_hive_mind }
+	}
+
+	description = "origin_tooltip_progenitor_hive_effects"
+	modifier = {
+		owned_ship_speed_mult = -0.75
+		owned_ship_evasion_mult = -0.75
+		owned_ship_fire_rate_mult = -0.75
+		owned_ship_accuracy_mult = -0.75
+	}
+	flags = { custom_start_screen }
+
+	random_weight = {
+		base = 5
 	}
 }
 
