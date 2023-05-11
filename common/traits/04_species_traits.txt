@@ -235,7 +235,7 @@ trait_extremely_adaptive = {
 	opposites = { "trait_nonadaptive" "trait_adaptive" "trait_robust" "trait_adaptive_lithoid" }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		pop_environment_tolerance = 0.20
+		pop_environment_tolerance = 0.25
 	}
 	slave_cost = {
 		energy = 1000
@@ -292,7 +292,7 @@ trait_rapid_breeders = {
 	opposites = { "trait_slow_breeders" "trait_fertile" "trait_rapid_breeders_lithoid" "trait_plantoid_budding" "trait_lithoid_budding" "trait_vat_grown" "trait_tiyanki" }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		pop_growth_speed = 0.06
+		pop_growth_speed = 0.07
 	}
 	slave_cost = {
 		energy = 1000
@@ -329,11 +329,12 @@ trait_talented = {
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	opposites = { "trait_nerve_stapled" }
-	modifier = {
-		leader_skill_levels = 1
-	}
 	slave_cost = {
 		energy = 500
+	}
+	modifier = {
+		negative_leader_traits_species = -1
+		leaders_upkeep_mult = -0.1
 	}
 }
 
@@ -349,7 +350,7 @@ trait_quick_learners = {
 	opposites = { "trait_slow_learners" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		species_leader_exp_gain = 0.35
+		species_leader_exp_gain = 0.1
 	}
 	slave_cost = {
 		energy = 500
@@ -365,7 +366,7 @@ trait_slow_learners = {
 	opposites = { "trait_quick_learners" "trait_enigmatic_intelligence" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		species_leader_exp_gain = -0.35
+		species_leader_exp_gain = -0.1
 	}
 	ai_weight = {
 		weight = 0
@@ -455,7 +456,7 @@ trait_unruly = {
 	opposites = { "trait_docile" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		species_empire_size_mult = 0.10
+		species_empire_size_mult = 0.12
 	}
 	slave_cost = {
 		energy = -200
@@ -572,8 +573,8 @@ trait_nomadic = {
 	opposites = { "trait_sedentary" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		pop_growth_from_immigration = 0.15
-		pop_resettlement_cost_mult = -0.25
+		pop_growth_from_immigration = 0.20
+		pop_resettlement_cost_mult = -0.30
 	}
 	slave_cost = {
 		energy = 500
@@ -715,7 +716,7 @@ trait_conformists = {
 		always = yes
 	}
 	potential_crossbreeding_chance = 1.0
-	modifier = { pop_government_ethic_attraction = 0.30 }
+	modifier = { pop_government_ethic_attraction = 0.40 }
 
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 
@@ -756,7 +757,6 @@ trait_venerable = {
 		always = yes
 	}
 	potential_crossbreeding_chance = 1.0
-	custom_tooltip = TRAIT_VENERABLE_EFFECT
 	modifier = { leader_age = 80 }
 	opposites = { "trait_enduring" "trait_fleeting" "trait_fleeting_lithoid" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
@@ -873,7 +873,7 @@ trait_conservational = {
 	opposites = { "trait_wasteful" "trait_hive_mind" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		planet_pops_consumer_goods_upkeep_mult = -0.10
+		planet_pops_consumer_goods_upkeep_mult = -0.12
 	}
 	slave_cost = {
 		energy = 500

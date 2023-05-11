@@ -311,7 +311,7 @@ trait_low_maintenance = {
 			owner = { NOT = { has_edict = damn_the_consequences } }
 		}
 		modifier = {
-			planet_pops_consumer_goods_upkeep_mult = -0.15
+			planet_pops_consumer_goods_upkeep_mult = -0.13
 		}
 	}
 	triggered_pop_modifier = {
@@ -320,7 +320,7 @@ trait_low_maintenance = {
 			owner = { has_edict = damn_the_consequences }
 		}
 		modifier = {
-			planet_pops_consumer_goods_upkeep_mult = -0.3
+			planet_pops_consumer_goods_upkeep_mult = -0.26
 		}
 	}
 	modifier = {
@@ -415,7 +415,7 @@ trait_gene_mentorship = {
 			owner = { NOT = { has_edict = damn_the_consequences } }
 		}
 		modifier = {
-			species_leader_exp_gain = 0.35
+			species_leader_exp_gain = 0.25
 		}
 	}
 	triggered_leader_modifier = {
@@ -424,7 +424,7 @@ trait_gene_mentorship = {
 			owner = { has_edict = damn_the_consequences }
 		}
 		modifier = {
-			species_leader_exp_gain = 0.70
+			species_leader_exp_gain = 0.5
 		}
 	}
 	modifier = {
@@ -533,6 +533,8 @@ trait_elevated_synapses = {
 	}
 	modifier = {
 		leader_age = -30
+		negative_leader_traits_species = -1
+		leaders_upkeep_mult = -0.25
 	}
 	assembly_score = {
 		modifier = {

@@ -1,0 +1,39 @@
+################################
+#
+# Origin Events
+# Written by Henrik Thyrwall
+#
+###############################
+
+### Doomsday
+
+# Doomsday 2
+planet_event = {
+	id = origin.61
+	title = "origin.61.name"
+	desc = "origin.61.desc"
+	picture = GFX_evt_animal_wildlife
+	show_sound = event_wind_ruins
+	location = root
+
+	is_triggered_only = yes
+
+	immediate = {
+		remove_modifier = doomsday_1
+		add_modifier = {
+			modifier = doomsday_2
+		}
+		add_planet_devastation = 10
+		planet_event = { id = origin.65 days = 73000 random = 365 }
+	}
+
+	option = {
+		name = origin_61.a
+		tooltip = {
+			add_planet_devastation = 10
+			add_modifier = {
+				modifier = doomsday_2
+			}
+		}
+	}
+}

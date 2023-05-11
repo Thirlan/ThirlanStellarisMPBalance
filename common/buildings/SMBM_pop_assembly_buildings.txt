@@ -140,4 +140,5 @@ building_clone_army_clone_vat = {
 	}
 
 	is_essential = yes
+	ai_estimate_without_unemployment = yes
 }

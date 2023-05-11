@@ -213,7 +213,8 @@ trait_robot_enhanced_memory = {
 		}
 	}
 	modifier = {
-		leader_skill_levels = 2
+		negative_leader_traits_species = -1
+		leaders_upkeep_mult = -0.25
 	}
 	ai_weight = {
 		factor = 0
@@ -299,7 +300,7 @@ trait_robot_learning_algorithms = {
 		}
 	}
 	modifier = {
-		species_leader_exp_gain = 0.35
+		species_leader_exp_gain = 0.25
 	}
 	slave_cost = {
 		energy = 750
@@ -324,7 +325,7 @@ trait_robot_repurposed_hardware = {
 		}
 	}
 	modifier = {
-		species_leader_exp_gain = -0.35
+		species_leader_exp_gain = -0.25
 	}
 	ai_weight = {
 		weight = 1
@@ -440,7 +441,7 @@ trait_robot_streamlined_protocols = {
 	opposites = { "trait_robot_high_bandwidth" }
 	allowed_archetypes = { ROBOT MACHINE }
 	modifier = {
-		species_empire_size_mult = -0.10
+		species_empire_size_mult = -0.13
 	}
 	slave_cost = {
 		energy = 750
@@ -452,7 +453,7 @@ trait_robot_high_bandwidth = {
 	opposites = { "trait_robot_streamlined_protocols" }
 	allowed_archetypes = { ROBOT MACHINE }
 	modifier = {
-		species_empire_size_mult = 0.10
+		species_empire_size_mult = 0.13
 	}
 	slave_cost = {
 		energy = -150

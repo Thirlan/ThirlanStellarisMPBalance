@@ -1,19 +1,12 @@
 ﻿l_english:
  
  # TRAITS
- TRAIT_LITHOID_GASEOUS_BYPRODUCTS_EFFECT: "Each pop with living standards of slavery or better produces 0.02 £exotic_gases£ §Y$exotic_gases$§! per month."
- TRAIT_LITHOID_SCINTILLATING_EFFECT: "Each pop with living standards of slavery or better produces 0.02 £rare_crystals£ §Y$rare_crystals$§! per month."
- TRAIT_LITHOID_VOLATILE_EXCRETIONS_EFFECT: "Each pop with living standards of slavery or better produces 0.02 £volatile_motes£ §Y$volatile_motes$§! per month."
- 
  TRAIT_PLANTOID_BUDDING_EFFECT:0 "Each pop working as a slave or better produces 0.0175 £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!"
- 
- TRAIT_VENERABLE_EFFECT:0 "Leader lifespan: §G+80§! Years\nLeader starting level: §G+1§!"
 
  preplanned_growth_tooltip:0 "Pop Growth Speed: §G+25%§!\nPop Housing Usage: §G-10%§!"
  artificial_intelligence_tooltip:0 "£physics£ Physics Research: §G+8%§!\n£society£ Society Research: §G+8%§!\n£engineering£ Engineering Research: §G+8%§!"
  elevated_synapses_tooltip:1 "£physics£ Physics Research: §G+16%§!\n£society£ Society Research: §G+16%§!\n£engineering£ Engineering Research: §G+16%§!"
  expressed_tradition_tooltip:0 "£unity£ Unity from £pops£ Jobs: §G+15%§!"
- gene_mentorship_tooltip:0 "Leader Experience Gain: §G+35%§!"
 
  # CIVICS
  
