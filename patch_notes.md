@@ -1,4 +1,4 @@
-# Version 1.7.0
+# Version 1.7.1
 
 ## General tweaks
 
@@ -8,6 +8,11 @@
  * STARBASE_CAPACITY_SYSTEM_MULT: 0.08 from 0.1
  * Starbase overcapacity upkeep penalty: +35% from +25%
  * Espionage Operations: difficulties reduced by 4
+ * LEADER_AGE_DEATH_CHANCE_AGE: 70 from 80
+ * LEADER_AGE_HIGH_DEATH_CHANCE_AGE: 90 from 100
+ * Generals:
+   * Gain 10 experience every year
+   * Gain +60% more experience from a battle
 
 ### Boosts
  * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -60% defense platform build cost and +15% starbase damage boost for the first 20 years of the game.

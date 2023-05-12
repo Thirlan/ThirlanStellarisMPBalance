@@ -104,6 +104,18 @@ civic_hive_devouring_swarm = {
 # Machine Empire
 ##################
 
+civic_machine_zero_waste_protocols = {
+	potential = { authority = { value = auth_machine_intelligence } }
+	random_weight = { base = @civic_default_random_weight }
+	ai_weight = { 
+		base = @ai_civic_default_base_weight 
+	}
+	modifier = {
+		councilor_gestalt_general_exp_gain = @gestalt_civic_node_xp_rate
+		planet_pops_robotics_upkeep_mult = -0.20
+	}
+}
+
 civic_machine_predictive_analysis = {
 	potential = { authority = { value = auth_machine_intelligence } }
 	random_weight = { base = @civic_default_random_weight }
@@ -125,17 +137,5 @@ civic_machine_replication = {
 	modifier = {
 		councilor_gestalt_governor_exp_gain = @gestalt_civic_node_xp_rate
 		planet_pop_assembly_mult = 0.15
-	}
-}
-
-civic_machine_zero_waste_protocols = {
-	potential = { authority = { value = auth_machine_intelligence } }
-	random_weight = { base = @civic_default_random_weight }
-	ai_weight = { 
-		base = @ai_civic_default_base_weight 
-	}
-	modifier = {
-		councilor_gestalt_general_exp_gain = @gestalt_civic_node_xp_rate
-		planet_pops_robotics_upkeep_mult = -0.20
 	}
 }

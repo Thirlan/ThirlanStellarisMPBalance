@@ -107,6 +107,25 @@ country_event = {
 	}
 }
 
+# Leaders - Generals, passive experience boost
+event = {
+	id = smbm.4
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+        every_country = {
+            every_owned_leader = {
+                limit = {
+                    leader_class = general
+                }
+                add_experience = 10
+            }
+        }
+	}
+}
+
 # Live long and prosper: Common grounds boost
 country_event = {
 	id = smbm.6
