@@ -1,4 +1,7 @@
 	NGameplay = {
+		LEADER_AGE_DEATH_CHANCE_AGE			= 70		# Before this age the chance wont increase
+		LEADER_AGE_HIGH_DEATH_CHANCE_AGE	= 90		# Above this age, death chance increases drastically
+	
 		STARBASE_CAPACITY_BASE 			= 2
 		STARBASE_CAPACITY_SYSTEM_MULT	= 0.08	# Mult value of Starbase Capacity for each owned system
 		
@@ -6,6 +9,10 @@
 		FAVOR_CAP							= 5
 		EMBASSY_IMPROVE_RELATION_MULTIPLIER = 2.0	# Multiplies ENVOY_IMPROVE_RELATION_BASE if you have established embassies
 		RESEARCH_AGREEMENT_SPEED_MULT		= 0.15	# Research speed increased by this for trade research agreement deal
+		
+		# Leader boosts
+		LEADER_GENERAL_GROUND_COMBAT_EXPERIENCE_SCALE			= 4.0 # Scale factor used when calculating experience gain for General
+		LEADER_GENERAL_GROUND_COMBAT_ARMIES_KILLED_CONVERSION	= 0.4 # Scale factor for total number of armies killed after combat when calculating experience gain for General
 	}
 
 	NShip = {

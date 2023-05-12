@@ -4,3 +4,9 @@ on_game_start = {
 		smbm.1
 	}
 }
+
+on_yearly_pulse = {
+	events = {
+		smbm.4 # Generals gain experience every year
+	}
+}

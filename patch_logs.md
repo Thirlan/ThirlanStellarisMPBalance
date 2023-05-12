@@ -1,3 +1,23 @@
+# 2023/05/12 - 1.7.1
+
+Updating to be compliant with the patch.
+
+After some test runs it seems generals are still underpowered and as such they have been given some incentives. The reasons are as follows:
+ * It is easier now to capture without armies, and thus without a general
+ * Generals have less opportunities to gain experience and so will advance slower, hence will not be picked early as you may be stuck with a low level council member
+ * Because they cannot gain exp without wars, generals will not be recruited until there is a war, at which point the leadercap may have been filled adding disincentives to hire a general
+
+Venerable is also still not entirely worth it because of the increased options to increase the maximum age of your leaders.
+
+Added:
+ * LEADER_AGE_DEATH_CHANCE_AGE: 70 from 80
+ * LEADER_AGE_HIGH_DEATH_CHANCE_AGE: 90 from 100
+ * Generals:
+   * Gain 10 experience every year
+   * Gain +60% more experience from a battle
+
+2021 logs were also purged from the patch logs file.
+
 # 2023/05/11 - 1.7.0
 
 Updating to latest DLC and with some meta revisions
@@ -403,136 +423,3 @@ Quick clean up to add in game tool tip modifier texts to the following:
 Changed:
  * Talented: +2 to leader level cap
  * Tweaked AI starting economy plans (better support for Megacorps, Hivemind, Fanatical Purifiers, etc...)
-
-# 2022/02/23 - 1.2.0
-
-Clean up after new 3.3.2 Libra update
-
-Removed:
- * Executive Vigor: requires 2 ascension perks from 0
- * Feudal Realm: +10% Naval Capacity, -10% ship upkeep, -10% army upkeep
- * Spiritualist: +12%/+24% Unity from +10%/+24%
- * Merchant Guilds: +1.5 unity from +2 merchants
- * Capacity Subsidies: +40% energy from jobs from +50%
- * Dyson Sphere: 10% increase in costs to all stages
- * Ring World: 10% increase in costs to all stages
- * Shadow Council: +15% ruler pop output from +10%
- * Ingenious: +13% Energy production from +15%
- * Super Conductive: +13% Energy production from +15%
- * Quarrelsome: -6% Unity from jobs from -10%
- * Docile: -15% Empire Sprawl from -10%
- * Unruly: +15% Empire Sprawl from 10%
- * Conformist: +5% happiness and 25% Government Ethics attraction from 30%
- * Fleeting: -13 leader age from -10
- * Aristocratic Elite: Nobles give +6 stability from +5, +1 admin cap and trade and +5 to crime
- * Warrior Culture: +4 unity from +3 from duelists
- * Byzantine Bureaucracy: +1.2 unity/stability from +1
- * Franchising: -30% empire sprawl from branch office from -25%, -40% country subject power penalty from -33%
- * Determined Exterminator: +15% ship weapon damage from +25%
- * Devouring Swarm: -15% ship build cost from -25%
- * Xenophobe: +9%/18% to population growth from +10%/20%
- * Materialist: +4.5%/9% to research from +5%/+10%
- * Militarist: +9%/+18% to ship fire rate from +10%/+20%
- * Crime/Deviancy per pop: 2.2 from 2
- * Aristocratic Elite: Nobles give +4 stability from +2, +2 trade and +5 to crime
- * High Bandwidth: +15% Empire Sprawl from +10%
- * Streamlined Protocols: -15% Empire Sprawl from -10%
- 
-Changed:
- * Venerable: +1 starting level to leaders
- * Philosopher King: +3% to unity and research
- * Resilient: +50% army defense health/morale
- * Talented: +1 leader starting level
- * Transcendent Learning: 90% leadership bonus from 50% and +1 to starting leader skill
- * Base Leader skill cap: 4 from 5
- * Economic Chaos (anti-negative economy exploit) event: Any player whose stockpiles in mineral/food/energy are 0 or below with negative income will suffer a empire wide penalty of -20% to alloys, research and unity.
- * Private Military Companies: +30% to army health/damage/morale -30% to army cost/upkeep from 20% army damage and 20% upkeep
- * Strength of Legions: +30% to army health/damage/morale -30% to army cost/upkeep from 20% army damage and 20% upkeep
-
-New:
- * Leader Capacity Booster: +1 leader level cap from +2 and +1 starting level
-
-# 2021/12/12 - 1.1.1
-
-Modified the crisis trigger so that it is not always the Unbidden that show up once jump drives are researched. In a typical multiplayer game, the majority of the players will reach jump drives by end game and as such the crisis rules only allow the Unbidden at this point. Now the rules are the following:
- - All Crisis can show up once Jump Drives are researched
- - Jump drives double the chances of the Prethoryn or Contingency showing up sooner
- - Jump drives quadruple the chances of the Unbidden showing up sooner
- 
-In short this means that once the end game arrives, on the first dice roll for the crisis, if you have jump drives the odds of the crisis showing up go from 19% to 38%.
-
-In addition to this change the AI's planning economy has been greatly improved. As always, this follows the simple approach of updating this mod which involves touching as little as possible. 3.2's new AI Planning scripts make this possible. The AI, instead of using a single basic planning script for all AIs, now has 11 different AI scripts for each empire in the early phase of the game, which is the most critical phase of the game. Once the early phase of the game is over it switches back to the default script. Overall this has resulted in impressive improvements from the AI with no touching of the other game files.
-
-# 2021/12/04 - 1.1.0
-
-Latest 3.2 Aquatics Tournament has played out and there was a quick patch to the game. Updating the mod for compliance and to address some meta from the latest tournament.
-
-https://forum.paradoxplaza.com/forum/threads/2021-november-aquatics-tournament.1500941/
-
-Removed:
- * Egalitarian: +4%/8% to specialists from +5%/+10%
- * Hive Mind: +28% growth speed from +25%
- 
-Added:
- * Starbase overcapacity upkeep penalty: +35% from +25%
- * Spiritualist: +12%/+24% Unity from +10%/+24%
- * Materialist: +4.5%/9% to research from +5%/+10%
- * Militarist: +9%/+18% to ship fire rate from +10%/+20%
- * Aquatics: +9% energy/mineral/food production on Ocean worlds from +10%
- * Prosperity (Completion bonus): +3 Stability from +5
- * Fleeting: -13 leader age from -10
-
-Also wanted to add a special thanks to OldEnt (ACE) and Corsairmarks for always being on hand to help out in the Stellaris Modding Den.
-
-# 2021/11/26 - 1.0.0
-
-Mod has been out long enough to have it upgraded to 1.0.0 as part of the Aquatics release. The following changes will be based on the lastest meta of the 2021 November tournament. Will keep an eye on the meta for 3.2 with the latest tournament:
-
-https://www.youtube.com/watch?v=ug15NhTh-WM&t=1s&ab_channel=StefanAnon
-
-
-Removed:
- * Leadership max cap: 15 from 10
- * Functional Architecture: -10% to building costs from -15%
- * New Life (Expansion tree): +6% pop growth from +10%
- * Catalytic Processing: Food upkeep reduced to 8 from 9
-
-New:
- * Gestalts: -3% penalty to research
- * Void Dwellers: produce +12% from +15% on habitats
- * Merchant Guilds: +1.5 unity per merchant from +2
- * Xenophobe: +9%/18% to population growth from +10%/20%
- * Egalitarian: +4%/8% to specialists from +5%/+10%
-
-Changed:
- * Base Leader skill cap: 3 from 5
- * Resilient: +65% defensive army damage from 50% and 65% defensive army health
- * Nonadaptive: -6% habitability from -10%
- * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -60% defense platform build cost and +15% starbase damage boost for the first 20 years of the game.
- * The Flesh is Weak: 6% population assembly from +10%
- * Synthetic Evolution: 6% robotic job multiplier from 10%
- * Driven Assimilator: 3 pop per year assimilation speed from average of 7
-
-# 2021/10/27 - 0.2.1
-
-New changes based on the lastest meta and observations. Simple tweaks to the Traits.
-
-New:
- * Budding: +0.0175 assembly from 0.02
- * Logic Engines: +9% research to all research from +10%
- * Super Conductive: +13% energy from +15% energy
- * Natural Engineers: +13% engineering research from +15% engineering research
- * Docile: -15% Empire Sprawl from -10%
- * Charismatic / Repugnant / Emotion Emulator / Uncanny: all changed to 15% from 20%
- * Phototrophic: 48% food and 48% energy from 50% food and 50% energy
- * Espionage: All difficulties dropped by 3
-
-The most important tweak is to Espionage. It has been determined that espionage is too ineffective. This is mostly due to the fact that it takes forever to do anything meaningful. In light of this the difficulty of all espionage will be dropped by 3 so that Espionage missions can be done considerably faster and thus have a higher impact. Conversely this will improve the value of all espionage related game choices.
-
-Change:
- * Enigmatic Engineering: +4 encryption from +2 and ascension perks required dropped to 0 from 1
-
-Many thanks as usual from Stefan:
-
- * https://cdn.discordapp.com/attachments/598211045332484148/895097788365418516/Traits_Tier_List_31.png
- * https://www.youtube.com/c/StefanAnnon
