@@ -1079,7 +1079,6 @@ trait_survivor = {
 	}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		pop_environment_tolerance = 0.1
 		pc_nuked_habitability = 0.7
 		leader_age = 10
 	}

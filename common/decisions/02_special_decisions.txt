@@ -58,72 +58,72 @@ decision_prospect = {
 	}
 }
 
-decision_geologist_prospect = {
-	owned_planets_only = yes
+# decision_geologist_prospect = {
+# 	owned_planets_only = yes
 
-	enactment_time = 180
-	resources = {
-		category = decisions
-		cost = {
-			energy = 250
-		}
-	}
+# 	enactment_time = 180
+# 	resources = {
+# 		category = decisions
+# 		cost = {
+# 			energy = 250
+# 		}
+# 	}
 
-	potential = {
-		is_artificial = no
-		NOT = { is_planet_class = pc_machine }
-		NOT = { is_planet_class = pc_hive }
-		NOT = { is_planet_class = pc_city }
-		planet = {
-			exists = leader
-			leader = {
-				has_trait = "leader_trait_geologist"
-			}
-		}
-		NOT = { has_planet_flag = planet_geologist_prospected }
-		NOT = { has_planet_flag = planet_naturalist_prospected }
-	}
+# 	potential = {
+# 		is_artificial = no
+# 		NOT = { is_planet_class = pc_machine }
+# 		NOT = { is_planet_class = pc_hive }
+# 		NOT = { is_planet_class = pc_city }
+# 		planet = {
+# 			exists = leader
+# 			leader = {
+# 				has_trait = "leader_trait_geologist"
+# 			}
+# 		}
+# 		NOT = { has_planet_flag = planet_geologist_prospected }
+# 		NOT = { has_planet_flag = planet_naturalist_prospected }
+# 	}
 
-	effect = {
-		custom_tooltip = decision_geologist_prospect_effect
-		hidden_effect = {
-			random_list = {
-				60 = {
-					add_deposit_category_effect = "deposit_cat_rare_resource"
-					hidden_effect = {
-						create_message = {
-							type = MESSAGE_TYPE_PLANET_PROSPECTED
-							localization = MESSAGE_PLANET_PROSPECTED
-							days = 30
-							target = this
-							variable = {
-								type = name
-								localization = PLANET
-								scope = this
-							}
-							variable = {
-								type = name
-								localization = DEPOSIT
-								scope = last_added_deposit
-							}
-						}
-					}
-				}
+# 	effect = {
+# 		custom_tooltip = decision_geologist_prospect_effect
+# 		hidden_effect = {
+# 			random_list = {
+# 				60 = {
+# 					add_deposit_category_effect = "deposit_cat_rare_resource"
+# 					hidden_effect = {
+# 						create_message = {
+# 							type = MESSAGE_TYPE_PLANET_PROSPECTED
+# 							localization = MESSAGE_PLANET_PROSPECTED
+# 							days = 30
+# 							target = this
+# 							variable = {
+# 								type = name
+# 								localization = PLANET
+# 								scope = this
+# 							}
+# 							variable = {
+# 								type = name
+# 								localization = DEPOSIT
+# 								scope = last_added_deposit
+# 							}
+# 						}
+# 					}
+# 				}
 	
-				40 = {
+# 				40 = {
 	
-				}
-			}
-			set_planet_flag = planet_geologist_prospected
-		}
+# 				}
+# 			}
+# 			set_planet_flag = planet_geologist_prospected
+# 		}
 
-		custom_tooltip = decision_prospect_effects_short
-	}
+# 		custom_tooltip = decision_prospect_effects_short
+# 	}
 
-	ai_weight = {
-		weight = 10
-	}
-}
+# 	ai_weight = {
+# 		weight = 10
+# 	}
+# }
 
 decision_prospect_void = {
 	owned_planets_only = yes
