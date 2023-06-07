@@ -1,4 +1,4 @@
-# Version 1.7.1
+# Version 1.7.3
 
 ## General tweaks
 
@@ -7,7 +7,12 @@
  * STARBASE_CAPACITY_BASE: 2 from 3
  * STARBASE_CAPACITY_SYSTEM_MULT: 0.08 from 0.1
  * Starbase overcapacity upkeep penalty: +35% from +25%
- * Espionage Operations: difficulties reduced by 4
+ * Espionage Operations:
+   * Difficulties reduced by 4
+   * Steal Techonology Operation: cooldown of 1 year from 6
+   * Sabotage Starbase Operation: cooldown of 0 from 4 years
+   * Delays between operations halved
+   * Bribe costs halved
  * LEADER_AGE_DEATH_CHANCE_AGE: 70 from 80
  * LEADER_AGE_HIGH_DEATH_CHANCE_AGE: 90 from 100
  * Generals:
@@ -67,14 +72,12 @@
 
 ### Nerfs
  * Technological Ascendency: +7% Research rate from +10%
- * Become the crisis: requires 3 ascension perks from 2 and requires Enigmatic Engineering perk
- * Hive World: Energy cost 11000 from 10000
- * Machine World: Energy cost 11000 from 10000
+ * Become the crisis: requires 4 ascension perks from 2
+ * Hive World: requires 3 ascension perks from 0
+ * Machine World: requires 3 ascension perks from 0
  * Arcology Project: requires 3 Ascension perks from 2
- * Executive Vigor: +80 edict funds from +100
 
 ### Boosts
- * Enigmatic Engineering: +4 encryption from +2 and ascension perks required dropped to 0 from 1
  * Galactic Force Projection: +5% sublight speed
  * Consecrate Worlds: Can now consecrate an occupied world
 
@@ -132,7 +135,6 @@
  * Common Ground: "Live long and prosper" event gifts the player +125 influence 30 days after game start along with a crewed science ship.
  * Galactic Doorstep: +15% Physics research
  * Slingshot to the Stars: +15% Physics research
- * Post Apocalyptic: +10% habitability bonus
  * Life Seeded: Starbase influence and material cost -10%
  * Doomsday: stage 1 now takes ~2 years to trigger from 5 days, with stage 2 taking ~17 years from ~11 years
  * Calamitous Birth: +1 mineral districts when colonizing a planet

@@ -77,6 +77,34 @@ origin_scion = {
 	}
 }
 
+origin_galactic_doorstep = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_gateway.dds"
+	picture = GFX_origin_galactic_doorstep
+	max_once_global = yes
+
+	playable = {
+		always = yes
+	}
+
+	possible = {
+	}
+
+	description = "origin_tooltip_galactic_doorstep_effects"
+	flags = { custom_start_screen }
+
+	traits = {
+	}
+
+	random_weight = {
+		base = 1
+	}
+
+	modifier = {
+		country_physics_research_produces_mult = 0.15
+	}
+}
+
 origin_necrophage = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_necrophage.dds"
@@ -123,63 +151,6 @@ origin_necrophage = {
 	}
 
 	advanced_start = yes
-
-	random_weight = {
-		base = 5
-	}
-}
-
-
-origin_galactic_doorstep = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_gateway.dds"
-	picture = GFX_origin_galactic_doorstep
-	max_once_global = yes
-
-	playable = {
-		always = yes
-	}
-
-	possible = {
-	}
-
-	description = "origin_tooltip_galactic_doorstep_effects"
-	flags = { custom_start_screen }
-
-	traits = {
-	}
-
-	random_weight = {
-		base = 1
-	}
-
-	modifier = {
-		country_physics_research_produces_mult = 0.15
-	}
-}
-
-origin_progenitor_hive = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_progenitor_hive.dds"
-	picture = GFX_origin_progenitor_hive
-	max_once_global = yes
-
-	playable = {
-		has_overlord_dlc = yes
-	}
-
-	possible = {
-		authority = { value = auth_hive_mind }
-	}
-
-	description = "origin_tooltip_progenitor_hive_effects"
-	modifier = {
-		owned_ship_speed_mult = -0.75
-		owned_ship_evasion_mult = -0.75
-		owned_ship_fire_rate_mult = -0.75
-		owned_ship_accuracy_mult = -0.75
-	}
-	flags = { custom_start_screen }
 
 	random_weight = {
 		base = 5

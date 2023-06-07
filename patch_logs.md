@@ -1,3 +1,36 @@
+# 2023/06/01 - 1.7.3
+
+Updating to match 1.8.3 with some tweaks
+
+Added:
+* Espionage Operations:
+  * Steal Techonology Operation: cooldown of 1 year from 6
+  * Sabotage Starbase Operation: cooldown of 0 from 4 years
+  * Delays between operations halved
+  * Bribe costs halved
+
+Removed:
+ * Champions of the Empire: -0.5% empire size, empire size from pops and empire size from colonies from -2% empire size
+ * Progenitor hive: Fleet without an off spring ship suffers -75% penalties from -50%
+ * Enigmatic Engineering: +4 encryption from +2 and ascension perks required dropped to 0 from 1
+ * Executive Vigor: +80 edict funds from +100
+ * Post Apocalyptic: +10% habitability bonus
+
+Changed:
+ * Become the crisis: requires 4 ascension perks from 2
+ * Hive World: requires 3 ascension perks from 0
+ * Machine World: requires 3 ascension perks from 0
+ * Arcology Project: requires 3 Ascension perks from 2
+
+No balance changes have come to Espionage since the last boost around Nemesis so taking the time to adjust it.
+
+# 2023/05/20 - 1.7.2
+
+Adding a patch for the 0 Empire size exploit:
+
+Added:
+ * Champions of the Empire: -0.5% empire size, empire size from pops and empire size from colonies from -2% empire size
+
 # 2023/05/12 - 1.7.1
 
 Updating to be compliant with the patch.
