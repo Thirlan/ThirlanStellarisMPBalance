@@ -19,6 +19,13 @@ over_starbase_capacity = {
 	starbases_upkeep_mult = 0.35
 }
 
+champs_of_empire_gov_effect = {
+	hide_from_country_list = yes
+	empire_size_add = -1
+	empire_size_colonies_mult = -0.01
+	empire_size_systems_mult = -0.01
+}
+
 jump_drive_cooldown = {
 	ship_weapon_damage = -0.6
 	ship_speed_mult = -0.6
