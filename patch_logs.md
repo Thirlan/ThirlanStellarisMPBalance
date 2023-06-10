@@ -1,3 +1,11 @@
+# 2023/06/10 - 1.7.4
+
+Tackling some existing exploits and meta.
+
+Added:
+ * Champions of the Empire Governor: -1 to Empire size, -1% to Colony and system size from -2 Empire size
+ * Raiding stance: 50% less effective at abducting pops
+
 # 2023/06/01 - 1.7.3
 
 Updating to match 1.8.3 with some tweaks
