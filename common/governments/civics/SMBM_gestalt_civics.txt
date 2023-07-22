@@ -139,3 +139,41 @@ civic_machine_replication = {
 		planet_pop_assembly_mult = 0.15
 	}
 }
+
+civic_memory_vault_machine = {
+	playable = { host_has_dlc = "Galactic Paragons" }
+	ai_playable = { host_has_dlc = "Galactic Paragons" }
+	random_weight = {
+		base = 4
+	}
+	description = "civic_tooltip_memory_vault_machine_effects"
+	potential = {
+		authority = { value = auth_machine_intelligence }
+	}
+	possible = {
+	}
+	modifier = {
+		councilor_gestalt_scientist_exp_gain = @gestalt_civic_node_xp_rate
+		councilor_skill_add = 1
+		leaders_upkeep_mult = 0.15
+	}
+}
+
+civic_memory_vault_hive = {
+	playable = { host_has_dlc = "Galactic Paragons" }
+	ai_playable = { host_has_dlc = "Galactic Paragons" }
+	random_weight = {
+		base = 4
+	}
+	description = "civic_tooltip_memory_vault_hive_effects"
+	potential = {
+		authority = { value = auth_hive_mind }
+	}
+	possible = {
+	}
+	modifier = {
+		councilor_gestalt_scientist_exp_gain = @gestalt_civic_node_xp_rate 
+		councilor_skill_add = 1
+		leaders_upkeep_mult = 0.15
+	}
+}

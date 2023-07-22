@@ -1,4 +1,4 @@
-# Version 1.7.4
+# Version 1.7.6
 
 ## General tweaks
 
@@ -81,12 +81,16 @@
 ### Boosts
  * Galactic Force Projection: +5% sublight speed
  * Consecrate Worlds: Can now consecrate an occupied world
+ * Hydrocentric: terraforming ocean world cost now -33% from -25% and -15% to terraforming ocean world time
 
 ## Standard Civics
 
 ### Nerfs
  * Fanatical Purifier: 15% ship fire rate from 33%
  * Meritocracy: Specialist pop resource output +8% from +10%
+ * Parliamentary System: +30% unity from factions from +40%
+ * Memory Vault: Leader upkeep +15%
+ * Heroic Past: Leader upkeep +15%
 
 ### Boosts
  * None
@@ -96,6 +100,7 @@
 ### Nerfs
  * Ascetic: -10% amenities usage from -15%
  * Devouring Swarm: +50% market fee penalty
+ * Memory Vault: Leader upkeep +15%
 
 ### Boosts
  * Divided Attention: -5% Empire size from pops
@@ -107,6 +112,7 @@
  * Rogue Servitor: Bio Trophies produce +2 unity from +3 and 0.8% complex drone output boost from 1%
  * Rapid Replicators: +15% mechanical pop assembly speed from +20%
  * Static Research Analysis: +0 intel decryption from +1
+ * Memory Vault: Leader upkeep +15%
 
 ### Boosts
  * Zero-waste Protocols: -20% robot upkeep from -10%

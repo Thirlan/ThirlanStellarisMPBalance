@@ -89,6 +89,51 @@ civic_meritocracy = {
 	}
 }
 
+civic_parliamentary_system = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		authority = {
+			value = auth_democratic
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	ai_weight = {
+		base = @ai_civic_default_base_weight
+		modifier = {
+			factor = @ai_civic_personality_match_factor
+			OR = {
+				has_ai_personality = erudite_explorers
+				has_ai_personality = peaceful_traders
+				has_ai_personality = harmonious_hierarchy
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = ruthless_capitalists
+				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = decadent_hierarchy
+				has_ai_personality = xenophobic_isolationists
+				has_ai_personality = fanatic_purifiers
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_forbid_factor
+			OR = {
+				has_ai_personality = slaving_despots
+			}
+		}
+	}
+	description = "civic_tooltip_parliamentary_system_effects"
+	modifier = {
+		pop_factions_produces_mult = 0.30
+	}
+}
+
 civic_fanatic_purifiers = {
 	modification = no
 	playable = { host_has_dlc = "Utopia" }
@@ -109,6 +154,7 @@ civic_fanatic_purifiers = {
 			NOR = {
 				value = civic_barbaric_despoilers
 				value = civic_pompous_purists
+				value = civic_crusader_spirit
 			}
 		}
 		origin = {
@@ -146,5 +192,47 @@ civic_fanatic_purifiers = {
 		modifier = {
 			country_government_civic_points_add = 1
 		}
+	}
+}
+civic_heroic_tales = {
+	playable = { host_has_dlc = "Galactic Paragons" }
+	ai_playable = { host_has_dlc = "Galactic Paragons" }
+	random_weight = {
+		base = 4
+	}
+	description = "civic_heroic_tales_effects"
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+	}
+	modifier = {
+		negative_traits_country = -1
+		leaders_upkeep_mult = 0.15
+	}
+}
+
+civic_memory_vault = {
+	playable = { host_has_dlc = "Galactic Paragons" }
+	ai_playable = { host_has_dlc = "Galactic Paragons" }
+	random_weight = {
+		base = 3
+	}
+	description = "civic_tooltip_memory_vault_effects"
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		civics = {
+			NOT = {
+				value = civic_memory_vault_corporate
+			}
+		}
+	}
+	modifier = {
+		councilor_skill_add = 1
+		leaders_upkeep_mult = 0.15
 	}
 }
