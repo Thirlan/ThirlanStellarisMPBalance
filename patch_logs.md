@@ -1,3 +1,23 @@
+# 2023/07/22 - 1.7.6
+
+Some meta tweaks based on recent community chatter and the latest tournaments:
+
+https://www.youtube.com/watch?v=mjrBQwOeQvI
+
+Added:
+ * Hydrocentric: terraforming ocean world cost now -33% from -25% and -15% to terraforming ocean world time
+ * Parliamentary System: +30% unity from factions from +40%
+ * Memory Vault: Leader upkeep +15%
+ * Heroic Past: Leader upkeep +15%
+
+# 2023/06/24 - 1.7.5
+
+Updating to the newest version
+
+Removed:
+ * Champions of the Empire Governor: -1 to Empire size, -1% to Colony and system size from -2 Empire size
+ * Raiding stance: 50% less effective at abducting pops
+
 # 2023/06/10 - 1.7.4
 
 Tackling some existing exploits and meta.

@@ -28,7 +28,7 @@ Tech rushing and population growth is still THE meta of the game, though populat
 
 ## Total War Assimilators
 
-Total War Assimilators (Determine Assimilators, Fanatical Necrophage) that can declare unrestricted wars have always been strong in Stellaris. The reason for their strength is that they are able to quickly gain more populations through their unrestricted conquest, something that normal empires have to spend large amounts of influence to do and as such their speed of conquest is capped. This is not so for the Total war Assimilators, which can conquer an entire empire, giving them a huge boost to power and then allowing them to conquer the next empire in short order.
+Total War Assimilators (Determined Assimilators, Fanatical Necrophage) that can declare unrestricted wars have always been strong in Stellaris. The reason for their strength is that they are able to quickly gain more populations through their unrestricted conquest, something that normal empires have to spend large amounts of influence to do and as such their speed of conquest is capped. This is not so for the Total war Assimilators, which can conquer an entire empire, giving them a huge boost to power and then allowing them to conquer the next empire in short order.
 
 The simplest fix for this is to reduce the speed at which assimilation happens and thus the creation of new population through conquest.
 
