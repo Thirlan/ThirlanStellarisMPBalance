@@ -135,7 +135,6 @@
  * Imperial Fiefdom origin: -5% happiness, -20% Ethics attraction and Overlord starting opinion bonus 1 from 120
  * Clone Army: 1/4/5/8/12 to current pop assembly from 2/5/7/10/15
  * Necrophage: Population growth -5%
- * Progenitor hive: Fleet without an off spring ship suffer -75% penalties from -50%
 
 ### Boosts
  * Hegemon: "Long live the hegemony" event gifts the player with +200 influence and +75 alloy 30 days after game start.

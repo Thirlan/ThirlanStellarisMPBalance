@@ -20,7 +20,7 @@ origin.61.desc:1 "As earthquakes and volcanic activity on [Root.GetName] continu
  requires_ascension_perks_4:1 "$TRIGGER_FAIL$Requires four other Ascension Perks to be selected first."
 
 # TRADITIONS
- tr_aptitude_champions_of_the_empire_desc:1 "Per $admiral_with_icon$ and $general_with_icon$ level\n$t$$MOD_COUNTRY_NAVAL_CAP_ADD$: §G+2§!\nPer $governor_with_icon$ level\n$t$$MOD_EMPIRE_SIZE_MULT$: §G-1§!\n$t$System Size: §G-1%§!\n$t$Colony Size: §G-1%§!\nPer $scientist_with_icon$ level\n$t$$MOD_LEADER_SPECIES_EXP_GAIN$: §G+0.5%§!"
+ 
 
 # POLICY
 
