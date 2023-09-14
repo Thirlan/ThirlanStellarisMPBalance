@@ -1,4 +1,4 @@
-# Version 1.7.6
+# Version 1.8.0
 
 ## General tweaks
 
@@ -12,12 +12,12 @@
 
 
 ### Boosts
- * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -60% defense platform build cost and +15% starbase damage boost for the first 20 years of the game.
+ * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -40% defense platform build cost and +20% starbase damage boost for the first 20 years of the game.
  * Generals:
    * Gain 10 experience every year
    * Gain +60% more experience from a battle
  * Espionage Operations:
-   * Difficulties reduced by 4
+   * Difficulties reduced by 4 (include pre-ftl)
    * Steal Techonology Operation: cooldown of 1 year from 6
    * Sabotage Starbase Operation: cooldown of 0 from 4 years
    * Delays between operations halved
@@ -45,7 +45,6 @@
      * Civics: Diplomatic Corps or Empath
  * Anti-AI vassal exploits:
    * NEGOTIATE_AGREEMENT_ACCEPTANCE_OPINION_FACTOR: 0.20 from 0.333
-   * NEGOTIATE_AGREEMENT_RESOURCE_ACCEPTANCE_COEFICIENT_FOR_OVERLORD: 2.0 from 1.0
 
 ## Boosts
  * None
@@ -109,7 +108,7 @@
 
 ### Nerfs
  * Driven Assimilator: 3 pop per year assimilation speed from average of 7
- * Rogue Servitor: Bio Trophies produce +2 unity from +3 and 0.8% complex drone output boost from 1%
+ 
  * Rapid Replicators: +15% mechanical pop assembly speed from +20%
  * Static Research Analysis: +0 intel decryption from +1
  * Memory Vault: Leader upkeep +15%
@@ -131,7 +130,6 @@
 ## Origin:
 
 ### Nerfs
- * Scion: -5% happiness and -20% Ethics attraction
  * Imperial Fiefdom origin: -5% happiness, -20% Ethics attraction and Overlord starting opinion bonus 1 from 120
  * Clone Army: 1/4/5/8/12 to current pop assembly from 2/5/7/10/15
  * Necrophage: Population growth -5%
@@ -140,10 +138,9 @@
  * Hegemon: "Long live the hegemony" event gifts the player with +200 influence and +75 alloy 30 days after game start.
  * Common Ground: "Live long and prosper" event gifts the player +125 influence 30 days after game start along with a crewed science ship.
  * Galactic Doorstep: +15% Physics research
- * Slingshot to the Stars: +15% Physics research
  * Life Seeded: Starbase influence and material cost -10%
  * Doomsday: stage 1 now takes ~2 years to trigger from 5 days, with stage 2 taking ~17 years from ~11 years
- * Calamitous Birth: +1 mineral districts when colonizing a planet
+
  
 ## Species Traits:
 

@@ -1,3 +1,19 @@
+# 2023/09/15 - 1.8.0
+
+Updates for the new 3.9.0 release
+
+Added:
+ * Pre-ftl espionage difficulties also dropped by 4
+
+Removed:
+ * Calamitous Birth: +1 mineral districts when colonizing a planet
+ * Rogue Servitor: Bio Trophies produce +2 unity from +3 and 0.8% complex drone output boost from 1%
+ * NEGOTIATE_AGREEMENT_RESOURCE_ACCEPTANCE_COEFICIENT_FOR_OVERLORD = 2.0
+ * Slingshot to the Stars: +15% Physics research
+
+Changed:
+ * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -40% defense platform build cost and +20% starbase damage boost for the first 20 years of the game.
+
 # 2023/07/22 - 1.7.6
 
 Some meta tweaks based on recent community chatter and the latest tournaments:
