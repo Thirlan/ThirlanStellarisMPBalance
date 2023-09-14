@@ -2,8 +2,8 @@
 # Static Modifiers for the Simple Multiplayer Balance Patch
 ##########################################################################
 be_careful_out_there = {
-	ship_military_station_small_cost_mult = -0.60
-	shipclass_starbase_damage_mult = 0.15
+	ship_military_station_small_cost_mult = -0.40
+	shipclass_starbase_damage_mult = 0.20
 }
 
 careful_envoys = {

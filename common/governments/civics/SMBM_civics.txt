@@ -13,16 +13,20 @@
 #												# Note: If omitted, a default weight of 1 is used. Not needed when "modification = no"
 #
 #	modifier = {}								# modifier added to the country if the civic is selected and valid
+#	hide_modifiers = yes / no					# default: no; if yes will hide the modifiers from the origin/civic tooltip.
 #	can_build_ruler_ship = yes / no				# default: no
 #	traits = { trait = ... }					# default: empty; trait set to enforce on the primary species. They cannot be removed, but more can be added if points/picks permit
 #	has_secondary_species = {					# default: none; if present, will enable secondary species customization in empire designer and will create secondary species & pops at galaxy generation time (see empire_init_create_capital_secondary_pops)
 #		traits = { trait = ... }					# default: empty; trait set to enforce on the secondary species. They cannot be removed, but more can be added if points/picks permit
 #	}
 #	is_origin = yes / no						# default: no, set to yes if civic should be treated as an Origin
+#	description = LOC_KEY						# Custom text that will appear under the "Effects" heading.
+#	negative_description = LOC_KEY				# Custom text that will appear under the "Penalties" heading.
 #
 #	swap_type = {								# triggered name, desc, custom desc and modifiers
 #		name = ...
 #		description = ...
+#		negative_description = ...
 #		trigger = {								# In empire creation / galaxy setup, this has no scope. During the game, when there are actual countries existing, it is set to country scope.
 #			local_human_species_class = ..		# If you want to use country scope here, you must always check is_scope_valid first (see civic_devouring_swarm), or you will get errors or it won't work as intended.
 #		}
@@ -155,6 +159,7 @@ civic_fanatic_purifiers = {
 				value = civic_barbaric_despoilers
 				value = civic_pompous_purists
 				value = civic_crusader_spirit
+				value = civic_selective_kinship
 			}
 		}
 		origin = {
@@ -172,6 +177,10 @@ civic_fanatic_purifiers = {
 		modifier = {
 			factor = 0
 			NOT = { host_has_dlc = "Utopia" }
+		}
+		modifier = {
+			factor = 0
+			blocks_disruptive_gameplay = yes
 		}
 	}
 
@@ -192,24 +201,6 @@ civic_fanatic_purifiers = {
 		modifier = {
 			country_government_civic_points_add = 1
 		}
-	}
-}
-civic_heroic_tales = {
-	playable = { host_has_dlc = "Galactic Paragons" }
-	ai_playable = { host_has_dlc = "Galactic Paragons" }
-	random_weight = {
-		base = 4
-	}
-	description = "civic_heroic_tales_effects"
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
-	}
-	possible = {
-	}
-	modifier = {
-		negative_traits_country = -1
-		leaders_upkeep_mult = 0.15
 	}
 }
 
@@ -233,6 +224,25 @@ civic_memory_vault = {
 	}
 	modifier = {
 		councilor_skill_add = 1
+		leaders_upkeep_mult = 0.15
+	}
+}
+
+civic_heroic_tales = {
+	playable = { host_has_dlc = "Galactic Paragons" }
+	ai_playable = { host_has_dlc = "Galactic Paragons" }
+	random_weight = {
+		base = 4
+	}
+	description = "civic_heroic_tales_effects"
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+	}
+	modifier = {
+		negative_traits_country = -1
 		leaders_upkeep_mult = 0.15
 	}
 }

@@ -89,6 +89,10 @@ ap_become_the_crisis = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0
+			blocks_disruptive_gameplay = yes
+		}
 	}
 }
 

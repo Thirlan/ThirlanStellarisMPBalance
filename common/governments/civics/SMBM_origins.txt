@@ -25,7 +25,7 @@ origin_life_seeded = {
 		}
 	}
 
-	description = "civic_tooltip_life_seeded_effects"
+	description = "origin_tooltip_life_seeded_effects"
 
 	random_weight = {
 		base = 5
@@ -140,7 +140,8 @@ origin_necrophage = {
 		pop_growth_speed = -0.05
 	}
 
-	description = civic_tooltip_necrophage_effects
+	description = origin_tooltip_necrophage_effects
+	negative_description = origin_tooltip_necrophage_negative_effects
 
 	traits = {
 		trait = trait_necrophage
@@ -154,32 +155,6 @@ origin_necrophage = {
 
 	random_weight = {
 		base = 5
-	}
-}
-
-origin_star_slingshot = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_star_slingshot.dds"
-	picture = GFX_origin_star_slingshot
-
-	playable = {
-		has_overlord_dlc = yes
-	}
-
-	possible = {
-
-	}
-
-	description = "origin_tooltip_star_slingshot_effects"
-	flags = { custom_start_screen }
-
-	traits = {}
-
-	random_weight = {
-		base = 0
-	}
-	modifier = {
-		country_physics_research_produces_mult = 0.15
 	}
 }
 
