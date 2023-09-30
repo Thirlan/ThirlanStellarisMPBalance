@@ -1,13 +1,13 @@
-################################
-#
+###################################
 # Origin Events
-# Written by Henrik Thyrwall
-#
-###############################
+# Written by Henrik Thyrwall et al
+###################################
 
 namespace = origin
 
-### Doomsday
+###########
+# DOOMSDAY
+###########
 
 # Set Up
 country_event = {
