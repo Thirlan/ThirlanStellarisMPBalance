@@ -1682,7 +1682,7 @@ trait_humanoid_existential_iteroparity = {
 				}
 			}
 		}
-	pop_growth_speed = 0.3
+	pop_growth_speed = 0.20
 	}
 	slave_cost = {
 		energy = 1000

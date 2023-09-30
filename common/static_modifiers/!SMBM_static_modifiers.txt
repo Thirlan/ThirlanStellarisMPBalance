@@ -23,3 +23,10 @@ jump_drive_cooldown = {
 	ship_weapon_damage = -0.6
 	ship_speed_mult = -0.6
 }
+
+reaffirmed_superiority = {
+	country_physics_research_produces_mult = 0.01
+	country_society_research_produces_mult = 0.01
+	country_engineering_research_produces_mult = 0.01
+	country_unity_produces_mult = 0.01
+}

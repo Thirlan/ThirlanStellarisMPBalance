@@ -1,3 +1,15 @@
+# 2023/09/30 - 1.8.1
+
+Updates for the new 3.9.2 release
+
+Added:
+ * Existential Iteroparity: +20% population growth from +30%
+ * Emnity:
+   * Adoption: +0 rivalries from +1
+   * Match: -5% to ship build cost from -10%
+   * Reaffirmed Superiority: +2% to science from +20%
+   * Antagonistic Stance: +0 rivalries from +2
+
 # 2023/09/15 - 1.8.0
 
 Updates for the new 3.9.0 release

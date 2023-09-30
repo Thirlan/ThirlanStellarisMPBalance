@@ -26,7 +26,7 @@ origin_life_seeded = {
 	}
 
 	description = "origin_tooltip_life_seeded_effects"
-
+	negative_description = "origin_tooltip_life_seeded_negative_effects"
 	random_weight = {
 		base = 5
 	}

@@ -1,4 +1,4 @@
-# Version 1.8.0
+# Version 1.8.1
 
 ## General tweaks
 
@@ -60,10 +60,14 @@
 ### Boosts
  * none
 
-## Ethics
+## Traditions
 
 ### Nerfs
- * None
+ * Emnity:
+   * Adoption: +0 rivalries from +1
+   * Match: -5% to ship build cost from -10%
+   * Reaffirmed Superiority: +2% to science from +20%
+   * Antagonistic Stance: +0 rivalries from +2
 
 ### Boosts
  * None
@@ -150,6 +154,7 @@
  * Charismatic: +15% to amenities from +20%
  * Thrifty: +20% trade value from +25%
  * Unruly: +13% empire size from pop
+ * Existential Iteroparity: +20% population growth from +30%
 
 ### Boosts
  * Slow Breeders: -6% from -10%
