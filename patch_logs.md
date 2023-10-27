@@ -1,3 +1,29 @@
+# 2023/10/21 - 1.8.2
+
+Updates for the new 3.9.3 release
+
+Removed:
+ * Emnity:
+   * Adoption: +0 rivalries from +1
+   * Reaffirmed Superiority: +2% to science from +20%
+ * Anti-AI Trade exploits:
+   * FAVOR_CAP: 5 from 10
+   * TRADE_VALUE_FAVORS_MULT: 5 from 10
+   * Be careful out there (anti-ai exploit event): All players (AIs not included) start with a -50% penalty to envoy relationship improvements for 20 years, UNLESS they are
+     * Government: Megacorporations
+     * Ethic: Xenophile
+     * Civics: Diplomatic Corps or Empath
+   * TRADE_VALUE_SENSOR_CHARTS: 1 from 2
+   * TRADE_VALUE_SENSOR_LINK_MAX: 0.75 from 1.0
+   * TRADE_MIN_RESOURCE_STOCKPILE: 1000 from 500
+   * TRADE_VALUE_RESOURCE: 1.5 from 2.0
+   * EMBASSY_IMPROVE_RELATION_MULTIPLIER: 2.0 from 3.0
+   * MIN_WILLINGNESS_TO_OFFER_TRADE: 0.85 from 0.75
+ * Anti-AI vassal exploits:
+   * NEGOTIATE_AGREEMENT_ACCEPTANCE_OPINION_FACTOR: 0.20 from 0.333
+
+Credit goes to: Thirlan and MetallicHydra
+
 # 2023/09/30 - 1.8.1
 
 Updates for the new 3.9.2 release

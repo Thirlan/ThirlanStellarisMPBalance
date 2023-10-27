@@ -6,10 +6,6 @@ be_careful_out_there = {
 	shipclass_starbase_damage_mult = 0.20
 }
 
-careful_envoys = {
-	envoy_improve_relations_mult = -0.5
-}
-
 unholy_matrimony = {
 	pop_purge_speed = -0.25
 }

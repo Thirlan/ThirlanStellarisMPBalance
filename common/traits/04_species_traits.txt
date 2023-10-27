@@ -1420,7 +1420,10 @@ trait_plantoid_bloomed = {
 			exists = planet
 			planet = {
 				is_planet_class = pc_gaia
-				NOT = { has_active_building = building_gaiaseeders_4 }
+				NOR = {
+					has_active_building = building_gaiaseeders_4
+					has_active_building = building_gaiaseeders_pc_gaia
+				}
 			}
 		}
 		planet_jobs_produces_mult = 0.10
@@ -1433,7 +1436,10 @@ trait_plantoid_bloomed = {
 			exists = planet
 			planet = {
 				is_planet_class = pc_gaia
-				has_active_building = building_gaiaseeders_4
+				OR = {
+					has_active_building = building_gaiaseeders_4
+					has_active_building = building_gaiaseeders_pc_gaia
+				}
 			}
 		}
 		planet_jobs_produces_mult = 0.15
@@ -1446,7 +1452,10 @@ trait_plantoid_bloomed = {
 			exists = planet
 			planet = {
 				is_planet_class = pc_gaia
-				NOT = { has_active_building = building_gaiaseeders_4 }
+				NOR = {
+					has_active_building = building_gaiaseeders_4
+					has_active_building = building_gaiaseeders_pc_gaia
+				}
 			}
 		}
 		pop_growth_speed = 0.10
@@ -1457,7 +1466,10 @@ trait_plantoid_bloomed = {
 			exists = planet
 			planet = {
 				is_planet_class = pc_gaia
-				has_active_building = building_gaiaseeders_4
+				OR = {
+					has_active_building = building_gaiaseeders_4
+					has_active_building = building_gaiaseeders_pc_gaia
+				}
 			}
 		}
 		pop_growth_speed = 0.15
