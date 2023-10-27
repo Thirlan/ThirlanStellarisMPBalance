@@ -17,10 +17,9 @@ Following videos were used to determine those mechanics that needed to be balanc
 * https://www.youtube.com/watch?v=C88jv2OifnM&ab_channel=MontuPlays
 * https://www.youtube.com/watch?v=zbq-3q9I-kM
 
-A lot of appreciation for dedicated Youtubers such as Montu, ASPec and Stefan
+A lot of appreciation for dedicated Youtubers such as Montu and ASPec
 Appreciation from the players in ISS: Komrad Truck, Jojo
 And from the Stellaris Modder's Den: OldEnt (ACE) and Corsairmarks helped tremendously
-Appreciation for Stefan's team: Magikaas, Aow, AirHunter, Hoover Tesla
 
 ## Tech Rushing and population
 

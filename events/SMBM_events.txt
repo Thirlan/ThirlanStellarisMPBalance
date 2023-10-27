@@ -53,24 +53,6 @@ country_event = {
 			modifier = be_careful_out_there
 			days = 7300
 		}
-        
-        if = {
-            limit = {
-                NOT = {
-                    OR = {
-                        has_ethic = ethic_xenophile
-                        has_ethic = ethic_fanatic_xenophile
-                        has_authority = auth_corporate
-                        has_civic = civic_diplomatic_corps
-                        has_civic = civic_hive_empath
-                    }
-                }
-            }
-            add_modifier = {
-                modifier = careful_envoys
-                days = 7300
-            }
-        }
 	}
 
 	option = {

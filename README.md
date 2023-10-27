@@ -13,6 +13,17 @@ You can refer to the:
  * [patch logs](patch_logs.md) to see recent updates and some explanations
  * [patch_notes_explanation](patch_notes_explanation.md) for more detailed explanations
 
+## Credit
+
+This mod is maintained by:
+ * Thirlan
+ * MetallicHydra
+ * Fading
+
+Also a lot of appreciation for dedicated Youtubers such as Montu and ASPec
+Appreciation from the players in ISS: Komrad Truck, Jojo
+And from the Stellaris Modder's Den: OldEnt (ACE) and Corsairmarks helped tremendously
+
 ## Why was this mod created?
 This mod hopes to address the meta game balance issues in multiplayer with quick, easy and small tweaks so that people can enjoy the game more and worry less about about whether they are min-maxing correctly.
 

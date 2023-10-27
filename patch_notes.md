@@ -1,4 +1,4 @@
-# Version 1.8.1
+# Version 1.8.2
 
 ## General tweaks
 
@@ -27,24 +27,10 @@
 
 ## Nerfs
  * Anti-AI Trade exploits:
-   * FAVOR_CAP: 5 from 10
-   * TRADE_VALUE_FAVORS_MULT: 5 from 10
    * RESEARCH_AGREEMENT_ACCEPTANCE_OPINION_FACTOR: 0.3 from 0.4
    * RESEARCH_AGREEMENT_ACCEPTANCE_NUM_PACTS: -40 from -30
    * RESEARCH_AGREEMENT_ACCEPTANCE_GIVEN_TECHS: -0.6 from -0.5
    * RESEARCH_AGREEMENT_SPEED_MULT: 0.15 from 0.25
-   * TRADE_MIN_RESOURCE_STOCKPILE: 1000 from 500
-   * TRADE_VALUE_RESOURCE: 1.5 from 2.0
-   * TRADE_VALUE_SENSOR_CHARTS: 1 from 2
-   * TRADE_VALUE_SENSOR_LINK_MAX: 0.75 from 1.0
-   * EMBASSY_IMPROVE_RELATION_MULTIPLIER: 2.0 from 3.0
-   * MIN_WILLINGNESS_TO_OFFER_TRADE: 0.85 from 0.75
-   * Be careful out there (anti-ai exploit event): All players (AIs not included) start with a -50% penalty to envoy relationship improvements for 20 years, UNLESS they are
-     * Government: Megacorporations
-     * Ethic: Xenophile
-     * Civics: Diplomatic Corps or Empath
- * Anti-AI vassal exploits:
-   * NEGOTIATE_AGREEMENT_ACCEPTANCE_OPINION_FACTOR: 0.20 from 0.333
 
 ## Boosts
  * None
@@ -64,9 +50,7 @@
 
 ### Nerfs
  * Emnity:
-   * Adoption: +0 rivalries from +1
    * Match: -5% to ship build cost from -10%
-   * Reaffirmed Superiority: +2% to science from +20%
    * Antagonistic Stance: +0 rivalries from +2
 
 ### Boosts
@@ -112,7 +96,6 @@
 
 ### Nerfs
  * Driven Assimilator: 3 pop per year assimilation speed from average of 7
- 
  * Rapid Replicators: +15% mechanical pop assembly speed from +20%
  * Static Research Analysis: +0 intel decryption from +1
  * Memory Vault: Leader upkeep +15%

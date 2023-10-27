@@ -30,9 +30,6 @@ JUMP_DRIVE_PENALTY:0 "While Jump Drive is recharging, this fleet suffers the fol
 # CUSTOM SMBM EVENTS
  be_careful_out_there: "Be careful out there"
  be_careful_out_there_desc: "Multiplayer anti-rush mechanic"
- 
- careful_envoys: "Careful envoys"
- careful_envoys_desc: "Anti-ai exploitation mechanic"
 
  unholy_matrimony: "Unholy Matrimony"
  unholy_matrimony_desc: "Fanatic Necrophage nerf"
