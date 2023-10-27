@@ -6,7 +6,6 @@
 		STARBASE_CAPACITY_SYSTEM_MULT	= 0.08	# Mult value of Starbase Capacity for each owned system
 		
 		# Anti-AI Trade exploitation
-		FAVOR_CAP							= 5
 		EMBASSY_IMPROVE_RELATION_MULTIPLIER = 2.0	# Multiplies ENVOY_IMPROVE_RELATION_BASE if you have established embassies
 		RESEARCH_AGREEMENT_SPEED_MULT		= 0.15	# Research speed increased by this for trade research agreement deal
 		
@@ -28,7 +27,6 @@
 		TRADE_VALUE_RESOURCE                            = 1.5   # for minerals and energy (scaled by income & need)
 		TRADE_VALUE_SENSOR_CHARTS                       = 1     # Per new comms
 		TRADE_VALUE_SENSOR_LINK_MAX                     = 0.75  # Multiplied by treaty years
-        TRADE_VALUE_FAVORS_MULT                         = 5 # Used as a multiple of DIPLO_ACTION_FAVOR_AI_ACCEPTANCE_VALUE for AI to evaluate acceptance in trade deals
         MIN_WILLINGNESS_TO_OFFER_TRADE                  = 0.85 # AIs with a personality whose trade willingness is below this will not offer trades
 
 		# Anti-AI Overlord exploitation
