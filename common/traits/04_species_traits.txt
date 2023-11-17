@@ -921,7 +921,7 @@ trait_cybernetic = {
 	modifier = {
 		pop_environment_tolerance = 0.20
 		army_damage_mult = 0.1
-		leader_age = 40
+		leader_lifespan_add = 40
 	}
 	triggered_pop_modifier = { #won't show in trait tooltips, use custom_tooltip/custom_tooltip_with_modifiers
 		potential = {
