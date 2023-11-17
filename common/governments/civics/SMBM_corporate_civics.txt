@@ -3,14 +3,17 @@
 #	potential = {}								# requirements list, see ../readme_requirements.txt
 #	possible = {}								# requirements list, see ../readme_requirements.txt
 #	pickable_at_start = yes / no				# default: yes
-#	modification = yes / no						# default: yes, set to no to prevent adding or removing this after creation of the empire
-#
+#	modification = { add = {} remove = {} } | yes/no # Can be a set of two triggers, add to check if can be added later under certain conditions, remove to check if can be removed later under certain conditions
+#												# default: yes, set to no to prevent adding or removing this after creation of the empire
 #	random_weight = { base = 5 }				# scriptable weight for randomizing a civic
 #												# Note: If omitted, a default weight of 1 is used
 #												# Also note: after game start, AI selection of new civics uses the below weight instead
-#	
-#	ai_weight = { base = 5 }					# scriptable weight for AI picking civics in-game (when unlocking a new slot). 
-#												# Note: If omitted, a default weight of 1 is used. Not needed when "modification = no" 
+#
+#	ai_weight = { base = 5 }					# scriptable weight for AI picking civics in-game (when unlocking a new slot).
+#												# Note: If omitted, a default weight of 1 is used. Not needed when "modification = no"
+#
+#   alternate_civic_version = civic_key			# Key of the civic that will try to replace the current one during a government reform if the current civic is locked (ex: corporate version of the civic that will replace it when attempting to reform to Megacorporation)
+#												# Note: if no replacement civic is indicated, it fallback to non-moddable civics behaviour, i.e. you can't change authority
 #
 #	modifier = {}								# modifier added to the country if the civic is selected and valid
 #	can_build_ruler_ship = yes / no				# default: no
@@ -22,39 +25,6 @@
 
 # Corporate
 
-civic_franchising = {
-	potential = {
-		OR = {
-			authority = { value = auth_corporate }
-			civics = { value = civic_galactic_sovereign_megacorp }
-		}
-	}
-	random_weight = { base = @civic_default_random_weight }
-	ai_weight = { 
-		base = @ai_civic_default_base_weight 
-		modifier = {
-			factor = @ai_civic_personality_match_factor
-			OR = {
-				has_ai_personality = ruthless_capitalists
-				has_ai_personality = hegemonic_imperialists
-				has_ai_personality = slaving_despots
-				has_ai_personality = federation_builders
-				has_ai_personality = fanatic_befrienders
-			}
-		}
-		modifier = {
-			factor = @ai_civic_personality_mismatch_factor
-			OR = {
-				has_ai_personality = xenophobic_isolationists
-			}
-		}
-	}
-	description = "civic_tooltip_franchising_effects"
-	modifier = {
-		empire_size_branch_office_mult = -0.20
-	}
-}
-
 civic_naval_contractors = {
 	potential = {
 		OR = {
@@ -63,8 +33,8 @@ civic_naval_contractors = {
 		}
 	}
 	random_weight = { base = @civic_default_random_weight }
-	ai_weight = { 
-		base = @ai_civic_default_base_weight 
+	ai_weight = {
+		base = @ai_civic_default_base_weight
 		modifier = {
 			factor = @ai_civic_personality_match_factor
 			OR = {
@@ -125,8 +95,8 @@ civic_free_traders = {
 		}
 	}
 	random_weight = { base = @civic_default_random_weight }
-	ai_weight = { 
-		base = @ai_civic_default_base_weight 
+	ai_weight = {
+		base = @ai_civic_default_base_weight
 		modifier = {
 			factor = @ai_civic_personality_match_factor
 			OR = {
@@ -169,8 +139,8 @@ civic_indentured_assets = {
 		}
 	}
 	random_weight = { base = @civic_default_random_weight }
-	ai_weight = { 
-		base = @ai_civic_default_base_weight 
+	ai_weight = {
+		base = @ai_civic_default_base_weight
 		modifier = {
 			factor = @ai_civic_personality_match_factor
 			OR = {
@@ -245,6 +215,7 @@ civic_memory_vault_corporate = {
 	}
 	modifier = {
 		councilor_skill_add = 1
+		leader_initial_skill = 1
 		leaders_upkeep_mult = 0.15
 	}
 }

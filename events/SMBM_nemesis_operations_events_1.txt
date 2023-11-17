@@ -22,10 +22,10 @@ namespace = operation
 @OperationBribeThreshold2 = 300
 @OperationBribeThreshold3 = 400
 
-@StealTechnologyAmount = 1000 #Amount of science research in every discipline which will be granted if the operation cannot steal a Technology																							  
+@StealTechnologyAmount = 1000 #Amount of science research in every discipline which will be granted if the operation cannot steal a Technology
 @StealTechnologyTimer = 365 #days (1 year) until Steal Technology can be repeated. Referenced in tooltip strings "operation.1026.tooltip.cooldown" and "operation_steal_technology_too_recent".
 @SabotageStarbaseTimer = 0 #days (0 years) until Sabotage Starbase can be repeated against this target.
-@CrisisBeaconTimer = 1440 #days (4 years) until Crisis Beacon can be attempted again. Referenced in tooltip string "operation_crisis_beacon_too_recent".																																						
+@CrisisBeaconTimer = 1440 #days (4 years) until Crisis Beacon can be attempted again. Referenced in tooltip string "operation_crisis_beacon_too_recent".
 
 # Number of days before a single event should (ideally) stand a chance of coming up again.
 @RandomOperationEventTimer = 300
