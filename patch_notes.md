@@ -1,11 +1,9 @@
-# Version 1.8.2
+# Version 1.9.0
 
 ## General tweaks
 
 ### Nerfs
  * Unholy Matrimony Event (Necrophage and Fanatical Purifier): -25% purge speed penalty to all players (AIs not included)
- * STARBASE_CAPACITY_BASE: 2 from 3
- * STARBASE_CAPACITY_SYSTEM_MULT: 0.08 from 0.1
  * Starbase overcapacity upkeep penalty: +35% from +25%
  * LEADER_AGE_DEATH_CHANCE_AGE: 70 from 80
  * LEADER_AGE_HIGH_DEATH_CHANCE_AGE: 90 from 100
@@ -13,9 +11,7 @@
 
 ### Boosts
  * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -40% defense platform build cost and +20% starbase damage boost for the first 20 years of the game.
- * Generals:
-   * Gain 10 experience every year
-   * Gain +60% more experience from a battle
+
  * Espionage Operations:
    * Difficulties reduced by 4 (include pre-ftl)
    * Steal Techonology Operation: cooldown of 1 year from 6
@@ -66,7 +62,6 @@
  * Arcology Project: requires 3 Ascension perks from 2
 
 ### Boosts
- * Galactic Force Projection: +5% sublight speed
  * Consecrate Worlds: Can now consecrate an occupied world
  * Hydrocentric: terraforming ocean world cost now -33% from -25% and -15% to terraforming ocean world time
 
@@ -77,7 +72,6 @@
  * Meritocracy: Specialist pop resource output +8% from +10%
  * Parliamentary System: +30% unity from factions from +40%
  * Memory Vault: Leader upkeep +15%
- * Heroic Past: Leader upkeep +15%
 
 ### Boosts
  * None
@@ -108,8 +102,8 @@
 ### Nerfs
  * Free Traders: +8% trade value from +10%
  * Indentured Assets: +8% slave output from +10%
- * Franchising: Empire size from Branch Offices -20% from -25%
  * Naval Contractors: Naval Cap +10% from +15%
+ * Memory Vault: Leader upkeep +15%
 
 ### Boosts
  * None

@@ -1,3 +1,17 @@
+# 2023/11/17 - 1.9.0
+
+Updates for the new 3.10.0 release
+
+Removed:
+ * Galactic Force Projection
+ * STARBASE_CAPACITY_BASE: 2 from 3
+ * STARBASE_CAPACITY_SYSTEM_MULT: 0.08 from 0.1
+ * Generals:
+   * Gain 10 experience every year
+   * Gain +60% more experience from a battle
+ * Heroic Past: Leader upkeep +15%
+ * Franchising: Empire size from Branch Offices -20% from -25%
+ 
 # 2023/10/21 - 1.8.2
 
 Updates for the new 3.9.3 release
