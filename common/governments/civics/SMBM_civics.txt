@@ -83,7 +83,7 @@ civic_meritocracy = {
 		}
 	}
 	modifier = {
-		planet_jobs_specialist_produces_mult = 0.08
+		planet_jobs_specialist_produces_mult = 0.05
 	}
 
 	swap_type = {

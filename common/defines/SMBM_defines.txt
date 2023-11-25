@@ -12,6 +12,8 @@
 
 	NAI = {
 		# Anti-AI Trade exploitation
+		MIGRATION_PACT_ACCEPTANCE_OPINION_FACTOR        = 0.4
+		EMBASSY_ACCEPTANCE_OPINION_FACTOR               = 0.4
 		RESEARCH_AGREEMENT_ACCEPTANCE_OPINION_FACTOR    = 0.3
 		RESEARCH_AGREEMENT_ACCEPTANCE_NUM_PACTS         = -40   # per existing research agreement
 		RESEARCH_AGREEMENT_ACCEPTANCE_GIVEN_TECHS       = -0.6  # Per tech we have they don't

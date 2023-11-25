@@ -133,6 +133,55 @@ civic_memory_vault_hive = {
 # Machine Empire
 ##################
 
+civic_machine_terminator = {
+	potential = {
+		authority = {
+			OR = {
+				value = auth_ancient_machine_intelligence
+				value = auth_machine_intelligence
+			}
+		}
+	}
+	starting_colony = pc_nuked # Changes homeworld class regardless of what is picked for empire
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_servitor
+				value = civic_machine_assimilator
+				value = civic_machine_memorialist
+				value = civic_machine_exploration_protocol
+			}
+		}
+		origin = {
+			NOR = {
+				value = origin_common_ground
+				value = origin_hegemon
+			}
+		}
+	}
+	modification = no
+	random_weight = {
+		base = @civic_default_random_weight
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		}
+		modifier = {
+			factor = 0
+			blocks_disruptive_gameplay = yes
+		}
+	}
+	description = civic_tooltip_machine_terminator_effects
+	modifier = {
+		councilor_gestalt_legion_exp_gain = @gestalt_civic_node_xp_rate
+		country_starbase_influence_cost_mult = -0.3
+		ship_weapon_damage = 0.25
+		starbase_shipyard_build_cost_mult = -0.15
+		country_naval_cap_mult = 0.33
+		country_trade_fee = 0.50
+	}
+}
+
 civic_machine_zero_waste_protocols = {
 	potential = { authority = { value = auth_machine_intelligence } }
 	random_weight = { base = @civic_default_random_weight }
@@ -185,6 +234,7 @@ civic_memory_vault_machine = {
 		restored_node_bonus_skill = 1
 		councilor_gestalt_cognitive_exp_gain = @gestalt_civic_node_xp_rate
 		councilor_skill_add = 1
+		leader_initial_skill = 1
 		leaders_upkeep_mult = 0.15
 	}
 }
