@@ -1,4 +1,4 @@
-# Version 1.9.0
+# Version 1.9.1
 
 ## General tweaks
 
@@ -23,6 +23,8 @@
 
 ## Nerfs
  * Anti-AI Trade exploits:
+   * MIGRATION_PACT_ACCEPTANCE_OPINION_FACTOR: 0.4 from 0.5
+   * EMBASSY_ACCEPTANCE_OPINION_FACTOR: 0.4 from 0.5
    * RESEARCH_AGREEMENT_ACCEPTANCE_OPINION_FACTOR: 0.3 from 0.4
    * RESEARCH_AGREEMENT_ACCEPTANCE_NUM_PACTS: -40 from -30
    * RESEARCH_AGREEMENT_ACCEPTANCE_GIVEN_TECHS: -0.6 from -0.5
@@ -60,10 +62,12 @@
  * Hive World: requires 3 ascension perks from 0
  * Machine World: requires 3 ascension perks from 0
  * Arcology Project: requires 3 Ascension perks from 2
+ * One Vision: +7% Unity and -7% Pop Amenity Usage from 10%
 
 ### Boosts
  * Consecrate Worlds: Can now consecrate an occupied world
  * Hydrocentric: terraforming ocean world cost now -33% from -25% and -15% to terraforming ocean world time
+ * Detox: +10% habitability and -10% terraforming cost multiplier
 
 ## Standard Civics
 
@@ -89,6 +93,7 @@
 ## Robot Civics
 
 ### Nerfs
+ * Determined Exterminator: +50% market fee penalty
  * Driven Assimilator: 3 pop per year assimilation speed from average of 7
  * Rapid Replicators: +15% mechanical pop assembly speed from +20%
  * Static Research Analysis: +0 intel decryption from +1
@@ -128,6 +133,7 @@
 ### Nerfs
  * Rapid Breeders: +7% population growth from 10%
  * Intelligent: +8% to research from +10%
+ * Natural Engineers: +12% Engineering Research from +15%
  * Charismatic: +15% to amenities from +20%
  * Thrifty: +20% trade value from +25%
  * Unruly: +13% empire size from pop

@@ -1,3 +1,18 @@
+# 2023/11/25 - 1.9.1
+
+Updates for the latest version and some quick meta fixes
+
+Added:
+ * One Vision: +7% Unity and -7% Pop Amenity Usage from 10%
+ * Determined Exterminator: +50% market fee penalty
+ * Natural Engineers: +12% Engineering Research from +15%
+ * Detox: +10% habitability and -10% terraforming cost multiplier
+ * MIGRATION_PACT_ACCEPTANCE_OPINION_FACTOR: 0.4 from 0.5
+ * EMBASSY_ACCEPTANCE_OPINION_FACTOR: 0.4 from 0.5
+
+Changed:
+ * Meritocracy: Specialist pop resource output +5% from +10%
+
 # 2023/11/17 - 1.9.0
 
 Updates for the new 3.10.0 release
