@@ -1,12 +1,13 @@
-# Version 1.9.1
+# Version 1.9.2
 
 ## General tweaks
 
 ### Nerfs
  * Unholy Matrimony Event (Necrophage and Fanatical Purifier): -25% purge speed penalty to all players (AIs not included)
  * Starbase overcapacity upkeep penalty: +35% from +25%
- * LEADER_AGE_DEATH_CHANCE_AGE: 70 from 80
- * LEADER_AGE_HIGH_DEATH_CHANCE_AGE: 90 from 100
+ * LEADER_AGE_DEATH_CHANCE_AGE: 70 from 80 (Boost to Venerable and Enduring)
+ * LEADER_AGE_HIGH_DEATH_CHANCE_AGE: 90 from 100 (Boost to Venerable and Enduring)
+ * Machine malfunction: increased from 10% to 13% (Boost to Synchronicity Tradition)
 
 
 ### Boosts

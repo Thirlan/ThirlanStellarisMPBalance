@@ -1,0 +1,43 @@
+
+###############################################################
+# SYNTHETIC DAWN events
+# by Maximilian Olbers, Miranda van den Brink, Dee Majek et al
+###############################################################
+
+namespace = syndaw
+
+# Machine & Synth Leaders malfunction (per empire)
+country_event = {
+	id = syndaw.11
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			87 = { } # nothing happens
+			13 = {
+				modifier = { # Tradition: Self-Preservation Protocols
+					factor = 0.5
+					has_active_tradition = tr_synchronicity_self_preservation
+				}
+				modifier = { # Edict: Zro Additives (via Psionic Archive Relic)
+					factor = 0.5
+					has_edict = zro_crystal_machine
+				}
+				if = { # Machine Intelligence
+					limit = {
+						has_authority = auth_machine_intelligence
+					}
+					fire_on_action = {
+						on_action = on_machine_leader_malfunction
+					}
+				}
+				else = { # Synthetic Ascension or Synth Workers Technology
+					fire_on_action = {
+						on_action = on_synth_leader_malfunction
+					}
+				}
+			}
+		}
+	}
+}
