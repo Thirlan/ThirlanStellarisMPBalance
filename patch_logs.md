@@ -4,6 +4,9 @@ Updates to game's latest version 3.11
 
 Removed:
  * Galactic Doorstep: +15% Physics research
+ * Emnity:
+   * Match: -5% to ship build cost from -10%
+   * Antagonistic Stance: +0 rivalries from +2
 
 # 2023/12/20 - 1.9.2
 

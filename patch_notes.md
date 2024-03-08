@@ -43,14 +43,12 @@
    * Jump drive penalty increased to -60% to weapons/movement from -50%
 
 ### Boosts
- * none
+ * None
 
 ## Traditions
 
 ### Nerfs
- * Emnity:
-   * Match: -5% to ship build cost from -10%
-   * Antagonistic Stance: +0 rivalries from +2
+ * None
 
 ### Boosts
  * None
