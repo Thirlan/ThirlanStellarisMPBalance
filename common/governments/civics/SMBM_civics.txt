@@ -3,7 +3,12 @@
 #	potential = {}								# requirements list, see ../readme_requirements.txt
 #	possible = {}								# requirements list, see ../readme_requirements.txt
 #	pickable_at_start = yes / no				# default: yes
-#	modification = { add = {} remove = {} } | yes/no # Can be a set of two triggers, add to check if can be added later under certain conditions, remove to check if can be removed later under certain conditions
+#	modification = {							# ( modification = yes/no) | Can be a set of two triggers:
+#		moddable_conditions_custom_tooltip = loc# Used for localizaton when add or remove is not set but the other one is (replaces CIVIC_NOT_MODDABLE)
+#		add = {}								# add to check if can be added later under certain conditions
+#		remove = {}								# remove to check if can be removed later under certain conditions
+#	}
+#
 #												# default: yes, set to no to prevent adding or removing this after creation of the empire
 #	custom_tooltip_with_modifiers = ...			# Appends localization key to the end of auto-generated modifier effect text.
 #

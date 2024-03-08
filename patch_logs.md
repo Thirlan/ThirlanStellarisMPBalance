@@ -3,7 +3,7 @@
 Updates to game's latest version 3.11
 
 Removed:
- * 
+ * Galactic Doorstep: +15% Physics research
 
 # 2023/12/20 - 1.9.2
 
