@@ -1,3 +1,10 @@
+# 2024/03/08 - 1.10.0
+
+Updates to game's latest version 3.11
+
+Removed:
+ * 
+
 # 2023/12/20 - 1.9.2
 
 Updates to game's latest version also purged log notes older than 1 year
