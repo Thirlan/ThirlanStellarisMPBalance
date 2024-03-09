@@ -1,4 +1,4 @@
-# Version 1.9.2
+# Version 1.10.0
 
 ## General tweaks
 
@@ -43,14 +43,12 @@
    * Jump drive penalty increased to -60% to weapons/movement from -50%
 
 ### Boosts
- * none
+ * None
 
 ## Traditions
 
 ### Nerfs
- * Emnity:
-   * Match: -5% to ship build cost from -10%
-   * Antagonistic Stance: +0 rivalries from +2
+ * None
 
 ### Boosts
  * None
@@ -124,7 +122,6 @@
 ### Boosts
  * Hegemon: "Long live the hegemony" event gifts the player with +200 influence and +75 alloy 30 days after game start.
  * Common Ground: "Live long and prosper" event gifts the player +125 influence 30 days after game start along with a crewed science ship.
- * Galactic Doorstep: +15% Physics research
  * Life Seeded: Starbase influence and material cost -10%
  * Doomsday: stage 1 now takes ~2 years to trigger from 5 days, with stage 2 taking ~17 years from ~11 years
 

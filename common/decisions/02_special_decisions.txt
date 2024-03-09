@@ -2,61 +2,61 @@
 # Decisions
 ##########################################################################
 
-decision_prospect = {
-	owned_planets_only = yes
-
-	enactment_time = 180
-	resources = {
-		category = decisions
-		cost = {
-			unity = 250
-			energy = 500
-		}
-	}
-
-	potential = {
-		is_artificial = no
-		NOT = { is_planet_class = pc_machine }
-		NOT = { is_planet_class = pc_hive }
-		NOT = { is_planet_class = pc_city }
-		owner = {
-			has_active_tradition = tr_adaptability_finish
-		}
-		NOT = { has_planet_flag = planet_prospected }
-	}
-
-	effect = {
-		custom_tooltip = decision_prospect_effects_short
-		hidden_effect = {
-			set_planet_flag = planet_prospected
-			add_random_non_blocker_deposit = yes
-			create_message = {
-				type = MESSAGE_TYPE_PLANET_PROSPECTED
-				localization = MESSAGE_PLANET_PROSPECTED
-				days = 30
-				target = this
-				variable = {
-					type = name
-					localization = PLANET
-					scope = this
-				}
-				variable = {
-					type = name
-					localization = DEPOSIT
-					scope = last_added_deposit
-				}
-			}
-		}
-	}
-
-	ai_weight = {
-		weight = 1
-		modifier = {
-			factor = 0
-			num_pops < 20
-		}
-	}
-}
+#decision_prospect = { # Cut as of tradition rebalance
+#	owned_planets_only = yes
+#
+#	enactment_time = 180
+#	resources = {
+#		category = decisions
+#		cost = {
+#			unity = 250
+#			energy = 500
+#		}
+#	}
+#
+#	potential = {
+#		is_artificial = no
+#		NOT = { is_planet_class = pc_machine }
+#		NOT = { is_planet_class = pc_hive }
+#		NOT = { is_planet_class = pc_city }
+#		owner = {
+#			has_active_tradition = tr_adaptability_finish
+#		}
+#		NOT = { has_planet_flag = planet_prospected }
+#	}
+#
+#	effect = {
+#		custom_tooltip = decision_prospect_effects_short
+#		hidden_effect = {
+#			set_planet_flag = planet_prospected
+#			add_random_non_blocker_deposit = yes
+#			create_message = {
+#				type = MESSAGE_TYPE_PLANET_PROSPECTED
+#				localization = MESSAGE_PLANET_PROSPECTED
+#				days = 30
+#				target = this
+#				variable = {
+#					type = name
+#					localization = PLANET
+#					scope = this
+#				}
+#				variable = {
+#					type = name
+#					localization = DEPOSIT
+#					scope = last_added_deposit
+#				}
+#			}
+#		}
+#	}
+#
+#	ai_weight = {
+#		weight = 1
+#		modifier = {
+#			factor = 0
+#			num_pops < 20
+#		}
+#	}
+#}
 
 # decision_geologist_prospect = {
 # 	owned_planets_only = yes
@@ -294,9 +294,32 @@ decision_resort_colony = {
 
 	potential = {
 		is_capital = no
-		NOT = { has_modifier = penal_colony }
-		NOT = { has_modifier = slave_colony }
-		NOT = { is_planet_class = pc_city }
+		NOR = { 
+			has_modifier = penal_colony 
+			has_modifier = slave_colony
+			has_modifier = resort_colony
+			is_planet_class = pc_city
+			AND = {
+				is_planet_class = pc_nuked
+				NOR = {
+					owner = {
+						OR = {	
+							is_memorialist_empire = yes	
+							has_trait = trait_survivor
+							has_trait = trait_pc_nuked_preference
+							has_trait = trait_plantoid_radiotrophic
+							has_trait = trait_advanced_radiotrophic
+							has_trait = trait_harvested_radiotrophic
+							has_trait = trait_lithoid_radiotrophic
+						}
+					}
+				}
+			}
+			AND = {
+				is_planet_class = pc_relic
+				NOT = { owner = { is_memorialist_empire = yes } }
+			}
+		}
 		owner = {
 			is_regular_empire = yes
 		}
@@ -304,15 +327,10 @@ decision_resort_colony = {
 	}
 
 	allow = {
-		planet_size >= 15
 		custom_tooltip = {
 			fail_text = decision_resort_colony_no_districts
 			num_districts = { type = any value < 1 }
 			num_buildings = { type = any value < 2 }
-		}
-		custom_tooltip = {
-			fail_text = no_upgraded_capital_tooltip
-			has_upgraded_capital = no
 		}
 		custom_tooltip = {
 			fail_text = decision_resort_colony_only_one
@@ -321,6 +339,10 @@ decision_resort_colony = {
 					any_owned_planet = { has_modifier = resort_colony }
 				}
 			}
+		}
+		custom_tooltip = {
+			fail_text = decision_cant_be_building_anything
+			has_building_construction = no
 		}
 	}
 
@@ -331,9 +353,14 @@ decision_resort_colony = {
 		}
 		hidden_effect = {
 			remove_building = building_colony_shelter
+			remove_building = building_capital
+			remove_building = building_major_capital
+			remove_building = building_system_capital
 			add_building = building_resort_capital
 		}
-		hidden_effect = { validate_planet_buildings_and_districts = yes }
+		hidden_effect = {
+			validate_planet_buildings_and_districts = yes
+		}
 	}
 
 	ai_weight = {
@@ -415,7 +442,7 @@ decision_crucible_colony = {
 	}
 
 	ai_weight = {
-		weight = 0 #TODO investigate later
+		weight = 0 #TODO AUG-37374
 	}
 }
 
@@ -1157,6 +1184,7 @@ decision_arcology_project = {
 				entity = "city_planet_entity"
 				graphical_culture = owner
 			}
+			planet_event = { id = action.68 }
 			owner = {
 				country_event = { id = distar.201 } # port for living planet distar.197, triggers in event
 			}
@@ -1239,6 +1267,7 @@ decision_arcology_project_relic = {
 				entity = "city_planet_entity"
 				graphical_culture = owner
 			}
+			planet_event = { id = action.68 }
 			add_deposit = d_former_relic_world
 			planet_event = { id = mega.201 }
 			while = {
@@ -1289,7 +1318,15 @@ decision_market_nomination = {
 			has_global_flag = ongoing_market_relocation_nomination
 		}
 		#from = { has_communications = event_target:50percentcomms } # should include self
-		from = { has_country_flag = market_nomination_eligible }
+		exists = from
+		from = {
+			has_country_flag = market_nomination_eligible
+			NOT = { has_valid_civic = civic_inwards_perfection }
+			OR = {
+				is_ai = no
+				NOT = { has_ethic = ethic_fanatic_xenophobe }
+			}
+		}
 	}
 
 	allow = {
@@ -2790,7 +2827,7 @@ decision_reorganize_leviathan_parade = {
 				}
 				change_situation_target = root
 				set_situation_locked = no
-				set_situation_approach = approach_encourage	
+				set_situation_approach = approach_encourage
 			}
 		}
 	}

@@ -42,6 +42,14 @@ trait_robot_harvesters = {
 			from = { has_rural_designation = yes }
 		}
 	}
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			exists = from
+			from = { country_uses_food = no }
+		}
+	}
 }
 
 trait_robot_superconductive = {
@@ -300,7 +308,7 @@ trait_robot_learning_algorithms = {
 		}
 	}
 	modifier = {
-		species_leader_exp_gain = 0.25
+		species_leader_exp_gain = 0.10
 	}
 	slave_cost = {
 		energy = 750
