@@ -1,4 +1,4 @@
-# Version 1.10.0
+# Version 1.10.1
 
 ## General tweaks
 
@@ -8,7 +8,7 @@
  * LEADER_AGE_DEATH_CHANCE_AGE: 70 from 80 (Boost to Venerable and Enduring)
  * LEADER_AGE_HIGH_DEATH_CHANCE_AGE: 90 from 100 (Boost to Venerable and Enduring)
  * Machine malfunction: increased from 10% to 13% (Boost to Synchronicity Tradition)
-
+ * Empire Leader Cap: 2 from 3 (Boost to game mechanics like Heroic Tales)
 
 ### Boosts
  * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -40% defense platform build cost and +20% starbase damage boost for the first 20 years of the game.
@@ -72,19 +72,37 @@
 
 ### Nerfs
  * Fanatical Purifier: 15% ship fire rate from 33%
- * Meritocracy: Specialist pop resource output +8% from +10%
+ * Meritocracy: Specialist pop resource output +5% from +10%
  * Parliamentary System: +30% unity from factions from +40%
- * Memory Vault: Leader upkeep +15%
+ * Citizen Service: +10% Naval capacity from +15%
+ * Sovereign Guardian: -40% to empire size from pops from -50%
+ * Barbaric Despoiler: +10% Market Fee
 
 ### Boosts
- * None
+ * Efficient Bureaucracy: -3% Empire Size
+ * Byzantine Bureaucracy: -3% Empire Size
+ * Corvee System: -3% Empire Size From Population
+ * Free Haven: +2% to research speed
+ * Shadow Council: +5% Councilor Experience Gain
+ * Warrior Culture: +20% Army Health, Morale and Experience Gain and +100 starting experience
+ * Pleasure Seekers: +3% happiness
+ * Pompous Purists: +10% diplomatic weight
+ * Diplomatic Corp: +20% diplomatic weight, +10% envoy improve relations
+ * Merchant Guilds: +10% envoy improve relations
+ * Selective Kinship: +10% happiness while sharing from +7.5% and +4% while oppressing from +2.5%
+ * Mutagenic Spas: +5% habitability (negates penalty of first 2 baths) and +10 leader lifespan
+ * Exalted Priesthood: -10% to tradition cost from empire size
+ * Eager Explorers: planet colony development speed +25% and -5% to ship build cost
+ * Dimensional Worship: +10% physics research speed
+ * Agrarian Idyll: -10% to empire size from districts
+ * Technocracy: +1 scientist leader cap
+ * Imperial Cult: +5% to Edict Funds
 
 ## Hive Mind Civics
 
 ### Nerfs
  * Ascetic: -10% amenities usage from -15%
  * Devouring Swarm: +50% market fee penalty
- * Memory Vault: Leader upkeep +15%
 
 ### Boosts
  * Divided Attention: -5% Empire size from pops
@@ -96,7 +114,6 @@
  * Driven Assimilator: 3 pop per year assimilation speed from average of 7
  * Rapid Replicators: +15% mechanical pop assembly speed from +20%
  * Static Research Analysis: +0 intel decryption from +1
- * Memory Vault: Leader upkeep +15%
 
 ### Boosts
  * Zero-waste Protocols: -20% robot upkeep from -10%

@@ -187,35 +187,3 @@ civic_indentured_assets = {
 		country_pop_enslaved_mult = 0.35
 	}
 }
-
-civic_memory_vault_corporate = {
-	playable = { host_has_dlc = "Galactic Paragons" }
-	ai_playable = { host_has_dlc = "Galactic Paragons" }
-	random_weight = {
-		base = 4
-	}
-	description = "civic_tooltip_memory_vault_corporate_effects"
-	potential = {
-		OR = {
-			authority = { value = auth_corporate }
-			civics = { value = civic_galactic_sovereign_megacorp }
-		}
-		ethics = {
-			NOT = {
-				value = ethic_gestalt_consciousness
-			}
-		}
-	}
-	possible = {
-		civics = {
-			NOT = {
-				value = civic_memory_vault
-			}
-		}
-	}
-	modifier = {
-		councilor_skill_add = 1
-		leader_initial_skill = 1
-		leaders_upkeep_mult = 0.15
-	}
-}

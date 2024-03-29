@@ -108,27 +108,6 @@ civic_hive_devouring_swarm = {
 	}
 }
 
-civic_memory_vault_hive = {
-	playable = { host_has_dlc = "Galactic Paragons" }
-	ai_playable = { host_has_dlc = "Galactic Paragons" }
-	random_weight = {
-		base = 4
-	}
-	description = "civic_tooltip_memory_vault_hive_effects"
-	potential = {
-		authority = { value = auth_hive_mind }
-	}
-	possible = {
-	}
-	modifier = {
-		restored_node_bonus_skill = 1
-		councilor_gestalt_cognitive_exp_gain = @gestalt_civic_node_xp_rate
-		councilor_skill_add = 1
-		leader_initial_skill = 1
-		leaders_upkeep_mult = 0.15
-	}
-}
-
 
 ##################
 # Machine Empire

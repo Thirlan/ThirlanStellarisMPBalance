@@ -1,3 +1,34 @@
+# 2024/03/30 - 1.10.1
+
+Updates to game's latest version 3.11
+
+Added:
+ * Efficient Bureaucracy: -3% Empire Size
+ * Byzantine Bureaucracy: -3% Empire Size
+ * Corvee System: -3% Empire Size From Population
+ * Free Haven: +2% to research speed
+ * Shadow Council: +5% Councilor Experience Gain
+ * Warrior Culture: +20% Army Health, Morale and Experience Gain and +100 starting experience
+ * Pleasure Seekers: +3% happiness
+ * Pompous Purists: +10% diplomatic weight
+ * Diplomatic Corp: +20% diplomatic weight, +10% envoy improve relations
+ * Merchant Guilds: +10% envoy improve relations
+ * Selective Kinship: +10% happiness while sharing from +7.5% and +4% while oppressing from +2.5%
+ * Mutagenic Spas: +5% habitability (negates penalty of first 2 baths) and +10 leader lifespan
+ * Exalted Priesthood: -10% to tradition cost from empire size
+ * Empire Leader Cap: 2 from 3 (Boost to game mechanics like Heroic Tales)
+ * Dimensional Worship: +10% physics research speed
+ * Agrarian Idyll: -10% to empire size from districts
+ * Technocracy: +1 scientist leader cap
+ * Imperial Cult: +10% to Edict Funds
+ * Citizen Service: +10% Naval capacity from +15%
+ 
+Changed:
+ * Meritocracy: clarified mistake in notes, it is +5% not +3%
+
+Removed:
+  * Memory Vault: Leader upkeep +15%
+
 # 2024/03/08 - 1.10.0
 
 Updates to game's latest version 3.11
