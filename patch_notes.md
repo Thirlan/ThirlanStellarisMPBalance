@@ -82,6 +82,7 @@
  * Citizen Service: +10% Naval capacity from +15%
  * Sovereign Guardian: -40% to empire size from pops from -50%
  * Barbaric Despoiler: +10% Market Fee
+ * Catalytic Converter: reduce alloy production by -0.5 and councilor position now gives +1% bonus to alloy production from +2%
 
 ### Boosts
  * Efficient Bureaucracy: -3% Empire Size
@@ -109,6 +110,7 @@
  * Ascetic: -10% amenities usage from -15%
  * Devouring Swarm: +50% market fee penalty
  * Sovereign Guardian: -40% to empire size from pops from -50%
+ * Catalytic Converter: reduce alloy production by -0.5
 
 ### Boosts
  * Divided Attention: -5% Empire size from pops
@@ -122,6 +124,8 @@
  * Rapid Replicators: +15% mechanical pop assembly speed from +20%
  * Static Research Analysis: +0 intel decryption from +1
  * Sovereign Guardian: -40% to empire size from pops from -50%
+ * Catalytic Converter: reduce alloy production by -0.5
+
 
 ### Boosts
  * Zero-waste Protocols: -20% robot upkeep from -10%

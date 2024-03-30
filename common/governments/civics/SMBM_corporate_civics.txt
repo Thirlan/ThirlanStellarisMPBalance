@@ -289,7 +289,7 @@ civic_corporate_toxic_baths = {
 		}
 	}
 	modifier = {
-		pop_environment_tolerance = 0.05
+		pop_environment_tolerance = 0.01
 		leader_lifespan_add = 10
 	}
 }

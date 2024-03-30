@@ -1,0 +1,13 @@
+councilor_catalytic_processing = {
+	leader_class = { scientist }
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = civic_catalytic_processing
+	modifier = {
+		planet_metallurgists_produces_mult = 0.01
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}

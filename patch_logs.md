@@ -19,8 +19,10 @@ Added:
  * Empath: +20% diplomatic weight, +10% envoy improve relations
  * Merchant Guilds: +10% envoy improve relations
  * Selective Kinship: +10% happiness while sharing from +7.5% and +4% while oppressing from +2.5%
- * Mutagenic Spas: +5% habitability (negates penalty of first 2 baths) and +10 leader lifespan
+ * Mutagenic Spas: +1% habitability (negates penalty of first 4 baths) and +10 leader lifespan
+ * Permutation Pools: +3% habitability (negates penalty of first 4 baths) and +10 leader lifespan
  * Exalted Priesthood: -10% to tradition cost from empire size
+ * Catalytic Converter: reduce alloy production by -0.5 and councilor position now gives +1% bonus to alloy production from +2%
  * Eager Explorers: planet colony development speed +25% and -5% to ship build cost
  * Dimensional Worship: +10% physics research speed
  * Agrarian Idyll: -10% to empire size from districts
