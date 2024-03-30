@@ -1,3 +1,50 @@
+# 2024/03/30 - 1.10.1
+
+Updates to game's latest version 3.11. Many thanks again to Montu.
+
+https://www.youtube.com/watch?v=TQJ9hkQ1Jo0&ab_channel=MontuPlays
+
+Added:
+ * Efficient Bureaucracy: -3% Empire Size
+ * Byzantine Bureaucracy: -3% Empire Size
+ * Corvee System: -3% Empire Size From Population
+ * Free Haven: +3% to research speed
+ * Shadow Council: +5% Councilor Experience Gain
+ * Warrior Culture: +20% Army Health, Morale and Experience Gain and +100 starting experience
+ * Pleasure Seekers: +3% happiness
+ * Corporate Hedonism: +3% happiness
+ * Pompous Purists: +10% diplomatic weight
+ * Diplomatic Corp: +20% diplomatic weight, +10% envoy improve relations
+ * Public Relations Specialists: +20% diplomatic weight, +10% envoy improve relations
+ * Empath: +20% diplomatic weight, +10% envoy improve relations
+ * Merchant Guilds: +10% envoy improve relations
+ * Selective Kinship: +10% happiness while sharing from +7.5% and +4% while oppressing from +2.5%
+ * Mutagenic Spas: +1% habitability (negates penalty of first 4 baths) and +10 leader lifespan
+ * Permutation Pools: +3% habitability (negates penalty of first 4 baths) and +10 leader lifespan
+ * Exalted Priesthood: -10% to tradition cost from empire size
+ * Catalytic Converter: reduce alloy production by -0.5 and councilor position now gives +1% bonus to alloy production from +2%
+ * Eager Explorers: planet colony development speed +25% and -5% to ship build cost
+ * Dimensional Worship: +10% physics research speed
+ * Agrarian Idyll: -10% to empire size from districts
+ * Technocracy: +1 scientist leader cap
+ * Imperial Cult: +5% to Edict Funds
+ * Citizen Service: +10% Naval capacity from +15%
+ * Sovereign Guardian: -40% to empire size from pops from -50%
+ * Barbaric Despoiler: +10% Market Fee
+ * Empire Leader Cap: 2 from 3 (Boost to game mechanics like Heroic Tales)
+ * Anti-Federation Snowballing:
+  * FEDERATION_ENVOY_BASE_EFFECT: 0.8 from 1.0
+  * FEDERATION_MEMBERS_PENALTY: -0.3 from -0.25
+  * FEDERATION_ETHICS_PENALTY: -0.18 from -0.15
+  * FEDERATION_OPPOSING_ETHICS_PENALTY: -0.6 from -0.5
+ 
+Changed:
+ * Meritocracy: clarified mistake in notes, it is +5% not +3%
+ * Fixed bug in core game where nerf for Plantoid budding trait was affecting Lithoids
+
+Removed:
+  * Memory Vault: Leader upkeep +15%
+
 # 2024/03/08 - 1.10.0
 
 Updates to game's latest version 3.11

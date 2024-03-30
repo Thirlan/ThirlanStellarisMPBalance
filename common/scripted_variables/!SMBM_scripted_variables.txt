@@ -1,1 +1,2 @@
 @plantoid_budding_rate = 0.0175
+@lithoid_budding_rate = 0.02

@@ -15,7 +15,8 @@ Following videos were used to determine those mechanics that needed to be balanc
 * https://www.youtube.com/watch?v=VG5YSByzxgQ&ab_channel=MontuPlays
 * https://www.youtube.com/watch?v=LzhgFRXJ3D4&ab_channel=MontuPlays
 * https://www.youtube.com/watch?v=C88jv2OifnM&ab_channel=MontuPlays
-* https://www.youtube.com/watch?v=zbq-3q9I-kM
+* https://www.youtube.com/watch?v=zbq-3q9I-kM&ab_channel=MontuPlays
+* https://www.youtube.com/watch?v=TQJ9hkQ1Jo0&ab_channel=MontuPlays
 
 A lot of appreciation for dedicated Youtubers such as Montu and ASPec
 Appreciation from the players in ISS: Komrad Truck, Jojo
