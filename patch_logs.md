@@ -40,6 +40,7 @@ Added:
  
 Changed:
  * Meritocracy: clarified mistake in notes, it is +5% not +3%
+ * Fixed bug in core game where nerf for Plantoid budding trait was affecting Lithoids
 
 Removed:
   * Memory Vault: Leader upkeep +15%
