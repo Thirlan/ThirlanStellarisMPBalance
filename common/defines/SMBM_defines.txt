@@ -4,6 +4,12 @@
 		
 		# Anti-AI Trade exploitation
 		RESEARCH_AGREEMENT_SPEED_MULT		= 0.15	# Research speed increased by this for trade research agreement deal
+		
+		# Anti-federation snowballing
+		FEDERATION_ENVOY_BASE_EFFECT		= 0.8	# envoys base effect on cohesion
+		FEDERATION_MEMBERS_PENALTY			= -0.3	# penalty for each federation member
+		FEDERATION_ETHICS_PENALTY			= -0.18	# Federation cohesion penalty for extra unique ethics
+		FEDERATION_OPPOSING_ETHICS_PENALTY	= -0.6	# Federation cohesion for opposing ethics
 	}
 
 	NShip = {

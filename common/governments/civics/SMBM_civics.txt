@@ -1008,7 +1008,7 @@ civic_dimensional_worship = {
 	}
 	modifier = {
 		country_astral_threads_produces_mult = 0.25
-		country_physics_research_cost_mult = 0.10
+		country_physics_research_produces_mult = 0.10
 	}
 	custom_tooltip_with_modifiers = "civic_dimensional_worship_effects_additional"
 }

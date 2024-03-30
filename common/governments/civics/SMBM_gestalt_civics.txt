@@ -108,6 +108,95 @@ civic_hive_devouring_swarm = {
 	}
 }
 
+civic_hive_toxic_baths = {
+	playable = { has_toxoids = yes }
+	ai_playable = { has_toxoids = yes }
+	description = "civic_tooltip_hive_toxic_baths_effects"
+	potential = {
+		authority = { value = auth_hive_mind }
+	}
+	possible = {
+		origin = { NOT = { value = origin_life_seeded } }
+	}
+	random_weight = {
+		base = @civic_default_random_weight
+	}
+	ai_weight = {
+		base = @ai_civic_default_base_weight
+	}
+	modifier = {
+		pop_environment_tolerance = 0.05
+		leader_lifespan_add = 10
+		councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
+	}
+}
+
+civic_hive_sovereign_guardianship = {
+	playable = { has_astral_planes_dlc = yes }
+	ai_playable = { has_astral_planes_dlc = yes }
+	description = "civic_hive_sovereign_guardianship_effects"
+	potential = {
+		authority = { value = auth_hive_mind }
+	}
+	possible = {
+		civics = {
+			NOT = { value = civic_hive_devouring_swarm }
+		}
+	}
+
+	modification = no
+
+	modifier = {
+		empire_size_colonies_mult = 1
+		empire_size_systems_mult = 1.50
+		empire_size_pops_mult = -0.40
+		empire_size_districts_mult = -0.50
+		diplo_weight_mult = 0.2
+		councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
+		planet_soldiers_unity_produces_add = @sovereign_guardianship_soldier_unity
+	}
+
+	random_weight = {
+		base = @civic_rare_random_weight
+	}
+	ai_weight = {
+		base = @civic_rare_random_weight
+	}
+}
+
+civic_hive_empath = {
+	playable = { host_has_dlc = "Federations" }
+	potential = {
+		authority = { value = auth_hive_mind }
+	}
+	possible = {
+		civics = {
+			NOT = {
+				value = civic_hive_devouring_swarm
+			}
+		}
+		origin = {
+			NOT = {
+				value = origin_necrophage
+			}
+		}
+	}
+	random_weight = {
+		base = @civic_default_random_weight
+	}
+	ai_weight = {
+		base = @ai_civic_default_base_weight
+	}
+
+	description = "civic_tooltip_empath_effects"
+	modifier = {
+		councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
+		envoys_add = 2
+		diplo_weight_mult = 0.2
+		envoy_improve_relations_mult = 0.10
+	}
+}
+
 
 ##################
 # Machine Empire
@@ -198,23 +287,35 @@ civic_machine_replication = {
 	}
 }
 
-civic_memory_vault_machine = {
-	playable = { host_has_dlc = "Galactic Paragons" }
-	ai_playable = { host_has_dlc = "Galactic Paragons" }
-	random_weight = {
-		base = 4
-	}
-	description = "civic_tooltip_memory_vault_machine_effects"
+civic_machine_sovereign_guardianship = {
+	playable = { has_astral_planes_dlc = yes }
+	ai_playable = { has_astral_planes_dlc = yes }
+	description = "civic_machine_sovereign_guardianship_effects"
 	potential = {
 		authority = { value = auth_machine_intelligence }
 	}
 	possible = {
+		civics = {
+			NOT = { value = civic_machine_terminator }
+		}
 	}
+
+	modification = no
+
 	modifier = {
-		restored_node_bonus_skill = 1
-		councilor_gestalt_cognitive_exp_gain = @gestalt_civic_node_xp_rate
-		councilor_skill_add = 1
-		leader_initial_skill = 1
-		leaders_upkeep_mult = 0.15
+		empire_size_colonies_mult = 1
+		empire_size_systems_mult = 1.50
+		empire_size_pops_mult = -0.40
+		empire_size_districts_mult = -0.50
+		diplo_weight_mult = 0.2
+		councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
+		planet_soldiers_unity_produces_add = @sovereign_guardianship_soldier_unity
+	}
+
+	random_weight = {
+		base = @civic_rare_random_weight
+	}
+	ai_weight = {
+		base = @civic_rare_random_weight
 	}
 }

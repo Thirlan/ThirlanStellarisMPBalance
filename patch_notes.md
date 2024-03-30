@@ -9,6 +9,11 @@
  * LEADER_AGE_HIGH_DEATH_CHANCE_AGE: 90 from 100 (Boost to Venerable and Enduring)
  * Machine malfunction: increased from 10% to 13% (Boost to Synchronicity Tradition)
  * Empire Leader Cap: 2 from 3 (Boost to game mechanics like Heroic Tales)
+ * Anti-Federation Snowballing:
+   * FEDERATION_ENVOY_BASE_EFFECT: 0.8 from 1.0
+   * FEDERATION_MEMBERS_PENALTY: -0.3 from -0.25
+   * FEDERATION_ETHICS_PENALTY: -0.18 from -0.15
+   * FEDERATION_OPPOSING_ETHICS_PENALTY: -0.6 from -0.5
 
 ### Boosts
  * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -40% defense platform build cost and +20% starbase damage boost for the first 20 years of the game.
@@ -82,7 +87,7 @@
  * Efficient Bureaucracy: -3% Empire Size
  * Byzantine Bureaucracy: -3% Empire Size
  * Corvee System: -3% Empire Size From Population
- * Free Haven: +2% to research speed
+ * Free Haven: +3% to research speed
  * Shadow Council: +5% Councilor Experience Gain
  * Warrior Culture: +20% Army Health, Morale and Experience Gain and +100 starting experience
  * Pleasure Seekers: +3% happiness
@@ -103,9 +108,11 @@
 ### Nerfs
  * Ascetic: -10% amenities usage from -15%
  * Devouring Swarm: +50% market fee penalty
+ * Sovereign Guardian: -40% to empire size from pops from -50%
 
 ### Boosts
  * Divided Attention: -5% Empire size from pops
+ * Empath: +20% diplomatic weight, +10% envoy improve relations
 
 ## Robot Civics
 
@@ -114,6 +121,7 @@
  * Driven Assimilator: 3 pop per year assimilation speed from average of 7
  * Rapid Replicators: +15% mechanical pop assembly speed from +20%
  * Static Research Analysis: +0 intel decryption from +1
+ * Sovereign Guardian: -40% to empire size from pops from -50%
 
 ### Boosts
  * Zero-waste Protocols: -20% robot upkeep from -10%
@@ -124,10 +132,10 @@
  * Free Traders: +8% trade value from +10%
  * Indentured Assets: +8% slave output from +10%
  * Naval Contractors: Naval Cap +10% from +15%
- * Memory Vault: Leader upkeep +15%
 
 ### Boosts
- * None
+ * Corporate Hedonism: +3% happiness
+ * Public Relations Specialists: +20% diplomatic weight, +10% envoy improve relations
  
 ## Origin:
 
