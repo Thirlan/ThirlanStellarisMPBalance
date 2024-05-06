@@ -24,18 +24,19 @@ Added:
 * Resource Silo: Energy cost removed, mineral cost 100 from 200 and max resource capacity +10,000 from +5,000
 * Max Resource Capacity: All starting resources max capacity reduced by 50%
 * Corvettes: Ship speed 170 from 160, evasion 62 from 60
-* Communal: -13% housing Usage
-* opposite
+* Communal: -13% housing from -10%
+* Solitary: +13% housing from +10%
+* Venerable: +2% to research and unity
 * Industrious: +20% to minerals from +15%
 * Quick Learner: +15% experience from +10%
+* Slow Learner: -15% experience from -10%
 * Phototrophic: Replaces 40% of food with energy from 60%
 * Incubators: 25% population growth from 30%
-* Invasive Species: 4% from 5%
+* Invasive Species: 4% from 5% for pop growth and habitability
 * Solitary: Pop housing usage +13% from +10%
 * Shields: Increased by 10%
 
 Changed:
-* Venerable: +2% to research and unity
 * Espionage: Operations were not correctly being reduced in difficulty by 4
 
 # 2024/03/30 - 1.10.1
