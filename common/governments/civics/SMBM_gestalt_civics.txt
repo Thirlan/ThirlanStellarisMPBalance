@@ -40,19 +40,6 @@ civic_hive_ascetic = {
 	}
 }
 
-civic_hive_divided_attention = {
-	potential = { authority = { value = auth_hive_mind } }
-	random_weight = { base = @civic_default_random_weight }
-	ai_weight = {
-		base = @ai_civic_default_base_weight
-	}
-	modifier = {
-		councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
-		empire_size_colonies_mult = -0.50
-		empire_size_pops_mult = -0.05
-	}
-}
-
 civic_hive_devouring_swarm = {
 	modification = no
 	potential = {
@@ -108,29 +95,6 @@ civic_hive_devouring_swarm = {
 	}
 }
 
-civic_hive_toxic_baths = {
-	playable = { has_toxoids = yes }
-	ai_playable = { has_toxoids = yes }
-	description = "civic_tooltip_hive_toxic_baths_effects"
-	potential = {
-		authority = { value = auth_hive_mind }
-	}
-	possible = {
-		origin = { NOT = { value = origin_life_seeded } }
-	}
-	random_weight = {
-		base = @civic_default_random_weight
-	}
-	ai_weight = {
-		base = @ai_civic_default_base_weight
-	}
-	modifier = {
-		pop_environment_tolerance = 0.03
-		leader_lifespan_add = 10
-		councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
-	}
-}
-
 civic_hive_sovereign_guardianship = {
 	playable = { has_astral_planes_dlc = yes }
 	ai_playable = { has_astral_planes_dlc = yes }
@@ -163,40 +127,6 @@ civic_hive_sovereign_guardianship = {
 		base = @civic_rare_random_weight
 	}
 }
-
-civic_hive_empath = {
-	playable = { host_has_dlc = "Federations" }
-	potential = {
-		authority = { value = auth_hive_mind }
-	}
-	possible = {
-		civics = {
-			NOT = {
-				value = civic_hive_devouring_swarm
-			}
-		}
-		origin = {
-			NOT = {
-				value = origin_necrophage
-			}
-		}
-	}
-	random_weight = {
-		base = @civic_default_random_weight
-	}
-	ai_weight = {
-		base = @ai_civic_default_base_weight
-	}
-
-	description = "civic_tooltip_empath_effects"
-	modifier = {
-		councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
-		envoys_add = 2
-		diplo_weight_mult = 0.2
-		envoy_improve_relations_mult = 0.10
-	}
-}
-
 
 ##################
 # Machine Empire
@@ -248,18 +178,6 @@ civic_machine_terminator = {
 		starbase_shipyard_build_cost_mult = -0.15
 		country_naval_cap_mult = 0.33
 		country_trade_fee = 0.50
-	}
-}
-
-civic_machine_zero_waste_protocols = {
-	potential = { authority = { value = auth_machine_intelligence } }
-	random_weight = { base = @civic_default_random_weight }
-	ai_weight = {
-		base = @ai_civic_default_base_weight
-	}
-	modifier = {
-		councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
-		planet_pops_robotics_upkeep_mult = -0.20
 	}
 }
 

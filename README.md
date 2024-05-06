@@ -11,18 +11,24 @@ The remainder of this document will go over the process used for deciding what a
 You can refer to the:
  * [patch notes](patch_notes.md) to see the full balance list
  * [patch logs](patch_logs.md) to see recent updates and some explanations
- * [patch_notes_explanation](patch_notes_explanation.md) for more detailed explanations
 
 ## Credit
 
 This mod is maintained by:
  * Thirlan
  * MetallicHydra
- * Fading
 
-Also a lot of appreciation for dedicated Youtubers such as Montu and ASPec
-Appreciation from the players in ISS: Komrad Truck, Jojo
-And from the Stellaris Modder's Den: OldEnt (ACE) and Corsairmarks helped tremendously
+A lot of appreciation for dedicated Youtubers such as Montu, ASPec, Strat
+
+* https://www.youtube.com/watch?v=TufYLfmxSgY&t=395s
+* https://www.youtube.com/watch?v=6x5oy2BKi94
+* https://www.youtube.com/watch?v=Q76JXW22ncc&ab_channel=MontuPlays
+* https://www.youtube.com/watch?v=TQJ9hkQ1Jo0
+* https://www.youtube.com/watch?v=VG5YSByzxgQ&ab_channel=MontuPlays
+* https://www.youtube.com/watch?v=LzhgFRXJ3D4&ab_channel=MontuPlays
+* https://www.youtube.com/watch?v=C88jv2OifnM&ab_channel=MontuPlays
+
+As well as other players and modders: Komrad Truck, Jojo, OldEnt (ACE) and Corsairmarks
 
 ## Why was this mod created?
 This mod hopes to address the meta game balance issues in multiplayer with quick, easy and small tweaks so that people can enjoy the game more and worry less about about whether they are min-maxing correctly.

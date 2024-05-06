@@ -1,2 +1,35 @@
 @plantoid_budding_rate = 0.0175
 @lithoid_budding_rate = 0.02
+
+#############
+#	SHIELD	#
+#############
+# 02_scripted_variables_component_cost.txt
+
+@shield_S1 = 83
+@shield_M1 = 210
+@shield_L1 = 495
+
+@shield_S2 = 110
+@shield_M2 = 275
+@shield_L2 = 660
+
+@shield_S3 = 138
+@shield_M3 = 347
+@shield_L3 = 825
+
+@shield_S4 = 182
+@shield_M4 = 457
+@shield_L4 = 1089
+
+@shield_S5 = 242
+@shield_M5 = 605
+@shield_L5 = 1452
+
+@shield_S6 = 308
+@shield_M6 = 770
+@shield_L6 = 1848
+
+@shield_S7 = 396
+@shield_M7 = 990
+@shield_L7 = 2376

@@ -1,3 +1,43 @@
+# 2024/05/04 - 1.11.0
+
+Removed:
+* Divided Attention: -5% Empire size from pops
+* Corporate Hedonism: +3% happiness
+* Machine malfunction: increased from 10% to 13% (Boost to Synchronicity Tradition)
+* Diplomatic Corp: +20% diplomatic weight, +10% envoy improve relations
+* Empath: +20% diplomatic weight, +10% envoy improve relations
+* Public Relations Specialists: +20% diplomatic weight, +10% envoy improve relations
+* Pleasure Seekers: +3% happiness
+* Mutagenic Spas: +5% habitability (negates penalty of first 2 baths) and +10 leader lifespan
+* Permutation Pools: +3% habitability (negates penalty of first 4 baths) and +10 leader lifespan
+* Corvee System: -3% Empire Size From Population
+* Warrior Culture: +20% Army Health, Morale and Experience Gain and +100 starting experience
+* Free Haven: +3% to research speed
+* Shadow Council: +5% Councilor Experience Gain
+* Zero-waste Protocols: -20% robot upkeep from -10%
+
+Added:
+* Traders: +11 trade value from +8
+* Prosperity: +15% build speed
+* Hydroponics Bay: 7 food from 10
+* Hyper Relays: AI weight 3 from 5 (reduce AI spamming)
+* Resource Silo: Energy cost removed, mineral cost 100 from 200 and max resource capacity +10,000 from +5,000
+* Max Resource Capacity: All starting resources max capacity reduced by 50%
+* Corvettes: Ship speed 170 from 160, evasion 62 from 60
+* Communal: -13% housing Usage
+* opposite
+* Industrious: +20% to minerals from +15%
+* Quick Learner: +15% experience from +10%
+* Phototrophic: Replaces 40% of food with energy from 60%
+* Incubators: 25% population growth from 30%
+* Invasive Species: 4% from 5%
+* Solitary: Pop housing usage +13% from +10%
+* Shields: Increased by 10%
+
+Changed:
+* Venerable: +2% to research and unity
+* Espionage: Operations were not correctly being reduced in difficulty by 4
+
 # 2024/03/30 - 1.10.1
 
 Updates to game's latest version 3.11. Many thanks again to Montu.
@@ -33,10 +73,10 @@ Added:
  * Barbaric Despoiler: +10% Market Fee
  * Empire Leader Cap: 2 from 3 (Boost to game mechanics like Heroic Tales)
  * Anti-Federation Snowballing:
-  * FEDERATION_ENVOY_BASE_EFFECT: 0.8 from 1.0
-  * FEDERATION_MEMBERS_PENALTY: -0.3 from -0.25
-  * FEDERATION_ETHICS_PENALTY: -0.18 from -0.15
-  * FEDERATION_OPPOSING_ETHICS_PENALTY: -0.6 from -0.5
+   * FEDERATION_ENVOY_BASE_EFFECT: 0.8 from 1.0
+   * FEDERATION_MEMBERS_PENALTY: -0.3 from -0.25
+   * FEDERATION_ETHICS_PENALTY: -0.18 from -0.15
+   * FEDERATION_OPPOSING_ETHICS_PENALTY: -0.6 from -0.5
  
 Changed:
  * Meritocracy: clarified mistake in notes, it is +5% not +3%
