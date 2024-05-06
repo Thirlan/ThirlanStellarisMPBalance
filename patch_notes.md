@@ -8,6 +8,11 @@
  * LEADER_AGE_DEATH_CHANCE_AGE: 70 from 80 (Boost to Venerable and Enduring)
  * LEADER_AGE_HIGH_DEATH_CHANCE_AGE: 90 from 100 (Boost to Venerable and Enduring)
  * Empire Leader Cap: 2 from 3 (Boost to game mechanics like Heroic Tales)
+ * Traders: +11 trade value from +8
+ * Hydroponics Bay: 7 food from 10
+ * Hyper Relays: AI weight 3 from 5 (reduce AI spamming)
+ * Resource Silo: Energy cost removed, mineral cost 100 from 200 and max resource capacity +10,000 from +5,000
+ * Max Resource Capacity: All starting resources max capacity reduced by 50%
  * Anti-Federation Snowballing:
    * FEDERATION_ENVOY_BASE_EFFECT: 0.8 from 1.0
    * FEDERATION_MEMBERS_PENALTY: -0.3 from -0.25
@@ -47,12 +52,13 @@
    * Jump drive penalty increased to -60% to weapons/movement from -50%
 
 ### Boosts
- * None
+ * Corvettes: Ship speed 170 from 160, evasion 62 from 60
+ * Shields: Increased health by 10%
 
 ## Traditions
 
 ### Nerfs
- * None
+ * Prosperity: +15% build speed
 
 ### Boosts
  * None
@@ -156,6 +162,11 @@
  * Existential Iteroparity: +20% population growth from +30%
  * Unruly: +13% empire size from pop
  * High Bandwidth: +13% empire size from pops from +10%
+ * Solitary: +13% housing from +10%
+ * Slow Learner: -15% experience from -10%
+ * Phototrophic: Replaces 40% of food with energy from 60%
+ * Incubators: 25% population growth from 30%
+ * Invasive Species: 4% from 5% for pop growth and habitability
 
 ### Boosts
  * Slow Breeders: -6% from -10%
@@ -168,6 +179,10 @@
  * Conformist: +40% government ethics attraction from +30%
  * Conservationist: -13% pop consumer goods upkeep from -10%
  * Nonadaptive: -6% habitability from -10%
+ * Communal: -13% housing from -10%
+ * Venerable: +2% to research and unity
+ * Industrious: +20% to minerals from +15%
+ * Quick Learner: +15% experience from +10%
  
 ## Robot Traits:
 
