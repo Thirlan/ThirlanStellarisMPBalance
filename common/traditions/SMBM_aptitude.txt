@@ -1,0 +1,65 @@
+tr_aptitude_finish = {
+	modifier = {
+		country_commander_cap_add = 1
+		country_official_cap_add = 1
+		country_scientist_cap_add = 1
+		species_leader_exp_gain = 0.15
+		ascension_perks_add = 1
+	}
+}
+
+tr_aptitude_the_empire_needs_you = {
+	modifier = {
+		leaders_cost_mult = -0.30
+	}
+	ai_weight = { factor = 1000 }
+
+	inline_script = {
+		script = paragon/tradition_swap_desc_hive
+		tradition = tr_aptitude_the_empire_needs_you
+	}
+	inline_script = {
+		script = paragon/tradition_swap_desc_machine
+		tradition = tr_aptitude_the_empire_needs_you
+	}
+}
+
+tr_aptitude_specialist_training = {
+	modifier = {
+		country_leader_pool_size = 2
+	}
+	ai_weight = { factor = 1000 }
+
+	inline_script = {
+		script = paragon/tradition_swap_desc_hive
+		tradition = tr_aptitude_specialist_training
+	}
+	inline_script = {
+		script = paragon/tradition_swap_desc_machine
+		tradition = tr_aptitude_specialist_training
+	}
+}
+
+tr_aptitude_psychological_profiling = {
+	possible = { has_tradition = tr_aptitude_the_empire_needs_you }
+	modifier = {
+		leaders_upkeep_mult = -0.30
+	}
+	ai_weight = { factor = 1000 }
+
+	tradition_swap = {
+		trigger = { is_hive_empire = yes }
+		name = tr_aptitude_psychological_profiling_hive
+		inherit_icon = yes
+		inherit_effects = yes
+		weight = { factor = 1 }
+	}
+
+	tradition_swap = {
+		trigger = { is_machine_empire = yes }
+		name = tr_aptitude_psychological_profiling_machine
+		inherit_icon = yes
+		inherit_effects = yes
+		weight = { factor = 1 }
+	}
+}

@@ -25,7 +25,7 @@ trader = {
 		potential = {
 			always = yes
 		}
-		trade_value_add = 11
+		trade_value_add = 9
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
 	}
 

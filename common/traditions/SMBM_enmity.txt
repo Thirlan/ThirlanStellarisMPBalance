@@ -1,0 +1,12 @@
+tr_enmity_adopt = {
+	custom_tooltip_with_modifiers = tr_enmity_adopt_desc
+	unlocks_agenda = agenda_second_strike
+}
+
+tr_enmity_outpace = {
+	possible = { has_tradition = tr_enmity_match }
+	ai_weight = { factor = 1 }
+	modifier = {
+		damage_vs_rival_mult = 0.10
+	}
+}

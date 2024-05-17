@@ -19,6 +19,7 @@ ap_become_the_crisis = {
 		has_nemesis = yes
 		NOR = {
 			has_ascension_perk = ap_become_the_crisis
+			has_ascension_perk = ap_cosmogenesis
 			has_origin = origin_slavers
 		}
 	}
@@ -53,7 +54,7 @@ ap_become_the_crisis = {
 		hidden_effect = {
 			set_ai_personality = became_the_crisis
 		}
-		activate_crisis_progression = yes
+		activate_crisis_progression = nemesis_path
 	}
 
 	ai_weight = {
@@ -99,6 +100,94 @@ ap_become_the_crisis = {
 }
 
 #################
+# Cybernetics ASCENSION PERKS
+#################
+
+ap_cosmogenesis = {
+	potential = {
+		has_machine_age_dlc = yes
+		NOR = {
+			has_ascension_perk = ap_become_the_crisis
+			has_ascension_perk = ap_cosmogenesis
+			has_origin = origin_slavers # No crisis for MSI
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_4"
+			num_ascension_perks > 3
+		}
+		custom_tooltip = {
+			fail_text = "requires_independence"
+			is_subject = no
+		}
+		custom_tooltip = {
+			fail_text = "must_not_be_custodian"
+			is_galactic_custodian = no
+		}
+		custom_tooltip = {
+			fail_text = "must_not_be_emperor"
+			is_galactic_emperor = no
+		}
+	}
+
+	on_enabled = {
+		hidden_effect = {
+			set_variable = {
+				which = cosmogenesis_world_advanced_logic_produced
+				value = 0
+			}
+		}
+		activate_crisis_progression = cosmogenesis_path
+	}
+
+	ai_weight = {
+		factor = 7.5
+		modifier = {
+			factor = 0
+			OR = {
+				is_egalitarian = yes
+				is_xenophile = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			has_tradition = tr_discovery_finish
+		}
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_enigmatic_engineering
+		}
+		modifier = {
+			factor = 2
+			vassals > 0
+			any_subject = {
+				any_agreement = {
+					has_active_specialization = specialist_scholarium
+				}
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = whisperers_covenant_confirmed
+		}
+		modifier = {
+			factor = 0
+			galaxy_percentage < 0.1
+		}
+		modifier = {
+			factor = 2
+			galaxy_percentage > 0.2
+		}
+	}
+}
+
+#################
 # AQUATICS ASCENSION PERKS
 #################
 
@@ -106,10 +195,16 @@ ap_hydrocentric = {
 	potential = {
 		has_aquatics = yes
 		NOT = { has_ascension_perk = ap_hydrocentric }
-		has_trait = trait_pc_ocean_preference
+		OR = {
+			has_trait = trait_pc_ocean_preference
+			has_trait = trait_robot_aquatic
+		}
 	}
 	possible = {
-		has_trait = trait_aquatic
+		OR = {
+			has_trait = trait_aquatic
+			has_trait = trait_robot_aquatic
+		}
 		has_technology = tech_terrestrial_sculpting
 	}
 

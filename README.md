@@ -27,6 +27,7 @@ A lot of appreciation for dedicated Youtubers such as Montu, ASPec, Strat
 * https://www.youtube.com/watch?v=VG5YSByzxgQ&ab_channel=MontuPlays
 * https://www.youtube.com/watch?v=LzhgFRXJ3D4&ab_channel=MontuPlays
 * https://www.youtube.com/watch?v=C88jv2OifnM&ab_channel=MontuPlays
+* https://www.youtube.com/watch?v=Cb3qwE8Px-8
 
 As well as other players and modders: Komrad Truck, Jojo, OldEnt (ACE) and Corsairmarks
 

@@ -1,4 +1,4 @@
-# 2024/05/04 - 1.11.0
+# 2024/05/17 - 1.11.0
 
 Removed:
 * Divided Attention: -5% Empire size from pops
@@ -17,8 +17,8 @@ Removed:
 * Zero-waste Protocols: -20% robot upkeep from -10%
 
 Added:
-* Traders: +11 trade value from +8
-* Prosperity: +15% build speed
+* Expansion (Void Dweller): -15% to habitat and district alloy upkeep
+* Traders: +9 trade value from +8
 * Hydroponics Bay: 7 food from 10
 * Hyper Relays: AI weight 3 from 5 (reduce AI spamming)
 * Resource Silo: Energy cost removed, mineral cost 100 from 200 and max resource capacity +10,000 from +5,000
@@ -31,9 +31,10 @@ Added:
 * Industrious: +20% to minerals from +15%
 * Quick Learner: +15% experience from +10%
 * Slow Learner: -15% experience from -10%
-* Phototrophic: Replaces 40% of food with energy from 60% TODO
-* Incubators: 25% population growth from 30% TODO
+* Phototrophic: 55% food and energy from 50%
+* Incubators: 25% population growth from 30%
 * Invasive Species: 4% from 5% for pop growth and habitability
+* Cosmogenesis: requires 4 ascension perks from 3 
 
 Changed:
 * Espionage: Operations were not correctly being reduced in difficulty by 4

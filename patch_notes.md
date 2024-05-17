@@ -1,4 +1,4 @@
-# Version 1.10.1
+# Version 1.11.0
 
 ## General tweaks
 
@@ -58,16 +58,36 @@
 ## Traditions
 
 ### Nerfs
- * Prosperity: +15% build speed
+ * Expansion (Void Dweller): -15% to habitat and district alloy upkeep
+ * Supremacy:
+   * Adoption: +15 naval cap and 0% army damage from +20 naval cap and +20% army damage
+   * Fleet Logistics Corp: +15% naval cap from +20%
+ * Mercantile:
+   * Market Place of Better Ideas: +7% Trade value from +10%
+   * Finisher: +7% Trade value from +10%
+ * Emnity:
+   * Adoption: max rivalries +0 from +1
+   * Outpace: +10% damage to rivals from +15%
+ * Virtuality:
+   * Data-Driven Logic Loops: -10% to empire size from pops from -15% and +115% empire size from planets from +100%
+   * Clustered Capacity: +150% resources from jobs from +175%
 
 ### Boosts
- * None
+ * Aptitude:
+   * Finisher: +15% leader experience
+   * The Empire Needs You: -30% leader cost from -25%
+   * Psychological Profiling: -30% leader upkeep from -25%
+   * Specialist Training: +2 leader pool size from +1
+ * Politics:
+   * Finisher: +20% diplomatic weight from +10% diplomatic weight
+   * Gravitas: -30% resolution cost from -25% and +3% diplomatic weight per envoy level from +2.5%
+   * Extraordinary Powers: -30% veto / emergency measures cooldown from -25%
 
 ## Ascension Perks
 
 ### Nerfs
  * Technological Ascendency: +7% Research rate from +10%
- * Become the crisis: requires 4 ascension perks from 2
+ * Become the crisis: requires 4 ascension perks from 3
  * Hive World: requires 3 ascension perks from 0
  * Machine World: requires 3 ascension perks from 0
  * Arcology Project: requires 3 Ascension perks from 2
