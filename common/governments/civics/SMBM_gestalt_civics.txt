@@ -12,7 +12,7 @@
 #	ai_weight = { base = 5 }					# scriptable weight for AI picking civics in-game (when unlocking a new slot).
 #												# Note: If omitted, a default weight of 1 is used. Not needed when "modification = no"
 #
-#   alternate_civic_version = civic_key			# Key of the civic that will try to replace the current one during a government reform if the current civic is locked (ex: corporate version of the civic that will replace it when attempting to reform to Megacorporation)
+#	alternate_civic_version = civic_key			# Key of the civic that will try to replace the current one during a government reform if the current civic is locked (ex: corporate version of the civic that will replace it when attempting to reform to Megacorporation)
 #												# Note: if no replacement civic is indicated, it fallback to non-moddable civics behaviour, i.e. you can't change authority
 #
 #	modifier = {}								# modifier added to the country if the civic is selected and valid
@@ -51,6 +51,15 @@ civic_hive_devouring_swarm = {
 				value = origin_common_ground
 				value = origin_hegemon
 				value = origin_tree_of_life
+			}
+		}
+		civics = {
+			NOR = {
+				text = civic_tooltip_not_guided
+				value = civic_guided_sapience
+				value = civic_corporate_guided_sapience
+				value = civic_hive_guided_sapience
+				value = civic_machine_guided_sapience
 			}
 		}
 	}
@@ -133,15 +142,8 @@ civic_hive_sovereign_guardianship = {
 ##################
 
 civic_machine_terminator = {
-	potential = {
-		authority = {
-			OR = {
-				value = auth_ancient_machine_intelligence
-				value = auth_machine_intelligence
-			}
-		}
-	}
-	starting_colony = pc_nuked # Changes homeworld class regardless of what is picked for empire
+	playable = { has_synthetic_dawn = yes }
+	potential = { authority = { value = auth_machine_intelligence } }
 	possible = {
 		civics = {
 			NOR = {
@@ -149,6 +151,14 @@ civic_machine_terminator = {
 				value = civic_machine_assimilator
 				value = civic_machine_memorialist
 				value = civic_machine_exploration_protocol
+				value = civic_machine_diplomatic_protocols
+			}
+			NOR = {
+				text = civic_tooltip_not_guided
+				value = civic_guided_sapience
+				value = civic_corporate_guided_sapience
+				value = civic_hive_guided_sapience
+				value = civic_machine_guided_sapience
 			}
 		}
 		origin = {
@@ -163,7 +173,7 @@ civic_machine_terminator = {
 		base = @civic_default_random_weight
 		modifier = {
 			factor = 0
-			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+			has_synthetic_dawn = no
 		}
 		modifier = {
 			factor = 0
@@ -182,6 +192,7 @@ civic_machine_terminator = {
 }
 
 civic_machine_predictive_analysis = {
+	description = "civic_tooltip_machine_predictive_analysis_effects"
 	potential = { authority = { value = auth_machine_intelligence } }
 	random_weight = { base = @civic_default_random_weight }
 	ai_weight = {
@@ -194,7 +205,9 @@ civic_machine_predictive_analysis = {
 }
 
 civic_machine_replication = {
-	potential = { authority = { value = auth_machine_intelligence } }
+	potential = {
+		authority = { value = auth_machine_intelligence }
+	}
 	random_weight = { base = @civic_default_random_weight }
 	ai_weight = {
 		base = @ai_civic_default_base_weight

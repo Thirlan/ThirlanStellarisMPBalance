@@ -34,7 +34,8 @@ Added:
 * Phototrophic: 55% food and energy from 50%
 * Incubators: 25% population growth from 30%
 * Invasive Species: 4% from 5% for pop growth and habitability
-* Cosmogenesis: requires 4 ascension perks from 3 
+* Cosmogenesis: requires 4 ascension perks from 3
+* Fruitful Partnership: -33% damage to Tiyankis
 
 Changed:
 * Espionage: Operations were not correctly being reduced in difficulty by 4

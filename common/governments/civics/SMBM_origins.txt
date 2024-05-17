@@ -12,15 +12,27 @@ origin_life_seeded = {
 	}
 
 	possible = {
-		authority = { NOT = { value = auth_machine_intelligence } }
 		civics = {
-			NOT = {
+			NOR = {
+				text = civic_tooltip_not_mutagenic
 				value = civic_toxic_baths
+				value = civic_toxic_baths_individual_machine
+				value = civic_corporate_toxic_baths
+				value = civic_corporate_toxic_baths_individual_machine
+				value = civic_hive_toxic_baths
+				value = civic_machine_toxic_baths
 			}
 			NOR = {
 				text = civic_tooltip_not_relentless_industrialists
 				value = civic_relentless_industrialists
 				value = civic_corporate_relentless_industrialists
+			}
+			NOR = {
+				text = civic_tooltip_not_guided
+				value = civic_guided_sapience
+				value = civic_corporate_guided_sapience
+				value = civic_hive_guided_sapience
+				value = civic_machine_guided_sapience
 			}
 		}
 	}
@@ -29,6 +41,27 @@ origin_life_seeded = {
 	negative_description = "origin_tooltip_life_seeded_negative_effects"
 	random_weight = {
 		base = 5
+	}
+
+	swap_type = {
+		description = "origin_tooltip_life_seeded_effects"
+		negative_description = "origin_tooltip_life_seeded_machine_negative_effects"
+
+		trigger = {
+			OR = {
+				AND = {
+					is_scope_valid = no
+					local_human_species_class = MACHINE
+				}
+				AND = {
+					is_scope_valid = yes
+					OR = {
+						is_individual_machine = yes
+						is_machine_empire = yes
+					}
+				}
+			}
+		}
 	}
 
 	modifier = {
@@ -58,6 +91,7 @@ origin_scion = {
 		civics = {
 			NOT = { value = civic_pompous_purists }
 		}
+		species_archetype = { NOT = { value = MACHINE } }
 	}
 	
 	modifier = {
@@ -67,6 +101,8 @@ origin_scion = {
 
 	description = "origin_tooltip_scion_effects"
 	flags = { custom_start_screen }
+
+	blocks_random_machine_empire_generation	= yes
 
 	random_weight = {
 		base = 0
@@ -93,19 +129,26 @@ origin_necrophage = {
 		}
 		ethics = {
 			NOR = {
+				text = civic_tooltip_not_xenophile
 				value = ethic_xenophile
 				value = ethic_fanatic_xenophile
+			}
+			NOR = {
 				value = ethic_fanatic_egalitarian
 			}
 		}
 		civics = {
 			NOR = {
+				text = civic_tooltip_not_death_cult
 				value = civic_death_cult
 				value = civic_death_cult_corporate
+			}
+			NOR = {
 				value = civic_hive_empath
 				value = civic_permanent_employment
 			}
 		}
+		species_archetype = { NOT = { value = MACHINE } }
 	}
 	
 	modifier = {
@@ -124,6 +167,7 @@ origin_necrophage = {
 	}
 
 	advanced_start = yes
+	blocks_random_machine_empire_generation	= yes
 
 	random_weight = {
 		base = 5
@@ -143,9 +187,12 @@ origin_imperial_vassal = {
 		civics = {
 			NOR = {
 				value = civic_inwards_perfection
+				value = civic_machine_assimilator
+			}
+			NOR = {
+				text = civic_tooltip_not_genocidal
 				value = civic_fanatic_purifiers
 				value = civic_hive_devouring_swarm
-				value = civic_machine_assimilator
 				value = civic_machine_terminator
 			}
 		}
