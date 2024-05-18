@@ -1,3 +1,75 @@
+# 2024/05/18 - 1.11.0
+
+Removed:
+* Divided Attention: -5% Empire size from pops
+* Corporate Hedonism: +3% happiness
+* Machine malfunction: increased from 10% to 13% (Boost to Synchronicity Tradition)
+* Diplomatic Corp: +20% diplomatic weight, +10% envoy improve relations
+* Empath: +20% diplomatic weight, +10% envoy improve relations
+* Public Relations Specialists: +20% diplomatic weight, +10% envoy improve relations
+* Pleasure Seekers: +3% happiness
+* Mutagenic Spas: +5% habitability (negates penalty of first 2 baths) and +10 leader lifespan
+* Permutation Pools: +3% habitability (negates penalty of first 4 baths) and +10 leader lifespan
+* Corvee System: -3% Empire Size From Population
+* Warrior Culture: +20% Army Health, Morale and Experience Gain and +100 starting experience
+* Free Haven: +3% to research speed
+* Shadow Council: +5% Councilor Experience Gain
+* Zero-waste Protocols: -20% robot upkeep from -10%
+
+Added:
+* Traders: +9 trade value from +8
+* Hydroponics Bay: 7 food from 10
+* Hyper Relays: AI weight 3 from 5 (reduce AI spamming)
+* Resource Silo: Energy cost removed, mineral cost 100 from 200 and max resource capacity +10,000 from +5,000
+* Max Resource Capacity: All starting resources max capacity reduced by 50%
+* Corvettes: Ship speed 170 from 160, evasion 62 from 60
+* Shields: Increased health by 10%
+* Communal: -13% housing from -10%
+* Adaptive Frames: +10% to upkeep
+* Double-jointed: -13% housing from -10%
+* Solitary: +13% housing from +10%
+* Bulky: +13% housing from +10%
+* Venerable: +2% to research and unity
+* Industrious: +20% to minerals from +15%
+* Power Drill: +20% to minerals from +15%
+* Quick Learner: +15% experience from +10%
+* Learning Algorithms: +15% experience from +10%
+* Slow Learner: -15% experience from -10%
+* Repurposed Hardware: -15% experience from -10%
+* Trading Algorithms: +20% trade from +25%
+* Scarcity Subroutines: -20% trade from -25%
+* Phototrophic: 55% food and energy from 50%
+* Incubators: 25% population growth from 30%
+* Invasive Species: 4% from 5% for pop growth and habitability
+* Cosmogenesis: requires 4 ascension perks from 3
+* Fruitful Partnership: -33% damage to Tiyankis
+* Warbot (History Trait): +10% Army damage from +5%
+* Expansion (Void Dweller): -15% to habitat and district alloy upkeep
+* Supremacy:
+  * Adoption: +15 naval cap and 0% army damage from +20 naval cap and +20% army damage
+  * Fleet Logistics Corp: +15% naval cap from +20%
+* Mercantile:
+  * Market Place of Better Ideas: +7% Trade value from +10%
+  * Finisher: +7% Trade value from +10%
+* Emnity:
+  * Adoption: max rivalries +0 from +1
+  * Outpace: +10% damage to rivals from +15%
+* Virtuality:
+  * Data-Driven Logic Loops: -10% to empire size from pops from -15% and +115% empire size from planets from +100%
+  * Clustered Capacity: +150% resources from jobs from +175%
+* Aptitude:
+  * Finisher: +15% leader experience
+  * The Empire Needs You: -30% leader cost from -25%
+  * Psychological Profiling: -30% leader upkeep from -25%
+  * Specialist Training: +2 leader pool size from +1
+* Politics:
+  * Finisher: +20% diplomatic weight from +10% diplomatic weight
+  * Gravitas: -30% resolution cost from -25% and +3% diplomatic weight per envoy level from +2.5%
+  * Extraordinary Powers: -30% veto / emergency measures cooldown from -25%
+
+Changed:
+* Espionage: Operations were not correctly being reduced in difficulty by 4
+
 # 2024/03/30 - 1.10.1
 
 Updates to game's latest version 3.11. Many thanks again to Montu.
@@ -33,10 +105,10 @@ Added:
  * Barbaric Despoiler: +10% Market Fee
  * Empire Leader Cap: 2 from 3 (Boost to game mechanics like Heroic Tales)
  * Anti-Federation Snowballing:
-  * FEDERATION_ENVOY_BASE_EFFECT: 0.8 from 1.0
-  * FEDERATION_MEMBERS_PENALTY: -0.3 from -0.25
-  * FEDERATION_ETHICS_PENALTY: -0.18 from -0.15
-  * FEDERATION_OPPOSING_ETHICS_PENALTY: -0.6 from -0.5
+   * FEDERATION_ENVOY_BASE_EFFECT: 0.8 from 1.0
+   * FEDERATION_MEMBERS_PENALTY: -0.3 from -0.25
+   * FEDERATION_ETHICS_PENALTY: -0.18 from -0.15
+   * FEDERATION_OPPOSING_ETHICS_PENALTY: -0.6 from -0.5
  
 Changed:
  * Meritocracy: clarified mistake in notes, it is +5% not +3%

@@ -1,0 +1,20 @@
+#############################
+# Machine Age Script Values #
+#############################
+
+virtuality_concentrated_production_mult = {
+	base = 1.50
+	complex_trigger_modifier = {
+		trigger = count_owned_planet
+		trigger_scope = owner
+		mult = 0.25
+		mode = subtract
+	}
+}
+
+incubator_growth = {
+	base = 37
+	subtract = trigger:num_pops
+	min = -10
+	max = 25
+}

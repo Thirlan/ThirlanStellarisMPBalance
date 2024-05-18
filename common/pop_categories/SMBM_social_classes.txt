@@ -48,7 +48,6 @@ ruler = {
 
 		pop_happiness = 0.10
 	}
-
 	weight = {
 		weight = 3
 	}
@@ -100,6 +99,18 @@ ruler = {
 		}
 		planet_pop_assembly_organic_add = @tiyanki_budding_rate
 	}
+	triggered_pop_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_oligarchic
+				has_country_flag = cyber_individualist
+			}
+		}
+		key = auth_cyber_oligarchic_individualist
+		planet_jobs_ruler_produces_mult = 0.01
+		mult = planet.value:count_specialists
+	}
 
 	# Triggered Modifiers
 	inline_script = "pop_categories/social_classes_triggered_modifiers"
@@ -113,6 +124,9 @@ ruler = {
 
 		# Additional energy upkeep for cyborgs.
 		inline_script = "pop_categories/cyborg_upkeep"
+
+		# Additional energy upkeep for robot traits.
+		inline_script = "pop_categories/trait_upkeep"
 
 		# Instrument of Desire Upkeep
 		inline_script = "pop_categories/instrument_upkeep"
@@ -202,6 +216,18 @@ specialist = {
 	weight = {
 		weight = 2
 	}
+	triggered_pop_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_democratic
+				has_country_flag = synth_physical
+			}
+		}
+		key = auth_synth_democratic_physical
+		planet_jobs_specialist_produces_mult = 0.01
+		mult = planet.value:count_any_districts
+	}
 
 	pop_modifier = {
 		pop_housing_usage_base = 1
@@ -272,6 +298,9 @@ specialist = {
 
 		# Additional energy upkeep for cyborgs.
 		inline_script = "pop_categories/cyborg_upkeep"
+
+		# Additional energy upkeep for robot traits.
+		inline_script = "pop_categories/trait_upkeep"
 
 		# Instrument of Desire Upkeep
 		inline_script = "pop_categories/instrument_upkeep"
@@ -433,6 +462,9 @@ worker = {
 		# Additional energy upkeep for cyborgs.
 		inline_script = "pop_categories/cyborg_upkeep"
 
+		# Additional energy upkeep for robot traits.
+		inline_script = "pop_categories/trait_upkeep"
+
 		# Instrument of Desire Upkeep
 		inline_script = "pop_categories/instrument_upkeep"
 
@@ -463,6 +495,17 @@ worker = {
 				has_trait = trait_drake_scaled
 			}
 			alloys = @drake_scaled_trait_resource_production
+		}
+
+		produces = {
+			trigger = {
+				has_trait = trait_cybernetic
+				owner = {
+					has_authority = auth_democratic
+					has_country_flag = cyber_collectivist
+				}
+			}
+			unity = 1
 		}
 	}
 }

@@ -1,4 +1,4 @@
-# Version 1.10.1
+# Version 1.11.0
 
 ## General tweaks
 
@@ -7,8 +7,12 @@
  * Starbase overcapacity upkeep penalty: +35% from +25%
  * LEADER_AGE_DEATH_CHANCE_AGE: 70 from 80 (Boost to Venerable and Enduring)
  * LEADER_AGE_HIGH_DEATH_CHANCE_AGE: 90 from 100 (Boost to Venerable and Enduring)
- * Machine malfunction: increased from 10% to 13% (Boost to Synchronicity Tradition)
  * Empire Leader Cap: 2 from 3 (Boost to game mechanics like Heroic Tales)
+ * Traders: +11 trade value from +8
+ * Hydroponics Bay: 7 food from 10
+ * Hyper Relays: AI weight 3 from 5 (reduce AI spamming)
+ * Resource Silo: Energy cost removed, mineral cost 100 from 200 and max resource capacity +10,000 from +5,000
+ * Max Resource Capacity: All starting resources max capacity reduced by 50%
  * Anti-Federation Snowballing:
    * FEDERATION_ENVOY_BASE_EFFECT: 0.8 from 1.0
    * FEDERATION_MEMBERS_PENALTY: -0.3 from -0.25
@@ -48,21 +52,42 @@
    * Jump drive penalty increased to -60% to weapons/movement from -50%
 
 ### Boosts
- * None
+ * Corvettes: Ship speed 170 from 160, evasion 62 from 60
+ * Shields: Increased health by 10%
 
 ## Traditions
 
 ### Nerfs
- * None
+ * Expansion (Void Dweller): -15% to habitat and district alloy upkeep
+ * Supremacy:
+   * Adoption: +15 naval cap and 0% army damage from +20 naval cap and +20% army damage
+   * Fleet Logistics Corp: +15% naval cap from +20%
+ * Mercantile:
+   * Market Place of Better Ideas: +7% Trade value from +10%
+   * Finisher: +7% Trade value from +10%
+ * Emnity:
+   * Adoption: max rivalries +0 from +1
+   * Outpace: +10% damage to rivals from +15%
+ * Virtuality:
+   * Data-Driven Logic Loops: -10% to empire size from pops from -15% and +115% empire size from planets from +100%
+   * Clustered Capacity: +150% resources from jobs from +175%
 
 ### Boosts
- * None
+ * Aptitude:
+   * Finisher: +15% leader experience
+   * The Empire Needs You: -30% leader cost from -25%
+   * Psychological Profiling: -30% leader upkeep from -25%
+   * Specialist Training: +2 leader pool size from +1
+ * Politics:
+   * Finisher: +20% diplomatic weight from +10% diplomatic weight
+   * Gravitas: -30% resolution cost from -25% and +3% diplomatic weight per envoy level from +2.5%
+   * Extraordinary Powers: -30% veto / emergency measures cooldown from -25%
 
 ## Ascension Perks
 
 ### Nerfs
  * Technological Ascendency: +7% Research rate from +10%
- * Become the crisis: requires 4 ascension perks from 2
+ * Become the crisis: requires 4 ascension perks from 3
  * Hive World: requires 3 ascension perks from 0
  * Machine World: requires 3 ascension perks from 0
  * Arcology Project: requires 3 Ascension perks from 2
@@ -87,16 +112,9 @@
 ### Boosts
  * Efficient Bureaucracy: -3% Empire Size
  * Byzantine Bureaucracy: -3% Empire Size
- * Corvee System: -3% Empire Size From Population
- * Free Haven: +3% to research speed
- * Shadow Council: +5% Councilor Experience Gain
- * Warrior Culture: +20% Army Health, Morale and Experience Gain and +100 starting experience
- * Pleasure Seekers: +3% happiness
  * Pompous Purists: +10% diplomatic weight
- * Diplomatic Corp: +20% diplomatic weight, +10% envoy improve relations
  * Merchant Guilds: +10% envoy improve relations
  * Selective Kinship: +10% happiness while sharing from +7.5% and +4% while oppressing from +2.5%
- * Mutagenic Spas: +5% habitability (negates penalty of first 2 baths) and +10 leader lifespan
  * Exalted Priesthood: -10% to tradition cost from empire size
  * Eager Explorers: planet colony development speed +25% and -5% to ship build cost
  * Dimensional Worship: +10% physics research speed
@@ -113,8 +131,7 @@
  * Catalytic Converter: reduce alloy production by -0.5
 
 ### Boosts
- * Divided Attention: -5% Empire size from pops
- * Empath: +20% diplomatic weight, +10% envoy improve relations
+ * None
 
 ## Robot Civics
 
@@ -128,7 +145,7 @@
 
 
 ### Boosts
- * Zero-waste Protocols: -20% robot upkeep from -10%
+ * None
 
 ## Megacorp Civics
 
@@ -138,8 +155,7 @@
  * Naval Contractors: Naval Cap +10% from +15%
 
 ### Boosts
- * Corporate Hedonism: +3% happiness
- * Public Relations Specialists: +20% diplomatic weight, +10% envoy improve relations
+ * None
  
 ## Origin:
 
@@ -163,20 +179,30 @@
  * Natural Engineers: +12% Engineering Research from +15%
  * Charismatic: +15% to amenities from +20%
  * Thrifty: +20% trade value from +25%
- * Unruly: +13% empire size from pop
  * Existential Iteroparity: +20% population growth from +30%
+ * Unruly: +13% empire size from pop
+ * High Bandwidth: +13% empire size from pops from +10%
+ * Solitary: +13% housing from +10%
+ * Slow Learner: -15% experience from -10%
+ * Phototrophic: Replaces 40% of food with energy from 60%
+ * Incubators: 25% population growth from 30%
+ * Invasive Species: 4% from 5% for pop growth and habitability
 
 ### Boosts
  * Slow Breeders: -6% from -10%
  * Resilient: +25% to defensive army health/morale
  * Very Strong: +60% Army damage and +7.5% resources from 40% army damage and +5% resources
- * Nonadaptive: -6% habitability from -10%
  * Extremely Adaptive: +25% Habitability from +20%
  * Nomadic: +20% pop growth from immigration from 15% and -30% resettlement cost from -25%
  * Repugnant: -15% to amenities from -20%
  * Inorganic Breath: 35% increase maintenance from 50%
  * Conformist: +40% government ethics attraction from +30%
  * Conservationist: -13% pop consumer goods upkeep from -10%
+ * Nonadaptive: -6% habitability from -10%
+ * Communal: -13% housing from -10%
+ * Venerable: +2% to research and unity
+ * Industrious: +20% to minerals from +15%
+ * Quick Learner: +15% experience from +10%
  
 ## Robot Traits:
 
@@ -184,13 +210,11 @@
  * Logic Engines: +8% research from +10%
  * Mass Produced: +10% assembly speed from +15%
  * Emotion Emulator: +15% to amenities from +20%
- * High Bandwidth: +13% empire size from pops from +10%
 
 ### Boosts
  * Custom made: -10% assembly speed from -15%
  * Recycled: -30% assembly cost from -20%
  * Uncanny: -15% to amenities from -20%
- * Streamlined Protocols: -13% empire size from pops from -10%
 
 ## Plantoids
 
@@ -217,4 +241,4 @@
 
 ### Boosts
  * Expressed Tradition: +15% unity from +10%
- * Low Maintenance: -13% empire size from pops from -10%
+ * Low Maintenance: -13% pop consumer goods from -10%

@@ -26,15 +26,6 @@ slave = {
 	resettlement_cost = {
 		energy = 50
 	}
-
-	triggered_pop_modifier = {
-		potential = {
-			NOT = { has_trait = trait_noxious }
-		}
-		key = trait_noxious
-		pop_happiness = 1
-		mult = modifier:pop_non_noxious_happiness
-	}
 	
 	triggered_pop_modifier = {
 		potential = {
@@ -81,14 +72,6 @@ slave = {
 
 	triggered_planet_modifier = {
 		potential = {
-			has_trait = trait_noxious
-		}
-		key = trait_noxious
-		pop_non_noxious_happiness = @noxious_happiness_penalty
-	}
-
-	triggered_planet_modifier = {
-		potential = {
 			owner = {
 				has_councilor = { COUNCILOR = "councilor_indentured_assets" } 
 			}
@@ -97,6 +80,8 @@ slave = {
 		trade_value_add = @councilor_indentured_assets_trade_value
 		mult = value:councilor_level|TYPE|councilor_indentured_assets|
 	}
+	
+	inline_script = "pop_categories/social_classes_triggered_modifiers"
 
 	resources = {
 		category = pop_category_slave

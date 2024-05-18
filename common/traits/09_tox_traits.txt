@@ -1,13 +1,161 @@
+trait_incubator = {
+	host_has_dlc = "Toxoids Species Pack"
+	cost = 2
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	potential_crossbreeding_chance = 1.0 #1.0 100% of being considered for new traits when forming half-species. Does not guarantee the trait will be added if it costs points.
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	randomized = no
+	opposites = { "trait_slow_breeders" "trait_rapid_breeders" "trait_fertile" "trait_plantoid_budding" "trait_lithoid_budding" "trait_advanced_budding" "trait_rapid_breeders_lithoid" "trait_humanoid_existential_iteroparity" }
+	custom_tooltip_with_modifiers = incubator_tooltip
+
+	triggered_planet_growth_habitability_modifier = {
+		pop_growth_speed = 0.01
+		mult = planet.value:incubator_growth
+	}
+	slave_cost = {
+		energy = 2000
+	}
+}
+
+trait_inorganic_breath = {
+	host_has_dlc = "Toxoids Species Pack"
+	cost = 3
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	potential_crossbreeding_chance = 1.0 #1.0 100% of being considered for new traits when forming half-species. doe snot guarantee the trait will be added if it costs points.
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	randomized = no
+	custom_tooltip_with_modifiers = inorganic_breath_tooltip
+
+	modifier = {
+		planet_pops_upkeep_mult = 0.35
+	}
+
+	slave_cost = {
+		energy = 1000
+	}
+}
+
+trait_noxious = {
+	host_has_dlc = "Toxoids Species Pack"
+	cost = 1
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	potential_crossbreeding_chance = 1.0 #1.0 100% of being considered for new traits when forming half-species. doe snot guarantee the trait will be added if it costs points.
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	randomized = no
+	custom_tooltip_with_modifiers = noxious_tooltip
+	triggered_pop_modifier = {
+		pop_happiness = @noxious_happiness_bonus
+		mult = planet.value:counter_noxious
+	}
+
+	modifier = {
+		habitability_floor_add = 0.3
+		habitability_ceil_add = -0.3
+		army_damage_mult = 0.50
+		pop_housing_usage_mult = 0.1
+	}
+
+	slave_cost = {
+		energy = -500
+	}
+}
+
+trait_exotic_metabolism = {
+	host_has_dlc = "Toxoids Species Pack"
+	cost = 1
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	potential_crossbreeding_chance = 1.0 #1.0 100% of being considered for new traits when forming half-species. doe snot guarantee the trait will be added if it costs points.
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	custom_tooltip_with_modifiers = exotic_metabolism_tooltip
+	triggered_planet_growth_habitability_modifier = {
+		pop_growth_speed = 0.25
+		pop_environment_tolerance = 0.25
+	}
+
+	modifier = {
+		leader_lifespan_add = 50
+	}
+
+	slave_cost = {
+		energy = 750
+	}
+}
+
+#Overtuned
+#Leave at start of list
+trait_auto_mod_overtuned = {
+	host_has_dlc = "Toxoids Species Pack"
+	cost = 2
+	auto_mod = yes
+	category = overtuned
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	allowed_origins = { origin_overtuned }
+
+	species_potential_add = {
+		can_add_overtuned_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_overtuned_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	potential_crossbreeding_chance = 1.0
+	modifier = {
+		leader_lifespan_add = -20
+	}
+	slave_cost = {
+		energy = 1000
+	}
+	assembly_score = {
+		base = 2
+	}
+	custom_tooltip_with_modifiers = automodding_trait_overtuned_tooltip
+}
+
 trait_spliced_adaptability = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 1
+    category = overtuned
 	potential_crossbreeding_chance = 1.0	# 1.0 = 100% chance of being considered for new traits when forming half-species. does not guarantee the trait will be added if it costs points.
 	allowed_archetypes = { BIOLOGICAL }
 	allowed_origins = { origin_overtuned }
 	randomized = no
 	species_potential_add = {
-		exists = from
-		from = { has_origin = origin_overtuned }
+		can_add_overtuned_traits = yes
 	}
 	species_possible_remove = {
 		can_remove_overtuned_traits = yes
@@ -41,13 +189,13 @@ trait_spliced_adaptability = {
 trait_juiced_power = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 1
+    category = overtuned
 	potential_crossbreeding_chance = 1.0	# 1.0 = 100% chance of being considered for new traits when forming half-species. does not guarantee the trait will be added if it costs points.
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	allowed_origins = { origin_overtuned }
 	randomized = no
 	species_potential_add = {
-		exists = from
-		from = { has_origin = origin_overtuned }
+		can_add_overtuned_traits = yes
 	}
 	species_possible_remove = {
 		can_remove_overtuned_traits = yes
@@ -87,13 +235,13 @@ trait_juiced_power = {
 trait_farm_hands = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 1
+    category = overtuned
 	potential_crossbreeding_chance = 1.0	# 1.0 = 100% chance of being considered for new traits when forming half-species. does not guarantee the trait will be added if it costs points.
 	allowed_archetypes = { BIOLOGICAL }
 	allowed_origins = { origin_overtuned }
 	randomized = no
 	species_potential_add = {
-		exists = from
-		from = { has_origin = origin_overtuned }
+		can_add_overtuned_traits = yes
 	}
 	species_possible_remove = {
 		can_remove_overtuned_traits = yes
@@ -137,13 +285,13 @@ trait_farm_hands = {
 trait_crack_miner = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 1
+    category = overtuned
 	potential_crossbreeding_chance = 1.0	# 1.0 = 100% chance of being considered for new traits when forming half-species. does not guarantee the trait will be added if it costs points.
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	allowed_origins = { origin_overtuned }
 	randomized = no
 	species_potential_add = {
-		exists = from
-		from = { has_origin = origin_overtuned }
+		can_add_overtuned_traits = yes
 	}
 	species_possible_remove = {
 		can_remove_overtuned_traits = yes
@@ -188,13 +336,13 @@ trait_crack_miner = {
 trait_technical_skill = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 1
+    category = overtuned
 	potential_crossbreeding_chance = 1.0	# 1.0 = 100% chance of being considered for new traits when forming half-species. does not guarantee the trait will be added if it costs points.
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	allowed_origins = { origin_overtuned }
 	randomized = no
 	species_potential_add = {
-		exists = from
-		from = { has_origin = origin_overtuned }
+		can_add_overtuned_traits = yes
 	}
 	species_possible_remove = {
 		can_remove_overtuned_traits = yes
@@ -238,16 +386,71 @@ trait_technical_skill = {
 		}
 	}
 }
+
+trait_commercial_genius = {
+	host_has_dlc = "Toxoids Species Pack"
+	cost = 1
+    category = overtuned
+	potential_crossbreeding_chance = 1.0	# 1.0 = 100% chance of being considered for new traits when forming half-species. does not guarantee the trait will be added if it costs points.
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	allowed_origins = { origin_overtuned }
+	opposites = { "trait_hive_mind" }
+	forbidden_ethics = { ethic_gestalt_consciousness }
+	randomized = no
+	species_potential_add = {
+		can_add_overtuned_traits = yes
+		owner_is_machine_intelligence = no
+		owner_is_hive_empire = no
+	}
+	species_possible_remove = {
+		can_remove_overtuned_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	custom_tooltip_with_modifiers = trait_commercial_genius_tooltip
+	triggered_pop_modifier = {
+		potential = {
+			exists = owner
+			owner = { NOT = { has_edict = damn_the_consequences } }
+		}
+		modifier = {
+			pop_job_trade_mult = 0.25
+		}
+	}
+	triggered_pop_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_edict = damn_the_consequences }
+		}
+		modifier = {
+			pop_job_trade_mult = 0.50
+		}
+	}
+	modifier = {
+		leader_lifespan_add = -10
+	}
+	slave_cost = {
+		energy = 1000
+	}
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = { has_trade_designation = yes }
+		}
+	}
+}
+
 trait_crafted_smiles = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 1
+    category = overtuned
 	potential_crossbreeding_chance = 1.0	# 1.0 = 100% chance of being considered for new traits when forming half-species. does not guarantee the trait will be added if it costs points.
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	allowed_origins = { origin_overtuned }
 	randomized = no
 	species_potential_add = {
-		exists = from
-		from = { has_origin = origin_overtuned }
+		can_add_overtuned_traits = yes
 	}
 	species_possible_remove = {
 		can_remove_overtuned_traits = yes
@@ -283,13 +486,13 @@ trait_crafted_smiles = {
 trait_low_maintenance = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 1
+    category = overtuned
 	potential_crossbreeding_chance = 1.0	# 1.0 = 100% chance of being considered for new traits when forming half-species. does not guarantee the trait will be added if it costs points.
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	allowed_origins = { origin_overtuned }
 	randomized = no
 	species_potential_add = {
-		exists = from
-		from = { has_origin = origin_overtuned }
+		can_add_overtuned_traits = yes
 	}
 	species_possible_remove = {
 		can_remove_overtuned_traits = yes
@@ -327,13 +530,13 @@ trait_low_maintenance = {
 trait_artificial_intelligence = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 1
+    category = overtuned
 	potential_crossbreeding_chance = 1.0	# 1.0 = 100% chance of being considered for new traits when forming half-species. does not guarantee the trait will be added if it costs points.
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	allowed_origins = { origin_overtuned }
 	randomized = no
 	species_potential_add = {
-		exists = from
-		from = { has_origin = origin_overtuned }
+		can_add_overtuned_traits = yes
 	}
 	species_possible_remove = {
 		can_remove_overtuned_traits = yes
@@ -385,13 +588,13 @@ trait_artificial_intelligence = {
 trait_gene_mentorship = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 1
+    category = overtuned
 	potential_crossbreeding_chance = 1.0	# 1.0 = 100% chance of being considered for new traits when forming half-species. does not guarantee the trait will be added if it costs points.
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	allowed_origins = { origin_overtuned }
 	randomized = no
 	species_potential_add = {
-		exists = from
-		from = { has_origin = origin_overtuned }
+		can_add_overtuned_traits = yes
 	}
 	species_possible_remove = {
 		can_remove_overtuned_traits = yes
@@ -429,13 +632,13 @@ trait_gene_mentorship = {
 trait_expressed_tradition = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 1
+    category = overtuned
 	potential_crossbreeding_chance = 1.0 #1.0 100% of being considered for new traits when forming half-species. doe snot guarantee the trait will be added if it costs points.
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	allowed_origins = { origin_overtuned }
 	randomized = no
 	species_potential_add = {
-		exists = from
-		from = { has_origin = origin_overtuned }
+		can_add_overtuned_traits = yes
 	}
 	species_possible_remove = {
 		can_remove_overtuned_traits = yes
@@ -483,13 +686,13 @@ trait_expressed_tradition = {
 trait_elevated_synapses = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 2
+    category = overtuned
 	potential_crossbreeding_chance = 1.0 #1.0 100% of being considered for new traits when forming half-species. doe snot guarantee the trait will be added if it costs points.
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	allowed_origins = { origin_overtuned }
 	randomized = no
 	species_potential_add = {
-		exists = from
-		from = { has_origin = origin_overtuned }
+		can_add_overtuned_traits = yes
 	}
 	species_possible_remove = {
 		can_remove_overtuned_traits = yes
@@ -543,13 +746,13 @@ trait_elevated_synapses = {
 trait_preplanned_growth = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 2
+    category = overtuned
 	potential_crossbreeding_chance = 1.0 #1.0 100% of being considered for new traits when forming half-species. doe snot guarantee the trait will be added if it costs points.
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	allowed_origins = { origin_overtuned }
 	randomized = no
 	species_potential_add = {
-		exists = from
-		from = { has_origin = origin_overtuned }
+		can_add_overtuned_traits = yes
 	}
 	species_possible_remove = {
 		can_remove_overtuned_traits = yes
@@ -605,13 +808,13 @@ trait_preplanned_growth = {
 trait_excessive_endurance = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 3
+    category = overtuned
 	potential_crossbreeding_chance = 1.0 #1.0 100% of being considered for new traits when forming half-species. doe snot guarantee the trait will be added if it costs points.
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	allowed_origins = { origin_overtuned }
 	randomized = no
 	species_potential_add = {
-		exists = from
-		from = { has_origin = origin_overtuned }
+		can_add_overtuned_traits = yes
 	}
 	species_possible_remove = {
 		can_remove_overtuned_traits = yes
@@ -664,111 +867,5 @@ trait_excessive_endurance = {
 	}
 	slave_cost = {
 		energy = 2000
-	}
-}
-
-trait_incubator = {
-	host_has_dlc = "Toxoids Species Pack"
-	cost = 2
-	species_possible_remove = {
-		can_remove_beneficial_genetic_traits = yes
-	}
-	species_possible_merge_remove = {
-		always = yes
-	}
-	potential_crossbreeding_chance = 1.0 #1.0 100% of being considered for new traits when forming half-species. Does not guarantee the trait will be added if it costs points.
-	allowed_archetypes = { BIOLOGICAL LITHOID }
-	randomized = no
-	opposites = { "trait_slow_breeders" "trait_rapid_breeders" "trait_fertile" "trait_plantoid_budding" "trait_lithoid_budding" "trait_advanced_budding" "trait_rapid_breeders_lithoid" "trait_humanoid_existential_iteroparity" }
-	custom_tooltip_with_modifiers = incubator_tooltip
-
-	triggered_planet_growth_habitability_modifier = {
-		pop_growth_speed = 0.01
-		mult = planet.value:incubator_growth
-	}
-	slave_cost = {
-		energy = 2000
-	}
-}
-
-trait_inorganic_breath = {
-	host_has_dlc = "Toxoids Species Pack"
-	cost = 3
-	species_possible_remove = {
-		can_remove_beneficial_genetic_traits = yes
-	}
-	species_possible_merge_remove = {
-		always = yes
-	}
-	potential_crossbreeding_chance = 1.0 #1.0 100% of being considered for new traits when forming half-species. doe snot guarantee the trait will be added if it costs points.
-	allowed_archetypes = { BIOLOGICAL LITHOID }
-	randomized = no
-	custom_tooltip_with_modifiers = inorganic_breath_tooltip
-
-	modifier = {
-		planet_pops_upkeep_mult = 0.35
-	}
-
-	slave_cost = {
-		energy = 1000
-	}
-}
-
-trait_noxious = {
-	host_has_dlc = "Toxoids Species Pack"
-	cost = 1
-	species_possible_remove = {
-		can_remove_beneficial_genetic_traits = yes
-	}
-	species_possible_merge_remove = {
-		always = yes
-	}
-	potential_crossbreeding_chance = 1.0 #1.0 100% of being considered for new traits when forming half-species. doe snot guarantee the trait will be added if it costs points.
-	allowed_archetypes = { BIOLOGICAL LITHOID }
-	randomized = no
-	custom_tooltip_with_modifiers = noxious_tooltip
-	triggered_pop_modifier = {
-		pop_happiness = @noxious_happiness_bonus
-		mult = planet.value:counter_noxious
-	}
-
-	modifier = {
-		habitability_floor_add = 0.3
-		habitability_ceil_add = -0.3
-		army_damage_mult = 0.50
-		pop_housing_usage_mult = 0.1
-	}
-
-	slave_cost = {
-		energy = -500
-	}
-}
-
-trait_exotic_metabolism = {
-	host_has_dlc = "Toxoids Species Pack"
-	cost = 1
-	species_possible_remove = {
-		can_remove_beneficial_genetic_traits = yes
-	}
-	species_possible_merge_remove = {
-		always = yes
-	}
-	potential_crossbreeding_chance = 1.0 #1.0 100% of being considered for new traits when forming half-species. doe snot guarantee the trait will be added if it costs points.
-	allowed_archetypes = { BIOLOGICAL LITHOID }
-	initial = no
-	randomized = no
-	advanced_trait = yes
-	custom_tooltip_with_modifiers = exotic_metabolism_tooltip
-	triggered_planet_growth_habitability_modifier = {
-		pop_growth_speed = 0.25
-		pop_environment_tolerance = 0.25
-	}
-
-	modifier = {
-		leader_lifespan_add = 50
-	}
-
-	slave_cost = {
-		energy = 750
 	}
 }

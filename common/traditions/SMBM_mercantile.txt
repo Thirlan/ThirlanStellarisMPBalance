@@ -1,0 +1,37 @@
+tr_mercantile_finish = {
+	modifier = {
+		trade_value_mult = 0.07
+		ascension_perks_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_mercantile_federations_finish
+		inherit_icon = yes
+		inherit_name = yes
+		custom_tooltip = tr_mercantile_federations_finish_desc
+		trigger = {
+			has_federations_dlc = yes
+		}
+		modifier = {
+			trade_value_mult = 0.07
+			ascension_perks_add = 1
+		}
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_mercantile_marketplace_of_better_ideas = {
+	possible = {
+		has_tradition = tr_mercantile_adaptive_economic_policies
+	}
+
+	modifier = {
+		trade_value_mult = 0.07
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}

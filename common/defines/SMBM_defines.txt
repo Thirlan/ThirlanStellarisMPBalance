@@ -1,5 +1,5 @@
 	NGameplay = {
-		LEADER_LIFESPAN_DEATH_CHANCE_AGE			= 70		# Before this age the chance wont increase
+		LEADER_LIFESPAN_DEATH_CHANCE_AGE		= 70		# Before this age the chance wont increase
 		LEADER_LIFESPAN_HIGH_DEATH_CHANCE_AGE	= 90		# Above this age, death chance increases drastically
 		
 		# Anti-AI Trade exploitation

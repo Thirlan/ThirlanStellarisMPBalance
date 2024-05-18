@@ -1,0 +1,43 @@
+tr_supremacy_adopt = {
+	unlocks_agenda = agenda_military_buildup
+	modifier = {
+		country_naval_cap_add = 15
+	}
+}
+
+tr_supremacy_fleet_logistical_corps = {
+	modifier = {
+		ships_upkeep_mult = -0.10
+		country_naval_cap_mult = 0.15
+	}
+
+	tradition_swap = {
+		name = tr_supremacy_fleet_logistical_corps_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_supremacy_fleet_logistical_corps_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
