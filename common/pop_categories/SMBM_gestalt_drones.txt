@@ -75,6 +75,9 @@ complex_drone = {
 		# Additional energy upkeep for cyborgs.
 		inline_script = "pop_categories/cyborg_upkeep"
 
+		# Additional energy upkeep for robot traits.
+		inline_script = "pop_categories/trait_upkeep"
+
 		# Exotic Metabolism Upkeep
 		upkeep = {
 			trigger = {
@@ -208,6 +211,9 @@ simple_drone = {
 
 		# Additional energy upkeep for cyborgs.
 		inline_script = "pop_categories/cyborg_upkeep"
+
+		# Additional energy upkeep for robot traits.
+		inline_script = "pop_categories/trait_upkeep"
 
 		# Exotic Metabolism Upkeep
 		upkeep = {

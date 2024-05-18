@@ -27,6 +27,7 @@
 #	max = 5							#Sets a maximum absolute number the country will aim to have. Note that it will still want only the minimum unless you define a system_mult or planet_mult
 #}
 # ship_roles = { name1 name2 } # Show up as selectable roles in the ship designer
+# never_lost = <yes/no> # Removes the chance for the ship size to instantly get killed by emergency ftl. It can still be killed by the random Emergency FTL damage effect.
 # triggered_ship_roles = { { name = test1 trigger = {} } { name = test1 trigger = {} } } # List of triggered ship roles, show up in the ship designer when the trigger is true, executes on country scope
 
 ####################

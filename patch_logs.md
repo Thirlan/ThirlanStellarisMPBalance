@@ -1,4 +1,4 @@
-# 2024/05/17 - 1.11.0
+# 2024/05/18 - 1.11.0
 
 Removed:
 * Divided Attention: -5% Empire size from pops
@@ -26,16 +26,45 @@ Added:
 * Corvettes: Ship speed 170 from 160, evasion 62 from 60
 * Shields: Increased health by 10%
 * Communal: -13% housing from -10%
-* Solitary: +13% housing from +10%
+* Solitary/Bulky: +13% housing from +10%
 * Venerable: +2% to research and unity
 * Industrious: +20% to minerals from +15%
+* Power Drill: +20% to minerals from +15%
 * Quick Learner: +15% experience from +10%
+* Learning Algorithms: +15% experience from +10%
 * Slow Learner: -15% experience from -10%
+* Repurposed Hardware: -15% experience from -10%
+* Trading Algorithms: +20% trade from +25%
 * Phototrophic: 55% food and energy from 50%
 * Incubators: 25% population growth from 30%
 * Invasive Species: 4% from 5% for pop growth and habitability
 * Cosmogenesis: requires 4 ascension perks from 3
 * Fruitful Partnership: -33% damage to Tiyankis
+* Warbot (History Trait): +10% Army damage from +5%
+* Expansion (Void Dweller): -15% to habitat and district alloy upkeep
+* Supremacy:
+  * Adoption: +15 naval cap and 0% army damage from +20 naval cap and +20% army damage
+  * Fleet Logistics Corp: +15% naval cap from +20%
+* Mercantile:
+  * Market Place of Better Ideas: +7% Trade value from +10%
+  * Finisher: +7% Trade value from +10%
+* Emnity:
+  * Adoption: max rivalries +0 from +1
+  * Outpace: +10% damage to rivals from +15%
+* Virtuality:
+  * Data-Driven Logic Loops: -10% to empire size from pops from -15% and +115% empire size from planets from +100%
+  * Clustered Capacity: +150% resources from jobs from +175%
+
+### Boosts
+ * Aptitude:
+   * Finisher: +15% leader experience
+   * The Empire Needs You: -30% leader cost from -25%
+   * Psychological Profiling: -30% leader upkeep from -25%
+   * Specialist Training: +2 leader pool size from +1
+ * Politics:
+   * Finisher: +20% diplomatic weight from +10% diplomatic weight
+   * Gravitas: -30% resolution cost from -25% and +3% diplomatic weight per envoy level from +2.5%
+   * Extraordinary Powers: -30% veto / emergency measures cooldown from -25%
 
 Changed:
 * Espionage: Operations were not correctly being reduced in difficulty by 4
