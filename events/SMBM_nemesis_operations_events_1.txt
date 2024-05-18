@@ -1212,12 +1212,13 @@ country_event = {
 					has_country_flag = art_college_sabotaged
 					has_country_flag = black_hole_observatory_sabotaged
 					has_country_flag = hydroponics_bay_sabotaged
-					has_country_flag = mining_bay_sabotaged
 					has_country_flag = missile_battery_sabotaged
 					has_country_flag = crew_quarters_sabotaged
 					has_country_flag = curator_think_tank_sabotaged
 					has_country_flag = nebula_refinery_sabotaged
 					has_country_flag = solar_panel_network_sabotaged
+					has_country_flag = astromining_bay_sabotaged
+					has_country_flag = astromining_hub_sabotaged 
 					has_country_flag = ice_mining_station_sabotaged
 					has_country_flag = salvager_workshop_sabotaged
 					has_country_flag = transit_hub_sabotaged
@@ -3956,6 +3957,7 @@ country_event = {
 						OR = {
 							has_trait = trait_extremely_adaptive
 							has_trait = trait_survivor
+							has_trait = trait_robot_survivor
 						}
 					}
 					from = {
