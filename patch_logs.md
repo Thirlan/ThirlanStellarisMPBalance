@@ -17,7 +17,6 @@ Removed:
 * Zero-waste Protocols: -20% robot upkeep from -10%
 
 Added:
-* Expansion (Void Dweller): -15% to habitat and district alloy upkeep
 * Traders: +9 trade value from +8
 * Hydroponics Bay: 7 food from 10
 * Hyper Relays: AI weight 3 from 5 (reduce AI spamming)
@@ -26,7 +25,10 @@ Added:
 * Corvettes: Ship speed 170 from 160, evasion 62 from 60
 * Shields: Increased health by 10%
 * Communal: -13% housing from -10%
-* Solitary/Bulky: +13% housing from +10%
+* Adaptive Frames: +10% to upkeep
+* Double-jointed: -13% housing from -10%
+* Solitary: +13% housing from +10%
+* Bulky: +13% housing from +10%
 * Venerable: +2% to research and unity
 * Industrious: +20% to minerals from +15%
 * Power Drill: +20% to minerals from +15%
@@ -35,6 +37,7 @@ Added:
 * Slow Learner: -15% experience from -10%
 * Repurposed Hardware: -15% experience from -10%
 * Trading Algorithms: +20% trade from +25%
+* Scarcity Subroutines: -20% trade from -25%
 * Phototrophic: 55% food and energy from 50%
 * Incubators: 25% population growth from 30%
 * Invasive Species: 4% from 5% for pop growth and habitability
@@ -54,17 +57,15 @@ Added:
 * Virtuality:
   * Data-Driven Logic Loops: -10% to empire size from pops from -15% and +115% empire size from planets from +100%
   * Clustered Capacity: +150% resources from jobs from +175%
-
-### Boosts
- * Aptitude:
-   * Finisher: +15% leader experience
-   * The Empire Needs You: -30% leader cost from -25%
-   * Psychological Profiling: -30% leader upkeep from -25%
-   * Specialist Training: +2 leader pool size from +1
- * Politics:
-   * Finisher: +20% diplomatic weight from +10% diplomatic weight
-   * Gravitas: -30% resolution cost from -25% and +3% diplomatic weight per envoy level from +2.5%
-   * Extraordinary Powers: -30% veto / emergency measures cooldown from -25%
+* Aptitude:
+  * Finisher: +15% leader experience
+  * The Empire Needs You: -30% leader cost from -25%
+  * Psychological Profiling: -30% leader upkeep from -25%
+  * Specialist Training: +2 leader pool size from +1
+* Politics:
+  * Finisher: +20% diplomatic weight from +10% diplomatic weight
+  * Gravitas: -30% resolution cost from -25% and +3% diplomatic weight per envoy level from +2.5%
+  * Extraordinary Powers: -30% veto / emergency measures cooldown from -25%
 
 Changed:
 * Espionage: Operations were not correctly being reduced in difficulty by 4

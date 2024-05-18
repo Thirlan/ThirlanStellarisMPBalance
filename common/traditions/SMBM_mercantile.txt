@@ -13,7 +13,7 @@ tr_mercantile_finish = {
 			has_federations_dlc = yes
 		}
 		modifier = {
-			trade_value_mult = 0.1
+			trade_value_mult = 0.07
 			ascension_perks_add = 1
 		}
 		weight = {

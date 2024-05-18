@@ -3,7 +3,9 @@
  # TRAITS
  TRAIT_PLANTOID_BUDDING_EFFECT:0 "Each pop working as a slave or better produces 0.0175 £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!"
  TRAIT_LITHOID_BUDDING_EFFECT:0 "Each pop working as a slave or better produces 0.02 £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!"
+ TRAIT_INVASIVE_EFFECT: "§YCan only select negative or botanical traits§!\n\nHabitability: §G+4%§! for each negative trait selected\nPop Growth Speed: §G+4%§! for each negative trait selected"
 
+ incubator_tooltip:1 "Grants between §G+25%§! and §R-10%§! Pop Growth Speed, inversely proportional to the number of pops on the planet."
  low_maintenance_tooltip:0 "Pop Consumer Goods Upkeep: §G-13%§!"
  preplanned_growth_tooltip:0 "Pop Growth Speed: §G+25%§!\nPop Housing Usage: §G-10%§!"
  artificial_intelligence_tooltip:0 "£physics£ Physics Research: §G+8%§!\n£society£ Society Research: §G+8%§!\n£engineering£ Engineering Research: §G+8%§!"
@@ -21,6 +23,8 @@ origin.61.desc:1 "As earthquakes and volcanic activity on [Root.GetName] continu
  requires_ascension_perks_4:1 "$TRIGGER_FAIL$Requires four other Ascension Perks to be selected first."
 
 # TRADITIONS
+ tr_virtuality_1_modifier_desc: "§Y$trait_robot_digital_1$§! Species Trait gains the following effects:$TABBED_NEW_LINE$- Resources From Jobs: §G+125%§! (§R-25%§! per Colony)$TABBED_NEW_LINE$- Pop Upkeep: §R+0.1§! $r_energy$ per Colony"
+ tr_politics_gravitas_desc:1 "§G-30%§! £influence£ §YInfluence§! cost to veto or propose Resolutions\n$official_plural_with_icon$ assigned to the §Y[GetGalCommunityOrGalImperium]§! provide an additional §G3.0%§! £diplo_weight£ Diplomatic Weight per §YSkill Level§!."
 
 # POLICY
 
