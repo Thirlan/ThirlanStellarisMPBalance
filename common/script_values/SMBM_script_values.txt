@@ -3,7 +3,7 @@
 #############################
 
 virtuality_concentrated_production_mult = {
-	base = 1.50
+	base = 1.25
 	complex_trigger_modifier = {
 		trigger = count_owned_planet
 		trigger_scope = owner

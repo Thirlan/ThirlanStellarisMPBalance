@@ -1,3 +1,14 @@
+# 2024/05/31 - 1.11.2
+
+Upgrade to merge with recent 3.12.3 changes. Also cleaned up patch notes.
+
+# 2024/05/18 - 1.11.1
+
+changed:
+* Virtuality:
+  * Data-Driven Logic Loops: -10% to empire size from pops from -15%, +125% empire size from planets from +100% and +25% empire size from districts
+  * Clustered Capacity: +125% resources from jobs from +175%
+
 # 2024/05/18 - 1.11.0
 
 Removed:
@@ -21,7 +32,6 @@ Added:
 * Hydroponics Bay: 7 food from 10
 * Hyper Relays: AI weight 3 from 5 (reduce AI spamming)
 * Resource Silo: Energy cost removed, mineral cost 100 from 200 and max resource capacity +10,000 from +5,000
-* Max Resource Capacity: All starting resources max capacity reduced by 50%
 * Corvettes: Ship speed 170 from 160, evasion 62 from 60
 * Shields: Increased health by 10%
 * Communal: -13% housing from -10%

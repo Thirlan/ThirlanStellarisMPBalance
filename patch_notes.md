@@ -1,4 +1,4 @@
-# Version 1.11.0
+# Version 1.11.2
 
 ## General tweaks
 
@@ -8,11 +8,9 @@
  * LEADER_AGE_DEATH_CHANCE_AGE: 70 from 80 (Boost to Venerable and Enduring)
  * LEADER_AGE_HIGH_DEATH_CHANCE_AGE: 90 from 100 (Boost to Venerable and Enduring)
  * Empire Leader Cap: 2 from 3 (Boost to game mechanics like Heroic Tales)
- * Traders: +11 trade value from +8
  * Hydroponics Bay: 7 food from 10
  * Hyper Relays: AI weight 3 from 5 (reduce AI spamming)
  * Resource Silo: Energy cost removed, mineral cost 100 from 200 and max resource capacity +10,000 from +5,000
- * Max Resource Capacity: All starting resources max capacity reduced by 50%
  * Anti-Federation Snowballing:
    * FEDERATION_ENVOY_BASE_EFFECT: 0.8 from 1.0
    * FEDERATION_MEMBERS_PENALTY: -0.3 from -0.25
@@ -21,7 +19,7 @@
 
 ### Boosts
  * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -40% defense platform build cost and +20% starbase damage boost for the first 20 years of the game.
-
+ * Traders: +9 trade value from +8
  * Espionage Operations:
    * Difficulties reduced by 4 (include pre-ftl)
    * Steal Techonology Operation: cooldown of 1 year from 6
@@ -69,8 +67,8 @@
    * Adoption: max rivalries +0 from +1
    * Outpace: +10% damage to rivals from +15%
  * Virtuality:
-   * Data-Driven Logic Loops: -10% to empire size from pops from -15% and +115% empire size from planets from +100%
-   * Clustered Capacity: +150% resources from jobs from +175%
+  * Data-Driven Logic Loops: -10% to empire size from pops from -15%, +125% empire size from planets from +100% and +25% empire size from districts
+  * Clustered Capacity: +125% resources from jobs from +175%
 
 ### Boosts
  * Aptitude:
@@ -88,6 +86,7 @@
 ### Nerfs
  * Technological Ascendency: +7% Research rate from +10%
  * Become the crisis: requires 4 ascension perks from 3
+ * Cosmogenesis: requires 4 ascension perks from 3
  * Hive World: requires 3 ascension perks from 0
  * Machine World: requires 3 ascension perks from 0
  * Arcology Project: requires 3 Ascension perks from 2
@@ -163,6 +162,7 @@
  * Imperial Fiefdom origin: -5% happiness, -20% Ethics attraction and Overlord starting opinion bonus 1 from 120
  * Clone Army: 1/4/5/8/12 to current pop assembly from 2/5/7/10/15
  * Necrophage: Population growth -5%
+ * Fruitful Partnership: -33% damage to Tiyankis
 
 ### Boosts
  * Hegemon: "Long live the hegemony" event gifts the player with +200 influence and +75 alloy 30 days after game start.
@@ -184,7 +184,7 @@
  * High Bandwidth: +13% empire size from pops from +10%
  * Solitary: +13% housing from +10%
  * Slow Learner: -15% experience from -10%
- * Phototrophic: Replaces 40% of food with energy from 60%
+ * Phototrophic: 55% food and energy from 50%
  * Incubators: 25% population growth from 30%
  * Invasive Species: 4% from 5% for pop growth and habitability
 
@@ -210,11 +210,20 @@
  * Logic Engines: +8% research from +10%
  * Mass Produced: +10% assembly speed from +15%
  * Emotion Emulator: +15% to amenities from +20%
+ * Adaptive Frames: +10% to upkeep
+ * Bulky: +13% housing from +10%
+ * Repurposed Hardware: -15% experience from -10%
+ * Trading Algorithms: +20% trade from +25%
 
 ### Boosts
  * Custom made: -10% assembly speed from -15%
  * Recycled: -30% assembly cost from -20%
  * Uncanny: -15% to amenities from -20%
+ * Double-jointed: -13% housing from -10%
+ * Power Drill: +20% to minerals from +15%
+ * Learning Algorithms: +15% experience from +10%
+ * Scarcity Subroutines: -20% trade from -25%
+ * Warbot (History Trait): +10% Army damage from +5%
 
 ## Plantoids
 
