@@ -137,15 +137,13 @@ trait_robot_logic_engines = {
 
 	allowed_archetypes = { ROBOT MACHINE }
 
-	# Droids and Machines
+	# Droids, Synths and Machines
 	species_potential_add = {
-		exists = from
-		from = {
-			OR = {
-				has_authority = auth_machine_intelligence
-				has_technology = tech_droid_workers
-			}
-			NOT = { has_policy_flag = ai_outlawed }
+		OR = {
+			can_add_droid_traits = yes
+			can_add_synth_traits = yes
+			owner_is_machine_intelligence = yes
+			owner_is_individual_machine = yes
 		}
 	}
 	modifier = {
@@ -277,7 +275,7 @@ trait_robot_emotion_emulators = {
 	cost = 1
 	category = robotic
 	opposites = { "trait_robot_uncanny" }
-	allowed_archetypes = { MACHINE }
+	allowed_archetypes = { ROBOT MACHINE }
 	modifier = {
 		pop_job_amenities_mult = 0.15
 	}
@@ -290,7 +288,7 @@ trait_robot_uncanny = {
 	cost = -1
 	category = robotic
 	opposites = { "trait_robot_emotion_emulators" }
-	allowed_archetypes = { MACHINE }
+	allowed_archetypes = { ROBOT MACHINE }
 	modifier = {
 		pop_job_amenities_mult = -0.15
 	}
@@ -1214,7 +1212,7 @@ trait_robot_suppressed = {
 }
 
 trait_robot_shielded_components = {
-	cost = 4
+	cost = 3
 	category = robotic
 
 	allowed_archetypes = { ROBOT MACHINE }
@@ -1326,7 +1324,7 @@ trait_robot_ceaseless_symmetric_annihilation_engine = {
 	randomized = no
 
 	modifier = {
-		planet_jobs_produces_mult = 0.60
+		planet_jobs_produces_mult = 0.40
 	}
 
 	slave_cost = {
@@ -1533,7 +1531,8 @@ trait_robot_exotic_fuel_consumption = {
 	randomized = no
 
 	modifier = {
-		planet_jobs_produces_mult = 0.15
+		planet_jobs_produces_mult = 0.10
+
 	}
 
 	slave_cost = {
@@ -1646,6 +1645,45 @@ trait_robot_immortality = {
 	initial = yes
 	randomized = no
 	immortal_leaders = yes
+
+	slave_cost = {
+		energy = 1000
+	}
+	custom_tooltip = trait_robot_immortality_tt
+}
+
+trait_robot_synthetic_dawn = {
+	cost = 0
+	category = robotic
+
+	allowed_archetypes = { ROBOT MACHINE }
+
+	species_potential_add = {
+		hidden_trigger = { exists = from }
+		from = {
+			has_modifier = synthetic_dawn
+		}
+		can_add_synth_traits = yes
+	}
+	species_possible_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	modifier = {
+		pop_government_ethic_attraction = 0.50
+		pop_happiness = 0.05
+		planet_jobs_unity_produces_mult = 0.05
+	}
+
+	initial = no
+	randomized = no
+	immortal_leaders = no
 
 	slave_cost = {
 		energy = 1000

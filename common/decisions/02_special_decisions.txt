@@ -1169,7 +1169,9 @@ decision_arcology_project = {
 		# Make city-planet
 		custom_tooltip = decision_arcology_project_effects
 		hidden_effect = {
+			save_deposits = yes
 			clear_deposits = yes
+			restore_saved_deposits = yes
 			set_industrial_focus_flags = yes
 			change_pc = pc_city
 			relic_world_conversion_effect = {
@@ -1252,7 +1254,9 @@ decision_arcology_project_relic = {
 		# Make city-planet
 		custom_tooltip = decision_arcology_project_effects
 		hidden_effect = {
+			save_deposits = yes
 			clear_deposits = yes
+			restore_saved_deposits = yes
 			set_industrial_focus_flags = yes
 			change_pc = pc_city
 			relic_world_conversion_effect = {
@@ -2103,7 +2107,9 @@ decision_shattered_ring_project = {
 		# Make ringworld
 		custom_tooltip = decision_shattered_ring_project_effects
 		hidden_effect = {
+			save_deposits = yes
 			clear_deposits = yes
+			restore_saved_deposits = yes
 			change_pc = pc_ringworld_habitable
 
 			set_planet_entity = {

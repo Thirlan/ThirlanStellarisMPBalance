@@ -17,6 +17,8 @@
  # ORIGINS
 origin_tooltip_doomsday_effects:2 "§R- WARNING: Challenging Origin§!\n- Your homeworld will explode within §H45 to 55 years§! after the game starts.\n- Valuable resources from the doomed planet's mantle boost production on the surface.\n- No Guaranteed Habitable Worlds will spawn near your home system."
 origin.61.desc:1 "As earthquakes and volcanic activity on [Root.GetName] continue to increase in frequency and intensity, our [Root.Owner.GetScientistPlural] are now able to more accurately predict when the end will come:\n\nThey estimate that we have between §H45 to 55 years§! until the planet detonates.\n\nConditions on the surface will steadily deteriorate until then. The only good news is that the violent tectonic movements have made it easier to access the rich resources of the planet's mantle, increasing our production capacity."
+ concept_cave_dweller_desc: "- $MOD_HABITABILITY_FLOOR_ADD$: §G50%§!\n- $mod_planet_jobs_minerals_produces_mult$: §G+15%§!\n- $MOD_BIO_POP_GROWTH_SPEED$: §R-10%§!\n\n§L$trait_cave_dweller_desc$§!"
+ trait_cave_dweller_tooltip:0 "$MOD_BIO_POP_GROWTH_SPEED$: §R-10%§!"
 
  # ASCENSCIONS
  describe_edict_consectrated_worlds:5 "§EConsecrating planets (up to §Y3§!) increases §YSpiritualist Ethics Attraction§! and §YEmpire-Wide Amenities§! as well as £unity£ §YUnity Generation§!, scaling to the spiritual significance of the worlds consecrated.§!"

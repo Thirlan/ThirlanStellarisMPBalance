@@ -213,6 +213,155 @@ origin_imperial_vassal = {
 	}
 }
 
+origin_toxic_knights = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_toxic_knights.dds"
+	picture = GFX_origin_toxic_knights
+	flags = { custom_start_screen }
+
+	initializers = { toxic_knights_start toxic_knights_sol_start }
+
+	playable = {
+		has_toxoids = yes
+	}
+
+	possible = {
+		ethics = {
+			NOT = { value = ethic_gestalt_consciousness }
+		}
+		civics = {
+			NOR = {
+				value = civic_fanatic_purifiers
+				value = civic_dystopian_society
+			}
+		}
+		species_archetype = { NOT = { value = MACHINE } }
+	}
+
+	description = origin_toxic_knights_effects
+	negative_description = origin_toxic_knights_negative_effects
+
+	modifier = {
+		ship_sensor_range_add = 1
+	}
+
+	advanced_start = yes
+	max_once_global = yes
+	blocks_random_machine_empire_generation	= yes
+
+	random_weight = {
+		base = 2
+	}
+}
+
+origin_payback = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_payback.dds"
+	picture = GFX_origin_payback
+	max_once_global = yes
+
+	playable = {
+		has_first_contact_dlc = yes
+	}
+
+	possible = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		civics = {
+			NOR = {
+				# No devourers or slavers
+				value = civic_dystopian_society
+				value = civic_fanatic_purifiers
+				value = civic_pompous_purists
+				value = civic_slaver_guilds
+				value = civic_indentured_assets
+				# Or advanced tech
+				value = civic_private_healthcare_corporate
+			}
+			NOR = {
+				# Or low tech starts
+				text = civic_tooltip_not_eager_explorers
+				value = civic_eager_explorers
+				value = civic_privatized_exploration
+				value = civic_hive_stargazers
+				value = civic_machine_exploration_protocol
+			}
+		}
+		species_archetype = { NOT = { value = MACHINE } }
+	}
+
+	modifier = {
+		damage_vs_superior_empires_mult = 0.15
+		ship_fire_rate_mult = 0.15
+	}
+
+	description = "origin_tooltip_payback_effects"
+	negative_description = "origin_tooltip_payback_negative_effects"
+	flags = { custom_start_screen }
+
+	advanced_start = no
+	blocks_random_machine_empire_generation	= yes
+
+	random_weight = {
+		base = 0
+	}
+}
+
+origin_fear_of_the_dark = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_fear_of_the_dark.dds"
+	picture = GFX_origin_fear_of_the_dark
+	initializers = { fear_of_the_dark_system sol_system_fear_of_the_dark_system }
+
+	playable = {
+		has_first_contact_dlc = yes
+	}
+
+	possible = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_inwards_perfection
+				value = civic_fanatic_purifiers
+			}
+			NOR = {
+				# Or low tech starts
+				text = civic_tooltip_not_eager_explorers
+				value = civic_eager_explorers
+				value = civic_privatized_exploration
+				value = civic_hive_stargazers
+				value = civic_machine_exploration_protocol
+			}
+		}
+		species_archetype = { NOT = { value = MACHINE } }
+	}
+
+	description = "origin_tooltip_fear_of_the_dark_effects"
+	negative_description = "origin_tooltip_fear_of_the_dark_negative_effects"
+	flags = { custom_start_screen }
+
+	modifier = {
+		ship_anomaly_generation_chance_mult = 0.1
+		ship_anomaly_research_speed_mult = 0.2
+	}
+
+	traits = {
+	}
+
+	blocks_random_machine_empire_generation	= yes
+
+	random_weight = {
+		base = 5
+	}
+}
+
 origin_fruitful = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_gardeners.dds"
@@ -254,5 +403,35 @@ origin_fruitful = {
 
 	modifier = {
 		damage_vs_country_type_tiyanki_mult = -0.33
+	}
+}
+
+origin_riftworld = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_riftworld.dds"
+	picture = GFX_origin_riftworld
+	flags = { custom_start_screen }
+
+	initializers = { custom_starting_init_01 custom_starting_init_02 sol_system_initializer }
+
+	playable = {
+		has_astral_planes_dlc = yes
+	}
+
+	possible = {
+	}
+
+	description = "origin_tooltip_riftworld_effects"
+
+	modifier = {
+		country_astral_rift_speed_mult = 0.25
+		country_astral_rift_fail_mult = -0.5
+		country_physics_research_produces_mult = 0.15
+	}
+
+	max_once_global = yes
+
+	random_weight = {
+		base = 2
 	}
 }
