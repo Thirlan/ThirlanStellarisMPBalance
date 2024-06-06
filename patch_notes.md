@@ -164,6 +164,7 @@
  * Clone Army: 1/4/5/8/12 to current pop assembly from 2/5/7/10/15
  * Necrophage: Population growth -5%
  * Fruitful Partnership: -33% damage to Tiyankis
+ * Scion: -5% happiness, -20% Ethics attraction 
 
 ### Boosts
  * Hegemon: "Long live the hegemony" event gifts the player with +200 influence and +75 alloy 30 days after game start.
@@ -186,7 +187,6 @@
  * Thrifty: +20% trade value from +25%
  * Existential Iteroparity: +20% population growth from +30%
  * Unruly: +13% empire size from pop
- * High Bandwidth: +13% empire size from pops from +10%
  * Solitary: +13% housing from +10%
  * Slow Learner: -15% experience from -10%
  * Phototrophic: 55% food and energy from 50%
@@ -219,7 +219,7 @@
  * Bulky: +13% housing from +10%
  * Repurposed Hardware: -15% experience from -10%
  * Trading Algorithms: +20% trade from +25%
-
+ * High Bandwidth: +13% empire size from pops from +10%
 
 ### Boosts
  * Custom made: -10% assembly speed from -15%
