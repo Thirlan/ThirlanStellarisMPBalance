@@ -1,4 +1,8 @@
-# 2024/06/06 - 1.11.2
+# 2024/06/07 - 1.11.3
+
+Quick fix to remove duplicate consumer goods resource
+
+# 2024/06/07 - 1.11.2
 
 Upgrade to merge with recent 3.12.4 changes. Also cleaned up patch notes.
 
