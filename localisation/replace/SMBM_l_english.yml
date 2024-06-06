@@ -4,6 +4,8 @@
  TRAIT_PLANTOID_BUDDING_EFFECT:0 "Each pop working as a slave or better produces 0.0175 £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!"
  TRAIT_LITHOID_BUDDING_EFFECT:0 "Each pop working as a slave or better produces 0.02 £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!"
  TRAIT_INVASIVE_EFFECT: "§YCan only select negative or botanical traits§!\n\nHabitability: §G+4%§! for each negative trait selected\nPop Growth Speed: §G+4%§! for each negative trait selected"
+ TRAIT_HUMANOID_EXISTENTIAL_ITEROPARITY_EFFECT: "£pops£ §YPop Growth§! During War and Crisis: §G+20%§!
+ TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "Replaces §Y45%§! of $r_food$ Upkeep §Y55%§! with $r_energy$ Upkeep"
 
  incubator_tooltip:1 "Grants between §G+25%§! and §R-10%§! Pop Growth Speed, inversely proportional to the number of pops on the planet."
  low_maintenance_tooltip:0 "Pop Consumer Goods Upkeep: §G-13%§!"
