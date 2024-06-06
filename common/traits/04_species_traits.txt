@@ -177,6 +177,7 @@ trait_thrifty = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	opposites = { "trait_hive_mind" "trait_cyborg_scarcity_algorithms" }
 	forbidden_ethics = { ethic_gestalt_consciousness }
+
 	modifier = {
 		pop_job_trade_mult = 0.20
 	}

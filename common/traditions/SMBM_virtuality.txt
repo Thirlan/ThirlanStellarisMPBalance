@@ -35,7 +35,6 @@ tr_virtuality_adopt = {
 	unlocks_agenda = agenda_virtuality_optimized_network
 }
 
-
 tr_virtuality_2 = {
 	modifier = {
 		planet_researchers_upkeep_mult = -0.1
@@ -44,6 +43,7 @@ tr_virtuality_2 = {
 		empire_size_pops_mult = -0.10
 		empire_size_districts_mult = 0.25
 		empire_size_colonies_mult = 1.25
+
 	}
 	ai_weight = {
 		factor = 1000

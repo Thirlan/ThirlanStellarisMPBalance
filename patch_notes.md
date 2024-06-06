@@ -70,6 +70,7 @@
   * Data-Driven Logic Loops: -10% to empire size from pops from -15%, +125% empire size from planets from +100% and +25% empire size from districts
   * Clustered Capacity: +125% resources from jobs from +175%
 
+
 ### Boosts
  * Aptitude:
    * Finisher: +15% leader experience
@@ -218,6 +219,7 @@
  * Bulky: +13% housing from +10%
  * Repurposed Hardware: -15% experience from -10%
  * Trading Algorithms: +20% trade from +25%
+
 
 ### Boosts
  * Custom made: -10% assembly speed from -15%
