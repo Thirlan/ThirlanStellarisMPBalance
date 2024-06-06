@@ -145,6 +145,7 @@ event = {
 						OR = {
 							allowed_crisis_type = contingency
 							allowed_crisis_type = prethoryn
+							allowed_crisis_type = synth_queen
 						}
 					}
 					modifier = { #anti-boring

@@ -609,7 +609,7 @@ trait_gene_mentorship = {
 			owner = { NOT = { has_edict = damn_the_consequences } }
 		}
 		modifier = {
-			species_leader_exp_gain = 0.25
+			species_leader_exp_gain = 0.30
 		}
 	}
 	triggered_leader_modifier = {
@@ -618,7 +618,7 @@ trait_gene_mentorship = {
 			owner = { has_edict = damn_the_consequences }
 		}
 		modifier = {
-			species_leader_exp_gain = 0.5
+			species_leader_exp_gain = 0.60
 		}
 	}
 	modifier = {

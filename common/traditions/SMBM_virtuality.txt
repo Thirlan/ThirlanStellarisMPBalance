@@ -25,8 +25,14 @@ tr_virtuality_adopt = {
 	modifier = {
 		intel_decryption_add = 2
 		intel_encryption_add = 2
+		planet_metallurgists_alloys_produces_mult = -0.15
+	}
+	triggered_modifier = {
+		potential = { country_uses_consumer_goods = yes }
+		planet_artisans_consumer_goods_produces_mult = -0.15
 	}
 	custom_tooltip_with_modifiers = tr_virtuality_adopt_modifier_desc
+	unlocks_agenda = agenda_virtuality_optimized_network
 }
 
 

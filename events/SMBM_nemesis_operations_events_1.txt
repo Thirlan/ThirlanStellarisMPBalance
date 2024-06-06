@@ -28,10 +28,10 @@ namespace = operation
 @CrisisBeaconTimer = 1440 #days (4 years) until Crisis Beacon can be attempted again. Referenced in tooltip string "operation_crisis_beacon_too_recent".
 
 # Number of days before a single event should (ideally) stand a chance of coming up again.
-@RandomOperationEventTimer = 300
-@RandomOperationEventTimerLong = 500
+@RandomOperationEventTimer = 600
+@RandomOperationEventTimerLong = 1000
 
-@gather_info_infiltration_days = 1800
+@gather_info_infiltration_days = 3600
 
 ############################
 # SUBTERFUGE: ACQUIRE ASSET

@@ -1,6 +1,18 @@
-# 2024/05/31 - 1.11.2
+# 2024/06/06 - 1.11.2
 
-Upgrade to merge with recent 3.12.3 changes. Also cleaned up patch notes.
+Upgrade to merge with recent 3.12.4 changes. Also cleaned up patch notes.
+
+Added:
+ * Cave Dwellers: pop growth speed -10% from -20% and 0% species empire size modifier from 10%
+ * Rift World: +15% to physics research
+ * Fear of the Dark: 0 to tech alternatives and leaderpool size from -1
+ * Knights of the Toxic Gods: +1 ship sensor range
+ * Payback: +15% Ship fire rate
+
+Changed:
+ * One Vision: +7% Unity and -7% Pop Amenity Usage from 10% and 40% ethics attraction from 50%
+ * Barbaric Despoilers: +25% market fee
+ * Fanatic Purifiers: +25% market fee
 
 # 2024/05/18 - 1.11.1
 

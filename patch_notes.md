@@ -90,7 +90,7 @@
  * Hive World: requires 3 ascension perks from 0
  * Machine World: requires 3 ascension perks from 0
  * Arcology Project: requires 3 Ascension perks from 2
- * One Vision: +7% Unity and -7% Pop Amenity Usage from 10%
+ * One Vision: +7% Unity and -7% Pop Amenity Usage from 10% and 40% ethics attraction from 50%
 
 ### Boosts
  * Consecrate Worlds: Can now consecrate an occupied world
@@ -100,12 +100,12 @@
 ## Standard Civics
 
 ### Nerfs
- * Fanatical Purifier: 15% ship fire rate from 33%
+ * Fanatic Purifiers: +25% market fee
  * Meritocracy: Specialist pop resource output +5% from +10%
  * Parliamentary System: +30% unity from factions from +40%
  * Citizen Service: +10% Naval capacity from +15%
  * Sovereign Guardian: -40% to empire size from pops from -50%
- * Barbaric Despoiler: +10% Market Fee
+ * Barbaric Despoiler: +25% market fee
  * Catalytic Converter: reduce alloy production by -0.5 and councilor position now gives +1% bonus to alloy production from +2%
 
 ### Boosts
@@ -169,7 +169,11 @@
  * Common Ground: "Live long and prosper" event gifts the player +125 influence 30 days after game start along with a crewed science ship.
  * Life Seeded: Starbase influence and material cost -10%
  * Doomsday: stage 1 now takes ~2 years to trigger from 5 days, with stage 2 taking ~17 years from ~11 years
-
+ * Cave Dwellers: pop growth speed -10% from -20% and 0% species empire size modifier from 10%
+ * Rift World: +15% to physics research
+ * Fear of the Dark: 0 to tech alternatives and leaderpool size from -1
+ * Knights of the Toxic Gods: +1 ship sensor range
+ * Payback: +15% Ship fire rate
  
 ## Species Traits:
 
