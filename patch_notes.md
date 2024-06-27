@@ -1,4 +1,4 @@
-# Version 1.11.3
+# Version 1.12.0
 
 ## General tweaks
 
@@ -87,11 +87,17 @@
 ### Nerfs
  * Technological Ascendency: +7% Research rate from +10%
  * Become the crisis: requires 4 ascension perks from 3
- * Cosmogenesis: requires 4 ascension perks from 3
  * Hive World: requires 3 ascension perks from 0
  * Machine World: requires 3 ascension perks from 0
  * Arcology Project: requires 3 Ascension perks from 2
  * One Vision: +7% Unity and -7% Pop Amenity Usage from 10% and 40% ethics attraction from 50%
+ * Cosmogenesis:
+  * Requires 4 ascension perks from 3
+  * -25% diplomatic weight, -1 envoy, -20 trust cap, -35% envoy improve relations
+  * Advanced Logic: +0% physics research from +10%
+  * Gravitational Tools: +0% society research from +10%
+  * Eternal Expansion: +0% engineering research from +10%
+  * Rulebreaker: +0% physics research from +10%
 
 ### Boosts
  * Consecrate Worlds: Can now consecrate an occupied world
@@ -108,6 +114,9 @@
  * Sovereign Guardian: -40% to empire size from pops from -50%
  * Barbaric Despoiler: +25% market fee
  * Catalytic Converter: reduce alloy production by -0.5 and councilor position now gives +1% bonus to alloy production from +2%
+ * Genesis Guides:
+   * Base Unity from uplifting 500 unity from 1000 unity
+   * Void Dwellers / Shattered Ring Worlds: 50% increase to colony ship cost and speed, with 50% increased time to create a new colony
 
 ### Boosts
  * Efficient Bureaucracy: -3% Empire Size
@@ -142,7 +151,7 @@
  * Static Research Analysis: +0 intel decryption from +1
  * Sovereign Guardian: -40% to empire size from pops from -50%
  * Catalytic Converter: reduce alloy production by -0.5
-
+ * Rogue Servitor: +5% empire size from population
 
 ### Boosts
  * None

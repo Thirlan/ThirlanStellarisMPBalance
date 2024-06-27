@@ -10,6 +10,12 @@ unholy_matrimony = {
 	pop_purge_speed = -0.25
 }
 
+different_worlds = {
+	ship_colonizer_cost_mult = 0.5
+	ship_colonizer_time_cost_mult = 0.5
+	planet_colony_development_speed_mult = -0.5
+}
+
 # Game overrides
 over_starbase_capacity = {
 	starbases_upkeep_mult = 0.35

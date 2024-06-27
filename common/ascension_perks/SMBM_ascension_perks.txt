@@ -143,6 +143,13 @@ ap_cosmogenesis = {
 		}
 		activate_crisis_progression = cosmogenesis_path
 	}
+	
+	modifier = {
+		envoys_add = -1
+		diplo_weight_mult = -0.25
+		country_trust_cap_add = -20
+		envoy_improve_relations_mult = -0.35
+	}
 
 	ai_weight = {
 		factor = 7.5

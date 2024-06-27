@@ -1,3 +1,19 @@
+# 2024/06/27 - 1.12.0
+
+Upgrade to 3.12.5 and added some additional meta. Rogue Servitor nerf should have been there a year ago.
+
+Added:
+ * Cosmogenesis:
+  * -25% diplomatic weight, -1 envoy, -20 trust cap, -35% envoy improve relations
+  * Advanced Logic: +0% physics research from +10%
+  * Gravitational Tools: +0% society research from +10%
+  * Eternal Expansion: +0% engineering research from +10%
+  * Rulebreaker: +0% physics research from +10%
+ * Genesis Guides:
+   * Base Unity from uplifting 500 unity from 1000 unity
+   * Void Dwellers / Shattered Ring Worlds: 50% increase to colony ship cost and speed, with 50% increased time to create a new colony
+ * Rogue Servitor: +5% empire size from population
+
 # 2024/06/07 - 1.11.3
 
 Quick fix to remove duplicate consumer goods resource

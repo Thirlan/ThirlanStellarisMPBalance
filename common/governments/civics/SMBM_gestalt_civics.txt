@@ -141,6 +141,45 @@ civic_hive_sovereign_guardianship = {
 # Machine Empire
 ##################
 
+civic_machine_servitor = {
+	playable = { has_synthetic_dawn = yes }
+	potential = { authority = { value = auth_machine_intelligence } }
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_terminator
+				value = civic_machine_assimilator
+			}
+		}
+		origin = {
+			NOT = {
+				value = origin_machine
+			}
+		}
+	}
+	modification = no
+	random_weight = {
+		base = @civic_default_random_weight
+		modifier = {
+			factor = 0
+			has_synthetic_dawn = no
+		}
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	description = civic_tooltip_machine_servitor_effects
+	has_secondary_species = {	# see game_start.12
+		title = civic_machine_servitor_secondary_species
+	}
+	modifier = {
+		councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
+		empire_size_pops_mult = 0.05
+	}
+}
+
 civic_machine_terminator = {
 	playable = { has_synthetic_dawn = yes }
 	potential = { authority = { value = auth_machine_intelligence } }

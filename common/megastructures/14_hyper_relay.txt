@@ -252,7 +252,7 @@ hyper_relay_restored = {
 			}
 		}
 	}
-  
+
 	construction_blocks_and_blocked_by = self_type
 	on_build_start = {
 		fromfrom = {

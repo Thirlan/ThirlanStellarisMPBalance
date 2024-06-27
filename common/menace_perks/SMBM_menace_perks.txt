@@ -1,0 +1,57 @@
+# MENACE PERKS
+# menp_name = {
+#	portrait = "GFX_crisis_1_perk_1"	# Icon that will be used to display the perk
+#	modifier = {						# static modifier added to the country for as long as they have the perk
+#		pop_purge_mult = 5.0
+#	}
+#	on_unlock = {						# Effect that will be executed when the country receives perk
+#		log = "Country [This.GetName] received menace perk 'menp_name'"
+#	}
+#	resources = {						# resources for the country that has the perk. Only upkeep and produces are hooked in
+#		category = menace_perks
+#		produces = {
+#			alloys = 1
+#		}
+#		upkeep = {
+#			energy = 1
+#		}
+#	}
+# }
+
+###Cosmogenesis
+#Level 1
+#Advanced Logic
+menp_cosmo_objectives = {
+	portrait = "GFX_crisis_icon_advanced_logic"
+
+	on_unlock = {
+		custom_tooltip = unlocks_cosmo_objectives
+	}
+}
+
+#Gravity Tools
+menp_cosmo_features_2 = {
+	portrait = "GFX_crisis_icon_gravitational_tools"
+
+	on_unlock = {
+		custom_tooltip = unlocks_features_2
+	}
+}
+
+#Eternal Expansion
+menp_cosmo_features_3 = {
+	portrait = "GFX_crisis_icon_eternal_expansion"
+
+	on_unlock = {
+		custom_tooltip = unlocks_features_3
+	}
+}
+
+#Reality Theses
+menp_cosmo_features_4 = {
+	portrait = "GFX_crisis_icon_reality_theses"
+
+	on_unlock = {
+		custom_tooltip = unlocks_features_4
+	}
+}
