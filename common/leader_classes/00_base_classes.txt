@@ -144,6 +144,11 @@ official = {
 			SCOPE = federation
 			MODIFIER = federation
 		}
+		inline_script = {
+			script = paragon/num_traits_with_modifier
+			SCOPE = galactic_community
+			MODIFIER = galcom
+		}
 	}
 
 	replaces_old_class = "governor"
@@ -208,7 +213,10 @@ commander = {
 			add = 10
 			exists = FROM
 			from = {
-				is_scope_type = fleet
+				or = {
+					is_scope_type = fleet
+					is_scope_type = ship
+				}
 				is_civilian = no
 			}
 		}
@@ -216,7 +224,10 @@ commander = {
 			potential = {
 				exists = FROM
 				from = {
-					is_scope_type = fleet
+					or = {
+						is_scope_type = fleet
+						is_scope_type = ship
+					}
 					is_civilian = no
 				}
 			}

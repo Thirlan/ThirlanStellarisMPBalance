@@ -1,0 +1,45 @@
+##########################
+#                        #
+# Machine Age DLC Events #
+#                        #
+##########################
+
+namespace = cyber
+
+
+###################################
+#Guided Sapience
+###################################
+
+#Bonsus Unity for Uplifiting
+planet_event = {
+	id = cyber.7020
+	title = cyber.7020.name
+	desc = cyber.7020.desc
+	picture = GFX_evt_friendly_enlightenment
+	show_sound = event_alien_nature
+	location = ROOT
+	trackable = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			is_guided_sapience_empire = yes
+		}
+		has_planet_flag = pre_sapient_planet
+	}
+
+	option = {
+		name = cyber.7020.a
+		owner = {
+			add_resource = {
+				unity = 500
+				mult = value:presapients_guided_mult
+			}
+		}
+	}
+	after = {
+		remove_deposit = d_genesis_preserve
+		add_deposit = d_genesis_monument
+	}
+}
