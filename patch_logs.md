@@ -1,3 +1,13 @@
+# 2024/08/17 - 1.12.1
+
+Addressing some meta issues
+
+Added:
+ * Cosmogenesis: -50% to naval capacity
+ * Virtual Focus (Policy): +60% research boost from +80%
+ * Robots: Researchers require +0.1 alloy upkeep
+ * Synthetic Fertility: Identity Repository gives +1.5 resource per identity from +2.0
+
 # 2024/06/27 - 1.12.0
 
 Upgrade to 3.12.5 and added some additional meta. Rogue Servitor nerf should have been there a year ago.
