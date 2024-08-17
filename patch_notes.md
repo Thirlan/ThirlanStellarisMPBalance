@@ -1,4 +1,4 @@
-# Version 1.12.0
+# Version 1.12.1
 
 ## General tweaks
 
@@ -11,6 +11,8 @@
  * Hydroponics Bay: 7 food from 10
  * Hyper Relays: AI weight 3 from 5 (reduce AI spamming)
  * Resource Silo: Energy cost removed, mineral cost 100 from 200 and max resource capacity +10,000 from +5,000
+ * Robots: Researchers require +0.1 alloy upkeep
+ * Virtual Focus (Policy): +60% research boost from +80%
  * Anti-Federation Snowballing:
    * FEDERATION_ENVOY_BASE_EFFECT: 0.8 from 1.0
    * FEDERATION_MEMBERS_PENALTY: -0.3 from -0.25
@@ -94,6 +96,7 @@
  * Cosmogenesis:
   * Requires 4 ascension perks from 3
   * -25% diplomatic weight, -1 envoy, -20 trust cap, -35% envoy improve relations
+  * -50% to naval capacity
   * Advanced Logic: +0% physics research from +10%
   * Gravitational Tools: +0% society research from +10%
   * Eternal Expansion: +0% engineering research from +10%
@@ -173,7 +176,8 @@
  * Clone Army: 1/4/5/8/12 to current pop assembly from 2/5/7/10/15
  * Necrophage: Population growth -5%
  * Fruitful Partnership: -33% damage to Tiyankis
- * Scion: -5% happiness, -20% Ethics attraction 
+ * Scion: -5% happiness, -20% Ethics attraction
+ * Synthetic Fertility: Identity Repository gives +1.5 resource per identity from +2.0
 
 ### Boosts
  * Hegemon: "Long live the hegemony" event gifts the player with +200 influence and +75 alloy 30 days after game start.

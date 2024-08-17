@@ -149,6 +149,7 @@ ap_cosmogenesis = {
 		diplo_weight_mult = -0.25
 		country_trust_cap_add = -20
 		envoy_improve_relations_mult = -0.35
+		country_naval_cap_mult = -0.5
 	}
 
 	ai_weight = {
