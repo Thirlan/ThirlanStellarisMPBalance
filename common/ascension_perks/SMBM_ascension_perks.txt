@@ -57,6 +57,10 @@ ap_become_the_crisis = {
 		}
 		activate_crisis_progression = nemesis_path
 	}
+	
+	modifier = {
+		all_technology_research_speed = -0.10
+	}
 
 	ai_weight = {
 		factor = 7.5
@@ -490,7 +494,7 @@ ap_machine_worlds = {
 
 	potential = {
 		host_has_dlc = "Synthetic Dawn Story Pack"
-		has_authority = auth_machine_intelligence
+		is_machine_empire = yes
 		NOT = {
 			has_ascension_perk = ap_machine_worlds
 		}
@@ -524,7 +528,7 @@ ap_hive_worlds = {
 
 	potential = {
 		host_has_dlc = "Utopia"
-		has_authority = auth_hive_mind
+		is_hive_empire = yes
 		NOT = {
 			has_ascension_perk = ap_hive_worlds
 		}

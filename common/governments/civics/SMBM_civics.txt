@@ -159,6 +159,22 @@ civic_exalted_priesthood = {
 			}
 		}
 	}
+	swap_type = {
+		description = "civic_tooltip_exalted_priesthood_techpriest_effects"
+
+		trigger = {
+			OR = {
+				AND = {
+					is_scope_valid = no
+					local_human_origin = origin_cybernetic_creed
+				}
+				AND = {
+					is_scope_valid = yes
+					has_origin = origin_cybernetic_creed
+				}
+			}
+		}
+	}
 }
 
 civic_meritocracy = {
@@ -1070,5 +1086,40 @@ civic_sovereign_guardianship = {
 	}
 	ai_weight = {
 		base = @civic_rare_random_weight
+	}
+}
+
+civic_individual_machine_replication = {
+	potential = {
+		species_archetype = {
+			value = MACHINE
+		}
+		authority = { NOT = { value = auth_corporate } }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	random_weight = { base = @civic_default_random_weight }
+	ai_weight = {
+		base = @ai_civic_default_base_weight
+	}
+	modifier = {
+		planet_pop_assembly_mult = 0.15
+	}
+}
+
+civic_individual_machine_predictive_analysis = {
+	potential = {
+		species_archetype = {
+			value = MACHINE
+		}
+		authority = { NOT = { value = auth_corporate } }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	random_weight = { base = @civic_default_random_weight }
+	ai_weight = {
+		base = @ai_civic_default_base_weight
+	}
+	modifier = {
+		num_tech_alternatives_add = 1
+		councilor_research_exp_gain = 0.10
 	}
 }

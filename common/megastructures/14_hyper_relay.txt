@@ -22,8 +22,10 @@ hyper_relay = {
 			energy = 2
 		}
 	}
+
 	construction_blocks_and_blocked_by = self_type
 	build_megastructure_no_cost_localization_key = "FLASH_FORGE_MEGASTRUCTURE"
+	custom_tooltip_requirements = "MEGASTRUCTURE_TOOLTIP_REQUIREMENTS_OUTSIDE_GRAVITY_WELL"
 
 	dismantle_cost = {
 		category = megastructures_hyper_relay
@@ -121,7 +123,7 @@ hyper_relay = {
 	# root = system
 	# from = country
 	ai_weight = {
-		factor = 3
+		factor = 2
 
 		modifier = {
 			factor = 3
