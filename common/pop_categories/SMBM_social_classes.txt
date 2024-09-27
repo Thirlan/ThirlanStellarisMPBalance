@@ -103,7 +103,7 @@ ruler = {
 		potential = {
 			exists = owner
 			owner = {
-				has_authority = auth_oligarchic
+				is_oligarchic_authority = yes
 				has_country_flag = cyber_individualist
 			}
 		}
@@ -220,7 +220,7 @@ specialist = {
 		potential = {
 			exists = owner
 			owner = {
-				has_authority = auth_democratic
+				is_democratic_authority = yes
 				has_country_flag = synth_physical
 			}
 		}
@@ -414,6 +414,20 @@ worker = {
 
 		pop_happiness = 0.10
 	}
+	triggered_planet_modifier = {
+		potential = {
+			is_unemployed = yes
+			planet = { has_modifier = penal_colony }
+		}
+		planet_crime_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_unemployed = no
+			planet = { has_modifier = penal_colony }
+		}
+		planet_crime_add = 3
+	}
 
 	# This is called whenever a Pop is created, moved to a different planet, or gets a new owner
 	assign_to_pop = {
@@ -501,7 +515,7 @@ worker = {
 			trigger = {
 				has_trait = trait_cybernetic
 				owner = {
-					has_authority = auth_democratic
+					is_democratic_authority = yes
 					has_country_flag = cyber_collectivist
 				}
 			}

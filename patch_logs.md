@@ -1,3 +1,25 @@
+# 2024/09/27 - 1.13.0
+
+Updated to be 3.13.1 compliant.
+
+Added:
+ * Individual Machine Replication: +15% mechanical pop assembly speed from +20%
+ * Individual Machine Predictive Analysis: +0 intel decryption from +1
+ * Become the crisis: -10% Research speed
+ * Disruptor level 1: Tech lasers level 3 and tech mass driver level 2 is a requirement
+ 
+Modified:
+ * Hyper Relays: AI weight 2 from 5 (reduce AI spamming)
+ * Cave Dwellers: pop growth speed -10% from -20%
+ * Venerable: -1 to leader negative traits and -10% to leader upkeep
+
+Removed:
+ * Life Seeded: Starbase influence and material cost -10%
+ * Nonadaptive: -6% habitability from -10%
+
+Cave Dwellers were given the bonus to be less affected by storms, as such we are adding back the empire size penalty to balance out.
+Venerable now has an inbuilt "Talented", so effectively you are getting Venerable for 3 points and Talented for 1 point for a total of 4 points.
+
 # 2024/08/17 - 1.12.1
 
 Addressing some meta issues
