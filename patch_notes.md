@@ -1,4 +1,4 @@
-# Version 1.12.1
+# Version 1.13.0
 
 ## General tweaks
 
@@ -9,7 +9,7 @@
  * LEADER_AGE_HIGH_DEATH_CHANCE_AGE: 90 from 100 (Boost to Venerable and Enduring)
  * Empire Leader Cap: 2 from 3 (Boost to game mechanics like Heroic Tales)
  * Hydroponics Bay: 7 food from 10
- * Hyper Relays: AI weight 3 from 5 (reduce AI spamming)
+ * Hyper Relays: AI weight 2 from 5 (reduce AI spamming)
  * Resource Silo: Energy cost removed, mineral cost 100 from 200 and max resource capacity +10,000 from +5,000
  * Robots: Researchers require +0.1 alloy upkeep
  * Virtual Focus (Policy): +60% research boost from +80%
@@ -50,6 +50,7 @@
    * Prethoryn and Contingency can now spawn if Jump Drives researched. Jump drives also increase the odds of the crisis spawning sooner from 19% to 37%.
    * Range decreased by 25%
    * Jump drive penalty increased to -60% to weapons/movement from -50%
+ * Disruptor level 1: Tech lasers level 3 and tech mass driver level 2 is a requirement
 
 ### Boosts
  * Corvettes: Ship speed 170 from 160, evasion 62 from 60
@@ -88,7 +89,7 @@
 
 ### Nerfs
  * Technological Ascendency: +7% Research rate from +10%
- * Become the crisis: requires 4 ascension perks from 3
+ * Become the crisis: requires 4 ascension perks from 3 and -10% research speed
  * Hive World: requires 3 ascension perks from 0
  * Machine World: requires 3 ascension perks from 0
  * Arcology Project: requires 3 Ascension perks from 2
@@ -120,6 +121,8 @@
  * Genesis Guides:
    * Base Unity from uplifting 500 unity from 1000 unity
    * Void Dwellers / Shattered Ring Worlds: 50% increase to colony ship cost and speed, with 50% increased time to create a new colony
+ * Individual Machine Replication: +15% mechanical pop assembly speed from +20%
+ * Individual Machine Predictive Analysis: +0 intel decryption from +1
 
 ### Boosts
  * Efficient Bureaucracy: -3% Empire Size
@@ -182,9 +185,8 @@
 ### Boosts
  * Hegemon: "Long live the hegemony" event gifts the player with +200 influence and +75 alloy 30 days after game start.
  * Common Ground: "Live long and prosper" event gifts the player +125 influence 30 days after game start along with a crewed science ship.
- * Life Seeded: Starbase influence and material cost -10%
  * Doomsday: stage 1 now takes ~2 years to trigger from 5 days, with stage 2 taking ~17 years from ~11 years
- * Cave Dwellers: pop growth speed -10% from -20% and 0% species empire size modifier from 10%
+ * Cave Dwellers: pop growth speed -10% from -20%
  * Rift World: +15% to physics research
  * Fear of the Dark: 0 to tech alternatives and leaderpool size from -1
  * Knights of the Toxic Gods: +1 ship sensor range
@@ -216,9 +218,8 @@
  * Inorganic Breath: 35% increase maintenance from 50%
  * Conformist: +40% government ethics attraction from +30%
  * Conservationist: -13% pop consumer goods upkeep from -10%
- * Nonadaptive: -6% habitability from -10%
  * Communal: -13% housing from -10%
- * Venerable: +2% to research and unity
+ * Venerable: -1 to leader negative traits and -10% to leader upkeep
  * Industrious: +20% to minerals from +15%
  * Quick Learner: +15% experience from +10%
  

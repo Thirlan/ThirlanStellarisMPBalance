@@ -177,7 +177,6 @@ trait_thrifty = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	opposites = { "trait_hive_mind" "trait_cyborg_scarcity_algorithms" }
 	forbidden_ethics = { ethic_gestalt_consciousness }
-
 	modifier = {
 		pop_job_trade_mult = 0.20
 	}
@@ -347,7 +346,7 @@ trait_nonadaptive = {
 	opposites = { "trait_adaptive" "trait_extremely_adaptive" "trait_robust" "trait_adaptive_lithoid" }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		pop_environment_tolerance = -0.06
+		pop_environment_tolerance = -0.10
 	}
 	slave_cost = {
 		energy = -200
@@ -868,7 +867,7 @@ trait_deviants = {
 	modifier = { pop_government_ethic_attraction = -0.15 }
 
 	allowed_archetypes = { BIOLOGICAL LITHOID }
-	opposites = { "trait_conformists" "trait_hive_mind" "trait_machine_unit" }
+	opposites = { "trait_conformists" "trait_hive_mind" }
 	ai_weight = {
 		weight = 0
 	}
@@ -892,10 +891,8 @@ trait_venerable = {
 	potential_crossbreeding_chance = 1.0
 	modifier = {
 		leader_lifespan_add = 80
-		planet_jobs_physics_research_produces_mult = 0.02
-		planet_jobs_society_research_produces_mult = 0.02
-		planet_jobs_engineering_research_produces_mult = 0.02
-		planet_jobs_unity_produces_mult = 0.02
+		negative_leader_traits_species = -1
+		leaders_upkeep_mult = -0.1
 	}
 	opposites = { "trait_enduring" "trait_fleeting" "trait_fleeting_lithoid" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }

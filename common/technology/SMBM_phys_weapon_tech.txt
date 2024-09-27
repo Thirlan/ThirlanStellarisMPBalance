@@ -1,0 +1,75 @@
+# ## Physics - Weapon Technologies
+
+# ##################
+# Laser Weapons
+# ##################
+
+# ##################
+# Plasma Weapons
+# ##################
+
+# ##################
+# Disruptor Weapons
+# ##################
+
+tech_disruptors_1 = {
+	area = physics
+	cost = @tier2cost2
+	tier = 2
+	category = { particles }
+	ai_update_type = military
+	weight = @tier2weight2
+
+	prerequisites = { "tech_lasers_3" "tech_mass_drivers_2" }
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		
+		modifier = {
+			factor = 0.5
+			NOT = {
+				has_technology = "tech_lasers_1"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+}
+
+# ##################
+# Energy Torpedo Weapons
+# ##################
+
+# ##################
+# Point-Defense
+# ##################
+
+# ##################
+# Critter Weapons
+# ##################
+
