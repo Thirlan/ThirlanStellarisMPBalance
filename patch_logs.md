@@ -1,3 +1,7 @@
+# 2024/09/27 - 1.13.1
+
+Hotfix for Paradox to fix the machine fabricators from 1 to 2 : P
+
 # 2024/09/27 - 1.13.0
 
 Updated to be 3.13.1 compliant.

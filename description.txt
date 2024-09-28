@@ -1,3 +1,3 @@
-Version 1.13.0: Simple straightforward balance mod for multiplayer. Balances notes (and source code) can be found here.
+Version 1.13.1: Simple straightforward balance mod for multiplayer. Balances notes (and source code) can be found here.
 
 https://github.com/Thirlan/ThirlanStellarisMPBalance/blob/master/patch_notes.md
