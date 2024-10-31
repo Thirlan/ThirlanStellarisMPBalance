@@ -1,4 +1,4 @@
-# Version 1.13.1
+# Version 1.14.1
 
 ## General tweaks
 
@@ -11,7 +11,8 @@
  * Hydroponics Bay: 7 food from 10
  * Hyper Relays: AI weight 2 from 5 (reduce AI spamming)
  * Resource Silo: Energy cost removed, mineral cost 100 from 200 and max resource capacity +10,000 from +5,000
- * Robots: Researchers require +0.1 alloy upkeep
+ * Robots:
+   * Researchers require +0.1 alloy upkeep
  * Virtual Focus (Policy): +60% research boost from +80%
  * Anti-Federation Snowballing:
    * FEDERATION_ENVOY_BASE_EFFECT: 0.8 from 1.0
@@ -21,6 +22,11 @@
 
 ### Boosts
  * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -40% defense platform build cost and +20% starbase damage boost for the first 20 years of the game.
+ * Storm Preparations (planet decision):
+   * Takes 90 days to enact and lasts until cancelled
+   * costs 250 unity + additional resources the more pops there are above 10
+   * Gives -25% to storm devastation, but -10% to jobs production and -100% to immigration pull
+ * Storm Protection (event): At start of game can decide if Storms should be repulsed from your Empire borders
  * Traders: +9 trade value from +8
  * Espionage Operations:
    * Difficulties reduced by 4 (include pre-ftl)
@@ -56,6 +62,15 @@
  * Corvettes: Ship speed 170 from 160, evasion 62 from 60
  * Shields: Increased health by 10%
 
+## Governments
+
+ ### Boosts
+  * Hive minds: +2 encryption
+  
+ ### Nerfs
+  * Gestalts: +0 encryption from +2
+  * Machine Intelligence: -2 encryption
+
 ## Traditions
 
 ### Nerfs
@@ -70,7 +85,6 @@
    * Adoption: max rivalries +0 from +1
    * Outpace: +10% damage to rivals from +15%
  * Virtuality:
-  * Data-Driven Logic Loops: -10% to empire size from pops from -15%, +125% empire size from planets from +100% and +25% empire size from districts
   * Clustered Capacity: +125% resources from jobs from +175%
 
 
@@ -113,7 +127,7 @@
 ### Nerfs
  * Fanatic Purifiers: +25% market fee
  * Meritocracy: Specialist pop resource output +5% from +10%
- * Parliamentary System: +30% unity from factions from +40%
+ * Parliamentary System: +30% unity from factions from +40% and cannot be removed once chosen
  * Citizen Service: +10% Naval capacity from +15%
  * Sovereign Guardian: -40% to empire size from pops from -50%
  * Barbaric Despoiler: +25% market fee

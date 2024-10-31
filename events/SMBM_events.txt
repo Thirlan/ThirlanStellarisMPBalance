@@ -26,6 +26,10 @@ event = {
                 days = 10
             }
             country_event = {
+                id = smbm.5
+                days = 10
+            }
+            country_event = {
                 id = smbm.6
                 days = 30
             }
@@ -122,6 +126,31 @@ country_event = {
 
 	option = {
 		name = smbm.4.option
+	}
+}
+
+# Storm Protection: Prevent storms from approaching in the first 10 years
+country_event = {
+	id = smbm.5
+	title = smbm.5.name
+	desc = smbm.5.desc
+	
+	picture = GFX_evt_sapient_AI
+	show_sound = event_default
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = smbm.5.option.a
+		add_modifier = { modifier = "planet_storm_protection" days = 3650 }
+	}
+	
+	option = {
+		name = smbm.5.option.b
 	}
 }
 

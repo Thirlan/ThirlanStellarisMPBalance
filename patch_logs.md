@@ -1,3 +1,28 @@
+# 2024/10/31 - 1.14.1
+
+Fixed Storm Preparations (Planet decision) so it lasts until cancelled.
+
+# 2024/10/31 - 1.14.0
+
+Added:
+ * Storm Preparations (Planet decision):
+   * Takes 90 days to enact and lasts until cancelled
+   * costs 250 unity + additional resources the more pops there are above 10
+   * Gives -25% to storm devastation, but -10% to jobs production and -100% to immigration pull
+ * Storm Protection (Event): At start of game can decide if Storms should be repulsed from your Empire borders
+ * Robots: further nerfed them
+   * Gestalt: removed +2 encryption
+   * Hive mind: +2 encryption
+   * Machine Intelligence: -2 encryption (a fully connected machine is easy to hack into)
+
+Changed:
+ * Parliamentary System: can no longer be removed once chosen
+
+Removed:
+ * Machine fabricator hotfix
+ * Virtuality:
+  * Data-Driven Logic Loops: -10% to empire size from pops from -15%, +125% empire size from planets from +100% and +25% empire size from districts
+
 # 2024/09/27 - 1.13.1
 
 Hotfix for Paradox to fix the machine fabricators from 1 to 2 : P

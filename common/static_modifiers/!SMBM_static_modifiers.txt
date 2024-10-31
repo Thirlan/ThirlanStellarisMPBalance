@@ -25,3 +25,17 @@ jump_drive_cooldown = {
 	ship_weapon_damage = -0.6
 	ship_speed_mult = -0.6
 }
+
+planet_storm_preparations = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_default.dds"
+	icon_frame = 2
+    planet_storm_devastation_mult = -0.25
+	planet_jobs_produces_mult = -0.1
+	planet_immigration_pull_mult = -1.0
+}
+
+planet_storm_protection = {
+	country_storm_repulsion_influence_add = 1.0
+}
+
+
