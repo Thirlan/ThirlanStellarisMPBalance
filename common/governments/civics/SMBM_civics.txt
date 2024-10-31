@@ -426,6 +426,7 @@ civic_agrarian_idyll = {
 }
 
 civic_parliamentary_system = {
+	modification = no
 	potential = {
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
 		authority = { NOT = { value = auth_corporate } }
