@@ -1,3 +1,7 @@
+# 2024/10/31 - 1.14.1
+
+Fixed Storm Preparations (Planet decision) so it lasts until cancelled.
+
 # 2024/10/31 - 1.14.0
 
 Added:

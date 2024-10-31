@@ -1,4 +1,4 @@
-# Version 1.14.0
+# Version 1.14.1
 
 ## General tweaks
 
@@ -22,6 +22,11 @@
 
 ### Boosts
  * Be careful out there (anti-rush event): All players (AIs not included) start with a passive -40% defense platform build cost and +20% starbase damage boost for the first 20 years of the game.
+ * Storm Preparations (planet decision):
+   * Takes 90 days to enact and lasts until cancelled
+   * costs 250 unity + additional resources the more pops there are above 10
+   * Gives -25% to storm devastation, but -10% to jobs production and -100% to immigration pull
+ * Storm Protection (event): At start of game can decide if Storms should be repulsed from your Empire borders
  * Traders: +9 trade value from +8
  * Espionage Operations:
    * Difficulties reduced by 4 (include pre-ftl)
@@ -122,7 +127,7 @@
 ### Nerfs
  * Fanatic Purifiers: +25% market fee
  * Meritocracy: Specialist pop resource output +5% from +10%
- * Parliamentary System: +30% unity from factions from +40%
+ * Parliamentary System: +30% unity from factions from +40% and cannot be removed once chosen
  * Citizen Service: +10% Naval capacity from +15%
  * Sovereign Guardian: -40% to empire size from pops from -50%
  * Barbaric Despoiler: +25% market fee

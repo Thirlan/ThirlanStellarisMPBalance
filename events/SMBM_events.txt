@@ -142,7 +142,6 @@ country_event = {
 	
 	trigger = {
 		is_ai = no
-		host_has_dlc = "Cosmic Storms"
 	}
 
 	option = {

@@ -45,7 +45,12 @@ JUMP_DRIVE_PENALTY:0 "While Jump Drive is recharging, this fleet suffers the fol
  different_worlds: "Different Worlds"
  different_worlds_desc: "Genesis Guide Void Dweller/Shattered Ring nerf"
 
+ decision_planet_storm_preparations: "Storm Preparations"
+ decision_planet_storm_preparations_desc: "Preparation measures to reduce the damage of the incoming storm"
+ decision_stop_planet_storm_preparations: "End Storm Preparations"
+ decision_stop_planet_storm_preparations_desc: "End the special preparation measures"
  planet_storm_preparations: "Storm Preparations"
+ planet_storm_preparations_desc: "Storm Preparation Measures"
  planet_storm_protection: "Storm Protection"
  planet_storm_protection_desc: "Storms will not enter your Empire borders"
 

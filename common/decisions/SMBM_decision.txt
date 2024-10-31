@@ -9,8 +9,6 @@ decision_planet_storm_preparations = {
     enactment_time = 90
 	
 	potential = {
-		is_ai = no
-		host_has_dlc = "Cosmic Storms"
 		has_storm_resistant_production_building = no
 	}
 	
@@ -65,7 +63,7 @@ decision_planet_storm_preparations = {
 	}
 
 	effect = {
-		add_modifier = { modifier = "planet_storm_preparations" days = 365 }
+		add_modifier = { modifier = "planet_storm_preparations" days = -1 }
 	}
 
 	ai_weight = {
@@ -81,7 +79,6 @@ decision_stop_planet_storm_preparations = {
 	enactment_time = 0
 
 	potential = {
-		is_ai = no
 		has_modifier = planet_storm_preparations
 	}
 
