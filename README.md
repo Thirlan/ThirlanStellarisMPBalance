@@ -20,13 +20,15 @@ This mod is maintained by:
 
 A lot of appreciation for dedicated Youtubers such as Montu, ASPec, Strat
 
+* https://www.youtube.com/watch?v=PtB-AHKHrDc
+* https://www.youtube.com/watch?v=aMJi7pDd3bc
 * https://www.youtube.com/watch?v=TufYLfmxSgY&t=395s
 * https://www.youtube.com/watch?v=6x5oy2BKi94
-* https://www.youtube.com/watch?v=Q76JXW22ncc&ab_channel=MontuPlays
+* https://www.youtube.com/watch?v=Q76JXW22ncc
 * https://www.youtube.com/watch?v=TQJ9hkQ1Jo0
-* https://www.youtube.com/watch?v=VG5YSByzxgQ&ab_channel=MontuPlays
-* https://www.youtube.com/watch?v=LzhgFRXJ3D4&ab_channel=MontuPlays
-* https://www.youtube.com/watch?v=C88jv2OifnM&ab_channel=MontuPlays
+* https://www.youtube.com/watch?v=VG5YSByzxgQ
+* https://www.youtube.com/watch?v=LzhgFRXJ3D4
+* https://www.youtube.com/watch?v=C88jv2OifnM
 * https://www.youtube.com/watch?v=Cb3qwE8Px-8
 
 As well as other players and modders: Komrad Truck, Jojo, OldEnt (ACE) and Corsairmarks
@@ -55,7 +57,7 @@ Thus any decision to balance something will focus on doing it with the simplest 
 ### Nerf Overpowered mechanics
 Very self-explanatory. We will nerf those mechanics that are universally considered S class (overpowered). Anything that is A or lower will not be nerfed. 
 
-How do we decide what is S powered? This will be done after reviewing personal feedback from several players, youtube videos explaining exploits from established members of the community (such as Stefan Anon, Montu, Komrad Truck, ASPec etc...), chats on the Stellaris forums and so on forth.
+How do we decide what is S powered? This will be done after reviewing personal feedback from several players, youtube videos explaining exploits from established members of the community (such as Montu, Komrad Truck, ASPec etc...), chats on the Stellaris forums and so on forth.
 
 ### Boost Underpowered mechanics
 Some mechanics are overpowered because others are RELATIVELY underpowered. Hence some of the clearly underpowered mechanics will be given boosts.

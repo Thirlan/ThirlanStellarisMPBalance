@@ -1,12 +1,9 @@
-# Version 1.14.1
+# Version 1.14.2
 
 ## General tweaks
 
 ### Nerfs
- * Unholy Matrimony Event (Necrophage and Fanatical Purifier): -25% purge speed penalty to all players (AIs not included)
  * Starbase overcapacity upkeep penalty: +35% from +25%
- * LEADER_AGE_DEATH_CHANCE_AGE: 70 from 80 (Boost to Venerable and Enduring)
- * LEADER_AGE_HIGH_DEATH_CHANCE_AGE: 90 from 100 (Boost to Venerable and Enduring)
  * Empire Leader Cap: 2 from 3 (Boost to game mechanics like Heroic Tales)
  * Hydroponics Bay: 7 food from 10
  * Hyper Relays: AI weight 2 from 5 (reduce AI spamming)
@@ -26,7 +23,7 @@
    * Takes 90 days to enact and lasts until cancelled
    * costs 250 unity + additional resources the more pops there are above 10
    * Gives -25% to storm devastation, but -10% to jobs production and -100% to immigration pull
- * Storm Protection (event): At start of game can decide if Storms should be repulsed from your Empire borders
+ * Storm Protection (event): At start of game can decide if Storms should be repulsed from your Empire borders for 20 years
  * Traders: +9 trade value from +8
  * Espionage Operations:
    * Difficulties reduced by 4 (include pre-ftl)
@@ -38,13 +35,12 @@
 ## AI exploitation
 
 ## Nerfs
- * Anti-AI Trade exploits:
-   * MIGRATION_PACT_ACCEPTANCE_OPINION_FACTOR: 0.4 from 0.5
-   * EMBASSY_ACCEPTANCE_OPINION_FACTOR: 0.4 from 0.5
-   * RESEARCH_AGREEMENT_ACCEPTANCE_OPINION_FACTOR: 0.3 from 0.4
-   * RESEARCH_AGREEMENT_ACCEPTANCE_NUM_PACTS: -40 from -30
-   * RESEARCH_AGREEMENT_ACCEPTANCE_GIVEN_TECHS: -0.6 from -0.5
-   * RESEARCH_AGREEMENT_SPEED_MULT: 0.15 from 0.25
+ * MIGRATION_PACT_ACCEPTANCE_OPINION_FACTOR: 0.4 from 0.5
+ * EMBASSY_ACCEPTANCE_OPINION_FACTOR: 0.4 from 0.5
+ * RESEARCH_AGREEMENT_ACCEPTANCE_OPINION_FACTOR: 0.3 from 0.4
+ * RESEARCH_AGREEMENT_ACCEPTANCE_NUM_PACTS: -40 from -30
+ * RESEARCH_AGREEMENT_ACCEPTANCE_GIVEN_TECHS: -0.6 from -0.5
+ * RESEARCH_AGREEMENT_SPEED_MULT: 0.15 from 0.25
 
 ## Boosts
  * None
@@ -87,7 +83,6 @@
  * Virtuality:
   * Clustered Capacity: +125% resources from jobs from +175%
 
-
 ### Boosts
  * Aptitude:
    * Finisher: +15% leader experience
@@ -125,7 +120,9 @@
 ## Standard Civics
 
 ### Nerfs
- * Fanatic Purifiers: +25% market fee
+ * Fanatic Purifiers:
+   * +25% market fee
+   * Event (Necrophage) -> -25% purge speed penalty
  * Meritocracy: Specialist pop resource output +5% from +10%
  * Parliamentary System: +30% unity from factions from +40% and cannot be removed once chosen
  * Citizen Service: +10% Naval capacity from +15%
@@ -134,7 +131,7 @@
  * Catalytic Converter: reduce alloy production by -0.5 and councilor position now gives +1% bonus to alloy production from +2%
  * Genesis Guides:
    * Base Unity from uplifting 500 unity from 1000 unity
-   * Void Dwellers / Shattered Ring Worlds: 50% increase to colony ship cost and speed, with 50% increased time to create a new colony
+   * Event (Void Dwellers / Shattered Ring) -> 100% increase to colony ship cost and speed, with 100% increased time to create a new colony
  * Individual Machine Replication: +15% mechanical pop assembly speed from +20%
  * Individual Machine Predictive Analysis: +0 intel decryption from +1
 
@@ -191,20 +188,25 @@
 ### Nerfs
  * Imperial Fiefdom origin: -5% happiness, -20% Ethics attraction and Overlord starting opinion bonus 1 from 120
  * Clone Army: 1/4/5/8/12 to current pop assembly from 2/5/7/10/15
- * Necrophage: Population growth -5%
  * Fruitful Partnership: -33% damage to Tiyankis
  * Scion: -5% happiness, -20% Ethics attraction
  * Synthetic Fertility: Identity Repository gives +1.5 resource per identity from +2.0
+ * Shattered Ring (robots): 100% increase to colony ship cost and speed, with 100% increased time to create a new colony
+ * Teachers of the Shroud: event -> -10% unity for 30 years
+ * Arc Welders: -1 envoys, -20% first contact speed, -20% infiltration, -1 influence and -15% to society research
+ * Progenitor Hive: -75% proginator negative effects from -50% and +1 negative traits
+ * Voidforged: 100% increase to colony ship cost and speed, with 100% increased time to create a new colony
 
 ### Boosts
- * Hegemon: "Long live the hegemony" event gifts the player with +200 influence and +75 alloy 30 days after game start.
- * Common Ground: "Live long and prosper" event gifts the player +125 influence 30 days after game start along with a crewed science ship.
- * Doomsday: stage 1 now takes ~2 years to trigger from 5 days, with stage 2 taking ~17 years from ~11 years
  * Cave Dwellers: pop growth speed -10% from -20%
  * Rift World: +15% to physics research
  * Fear of the Dark: 0 to tech alternatives and leaderpool size from -1
- * Knights of the Toxic Gods: +1 ship sensor range
  * Payback: +15% Ship fire rate
+ * Doomsday (non-robot): Destruction will start after 5 years instead of 5 days
+ * Life Seeded: Starbase influence and material cost -10%
+ * Broken Shackle: available envoys +2 from +1, infiltration speed +30% from +20% and first contact speed +30% from +20%
+ * Storm Chasers: +15% energy from jobs
+ * Primal Calling: +15% to society research
  
 ## Species Traits:
 
@@ -221,6 +223,7 @@
  * Phototrophic: 55% food and energy from 50%
  * Incubators: 25% population growth from 30%
  * Invasive Species: 4% from 5% for pop growth and habitability
+ * Deviants: -30% ethics attraction from -15%
 
 ### Boosts
  * Slow Breeders: -6% from -10%
@@ -240,24 +243,31 @@
 ## Robot Traits:
 
 ### Nerfs
- * Logic Engines: +8% research from +10%
  * Mass Produced: +10% assembly speed from +15%
  * Emotion Emulator: +15% to amenities from +20%
- * Adaptive Frames: +10% to upkeep
- * Bulky: +13% housing from +10%
+ * Adaptive Frames: +15% to upkeep
+ * Bulky: +15% housing from +10%
  * Repurposed Hardware: -15% experience from -10%
- * Trading Algorithms: +20% trade from +25%
- * High Bandwidth: +13% empire size from pops from +10%
+ * Exotic Fuel Consumption: +8% resources from +10%
+ * Rare Crystal Exterior: +15% resources from +20%
+ * Nannybot: +4% Amenities from 5%
+ * Conversational AI: -1.75% upkeep from jobs from -2.0%
+ * Dark Matter Engines: +30% resources from +40%
+ * Luxurious: +30% assembly cost from +20%
 
 ### Boosts
  * Custom made: -10% assembly speed from -15%
- * Recycled: -30% assembly cost from -20%
  * Uncanny: -15% to amenities from -20%
- * Double-jointed: -13% housing from -10%
+ * Double-jointed: -15% housing from -10%
  * Power Drill: +20% to minerals from +15%
  * Learning Algorithms: +15% experience from +10%
- * Scarcity Subroutines: -20% trade from -25%
  * Warbot (History Trait): +10% Army damage from +5%
+ * Art Generator (History Trait): +4% unity from +2%
+ * Propaganda Machine: 20% unity from 15%
+ * Sociology Core: +20% Society Research from +15%
+ * Integrated Weaponry: +100% Army Health
+ * Eternal Machine: -1 to leader negative traits and -10% to leader upkeep
+ * Recycled: -30% assembly cost from -20%
 
 ## Plantoids
 

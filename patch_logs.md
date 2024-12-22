@@ -1,3 +1,51 @@
+# 2024/12/23 - 1.14.2
+
+Clean up with updates to current meta, which is heavily in machine's favor.
+
+Added:
+ * Life Seeded: event -> +10% Population growth on your Gaia world permanently
+ * Broken Shackle: available envoys +2 from +1, infiltration speed +30% from +20% and first contact speed +30% from +20%
+ * Storm Chasers: +15% energy from jobs
+ * Primal Calling: +15% to society research
+ * Shattered Ring (robots): 100% increase to colony ship cost and speed, with 100% increased time to create a new colony
+ * Teachers of the Shroud: event -> -10% unity for 30 years
+ * Arc Welders: -1 envoys, -20% first contact speed, -20% infiltration, -1 influence and -15% to society research
+ * Progenitor Hive: -75% proginator negative effects from -50% and +1 negative traits
+ * Voidforged: 100% increase to colony ship cost and speed, with 100% increased time to create a new colony
+ * Art Generator (History Trait): +4% unity from +2%
+ * Propaganda Machine: 20% unity from 15%
+ * Sociology Core: +20% Society Research from +15%
+ * Integrated Weaponry: +100% Army Health
+ * Eternal Machine: -1 to leader negative traits and -10% to leader upkeep
+ * Exotic Fuel Consumption: +8% resources from +10%
+ * Rare Crystal Exterior: +15% resources from +20%
+ * Nannybot: +4% Amenities from 5%
+ * Conversational AI: -1.75% upkeep from jobs from -2.0%
+ * Dark Matter Engines: +30% resources from +40%
+ * Deviants: -30% ethics attraction from -15%
+ * Astro-mining Drones: cannot be removed once chosen
+
+Changed:
+ * Doomsday (non-robot): Destruction will start after 5 years instead of 5 days
+ * Bulky: +15% housing from +10%
+ * Double-jointed: -15% housing from -10%
+ * Adaptive Frames: +15% to upkeep
+ * Genesis Guides:
+   * Void Dwellers / Shattered Ring Worlds: 100% increase to colony ship cost and speed, with 100% increased time to create a new colony
+ * Storm Protection (event): At start of game can decide if Storms should be repulsed from your Empire borders for 20 years
+
+Removed:
+ * Common Ground: "Live long and prosper" event gifts the player +125 influence 30 days after game start along with a crewed science ship.
+ * Hegemon: "Long live the hegemony" event gifts the player with +200 influence and +75 alloy 30 days after game start.
+ * Knights of the Toxic Gods: +1 ship sensor range
+ * Necrophage: Population growth -5%
+ * Trading Algorithms: +20% trade from +25%
+ * Scarcity Subroutines: -20% trade from -25%
+ * High Bandwidth: +13% empire size from pops from +10%
+ * Logic Engines: +8% research from +10%
+ * LEADER_AGE_DEATH_CHANCE_AGE: 70 from 80 (Boost to Venerable and Enduring)
+ * LEADER_AGE_HIGH_DEATH_CHANCE_AGE: 90 from 100 (Boost to Venerable and Enduring)
+
 # 2024/10/31 - 1.14.1
 
 Fixed Storm Preparations (Planet decision) so it lasts until cancelled.
