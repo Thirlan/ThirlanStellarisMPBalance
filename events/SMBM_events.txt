@@ -14,6 +14,10 @@ event = {
                 is_ai = no
             }
             country_event = {
+                id = smbm.6
+                days = 1
+            }
+            country_event = {
                 id = smbm.2
                 days = 5
             }
@@ -28,10 +32,6 @@ event = {
             country_event = {
                 id = smbm.5
                 days = 10
-            }
-            country_event = {
-                id = smbm.6
-                days = 30
             }
             country_event = {
                 id = smbm.8
@@ -129,7 +129,7 @@ country_event = {
 	}
 }
 
-# Storm Protection: Prevent storms from approaching in the first 10 years
+# Storm Protection: Prevent storms from approaching in the first 20 years
 country_event = {
 	id = smbm.5
 	title = smbm.5.name
@@ -146,7 +146,7 @@ country_event = {
 
 	option = {
 		name = smbm.5.option.a
-		add_modifier = { modifier = "planet_storm_protection" days = 3650 }
+		add_modifier = { modifier = "planet_storm_protection" days = 7300 }
 	}
 	
 	option = {
@@ -154,53 +154,28 @@ country_event = {
 	}
 }
 
-# Live long and prosper: Common grounds boost
+# Life Seeded: food rich boost
 country_event = {
 	id = smbm.6
 	title = smbm.6.name
 	desc = smbm.6.desc
 	
-	picture = GFX_evt_crisis_defeated
-	show_sound = event_celebration
+	picture = GFX_evt_astral_rift_tropical_habitat
+	show_sound = ap_rift_event_31_tropical_paradise
 	
 	is_triggered_only = yes
 	
 	trigger = {
-        is_ai = no
-		has_origin = origin_common_ground
-	}
-
-	immediate = {
-		# science ship
-		create_fleet = {
-			effect = {
-				set_owner = prev
-
-				create_ship = {
-					name = "Longevity"
-					random_existing_design = science
-				}
-
-				set_fleet_stance = evasive
-				set_location = prev.capital_scope.star
-
-				owner = {
-					create_leader = {
-						class = scientist
-						sub_type = survey
-						name = random
-						species = owner_main_species
-					}
-				}
-				set_leader = last_created_leader
-			}
-		}
+		has_origin = origin_life_seeded
 	}
 
 	option = {
 		name = smbm.6.option
-		add_resource = {
-			influence = 125
+		home_planet = {
+			add_modifier = {
+				modifier = "food_rich_planet"
+				days = -1
+			}
 		}
 	}
 }

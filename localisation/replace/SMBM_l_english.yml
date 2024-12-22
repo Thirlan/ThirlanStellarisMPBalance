@@ -71,9 +71,9 @@ JUMP_DRIVE_PENALTY:0 "While Jump Drive is recharging, this fleet suffers the fol
  smbm.5.option.a: "Yes"
  smbm.5.option.b: "No"
  
- smbm.6.name: "Live long and prosper"
- smbm.6.desc: "The capitals of your new federation are alive with celebration! The gleaming new science ship Longevity, which was built with the unified will of your nations is ready. Go forth and explore!"
- smbm.6.option: "...and engage!"
+ smbm.6.name: "Paradise"
+ smbm.6.desc: "The Gaia world is a paradise even among Gaia worlds."
+ smbm.6.option: "Perfect"
  
  smbm.8.name: "Long live the Hegemony"
  smbm.8.desc: "In honor of the Hegemony's foundation, the members have come forth to present you with a tribute and a show of support for its continued existence."
