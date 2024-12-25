@@ -33,10 +33,6 @@ event = {
                 id = smbm.5
                 days = 10
             }
-            country_event = {
-                id = smbm.8
-                days = 30
-            }
         }
     }
 }
@@ -58,7 +54,7 @@ country_event = {
 	
 	immediate = {
 		add_modifier = {
-			modifier = be_careful_out_there
+			modifier = smbm_be_careful_out_there
 			days = 7300
 		}
 	}
@@ -87,7 +83,7 @@ country_event = {
 	
 	immediate = {
 		add_modifier = {
-			modifier = unholy_matrimony
+			modifier = smbm_unholy_matrimony
 			days = -1
 		}
 	}
@@ -119,7 +115,7 @@ country_event = {
 	
 	immediate = {
 		add_modifier = {
-			modifier = different_worlds
+			modifier = smbm_different_worlds
 			days = -1
 		}
 	}
@@ -146,7 +142,7 @@ country_event = {
 
 	option = {
 		name = smbm.5.option.a
-		add_modifier = { modifier = "planet_storm_protection" days = 7300 }
+		add_modifier = { modifier = "smbm_planet_storm_protection" days = 7300 }
 	}
 	
 	option = {
@@ -173,34 +169,69 @@ country_event = {
 		name = smbm.6.option
 		home_planet = {
 			add_modifier = {
-				modifier = "food_rich_planet"
+				modifier = "smbm_paradise_planet"
 				days = -1
 			}
 		}
 	}
 }
 
-# Long live the hegemony: Hegemony boost
+# Unholy matrimony: Robots with habitability restricted origin
+country_event = {
+	id = smbm.7
+	title = smbm.7.name
+	desc = smbm.7.desc
+	
+	picture = GFX_evt_astral_rift_corridors
+	show_sound = event_default
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_ai = no
+		has_authority = "auth_machine_intelligence"
+		OR = {
+			has_origin = origin_shattered_ring
+			has_origin = origin_void_dwellers
+		}
+	}
+	
+	immediate = {
+		add_modifier = {
+			modifier = smbm_over_specialized
+			days = -1
+		}
+	}
+
+	option = {
+		name = smbm.7.option
+	}
+}
+
+# Teachers of the Shroud: speed bump nerf
 country_event = {
 	id = smbm.8
 	title = smbm.8.name
 	desc = smbm.8.desc
 	
-	picture = GFX_evt_coronation
-	show_sound = event_celebration
+	picture = GFX_evt_surreal_visions
+	show_sound = event_default
 	
 	is_triggered_only = yes
 	
 	trigger = {
-        is_ai = no
-		has_origin = origin_hegemon
+		is_ai = no
+		has_origin = origin_shroudwalker_apprentice
+	}
+	
+	immediate = {
+		add_modifier = {
+			modifier = smbm_visions_of_madness
+			days = 3650
+		}
 	}
 
 	option = {
 		name = smbm.8.option
-		add_resource = {
-			influence = 200
-			alloys = 75
-		}
 	}
 }

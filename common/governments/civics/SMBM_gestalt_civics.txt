@@ -289,3 +289,34 @@ civic_machine_sovereign_guardianship = {
 		base = @civic_rare_random_weight
 	}
 }
+
+civic_machine_astromining_drones = {
+	modification = no
+	playable = {
+		has_megacorp = yes
+	}
+	ai_playable = {
+		has_megacorp = yes
+	}
+	potential = {
+		authority = { value = auth_machine_intelligence }
+	}
+
+	random_weight = {
+		base = @civic_rare_random_weight
+	}
+
+	description = civic_tooltip_machine_astromining_drones_effects
+	modifier = {
+		planet_miners_minerals_produces_add = -2
+		planet_technician_energy_produces_add = -1
+		station_gatherers_produces_mult = 0.5
+		country_starbase_capacity_mult = 0.50
+		stations_cost_mult = -0.50
+		planet_jobs_simple_drone_produces_mult = -0.50
+		councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
+	}
+	ai_weight = {
+		base = @ai_civic_uncommon_base_weight
+	}
+}

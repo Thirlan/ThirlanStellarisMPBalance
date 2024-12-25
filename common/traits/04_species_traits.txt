@@ -141,9 +141,9 @@ trait_intelligent = {
 	opposites = { "trait_nerve_stapled" "trait_erudite" "trait_enigmatic_intelligence_poor" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		planet_jobs_physics_research_produces_mult = 0.08
-		planet_jobs_society_research_produces_mult = 0.08
-		planet_jobs_engineering_research_produces_mult = 0.08
+		planet_jobs_physics_research_produces_mult = 0.1
+		planet_jobs_society_research_produces_mult = 0.1
+		planet_jobs_engineering_research_produces_mult = 0.1
 	}
 	slave_cost = {
 		energy = 500
@@ -864,7 +864,7 @@ trait_deviants = {
 		can_do_advanced_gene_modding = yes
 	}
 	potential_crossbreeding_chance = 1.0
-	modifier = { pop_government_ethic_attraction = -0.15 }
+	modifier = { pop_government_ethic_attraction = -0.30 }
 
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	opposites = { "trait_conformists" "trait_hive_mind" }
@@ -914,7 +914,10 @@ trait_enduring = {
 		always = yes
 	}
 	potential_crossbreeding_chance = 1.0
-	modifier = { leader_lifespan_add = 20 }
+	modifier = {
+		leader_lifespan_add = 20
+		leaders_upkeep_mult = -0.1
+	}
 	opposites = { "trait_venerable" "trait_fleeting" "trait_fleeting_lithoid" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	slave_cost = {

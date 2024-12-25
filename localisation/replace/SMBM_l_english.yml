@@ -36,23 +36,35 @@ origin.61.desc:1 "As earthquakes and volcanic activity on [Root.GetName] continu
 JUMP_DRIVE_PENALTY:0 "While Jump Drive is recharging, this fleet suffers the following penalties:\n§Y$MOD_SHIP_WEAPON_DAMAGE$:§! §R-60%§!\n§Y$MOD_SHIP_SPEED_MULT$:§! §R-60%§!"
 
 # CUSTOM SMBM EVENTS
- be_careful_out_there: "Be careful out there"
- be_careful_out_there_desc: "Multiplayer anti-rush mechanic"
+ smbm_be_careful_out_there: "Be careful out there"
+ smbm_be_careful_out_there_desc: "Multiplayer anti-rush mechanic"
 
- unholy_matrimony: "Unholy Matrimony"
- unholy_matrimony_desc: "Fanatic Necrophage nerf"
+ smbm_unholy_matrimony: "Unholy Matrimony"
+ smbm_unholy_matrimony_desc: "Fanatic Necrophage nerf"
 
- different_worlds: "Different Worlds"
- different_worlds_desc: "Genesis Guide Void Dweller/Shattered Ring nerf"
+ smbm_different_worlds: "Different Worlds"
+ smbm_different_worlds_desc: "Genesis Guide Void Dweller/Shattered Ring nerf"
 
- decision_planet_storm_preparations: "Storm Preparations"
- decision_planet_storm_preparations_desc: "Preparation measures to reduce the damage of the incoming storm"
- decision_stop_planet_storm_preparations: "End Storm Preparations"
- decision_stop_planet_storm_preparations_desc: "End the special preparation measures"
- planet_storm_preparations: "Storm Preparations"
- planet_storm_preparations_desc: "Storm Preparation Measures"
- planet_storm_protection: "Storm Protection"
- planet_storm_protection_desc: "Storms will not enter your Empire borders"
+ smbm_decision_planet_storm_preparations: "Storm Preparations"
+ smbm_decision_planet_storm_preparations_desc: "Preparation measures to reduce the damage of the incoming storm"
+ 
+ smbm_decision_stop_planet_storm_preparations: "End Storm Preparations"
+ smbm_decision_stop_planet_storm_preparations_desc: "End the special preparation measures"
+ 
+ smbm_planet_storm_preparations: "Storm Preparations"
+ smbm_planet_storm_preparations_desc: "Storm Preparation Measures"
+ 
+ smbm_planet_storm_protection: "Storm Protection"
+ smbm_planet_storm_protection_desc: "Storms will not enter your Empire borders"
+ 
+ smbm_over_specialized: "Over Specialized"
+ smbm_over_specialized_desc: "Penalty for robots with habilability restricted origins"
+
+ smbm_visions_of_madness: "Visions of Madness"
+ smbm_visions_of_madness_desc: "Nerf for Teachers of the Shroud origin"
+
+ smbm_paradise_planet:0 "Paradise"
+ smbm_paradise_planet_desc:0 "A paradise even among Gaia worlds"
 
  smbm.2.name: "Prepare yourself"
  smbm.2.desc: "Prepare for the cold hard realities of space. Not knowing what lurks out there it would be best to increase your defenses. Be careful, your defensive bonuses will only last a few years."
@@ -67,14 +79,18 @@ JUMP_DRIVE_PENALTY:0 "While Jump Drive is recharging, this fleet suffers the fol
  smbm.4.option: "Very well..."
  
  smbm.5.name: "Storm Protection"
- smbm.5.desc: "Do you wish to prevent storms from entering your Empire for the first 10 years of the game?"
+ smbm.5.desc: "Do you wish to prevent storms from entering your Empire for the first 20 years of the game?"
  smbm.5.option.a: "Yes"
  smbm.5.option.b: "No"
  
  smbm.6.name: "Paradise"
- smbm.6.desc: "The Gaia world is a paradise even among Gaia worlds."
+ smbm.6.desc: "Your Gaia world is a paradise even among Gaia worlds."
  smbm.6.option: "Perfect"
  
- smbm.8.name: "Long live the Hegemony"
- smbm.8.desc: "In honor of the Hegemony's foundation, the members have come forth to present you with a tribute and a show of support for its continued existence."
- smbm.8.option: "Accept the tribute"
+ smbm.7.name: "Overly specialized"
+ smbm.7.desc: "Having been use to their unique world for so long, your robots have become overly specialized to it, resulting in a reduction in their habitability floor."
+ smbm.7.option: "Very well..."
+ 
+ smbm.8.name: "Visions of Madness"
+ smbm.8.desc: "The breakneck speed at which your empire has gained its psionic powers has resulted in visions of madness through the population."
+ smbm.8.option: "Very well..."

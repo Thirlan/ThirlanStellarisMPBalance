@@ -20,7 +20,7 @@ trait_auto_mod_robotic = {
 		always = yes
 	}
 	modifier = {
-		planet_pops_robotics_upkeep_mult = 0.10
+		planet_pops_robotics_upkeep_mult = 0.15
 	}
 	slave_cost = {
 		energy = 1000
@@ -220,7 +220,7 @@ trait_robot_double_jointed = {
 	allowed_archetypes = { ROBOT MACHINE }
 
 	modifier = {
-		pop_housing_usage_mult = -0.13
+		pop_housing_usage_mult = -0.20
 	}
 	slave_cost = {
 		energy = 750
@@ -235,7 +235,7 @@ trait_robot_bulky = {
 	allowed_archetypes = { ROBOT MACHINE }
 
 	modifier = {
-		pop_housing_usage_mult = 0.13
+		pop_housing_usage_mult = 0.20
 	}
 	ai_weight = {
 		factor = 0
@@ -475,7 +475,7 @@ trait_robot_propaganda_machines = {
 	}
 	opposites = { "trait_robot_quarrelsome" }
 	modifier = {
-		planet_jobs_unity_produces_mult = 0.15
+		planet_jobs_unity_produces_mult = 0.20
 		planet_jobs_unity_upkeep_mult = -0.1
 	}
 	slave_cost = {
@@ -495,7 +495,7 @@ trait_robot_streamlined_protocols = {
 	opposites = { "trait_robot_high_bandwidth" }
 	allowed_archetypes = { ROBOT MACHINE }
 	modifier = {
-		species_empire_size_mult = -0.13
+		species_empire_size_mult = -0.10
 	}
 	slave_cost = {
 		energy = 750
@@ -508,7 +508,7 @@ trait_robot_high_bandwidth = {
 	opposites = { "trait_robot_streamlined_protocols" }
 	allowed_archetypes = { ROBOT MACHINE }
 	modifier = {
-		species_empire_size_mult = 0.13
+		species_empire_size_mult = 0.10
 	}
 	slave_cost = {
 		energy = -150
@@ -532,7 +532,7 @@ trait_robot_trading_algorithms = {
 		owner_is_hive_empire = no
 	}
 	modifier = {
-		pop_job_trade_mult = 0.20
+		pop_job_trade_mult = 0.25
 	}
 	slave_cost = {
 		energy = 500
@@ -713,7 +713,7 @@ trait_robot_artificial_sociologists = {
 		}
 	}
 	modifier = {
-		planet_jobs_society_research_produces_mult = 0.15
+		planet_jobs_society_research_produces_mult = 0.20
 	}
 	slave_cost = {
 		energy = 750
@@ -739,6 +739,7 @@ trait_robot_integrated_weaponry = {
 	randomized = no
 	modifier = {
 		army_damage_mult = 1.0
+		army_health = 0.50
 	}
 	custom_tooltip = INTEGRATED_WEAPONRY_TT
 
@@ -795,7 +796,7 @@ trait_robot_scarcity_algorithms = {
 	}
 	randomized = no
 	modifier = {
-		pop_job_trade_mult = -0.20
+		pop_job_trade_mult = -0.25
 	}
 
 	slave_cost = {
@@ -980,7 +981,7 @@ trait_robot_history_artbot = {
 	opposites = { "trait_robot_history_warbot" "trait_robot_history_explorebot" "trait_robot_history_researchbot" "trait_robot_history_resourcebot" "trait_robot_history_chatbot"}
 
 	modifier = {
-		pop_job_amenities_mult = 0.05
+		pop_job_amenities_mult = 0.04
 	}
 	slave_cost = {
 		energy = 750
@@ -1005,7 +1006,7 @@ trait_robot_history_explorebot = {
 	opposites = { "trait_robot_history_warbot" "trait_robot_history_artbot" "trait_robot_history_researchbot" "trait_robot_history_resourcebot" "trait_robot_history_chatbot"}
 
 	modifier = {
-		planet_jobs_unity_produces_mult = 0.02
+		planet_jobs_unity_produces_mult = 0.04
 	}
 	slave_cost = {
 		energy = 750
@@ -1082,7 +1083,7 @@ trait_robot_history_chatbot = {
 	opposites = { "trait_robot_history_warbot" "trait_robot_history_artbot" "trait_robot_history_explorebot" "trait_robot_history_researchbot" "trait_robot_history_resourcebot"}
 
 	modifier = {
-		planet_jobs_upkeep_mult = -0.02
+		planet_jobs_upkeep_mult = -0.0175
 	}
 	slave_cost = {
 		energy = 750
@@ -1324,7 +1325,7 @@ trait_robot_ceaseless_symmetric_annihilation_engine = {
 	randomized = no
 
 	modifier = {
-		planet_jobs_produces_mult = 0.40
+		planet_jobs_produces_mult = 0.30
 	}
 
 	slave_cost = {
@@ -1531,7 +1532,7 @@ trait_robot_exotic_fuel_consumption = {
 	randomized = no
 
 	modifier = {
-		planet_jobs_produces_mult = 0.10
+		planet_jobs_produces_mult = 0.08
 	}
 
 	slave_cost = {
@@ -1575,7 +1576,7 @@ trait_robot_rare_crystal_exterior = {
 	randomized = no
 
 	modifier = {
-		planet_metallurgists_produces_mult = 0.2
+		planet_metallurgists_produces_mult = 0.15
 	}
 
 	slave_cost = {
@@ -1644,6 +1645,11 @@ trait_robot_immortality = {
 	initial = yes
 	randomized = no
 	immortal_leaders = yes
+
+	modifier = {
+		negative_leader_traits_species = -1
+		leaders_upkeep_mult = -0.1
+	}
 
 	slave_cost = {
 		energy = 1000
