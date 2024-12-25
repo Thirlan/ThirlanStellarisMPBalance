@@ -147,9 +147,9 @@ trait_robot_logic_engines = {
 		}
 	}
 	modifier = {
-		planet_jobs_physics_research_produces_mult = 0.08
-		planet_jobs_society_research_produces_mult = 0.08
-		planet_jobs_engineering_research_produces_mult = 0.08
+		planet_jobs_physics_research_produces_mult = 0.1
+		planet_jobs_society_research_produces_mult = 0.1
+		planet_jobs_engineering_research_produces_mult = 0.1
 	}
 	slave_cost = {
 		energy = 750
@@ -444,7 +444,7 @@ trait_robot_luxurious = {
 
 	#assembling_modifier, declining_modifier, growing_modifier are applied to planet when pop is the one assembling/declining/growing
 	assembling_modifier = {
-		planet_pop_assemblers_upkeep_mult = 0.20
+		planet_pop_assemblers_upkeep_mult = 0.30
 	}
 	ai_weight = {
 		weight = 1

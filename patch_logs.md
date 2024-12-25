@@ -25,6 +25,8 @@ Added:
  * Deviants: -30% ethics attraction from -15%
  * Astro-mining Drones: cannot be removed once chosen
  * Enduring: -10% to leader upkeep
+ * Luxurious: +30% assembly cost from +20%
+ * Recycled: -30% assembly cost from -20%
 
 Changed:
  * Doomsday: Destruction will start after 5 years instead of 5 days
