@@ -8,7 +8,6 @@ Added:
  * Storm Chasers: +15% energy from jobs
  * Primal Calling: +15% to society research speed
  * Shattered Ring: Event (Robots) -> 33% increase to colony ship cost and time to create a new colony
- * Voidforged: Event (Robots) -> 33% increase to colony ship cost and time to create a new colony
  * Teachers of the Shroud: event -> -10% unity for 30 years
  * Arc Welders: -1 envoys, -1 influence, -20% to first contact speed, infiltration and diplomatic weight
  * Progenitor Hive: -75% proginator negative effects from -50%
