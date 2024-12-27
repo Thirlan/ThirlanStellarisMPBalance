@@ -131,7 +131,7 @@
  * Catalytic Converter: reduce alloy production by -0.5 and councilor position now gives +1% bonus to alloy production from +2%
  * Genesis Guides:
    * Base Unity from uplifting 500 unity from 1000 unity
-   * Event (Void Dwellers / Shattered Ring) -> 100% increase to colony ship cost, build speed and time to create a new colony
+   * Event (Void Dwellers / Shattered Ring / Ocean Paradise / Life Seeded) -> 33% increase to colony ship cost and time to create a new colony
  * Individual Machine Replication: +15% mechanical pop assembly speed from +20%
  * Individual Machine Predictive Analysis: +0 intel decryption from +1
 
@@ -191,8 +191,8 @@
  * Fruitful Partnership: -33% damage to Tiyankis
  * Scion: -5% happiness, -20% Ethics attraction
  * Synthetic Fertility: Identity Repository gives +1.5 resource per identity from +2.0
- * Shattered Ring (robots): event -> habilability floor reduced by -10%
- * Voidforged (robots): event -> habilability floor reduced by -10%
+ * Shattered Ring: Event (Robots) -> 50% increase to colony ship cost and time to create a new colony
+ * Voidforged: Event (Robots) -> 50% increase to colony ship cost and time to create a new colony
  * Teachers of the Shroud: event -> -10% unity for 30 years
  * Arc Welders: -1 envoys, -1 influence, -20% to first contact speed, infiltration and diplomatic weight
  * Progenitor Hive: -75% proginator negative effects from -50%

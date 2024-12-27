@@ -7,8 +7,8 @@ Added:
  * Broken Shackle: available envoys +2 from +1, infiltration speed +30% from +20% and first contact speed +30% from +20%
  * Storm Chasers: +15% energy from jobs
  * Primal Calling: +15% to society research speed
- * Shattered Ring (robots): event -> habilability floor reduced by -10%
- * Voidforged (robots): event -> habilability floor reduced by -10%
+ * Shattered Ring: Event (Robots) -> 33% increase to colony ship cost and time to create a new colony
+ * Voidforged: Event (Robots) -> 33% increase to colony ship cost and time to create a new colony
  * Teachers of the Shroud: event -> -10% unity for 30 years
  * Arc Welders: -1 envoys, -1 influence, -20% to first contact speed, infiltration and diplomatic weight
  * Progenitor Hive: -75% proginator negative effects from -50%
@@ -34,7 +34,7 @@ Changed:
  * Double-jointed: -20% housing from -10%
  * Adaptive Frames: +15% to upkeep
  * Genesis Guides:
-   * Event (Void Dwellers / Shattered Ring) -> 100% increase to colony ship cost, build speed and time to create a new colony
+   * Event (Void Dwellers / Shattered Ring / Ocean Paradise / Life Seeded) -> 33% increase to colony ship cost and time to create a new colony
  * Storm Protection (event): At start of game can decide if Storms should be repulsed from your Empire borders for 20 years
 
 Removed:

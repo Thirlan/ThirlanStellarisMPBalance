@@ -7,20 +7,24 @@
  TRAIT_HUMANOID_EXISTENTIAL_ITEROPARITY_EFFECT: "£pops£ §YPop Growth§! During War and Crisis: §G+20%§!"
  TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "Replaces §Y45%§! of $r_food$ Upkeep §Y55%§! with $r_energy$ Upkeep"
 
+
  incubator_tooltip:1 "Grants between §G+25%§! and §R-10%§! Pop Growth Speed, inversely proportional to the number of pops on the planet."
  low_maintenance_tooltip:0 "Pop Consumer Goods Upkeep: §G-13%§!"
  preplanned_growth_tooltip:0 "Pop Growth Speed: §G+25%§!\nPop Housing Usage: §G-10%§!"
  artificial_intelligence_tooltip:0 "£physics£ Physics Research: §G+8%§!\n£society£ Society Research: §G+8%§!\n£engineering£ Engineering Research: §G+8%§!"
  elevated_synapses_tooltip:1 "£physics£ Physics Research: §G+16%§!\n£society£ Society Research: §G+16%§!\n£engineering£ Engineering Research: §G+16%§!"
  expressed_tradition_tooltip:0 "£unity£ Unity from £pops£ Jobs: §G+15%§!"
-
+ trait_robot_immortality_tt: "Leader Lifespan: §GImmortal§!\nLeader Upkeep: §G-10%§!\nLeader Maximum Negative Traits: §G-10%§!"
+ INTEGRATED_WEAPONRY_TT: "Army Damage: §G+100%§!\nArmy Health: §G+50%§!\n£job_enforcer£ $job_enforcer_plural$ Crime Reduction: §G+5§!"
+ 
  # CIVICS
  
  # ORIGINS
-origin_tooltip_doomsday_effects:2 "§R- WARNING: Challenging Origin§!\n- Your homeworld will explode within §H45 to 55 years§! after the game starts.\n- Valuable resources from the doomed planet's mantle boost production on the surface.\n- No Guaranteed Habitable Worlds will spawn near your home system."
-origin.61.desc:1 "As earthquakes and volcanic activity on [Root.GetName] continue to increase in frequency and intensity, our [Root.Owner.GetScientistPlural] are now able to more accurately predict when the end will come:\n\nThey estimate that we have between §H45 to 55 years§! until the planet detonates.\n\nConditions on the surface will steadily deteriorate until then. The only good news is that the violent tectonic movements have made it easier to access the rich resources of the planet's mantle, increasing our production capacity."
+ origin_tooltip_doomsday_effects:2 "§R- WARNING: Challenging Origin§!\n- Your homeworld will explode within §H45 to 55 years§! after the game starts.\n- Valuable resources from the doomed planet's mantle boost production on the surface.\n- No Guaranteed Habitable Worlds will spawn near your home system."
+ origin.61.desc:1 "As earthquakes and volcanic activity on [Root.GetName] continue to increase in frequency and intensity, our [Root.Owner.GetScientistPlural] are now able to more accurately predict when the end will come:\n\nThey estimate that we have between §H45 to 55 years§! until the planet detonates.\n\nConditions on the surface will steadily deteriorate until then. The only good news is that the violent tectonic movements have made it easier to access the rich resources of the planet's mantle, increasing our production capacity."
  concept_cave_dweller_desc: "- $MOD_HABITABILITY_FLOOR_ADD$: §G50%§!\n- $mod_planet_jobs_minerals_produces_mult$: §G+15%§!\n- $MOD_BIO_POP_GROWTH_SPEED$: §R-10%§!\n\n§L$trait_cave_dweller_desc$§!"
  trait_cave_dweller_tooltip:0 "$MOD_BIO_POP_GROWTH_SPEED$: §R-10%§!"
+ concept_insufficient_offspring_oversight_desc: "- $MOD_SHIP_MILITARY_SPEED_MULT$: §R-75%§!\n- $MOD_OWNED_SHIP_EVASION_MULT$: §R-75%§!\n- $MOD_OWNED_SHIP_FIRE_RATE_MULT$: §R-75%§!\n- $MOD_OWNED_SHIP_ACCURACY_MULT$: §R-75%§!\n\n§LWithout an Offspring leading the fleet, our forces are unorganized and lack efficiency.§!"
 
  # ASCENSCIONS
  describe_edict_consectrated_worlds:5 "§EConsecrating planets (up to §Y3§!) increases §YSpiritualist Ethics Attraction§! and §YEmpire-Wide Amenities§! as well as £unity£ §YUnity Generation§!, scaling to the spiritual significance of the worlds consecrated.§!"
@@ -43,7 +47,7 @@ JUMP_DRIVE_PENALTY:0 "While Jump Drive is recharging, this fleet suffers the fol
  smbm_unholy_matrimony_desc: "Fanatic Necrophage nerf"
 
  smbm_different_worlds: "Different Worlds"
- smbm_different_worlds_desc: "Genesis Guide Void Dweller/Shattered Ring nerf"
+ smbm_different_worlds_desc: "Habitability combo breaker"
 
  smbm_decision_planet_storm_preparations: "Storm Preparations"
  smbm_decision_planet_storm_preparations_desc: "Preparation measures to reduce the damage of the incoming storm"
@@ -75,7 +79,7 @@ JUMP_DRIVE_PENALTY:0 "While Jump Drive is recharging, this fleet suffers the fol
  smbm.3.option: "Very well..."
  
  smbm.4.name: "Different Worlds"
- smbm.4.desc: "Having spent their entire life in the cold depths of space, your civilization struggles with the very concept of living on a planet. As such the process of creating new Genesis Arks is greatly penalized."
+ smbm.4.desc: "Having spent their entire life in their personalized world, your civilization struggles with the very concept of leaving their world. As such colony ship construction and new colony build speeds have been penalized."
  smbm.4.option: "Very well..."
  
  smbm.5.name: "Storm Protection"
@@ -86,10 +90,6 @@ JUMP_DRIVE_PENALTY:0 "While Jump Drive is recharging, this fleet suffers the fol
  smbm.6.name: "Paradise"
  smbm.6.desc: "Your Gaia world is a paradise even among Gaia worlds."
  smbm.6.option: "Perfect"
- 
- smbm.7.name: "Overly specialized"
- smbm.7.desc: "Having been use to their unique world for so long, your robots have become overly specialized to it, resulting in a reduction in their habitability floor."
- smbm.7.option: "Very well..."
  
  smbm.8.name: "Visions of Madness"
  smbm.8.desc: "The breakneck speed at which your empire has gained its psionic powers has resulted in visions of madness through the population."

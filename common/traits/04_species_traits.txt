@@ -556,7 +556,7 @@ trait_unruly = {
 	opposites = { "trait_docile" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		species_empire_size_mult = 0.13
+		species_empire_size_mult = 0.10
 	}
 	slave_cost = {
 		energy = -200

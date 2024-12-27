@@ -11,9 +11,8 @@ smbm_unholy_matrimony = {
 }
 
 smbm_different_worlds = {
-	ship_colonizer_cost_mult = 1.0
-	ship_colonizer_time_cost_mult = 1.0
-	planet_colony_development_speed_mult = -1.0
+	ship_colonizer_cost_mult = 0.33
+	planet_colony_development_speed_mult = -0.33
 }
 
 smbm_over_specialized = {
