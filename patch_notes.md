@@ -1,4 +1,4 @@
-# Version 1.14.2
+# Version 1.14.3
 
 ## General tweaks
 
@@ -191,7 +191,6 @@
  * Fruitful Partnership: -33% damage to Tiyankis
  * Scion: -5% happiness, -20% Ethics attraction
  * Synthetic Fertility: Identity Repository gives +1.5 resource per identity from +2.0
- * Shattered Ring: Event (Robots) -> 33% increase to colony ship cost and time to create a new colony
  * Teachers of the Shroud: event -> -10% unity for 30 years
  * Arc Welders: -1 envoys, -1 influence, -20% to first contact speed, infiltration and diplomatic weight
  * Progenitor Hive: -75% proginator negative effects from -50%

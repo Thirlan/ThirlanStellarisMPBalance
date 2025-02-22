@@ -123,7 +123,6 @@ country_event = {
 			AND = {
 				is_robot_empire = yes
 				OR = {
-					has_origin = origin_shattered_ring
 					has_origin = origin_life_seeded
 					has_origin = origin_ocean_paradise
 				}

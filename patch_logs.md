@@ -1,3 +1,8 @@
+# 2025/02/22 - 1.14.3
+
+Removed:
+ * Shattered Ring: Event (Robots) -> 33% increase to colony ship cost and time to create a new colony
+
 # 2024/12/23 - 1.14.2
 
 Clean up with updates to current meta, which is heavily in machine's favor.
