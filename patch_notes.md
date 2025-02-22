@@ -131,7 +131,7 @@
  * Catalytic Converter: reduce alloy production by -0.5 and councilor position now gives +1% bonus to alloy production from +2%
  * Genesis Guides:
    * Base Unity from uplifting 500 unity from 1000 unity
-   * Event (Void Dwellers / Shattered Ring) -> 100% increase to colony ship cost and speed, with 100% increased time to create a new colony
+   * Event (Void Dwellers / Shattered Ring / Ocean Paradise / Life Seeded) -> 33% increase to colony ship cost and time to create a new colony
  * Individual Machine Replication: +15% mechanical pop assembly speed from +20%
  * Individual Machine Predictive Analysis: +0 intel decryption from +1
 
@@ -191,33 +191,30 @@
  * Fruitful Partnership: -33% damage to Tiyankis
  * Scion: -5% happiness, -20% Ethics attraction
  * Synthetic Fertility: Identity Repository gives +1.5 resource per identity from +2.0
- * Shattered Ring (robots): 100% increase to colony ship cost and speed, with 100% increased time to create a new colony
+ * Shattered Ring: Event (Robots) -> 33% increase to colony ship cost and time to create a new colony
  * Teachers of the Shroud: event -> -10% unity for 30 years
- * Arc Welders: -1 envoys, -20% first contact speed, -20% infiltration, -1 influence and -15% to society research
- * Progenitor Hive: -75% proginator negative effects from -50% and +1 negative traits
- * Voidforged: 100% increase to colony ship cost and speed, with 100% increased time to create a new colony
+ * Arc Welders: -1 envoys, -1 influence, -20% to first contact speed, infiltration and diplomatic weight
+ * Progenitor Hive: -75% proginator negative effects from -50%
 
 ### Boosts
  * Cave Dwellers: pop growth speed -10% from -20%
  * Rift World: +15% to physics research
  * Fear of the Dark: 0 to tech alternatives and leaderpool size from -1
  * Payback: +15% Ship fire rate
- * Doomsday (non-robot): Destruction will start after 5 years instead of 5 days
- * Life Seeded: Starbase influence and material cost -10%
+ * Doomsday: Destruction will start after 5 years instead of 5 days
+ * Life Seeded: event -> permanent +10% Population growth and 5% happiness on the Gaia world
  * Broken Shackle: available envoys +2 from +1, infiltration speed +30% from +20% and first contact speed +30% from +20%
  * Storm Chasers: +15% energy from jobs
- * Primal Calling: +15% to society research
+ * Primal Calling: +15% to society research speed
  
 ## Species Traits:
 
 ### Nerfs
  * Rapid Breeders: +7% population growth from 10%
- * Intelligent: +8% to research from +10%
  * Natural Engineers: +12% Engineering Research from +15%
  * Charismatic: +15% to amenities from +20%
  * Thrifty: +20% trade value from +25%
  * Existential Iteroparity: +20% population growth from +30%
- * Unruly: +13% empire size from pop
  * Solitary: +13% housing from +10%
  * Slow Learner: -15% experience from -10%
  * Phototrophic: 55% food and energy from 50%
@@ -237,6 +234,7 @@
  * Conservationist: -13% pop consumer goods upkeep from -10%
  * Communal: -13% housing from -10%
  * Venerable: -1 to leader negative traits and -10% to leader upkeep
+ * Enduring: -10% to leader upkeep
  * Industrious: +20% to minerals from +15%
  * Quick Learner: +15% experience from +10%
  
@@ -246,7 +244,7 @@
  * Mass Produced: +10% assembly speed from +15%
  * Emotion Emulator: +15% to amenities from +20%
  * Adaptive Frames: +15% to upkeep
- * Bulky: +15% housing from +10%
+ * Bulky: +20% housing from +10%
  * Repurposed Hardware: -15% experience from -10%
  * Exotic Fuel Consumption: +8% resources from +10%
  * Rare Crystal Exterior: +15% resources from +20%
@@ -258,14 +256,14 @@
 ### Boosts
  * Custom made: -10% assembly speed from -15%
  * Uncanny: -15% to amenities from -20%
- * Double-jointed: -15% housing from -10%
+ * Double-jointed: -20% housing from -10%
  * Power Drill: +20% to minerals from +15%
  * Learning Algorithms: +15% experience from +10%
  * Warbot (History Trait): +10% Army damage from +5%
  * Art Generator (History Trait): +4% unity from +2%
  * Propaganda Machine: 20% unity from 15%
  * Sociology Core: +20% Society Research from +15%
- * Integrated Weaponry: +100% Army Health
+ * Integrated Weaponry: +50% Army Health
  * Eternal Machine: -1 to leader negative traits and -10% to leader upkeep
  * Recycled: -30% assembly cost from -20%
 

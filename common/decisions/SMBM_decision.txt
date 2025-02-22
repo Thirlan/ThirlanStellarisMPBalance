@@ -59,11 +59,11 @@ decision_planet_storm_preparations = {
 	}
 
 	allow = {
-		NOT = { has_modifier = planet_storm_preparations }
+		NOT = { has_modifier = smbm_planet_storm_preparations }
 	}
 
 	effect = {
-		add_modifier = { modifier = "planet_storm_preparations" days = -1 }
+		add_modifier = { modifier = "smbm_planet_storm_preparations" days = -1 }
 	}
 
 	ai_weight = {
@@ -79,16 +79,16 @@ decision_stop_planet_storm_preparations = {
 	enactment_time = 0
 
 	potential = {
-		has_modifier = planet_storm_preparations
+		has_modifier = smbm_planet_storm_preparations
 	}
 
 	allow = {
-		has_modifier = planet_storm_preparations
+		has_modifier = smbm_planet_storm_preparations
 	}
 
 	effect = {
 		hidden_effect = {
-			remove_modifier = planet_storm_preparations
+			remove_modifier = smbm_planet_storm_preparations
 		}
 	}
 

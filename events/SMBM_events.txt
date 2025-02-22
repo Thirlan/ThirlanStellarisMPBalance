@@ -14,6 +14,10 @@ event = {
                 is_ai = no
             }
             country_event = {
+                id = smbm.6
+                days = 1
+            }
+            country_event = {
                 id = smbm.2
                 days = 5
             }
@@ -30,12 +34,8 @@ event = {
                 days = 10
             }
             country_event = {
-                id = smbm.6
-                days = 30
-            }
-            country_event = {
                 id = smbm.8
-                days = 30
+                days = 10
             }
         }
     }
@@ -58,7 +58,7 @@ country_event = {
 	
 	immediate = {
 		add_modifier = {
-			modifier = be_careful_out_there
+			modifier = smbm_be_careful_out_there
 			days = 7300
 		}
 	}
@@ -87,7 +87,7 @@ country_event = {
 	
 	immediate = {
 		add_modifier = {
-			modifier = unholy_matrimony
+			modifier = smbm_unholy_matrimony
 			days = -1
 		}
 	}
@@ -97,29 +97,43 @@ country_event = {
 	}
 }
 
-# Unholy matrimony: Genesis Guides with any habitability restricted empire
+# Unholy matrimony: habitability restricted empire combo breaker
 country_event = {
 	id = smbm.4
 	title = smbm.4.name
 	desc = smbm.4.desc
 	
-	picture = GFX_evt_alien_segregation
+	picture = GFX_evt_big_landing_ship
 	show_sound = event_default
 	
 	is_triggered_only = yes
 	
 	trigger = {
 		is_ai = no
-		has_valid_civic = civic_guided_sapience
 		OR = {
-			has_origin = origin_shattered_ring
-			has_origin = origin_void_dwellers
+			AND = {
+				is_guided_sapience_empire = yes
+				OR = {
+					has_origin = origin_shattered_ring
+					is_void_dweller_empire = yes
+					has_origin = origin_life_seeded
+					has_origin = origin_ocean_paradise
+				}
+			}
+			AND = {
+				is_robot_empire = yes
+				OR = {
+					has_origin = origin_shattered_ring
+					has_origin = origin_life_seeded
+					has_origin = origin_ocean_paradise
+				}
+			}
 		}
 	}
 	
 	immediate = {
 		add_modifier = {
-			modifier = different_worlds
+			modifier = smbm_different_worlds
 			days = -1
 		}
 	}
@@ -129,7 +143,7 @@ country_event = {
 	}
 }
 
-# Storm Protection: Prevent storms from approaching in the first 10 years
+# Storm Protection: Prevent storms from approaching in the first 20 years
 country_event = {
 	id = smbm.5
 	title = smbm.5.name
@@ -146,7 +160,7 @@ country_event = {
 
 	option = {
 		name = smbm.5.option.a
-		add_modifier = { modifier = "planet_storm_protection" days = 3650 }
+		add_modifier = { modifier = "smbm_planet_storm_protection" days = 7300 }
 	}
 	
 	option = {
@@ -154,78 +168,56 @@ country_event = {
 	}
 }
 
-# Live long and prosper: Common grounds boost
+# Life Seeded: food rich boost
 country_event = {
 	id = smbm.6
 	title = smbm.6.name
 	desc = smbm.6.desc
 	
-	picture = GFX_evt_crisis_defeated
-	show_sound = event_celebration
+	picture = GFX_evt_astral_rift_tropical_habitat
+	show_sound = ap_rift_event_31_tropical_paradise
 	
 	is_triggered_only = yes
 	
 	trigger = {
-        is_ai = no
-		has_origin = origin_common_ground
-	}
-
-	immediate = {
-		# science ship
-		create_fleet = {
-			effect = {
-				set_owner = prev
-
-				create_ship = {
-					name = "Longevity"
-					random_existing_design = science
-				}
-
-				set_fleet_stance = evasive
-				set_location = prev.capital_scope.star
-
-				owner = {
-					create_leader = {
-						class = scientist
-						sub_type = survey
-						name = random
-						species = owner_main_species
-					}
-				}
-				set_leader = last_created_leader
-			}
-		}
+		has_origin = origin_life_seeded
 	}
 
 	option = {
 		name = smbm.6.option
-		add_resource = {
-			influence = 125
+		home_planet = {
+			add_modifier = {
+				modifier = "smbm_paradise_planet"
+				days = -1
+			}
 		}
 	}
 }
 
-# Long live the hegemony: Hegemony boost
+# Teachers of the Shroud: speed bump nerf
 country_event = {
 	id = smbm.8
 	title = smbm.8.name
 	desc = smbm.8.desc
 	
-	picture = GFX_evt_coronation
-	show_sound = event_celebration
+	picture = GFX_evt_surreal_visions
+	show_sound = event_default
 	
 	is_triggered_only = yes
 	
 	trigger = {
-        is_ai = no
-		has_origin = origin_hegemon
+		is_ai = no
+		has_origin = origin_shroudwalker_apprentice
+	}
+	
+	immediate = {
+		add_modifier = {
+			modifier = smbm_visions_of_madness
+			days = 10950
+		}
 	}
 
 	option = {
 		name = smbm.8.option
-		add_resource = {
-			influence = 200
-			alloys = 75
-		}
 	}
 }
