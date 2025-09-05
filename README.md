@@ -20,14 +20,16 @@ This mod is maintained by:
 
 A lot of appreciation for dedicated Youtubers such as Montu, ASPec, Strat
 
-* https://www.youtube.com/watch?v=PtB-AHKHrDc
+* https://www.youtube.com/watch?v=QFn2uu_m7ek
+* https://youtu.be/Py6Vde-L63o?si=AUWeu83O1iW9moBn
+* https://www.youtube.com/watch?v=k7OMucW2Gsk&t=1952s
+* https://www.youtube.com/watch?v=iUuL98_n-cA
 * https://www.youtube.com/watch?v=aMJi7pDd3bc
 * https://www.youtube.com/watch?v=TufYLfmxSgY&t=395s
 * https://www.youtube.com/watch?v=6x5oy2BKi94
 * https://www.youtube.com/watch?v=Q76JXW22ncc
 * https://www.youtube.com/watch?v=TQJ9hkQ1Jo0
 * https://www.youtube.com/watch?v=VG5YSByzxgQ
-* https://www.youtube.com/watch?v=LzhgFRXJ3D4
 * https://www.youtube.com/watch?v=C88jv2OifnM
 * https://www.youtube.com/watch?v=Cb3qwE8Px-8
 

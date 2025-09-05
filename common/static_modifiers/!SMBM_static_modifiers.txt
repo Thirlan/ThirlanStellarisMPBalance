@@ -6,10 +6,6 @@ smbm_be_careful_out_there = {
 	shipclass_starbase_damage_mult = 0.20
 }
 
-smbm_unholy_matrimony = {
-	pop_purge_speed = -0.25
-}
-
 smbm_different_worlds = {
 	ship_colonizer_cost_mult = 0.33
 	planet_colony_development_speed_mult = -0.33
@@ -17,18 +13,6 @@ smbm_different_worlds = {
 
 smbm_over_specialized = {
 	habitability_floor_mult = -0.1
-}
-
-smbm_planet_storm_preparations = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_default.dds"
-	icon_frame = 2
-    planet_storm_devastation_mult = -0.25
-	planet_jobs_produces_mult = -0.1
-	planet_immigration_pull_mult = -1.0
-}
-
-smbm_planet_storm_protection = {
-	country_storm_repulsion_influence_add = 1.0
 }
 
 smbm_visions_of_madness = {

@@ -27,19 +27,6 @@
 # Hive Mind
 #############
 
-civic_hive_ascetic = {
-	potential = { authority = { value = auth_hive_mind } }
-	random_weight = { base = @civic_default_random_weight }
-	ai_weight = {
-		base = @ai_civic_default_base_weight
-	}
-	modifier = {
-		councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
-		pop_environment_tolerance = 0.05
-		pop_amenities_usage_no_happiness_mult = -0.10
-	}
-}
-
 civic_hive_devouring_swarm = {
 	modification = no
 	potential = {
@@ -227,19 +214,6 @@ civic_machine_terminator = {
 		starbase_shipyard_build_cost_mult = -0.15
 		country_naval_cap_mult = 0.33
 		country_trade_fee = 0.50
-	}
-}
-
-civic_machine_predictive_analysis = {
-	description = "civic_tooltip_machine_predictive_analysis_effects"
-	potential = { authority = { value = auth_machine_intelligence } }
-	random_weight = { base = @civic_default_random_weight }
-	ai_weight = {
-		base = @ai_civic_default_base_weight
-	}
-	modifier = {
-		councilor_gestalt_cognitive_exp_gain = @gestalt_civic_node_xp_rate
-		num_tech_alternatives_add = 1
 	}
 }
 

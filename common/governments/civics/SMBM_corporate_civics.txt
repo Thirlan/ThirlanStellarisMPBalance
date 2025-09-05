@@ -25,68 +25,6 @@
 
 # Corporate
 
-civic_naval_contractors = {
-	potential = {
-		OR = {
-			authority = { value = auth_corporate }
-			civics = { value = civic_galactic_sovereign_megacorp }
-		}
-	}
-	random_weight = { base = @civic_default_random_weight }
-	ai_weight = {
-		base = @ai_civic_default_base_weight
-		modifier = {
-			factor = @ai_civic_personality_match_factor
-			OR = {
-				has_ai_personality = ruthless_capitalists
-				has_ai_personality = hegemonic_imperialists
-				has_ai_personality = decadent_hierarchy
-			}
-		}
-		modifier = {
-			factor = @ai_civic_personality_mismatch_factor
-			OR = {
-				has_ai_personality = honorbound_warriors
-				has_ai_personality = evangelising_zealots
-				has_ai_personality = harmonious_hierarchy
-				has_ai_personality = xenophobic_isolationists
-				has_ai_personality = fanatic_befrienders
-			}
-		}
-		modifier = {
-			factor = @ai_civic_personality_forbid_factor
-			OR = {
-				has_ai_personality = peaceful_traders
-				has_ai_personality = erudite_explorers
-				has_ai_personality = spiritual_seekers
-				has_ai_personality = fanatic_purifiers
-			}
-		}
-	}
-	possible = {
-		ethics = {
-			OR = {
-				text = civic_tooltip_militarist
-				value = ethic_militarist
-				value = ethic_fanatic_militarist
-			}
-		}
-		civics = { NOT = { value = civic_citizen_service } }
-	}
-	modifier = {
-		country_naval_cap_mult = 0.10
-	}
-	swap_type = {
-		trigger = {
-			host_has_dlc = "Overlord"
-		}
-
-		modifier = {
-			country_enclave_capacity_add = 2
-		}
-	}
-}
-
 civic_free_traders = {
 	potential = {
 		OR = {
