@@ -1,6 +1,8 @@
 #Remember to update operation_sabotage_starbase if you add any new buildings.
 # You will need to update the description, espionage_sabotage_starbase_building, remove_sabotage_starbase_flag, and has_nonshipyard_starbase_buildings
 
+
+
 hydroponics_bay = {
 	icon = "GFX_spaceport_module_hydroponic_farms"
 	construction_days = 180
@@ -8,6 +10,7 @@ hydroponics_bay = {
 	potential = {
 		exists = owner
 		owner = { has_technology = "tech_hydroponics" }
+		is_space_citadel = no
 	}
 
 	possible = {

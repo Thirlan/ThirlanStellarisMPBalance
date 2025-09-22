@@ -22,6 +22,18 @@ tech_disruptors_1 = {
 
 	prerequisites = { "tech_lasers_3" "tech_mass_drivers_2" }
 
+	technology_swap = {
+		name = tech_bio_disruptors_1
+		inherit_icon = no
+		inherit_effects = yes
+		trigger = {
+			country_uses_bio_ships = yes
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -31,7 +43,6 @@ tech_disruptors_1 = {
 			factor = 1.5
 			has_ethic = ethic_fanatic_militarist
 		}
-		
 		modifier = {
 			factor = 0.5
 			NOT = {

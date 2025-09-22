@@ -14,19 +14,11 @@ event = {
                 is_ai = no
             }
             country_event = {
-                id = smbm.6
-                days = 1
-            }
-            country_event = {
                 id = smbm.2
                 days = 5
             }
             country_event = {
                 id = smbm.4
-                days = 10
-            }
-            country_event = {
-                id = smbm.8
                 days = 10
             }
         }
@@ -49,6 +41,11 @@ country_event = {
 	}
 	
 	immediate = {
+		modifier = {
+			country_commander_cap_add = -2
+			country_official_cap_add = -2
+			country_scientist_cap_add = -1
+		}
 		add_modifier = {
 			modifier = smbm_be_careful_out_there
 			days = 7300
@@ -103,59 +100,5 @@ country_event = {
 
 	option = {
 		name = smbm.4.option
-	}
-}
-
-# Life Seeded: food rich boost
-country_event = {
-	id = smbm.6
-	title = smbm.6.name
-	desc = smbm.6.desc
-	
-	picture = GFX_evt_astral_rift_tropical_habitat
-	show_sound = ap_rift_event_31_tropical_paradise
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		has_origin = origin_life_seeded
-	}
-
-	option = {
-		name = smbm.6.option
-		home_planet = {
-			add_modifier = {
-				modifier = "smbm_paradise_planet"
-				days = -1
-			}
-		}
-	}
-}
-
-# Teachers of the Shroud: speed bump nerf
-country_event = {
-	id = smbm.8
-	title = smbm.8.name
-	desc = smbm.8.desc
-	
-	picture = GFX_evt_surreal_visions
-	show_sound = event_default
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		is_ai = no
-		has_origin = origin_shroudwalker_apprentice
-	}
-	
-	immediate = {
-		add_modifier = {
-			modifier = smbm_visions_of_madness
-			days = 10950
-		}
-	}
-
-	option = {
-		name = smbm.8.option
 	}
 }

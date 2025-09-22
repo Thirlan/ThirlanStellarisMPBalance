@@ -4,6 +4,9 @@
 #	modifier = {						# static modifier added to the country for as long as they have the perk
 #		pop_purge_mult = 5.0
 #	}
+#	federation_modifier = {				# static modifier that is applied to the player's federation, if they have one (this stacks if multiple members have such perks)
+#		federation_research_sharing_mult = 0.25
+#	}
 #	on_unlock = {						# Effect that will be executed when the country receives perk
 #		log = "Country [This.GetName] received menace perk 'menp_name'"
 #	}

@@ -1,6 +1,5 @@
 tr_mercantile_finish = {
 	modifier = {
-		trade_value_mult = 0.07
 		ascension_perks_add = 1
 	}
 
@@ -13,7 +12,6 @@ tr_mercantile_finish = {
 			has_federations_dlc = yes
 		}
 		modifier = {
-			trade_value_mult = 0.07
 			ascension_perks_add = 1
 		}
 		weight = {
@@ -28,7 +26,7 @@ tr_mercantile_marketplace_of_better_ideas = {
 	}
 
 	modifier = {
-		trade_value_mult = 0.07
+		planet_jobs_trade_produces_mult = 0.05
 	}
 
 	ai_weight = {

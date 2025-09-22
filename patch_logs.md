@@ -3,7 +3,21 @@
 Cleaned up for version 4.0 of the game. Also purged logs older than a year. Much of the ones removed were removed simply because it was unclear if they were good or bad anymore.
 
 Added:
- * Tactical Algorithms:
+ * Biomorphis: requires 4 ascension perks from 3
+ * The Flesh is Weak: requires 4 ascension perks from 3
+ * Synthetic Evolution: requires 4 ascension perks from 3
+ * Mind Over Matter: requires 4 ascension perks from 3
+ * Behemoth Fury: requires 4 ascension perks from 3 and -25% research speed
+ * Overtuned: requires 2 ascension perks from 1 for Biomorphis
+ 
+ * Artillery Combat Computer:
+ * Armor:
+ * Afterburners:
+ * Trade Federation:
+ * Resource Consolidation:
+ * Market Place of Ideas: 
+ * Intelligent: +7% research from +10%
+
  * Lubrication Tanks
  * Luxury Lubrication Pools
  * Hyper Lubrication Basin for Resource Consolidation.
@@ -12,75 +26,32 @@ Added:
  * Crowdsourcing/Decentralized R&D
  * Seasonal Dormancy for non-Gestalts;
  * Vat-Grown
- * Artillery Computer(Corvette)
- * Resource Consolidation:
+
  * Cybernetic Creed:
  * Dictatorial Cybervision: 
  * Computation Core Policy:
- * Trade Federation:
- * Behemoth Fury:
- * Executive Vigor: 
- * Interstellar Dominion: 
- * Transcendant Learning: 
- * Shared Destiny:
+
  * Eternal Vigilance:
- * Biomorphis:
- * The Flesh is Weak:
- * Synthetic Evolution:
- * Mind Over Matter: 
 
 Changed:
- * Fruitful Partnership: 
+ * Clone Army: -25% to Unity Production
+ * Pre-planned growth: +23% growth from +30
+ * Elevated Synapses: +15% research from +20%
+ * Become the crisis: requires 4 ascension perks from 3 and -25% research speed
+ * Mercantile:
+  * Market Place of Better Ideas: +5% Trade value from +10%
+  * Finisher: +0% Trade value from +10%
+ * Cosmogenesis:
+  * Requires 4 ascension perks from 3
+  * -50% to naval capacity and diplomatic weight
+  * Advanced Logic: +0% physics research from +10%
+  * Gravitational Tools: +0% society research from +10%
+  * Eternal Expansion: +0% engineering research from +10%
+  * Rulebreaker: +0% physics research from +10%
  
 Removed:
- * Robots:
-   * Researchers require +0.1 alloy upkeep
- * Traders: +9 trade value from +8
- * Corvettes: Ship speed 170 from 160, evasion 62 from 60
- * Hive minds: +2 encryption
- * Gestalts: +0 encryption from +2
- * Machine Intelligence: -2 encryption
- * Expansion (Void Dweller): -15% to habitat and district alloy upkeep
- * Technological Ascendency: +7% Research rate from +10%
- * Fanatic Purifier - Event (Necrophage):-25% purge speed penalty
- * Meritocracy: Specialist pop resource output +5% from +10%
- * Citizen Service: +10% Naval capacity from +15%
- * Catalytic Converter: reduce alloy production by -0.5 and councilor position now gives +1% bonus to alloy production from +2%
- * Individual Machine Predictive Analysis: +0 intel decryption from +1
- * Technocracy: +1 scientist leader cap
- * Catalytic Converter: reduce alloy production by -0.5
- * Static Research Analysis: +0 intel decryption from +1
- * Ascetic: -10% amenities usage from -15%
- * Naval Contractors: Naval Cap +10% from +15%
- * Charismatic: +15% to amenities from +20%
- * Solitary: +13% housing from +10%
- * Phototrophic: 55% food and energy from 50%
- * Deviants: -30% ethics attraction from -15%
- * Repugnant: -15% to amenities from -20%
- * Emotion Emulator: +15% to amenities from +20%
- * Bulky: +20% housing from +10%
- * Nannybot: +4% Amenities from 5%
- * Uncanny: -15% to amenities from -20%
- * Consecrate Worlds: Can now consecrate an occupied world
- * Hydrocentric: terraforming ocean world cost now -33% from -25% and -15% to terraforming ocean world time
- * Storm Preparations (planet decision):
-   * Takes 90 days to enact and lasts until cancelled
-   * costs 250 unity + additional resources the more pops there are above 10
-   * Gives -25% to storm devastation, but -10% to jobs production and -100% to immigration pull
- * Storm Protection (event): At start of game can decide if Storms should be repulsed from your Empire borders for 20 years
- * Natural Engineers: +12% Engineering Research from +15%
- * Thrifty: +20% trade value from +25%
- * Slow Learner: -15% experience from -10%
- * Nomadic: +20% pop growth from immigration from 15% and -30% resettlement cost from -25%
- * Industrious: +20% to minerals from +15%
- * Repurposed Hardware: -15% experience from -10%
- * Art Generator (History Trait): +4% unity from +2%
- * Conversational AI: -1.75% upkeep from jobs from -2.0%
- * Luxurious: +30% assembly cost from +20%
- * Recycled: -30% assembly cost from -20%
- * Power Drill: +20% to minerals from +15%
- * Sociology Core: +20% Society Research from +15%
- * Incubators: 25% population growth from 30%
+ * Over 80% of previous changes have been removed...
+
 
 # 2024/12/23 - 1.14.2
 

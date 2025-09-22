@@ -167,7 +167,7 @@ trait_robot_logic_engines = {
 		}
 	}
 	modifier = {
-		researcher_jobs_bonus_workforce_mult = 0.10
+		researcher_jobs_bonus_workforce_mult = 0.07
 	}
 	slave_cost = {
 		energy = 750
@@ -241,7 +241,7 @@ trait_robot_double_jointed = {
 	tags = { machine positive housing }
 
 	modifier = {
-		pop_housing_usage_mult = -0.2
+		pop_housing_usage_mult = -0.1
 	}
 	slave_cost = {
 		energy = 750
@@ -380,7 +380,7 @@ trait_robot_learning_algorithms = {
 		}
 	}
 	modifier = {
-		species_leader_exp_gain = 0.15
+		species_leader_exp_gain = 0.10
 	}
 	slave_cost = {
 		energy = 750
@@ -443,7 +443,7 @@ trait_robot_custom_made = {
 	tags = { machine negative pop_growth }
 
 	modifier = {
-		planet_pop_assembly_mult = -0.10
+		planet_pop_assembly_mult = -0.15
 	}
 	ai_weight = {
 		factor = 0
@@ -510,7 +510,7 @@ trait_robot_propaganda_machines = {
 	}
 	opposites = { "trait_robot_quarrelsome" }
 	modifier = {
-		bureaucrat_jobs_bonus_workforce_mult = 0.20
+		bureaucrat_jobs_bonus_workforce_mult = 0.15
 	}
 	slave_cost = {
 		energy = 750
@@ -786,7 +786,6 @@ trait_robot_integrated_weaponry = {
 	randomized = no
 	modifier = {
 		army_damage_mult = 1.0
-		army_health = 0.5
 		enforcer_jobs_bonus_workforce_mult = 0.20
 	}
 
@@ -1003,7 +1002,7 @@ trait_robot_history_warbot = {
 	opposites = { "trait_robot_history_artbot" "trait_robot_history_explorebot" "trait_robot_history_researchbot" "trait_robot_history_resourcebot" "trait_robot_history_chatbot"}
 
 	modifier = {
-		army_damage_mult = 0.10
+		army_damage_mult = 0.05
 	}
 	slave_cost = {
 		energy = 750
@@ -1170,6 +1169,7 @@ trait_robot_digital_1 = {
 	randomized = no
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine positive habitability housing special }
+	opposites = { "trait_robot_latent_psionic" "trait_robot_psionic" }
 
 	species_potential_add = {
 		always = no
@@ -1182,6 +1182,21 @@ trait_robot_digital_1 = {
 	modifier = {
 		habitability_floor_add = 0.25
 		pop_housing_usage_mult = -0.9
+	}
+
+	resources = {
+		category = planet_pops
+		# Energy Upkeep
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_tradition = tr_virtuality_1
+				}
+			}
+			energy = 1	# All the maths is done in the script value
+			mult = value:virtuality_num_colonies
+		}
 	}
 
 	custom_tooltip = trait_robot_digital_1_tt
@@ -1199,6 +1214,7 @@ trait_robot_digital_2 = {
 	randomized = no
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine positive pop_output habitability housing special }
+	opposites = { "trait_robot_latent_psionic" "trait_robot_psionic" }
 
 	species_potential_add = {
 		always = no
@@ -1222,6 +1238,21 @@ trait_robot_digital_2 = {
 		}
 		pop_bonus_workforce_mult = 1
 		mult = value:virtuality_concentrated_production_mult
+	}
+
+	resources = {
+		category = planet_pops
+		# Energy Upkeep
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_tradition = tr_virtuality_1
+				}
+			}
+			energy = 1	# All the maths is done in the script value
+			mult = value:virtuality_num_colonies
+		}
 	}
 
 	custom_tooltip = trait_robot_digital_2_tt
@@ -1764,10 +1795,6 @@ trait_robot_immortality = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	modifier = {
-		negative_leader_traits_species = -1
-		leaders_upkeep_mult = -0.10
-	}
 
 	initial = yes
 	randomized = no
@@ -1815,4 +1842,54 @@ trait_robot_synthetic_dawn = {
 	slave_cost = {
 		energy = 1000
 	}
+}
+
+trait_robot_latent_psionic = {
+	cost = 0
+	category = robotic
+	icon = "gfx/interface/icons/traits/trait_latent_psionic_species.dds"
+
+	opposites = { "trait_robot_digital_1" "trait_robot_digital_2" }
+
+	initial = no
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine positive pop_output research unity psionic }
+
+	inline_script = "traits/latent_psionic_effects"
+}
+
+trait_robot_psionic = {
+	cost = 0
+	category = robotic
+	icon = "gfx/interface/icons/traits/trait_psionic_species.dds"
+
+	opposites = { "trait_robot_digital_1" "trait_robot_digital_2" }
+
+	improves_leaders = yes
+	initial = no
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine positive pop_output research unity happiness psionic }
+
+	inline_script = "traits/psionic_effects"
 }
