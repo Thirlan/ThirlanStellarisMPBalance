@@ -41,28 +41,28 @@
 @bio_ship_shield_L1 = 396
 
 @bio_ship_shield_S2 = 88
-@bio_ship_shield_M2 = 200
-@bio_ship_shield_L2 = 480
+@bio_ship_shield_M2 = 220
+@bio_ship_shield_L2 = 528
 
-@bio_ship_shield_S3 = 100
-@bio_ship_shield_M3 = 250
-@bio_ship_shield_L3 = 600
+@bio_ship_shield_S3 = 110
+@bio_ship_shield_M3 = 275
+@bio_ship_shield_L3 = 660
 
-@bio_ship_shield_S4 = 130
-@bio_ship_shield_M4 = 330
-@bio_ship_shield_L4 = 790
+@bio_ship_shield_S4 = 143
+@bio_ship_shield_M4 = 363
+@bio_ship_shield_L4 = 889
 
-@bio_ship_shield_S5 = 175
-@bio_ship_shield_M5 = 400
-@bio_ship_shield_L5 = 1050
+@bio_ship_shield_S5 = 193
+@bio_ship_shield_M5 = 440
+@bio_ship_shield_L5 = 1155
 
-@bio_ship_shield_S6 = 225
-@bio_ship_shield_M6 = 560
-@bio_ship_shield_L6 = 1345
+@bio_ship_shield_S6 = 248
+@bio_ship_shield_M6 = 616
+@bio_ship_shield_L6 = 1480
 
-@bio_ship_shield_S7 = 290
-@bio_ship_shield_M7 = 720
-@bio_ship_shield_L7 = 1730
+@bio_ship_shield_S7 = 319
+@bio_ship_shield_M7 = 792
+@bio_ship_shield_L7 = 1903
 
 # Custom values used by inline_scripts/ship_components/bio_ship_armor.txt
 @bio_ship_armor_evasion_s_1 = -0.02

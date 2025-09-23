@@ -44,9 +44,9 @@
    * Jump drive penalty increased to -60% to weapons/movement from -50%
  * Disruptor level 1: Tech lasers level 3 and tech mass driver level 2 is a requirement
  * Anti-kitting:
-   * Artillery Combat Computer: TODO
-   * Armor: TODO
-   * Afterburners: TODO
+   * Artillery Combat Computer: 0% / 1% / 2% / 3% to weapon range and rate of fire from 5% / 10% / 15% / 20%
+   * Armor: -2% / -2% / -2% /  -1% / -1% / 1% to evasion and speed
+   * Afterburners: 15 / 30 power from 10 / 20 and 6 / 9 alloys from 4 / 6
 
 ### Boosts
  * Shields: Increased health by 10%

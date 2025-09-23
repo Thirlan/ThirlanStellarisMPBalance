@@ -1,6 +1,6 @@
-# 2025/09/05 - 1.15.0
+# 2025/09/23 - 1.15.0
 
-Cleaned up for version 4.0 of the game. Also purged logs older than a year. Much of the ones removed were removed simply because it was unclear if they were good or bad anymore.
+Cleaned up for version 4.1 of the game. Also purged logs older than a year. Much of the changes were removed to refocus on the overpowered abilities and release this mod faster.
 
 Added:
  * Biomorphis: requires 4 ascension perks from 3
@@ -9,33 +9,14 @@ Added:
  * Mind Over Matter: requires 4 ascension perks from 3
  * Behemoth Fury: requires 4 ascension perks from 3 and -25% research speed
  * Overtuned: requires 2 ascension perks from 1 for Biomorphis
- 
  * Artillery Combat Computer: 0% / 1% / 2% / 3% to weapon range and rate of fire from 5% / 10% / 15% / 20%
  * Armor: -2% / -2% / -2% /  -1% / -1% / 1% to evasion and speed
- * Afterburners:
- * Trade Federation:
- * Resource Consolidation:
- * Market Place of Ideas: 
+ * Afterburners: 15 / 30 power from 10 / 20 and 6 / 9 alloys from 4 / 6
  * Intelligent: +7% research from +10%
-
- * Lubrication Tanks
- * Luxury Lubrication Pools
- * Hyper Lubrication Basin for Resource Consolidation.
- * Civil Education.
- * Cordyceptic Drones.
- * Crowdsourcing/Decentralized R&D
- * Seasonal Dormancy for non-Gestalts;
- * Vat-Grown
-
- * Cybernetic Creed:
- * Dictatorial Cybervision: 
- * Computation Core Policy:
-
- * Eternal Vigilance:
 
 Changed:
  * Clone Army: -25% to Unity Production
- * Pre-planned growth: +23% growth from +30
+ * Pre-planned growth: +23% growth from +30%
  * Elevated Synapses: +15% research from +20%
  * Become the crisis: requires 4 ascension perks from 3 and -25% research speed
  * Mercantile:
