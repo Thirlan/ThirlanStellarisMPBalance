@@ -10,8 +10,8 @@ Added:
  * Behemoth Fury: requires 4 ascension perks from 3 and -25% research speed
  * Overtuned: requires 2 ascension perks from 1 for Biomorphis
  
- * Artillery Combat Computer:
- * Armor:
+ * Artillery Combat Computer: 0% / 1% / 2% / 3% to weapon range and rate of fire from 5% / 10% / 15% / 20%
+ * Armor: -2% / -2% / -2% /  -1% / -1% / 1% to evasion and speed
  * Afterburners:
  * Trade Federation:
  * Resource Consolidation:

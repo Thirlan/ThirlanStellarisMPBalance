@@ -1,0 +1,26 @@
+modifier = {
+	ship_hull_add = @bio_ship_hull_$SIZE$_$TIER$
+	ship_armor_add = @bio_ship_armor_$SIZE$_$TIER$
+	ship_evasion_mult = @bio_ship_armor_evasion_$SIZE$_$TIER$
+	ship_speed_mult = @bio_ship_armor_speed_$SIZE$_$TIER$
+}
+
+custom_tooltip = bio_ship_armor_regen_$SIZE$_$TIER$_tt
+
+triggered_ship_modifier = {
+	potential = {
+		has_armor_percentage < @bio_ship_armor_regen_threshold
+	}
+	ship_armor_regen_add_static = @bio_ship_armor_regen_$SIZE$_$TIER$
+}
+
+resources = {
+	category = ship_components
+	cost = {
+		alloys = @armor_$SIZE$_t$TIER$_cost
+	}
+	upkeep = {
+		food = @$SIZE$_t$TIER$_upkeep_energy
+		alloys = @$SIZE$_t$TIER$_upkeep_alloys
+	}
+}

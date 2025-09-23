@@ -1,0 +1,354 @@
+##################
+# CARAPACE ARMOR #
+##################
+
+########################
+# Dragon Armor
+########################
+
+#########################
+# ENERGETIC MUSCULATURE #
+#########################
+
+####################
+# Psionic Shields
+####################
+
+#######################
+# Archaeotech Shields
+#######################
+
+#############
+# REACTORS #
+#############
+
+########################
+# Fission Reactors
+########################
+
+########################
+# Fusion Reactors
+########################
+
+########################
+# Cold Fusion Reactors
+########################
+
+########################
+# Antimatter Reactors
+########################
+
+########################
+# Zero-Point Reactors
+########################
+
+####################
+# Engimatic Reactors
+####################
+
+####################
+# FTL Drives
+####################
+
+####################
+# DEFAULT COMPUTER #
+####################
+
+@computer_cost0 = 0
+@computer_cost1 = 5
+@computer_cost2 = 10
+@computer_cost3 = 20
+
+@computer_power0 = -5
+@computer_power1 = -10
+@computer_power2 = -15
+@computer_power3 = -25
+
+########################
+# BASIC SHIP COMPUTERS #
+########################
+
+utility_component_template = {
+	key = "BIO_COMBAT_COMPUTER_ARTILLERY_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_bioship_computer_default"
+	icon_frame = 1
+	power = @computer_power0
+	resources = {
+		category = ship_components
+		cost = {
+			food = @computer_cost0
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+	ship_behavior = "artillery"
+	upgrade_path = artillery
+	hidden = yes
+	potential = {
+		from = {
+			country_uses_bio_ships = yes
+		}
+		ship_uses_artillery_role = yes
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = yes
+	}
+	component_set = "combat_computers"
+	upgrades_to = "BIO_COMBAT_COMPUTER_ARTILLERY_BASIC"
+	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tag_weight = 0
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+#####################
+# 'SWARM' COMPUTERS #
+#####################
+
+#####################
+# 'TORPEDO' COMPUTERS #
+#####################
+
+######################
+# 'PICKET' COMPUTERS #
+######################
+
+####################
+# 'LINE' COMPUTERS #
+####################
+
+######################
+# 'ARTILLERY' COMPUTERS #
+######################
+utility_component_template = {
+	key = "BIO_COMBAT_COMPUTER_ARTILLERY_BASIC"
+	size = small
+	icon = "GFX_ship_part_bioship_computer_artillery_basic"
+	icon_frame = 1
+	power = @computer_power1
+	resources = {
+		category = ship_components
+		cost = {
+			food = @computer_cost1
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = yes
+		}
+		ship_uses_artillery_role = yes
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = yes
+	}
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	upgrade_path = artillery
+	prerequisites = { "tech_combat_computers_1" }
+	upgrades_to = "BIO_COMBAT_COMPUTER_ARTILLERY_ADVANCED"
+	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tag_weight = 0
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "BIO_COMBAT_COMPUTER_ARTILLERY_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_bioship_computer_artillery_advanced"
+	icon_frame = 1
+	power = @computer_power2
+	resources = {
+		category = ship_components
+		cost = {
+			food = @computer_cost2
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = yes
+		}
+		ship_uses_artillery_role = yes
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = yes
+	}
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	upgrade_path = artillery
+	prerequisites = { "tech_combat_computers_2" }
+	upgrades_to = "BIO_COMBAT_COMPUTER_ARTILLERY_SAPIENT"
+	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tag_weight = 0
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.01
+		ship_weapon_range_mult = 0.01
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "BIO_COMBAT_COMPUTER_ARTILLERY_SAPIENT"
+	size = small
+	icon = "GFX_ship_part_bioship_computer_artillery_sapient"
+	icon_frame = 1
+	power = @computer_power3
+	resources = {
+		category = ship_components
+		cost = {
+			food = @computer_cost3
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = yes
+		}
+		ship_uses_artillery_role = yes
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = yes
+	}
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	upgrade_path = artillery
+	prerequisites = { "tech_combat_computers_3" }
+	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tag_weight = 0
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.02
+		ship_weapon_range_mult = 0.02
+	}
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0
+			OR = {
+				has_global_flag = ghost_signal_5_flag
+				has_global_flag = ghost_signal_4_flag
+				has_global_flag = ghost_signal_3_flag
+				has_global_flag = ghost_signal_2_flag
+				has_global_flag = ghost_signal_1_flag
+				has_policy_flag = ai_outlawed
+			}
+		}
+	}
+}
+
+
+utility_component_template = {
+	key = "BIO_COMBAT_COMPUTER_ARTILLERY_AUTONOMOUS"
+	size = small
+	icon = "GFX_ship_part_bioship_computer_artillery_sapient"
+	icon_frame = 1
+	power = @computer_power3
+	resources = {
+		category = ship_components
+		cost = {
+			food = @computer_cost3
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = yes
+		}
+		ship_uses_artillery_role = yes
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = yes
+	}
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	upgrade_path = artillery
+	prerequisites = { "tech_combat_computers_autonomous" }
+	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tag_weight = 0
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.03
+		ship_weapon_range_mult = 0.03
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "BIO_COMBAT_COMPUTER_ARTILLERY_PRECOG"
+	size = small
+	icon = "GFX_ship_part_bioship_computer_artillery_precog"
+	icon_frame = 1
+	power = @computer_power3
+	resources = {
+		category = ship_components
+		cost = {
+			food = @computer_cost3
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = yes
+		}
+		ship_uses_artillery_role = yes
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = yes
+	}
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	upgrade_path = artillery
+	prerequisites = { "tech_precognition_interface" }
+	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tag_weight = 0
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.03
+		ship_weapon_range_mult = 0.03
+		ship_tracking_add = 10
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+######################
+# 'CARRIER' COMPUTERS #
+######################
+
+################
+# Starbase
+################
+
+################
+# Special
+################
+
+########################
+# 'DEBUFFER' COMPUTERS #
+########################
+
+########################
+# 'BUFFER' COMPUTERS #
+########################
