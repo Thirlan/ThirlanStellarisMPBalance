@@ -1,0 +1,35 @@
+tech_robomodding_m = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 1
+	category = { industry }
+	prerequisites = { "tech_powered_exoskeletons" }
+	weight = @tier2weight1
+
+	feature_flags = {
+		modify_robots
+	}
+
+	modifier = {
+		pop_environment_tolerance = 0.05
+		leader_lifespan_add = 20
+	}
+
+	potential = {
+		OR = {
+			is_machine_empire = yes
+			is_individual_machine = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.20
+			has_origin = origin_shattered_ring
+		}
+	}
+	ai_weight = {
+		factor = @robots_ai_tech_factor
+		
+	}
+}

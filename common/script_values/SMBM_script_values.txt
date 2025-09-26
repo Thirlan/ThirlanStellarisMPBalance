@@ -2,6 +2,7 @@
 # Machine Age Script Values #
 #############################
 
+# 04_script_values_machine_age
 virtuality_concentrated_production_mult = {
 	base = 1.25
 	complex_trigger_modifier = {
@@ -12,9 +13,11 @@ virtuality_concentrated_production_mult = {
 	}
 }
 
+# 00_script_values
 incubator_growth = {
-	base = 37
-	subtract = trigger:num_pops
+	base = 3700
+	subtract = trigger:pop_amount
+	divide = 100
 	min = -10
 	max = 25
 }

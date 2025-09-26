@@ -1,4 +1,3 @@
-
 origin_scion = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_scion_1.dds"
@@ -42,42 +41,6 @@ origin_scion = {
 	}
 }
 
-origin_progenitor_hive = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_progenitor_hive.dds"
-	picture = GFX_origin_progenitor_hive
-
-	playable = {
-		has_overlord_dlc = yes
-	}
-
-	advanced_start = yes
-
-	possible = {
-		authority = { value = auth_hive_mind }
-		civics = {
-			NOT = {
-				value = civic_hive_beastmasters
-			}
-		}
-	}
-
-	description = "origin_tooltip_progenitor_hive_effects"
-	negative_description = "origin_tooltip_progenitor_hive_negative_effects"
-	modifier = {
-		ship_military_speed_mult = -0.75
-		owned_ship_evasion_mult = -0.75
-		owned_ship_fire_rate_mult = -0.75
-		owned_ship_accuracy_mult = -0.75
-	}
-	hide_modifiers = yes
-	flags = { custom_start_screen }
-
-	random_weight = {
-		base = 2
-	}
-}
-
 origin_imperial_vassal = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_imperial_vassal.dds"
@@ -102,6 +65,11 @@ origin_imperial_vassal = {
 		}
 	}
 
+	modifier = {
+		pop_government_ethic_attraction = -0.20
+		pop_happiness = -0.05
+	}
+
 	description = "origin_tooltip_imperial_vassal_effects"
 	flags = { custom_start_screen }
 
@@ -110,363 +78,45 @@ origin_imperial_vassal = {
 	random_weight = {
 		base = 0
 	}
-
-	modifier = {
-		pop_government_ethic_attraction = -0.20
-		pop_happiness = -0.05
-	}
 }
 
-origin_payback = {
+origin_clone_army = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_payback.dds"
-	picture = GFX_origin_payback
-	max_once_global = yes
+	icon = "gfx/interface/icons/origins/origins_clones.dds"
+	picture = GFX_origin_clone_army
+	flags = { custom_start_screen }
 
 	playable = {
-		has_first_contact_dlc = yes
+		host_has_dlc = "Humanoids Species Pack"
 	}
 
 	possible = {
 		ethics = {
-			NOT = {
-				value = ethic_gestalt_consciousness
-			}
+			NOT = {	value = ethic_gestalt_consciousness	}
 		}
 		civics = {
 			NOR = {
-				# No devourers or slavers
-				value = civic_dystopian_society
-				value = civic_fanatic_purifiers
-				value = civic_pompous_purists
-				value = civic_slaver_guilds
-				value = civic_indentured_assets
-				# Or advanced tech
-				value = civic_private_healthcare_corporate
-			}
-			NOR = {
-				# Or low tech starts
-				text = civic_tooltip_not_eager_explorers
-				value = civic_eager_explorers
-				value = civic_privatized_exploration
-				value = civic_hive_stargazers
-				value = civic_machine_exploration_protocol
+				value = civic_permanent_employment
+				value = civic_natural_design
 			}
 		}
 		species_archetype = { NOT = { value = MACHINE } }
 	}
 
 	modifier = {
-		damage_vs_superior_empires_mult = 0.15
-		ship_fire_rate_mult = 0.15
+		country_unity_produces_mult = -0.25
 	}
 
-	description = "origin_tooltip_payback_effects"
-	negative_description = "origin_tooltip_payback_negative_effects"
-	flags = { custom_start_screen }
+	description = origin_tooltip_clone_army_effects
+
+	traits = {
+		trait = trait_clone_soldier_infertile
+	}
 
 	advanced_start = no
 	blocks_random_machine_empire_generation	= yes
 
 	random_weight = {
-		base = 0
-	}
-}
-
-origin_broken_shackles = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_broken_shackles.dds"
-	picture = GFX_origin_broken_shackles
-	max_once_global = yes
-
-	initializers = { custom_starting_init_01 custom_starting_init_02 custom_starting_init_03 custom_starting_init_04 custom_starting_init_05 custom_starting_init_06 }
-	preferred_planet_class_neighbor = no
-
-	playable = {
-		has_first_contact_dlc = yes
-	}
-
-	possible = {
-		ethics = {
-			NOT = { value = ethic_gestalt_consciousness }
-			NOR = {
-				text = civic_tooltip_not_authoritarian
-				value = ethic_authoritarian
-				value = ethic_fanatic_authoritarian
-			}
-			NOR = {
-				text = civic_tooltip_not_xenophobe
-				value = ethic_xenophobe
-				value = ethic_fanatic_xenophobe
-			}
-		}
-		civics = {
-			NOR = {
-				value = civic_fanatic_purifiers
-				value = civic_dystopian_society
-				value = civic_selective_kinship
-				# Or advanced tech
-				value = civic_private_healthcare_corporate
-			}
-			NOR = {
-				# Or low tech starts
-				text = civic_tooltip_not_eager_explorers
-				value = civic_eager_explorers
-				value = civic_privatized_exploration
-				value = civic_hive_stargazers
-				value = civic_machine_exploration_protocol
-			}
-		}
-		species_archetype = { NOT = { value = MACHINE } }
-	}
-
-	description = "origin_tooltip_broken_shackles_effects"
-	negative_description = "origin_tooltip_broken_shackles_negative_effects"
-	flags = { custom_start_screen }
-
-	modifier = {
-		envoys_add = 2
-		first_contact_speed_mult = 0.30
-		spy_network_daily_value_mult = 0.30
-	}
-
-	blocks_random_machine_empire_generation	= yes
-
-	random_weight = {
-		base = 0
-	}
-}
-
-origin_fear_of_the_dark = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_fear_of_the_dark.dds"
-	picture = GFX_origin_fear_of_the_dark
-	initializers = { fear_of_the_dark_system sol_system_fear_of_the_dark_system }
-
-	playable = {
-		has_first_contact_dlc = yes
-	}
-
-	possible = {
-		ethics = {
-			NOT = {
-				value = ethic_gestalt_consciousness
-			}
-		}
-		civics = {
-			NOR = {
-				value = civic_inwards_perfection
-				value = civic_fanatic_purifiers
-			}
-			NOR = {
-				# Or low tech starts
-				text = civic_tooltip_not_eager_explorers
-				value = civic_eager_explorers
-				value = civic_privatized_exploration
-				value = civic_hive_stargazers
-				value = civic_machine_exploration_protocol
-			}
-		}
-		species_archetype = { NOT = { value = MACHINE } }
-	}
-
-	description = "origin_tooltip_fear_of_the_dark_effects"
-	negative_description = "origin_tooltip_fear_of_the_dark_negative_effects"
-	flags = { custom_start_screen }
-
-	modifier = {
-		ship_anomaly_generation_chance_mult = 0.1
-		ship_anomaly_research_speed_mult = 0.2
-	}
-
-	traits = {
-	}
-
-	blocks_random_machine_empire_generation	= yes
-
-	random_weight = {
-		base = 5
-	}
-}
-
-origin_fruitful = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_gardeners.dds"
-	picture = GFX_origin_fruitful
-
-	playable = {
-		has_plantoids = yes
-	}
-
-	possible = {
-		authority = { NOT = { value = auth_machine_intelligence } }
-		ethics = {
-			OR = {
-				text = civic_tooltip_hive_xenophile_or_pacifist
-				value = ethic_xenophile
-				value = ethic_fanatic_xenophile
-				value = ethic_pacifist
-				value = ethic_fanatic_pacifist
-				value = ethic_gestalt_consciousness
-			}
-		}
-		species_class = {
-			OR = {
-				value = FUN
-				value = PLANT
-			}
-		}
-		civics = {
-			NOT = { value = civic_hive_devouring_swarm }
-		}
-	}
-
-	description = "origin_tooltip_fruitful_effects"
-	flags = { custom_start_screen first_alien_life Story2 tiyanki_encountered }
-
-	random_weight = {
-		base = 5
-	}
-
-	modifier = {
-		damage_vs_country_type_tiyanki_mult = -0.33
-	}
-}
-
-origin_riftworld = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_riftworld.dds"
-	picture = GFX_origin_riftworld
-	flags = { custom_start_screen }
-
-	initializers = { custom_starting_init_01 custom_starting_init_02 sol_system_initializer }
-
-	playable = {
-		has_astral_planes_dlc = yes
-	}
-
-	possible = {
-	}
-
-	description = "origin_tooltip_riftworld_effects"
-
-	modifier = {
-		country_astral_rift_speed_mult = 0.25
-		country_astral_rift_fail_mult = -0.5
-		country_physics_research_produces_mult = 0.15
-	}
-
-	max_once_global = yes
-
-	random_weight = {
 		base = 2
-	}
-}
-
-origin_arc_welders = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origin_arc_welders.dds"
-	picture = GFX_origin_arc_welders
-	max_once_global = yes
-	flags = { custom_start_screen }
-
-	initializers = { custom_starting_init_01 custom_starting_init_02 custom_starting_init_03 custom_starting_init_04 custom_starting_init_05 custom_starting_init_06 sol_system_initializer deneb_system titawin_init }
-
-	playable = {
-		has_machine_age_dlc = yes
-	}
-
-	possible = {
-		species_archetype = { value = MACHINE }
-	}
-
-	description = "origin_tooltip_arc_builders_effects"
-	negative_description = "origin_tooltip_arc_builders_negative_effects"
-
-	modifier = {
-		country_megastructure_build_cap_add = 1
-		arc_furnace_limit_add = 1
-		envoys_add = -1
-		first_contact_speed_mult = -0.20
-		spy_network_daily_value_mult = -0.20
-		diplo_weight_mult = -0.20
-		country_base_influence_produces_add = -1
-	}
-
-	advanced_start = yes
-
-	random_weight = {
-		base = 2
-	}
-}
-
-origin_storm_chasers = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origin_storm_chasers.dds"
-	picture = GFX_origin_storm_chasers
-	max_once_global = yes
-	flags = { custom_start_screen }
-	description = "origin_tooltip_storm_chasers_effects"
-
-	playable = {
-		has_cosmic_storms_dlc = yes
-	}
-
-	possible = {
-		civics = {
-			NOR = {
-				text = civic_tooltip_not_genocidal
-				value = civic_hive_devouring_swarm
-				value = civic_fanatic_purifiers
-				value = civic_machine_terminator
-			}
-		}
-	}
-
-	modifier = {
-		planet_jobs_energy_produces_mult = 0.15
-		planet_storm_devastation_mult = -0.33
-	}
-
-	random_weight = {
-		base = 1
-	}
-}
-
-origin_primal_calling = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_primal_calling.dds"
-	picture = GFX_origin_primal_calling
-	flags = { custom_start_screen first_alien_life Story1 Story5 }
-
-	playable = {
-		has_grand_archive_dlc = yes
-	}
-
-	possible = {
-		species_archetype = { NOT = { value = MACHINE } }
-	}
-
-	description = "origin_tooltip_primal_calling_effects"
-
-	modifier = {
-		ship_damage_against_space_fauna_mult = 0.15
-		space_fauna_ship_armor_mult = 0.15
-		space_fauna_ship_speed_mult = 0.1
-		country_capture_chance_add = 0.15
-		gravity_snare_cooldown_mult = -0.25
-		country_vivarium_max_capacity_mult = 0.25
-		category_biology_research_speed_mult = 0.15
-	}
-
-	max_once_global = yes
-
-	random_weight = {
-		base = 0
-		modifier = {
-			add = 1
-			is_scope_valid = yes
-			is_ai = no
-		}
 	}
 }

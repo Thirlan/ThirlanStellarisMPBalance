@@ -1,14 +1,12 @@
 # See traditions/README.txt for format
 
+# AMBITION PERKS COME FIRST
 
 #################
-# ANCIENT RELICS ASCENSION PERKS
+# GENERIC ASCENSION PERKS
 #################
 
 
-#################
-# OVERLORD ASCENSION PERKS
-#################
 
 #################
 # NEMESIS ASCENSION PERKS
@@ -20,16 +18,15 @@ ap_become_the_crisis = {
 		NOR = {
 			has_ascension_perk = ap_become_the_crisis
 			has_ascension_perk = ap_cosmogenesis
+			has_ascension_perk = ap_behemoths
 			has_ascension_perk = ap_defender_of_the_galaxy
 			has_origin = origin_slavers
+			has_origin = origin_endbringers # No additional crisis for Endbringers
 		}
+		is_wilderness_empire = no
 	}
 
 	possible = {
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_4"
-			num_ascension_perks > 3
-		}
 		custom_tooltip = {
 			fail_text = "requires_independence"
 			is_subject = no
@@ -42,24 +39,56 @@ ap_become_the_crisis = {
 			fail_text = "must_not_be_emperor"
 			is_galactic_emperor = no
 		}
-		NOR = {
-			has_ethic = ethic_xenophile
-			has_ethic = ethic_fanatic_xenophile
-			has_ethic = ethic_pacifist
-			has_ethic = ethic_fanatic_pacifist
-			has_civic = civic_machine_servitor
+		custom_tooltip = {
+			fail_text = "must_finish_shroud_forged_situation"
+			OR = {
+				NOT = { has_origin = origin_shroud_forged }
+				NOT = {
+					any_situation = {
+						is_situation_type = situation_shroud_forged
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "locked_by_shroud_forged_situation"
+			OR = {
+				NOT = { has_origin = origin_shroud_forged }
+				NOT = { has_country_flag = finish_shroud_forged_liberation_flag }
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					NOT = { has_origin = origin_shroud_forged }
+					NOT = { has_country_flag = shroud_forged_can_become_the_crisis }
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_ascension_perks_4"
+				num_ascension_perks > 3
+			}
+			NOR = {
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
+				has_civic = civic_machine_servitor
+				has_valid_civic = civic_hive_familiar_face
+			}
 		}
 	}
 
 	on_enabled = {
 		hidden_effect = {
 			set_ai_personality = became_the_crisis
+			country_event = { id = timeline.69 } # Timeline Become the crisis
 		}
 		activate_crisis_progression = nemesis_path
 	}
 	
 	modifier = {
-		all_technology_research_speed = -0.10
+		all_technology_research_speed = -0.25
 	}
 
 	ai_weight = {
@@ -105,7 +134,7 @@ ap_become_the_crisis = {
 }
 
 #################
-# Cybernetics ASCENSION PERKS
+# MACHINE AGE ASCENSION PERKS
 #################
 
 ap_cosmogenesis = {
@@ -115,8 +144,11 @@ ap_cosmogenesis = {
 			has_ascension_perk = ap_become_the_crisis
 			has_ascension_perk = ap_cosmogenesis
 			has_ascension_perk = ap_defender_of_the_galaxy
+			has_ascension_perk = ap_behemoths
 			has_origin = origin_slavers # No crisis for MSI
+			has_origin = origin_endbringers # No additional crisis for Endbringers
 		}
+		is_wilderness_empire = no
 	}
 
 	possible = {
@@ -149,10 +181,7 @@ ap_cosmogenesis = {
 	}
 	
 	modifier = {
-		envoys_add = -1
-		diplo_weight_mult = -0.25
-		country_trust_cap_add = -20
-		envoy_improve_relations_mult = -0.35
+		diplo_weight_mult = -0.5
 		country_naval_cap_mult = -0.5
 	}
 
@@ -202,67 +231,121 @@ ap_cosmogenesis = {
 }
 
 #################
-# AQUATICS ASCENSION PERKS
+# BIOGENESIS
 #################
 
-ap_hydrocentric = {
+ap_behemoths = {
 	potential = {
-		has_aquatics = yes
-		NOT = { has_ascension_perk = ap_hydrocentric }
-		OR = {
-			has_trait = trait_pc_ocean_preference
-			has_trait = trait_robot_aquatic
+		has_biogenesis_dlc = yes
+		NOR = {
+			has_ascension_perk = ap_become_the_crisis
+			has_ascension_perk = ap_cosmogenesis
+			has_ascension_perk = ap_behemoths
+			has_ascension_perk = ap_defender_of_the_galaxy
+			has_origin = origin_slavers # No crisis for MSI
+			has_origin = origin_endbringers # No additional crisis for Endbringers
 		}
 	}
+
 	possible = {
-		OR = {
-			has_trait = trait_aquatic
-			has_trait = trait_robot_aquatic
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_4"
+			num_ascension_perks > 3
 		}
-		has_technology = tech_terrestrial_sculpting
+		custom_tooltip = {
+			fail_text = "requires_independence"
+			is_subject = no
+		}
+		custom_tooltip = {
+			fail_text = "must_not_be_custodian"
+			is_galactic_custodian = no
+		}
+		custom_tooltip = {
+			fail_text = "must_not_be_emperor"
+			is_galactic_emperor = no
+		}
+		custom_tooltip = {
+			fail_text = "must_use_bioships"
+			country_uses_bio_ships = yes
+		}
+		NOR = {
+			has_ethic = ethic_xenophile
+			has_ethic = ethic_fanatic_xenophile
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_fanatic_pacifist
+		}
+	}
+	
+	modifier = {
+		all_technology_research_speed = -0.25
 	}
 
 	on_enabled = {
-		custom_tooltip = ap_hydrocentric_tooltip
-		if = {
-			limit = {
-				host_has_dlc = "Apocalypse"
-			}
-			if = {
-				limit = { has_ascension_perk = ap_colossus }
-				custom_tooltip = ap_hydrocentric_deluge_tooltip
-			}
-			else = {
-				custom_tooltip = ap_hydrocentric_deluge_pre_unlock_tooltip
-			}
-		}
-		hidden_effect = {
-			country_event = { id = aquatics.1 }
-		}
-	}
-
-	modifier = {
-		terraforming_ocean_cost_mult = -0.33
-		terraforming_ocean_time_cost_mult = -0.15
+		activate_crisis_progression = behemoth_path
 	}
 
 	ai_weight = {
-		factor = 80 #it really is quite good for Aquatic species
+		factor = 7.5
+		modifier = {
+			factor = 0
+			is_xenophile = yes
+			is_spiritualist = yes
+		}
+
 		modifier = {
 			factor = 0.5
-			is_xenophobe = no
-			is_hive_empire = no
+			is_lithoid = yes
+		}
+
+		modifier = {
+			factor = 4
+			is_homicidal = yes
+		}
+
+		modifier = {
+			factor = 6
+			has_civic = civic_hive_devouring_swarm
+		}
+
+		modifier = {
+			factor = 2
+			has_tradition = tr_enmity_finish
 		}
 		modifier = {
-			factor = 5
-			has_origin = origin_ocean_paradise
+			factor = 2
+			has_ascension_perk = ap_engineered_evolution
 		}
 		modifier = {
-			factor = 5
-			has_origin = origin_ocean_machines
+			factor = 2
+			has_ascension_perk = ap_nihilistic_acquisition
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = eater_covenant_confirmed
+		}
+		modifier = {
+			factor = 0
+			galaxy_percentage < 0.1
+		}
+		modifier = {
+			factor = 2
+			galaxy_percentage > 0.2
 		}
 	}
 }
+
+
+#################
+# ANCIENT RELICS ASCENSION PERKS
+#################
+
+#################
+# OVERLORD ASCENSION PERKS
+#################
+
+#################
+# AQUATICS ASCENSION PERKS
+#################
 
 #################
 # APOCALYPSE ASCENSION PERKS
@@ -274,45 +357,30 @@ ap_hydrocentric = {
 # GENERIC ASCENSION PERKS
 #################
 
-ap_technological_ascendancy = {
-	modifier = {
-		all_technology_research_speed = 0.07
-	}
-
-	potential = {
-		NOT = {
-			has_ascension_perk = ap_technological_ascendancy
-		}
-	}
-
-	on_enabled = {
-		custom_tooltip = "ap_technological_ascendancy_rare"
-	}
-
-	ai_weight = {
-		factor = 40 #it's better than average
-		modifier = {
-			factor = 2
-			has_ethic = ethic_materialist
-		}
-		modifier = {
-			factor = 3
-			has_ethic = ethic_fanatic_materialist
-		}
-	}
-}
-
 ap_one_vision = {
 	modifier = {
 		country_unity_produces_mult = 0.07
-		pop_amenities_usage_mult = -0.07
+	}
+
+	triggered_modifier = {
+		potential = {
+			is_wilderness_empire = no
+		}
 		pop_government_ethic_attraction = 0.40
+		add_attunement_the_cradle_of_souls = @ascension_perk_attunement1
+	}
+
+	triggered_modifier = {
+		potential = {
+			is_wilderness_empire = yes
+		}
+		planetary_ascension_cost_mult = -0.10
 	}
 
 	potential = {
 		NOT = {
 			has_ascension_perk = ap_one_vision
-			has_authority = "auth_machine_intelligence"
+			is_machine_empire = yes
 		}
 	}
 
@@ -349,6 +417,7 @@ ap_galactic_wonders_utopia = {
 			if = {
 				limit = {
 					NOT = { has_technology = tech_ring_world }
+					can_research_technology = tech_ring_world
 				}
 				add_research_option = tech_ring_world
 			}
@@ -503,12 +572,19 @@ ap_machine_worlds = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_technology_tech_climate_restoration"
-			has_technology = tech_climate_restoration
+			OR = {
+				has_technology = tech_climate_restoration
+				has_origin = origin_machine
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_ascension_perks_3"
 			num_ascension_perks > 2
 		}
+	}
+
+	modifier = {
+		add_attunement_the_instrument_of_desire = @ascension_perk_attunement1
 	}
 
 	ai_weight = {
@@ -532,12 +608,8 @@ ap_hive_worlds = {
 		NOT = {
 			has_ascension_perk = ap_hive_worlds
 		}
-		NOT = { # Lithoid devouring swarms consume worlds and cannot improve them (since they never get terraforming tech)
-			AND = {
-				is_lithoid_empire = yes
-				has_valid_civic = civic_hive_devouring_swarm
-			}
-		}
+		is_lithoid_devouring_swarm = no # Lithoid devouring swarms consume worlds and cannot improve them (since they never get terraforming tech)
+		is_wilderness_empire = no # the wilderness integrates with natural worlds
 	}
 
 	possible = {
@@ -547,8 +619,15 @@ ap_hive_worlds = {
 		}
 		custom_tooltip = {
 			fail_text = "requires_ascension_perks_3"
-			num_ascension_perks > 2
+			OR = {
+				num_ascension_perks > 2
+				has_origin = origin_fallen_empire_hive
+			}
 		}
+	}
+
+	modifier = {
+		add_attunement_the_composer_of_strands = @ascension_perk_attunement1
 	}
 
 	ai_weight = {
@@ -589,6 +668,10 @@ ap_arcology_project = {
 		custom_tooltip = "decision_arcology_project_effects"
 	}
 
+	modifier = {
+		add_attunement_the_instrument_of_desire = @ascension_perk_attunement1
+	}
+
 	ai_weight = {
 		factor = 10
 		modifier = {
@@ -613,33 +696,3 @@ ap_arcology_project = {
 #################
 # TOXIC ASCENSION PERKS
 #################
-
-ap_detox = {
-	
-	modifier = {
-		pop_environment_tolerance = 0.10
-		terraforming_cost_mult = -0.10
-	}
-
-	potential = {
-		host_has_dlc = "Toxoids Species Pack"
-		NOT = {
-			has_ascension_perk = ap_detox
-		}
-	}
-
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_technology_tech_climate_restoration"
-			has_technology = tech_climate_restoration
-		}
-	}
-
-	on_enabled = {
-		custom_tooltip = "detox_tox_worlds"
-	}
-
-	ai_weight = {
-		factor = 20
-	}
-}

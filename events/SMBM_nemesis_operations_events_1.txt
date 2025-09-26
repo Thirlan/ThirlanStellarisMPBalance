@@ -15,12 +15,12 @@ namespace = operation
 # CUSTODIAN (.6XXX)
 # INTEL (.7XXX)
 
-@OperationBribeCost1 = -200
-@OperationBribeCost2 = -300
-@OperationBribeCost3 = -400
-@OperationBribeThreshold1 = 200
-@OperationBribeThreshold2 = 300
-@OperationBribeThreshold3 = 400
+@OperationBribeCost1 = -400
+@OperationBribeCost2 = -600
+@OperationBribeCost3 = -800
+@OperationBribeThreshold1 = 400
+@OperationBribeThreshold2 = 600
+@OperationBribeThreshold3 = 800
 
 @StealTechnologyAmount = 1000 #Amount of science research in every discipline which will be granted if the operation cannot steal a Technology
 @StealTechnologyTimer = 365 #days (1 year) until Steal Technology can be repeated. Referenced in tooltip strings "operation.1026.tooltip.cooldown" and "operation_steal_technology_too_recent".
@@ -972,7 +972,12 @@ espionage_operation_event = {
 			}
 		}
 	}
-	picture = GFX_evt_space_station
+	inline_script = {
+		script = events/biogenesis_event_art
+		OWNER = target.owner
+		REGULAR_PICTURE = GFX_evt_space_station
+		BIOSHIP_PICTURE = GFX_evt_bioship_hangar
+	}
 	show_sound = event_default
 	is_triggered_only = yes
 
@@ -1041,7 +1046,12 @@ espionage_operation_event = {
 			}
 		}
 	}
-	picture = GFX_evt_space_station
+	inline_script = {
+		script = events/biogenesis_event_art
+		OWNER = target.owner
+		REGULAR_PICTURE = GFX_evt_space_station
+		BIOSHIP_PICTURE = GFX_evt_bioship_hangar
+	}
 	show_sound = event_default
 	is_triggered_only = yes
 
@@ -1110,7 +1120,12 @@ espionage_operation_event = {
 			}
 		}
 	}
-	picture = GFX_evt_space_station
+	inline_script = {
+		script = events/biogenesis_event_art
+		OWNER = target.owner
+		REGULAR_PICTURE = GFX_evt_space_station
+		BIOSHIP_PICTURE = GFX_evt_bioship_hangar
+	}
 	show_sound = event_default
 	is_triggered_only = yes
 
@@ -1218,6 +1233,7 @@ country_event = {
 					has_country_flag = nebula_refinery_sabotaged
 					has_country_flag = solar_panel_network_sabotaged
 					has_country_flag = astromining_bay_sabotaged
+					has_country_flag = vivarium_tank_bay_sabotaged
 					has_country_flag = astromining_hub_sabotaged
 					has_country_flag = ice_mining_station_sabotaged
 					has_country_flag = salvager_workshop_sabotaged
@@ -1475,7 +1491,12 @@ country_event = {
 	id = operation.2006
 	title = operation.2006.name
 	desc = operation.2006.desc
-	picture = GFX_evt_space_station
+	inline_script = {
+		script = events/biogenesis_event_art
+		OWNER = event_target:sabotaged_starbase_owner
+		REGULAR_PICTURE = GFX_evt_space_station
+		BIOSHIP_PICTURE = GFX_evt_bioship_hangar
+	}
 	show_sound = event_default
 	is_triggered_only = yes
 
@@ -3470,7 +3491,10 @@ country_event = {
 	trigger = {
 		exists = from
 		is_machine_empire = no
-		from.target = { is_gestalt = yes }
+		from.target = {
+			is_gestalt = yes
+			is_wilderness_empire = no
+		}
 	}
 
 	immediate = {

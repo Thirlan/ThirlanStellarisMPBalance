@@ -1,38 +1,23 @@
 ﻿l_english:
  
  # TRAITS
- TRAIT_PLANTOID_BUDDING_EFFECT:0 "Each pop working as a slave or better produces 0.0175 £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!"
- TRAIT_LITHOID_BUDDING_EFFECT:0 "Each pop working as a slave or better produces 0.02 £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!"
  TRAIT_INVASIVE_EFFECT: "§YCan only select negative or botanical traits§!\n\nHabitability: §G+4%§! for each negative trait selected\nPop Growth Speed: §G+4%§! for each negative trait selected"
  TRAIT_HUMANOID_EXISTENTIAL_ITEROPARITY_EFFECT: "£pops£ §YPop Growth§! During War and Crisis: §G+20%§!"
- TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "Replaces §Y45%§! of $r_food$ Upkeep §Y55%§! with $r_energy$ Upkeep"
-
-
+ artificial_intelligence_tooltip:0 "$BONUS_WORKFORCE_FOR$ ['concept_planet_researchers']: §G+7%§!"
+ elevated_synapses_tooltip:1 "$BONUS_WORKFORCE_FOR$ ['concept_planet_researchers']: §G+15%§!"
+ preplanned_growth_tooltip:0 "Pop Growth Speed: §G+23%§!$TABBED_NEW_LINE$- Pop Housing Usage: §G-10%§!"
  incubator_tooltip:1 "Grants between §G+25%§! and §R-10%§! Pop Growth Speed, inversely proportional to the number of pops on the planet."
- low_maintenance_tooltip:0 "Pop Consumer Goods Upkeep: §G-13%§!"
- preplanned_growth_tooltip:0 "Pop Growth Speed: §G+25%§!\nPop Housing Usage: §G-10%§!"
- artificial_intelligence_tooltip:0 "£physics£ Physics Research: §G+8%§!\n£society£ Society Research: §G+8%§!\n£engineering£ Engineering Research: §G+8%§!"
- elevated_synapses_tooltip:1 "£physics£ Physics Research: §G+16%§!\n£society£ Society Research: §G+16%§!\n£engineering£ Engineering Research: §G+16%§!"
- expressed_tradition_tooltip:0 "£unity£ Unity from £pops£ Jobs: §G+15%§!"
- trait_robot_immortality_tt: "Leader Lifespan: §GImmortal§!\nLeader Upkeep: §G-10%§!\nLeader Maximum Negative Traits: §G-10%§!"
- INTEGRATED_WEAPONRY_TT: "Army Damage: §G+100%§!\nArmy Health: §G+50%§!\n£job_enforcer£ $job_enforcer_plural$ Crime Reduction: §G+5§!"
  
  # CIVICS
  
  # ORIGINS
- origin_tooltip_doomsday_effects:2 "§R- WARNING: Challenging Origin§!\n- Your homeworld will explode within §H45 to 55 years§! after the game starts.\n- Valuable resources from the doomed planet's mantle boost production on the surface.\n- No Guaranteed Habitable Worlds will spawn near your home system."
- origin.61.desc:1 "As earthquakes and volcanic activity on [Root.GetName] continue to increase in frequency and intensity, our [Root.Owner.GetScientistPlural] are now able to more accurately predict when the end will come:\n\nThey estimate that we have between §H45 to 55 years§! until the planet detonates.\n\nConditions on the surface will steadily deteriorate until then. The only good news is that the violent tectonic movements have made it easier to access the rich resources of the planet's mantle, increasing our production capacity."
- concept_cave_dweller_desc: "- $MOD_HABITABILITY_FLOOR_ADD$: §G50%§!\n- $mod_planet_jobs_minerals_produces_mult$: §G+15%§!\n- $MOD_BIO_POP_GROWTH_SPEED$: §R-10%§!\n\n§L$trait_cave_dweller_desc$§!"
- trait_cave_dweller_tooltip:0 "$MOD_BIO_POP_GROWTH_SPEED$: §R-10%§!"
- concept_insufficient_offspring_oversight_desc: "- $MOD_SHIP_MILITARY_SPEED_MULT$: §R-75%§!\n- $MOD_OWNED_SHIP_EVASION_MULT$: §R-75%§!\n- $MOD_OWNED_SHIP_FIRE_RATE_MULT$: §R-75%§!\n- $MOD_OWNED_SHIP_ACCURACY_MULT$: §R-75%§!\n\n§LWithout an Offspring leading the fleet, our forces are unorganized and lack efficiency.§!"
 
  # ASCENSCIONS
- describe_edict_consectrated_worlds:5 "§EConsecrating planets (up to §Y3§!) increases §YSpiritualist Ethics Attraction§! and §YEmpire-Wide Amenities§! as well as £unity£ §YUnity Generation§!, scaling to the spiritual significance of the worlds consecrated.§!"
  requires_ascension_perks_4:1 "$TRIGGER_FAIL$Requires four other Ascension Perks to be selected first."
 
 # TRADITIONS
  tr_virtuality_1_modifier_desc: "§Y$trait_robot_digital_1$§! Species Trait gains the following effects:$TABBED_NEW_LINE$- Resources From Jobs: §G+125%§! (§R-25%§! per Colony)$TABBED_NEW_LINE$- Pop Upkeep: §R+0.1§! $r_energy$ per Colony"
- tr_politics_gravitas_desc:1 "§G-30%§! £influence£ §YInfluence§! cost to veto or propose Resolutions\n$official_plural_with_icon$ assigned to the §Y[GetGalCommunityOrGalImperium]§! provide an additional §G3.0%§! £diplo_weight£ Diplomatic Weight per §YSkill Level§!."
+ tr_mercantile_federations_finish_desc:0 "Grants access to the §Y$trade_federation$§! Federation type.\nAscension Perks Unlocked: §G+1§!"
 
 # POLICY
 
@@ -43,54 +28,13 @@ JUMP_DRIVE_PENALTY:0 "While Jump Drive is recharging, this fleet suffers the fol
  smbm_be_careful_out_there: "Be careful out there"
  smbm_be_careful_out_there_desc: "Multiplayer anti-rush mechanic"
 
- smbm_unholy_matrimony: "Unholy Matrimony"
- smbm_unholy_matrimony_desc: "Fanatic Necrophage nerf"
-
  smbm_different_worlds: "Different Worlds"
  smbm_different_worlds_desc: "Habitability combo breaker"
-
- smbm_decision_planet_storm_preparations: "Storm Preparations"
- smbm_decision_planet_storm_preparations_desc: "Preparation measures to reduce the damage of the incoming storm"
- 
- smbm_decision_stop_planet_storm_preparations: "End Storm Preparations"
- smbm_decision_stop_planet_storm_preparations_desc: "End the special preparation measures"
- 
- smbm_planet_storm_preparations: "Storm Preparations"
- smbm_planet_storm_preparations_desc: "Storm Preparation Measures"
- 
- smbm_planet_storm_protection: "Storm Protection"
- smbm_planet_storm_protection_desc: "Storms will not enter your Empire borders"
- 
- smbm_over_specialized: "Over Specialized"
- smbm_over_specialized_desc: "Penalty for robots with habilability restricted origins"
-
- smbm_visions_of_madness: "Visions of Madness"
- smbm_visions_of_madness_desc: "Nerf for Teachers of the Shroud origin"
-
- smbm_paradise_planet:0 "Paradise"
- smbm_paradise_planet_desc:0 "A paradise even among Gaia worlds"
 
  smbm.2.name: "Prepare yourself"
  smbm.2.desc: "Prepare for the cold hard realities of space. Not knowing what lurks out there it would be best to increase your defenses. Be careful, your defensive bonuses will only last a few years."
  smbm.2.option: "OK"
  
- smbm.3.name: "Unholy Matrimony"
- smbm.3.desc: "Your dark arts of the Necrophages combined with the fervor of Fanatical Purification has created a monstrosity. For this power you will of course pay a price. Your ability to purge has been slowed."
- smbm.3.option: "Very well..."
- 
  smbm.4.name: "Different Worlds"
  smbm.4.desc: "Having spent their entire life in their personalized world, your civilization struggles with the very concept of leaving their world. As such colony ship construction and new colony build speeds have been penalized."
  smbm.4.option: "Very well..."
- 
- smbm.5.name: "Storm Protection"
- smbm.5.desc: "Do you wish to prevent storms from entering your Empire for the first 20 years of the game?"
- smbm.5.option.a: "Yes"
- smbm.5.option.b: "No"
- 
- smbm.6.name: "Paradise"
- smbm.6.desc: "Your Gaia world is a paradise even among Gaia worlds."
- smbm.6.option: "Perfect"
- 
- smbm.8.name: "Visions of Madness"
- smbm.8.desc: "The breakneck speed at which your empire has gained its psionic powers has resulted in visions of madness through the population."
- smbm.8.option: "Very well..."

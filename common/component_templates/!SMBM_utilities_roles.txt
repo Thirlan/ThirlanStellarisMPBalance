@@ -1,0 +1,262 @@
+@cost0 = 0
+@cost1 = 5
+@cost2 = 10
+@cost3 = 20
+
+@power0 = -5
+@power1 = -10
+@power2 = -15
+@power3 = -25
+
+####################
+# DEFAULT COMPUTER #
+####################
+
+########################
+# BASIC SHIP COMPUTERS #
+########################
+
+#####################
+# 'SWARM' COMPUTERS #
+#####################
+
+######################
+# 'PICKET' COMPUTERS #
+######################
+
+####################
+# 'LINE' COMPUTERS #
+####################
+
+######################
+# 'ARTILLERY' COMPUTERS #
+######################
+utility_component_template = {
+	key = "COMBAT_COMPUTER_ARTILLERY_BASIC"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_basic"
+	icon_frame = 1
+	power = @power1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost1
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		ship_uses_artillery_role = yes
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	upgrade_path = artillery
+	prerequisites = { "tech_combat_computers_1" }
+	upgrades_to = "COMBAT_COMPUTER_ARTILLERY_ADVANCED"
+	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tag_weight = 0
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.05
+		ship_weapon_range_mult = 0.05
+		ship_speed_mult = -0.05
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_ARTILLERY_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_advanced"
+	icon_frame = 1
+	power = @power2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost2
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		ship_uses_artillery_role = yes
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	upgrade_path = artillery
+	prerequisites = { "tech_combat_computers_2" }
+	upgrades_to = "COMBAT_COMPUTER_ARTILLERY_SAPIENT"
+	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tag_weight = 0
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.10
+		ship_weapon_range_mult = 0.10
+		ship_speed_mult = -0.05
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_ARTILLERY_SAPIENT"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_sapient"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		ship_uses_artillery_role = yes
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	upgrade_path = artillery
+	prerequisites = { "tech_combat_computers_3" }
+	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tag_weight = 0
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.20
+		ship_weapon_range_mult = 0.20
+	}
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0
+			OR = {
+				has_global_flag = ghost_signal_5_flag
+				has_global_flag = ghost_signal_4_flag
+				has_global_flag = ghost_signal_3_flag
+				has_global_flag = ghost_signal_2_flag
+				has_global_flag = ghost_signal_1_flag
+				has_policy_flag = ai_outlawed
+			}
+		}
+	}
+}
+
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_ARTILLERY_AUTONOMOUS"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_sapient"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		ship_uses_artillery_role = yes
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	upgrade_path = artillery
+	prerequisites = { "tech_combat_computers_autonomous" }
+	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tag_weight = 0
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.20
+		ship_weapon_range_mult = 0.20
+		ship_speed_mult = -0.05
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_ARTILLERY_PRECOG"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_precog"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		ship_uses_artillery_role = yes
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	upgrade_path = artillery
+	prerequisites = { "tech_precognition_interface" }
+	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tag_weight = 0
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+		ship_tracking_add = 10
+		ship_speed_mult = -0.05
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+######################
+# 'CARRIER' COMPUTERS #
+######################
+
+################
+# Platform
+################
+
+################
+# Starbase
+################
+
+################
+# Special
+################
