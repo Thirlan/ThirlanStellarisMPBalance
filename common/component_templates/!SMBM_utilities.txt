@@ -13,8 +13,7 @@ utility_component_template = {
 	power = 0
 	modifier = {
 		ship_armor_add = @armor_S1
-		ship_evasion_mult = -0.02
-		ship_speed_mult = -0.02
+		ship_speed_mult = -0.01
 	}
 
 	potential = {
@@ -58,8 +57,7 @@ utility_component_template = {
 	power = 0
 	modifier = {
 		ship_armor_add = @armor_M1
-		ship_evasion_mult = -0.02
-		ship_speed_mult = -0.02
+		ship_speed_mult = -0.01
 	}
 
 	potential = {
@@ -103,8 +101,7 @@ utility_component_template = {
 	power = 0
 	modifier = {
 		ship_armor_add = @armor_L1
-		ship_evasion_mult = -0.02
-		ship_speed_mult = -0.02
+		ship_speed_mult = -0.01
 	}
 
 	potential = {
@@ -149,8 +146,7 @@ utility_component_template = {
 	power = 0
 	modifier = {
 		ship_armor_add = @armor_S2
-		ship_evasion_mult = -0.02
-		ship_speed_mult = -0.02
+		ship_speed_mult = -0.01
 	}
 
 	potential = {
@@ -194,8 +190,7 @@ utility_component_template = {
 	power = 0
 	modifier = {
 		ship_armor_add = @armor_M2
-		ship_evasion_mult = -0.02
-		ship_speed_mult = -0.02
+		ship_speed_mult = -0.01
 	}
 
 	potential = {
@@ -239,8 +234,7 @@ utility_component_template = {
 	power = 0
 	modifier = {
 		ship_armor_add = @armor_L2
-		ship_evasion_mult = -0.02
-		ship_speed_mult = -0.02
+		ship_speed_mult = -0.01
 	}
 
 	potential = {
@@ -285,8 +279,7 @@ utility_component_template = {
 	power = 0
 	modifier = {
 		ship_armor_add = @armor_S3
-		ship_evasion_mult = -0.02
-		ship_speed_mult = -0.02
+		ship_speed_mult = -0.01
 	}
 
 	potential = {
@@ -330,8 +323,7 @@ utility_component_template = {
 	power = 0
 	modifier = {
 		ship_armor_add = @armor_M3
-		ship_evasion_mult = -0.02
-		ship_speed_mult = -0.02
+		ship_speed_mult = -0.01
 	}
 
 	potential = {
@@ -375,8 +367,7 @@ utility_component_template = {
 	power = 0
 	modifier = {
 		ship_armor_add = @armor_L3
-		ship_evasion_mult = -0.02
-		ship_speed_mult = -0.02
+		ship_speed_mult = -0.01
 	}
 
 	potential = {
@@ -421,7 +412,6 @@ utility_component_template = {
 	power = 0
 	modifier = {
 		ship_armor_add = @armor_S4
-		ship_evasion_mult = -0.01
 		ship_speed_mult = -0.01
 	}
 
@@ -466,7 +456,6 @@ utility_component_template = {
 	power = 0
 	modifier = {
 		ship_armor_add = @armor_M4
-		ship_evasion_mult = -0.01
 		ship_speed_mult = -0.01
 	}
 
@@ -511,7 +500,6 @@ utility_component_template = {
 	power = 0
 	modifier = {
 		ship_armor_add = @armor_L4
-		ship_evasion_mult = -0.01
 		ship_speed_mult = -0.01
 	}
 
@@ -557,7 +545,6 @@ utility_component_template = {
 	power = 0
 	modifier = {
 		ship_armor_add = @armor_S5
-		ship_evasion_mult = -0.01
 		ship_speed_mult = -0.01
 	}
 
@@ -602,7 +589,6 @@ utility_component_template = {
 	power = 0
 	modifier = {
 		ship_armor_add = @armor_M5
-		ship_evasion_mult = -0.01
 		ship_speed_mult = -0.01
 	}
 
@@ -647,7 +633,6 @@ utility_component_template = {
 	power = 0
 	modifier = {
 		ship_armor_add = @armor_L5
-		ship_evasion_mult = -0.01
 		ship_speed_mult = -0.01
 	}
 
@@ -697,7 +682,6 @@ utility_component_template = {
 	power = 0
 	modifier = {
 		ship_armor_add = @armor_S6
-		ship_evasion_mult = -0.01
 		ship_speed_mult = -0.01
 	}
 
@@ -741,7 +725,6 @@ utility_component_template = {
 	power = 0
 	modifier = {
 		ship_armor_add = @armor_M6
-		ship_evasion_mult = -0.01
 		ship_speed_mult = -0.01
 	}
 
@@ -785,7 +768,6 @@ utility_component_template = {
 	power = 0
 	modifier = {
 		ship_armor_add = @armor_L6
-		ship_evasion_mult = -0.01
 		ship_speed_mult = -0.01
 	}
 
@@ -841,7 +823,6 @@ utility_component_template = {
 
 	modifier = {
 		ship_armor_add = @armor_S6
-		ship_evasion_mult = -0.01
 		ship_speed_mult = -0.01
 	}
 
@@ -868,7 +849,6 @@ utility_component_template = {
 
 	modifier = {
 		ship_armor_add = @armor_M6
-		ship_evasion_mult = -0.01
 		ship_speed_mult = -0.01
 	}
 
@@ -895,7 +875,6 @@ utility_component_template = {
 
 	modifier = {
 		ship_armor_add = @armor_L6
-		ship_evasion_mult = -0.01
 		ship_speed_mult = -0.01
 	}
 

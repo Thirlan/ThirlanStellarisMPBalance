@@ -65,44 +65,23 @@
 @bio_ship_shield_L7 = 1903
 
 # Custom values used by inline_scripts/ship_components/bio_ship_armor.txt
-@bio_ship_armor_evasion_s_1 = -0.02
-@bio_ship_armor_evasion_s_2 = -0.02
-@bio_ship_armor_evasion_s_3 = -0.02
-@bio_ship_armor_evasion_s_4 = -0.01
-@bio_ship_armor_evasion_s_5 = -0.01
-@bio_ship_armor_evasion_s_6 = -0.01
-
-@bio_ship_armor_evasion_m_1 = -0.02
-@bio_ship_armor_evasion_m_2 = -0.02
-@bio_ship_armor_evasion_m_3 = -0.02
-@bio_ship_armor_evasion_m_4 = -0.01
-@bio_ship_armor_evasion_m_5 = -0.01
-@bio_ship_armor_evasion_m_6 = -0.01
-
-@bio_ship_armor_evasion_l_1 = -0.02
-@bio_ship_armor_evasion_l_2 = -0.02
-@bio_ship_armor_evasion_l_3 = -0.02
-@bio_ship_armor_evasion_l_4 = -0.01
-@bio_ship_armor_evasion_l_5 = -0.01
-@bio_ship_armor_evasion_l_6 = -0.01
-
-@bio_ship_armor_speed_s_1 = -0.02
-@bio_ship_armor_speed_s_2 = -0.02
-@bio_ship_armor_speed_s_3 = -0.02
+@bio_ship_armor_speed_s_1 = -0.01
+@bio_ship_armor_speed_s_2 = -0.01
+@bio_ship_armor_speed_s_3 = -0.01
 @bio_ship_armor_speed_s_4 = -0.01
 @bio_ship_armor_speed_s_5 = -0.01
 @bio_ship_armor_speed_s_6 = -0.01
 
-@bio_ship_armor_speed_m_1 = -0.02
-@bio_ship_armor_speed_m_2 = -0.02
-@bio_ship_armor_speed_m_3 = -0.02
+@bio_ship_armor_speed_m_1 = -0.01
+@bio_ship_armor_speed_m_2 = -0.01
+@bio_ship_armor_speed_m_3 = -0.01
 @bio_ship_armor_speed_m_4 = -0.01
 @bio_ship_armor_speed_m_5 = -0.01
 @bio_ship_armor_speed_m_6 = -0.01
 
-@bio_ship_armor_speed_l_1 = -0.02
-@bio_ship_armor_speed_l_2 = -0.02
-@bio_ship_armor_speed_l_3 = -0.02
+@bio_ship_armor_speed_l_1 = -0.01
+@bio_ship_armor_speed_l_2 = -0.01
+@bio_ship_armor_speed_l_3 = -0.01
 @bio_ship_armor_speed_l_4 = -0.01
 @bio_ship_armor_speed_l_5 = -0.01
 @bio_ship_armor_speed_l_6 = -0.01

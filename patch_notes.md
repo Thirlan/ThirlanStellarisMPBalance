@@ -20,7 +20,6 @@
    * Steal Techonology Operation: cooldown of 1 year from 6
    * Sabotage Starbase Operation: cooldown of 0 from 4 years
    * Delays between operations halved
-   * Bribe costs halved
 
 ## AI exploitation
 
@@ -39,13 +38,12 @@
 
 ### Nerfs
  * Jump Drive:
-   * Prethoryn and Contingency can now spawn if Jump Drives researched. Jump drives also increase the odds of the crisis spawning sooner from 19% to 37%.
    * Range decreased by 25%
    * Jump drive penalty increased to -60% to weapons/movement from -50%
  * Disruptor level 1: Tech lasers level 3 and tech mass driver level 2 is a requirement
  * Anti-kitting:
-   * Artillery Combat Computer: 0% / 1% / 2% / 3% to weapon range and rate of fire from 5% / 10% / 15% / 20%
-   * Armor: -2% / -2% / -2% /  -1% / -1% / 1% to evasion and speed
+   * Artillery Combat Computer: -5% to speed
+   * Armor: -1% to speed
    * Afterburners: 15 / 30 power from 10 / 20 and 6 / 9 alloys from 4 / 6
 
 ### Boosts
@@ -67,6 +65,7 @@
    * Finisher: +0% Trade value from +10%
  * Virtuality:
   * Clustered Capacity: +125% resources from jobs from +175%
+  * Virtuality Focus: 60% research bonus from 80%
 
 ### Boosts
  * Adding later...
@@ -144,9 +143,7 @@
  * Imperial Fiefdom origin: -5% happiness, -20% Ethics attraction and Overlord starting opinion bonus 1 from 120
  * Clone Army: -25% to Unity Production
  * Scion: -5% happiness, -20% Ethics attraction
- * Shattered Ring: Event (Robots) -> 33% increase to colony ship cost and time to create a new colony
- * Resource Consolidation: TODO
- * Synthetic Fertility: TODO
+ * Shattered Ring (Robots): -80% chance to roll Robomodding
  * Overtuned: requires 2 ascension perks from 1 for Biomorphis
 
 ### Boosts
@@ -202,3 +199,11 @@
 
 ### Boosts
  * Adding later...
+ 
+## Leader Traits:
+
+### Nerfs
+ * Shroudshaper: 1 psionic per 250 / 500 pops from 1 per 25 /50
+
+### Boosts
+ * none

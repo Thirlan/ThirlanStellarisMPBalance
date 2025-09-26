@@ -1,4 +1,4 @@
-# 2025/09/23 - 1.15.0
+# 2025/09/26 - 1.15.0
 
 Cleaned up for version 4.1 of the game. Also purged logs older than a year. Much of the changes were removed to refocus on the overpowered abilities and release this mod faster.
 
@@ -9,10 +9,12 @@ Added:
  * Mind Over Matter: requires 4 ascension perks from 3
  * Behemoth Fury: requires 4 ascension perks from 3 and -25% research speed
  * Overtuned: requires 2 ascension perks from 1 for Biomorphis
- * Artillery Combat Computer: 0% / 1% / 2% / 3% to weapon range and rate of fire from 5% / 10% / 15% / 20%
- * Armor: -2% / -2% / -2% /  -1% / -1% / 1% to evasion and speed
+ * Artillery Combat Computer: -5% to speed
+ * Armor: 1% to speed
  * Afterburners: 15 / 30 power from 10 / 20 and 6 / 9 alloys from 4 / 6
  * Intelligent: +7% research from +10%
+ * Logic Engines: +7% research from +10%
+ * Shattered Ring (Robots): -80% chance to roll Robomodding
 
 Changed:
  * Clone Army: -25% to Unity Production

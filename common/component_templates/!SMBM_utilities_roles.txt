@@ -61,6 +61,12 @@ utility_component_template = {
 	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
 	ai_tag_weight = 0
 
+	ship_modifier = {
+		ship_fire_rate_mult = 0.05
+		ship_weapon_range_mult = 0.05
+		ship_speed_mult = -0.05
+	}
+
 	ai_weight = {
 		weight = 2
 	}
@@ -97,8 +103,9 @@ utility_component_template = {
 	ai_tag_weight = 0
 
 	ship_modifier = {
-		ship_fire_rate_mult = 0.01
-		ship_weapon_range_mult = 0.01
+		ship_fire_rate_mult = 0.10
+		ship_weapon_range_mult = 0.10
+		ship_speed_mult = -0.05
 	}
 
 	ai_weight = {
@@ -136,8 +143,8 @@ utility_component_template = {
 	ai_tag_weight = 0
 
 	ship_modifier = {
-		ship_fire_rate_mult = 0.02
-		ship_weapon_range_mult = 0.02
+		ship_fire_rate_mult = 0.20
+		ship_weapon_range_mult = 0.20
 	}
 
 	ai_weight = {
@@ -187,8 +194,9 @@ utility_component_template = {
 	ai_tag_weight = 0
 
 	ship_modifier = {
-		ship_fire_rate_mult = 0.03
-		ship_weapon_range_mult = 0.03
+		ship_fire_rate_mult = 0.20
+		ship_weapon_range_mult = 0.20
+		ship_speed_mult = -0.05
 	}
 
 	ai_weight = {
@@ -226,9 +234,10 @@ utility_component_template = {
 	ai_tag_weight = 0
 
 	ship_modifier = {
-		ship_fire_rate_mult = 0.02
-		ship_weapon_range_mult = 0.02
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
 		ship_tracking_add = 10
+		ship_speed_mult = -0.05
 	}
 
 	ai_weight = {

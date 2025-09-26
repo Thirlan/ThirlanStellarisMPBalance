@@ -3,14 +3,10 @@
  # TRAITS
  TRAIT_INVASIVE_EFFECT: "§YCan only select negative or botanical traits§!\n\nHabitability: §G+4%§! for each negative trait selected\nPop Growth Speed: §G+4%§! for each negative trait selected"
  TRAIT_HUMANOID_EXISTENTIAL_ITEROPARITY_EFFECT: "£pops£ §YPop Growth§! During War and Crisis: §G+20%§!"
-
-
+ artificial_intelligence_tooltip:0 "$BONUS_WORKFORCE_FOR$ ['concept_planet_researchers']: §G+7%§!"
+ elevated_synapses_tooltip:1 "$BONUS_WORKFORCE_FOR$ ['concept_planet_researchers']: §G+15%§!"
+ preplanned_growth_tooltip:0 "Pop Growth Speed: §G+23%§!$TABBED_NEW_LINE$- Pop Housing Usage: §G-10%§!"
  incubator_tooltip:1 "Grants between §G+25%§! and §R-10%§! Pop Growth Speed, inversely proportional to the number of pops on the planet."
- low_maintenance_tooltip:0 "Pop Consumer Goods Upkeep: §G-13%§!"
- preplanned_growth_tooltip:0 "Pop Growth Speed: §G+25%§!\nPop Housing Usage: §G-10%§!"
- artificial_intelligence_tooltip:0 "£physics£ Physics Research: §G+8%§!\n£society£ Society Research: §G+8%§!\n£engineering£ Engineering Research: §G+8%§!"
- elevated_synapses_tooltip:1 "£physics£ Physics Research: §G+16%§!\n£society£ Society Research: §G+16%§!\n£engineering£ Engineering Research: §G+16%§!"
- expressed_tradition_tooltip:0 "£unity£ Unity from £pops£ Jobs: §G+15%§!"
  
  # CIVICS
  
@@ -21,6 +17,7 @@
 
 # TRADITIONS
  tr_virtuality_1_modifier_desc: "§Y$trait_robot_digital_1$§! Species Trait gains the following effects:$TABBED_NEW_LINE$- Resources From Jobs: §G+125%§! (§R-25%§! per Colony)$TABBED_NEW_LINE$- Pop Upkeep: §R+0.1§! $r_energy$ per Colony"
+ tr_mercantile_federations_finish_desc:0 "Grants access to the §Y$trade_federation$§! Federation type.\nAscension Perks Unlocked: §G+1§!"
 
 # POLICY
 

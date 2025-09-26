@@ -620,7 +620,7 @@ trait_artificial_intelligence = {
 			owner = { has_edict = damn_the_consequences }
 		}
 		modifier = {
-			researcher_jobs_bonus_workforce_mult = 0.2
+			researcher_jobs_bonus_workforce_mult = 0.14
 		}
 	}
 	modifier = {
@@ -784,7 +784,7 @@ trait_elevated_synapses = {
 			owner = { has_edict = damn_the_consequences }
 		}
 		modifier = {
-			researcher_jobs_bonus_workforce_mult  = 0.4
+			researcher_jobs_bonus_workforce_mult  = 0.30
 		}
 	}
 	modifier = {
@@ -855,7 +855,7 @@ trait_preplanned_growth = {
 			owner = { has_edict = damn_the_consequences }
 		}
 		modifier = {
-			logistic_growth_mult = 0.6
+			logistic_growth_mult = 0.46
 		}
 	}
 	triggered_pop_group_modifier = {
