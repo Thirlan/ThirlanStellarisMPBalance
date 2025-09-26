@@ -84,12 +84,12 @@
  * Become the crisis: requires 4 ascension perks from 3 and -25% research speed
  * Behemoth Fury: requires 4 ascension perks from 3 and -25% research speed
  * Cosmogenesis:
-  * Requires 4 ascension perks from 3
-  * -50% to naval capacity and diplomatic weight
-  * Advanced Logic: +0% physics research from +10%
-  * Gravitational Tools: +0% society research from +10%
-  * Eternal Expansion: +0% engineering research from +10%
-  * Rulebreaker: +0% physics research from +10%
+   * Requires 4 ascension perks from 3
+   * -50% to naval capacity and diplomatic weight
+   * Advanced Logic: +0% physics research from +10%
+   * Gravitational Tools: +0% society research from +10%
+   * Eternal Expansion: +0% engineering research from +10%
+   * Rulebreaker: +0% physics research from +10%
 
 ### Boosts
  * Adding later...
