@@ -64,8 +64,8 @@
    * Market Place of Better Ideas: +5% Trade value from +10%
    * Finisher: +0% Trade value from +10%
  * Virtuality:
-  * Clustered Capacity: +125% resources from jobs from +175%
-  * Virtuality Focus: 60% research bonus from 80%
+   * Clustered Capacity: +125% resources from jobs from +175%
+   * Virtuality Focus: 60% research bonus from 80%
 
 ### Boosts
  * Adding later...
