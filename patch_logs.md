@@ -1,4 +1,4 @@
-# 2025/10/15 - 1.15.1
+# 2025/10/18 - 1.15.1
 
 Added:
  * Crowd Sourcing: Cannot be removed once chosen and -100% to ethics attraction
