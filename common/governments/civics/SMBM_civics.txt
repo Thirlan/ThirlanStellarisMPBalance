@@ -105,6 +105,49 @@ civic_parliamentary_system = {
 	}
 }
 
+civic_crowdsourcing = {
+	modification = no
+	playable = { has_biogenesis_dlc = yes }
+	ai_playable = { has_biogenesis_dlc = yes }
+	description = "civic_crowdsourcing_effects"
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_fanatic
+				value = ethic_fanatic_xenophobe
+				value = ethic_fanatic_xenophile
+				value = ethic_fanatic_authoritarian
+				value = ethic_fanatic_militarist
+				value = ethic_fanatic_pacifist
+				value = ethic_fanatic_spiritualist
+				value = ethic_fanatic_materialist
+				value = ethic_fanatic_egalitarian
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_corporate_crowdsourcing
+				value = civic_parliamentary_system
+				value = civic_secret_societies
+			}
+		}
+	}
+
+	modifier = {
+		pop_government_ethic_attraction = -1.00
+		add_attunement_the_cradle_of_souls = @civic_attunement1
+	}
+	hide_modifiers = yes
+}
+
 civic_fanatic_purifiers = {
 	modification = no
 	playable = { host_has_dlc = "Utopia" }

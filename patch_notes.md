@@ -1,4 +1,4 @@
-# Version 1.15.0
+# Version 1.15.1
 
 ## General tweaks
 
@@ -64,8 +64,18 @@
    * Market Place of Better Ideas: +5% Trade value from +10%
    * Finisher: +0% Trade value from +10%
  * Virtuality:
+  * Adoption: -20% to Energy/Mineral jobs and -10% speed to Physics and Society Research
   * Clustered Capacity: +125% resources from jobs from +175%
   * Virtuality Focus: 60% research bonus from 80%
+ * Cloning (adoption): -10% to Food/Energy/Mineral jobs and -10% speed to Physics and Engineering Research
+ * Genetics (adoption): -10% to Food/Energy/Mineral jobs and -10% speed to Physics and Engineering Research
+ * Purity (adoption): -10% to Food/Energy/Mineral jobs and -10% speed to Physics and Engineering Research
+ * Mutation (adoption): -10% to Food/Energy/Mineral jobs and -10% speed to Physics and Engineering Research
+ * Cybernetics (adoption): -10% to Food/Energy/Mineral jobs and -10% speed to Physics and Society Research
+ * Psionics (adoption): -10% to Food/Energy/Mineral jobs and -10% speed to Physics and Engineering Research
+ * Modularity (adoption): -20% to Energy/Mineral jobs and -10% speed to Physics and Society Research
+ * Nanotech (adoption): -20% to Energy/Mineral jobs and -10% speed to Physics and Society Research
+ * Synthetics (adoption): -20% to Energy/Mineral jobs and -10% speed to Physics and Society Research
 
 ### Boosts
  * Adding later...
@@ -203,7 +213,7 @@
 ## Leader Traits:
 
 ### Nerfs
- * Shroudshaper: 1 psionic per 250 / 500 pops from 1 per 25 /50
+ * none
 
 ### Boosts
  * none

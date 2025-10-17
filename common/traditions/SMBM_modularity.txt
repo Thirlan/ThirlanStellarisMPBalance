@@ -1,0 +1,21 @@
+tr_modularity_adopt = {
+	possible = {
+		custom_tooltip = {
+			fail_text = REQUIRES_FINISHED_TRANSFORMATION
+			has_country_flag = modularity_traditions_unlocked
+		}
+	}
+	on_enabled = {
+		hidden_effect = {
+			update_node_portraits_if_gestalt_effect = yes
+		}
+	}
+	modifier = {
+		planet_metallurgists_sr_living_metal_produces_add = 0.1
+		country_energy_produces_mult = -0.15
+		country_minerals_produces_mult = -0.15
+		country_physics_tech_research_speed = -0.10
+		country_society_tech_research_speed = -0.10
+	}
+	unlocks_agenda = agenda_modularity_reshape_form
+}

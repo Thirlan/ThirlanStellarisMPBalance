@@ -1,0 +1,29 @@
+tr_virtuality_adopt = {
+	possible = {
+		custom_tooltip = {
+			fail_text = REQUIRES_FINISHED_TRANSFORMATION
+			has_country_flag = virtuality_traditions_unlocked
+		}
+	}
+	on_enabled = {
+		hidden_effect = {
+			country_event = { id = cybernetics.5035 }
+			update_node_portraits_if_gestalt_effect = yes
+		}
+	}
+	modifier = {
+		intel_decryption_add = 2
+		intel_encryption_add = 2
+		planet_metallurgists_alloys_produces_mult = -0.10
+		country_energy_produces_mult = -0.10
+		country_minerals_produces_mult = -0.10
+		country_physics_tech_research_speed = -0.10
+		country_society_tech_research_speed = -0.10
+	}
+	triggered_modifier = {
+		potential = { country_uses_consumer_goods = yes }
+		planet_artisans_consumer_goods_produces_mult = -0.15
+	}
+	custom_tooltip_with_modifiers = tr_virtuality_adopt_modifier_desc
+	unlocks_agenda = agenda_virtuality_optimized_network
+}

@@ -1,3 +1,25 @@
+# 2025/10/15 - 1.15.1
+
+Added:
+ * Crowd Sourcing: Cannot be removed once chosen and -100% to ethics attraction
+ * Tradition Cloning (adoption): -10% to Food/Energy/Mineral jobs and -10% speed to Physics and Engineering Research
+ * Tradition Genetics (adoption): -10% to Food/Energy/Mineral jobs and -10% speed to Physics and Engineering Research
+ * Tradition Purity (adoption): -10% to Food/Energy/Mineral jobs and -10% speed to Physics and Engineering Research
+ * Tradition Mutation (adoption): -10% to Food/Energy/Mineral jobs and -10% speed to Physics and Engineering Research
+ * Tradition Cybernetics (adoption): -10% to Food/Energy/Mineral jobs and -10% speed to Physics and Society Research
+ * Tradition Psionics (adoption): -10% to Food/Energy/Mineral jobs and -10% speed to Physics and Engineering Research
+ * Tradition Modularity (adoption): -15% to Energy/Mineral jobs and -10% speed to Physics and Society Research
+ * Tradition Nanotech (adoption): -15% to Energy/Mineral jobs and -10% speed to Physics and Society Research
+ * Tradition Synthetics (adoption): -15% to Energy/Mineral jobs and -10% speed to Physics and Society Research
+ * Tradition Virtuality (adoption): -15% to Energy/Mineral jobs and -10% speed to Physics and Society Research
+
+Removed:
+ * Biomorphis: requires 4 ascension perks from 3
+ * The Flesh is Weak: requires 4 ascension perks from 3
+ * Synthetic Evolution: requires 4 ascension perks from 3
+ * Mind Over Matter: requires 4 ascension perks from 3
+ * Shroudshaper: 1 psionic per 250 / 500 pops from 1 per 25 /50
+
 # 2025/09/26 - 1.15.0
 
 Cleaned up for version 4.1 of the game. Also purged logs older than a year. Much of the changes were removed to refocus on the overpowered abilities and release this mod faster.
