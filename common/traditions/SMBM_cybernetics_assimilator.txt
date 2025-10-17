@@ -1,0 +1,32 @@
+tr_cybernetics_assimilator_adopt = {
+	possible = {
+		has_ascension_perk = ap_organo_machine_interfacing_assimilator
+		has_technology = tech_integrated_cybernetics
+	}
+	unlocks_agenda = agenda_cybernetic_advantage_assimilator
+	custom_tooltip = tr_cybernetics_assimilator_adopt_desc
+	modifier = {
+		country_energy_produces_mult = -0.10
+		country_minerals_produces_mult = -0.10
+		country_food_produces_mult = -0.10
+		country_physics_tech_research_speed = -0.10
+		country_society_tech_research_speed = -0.10
+	}
+	# Increased effects from Assimilating organic pops.
+	# See apply_post_assimilation_effects scripted effect
+
+	on_enabled = {
+		if = {
+			limit = {
+				has_machine_age_dlc = yes
+				has_civic = civic_machine_assimilator
+			}
+			hidden_effect = {
+				country_event = {
+					id = cyber.2010
+					days = 2
+				}
+			}
+		}
+	}
+}

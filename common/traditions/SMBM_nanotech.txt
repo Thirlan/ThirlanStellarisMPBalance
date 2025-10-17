@@ -1,0 +1,18 @@
+
+tr_nanotech_adopt = {
+	possible = {
+		custom_tooltip = {
+			fail_text = REQUIRES_FINISHED_TRANSFORMATION
+			has_country_flag = nanotech_traditions_unlocked
+		}
+	}
+	custom_tooltip = tr_nanotech_adopt_modifier_desc
+	unlocks_agenda = agenda_nanotech_unstoppable_swarm
+	modifier = {
+		country_energy_produces_mult = -0.15
+		country_minerals_produces_mult = -0.15
+		country_physics_tech_research_speed = -0.10
+		country_society_tech_research_speed = -0.10
+	}
+	#Unlocks nanolab 1 and Starbase building
+}

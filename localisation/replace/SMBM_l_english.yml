@@ -9,6 +9,7 @@
  incubator_tooltip:1 "Grants between §G+25%§! and §R-10%§! Pop Growth Speed, inversely proportional to the number of pops on the planet."
  
  # CIVICS
+ civic_crowdsourcing_effects: "$t$- Factions produce $r_research$ instead of $r_unity$ $TABBED_NEW_LINE$- Factions will form in your empire shortly after the game starts$TABBED_NEW_LINE$- §R-100%§! §YGoverning Ethics Attraction§"
  
  # ORIGINS
 
@@ -18,6 +19,9 @@
 # TRADITIONS
  tr_virtuality_1_modifier_desc: "§Y$trait_robot_digital_1$§! Species Trait gains the following effects:$TABBED_NEW_LINE$- Resources From Jobs: §G+125%§! (§R-25%§! per Colony)$TABBED_NEW_LINE$- Pop Upkeep: §R+0.1§! $r_energy$ per Colony"
  tr_mercantile_federations_finish_desc:0 "Grants access to the §Y$trade_federation$§! Federation type.\nAscension Perks Unlocked: §G+1§!"
+ tr_psionics_adopt_tooltip:0 "All pops from your primary species will gain the §Y$trait_latent_psionic$§! trait.\nMonthly Energy Credits: §R-10%§!\nMonthly Minerals: §R-10%§!\nMonthly Food: §R-10%§!\nResearch Speed(£physics£ §IPhysics§): §R-10%§!\nResearch Speed(£engineering£ §IEngineering§!): §R-10%§!"
+ tr_psionics_shroud_adopt_desc: "Starts a §YSituation§! to grant the founding species the §Y$trait_psionic$§! trait.\nMonthly Energy Credits: §R-10%§!\nMonthly Minerals: §R-10%§!\nMonthly Food: §R-10%§!\nResearch Speed(£physics£ §IPhysics§!): §R-10%§!\nResearch Speed(£engineering£ §IEngineering§!): §R-10%§!"
+ tr_nanotech_adopt_modifier_desc: "§Y$AVAILABLE_BUILDINGS$§! $building_nanolab_1$\n§Y$AVAILABLE_STARBASE_BUILDINGS$§! $sm_nanite_harvester$\nMonthly Energy Credits: §R-15%§!\nMonthly Minerals: §R-15%§!\nResearch Speed(£physics£ §IPhysics§!): §R-10%§!\nResearch Speed(£society£ §ISociety§!): §R-10%§!"
 
 # POLICY
 

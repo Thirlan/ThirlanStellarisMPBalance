@@ -1,0 +1,22 @@
+
+tr_genetics_adopt = {
+	possible = {
+		has_ascension_perk = ap_engineered_evolution
+		has_technology = tech_gene_tailoring
+	}
+	on_enabled = {
+		hidden_effect = {
+			country_event = { id = utopia.2700 }
+		}
+	}
+	unlocks_agenda = agenda_genetic_pursuit
+	custom_tooltip = tr_genetics_adopt_modifier_desc
+	modifier = {
+		country_energy_produces_mult = -0.10
+		country_minerals_produces_mult = -0.10
+		country_food_produces_mult = -0.10
+		country_physics_tech_research_speed = -0.10
+		country_engineering_tech_research_speed = -0.10
+	}
+	# Unlocks Clone Vats
+}

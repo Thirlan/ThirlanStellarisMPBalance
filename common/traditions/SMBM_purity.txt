@@ -1,0 +1,17 @@
+tr_purity_adopt = {
+	possible = {
+		custom_tooltip = {
+			fail_text = REQUIRES_FINISHED_EVOLUTION
+			has_country_flag = purity_tradition_unlocked
+		}
+	}
+	unlocks_agenda = agenda_purity_perfection
+	modifier = {
+		leader_lifespan_mult = 0.2
+		country_energy_produces_mult = -0.10
+		country_minerals_produces_mult = -0.10
+		country_food_produces_mult = -0.10
+		country_physics_tech_research_speed = -0.10
+		country_engineering_tech_research_speed = -0.10
+	}
+}

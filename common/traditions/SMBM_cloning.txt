@@ -1,0 +1,46 @@
+tr_cloning_adopt = {
+	possible = {
+		custom_tooltip = {
+			fail_text = REQUIRES_FINISHED_EVOLUTION
+			has_country_flag = cloning_tradition_unlocked
+		}
+	}
+	unlocks_agenda = agenda_cloning_replication
+	custom_tooltip_with_modifiers = tr_cloning_adopt_tt
+	modifier = {
+		country_energy_produces_mult = -0.10
+		country_minerals_produces_mult = -0.10
+		country_food_produces_mult = -0.10
+		country_physics_tech_research_speed = -0.10
+		country_engineering_tech_research_speed = -0.10
+	}
+
+	on_enabled = {
+		if = {
+			limit = {
+				NOT = {
+					has_technology = tech_cloning
+				}
+			}
+			give_technology = {
+				tech = tech_cloning
+				message = no
+			}
+		}
+	}
+
+	tradition_swap = {
+		name = tr_cloning_adopt_clone_army
+		inherit_name = yes
+		inherit_icon = yes
+		trigger = {
+			has_country_flag = clone_army_full_potential
+		}
+		modifier = {
+		}
+		custom_tooltip = tr_cloning_adopt_clone_army_tt
+		weight = {
+			factor = 1
+		}
+	}
+}

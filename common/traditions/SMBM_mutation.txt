@@ -1,0 +1,58 @@
+tr_mutation_adopt = {
+	possible = {
+		custom_tooltip = {
+			fail_text = REQUIRES_FINISHED_EVOLUTION
+			has_country_flag = mutation_tradition_unlocked
+		}
+	}
+	on_enabled = {
+		hidden_effect = {
+			country_event = { id = timeline.80 }
+			species = {
+				change_species_characteristics = {
+					add_trait = trait_adaptive_mutations
+					add_traits_at_start_of_list = yes
+				}
+			}
+			every_owned_species = {
+				limit = {
+					is_subspecies = root
+				}
+				change_species_characteristics = {
+					add_trait = trait_adaptive_mutations
+					add_traits_at_start_of_list = yes
+				}
+			}
+			update_node_portraits_if_gestalt_effect = yes
+			luminary_speech_effect = yes
+		}
+	}
+	unlocks_agenda = agenda_mutation_divergence
+	custom_tooltip_with_modifiers = tr_mutation_adopt_tt
+	modifier = {
+		country_energy_produces_mult = -0.10
+		country_minerals_produces_mult = -0.10
+		country_food_produces_mult = -0.10
+		country_physics_tech_research_speed = -0.10
+		country_engineering_tech_research_speed = -0.10
+	}
+	tradition_swap = {
+		name = tr_mutation_adopt_evo_pred
+		inherit_name = yes
+		inherit_icon = yes
+		trigger = {
+			has_origin = origin_evolutionary_predators
+		}
+		custom_tooltip = tr_mutation_adopt_evo_pred_tt
+		modifier = {
+			country_energy_produces_mult = -0.20
+			country_minerals_produces_mult = -0.20
+			country_food_produces_mult = -0.20
+			country_physics_tech_research_speed = -0.15
+			country_engineering_tech_research_speed = -0.15
+		}
+		weight = {
+			factor = 1
+		}
+	}
+}

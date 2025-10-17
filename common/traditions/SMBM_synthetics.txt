@@ -1,0 +1,139 @@
+tr_synthetics_adopt = {
+	possible = {
+		if = {
+			limit = { has_origin = origin_synthetic_fertility }
+			has_technology = tech_synthetic_workers
+		}
+		else_if = {
+			limit = {
+				has_machine_age_dlc = yes
+				is_machine_empire = no
+				is_individual_machine = no
+			}
+			has_ascension_perk = ap_synthetic_evolution
+			has_technology = tech_synthetic_workers
+		}
+		else = { # No Machine Age DLC
+			if = {
+				limit = {
+					is_machine_empire = no
+				}
+				has_ascension_perk = ap_synthetic_evolution
+				has_technology = tech_synthetic_workers
+			}
+			else = {
+				has_ascension_perk = ap_synthetic_age
+				has_technology = tech_robomodding_m
+			}
+		}
+	}
+
+	unlocks_agenda = agenda_synthetic_yield
+	custom_tooltip_with_modifiers = tr_synthetics_adopt_desc
+	modifier = {
+		country_energy_produces_mult = -0.15
+		country_minerals_produces_mult = -0.15
+		country_physics_tech_research_speed = -0.10
+		country_society_tech_research_speed = -0.10
+	}
+
+	on_enabled = { # has_machine_age_dlc = yes
+		if = {
+			limit = {
+				NOT = {
+					has_technology = tech_synthetic_leaders
+				}
+			}
+			add_tech_progress = {
+				tech = tech_synthetic_leaders
+				progress = 0.1
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_origin = origin_synthetic_fertility
+				}
+				country_event = { id = machine_age.3125 }
+			}
+			else = {
+				country_event = { id = synth.1 }
+			}
+			if = {
+				limit = {
+					any_planet_within_border = {
+						has_planet_flag = fotd_seperatist_planet@root
+						owner = {
+							has_country_flag = fotd_seperatist_country@root
+						}
+					}
+				}
+				country_event = { id = origin.6099 days = 5 random = 2 }
+			}
+		}
+	}
+
+	tradition_swap = { # has_machine_age_dlc = no
+		inherit_name = yes
+		inherit_icon = yes
+		trigger = {
+			has_machine_age_dlc = no
+			is_machine_empire = no
+		}
+
+		custom_tooltip = tr_synthetics_adopt_utopia_desc
+
+		on_enabled = {
+			if = {
+				limit = {
+					NOT = {
+						has_technology = tech_synthetic_leaders
+					}
+				}
+				add_tech_progress = {
+					tech = tech_synthetic_leaders
+					progress = 0.1
+				}
+			}
+			hidden_effect = {
+				country_event = { id = utopia.2550 }
+				if = {
+					limit = {
+						any_planet_within_border = {
+							has_planet_flag = fotd_seperatist_planet@root
+							owner = {
+								has_country_flag = fotd_seperatist_country@root
+							}
+						}
+					}
+					country_event = { id = origin.6099 days = 5 random = 2 }
+				}
+			}
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_synthetics_adopt_machine
+		inherit_name = yes
+		inherit_icon = yes
+		trigger = {
+			OR = {
+				has_machine_age_dlc = no
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			pop_environment_tolerance = 0.25
+			country_energy_produces_mult = -0.30
+			country_minerals_produces_mult = -0.30
+			country_physics_tech_research_speed = -0.15
+			country_society_tech_research_speed = -0.15
+		}
+		weight = {
+			factor = 1
+		}
+	}
+}

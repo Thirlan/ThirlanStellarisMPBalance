@@ -1,0 +1,148 @@
+tr_cybernetics_adopt = {
+	possible = {
+		if = {
+			limit = {
+				is_hive_empire = no
+				NOR = {
+					has_origin = origin_cybernetic_creed
+					has_origin = origin_unplugged
+				}
+			}
+			has_ascension_perk = ap_the_flesh_is_weak
+			has_technology = tech_integrated_cybernetics
+		}
+		else_if = {
+			limit = {
+				is_hive_empire = no
+				has_origin = origin_cybernetic_creed
+			}
+			has_technology = tech_integrated_cybernetics
+		}
+		else_if = {
+			limit = {
+				has_origin = origin_unplugged
+			}
+			has_technology = tech_integrated_cybernetics
+			OR = {
+				custom_tooltip = { # Cyberized
+					text = "hard_reset_not_embraced_cybernetics"
+					has_country_flag = is_cyberized
+
+				}
+				AND = {
+					has_ascension_perk = ap_the_flesh_is_weak
+					custom_tooltip = { # Neutral
+						text = "hard_reset_embraced_neither"
+						NOR = {
+							has_country_flag = is_cyberized
+							has_country_flag = is_decyberized
+						}
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				is_hive_empire = yes
+				NOT = { has_origin = origin_cybernetic_creed }
+			}
+			has_ascension_perk = ap_organo_machine_interfacing
+			has_technology = tech_integrated_cybernetics
+		}
+	}
+	unlocks_agenda = agenda_cybernetic_advantage
+	custom_tooltip = tr_cybernetics_adopt_desc
+	modifier = {
+		country_energy_produces_mult = -0.10
+		country_minerals_produces_mult = -0.10
+		country_food_produces_mult = -0.10
+		country_physics_tech_research_speed = -0.10
+		country_society_tech_research_speed = -0.10
+	}
+
+	on_enabled = {
+		if = {
+			limit = {
+				has_machine_age_dlc = yes
+				NOR = {
+					has_origin = origin_cybernetic_creed
+					has_origin = origin_unplugged
+				}
+			}
+			hidden_effect = {
+				country_event = { id = cyber.1 }
+			}
+		}
+		else_if = {
+			limit = {
+				has_machine_age_dlc = yes
+				has_origin = origin_cybernetic_creed
+			}
+			hidden_effect = {
+				country_event = { id = machine_age.100 }
+			}
+		}
+		else = {
+			hidden_effect = {
+				country_event = { id = utopia.2500 }
+			}
+		}
+	}
+
+	tradition_swap = {
+		name = tr_cybernetics_adopt_utopia
+		inherit_name = yes
+		inherit_icon = yes
+		trigger = {
+			has_machine_age_dlc = no
+			is_hive_empire = no
+		}
+		custom_tooltip = tr_cybernetics_adopt_utopia_desc
+		on_enabled = {
+			hidden_effect = {
+				country_event = { id = utopia.2500 }
+			}
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_cybernetics_adopt_hive
+		inherit_name = yes
+		inherit_icon = yes
+		trigger = {
+			is_hive_empire = yes
+			has_machine_age_dlc = yes
+		}
+		custom_tooltip = tr_cybernetics_adopt_hive_desc
+		on_enabled = {
+			hidden_effect = {
+				country_event = { id = cyber.1 }
+			}
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_cybernetics_adopt_hive_utopia
+		inherit_name = yes
+		inherit_icon = yes
+		trigger = {
+			is_hive_empire = yes
+			has_machine_age_dlc = no
+		}
+		custom_tooltip = tr_cybernetics_adopt_hive_utopia_desc
+		on_enabled = {
+			hidden_effect = {
+				country_event = { id = utopia.2500 }
+			}
+		}
+		weight = {
+			factor = 1
+		}
+	}
+}
