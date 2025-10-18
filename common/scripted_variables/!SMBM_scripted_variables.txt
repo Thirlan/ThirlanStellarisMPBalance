@@ -1,3 +1,7 @@
+# Chosen civic
+@chosen_unity_per_attunement = 0.0003
+@statecraft_amongst_peers_exp_reward = 100
+@crowdsourcing_multiplier =	2.0
 
 #############
 #	SHIELD	#

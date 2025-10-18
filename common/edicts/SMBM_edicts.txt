@@ -1,0 +1,31 @@
+@Edict1Cost = 10
+
+veneration_of_saints = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict1Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict1Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	modifier = {
+		planet_bureaucrats_produces_mult = 0.15
+		pop_ethic_spiritualist_attraction_mult = 0.20
+	}
+
+	potential = {
+		is_spiritualist = yes
+	}
+
+	ai_weight = {
+		weight = @EdictMedPrio
+	}
+}

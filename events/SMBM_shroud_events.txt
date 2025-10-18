@@ -1,0 +1,80 @@
+namespace = shroud
+
+country_event = {
+	id = shroud.5100
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_chosen_empire = yes
+	}
+
+	immediate = {
+		country_event = {
+			id = shroud.5105
+			days = 3650
+		}
+	}
+}
+
+country_event = {
+	id = shroud.5105
+	title = shroud.5105.title
+	desc = shroud.5105.desc
+	picture = GFX_evt_shroud_generic
+	is_triggered_only = yes
+
+	trigger = {
+		is_chosen_empire = yes
+	}
+	
+	immediate = {
+		set_country_flag = can_access_shroud
+		give_technology = { tech = tech_psionic_aura message = no }
+	}
+
+	option = {
+		name = shroud.5105.a
+		hidden_effect = {
+			set_country_flag = the_composer_of_strands_as_chosen_patron
+		}
+		set_patron_first_contact_state = { patron = the_composer_of_strands state = completed }
+		add_modifier = { modifier = the_composer_of_strands_blessing }
+	}
+
+	option = {
+		name = shroud.5105.b
+		hidden_effect = {
+			set_country_flag = the_eater_of_worlds_as_chosen_patron
+		}
+		set_patron_first_contact_state = { patron = the_eater_of_worlds state = completed }
+		add_modifier = { modifier = the_eater_of_worlds_blessing }
+	}
+
+	option = {
+		name = shroud.5105.c
+		hidden_effect = {
+			set_country_flag = the_cradle_of_souls_as_chosen_patron
+		}
+		set_patron_first_contact_state = { patron = the_cradle_of_souls state = completed }
+		add_modifier = { modifier = the_cradle_of_souls_blessing }
+	}
+
+	option = {
+		name = shroud.5105.d
+		hidden_effect = {
+			set_country_flag = the_instrument_of_desire_as_chosen_patron
+		}
+		set_patron_first_contact_state = { patron = the_instrument_of_desire state = completed }
+		add_modifier = { modifier = the_instrument_of_desire_blessing }
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = shroud.5110
+				days = 30
+			}
+		}
+	}
+}

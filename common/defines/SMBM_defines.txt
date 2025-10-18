@@ -1,4 +1,7 @@
 	NGameplay = {
+	    # anti-pop spamming and buff to other various deviancy decreasing game choices
+	    POP_CRIME							= 0.025	# From each pop with happiness (scaled inversely to happiness)
+	
 		# Anti-AI Trade exploitation
 		RESEARCH_AGREEMENT_SPEED_MULT		= 0.15	# Research speed increased by this for trade research agreement deal
 		
