@@ -1,0 +1,15 @@
+tr_statecraft_constitutional_focus = {
+	modifier = {
+		council_agenda_progress_speed = 0.15
+	}
+	ai_weight = { factor = 1000 }
+
+	inline_script = {
+		script = paragon/tradition_swap_desc_hive
+		tradition = tr_statecraft_constitutional_focus
+	}
+	inline_script = {
+		script = paragon/tradition_swap_desc_machine
+		tradition = tr_statecraft_constitutional_focus
+	}
+}

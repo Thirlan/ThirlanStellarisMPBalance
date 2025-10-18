@@ -1,8 +1,9 @@
-# Version 1.15.1
+# Version 1.15.2
 
 ## General tweaks
 
 ### Nerfs
+ * Crime: 0.025 crime per pop from 0.02
  * Starbase overcapacity upkeep penalty: +35% from +25%
  * Empire Leader Cap: 2 from 3 (Boost to game mechanics like Heroic Tales)
  * Hydroponics Bay: 7 food from 10
@@ -63,6 +64,13 @@
  * Mercantile:
    * Market Place of Better Ideas: +5% Trade value from +10%
    * Finisher: +0% Trade value from +10%
+ * State Craft:
+   * Constitutional Focus: 15% Agenda speed from 25%
+   * Among Peers: +100 leader experience instead of +150
+ * Supremacy:
+   * Adoption: +15 naval cap from +20
+   * Logistics Corp: +15% to naval cap from +20%
+   * War Games: Commander Cap +0 from +1
  * Virtuality:
   * Adoption: -20% to Energy/Mineral jobs and -10% speed to Physics and Society Research
   * Clustered Capacity: +125% resources from jobs from +175%
@@ -87,10 +95,6 @@
  * Machine World: requires 3 ascension perks from 0
  * Arcology Project: requires 3 Ascension perks from 2
  * One Vision: +7% Unity and -7% Pop Amenity Usage from 10% and 40% ethics attraction from 50%
- * Biomorphis: requires 3 ascension perks from 2
- * The Flesh is Weak: requires 3 ascension perks from 2
- * Synthetic Evolution: requires 3 ascension perks from 2
- * Mind Over Matter: requires 3 ascension perks from 2
  * Become the crisis: requires 4 ascension perks from 3 and -25% research speed
  * Behemoth Fury: requires 4 ascension perks from 3 and -25% research speed
  * Cosmogenesis:
@@ -115,6 +119,7 @@
    * Base Unity from uplifting 500 unity from 1000 unity
    * Event (Void Dwellers / Shattered Ring / Ocean Paradise / Life Seeded) -> 33% increase to colony ship cost and time to create a new colony
  * Individual Machine Replication: +15% mechanical pop assembly speed from +20%
+ * Chosen: Attunement Unit bonus 0.0002 from 0.0005 and 10 years instead of 2 days before event starts
 
 ### Boosts
  * Adding later...
@@ -135,6 +140,7 @@
  * Rapid Replicators: +15% mechanical pop assembly speed from +20%
  * Sovereign Guardian: -40% to empire size from pops from -50%
  * Rogue Servitor: +5% empire size from population
+ * Hyper Lubrication Basin: 0.04 amenities usage from 0.03
 
 ### Boosts
  * Adding later...
@@ -154,7 +160,16 @@
  * Clone Army: -25% to Unity Production
  * Scion: -5% happiness, -20% Ethics attraction
  * Shattered Ring (Robots): -80% chance to roll Robomodding
- * Overtuned: requires 2 ascension perks from 1 for Biomorphis
+ * Shroud Forged: +20% Specialist Efficiency from +25%
+ * Overtuned:
+   * Biomorphis: Requires 2 ascension perks instead of 1
+   * Augmented Intelligence: +7% research from +10%
+   * Elevated Synapses: +15% research from +20%
+   * Pre-planned growth: +23% growth from +30%
+   * Fleeting Excellence: +15% pop upkeep
+ * Cybernetic Creed:
+   * Haruspex: 2.5 Consumer goods needed from 2.0
+   * Technophant: 2.5 Consumer goods needed from 2.0
 
 ### Boosts
  * Adding later...
@@ -166,6 +181,7 @@
  * Existential Iteroparity: +20% population growth from +30%
  * Invasive Species: 4% from 5% for pop growth and habitability
  * Intelligent: +7% research from +10%
+ * Incubators: 25% population growth from 30%
 
 ### Boosts
  * Adding later...
@@ -198,22 +214,20 @@
 
 ### Boosts:
  * none
-
-## Toxoid Traits:
-
-### Nerfs
- * Augmented Intelligence: +7% research from +10%
- * Elevated Synapses: +15% research from +20%
- * Pre-planned growth: +23% growth from +30%
- * Incubators: 25% population growth from 30%
-
-### Boosts
- * Adding later...
  
 ## Leader Traits:
 
 ### Nerfs
  * none
 
+### Boosts
+ * none
+
+
+## Edicts:
+
+### Nerfs
+ * Veneration of the Saints: +15% Priest output from +20% and 20% Spiritual Ethics attraction from +25%
+ 
 ### Boosts
  * none

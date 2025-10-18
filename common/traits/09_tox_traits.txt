@@ -166,6 +166,7 @@ trait_auto_mod_overtuned = {
 	}
 	modifier = {
 		leader_lifespan_add = -20
+		planet_pops_organics_upkeep_mult = 0.15
 	}
 	slave_cost = {
 		energy = 1000

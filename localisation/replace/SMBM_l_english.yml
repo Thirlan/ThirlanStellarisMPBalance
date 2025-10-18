@@ -10,6 +10,7 @@
  
  # CIVICS
  civic_crowdsourcing_effects: "$t$- Factions produce $r_research$ instead of $r_unity$ $TABBED_NEW_LINE$- Factions will form in your empire shortly after the game starts$TABBED_NEW_LINE$- §R-100%§! §YGoverning Ethics Attraction§"
+ civic_corporate_crowdsourcing_effects: "$t$- Factions produce $r_research$ instead of $r_unity$ $TABBED_NEW_LINE$- Factions will form in your empire shortly after the game starts$TABBED_NEW_LINE$- §R-100%§! §YGoverning Ethics Attraction§"
  
  # ORIGINS
 

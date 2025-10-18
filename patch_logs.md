@@ -1,3 +1,32 @@
+# 2025/10/18 - 1.15.2
+
+Crime was increased so that there would be a small additional cost for population with the need to pick up crime/deviancy reducing buildings, techs, traits or traditions.
+
+Also focused on various pop creation tools, stacking strategies and combos that were creating amazing builds within the first 10 years of the game.
+
+Added:
+ * Hyper Lubrication Basin: 0.04 amenities usage from 0.03
+ * Crime: 0.025 crime per pop from 0.02
+ * Shroud Forged: +20% Specialist Efficiency from +25%
+ * Chosen: Attunement Unit bonus 0.0002 from 0.0005 and 10 years instead of 2 days before event starts
+ * State Craft:
+   * Constitutional Focus: 15% Agenda speed from 25%
+   * Among Peers: +100 leader experience instead of +150
+ * Supremacy:
+   * Adoption: +15 naval cap from +20
+   * Logistics Corp: +15% to naval cap from +20%
+   * War Games: Commander Cap +0 from +1
+ * Overtuned:
+   * Biomorphis: Requires 2 ascension perks instead of 1
+   * Fleeting Excellence: +15% pop upkeep
+ * Veneration of the Saints: +15% Priest output from +20% and 20% Spiritual Ethics attraction from +25%
+ * Cybernetic Creed:
+   * Haruspex: 2.5 Consumer goods needed from 2.0
+   * Technophant: 2.5 Consumer goods needed from 2.0
+ 
+Modified:
+ * Crowd Sourcing: -25% reduction in Faction Tech output and -100% Ethics Attraction
+
 # 2025/10/18 - 1.15.1
 
 Added:
