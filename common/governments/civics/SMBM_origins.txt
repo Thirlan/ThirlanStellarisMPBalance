@@ -1,3 +1,44 @@
+origin_imperial_vassal = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_imperial_vassal.dds"
+	picture = GFX_origin_imperial_vassal
+
+	playable = {
+		has_overlord_dlc = yes
+	}
+
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_inwards_perfection
+				value = civic_machine_assimilator
+			}
+			NOR = {
+				text = civic_tooltip_not_genocidal
+				value = civic_fanatic_purifiers
+				value = civic_hive_devouring_swarm
+				value = civic_machine_terminator
+				value = civic_scorched_earth
+				value = civic_hive_scorched_earth
+			}
+		}
+	}
+
+	modifier = {
+		pop_government_ethic_attraction = -0.20
+		pop_happiness = -0.05
+	}
+
+	description = "origin_tooltip_imperial_vassal_effects"
+	flags = { custom_start_screen }
+
+	traits = {}
+
+	random_weight = {
+		base = 0
+	}
+}
+
 origin_scion = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_scion_1.dds"
@@ -38,85 +79,5 @@ origin_scion = {
 			add = 2
 			num_fallen_empires_setting >= 1
 		}
-	}
-}
-
-origin_imperial_vassal = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_imperial_vassal.dds"
-	picture = GFX_origin_imperial_vassal
-
-	playable = {
-		has_overlord_dlc = yes
-	}
-
-	possible = {
-		civics = {
-			NOR = {
-				value = civic_inwards_perfection
-				value = civic_machine_assimilator
-			}
-			NOR = {
-				text = civic_tooltip_not_genocidal
-				value = civic_fanatic_purifiers
-				value = civic_hive_devouring_swarm
-				value = civic_machine_terminator
-			}
-		}
-	}
-
-	modifier = {
-		pop_government_ethic_attraction = -0.20
-		pop_happiness = -0.05
-	}
-
-	description = "origin_tooltip_imperial_vassal_effects"
-	flags = { custom_start_screen }
-
-	traits = {}
-
-	random_weight = {
-		base = 0
-	}
-}
-
-origin_clone_army = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_clones.dds"
-	picture = GFX_origin_clone_army
-	flags = { custom_start_screen }
-
-	playable = {
-		host_has_dlc = "Humanoids Species Pack"
-	}
-
-	possible = {
-		ethics = {
-			NOT = {	value = ethic_gestalt_consciousness	}
-		}
-		civics = {
-			NOR = {
-				value = civic_permanent_employment
-				value = civic_natural_design
-			}
-		}
-		species_archetype = { NOT = { value = MACHINE } }
-	}
-
-	modifier = {
-		country_unity_produces_mult = -0.25
-	}
-
-	description = origin_tooltip_clone_army_effects
-
-	traits = {
-		trait = trait_clone_soldier_infertile
-	}
-
-	advanced_start = no
-	blocks_random_machine_empire_generation	= yes
-
-	random_weight = {
-		base = 2
 	}
 }

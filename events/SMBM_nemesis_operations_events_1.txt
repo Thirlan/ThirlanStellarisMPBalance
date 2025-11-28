@@ -1325,18 +1325,26 @@ country_event = {
 
 	option = { #We're done here (smooth)
 		name = operation.2005.a
-		trigger = {
-			from.target.owner = {
-				NOR = {
-					has_hostile_espionage_operation_ethics = yes
-					has_closed_borders = root
-					is_at_war_with = root
+		if = {
+			limit = {
+				from.target.owner = {
+					NOR = {
+						has_hostile_espionage_operation_ethics = yes
+						has_closed_borders = root
+						is_at_war_with = root
+					}
 				}
 			}
+			from.spynetwork = {
+				add_spy_network_level_on_success_effect = { VALUE = -30 }
+			}
 		}
-		from.spynetwork = {
-			add_spy_network_level_on_success_effect = { VALUE = -30 }
+		else = {
+			from.spynetwork = {
+				add_spy_network_level_on_success_effect = { VALUE = -45 }
+			}
 		}
+
 		owner = {
 			if = {
 				limit = { has_ascension_perk = ap_become_the_crisis }
@@ -1344,27 +1352,7 @@ country_event = {
 			}
 		}
 	}
-	option = { #We're done here (messy)
-		name = operation.2005.a
-		trigger = {
-			from.target.owner = {
-				OR = {
-					has_hostile_espionage_operation_ethics = yes
-					has_closed_borders = root
-					is_at_war_with = root
-				}
-			}
-		}
-		from.spynetwork = {
-			add_spy_network_level_on_success_effect = { VALUE = -45 }
-		}
-		owner = {
-			if = {
-				limit = { has_ascension_perk = ap_become_the_crisis }
-				complete_crisis_objective = crisobj_perform_upsetting_operations
-			}
-		}
-	}
+
 	option = { #Collateral damage (module)
 		name = {
 			trigger = {
@@ -3358,7 +3346,7 @@ country_event = {
 			}
 			from.target = {
 				NOR = {
-					has_ethic = ethic_fanatic_xenophobe
+					is_fanatic_xenophobe = yes
 					has_ethic = ethic_fanatic_authoritarian
 				}
 			}
@@ -3396,7 +3384,7 @@ country_event = {
 			}
 			from.target = {
 				NOR = {
-					has_ethic = ethic_fanatic_xenophobe
+					is_fanatic_xenophobe = yes
 					has_ethic = ethic_fanatic_authoritarian
 				}
 			}
@@ -3428,7 +3416,7 @@ country_event = {
 			}
 			from.target = {
 				NOR = {
-					has_ethic = ethic_fanatic_xenophobe
+					is_fanatic_xenophobe = yes
 					has_ethic = ethic_fanatic_authoritarian
 				}
 			}

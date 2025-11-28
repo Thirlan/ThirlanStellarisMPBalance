@@ -180,6 +180,7 @@ civic_machine_servitor = {
 	}
 	modifier = {
 		councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
+		add_attunement_the_cradle_of_souls = @civic_attunement1
 		empire_size_pops_mult = 0.05
 	}
 }

@@ -1400,10 +1400,7 @@ opinion_primitive_violation = {
 
 		modifier = {
 			factor = 0
-			OR = {
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
-			}
+			is_xenophobe = yes
 		}
 	}
 
@@ -2748,10 +2745,7 @@ triggered_opinion_cyborgs_normal = {
 
 triggered_opinion_cybernetic_creed_of_cyborgs = {
 	trigger = {
-		OR = {
-			has_ethic = ethic_spiritualist
-			has_ethic = ethic_fanatic_spiritualist
-		}
+		is_spiritualist = yes
 		has_origin = origin_cybernetic_creed
 		FROM = {
 			is_cyborg_empire = yes # Note that this includes Driven Assimilators
@@ -3623,10 +3617,7 @@ triggered_spiritualist_opinion_of_spiritualists_machine_empires = {
 		is_cyborg_empire = no
 		FROM = {
 			is_individual_machine = yes
-			OR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-			}
+			is_spiritualist = yes
 			NOR = {
 				has_valid_civic = civic_machine_terminator
 				has_valid_civic = civic_machine_assimilator
@@ -3648,10 +3639,7 @@ triggered_fanatic_spiritualist_opinion_of_spiritualists_machine_empires = {
 		is_cyborg_empire = no
 		FROM = {
 			is_individual_machine = yes
-			OR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-			}
+			is_spiritualist = yes
 			NOR = {
 				has_valid_civic = civic_machine_terminator
 				has_valid_civic = civic_machine_assimilator
@@ -3696,10 +3684,7 @@ triggered_spiritualist_fe_opinion_of_spiritualist_machine_empires = {
 		is_cyborg_empire = no
 		FROM = {
 			is_individual_machine = yes
-			OR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-			}
+			is_spiritualist = yes
 		}
 	}
 	opinion = {
@@ -3848,10 +3833,7 @@ triggered_spiritualist_negative_opinion_of_assimilators = {
 	trigger = {
 		is_country_type = default
 		is_individual_machine = no
-		OR = {
-			has_ethic = ethic_spiritualist
-			has_ethic = ethic_fanatic_spiritualist
-		}
+		is_spiritualist = yes
 		FROM = { has_valid_civic = civic_machine_assimilator }
 	}
 	opinion = {

@@ -16,9 +16,7 @@ ap_become_the_crisis = {
 	potential = {
 		has_nemesis = yes
 		NOR = {
-			has_ascension_perk = ap_become_the_crisis
-			has_ascension_perk = ap_cosmogenesis
-			has_ascension_perk = ap_behemoths
+			is_player_crisis = yes
 			has_ascension_perk = ap_defender_of_the_galaxy
 			has_origin = origin_slavers
 			has_origin = origin_endbringers # No additional crisis for Endbringers
@@ -114,6 +112,10 @@ ap_become_the_crisis = {
 			galaxy_percentage < 0.1
 		}
 		modifier = {
+			factor = 0.5
+			is_infernal_empire = yes
+		}
+		modifier = {
 			factor = 2
 			galaxy_percentage > 0.2
 		}
@@ -141,10 +143,8 @@ ap_cosmogenesis = {
 	potential = {
 		has_machine_age_dlc = yes
 		NOR = {
-			has_ascension_perk = ap_become_the_crisis
-			has_ascension_perk = ap_cosmogenesis
+			is_player_crisis = yes
 			has_ascension_perk = ap_defender_of_the_galaxy
-			has_ascension_perk = ap_behemoths
 			has_origin = origin_slavers # No crisis for MSI
 			has_origin = origin_endbringers # No additional crisis for Endbringers
 		}
@@ -238,9 +238,7 @@ ap_behemoths = {
 	potential = {
 		has_biogenesis_dlc = yes
 		NOR = {
-			has_ascension_perk = ap_become_the_crisis
-			has_ascension_perk = ap_cosmogenesis
-			has_ascension_perk = ap_behemoths
+			is_player_crisis = yes
 			has_ascension_perk = ap_defender_of_the_galaxy
 			has_origin = origin_slavers # No crisis for MSI
 			has_origin = origin_endbringers # No additional crisis for Endbringers
@@ -638,60 +636,6 @@ ap_hive_worlds = {
 #################
 # MEGACORP ASCENSION PERKS
 #################
-
-ap_arcology_project = {
-	potential = {
-		host_has_dlc = "Megacorp"
-		OR = {
-			is_regular_empire = yes
-			has_valid_civic = civic_machine_servitor
-		}
-		NOT = { has_valid_civic = civic_agrarian_idyll }
-		NOT = {
-			has_ascension_perk = ap_arcology_project
-		}
-	}
-
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_technology_housing_2"
-			has_technology = tech_housing_2
-		}
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_3"
-			num_ascension_perks > 2
-		}
-	}
-
-	on_enabled = {
-		custom_tooltip = "allow_arcology_project"
-		custom_tooltip = "decision_arcology_project_effects"
-	}
-
-	modifier = {
-		add_attunement_the_instrument_of_desire = @ascension_perk_attunement1
-	}
-
-	ai_weight = {
-		factor = 10
-		modifier = {
-			factor = 2
-			has_ethic = ethic_pacifist
-		}
-		modifier = {
-			factor = 3
-			has_ethic = ethic_fanatic_pacifist
-		}
-		modifier = {
-			factor = 2
-			has_ethic = ethic_materialist
-		}
-		modifier = {
-			factor = 3
-			has_ethic = ethic_fanatic_materialist
-		}
-	}
-}
 
 #################
 # TOXIC ASCENSION PERKS

@@ -1,9 +1,9 @@
-version="1.15.2"
+version="1.16.0"
 
 tags={
 	"Balance"
 }
 name="Simple Multiplayer Balance Mod"
-supported_version="v4.1.*"
+supported_version="v4.2.*"
 path="C:/Users/marcb/OneDrive/Documents/Paradox Interactive/Stellaris/mod/SMBM"
 remote_file_id="2347980051"
