@@ -1,3 +1,23 @@
+# 2025/11/28 - 1.16.0
+
+Updated for version 4.2.2 of the game
+
+Added:
+ * Thermotechnic Forums: +0.15 to miner unity from +0.3
+
+Modified:
+ * Hyper Lubrication Basin: 0 pop assembly multiplier from 0.0075
+
+Removed:
+ * Overtuned:
+   * Biomorphis: Requires 2 ascension perks instead of 1
+   * Augmented Intelligence: +7% research from +10%
+   * Elevated Synapses: +15% research from +20%
+   * Pre-planned growth: +23% growth from +30%
+   * Fleeting Excellence: +15% pop upkeep
+ * Clone Army: -25% to Unity Production
+ * Arcology Project: requires 3 Ascension perks from 2
+
 # 2025/10/18 - 1.15.2
 
 Crime was increased so that there would be a small additional cost for population with the need to pick up crime/deviancy reducing buildings, techs, traits or traditions.

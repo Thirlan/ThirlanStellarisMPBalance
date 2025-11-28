@@ -40,6 +40,9 @@ country_event = {
 		}
 		set_patron_first_contact_state = { patron = the_composer_of_strands state = completed }
 		add_modifier = { modifier = the_composer_of_strands_blessing }
+		ai_chance = {
+			base = 1
+		}
 	}
 
 	option = {
@@ -49,6 +52,14 @@ country_event = {
 		}
 		set_patron_first_contact_state = { patron = the_eater_of_worlds state = completed }
 		add_modifier = { modifier = the_eater_of_worlds_blessing }
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 2
+				is_homicidal = yes
+			}
+		}
 	}
 
 	option = {
@@ -58,6 +69,14 @@ country_event = {
 		}
 		set_patron_first_contact_state = { patron = the_cradle_of_souls state = completed }
 		add_modifier = { modifier = the_cradle_of_souls_blessing }
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				is_homicidal = yes
+			}
+		}
 	}
 
 	option = {
@@ -67,6 +86,10 @@ country_event = {
 		}
 		set_patron_first_contact_state = { patron = the_instrument_of_desire state = completed }
 		add_modifier = { modifier = the_instrument_of_desire_blessing }
+
+		ai_chance = {
+			base = 1
+		}
 	}
 
 	after = {

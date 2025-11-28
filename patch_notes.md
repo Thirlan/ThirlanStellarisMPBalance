@@ -1,4 +1,4 @@
-# Version 1.15.2
+# Version 1.16.0
 
 ## General tweaks
 
@@ -93,8 +93,7 @@
 ### Nerfs
  * Hive World: requires 3 ascension perks from 0
  * Machine World: requires 3 ascension perks from 0
- * Arcology Project: requires 3 Ascension perks from 2
- * One Vision: +7% Unity and -7% Pop Amenity Usage from 10% and 40% ethics attraction from 50%
+ * One Vision: +7% Unity from 10% and 40% ethics attraction from 50%
  * Become the crisis: requires 4 ascension perks from 3 and -25% research speed
  * Behemoth Fury: requires 4 ascension perks from 3 and -25% research speed
  * Cosmogenesis:
@@ -140,7 +139,7 @@
  * Rapid Replicators: +15% mechanical pop assembly speed from +20%
  * Sovereign Guardian: -40% to empire size from pops from -50%
  * Rogue Servitor: +5% empire size from population
- * Hyper Lubrication Basin: 0.04 amenities usage from 0.03
+ * Hyper Lubrication Basin: 0 pop assembly multiplier from 0.0075
 
 ### Boosts
  * Adding later...
@@ -157,16 +156,9 @@
 
 ### Nerfs
  * Imperial Fiefdom origin: -5% happiness, -20% Ethics attraction and Overlord starting opinion bonus 1 from 120
- * Clone Army: -25% to Unity Production
  * Scion: -5% happiness, -20% Ethics attraction
  * Shattered Ring (Robots): -80% chance to roll Robomodding
  * Shroud Forged: +20% Specialist Efficiency from +25%
- * Overtuned:
-   * Biomorphis: Requires 2 ascension perks instead of 1
-   * Augmented Intelligence: +7% research from +10%
-   * Elevated Synapses: +15% research from +20%
-   * Pre-planned growth: +23% growth from +30%
-   * Fleeting Excellence: +15% pop upkeep
  * Cybernetic Creed:
    * Haruspex: 2.5 Consumer goods needed from 2.0
    * Technophant: 2.5 Consumer goods needed from 2.0

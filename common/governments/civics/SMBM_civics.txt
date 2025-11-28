@@ -1,7 +1,7 @@
 #civic_example = {
 #	playable = {}									# AND trigger, no scope; use this to prevent the civic from being selectable by the player (UI)
-#	potential = {}									# requirements list, see ../readme_requirements.txt
-#	possible = {}									# requirements list, see ../readme_requirements.txt
+#	potential = {}									# requirements list, see ../99_README_GOVERNMENT.txt
+#	possible = {}									# requirements list, see ../99_README_GOVERNMENT.txt
 #	pickable_at_start = yes / no					# default: yes
 #	modification = {								# ( modification = yes/no) | Can be a set of two triggers:
 #		moddable_conditions_custom_tooltip = loc	# Used for localizaton when add or remove is not set but the other one is (replaces CIVIC_NOT_MODDABLE)
@@ -23,6 +23,7 @@
 #	hide_modifiers = yes / no						# default: no; if yes will hide the modifiers from the origin/civic tooltip.
 #	can_build_ruler_ship = yes / no					# default: no
 #	traits = { trait = ... }						# default: empty; trait set to enforce on the primary species. They cannot be removed, but more can be added if points/picks permit
+#	soft_traits = { trait = ... }					# ORIGIN EXCLUSIVE; default: empty; same as above, except these can be removed without making the government invalid.
 #	has_secondary_species = {						# default: none; if present, will enable secondary species customization in empire designer and will create secondary species & pops at galaxy generation time (see empire_init_create_capital_secondary_pops)
 #		traits = { trait = ... }					# default: empty; trait set to enforce on the secondary species. They cannot be removed, but more can be added if points/picks permit
 #	}
@@ -45,6 +46,11 @@
 #	}
 #	ai_playable = {}								# Similar to "playable", for AI
 #	blocks_random_machine_empire_generation	= yes	# ORIGIN EXCLUSIVE: Makes sure that random empire creation does not create invalid combinations with individualistic machines. Defaults to yes. Required for all origins that should be blocked by individualist machines.
+#
+# 	removed_climate_labels = { Climate_Label_Name } # Removes the listed UI labels from the home world empire creation screen UI
+#	added_climate_labels = { Climate_Label_Name }   # Adds the listed UI labels from the home world empire creation screen UI (UI elements need to be declared first)
+#	removed_planet_types = { Planet_Type_Name }     # Removes the listed planet types from the home world empire creation screen UI
+#	added_planet_types = { Planet_Type_Name }       # Adds the listed UI planet types from the home world empire creation screen UI (UI elements need to be declared first)
 #}
 
 civic_parliamentary_system = {
@@ -63,6 +69,7 @@ civic_parliamentary_system = {
 				value = civic_corporate_crowdsourcing
 				value = civic_crowdsourcing
 			}
+			NOT = { value = civic_secret_societies }
 		}
 		origin = {
 			NOT = {
@@ -102,50 +109,8 @@ civic_parliamentary_system = {
 	description = "civic_tooltip_parliamentary_system_effects"
 	modifier = {
 		pop_factions_produces_mult = 0.30
-	}
-}
-
-civic_crowdsourcing = {
-	modification = no
-	playable = { has_biogenesis_dlc = yes }
-	ai_playable = { has_biogenesis_dlc = yes }
-	description = "civic_crowdsourcing_effects"
-	potential = {
-		ethics = {
-			NOT = {
-				value = ethic_gestalt_consciousness
-			}
-		}
-		authority = { NOT = { value = auth_corporate } }
-	}
-	possible = {
-		ethics = {
-			NOR = {
-				text = civic_tooltip_not_fanatic
-				value = ethic_fanatic_xenophobe
-				value = ethic_fanatic_xenophile
-				value = ethic_fanatic_authoritarian
-				value = ethic_fanatic_militarist
-				value = ethic_fanatic_pacifist
-				value = ethic_fanatic_spiritualist
-				value = ethic_fanatic_materialist
-				value = ethic_fanatic_egalitarian
-			}
-		}
-		civics = {
-			NOR = {
-				value = civic_corporate_crowdsourcing
-				value = civic_parliamentary_system
-				value = civic_secret_societies
-			}
-		}
-	}
-
-	modifier = {
-		pop_government_ethic_attraction = -1.00
 		add_attunement_the_cradle_of_souls = @civic_attunement1
 	}
-	hide_modifiers = yes
 }
 
 civic_fanatic_purifiers = {
@@ -185,6 +150,11 @@ civic_fanatic_purifiers = {
 				value = civic_hive_guided_sapience
 				value = civic_machine_guided_sapience
 			}
+			NOR = {
+				text = civic_tooltip_not_scorched_earth
+				value = civic_scorched_earth
+				value = civic_hive_scorched_earth
+			}
 		}
 		origin = {
 			NOR = {
@@ -215,6 +185,8 @@ civic_fanatic_purifiers = {
 		army_damage_mult = 0.33
 		starbase_shipyard_build_cost_mult = -0.15
 		country_naval_cap_mult = 0.33
+		add_attunement_the_eater_of_worlds = @civic_attunement1
+		the_cradle_of_souls_attunement_mult = -0.25
 		country_trade_fee = 0.25
 	}
 
@@ -265,6 +237,7 @@ civic_sovereign_guardianship = {
 				value = civic_inwards_perfection
 				value = civic_reanimated_armies
 				value = civic_fanatic_purifiers
+				value = civic_scorched_earth
 			}
 			NOR = {
 				# Or low tech starts
@@ -279,7 +252,9 @@ civic_sovereign_guardianship = {
 	alternate_civic_version = civic_corporate_sovereign_guardianship
 	modification = {
 		add = {
-			has_civic = civic_corporate_sovereign_guardianship
+			hidden_trigger = {
+				has_civic = civic_corporate_sovereign_guardianship
+			}
 		}
 		remove = {
 			always = no
@@ -295,6 +270,7 @@ civic_sovereign_guardianship = {
 		diplo_weight_mult = 0.2
 
 		planet_soldiers_unity_produces_add = @sovereign_guardianship_soldier_unity
+		add_attunement_the_cradle_of_souls = @civic_attunement1
 	}
 
 	random_weight = {
@@ -302,23 +278,6 @@ civic_sovereign_guardianship = {
 	}
 	ai_weight = {
 		base = @civic_rare_random_weight
-	}
-}
-
-civic_individual_machine_replication = {
-	potential = {
-		species_archetype = {
-			value = MACHINE
-		}
-		authority = { NOT = { value = auth_corporate } }
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-	}
-	random_weight = { base = @civic_default_random_weight }
-	ai_weight = {
-		base = @ai_civic_default_base_weight
-	}
-	modifier = {
-		planet_pop_assembly_mult = 0.15
 	}
 }
 
@@ -362,8 +321,9 @@ civic_guided_sapience = {
 				value = civic_hive_stargazers
 				value = civic_machine_exploration_protocol
 			}
-			NOT = {
+			NOR = {
 				value = civic_natural_design
+				value = civic_scorched_earth
 			}
 		}
 	}
@@ -371,7 +331,76 @@ civic_guided_sapience = {
 	modifier = {
 		terraforming_cost_mult = -0.25
 		terraform_speed_mult = 0.25
+		add_attunement_the_composer_of_strands = @civic_attunement1
 	}
 	description = civic_tooltip_guided_sapience_effects
 	negative_description = civic_tooltip_guided_sapience_negative_effects
 }
+
+civic_individual_machine_replication = {
+	potential = {
+		species_archetype = {
+			value = MACHINE
+		}
+		authority = { NOT = { value = auth_corporate } }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	random_weight = { base = @civic_default_random_weight }
+	ai_weight = {
+		base = @ai_civic_default_base_weight
+	}
+	modifier = {
+		planet_pop_assembly_mult = 0.15
+	}
+}
+
+civic_crowdsourcing = {
+	modification = no
+	playable = { has_biogenesis_dlc = yes }
+	ai_playable = { has_biogenesis_dlc = yes }
+	description = "civic_crowdsourcing_effects"
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_fanatic
+				value = ethic_fanatic_xenophobe
+				value = ethic_fanatic_xenophile
+				value = ethic_fanatic_authoritarian
+				value = ethic_fanatic_militarist
+				value = ethic_fanatic_pacifist
+				value = ethic_fanatic_spiritualist
+				value = ethic_fanatic_materialist
+				value = ethic_fanatic_egalitarian
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_corporate_crowdsourcing
+				value = civic_parliamentary_system
+				value = civic_secret_societies
+			}
+		}
+	}
+
+	modifier = {
+		pop_government_ethic_attraction = -1.00
+		add_attunement_the_cradle_of_souls = @civic_attunement1
+	}
+	hide_modifiers = yes
+}
+
+#################
+# Shroud Civics #
+#################
+
+####################
+# Infernals Civics #
+####################

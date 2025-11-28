@@ -3,6 +3,9 @@
 @statecraft_amongst_peers_exp_reward = 100
 @crowdsourcing_multiplier =	2.0
 
+# Thermotecnic Mentors values for 09_scripted_variables_infernals
+@polytechnic_unity_output = 0.15
+
 #############
 #	SHIELD	#
 #############
@@ -89,3 +92,4 @@
 @bio_ship_armor_speed_l_4 = -0.01
 @bio_ship_armor_speed_l_5 = -0.01
 @bio_ship_armor_speed_l_6 = -0.01
+
